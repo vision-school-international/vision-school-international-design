@@ -34,6 +34,8 @@ test("renders the four-concept selector", async () => {
   assert.match(html, /Sent Together/);
   assert.match(html, /Every Nation/);
   assert.match(html, /The Way Forward/);
+  assert.equal((html.match(/<button/g) ?? []).length, 5);
+  assert.doesNotMatch(html, /href="\/concepts\//);
   assert.doesNotMatch(html, /Your site is taking shape|Building your site/);
 });
 

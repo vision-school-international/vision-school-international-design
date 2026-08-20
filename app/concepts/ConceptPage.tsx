@@ -11,6 +11,9 @@ const conceptData = {
     image: "/images/community-city.jpg",
     imageAlt: "A diverse group of young adults in conversation outdoors",
     next: "/concepts/sent-together",
+    nextKey: "together" as ConceptKey,
+    nextAnchor: "concept-together",
+    anchor: "concept-global",
   },
   together: {
     number: "02",
@@ -20,6 +23,9 @@ const conceptData = {
     image: "/images/community-table.jpg",
     imageAlt: "Young adults sharing a conversation around a table",
     next: "/concepts/every-nation",
+    nextKey: "nations" as ConceptKey,
+    nextAnchor: "concept-nations",
+    anchor: "concept-together",
   },
   nations: {
     number: "03",
@@ -29,6 +35,9 @@ const conceptData = {
     image: "/images/youth-gathering.jpg",
     imageAlt: "A lively gathering of young adults standing together",
     next: "/concepts/way-forward",
+    nextKey: "forward" as ConceptKey,
+    nextAnchor: "concept-forward",
+    anchor: "concept-nations",
   },
   forward: {
     number: "04",
@@ -38,6 +47,9 @@ const conceptData = {
     image: "/images/mountain-sunrise.jpg",
     imageAlt: "A mountain peak emerging above clouds at sunrise",
     next: "/concepts/global-classroom",
+    nextKey: "global" as ConceptKey,
+    nextAnchor: "concept-global",
+    anchor: "concept-forward",
   },
 } as const;
 
@@ -71,27 +83,53 @@ const sampleClasses = [
   ["North America", "Online", "Fall 2026"],
 ];
 
-export function ConceptPage({ concept }: { concept: ConceptKey }) {
+export function ConceptPage({
+  concept,
+  embedded = false,
+  onSelect,
+}: {
+  concept: ConceptKey;
+  embedded?: boolean;
+  onSelect?: (concept: ConceptKey | null) => void;
+}) {
   const data = conceptData[concept];
+  const sectionId = (name: string) => embedded ? `${data.anchor}-${name}` : name;
+  const allConceptsHref = embedded ? "#concept-menu" : "/";
+  const nextConceptHref = embedded ? `#${data.nextAnchor}` : data.next;
 
-  return (
-    <main className={`site-mock site-${concept}`}>
+  const content = (
+    <>
       <div className="mock-banner">
-        <Link href="/">← All four concepts</Link>
+        {embedded && onSelect ? (
+          <button type="button" onClick={() => onSelect(null)}>← All four concepts</button>
+        ) : (
+          <Link href={allConceptsHref}>← All four concepts</Link>
+        )}
         <span>{data.number} / 04 · {data.label}</span>
-        <Link href={data.next}>Next direction →</Link>
+        {embedded && onSelect ? (
+          <button type="button" onClick={() => onSelect(data.nextKey)}>Next direction →</button>
+        ) : (
+          <Link href={nextConceptHref}>Next direction →</Link>
+        )}
       </div>
 
       <header className="mock-nav">
-        <Link className="mock-logo" href="/" aria-label="Vision School International mockup home">
-          <span className="mock-logo-mark">V</span>
-          <span>Vision School <small>International</small></span>
-        </Link>
+        {embedded && onSelect ? (
+          <button className="mock-logo" type="button" onClick={() => onSelect(null)} aria-label="Show all Vision School International concepts">
+            <span className="mock-logo-mark">V</span>
+            <span>Vision School <small>International</small></span>
+          </button>
+        ) : (
+          <Link className="mock-logo" href={allConceptsHref} aria-label="Vision School International mockup home">
+            <span className="mock-logo-mark">V</span>
+            <span>Vision School <small>International</small></span>
+          </Link>
+        )}
         <nav aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#course">The Course</a>
-          <a href="#classes">Locations</a>
-          <a className="nav-cta" href="#classes">Find a class</a>
+          <a href={`#${sectionId("about")}`}>About</a>
+          <a href={`#${sectionId("course")}`}>The Course</a>
+          <a href={`#${sectionId("classes")}`}>Locations</a>
+          <a className="nav-cta" href={`#${sectionId("classes")}`}>Find a class</a>
         </nav>
       </header>
 
@@ -101,8 +139,8 @@ export function ConceptPage({ concept }: { concept: ConceptKey }) {
           <h1>{data.headline}</h1>
           <p className="hero-subhead">{data.subhead}</p>
           <div className="hero-actions">
-            <a className="primary-action" href="#classes">Find a class <span aria-hidden="true">↗</span></a>
-            <a className="secondary-action" href="#about">What is Vision School?</a>
+            <a className="primary-action" href={`#${sectionId("classes")}`}>Find a class <span aria-hidden="true">↗</span></a>
+            <a className="secondary-action" href={`#${sectionId("about")}`}>What is Vision School?</a>
           </div>
         </div>
         <div className="hero-visual" style={{ backgroundImage: `url(${data.image})` }} role="img" aria-label={data.imageAlt}>
@@ -121,7 +159,7 @@ export function ConceptPage({ concept }: { concept: ConceptKey }) {
         <p>A lifetime of mission</p>
       </section>
 
-      <section className="about-section" id="about">
+      <section className="about-section" id={sectionId("about")}>
         <div className="section-heading">
           <p className="mock-kicker">What is Vision School?</p>
           <h2>More than information.<br />An invitation.</h2>
@@ -141,7 +179,7 @@ export function ConceptPage({ concept }: { concept: ConceptKey }) {
         </div>
       </section>
 
-      <section className="course-section" id="course">
+      <section className="course-section" id={sectionId("course")}>
         <div className="course-photo" style={{ backgroundImage: "url(/images/youth-gathering.jpg)" }} role="img" aria-label="Young adults gathered together in a classroom community" />
         <div className="course-copy">
           <p className="mock-kicker">Inside the course</p>
@@ -154,11 +192,11 @@ export function ConceptPage({ concept }: { concept: ConceptKey }) {
               </div>
             ))}
           </div>
-          <a className="text-link" href="#classes">Explore the course <span aria-hidden="true">→</span></a>
+          <a className="text-link" href={`#${sectionId("classes")}`}>Explore the course <span aria-hidden="true">→</span></a>
         </div>
       </section>
 
-      <section className="classes-section" id="classes">
+      <section className="classes-section" id={sectionId("classes")}>
         <div className="classes-header">
           <div>
             <p className="mock-kicker">Start near you</p>
@@ -172,11 +210,11 @@ export function ConceptPage({ concept }: { concept: ConceptKey }) {
               <span className="sample-label">Sample 0{index + 1}</span>
               <h3>{place}</h3>
               <div><span>{format}</span><span>{term}</span></div>
-              <a href="#classes" aria-label={`View sample class in ${place}`}>View class <span aria-hidden="true">↗</span></a>
+              <a href={`#${sectionId("classes")}`} aria-label={`View sample class in ${place}`}>View class <span aria-hidden="true">↗</span></a>
             </article>
           ))}
         </div>
-        <a className="all-classes" href="#classes">View all class locations <span aria-hidden="true">→</span></a>
+        <a className="all-classes" href={`#${sectionId("classes")}`}>View all class locations <span aria-hidden="true">→</span></a>
       </section>
 
       <section className="story-section">
@@ -190,7 +228,7 @@ export function ConceptPage({ concept }: { concept: ConceptKey }) {
       <section className="final-cta">
         <p className="mock-kicker">Ready when you are</p>
         <h2>Your place in the story<br />starts here.</h2>
-        <a className="primary-action" href="#classes">Find a Vision School class <span aria-hidden="true">↗</span></a>
+        <a className="primary-action" href={`#${sectionId("classes")}`}>Find a Vision School class <span aria-hidden="true">↗</span></a>
       </section>
 
       <footer className="mock-footer">
@@ -199,9 +237,19 @@ export function ConceptPage({ concept }: { concept: ConceptKey }) {
           <span>Vision School <small>International</small></span>
         </div>
         <p>A global discipleship movement equipping believers to understand and participate in God’s purpose among the nations.</p>
-        <div className="footer-links"><a href="#about">About</a><a href="#course">Course</a><a href="#classes">Classes</a><a href="#classes">Contact</a></div>
+        <div className="footer-links"><a href={`#${sectionId("about")}`}>About</a><a href={`#${sectionId("course")}`}>Course</a><a href={`#${sectionId("classes")}`}>Classes</a><a href={`#${sectionId("classes")}`}>Contact</a></div>
         <p className="footer-note">Concept mockup · Content subject to ministry approval</p>
       </footer>
-    </main>
+    </>
   );
+
+  if (embedded) {
+    return (
+      <section className={`site-mock site-${concept} embedded-concept`} id={data.anchor}>
+        {content}
+      </section>
+    );
+  }
+
+  return <main className={`site-mock site-${concept}`}>{content}</main>;
 }
