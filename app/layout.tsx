@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ??
-      "https://vision-school-international-concepts.openai.site",
+      "https://vision-school-international-concepts.chris-jhuapl.chatgpt.site",
   ),
   title: "Vision School International — Design Concepts",
   description: "Four website directions for Vision School International.",
