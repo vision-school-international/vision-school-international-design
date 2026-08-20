@@ -17,25 +17,25 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL ??
       "https://vision-school-international-concepts.chris-jhuapl.chatgpt.site",
   ),
-  title: "Vision School International — Design Concepts",
-  description: "Four website directions for Vision School International.",
+  title: "Vision School International — Refined Design Concepts",
+  description: "Two refined, long-scroll website directions for Vision School International.",
   openGraph: {
-    title: "Vision School International — Design Concepts",
-    description: "Four directions. One global calling.",
+    title: "Vision School International — Refined Design Concepts",
+    description: "Two refined directions. One clear story.",
     type: "website",
     images: [
       {
         url: "/og.png",
         width: 1734,
         height: 900,
-        alt: "Vision School International — Four directions. One global calling.",
+        alt: "Vision School International — Two refined website directions.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vision School International — Design Concepts",
-    description: "Four directions. One global calling.",
+    title: "Vision School International — Refined Design Concepts",
+    description: "Two refined directions. One clear story.",
     images: ["/og.png"],
   },
 };

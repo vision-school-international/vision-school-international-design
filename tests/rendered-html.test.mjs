@@ -22,31 +22,31 @@ async function render(path = "/") {
   );
 }
 
-test("renders the four-concept selector", async () => {
+test("renders the two refined concept selector", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Vision School International — Design Concepts<\/title>/i);
-  assert.match(html, /Choose how the story begins\./);
-  assert.match(html, /The Global Classroom/);
-  assert.match(html, /Sent Together/);
-  assert.match(html, /Every Nation/);
-  assert.match(html, /The Way Forward/);
-  assert.equal((html.match(/<button/g) ?? []).length, 5);
+  assert.match(html, /<title>Vision School International — Refined Design Concepts<\/title>/i);
+  assert.match(html, /One clear story\./);
+  assert.match(html, /The Living Story/);
+  assert.match(html, /The Open Horizon/);
+  assert.match(html, /Long-scroll storytelling/);
+  assert.match(html, /Find a Class × 3/);
+  assert.equal((html.match(/<button/g) ?? []).length, 3);
   assert.doesNotMatch(html, /href="\/concepts\//);
   assert.doesNotMatch(html, /Your site is taking shape|Building your site/);
 });
 
-const concepts = [
+const legacyConcepts = [
   ["/concepts/global-classroom", "See the story. Find your place in it."],
   ["/concepts/sent-together", "Formed in community. Sent to the nations."],
   ["/concepts/every-nation", "Your generation. Every nation."],
   ["/concepts/way-forward", "The world is waiting. Take the next step."],
 ];
 
-for (const [path, headline] of concepts) {
+for (const [path, headline] of legacyConcepts) {
   test(`renders ${path}`, async () => {
     const response = await render(path);
     assert.equal(response.status, 200);

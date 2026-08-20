@@ -1,122 +1,110 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ConceptPage, type ConceptKey } from "./concepts/ConceptPage";
+import { RefinedConcept, type RefinedConceptKey } from "./RefinedConcept";
 
 const concepts = [
   {
+    key: "story" as RefinedConceptKey,
     number: "01",
-    name: "The Global Classroom",
-    note: "Editorial · trusted · international",
+    name: "The Living Story",
+    note: "Closest to Perspectives · editorial · trusted",
+    description: "An expansive, story-led homepage with geometric photography, deep evergreen, amber, and generous white space.",
     image: "/images/community-city.jpg",
-    href: "#concept-global",
-    key: "global" as ConceptKey,
-    color: "#143d3a",
+    color: "#173f3b",
   },
   {
+    key: "horizon" as RefinedConceptKey,
     number: "02",
-    name: "Sent Together",
-    note: "Warm · communal · story-led",
-    image: "/images/community-table.jpg",
-    href: "#concept-together",
-    key: "together" as ConceptKey,
-    color: "#b54f2a",
-  },
-  {
-    number: "03",
-    name: "Every Nation",
-    note: "Bold · youthful · action-first",
-    image: "/images/youth-gathering.jpg",
-    href: "#concept-nations",
-    key: "nations" as ConceptKey,
-    color: "#29265c",
-  },
-  {
-    number: "04",
-    name: "The Way Forward",
-    note: "Quiet · cinematic · premium",
+    name: "The Open Horizon",
+    note: "Lighter · contemporary · quietly energetic",
+    description: "A bright international direction with outlined type, panoramic imagery, clear course structure, and restrained color.",
     image: "/images/mountain-sunrise.jpg",
-    href: "#concept-forward",
-    key: "forward" as ConceptKey,
-    color: "#152c44",
+    color: "#315b73",
   },
 ];
 
 export default function Home() {
-  const [selectedConcept, setSelectedConcept] = useState<ConceptKey | null>(null);
+  const [selected, setSelected] = useState<RefinedConceptKey | null>(null);
 
   useEffect(() => {
-    if (!selectedConcept) return;
-    const concept = concepts.find((item) => item.key === selectedConcept);
-    requestAnimationFrame(() => {
-      document.getElementById(concept?.href.slice(1) ?? "")?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    });
-  }, [selectedConcept]);
+    const selectFromHash = () => {
+      const concept = window.location.hash.replace("#", "");
+      if (concept === "story" || concept === "horizon") setSelected(concept);
+    };
+    window.addEventListener("hashchange", selectFromHash);
+    const initialSelection = window.setTimeout(selectFromHash, 0);
+    return () => {
+      window.clearTimeout(initialSelection);
+      window.removeEventListener("hashchange", selectFromHash);
+    };
+  }, []);
 
-  const showConceptMenu = () => {
-    setSelectedConcept(null);
+  useEffect(() => {
+    if (!selected) return;
+    window.history.replaceState(null, "", `#${selected}`);
+    requestAnimationFrame(() => {
+      document.getElementById(`concept-${selected}`)?.scrollIntoView({ behavior: "smooth" });
+    });
+  }, [selected]);
+
+  const showMenu = () => {
+    setSelected(null);
+    window.history.replaceState(null, "", window.location.pathname);
     requestAnimationFrame(() => {
       document.getElementById("concept-menu")?.scrollIntoView({ behavior: "smooth" });
     });
   };
 
   return (
-    <main className="selector-shell">
-      <header className="selector-header" id="concept-menu">
-        <button className="selector-brand" type="button" onClick={showConceptMenu} aria-label="Show all Vision School International concepts">
-          <span className="brand-mark">VS</span>
+    <main className="review-shell">
+      <header className="review-header" id="concept-menu">
+        <button className="review-brand" type="button" onClick={showMenu} aria-label="Show both Vision School design concepts">
+          <span className="review-mark">VS</span>
           <span>Vision School International</span>
         </button>
-        <span className="selector-tag">Design study · August 2026</span>
+        <span className="review-round">Design review · Round 02</span>
       </header>
 
-      <section className="selector-intro">
-        <p className="eyebrow">Four directions. One global calling.</p>
-        <h1>Choose how the story begins.</h1>
-        <p className="selector-lede">
-          Each concept follows the same clear path—understand the vision, explore the course,
-          find a class, and take the next step—through a distinct visual personality.
+      <section className="review-intro">
+        <p className="review-kicker">Two refined directions</p>
+        <h1>One clear story.<br />Two ways to tell it.</h1>
+        <p>
+          Both options follow the feedback from the August 20 review: brighter, more spacious,
+          more like Perspectives, welcoming across generations, and focused on finding a class.
         </p>
       </section>
 
-      <section className="concept-grid" aria-label="Website design concepts">
+      <section className="review-grid" aria-label="Refined Vision School website concepts">
         {concepts.map((concept) => (
           <button
+            className="review-card"
+            key={concept.key}
             type="button"
-            className="concept-card"
-            key={concept.number}
-            onClick={() => setSelectedConcept(concept.key)}
-            style={{ "--concept-color": concept.color } as React.CSSProperties}
+            onClick={() => setSelected(concept.key)}
+            style={{ "--review-color": concept.color } as React.CSSProperties}
           >
-            <div className="concept-image" style={{ backgroundImage: `url(${concept.image})` }}>
-              <span className="concept-number">{concept.number}</span>
-              <span className="concept-open">Open concept <span aria-hidden="true">↗</span></span>
+            <div className="review-card-image" style={{ backgroundImage: `url(${concept.image})` }}>
+              <span>{concept.number}</span>
+              <b>View full concept <span aria-hidden="true">↘</span></b>
             </div>
-            <div className="concept-copy">
-              <h2>{concept.name}</h2>
+            <div className="review-card-copy">
               <p>{concept.note}</p>
+              <h2>{concept.name}</h2>
+              <span>{concept.description}</span>
             </div>
           </button>
         ))}
       </section>
 
-      <footer className="selector-footer">
-        <p>Inspired by the clarity and confidence of Perspectives—designed as a distinct home for Vision School.</p>
-        <p>Round 01 · For internal review</p>
-      </footer>
-
-      <div className="embedded-concepts">
-        {selectedConcept ? (
-          <ConceptPage
-            concept={selectedConcept}
-            embedded
-            onSelect={(concept) => concept ? setSelectedConcept(concept) : showConceptMenu()}
-          />
-        ) : null}
+      <div className="review-principles" aria-label="Shared design principles">
+        <span>Long-scroll storytelling</span>
+        <span>Light and credible</span>
+        <span>Find a Class × 3</span>
+        <span>All-age audience</span>
       </div>
+
+      {selected ? <RefinedConcept concept={selected} onBack={showMenu} onSwitch={setSelected} /> : null}
     </main>
   );
 }
