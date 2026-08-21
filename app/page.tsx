@@ -9,18 +9,18 @@ const concepts = [
     number: "01",
     name: "The Living Story",
     note: "Closest to Perspectives · editorial · trusted",
-    description: "An expansive, story-led homepage with geometric photography, deep evergreen, amber, and generous white space.",
+    description: "A focused, story-led homepage with deep navy, crisp blue accents, strong photography, and generous white space.",
     image: "/images/community-city.jpg",
-    color: "#173f3b",
+    color: "#173b59",
   },
   {
     key: "horizon" as RefinedConceptKey,
     number: "02",
     name: "The Open Horizon",
     note: "Lighter · contemporary · quietly energetic",
-    description: "A bright international direction with outlined type, panoramic imagery, clear course structure, and restrained color.",
+    description: "A bright international direction with panoramic imagery, clear course structure, cool blue tints, and restrained detail.",
     image: "/images/mountain-sunrise.jpg",
-    color: "#315b73",
+    color: "#3c7397",
   },
 ];
 

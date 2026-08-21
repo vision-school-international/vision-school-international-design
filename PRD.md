@@ -2,8 +2,8 @@
 
 **Document type:** Product Requirements Document  
 **Status:** Draft for ministry, product, design, and engineering review  
-**Version:** 1.0  
-**Date:** August 20, 2026  
+**Version:** 1.1
+**Date:** August 21, 2026
 **Primary launch:** Public website and current registration handoff  
 **Long-term product:** Secure global operations platform  
 
@@ -31,6 +31,7 @@ This PRD combines:
 - The August 20, 2026 design-feedback recording.
 - Direct visual review of Perspectives.org and CircuitRiders.com.
 - The Seattle Haystack / Vision School Instagram reference shown during the feedback recording.
+- Current public program information from INTERCP International, the Korean mission organization from which Vision School originated, including its Vision School and What We Do pages.
 
 Terms in this document use the following confidence labels:
 
@@ -138,7 +139,7 @@ Create the trusted global home for Vision School: one public place where people 
 - A continuous, generous, long-scroll homepage.
 - A bright, respectable, cross-generational tone.
 - Strong visual hierarchy, oversized editorial headings, and deliberate whitespace.
-- Complementary accent color, especially a restrained orange or coral.
+- A clean navy, cobalt, sky-blue, and cool-white visual system.
 - A prominent testimonial or participant story.
 - The phrase **“More than information. An invitation.”**
 - A **Find a Class** action in the opening, middle, and closing portions of the page.
@@ -148,6 +149,7 @@ Create the trusted global home for Vision School: one public place where people 
 ### 8.2 Change
 
 - Tune the palette to an approved Vision School system.
+- Remove crowded photo collages, overlapping captions, and competing diagonal shapes; favor a disciplined grid, straight image edges, and one strong visual gesture at a time.
 - Make the class journey more central than general inspiration.
 - Use a consistent spacing rhythm across sections and breakpoints.
 - Replace all illustrative class listings, statistics, claims, and testimonials before production.
@@ -181,6 +183,18 @@ What to avoid copying:
 
 - Exact colors, section copy, logo treatment, shapes, photographs, and proprietary assets.
 - Any wording that could confuse Vision School with the Perspectives course or organization.
+
+#### INTERCP International — program-content source
+
+Use the organization’s current public Vision School information as the starting point for preview copy and content validation:
+
+- Vision School is described as an 11-week program meeting once per week.
+- Its weekly rhythm includes worship, lectures, prayer, small groups, and fellowship.
+- It is intended for people who want to discover God’s heart and vision for the world, with a particular focus on unreached peoples.
+- Publicly listed topics include the global mission landscape, world mission history, understanding Islam, spiritual warfare and intercessory prayer, the times, the 10/40 Window, and mission spirit.
+- Current public listings mention Fall 2026 registration for the United States and Canada.
+
+All final wording, curriculum groupings, dates, locations, registration links, statistics, and testimonials still require Vision School International owner approval before launch. Avoid publishing internal or region-specific INTERCP claims as global Vision School claims without verification.
 
 #### CircuitRiders.com — limited secondary reference
 
@@ -225,7 +239,7 @@ Limit:
 ### Homepage sequence
 
 1. Global purpose statement and primary Find a Class action.
-2. Concise explanation of Vision School as a course, community, and movement.
+2. Concise explanation of Vision School as an 11-week journey of worship, teaching, prayer, small groups, and fellowship.
 3. Why the course matters, supported by approved photography or footage.
 4. Mid-page Find a Class invitation.
 5. Course structure and learning outcomes.

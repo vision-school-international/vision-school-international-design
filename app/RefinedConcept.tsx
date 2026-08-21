@@ -5,47 +5,47 @@ const conceptData = {
     number: "01",
     name: "The Living Story",
     kicker: "God's heart · Every nation · Your next step",
-    headline: <>Discover God&apos;s heart.<br /><em>Find your place</em> in His story.</>,
-    subhead: "Vision School is an invitation to see God’s global purpose clearly—and live with faithful purpose wherever He sends you.",
+    headline: <>Discover God&apos;s heart<br />for the world.<br /><em>Find your place.</em></>,
+    subhead: "An 11-week training journey for believers who want to discover God’s heart for unreached peoples and align their lives with His purposes.",
     heroImages: ["/images/community-city.jpg", "/images/community-table.jpg", "/images/youth-gathering.jpg"],
     heroAlt: ["A diverse community learning together", "Students sharing a meal and conversation", "A joyful gathering of young adults"],
-    caption: "A global course. A local community. A lifetime of purpose.",
-    courseTitle: <>Four perspectives.<br />One unfolding story.</>,
-    storyTitle: <>Information can fill a page.<br /><em>Vision changes a life.</em></>,
+    caption: "Worship. Teaching. Prayer. Community. A clearer vision for the world.",
+    courseTitle: <>Eleven weeks.<br />One awakened vision.</>,
+    storyTitle: <>God has a purpose for the world.<br /><em>He invites His people into it.</em></>,
     switchTo: "horizon" as RefinedConceptKey,
   },
   horizon: {
     number: "02",
     name: "The Open Horizon",
     kicker: "Learn deeply · Live faithfully · Go together",
-    headline: <>See the world differently.<br /><em>Live on purpose.</em></>,
-    subhead: "A course and community helping ordinary believers understand the nations, discern their role, and take a meaningful next step.",
+    headline: <>See the world<br />differently.<br /><em>Live on purpose.</em></>,
+    subhead: "A weekly rhythm of worship, lectures, prayer, small groups, and fellowship that opens our eyes to what God is doing around the world.",
     heroImages: ["/images/mountain-sunrise.jpg", "/images/youth-gathering.jpg", "/images/community-city.jpg"],
     heroAlt: ["A wide mountain horizon at sunrise", "Young adults celebrating together", "Friends gathered in a city"],
-    caption: "The story is global. Your next step can begin right where you are.",
-    courseTitle: <>A clear path from<br />learning to living.</>,
-    storyTitle: <>The world becomes more than a map.<br /><em>It becomes your neighbor.</em></>,
+    caption: "Discover God’s heart for the nations—and the faithful response He is shaping in you.",
+    courseTitle: <>Worship. Learn. Pray.<br />See the world anew.</>,
+    storyTitle: <>Align your thinking, plans, and dreams.<br /><em>Make room for God’s vision.</em></>,
     switchTo: "story" as RefinedConceptKey,
   },
 } as const;
 
 const foundations = [
-  ["01", "A course", "A guided journey through the biblical, historical, cultural, and strategic dimensions of God’s global purpose."],
-  ["02", "A community", "A place to learn alongside believers, missionaries, teachers, and local leaders who are asking the same questions."],
-  ["03", "A movement", "A growing network of ordinary people choosing informed, prayerful, faithful participation among the nations."],
+  ["01", "Worship & prayer", "Gather each week to worship, pray, and grow in awareness of God’s heart for unreached peoples."],
+  ["02", "Mission teaching", "Learn from missionaries and ministry leaders about global mission, history, prayer, and the 10/40 Window."],
+  ["03", "Small-group community", "Process the journey through conversation, fellowship, and practical reflection with other believers."],
 ];
 
 const courseSections = [
-  ["01", "Biblical", "See the thread of God’s purpose for all peoples throughout Scripture."],
-  ["02", "Historical", "Discover how the global church has carried the gospel across generations."],
-  ["03", "Cultural", "Learn to cross cultures with humility, curiosity, and genuine love."],
-  ["04", "Strategic", "Discern practical ways to pray, welcome, send, support, and go."],
+  ["01", "The nations", "Explore today’s global mission landscape, unreached peoples, and the 10/40 Window."],
+  ["02", "Mission history", "See how God has worked through His people across generations and around the world."],
+  ["03", "Prayer & formation", "Grow through worship, spiritual formation, and intercessory prayer for the nations."],
+  ["04", "A faithful response", "Consider how your priorities, plans, and daily life can align with God’s purposes."],
 ];
 
 const classes = [
-  ["New York City", "In person", "Fall 2026"],
-  ["Toronto", "In person", "Fall 2026"],
-  ["Online", "North America", "Fall 2026"],
+  ["United States", "Vision School", "Fall 2026"],
+  ["Canada", "Vision School", "Fall 2026"],
+  ["Weekly program", "11 weeks", "September–November"],
 ];
 
 export function RefinedConcept({
@@ -92,7 +92,7 @@ export function RefinedConcept({
           </div>
         </div>
         <div className="refined-hero-images" aria-label="Vision School community photographs">
-          {data.heroImages.map((image, index) => (
+          {data.heroImages.slice(0, 2).map((image, index) => (
             <figure key={image} className={`hero-image hero-image-${index + 1}`}>
               <div
                 className="hero-photo"
@@ -107,9 +107,9 @@ export function RefinedConcept({
       </section>
 
       <div className="refined-proof" aria-label="Vision School summary">
-        <span>One course</span><i />
-        <span>Four perspectives</span><i />
-        <span>Global community</span>
+        <span>Eleven weeks</span><i />
+        <span>Worship + teaching</span><i />
+        <span>Prayer + community</span>
       </div>
 
       <section className="refined-about" id={id("about")}>
@@ -118,8 +118,8 @@ export function RefinedConcept({
           <h2>More than information.<br /><em>An invitation.</em></h2>
         </div>
         <p className="refined-section-lede">
-          Vision School helps believers encounter the whole story of God’s work among the nations,
-          understand the world with greater wisdom, and discover a faithful response.
+          Vision School is for anyone who wants to discover God’s heart and vision for the world.
+          The program combines worship, lectures, prayer, small groups, and fellowship in one shared journey.
         </p>
         <div className="foundation-grid">
           {foundations.map(([number, title, body]) => (
@@ -138,8 +138,8 @@ export function RefinedConcept({
           <p className="refined-kicker">Why take the course?</p>
           <h2>{data.storyTitle}</h2>
           <p>
-            Move beyond disconnected facts. Meet people, stories, and ideas that reshape how you pray,
-            welcome, give, serve, and go—at home and across cultures.
+            Learn what God is doing among the nations, encounter His heart for unreached peoples,
+            and consider how your thinking, plans, and dreams can align with His purposes.
           </p>
           <a className="refined-text-link" href={`#${id("course")}`}>Explore the course <span aria-hidden="true">→</span></a>
         </div>
@@ -156,9 +156,9 @@ export function RefinedConcept({
           <p className="refined-kicker">Inside Vision School</p>
           <h2>{data.courseTitle}</h2>
           <div className="course-stat-row">
-            <p><strong>1</strong><span>integrated course</span></p>
-            <p><strong>4</strong><span>perspectives</span></p>
-            <p><strong>15</strong><span>guided sessions</span></p>
+            <p><strong>11</strong><span>weekly sessions</span></p>
+            <p><strong>1×</strong><span>each week</span></p>
+            <p><strong>All</strong><span>believers welcome</span></p>
           </div>
         </div>
         <div className="course-card-grid">
@@ -177,7 +177,7 @@ export function RefinedConcept({
         <div className="classes-heading">
           <p className="refined-kicker">Your next step</p>
           <h2>Find your class.</h2>
-          <p>Illustrative listings for concept review. Approved locations, dates, and Church Center registration links will replace these examples.</p>
+          <p>Sample preview copy based on current INTERCP International program details. Final locations, dates, and registration links will be confirmed before launch.</p>
         </div>
         <div className="refined-class-grid">
           {classes.map(([place, format, term], index) => (
@@ -196,8 +196,8 @@ export function RefinedConcept({
         <div className="testimonial-photo" role="img" aria-label="A Vision School participant in conversation" />
         <blockquote>
           <span>“</span>
-          <p>Vision School gave me more than answers. It gave me a clearer picture of God’s heart—and a faithful next step.</p>
-          <footer>Sample story · Replace with an approved participant testimonial</footer>
+          <p>Vision School changed how I saw myself, Christian life, and the times we are living in.</p>
+          <footer>Participant story adapted from INTERCP International · Final approval required</footer>
         </blockquote>
       </section>
 
@@ -212,7 +212,7 @@ export function RefinedConcept({
           <span className="refined-brand-symbol"><i />V</span>
           <span>Vision School <small>International</small></span>
         </div>
-        <p>A global learning community equipping believers to understand and participate in God’s purpose among the nations.</p>
+        <p>An 11-week training journey helping believers discover God’s heart for unreached peoples and respond with faith.</p>
         <nav aria-label="Footer navigation"><a href={`#${id("about")}`}>About</a><a href={`#${id("course")}`}>Course</a><a href={`#${id("classes")}`}>Classes</a><a href={`#${id("stories")}`}>Stories</a></nav>
         <small>Concept mockup · All claims, data, and media subject to ministry approval</small>
       </footer>
