@@ -154,6 +154,9 @@ Create the trusted global home for Vision School: one public place where people 
 - Use a consistent spacing rhythm across sections and breakpoints.
 - Replace all illustrative class listings, statistics, claims, and testimonials before production.
 - Use approved Vision School footage for a montage only if it remains readable, accessible, and light enough for the main audience.
+- Build the U.S. image library around authentic, multiethnic and multigenerational North American participation, including Black, Latino, Asian, white, African, and other diaspora communities across the overall experience without tokenism.
+- Reuse INTERCP photography selectively when the activity clearly matches the page context, such as Vision School learning, worship, prayer, small groups, fellowship, or an origin/history story. Do not use an attractive travel or mission-field image to imply a class experience it does not show.
+- Confirm image ownership, participant releases, regional publishing permissions, and appropriate alt text before production, even when a photograph comes from an affiliated organization’s public website.
 
 ### 8.3 Reject for the main site
 

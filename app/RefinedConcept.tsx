@@ -7,11 +7,12 @@ const conceptData = {
     kicker: "God's heart · Every nation · Your next step",
     headline: <>Discover God&apos;s heart<br />for the world.<br /><em>Find your place.</em></>,
     subhead: "An 11-week training journey for believers who want to discover God’s heart for unreached peoples and align their lives with His purposes.",
-    heroImages: ["/images/community-city.jpg", "/images/community-table.jpg", "/images/youth-gathering.jpg"],
-    heroAlt: ["A diverse community learning together", "Students sharing a meal and conversation", "A joyful gathering of young adults"],
+    heroImages: ["/images/community-city.jpg", "/images/intercp-young-adults.webp"],
+    heroAlt: ["A diverse community learning together", "A diverse group of young adults gathered for worship and prayer"],
     caption: "Worship. Teaching. Prayer. Community. A clearer vision for the world.",
     courseTitle: <>Eleven weeks.<br />One awakened vision.</>,
     storyTitle: <>God has a purpose for the world.<br /><em>He invites His people into it.</em></>,
+    storyAlt: "A multiethnic congregation worshiping together at Mission Camp",
     switchTo: "horizon" as RefinedConceptKey,
   },
   horizon: {
@@ -20,11 +21,12 @@ const conceptData = {
     kicker: "Learn deeply · Live faithfully · Go together",
     headline: <>See the world<br />differently.<br /><em>Live on purpose.</em></>,
     subhead: "A weekly rhythm of worship, lectures, prayer, small groups, and fellowship that opens our eyes to what God is doing around the world.",
-    heroImages: ["/images/mountain-sunrise.jpg", "/images/youth-gathering.jpg", "/images/community-city.jpg"],
-    heroAlt: ["A wide mountain horizon at sunrise", "Young adults celebrating together", "Friends gathered in a city"],
+    heroImages: ["/images/community-table.jpg", "/images/youth-gathering.jpg"],
+    heroAlt: ["Students sharing a meal and conversation", "A joyful gathering of young adults"],
     caption: "Discover God’s heart for the nations—and the faithful response He is shaping in you.",
     courseTitle: <>Worship. Learn. Pray.<br />See the world anew.</>,
     storyTitle: <>Align your thinking, plans, and dreams.<br /><em>Make room for God’s vision.</em></>,
+    storyAlt: "A diverse group of young adults gathered for worship and prayer",
     switchTo: "story" as RefinedConceptKey,
   },
 } as const;
@@ -133,7 +135,7 @@ export function RefinedConcept({
       </section>
 
       <section className="refined-story-split">
-        <div className="story-photo" role="img" aria-label="Vision School students learning together" />
+        <div className="story-photo" role="img" aria-label={data.storyAlt} />
         <div className="story-copy">
           <p className="refined-kicker">Why take the course?</p>
           <h2>{data.storyTitle}</h2>
