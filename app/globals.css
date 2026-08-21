@@ -299,6 +299,7 @@ a { color: inherit; text-decoration: none; }
 /* 01 — The Global Classroom */
 .site-global { --accent: #df6d49; --accent-2: #e1bb54; --mock-bg: #f5f1e6; --mock-ink: #153e3a; --mock-muted: #5d6d67; --mock-card: #fbf9f1; }
 .site-global .hero-visual { margin: 34px 0; border-radius: 220px 220px 12px 12px; }
+.site-global .proof-strip { position: relative; z-index: 2; margin-top: -34px; }
 .site-global .hero-copy::before { display: block; width: 66px; height: 1px; margin-bottom: 36px; background: var(--accent); content: ""; }
 .site-global .course-photo { clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%); }
 
