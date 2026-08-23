@@ -64,5 +64,7 @@ different visual treatments into a generic abstraction.
 
 Before handoff, inspect the diff and run the relevant build, test, lint, and
 type checks. Report exact files changed and distinguish verified facts from
-inferences. See [AGENTS.md](./AGENTS.md) for git/PR conventions and
+inferences. Follow the existing Git conventions, and apply the exact lowercase
+`design` PR label to any design-related contribution because preview deployment
+depends on it. See [AGENTS.md](./AGENTS.md) for git/PR conventions and
 [CLAUDE.md](./CLAUDE.md) for the execution checklist.

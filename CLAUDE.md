@@ -19,6 +19,9 @@ short so Claude sessions do not diverge from the shared guidance.
    result. `npm test` already invokes the build.
 5. Before handoff, inspect `git diff --check` and `git status --short`, and list
    the exact files changed.
+6. Follow the repository’s existing commit and PR conventions. For design work,
+   apply the exact lowercase `design` PR label before handoff; preview deployment
+   depends on that label.
 
 ## Do not introduce these regressions
 

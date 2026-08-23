@@ -81,7 +81,10 @@ new commit convention. Commit only when asked. For a PR, use the feature branch
 and compare against `origin/main`; include scope, verification commands and
 results, visual/regression notes, and any known unverified deployment fact.
 There is no checked-in PR template or CI workflow, so do not claim checks or
-release automation that you cannot find in the repository.
+release automation that you cannot find in the repository. Any design-related
+PR must carry the exact lowercase `design` label; this label is required for
+the preview deployment workflow. Verify the label is present on the PR before
+handoff.
 
 Before handoff, report exact files changed, checks run and their results, and
 anything that remains unverified.
