@@ -1,17 +1,33 @@
 # Vision School International Website
 
-An interactive component review gallery for the new Vision School International website. The opening page presents nine shared section types, each with the six available visual directions for comparison.
+An internal component review gallery for the Vision School International website. It presents nine page section types, each with six concepts for comparison.
 
-## Design directions
+## Review model
 
-- **The Living Story** — editorial, trusted, story-led
-- **The Open Horizon** — lighter, contemporary, quietly energetic
-- **The Global Classroom** — editorial, trusted, international
-- **Sent Together** — warm, communal, story-led
-- **Every Nation** — bold, youthful, action-first
-- **The Way Forward** — quiet, cinematic, premium
+Use the section cards to jump to a component. Each component shows all six concepts at full width so designers and testers can compare treatments without switching between whole-page previews.
 
-The concepts are informed by the clarity and conversion path of [Perspectives](https://perspectives.org/) and current INTERCP International program context while establishing an original visual identity for Vision School International.
+## Concepts
+
+- **Concept 1 — Editorial**
+- **Concept 2 — Contemporary**
+- **Concept 3 — International**
+- **Concept 4 — Community**
+- **Concept 5 — Bold**
+- **Concept 6 — Cinematic**
+
+These are review labels, not final product names.
+
+## Section types
+
+- **Navigation** — Helps users move between key pages and reach class information.
+- **Hero / introduction** — Introduces the program and gives the user a clear first action.
+- **Proof / key facts** — Summarizes important facts at a glance.
+- **About / value proposition** — Explains what the program is, who it is for, and why it matters.
+- **Course / curriculum** — Shows what users will learn and what participation involves.
+- **Class finder** — Helps users find a relevant class and take the next step.
+- **Stories / testimonials** — Shows participant experience and outcomes.
+- **Calls to action** — Prompts the next action at decision points.
+- **Footer / utility navigation** — Provides final navigation, contact, and credibility information.
 
 ## Run locally
 

@@ -14,7 +14,7 @@ one-column gallery; `app/concepts/ConceptPage.tsx` and
 `app/RefinedConcept.tsx` render one requested section treatment at a time.
 
 Make the smallest change that satisfies the request. Preserve existing visual
-directions, renderer-specific markup, responsive CSS, illustrative-content
+concept treatments, renderer-specific markup, responsive CSS, illustrative-content
 labels, and hash navigation unless the task explicitly changes them. Do not
 silently “clean up” unrelated worktree changes.
 
@@ -40,8 +40,8 @@ read from the environment by `server/index.mjs`.
 ## Deployment and dependencies
 
 The only verified deployment instructions are the Dokploy settings in
-`README.md`: Railpack (Nixpacks also works), build `npm run build`, start
-`npm start`, port 3000. Do not invent a Cloudflare, Vercel, Netlify, Docker, or
+`README.md`: Railpack, build `npm run build`, start `npm start`, port 3000.
+Nixpacks is not verified. Do not invent a Cloudflare, Vercel, Netlify, Docker, or
 other deployment flow; no such repository mechanism is checked in. Deploy only
 when explicitly requested and only through the existing verified mechanism.
 

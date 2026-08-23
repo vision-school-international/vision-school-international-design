@@ -31,19 +31,20 @@ export default function Home() {
   return (
     <main className="review-shell">
       <header className="review-header" id="component-menu">
-        <a className="review-brand" href="#component-menu" aria-label="Show all Vision School component types">
+        <a className="review-brand" href="#component-menu" aria-label="Return to the section index">
           <span className="review-mark">VS</span>
           <span>Vision School International</span>
         </a>
-        <span className="review-round">Component review · Nine section types</span>
+        <span className="review-round">Component review · 9 sections · 6 concepts</span>
       </header>
 
       <section className="review-intro">
-        <p className="review-kicker">Nine section types · Six visual directions</p>
-        <h1>One shared system.<br />Many ways to shape it.</h1>
+        <p className="review-kicker">9 section types · 6 concepts</p>
+        <h1>Review each section separately.</h1>
         <p>
-          Review each part of the Vision School experience independently. Choose the strongest
-          treatment for every section while keeping the complete page journey clear and connected.
+          Compare six treatments for each part of the Vision School experience. Use the section
+          cards to jump to a component, then review each concept at full width. This gallery is
+          for design review and testing, not a final production page.
         </p>
       </section>
 
@@ -52,10 +53,10 @@ export default function Home() {
           <a className="component-index-card" key={section.key} href={`#${sectionId(section.key)}`} style={{ "--component-color": section.color } as React.CSSProperties}>
             <div className="component-index-image" style={{ backgroundImage: `url(${section.image})` }}>
               <span>{section.number}</span>
-              <b>View treatments <span aria-hidden="true">↘</span></b>
+              <b>Jump to section <span aria-hidden="true">↘</span></b>
             </div>
             <div className="component-index-copy">
-              <p>Section type</p>
+              <p>Component</p>
               <h2>{section.name}</h2>
               <span>{section.description}</span>
             </div>
@@ -65,16 +66,16 @@ export default function Home() {
 
       <div className="review-principles" aria-label="Review principles">
         <span>Compare by section</span>
-        <span>Six visual directions</span>
-        <span>One continuous page</span>
-        <span>Find a Class × 3</span>
+        <span>6 concepts per section</span>
+        <span>Full-width previews</span>
+        <span>Hash-linked navigation</span>
       </div>
 
       <div className="component-gallery">
         {sectionTypes.map((section) => (
           <section className="component-gallery-section" id={sectionId(section.key)} key={section.key}>
             <header className="component-gallery-heading">
-              <p className="review-kicker">{section.number} / 09 · Section type</p>
+              <p className="review-kicker">{section.number} / 09 · Component</p>
               <h2>{section.name}</h2>
               <p>{section.description}</p>
             </header>
@@ -83,7 +84,7 @@ export default function Home() {
                 <article className="component-variant" key={`${section.key}-${concept.key}`}>
                   <div className="component-variant-label" style={{ "--variant-color": concept.color } as React.CSSProperties}>
                     <span>{concept.name}</span>
-                    <span>{concept.kind === "refined" ? "Refined direction" : "Original direction"}</span>
+                    <span>{concept.kind === "refined" ? "Refined treatment" : "Original treatment"}</span>
                   </div>
                   <ConceptPreview concept={concept} section={section.key} />
                 </article>

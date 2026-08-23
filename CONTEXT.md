@@ -3,9 +3,9 @@
 ## What this repository is
 
 This is an internal design-review gallery for Vision School International. It
-shows nine shared section types—navigation, hero, proof, about/value
-proposition, course/curriculum, class finder, stories/testimonial, calls to
-action, and footer—against six visual directions. It is not a production
+shows nine shared section types—navigation, hero/introduction, proof/key facts,
+about/value proposition, course/curriculum, class finder, stories/testimonials,
+calls to action, and footer/utility navigation—against six concepts. It is not a production
 launch; `README.md` marks copy, locations, registration links, branding, and
 testimonials as subject to ministry approval.
 
@@ -48,8 +48,8 @@ Use the scripts in `package.json`: `npm run dev`, `npm run build`, `npm start`,
 `npm test`, and `npm run lint`. Use `npx tsc --noEmit` for the strict compiler
 check. Use `npm ci` when installing from the committed lockfile.
 
-`README.md` documents Dokploy as the deployment path: Railpack or Nixpacks,
-`npm run build`, `npm start`, port 3000. No checked-in cloud, container, or
+`README.md` documents Dokploy as the deployment path: Railpack,
+`npm run build`, `npm start`, port 3000. Nixpacks is not verified. No checked-in cloud, container, or
 other deployment configuration was found. If a deployment fact cannot be
 verified from those sources, say so rather than guessing.
 

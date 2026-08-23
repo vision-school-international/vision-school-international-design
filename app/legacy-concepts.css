@@ -105,14 +105,14 @@
 .footer-links { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; font-size: 13px; }
 .footer-note { grid-column: 1 / -1; padding-top: 28px; border-top: 1px solid color-mix(in srgb, var(--mock-ink) 15%, transparent); font-family: var(--font-geist-mono), monospace; font-size: 8px; letter-spacing: 0.12em; text-transform: uppercase; }
 
-/* 01 — The Global Classroom */
+/* Concept 3 — International */
 .site-global { --accent: #df6d49; --accent-2: #e1bb54; --mock-bg: #f5f1e6; --mock-ink: #153e3a; --mock-muted: #5d6d67; --mock-card: #fbf9f1; }
 .site-global .hero-visual { margin: 34px 0; border-radius: 220px 220px 12px 12px; }
 .site-global .proof-strip { position: relative; z-index: 2; margin-top: -34px; }
 .site-global .hero-copy::before { display: block; width: 66px; height: 1px; margin-bottom: 36px; background: var(--accent); content: ""; }
 .site-global .course-photo { clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%); }
 
-/* 02 — Sent Together */
+/* Concept 4 — Community */
 .site-together { --accent: #b64f2d; --accent-2: #e0a542; --mock-bg: #f3e7d5; --mock-ink: #3b352b; --mock-muted: #73695c; --mock-card: #fbf4e8; }
 .site-together .mock-logo-mark, .site-together .nav-cta { border-radius: 999px; }
 .site-together .mock-hero { grid-template-columns: 0.95fr 1.05fr; gap: 22px; min-height: 720px; border: 0; }
@@ -132,7 +132,7 @@
 .site-together .story-section { border-radius: 40px; }
 .site-together .final-cta .primary-action { border-radius: 999px; }
 
-/* 03 — Every Nation */
+/* Concept 5 — Bold */
 .site-nations { --accent: #ff5a45; --accent-2: #d4ff52; --mock-bg: #e9e4ff; --mock-ink: #262357; --mock-muted: #57527f; --mock-card: #f8f5ff; }
 .site-nations .mock-logo-mark { border-radius: 4px; background: var(--accent); box-shadow: 5px 5px 0 var(--accent-2); }
 .site-nations .nav-cta { border: 2px solid var(--mock-ink); background: var(--accent-2); color: var(--mock-ink); box-shadow: 5px 5px 0 var(--mock-ink); font-weight: 750; }
@@ -154,7 +154,7 @@
 .site-nations .story-section { width: 100%; max-width: none; background: var(--accent-2); color: var(--mock-ink); }
 .site-nations .story-section blockquote { font-family: var(--font-geist-sans), Arial, sans-serif; font-style: normal; font-weight: 850; text-transform: uppercase; }
 
-/* 04 — The Way Forward */
+/* Concept 6 — Cinematic */
 .site-forward { --accent: #ed8d70; --accent-2: #aeb8ff; --mock-bg: #0d1b2a; --mock-ink: #eef0f4; --mock-muted: #aab4c0; --mock-card: #14283b; }
 .site-forward .mock-nav { position: relative; z-index: 5; }
 .site-forward .mock-logo-mark { background: transparent; border: 1px solid color-mix(in srgb, var(--mock-ink) 60%, transparent); color: var(--mock-ink); }

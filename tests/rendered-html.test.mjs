@@ -34,18 +34,17 @@ test("bundles the component gallery content into the client", async () => {
     javascript.map((name) => readFile(new URL(`../dist/assets/${name}`, import.meta.url), "utf8")),
   )).join("\n");
 
-  assert.match(bundle, /One shared system\./);
-  assert.match(bundle, /Many ways to shape it\./);
-  assert.match(bundle, /Nine section types/);
+  assert.match(bundle, /Review each section separately\./);
+  assert.match(bundle, /9 section types/);
   assert.match(bundle, /Navigation/);
   assert.match(bundle, /Hero/);
   assert.match(bundle, /Class finder/);
   assert.match(bundle, /Calls to action/);
-  assert.match(bundle, /The Living Story/);
-  assert.match(bundle, /The Open Horizon/);
-  assert.match(bundle, /The Global Classroom/);
-  assert.match(bundle, /Sent Together/);
-  assert.match(bundle, /Every Nation/);
-  assert.match(bundle, /The Way Forward/);
+  assert.match(bundle, /Concept 1 — Editorial/);
+  assert.match(bundle, /Concept 2 — Contemporary/);
+  assert.match(bundle, /Concept 3 — International/);
+  assert.match(bundle, /Concept 4 — Community/);
+  assert.match(bundle, /Concept 5 — Bold/);
+  assert.match(bundle, /Concept 6 — Cinematic/);
   assert.match(bundle, /Compare by section/);
 });
