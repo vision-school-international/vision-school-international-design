@@ -200,7 +200,7 @@ export function RefinedConcept({
           <span>Vision School <small>International</small></span>
         </div>
         <p>An 11-week training journey helping believers discover God’s heart for unreached peoples and respond with faith.</p>
-        <nav aria-label="Footer navigation"><a href={`#${sectionId("about")}`}>About</a><a href={`#${sectionId("course")}`}>Course</a><a href={`#${sectionId("classes")}`}>Classes</a><a href={`#${sectionId("stories")}`}>Stories</a></nav>
+        <nav aria-label={`${getConceptName(concept)} footer navigation`}><a href={`#${sectionId("about")}`}>About</a><a href={`#${sectionId("course")}`}>Course</a><a href={`#${sectionId("classes")}`}>Classes</a><a href={`#${sectionId("stories")}`}>Stories</a></nav>
         <small>Concept mockup · All claims, data, and media subject to ministry approval</small>
       </footer>}
     </section>

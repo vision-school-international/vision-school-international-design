@@ -1,4 +1,4 @@
-import { sectionId, type ComponentSection, type ConceptKey } from "./componentCatalog";
+import { getConceptName, sectionId, type ComponentSection, type ConceptKey } from "./componentCatalog";
 
 const conceptData = {
   global: {
@@ -72,7 +72,7 @@ export function ConceptPage({
           <span className="mock-logo-mark">V</span>
           <span>Vision School <small>International</small></span>
         </a>
-        <nav aria-label="Primary navigation">
+        <nav aria-label={`${getConceptName(concept)} primary navigation`}>
           <a href={`#${sectionId("about")}`}>About</a>
           <a href={`#${sectionId("course")}`}>The Course</a>
           <a href={`#${sectionId("classes")}`}>Locations</a>

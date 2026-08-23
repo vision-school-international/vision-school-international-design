@@ -17,7 +17,10 @@ export default function Home() {
   useEffect(() => {
     const focusHash = () => {
       const target = document.getElementById(window.location.hash.slice(1));
-      if (target) requestAnimationFrame(() => target.scrollIntoView({ behavior: "smooth" }));
+      if (target) {
+        const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+        requestAnimationFrame(() => target.scrollIntoView({ behavior }));
+      }
     };
 
     focusHash();
