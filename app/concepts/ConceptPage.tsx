@@ -1,4 +1,5 @@
 import { getConceptName, sectionId, type ComponentSection, type ConceptKey } from "./componentCatalog";
+import { VideoGallery } from "../components/VideoGallery";
 
 const conceptData = {
   global: {
@@ -171,6 +172,8 @@ export function ConceptPage({
         </blockquote>
         <p>Sample student story · Replace with an approved testimonial</p>
       </section>}
+
+      {section === "videos" && concept === "global" && <VideoGallery variant="international" />}
 
       {section === "cta" && <section className="final-cta">
         <p className="mock-kicker">Ready when you are</p>

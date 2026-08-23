@@ -17,6 +17,10 @@ test("serves the component gallery shell", async () => {
 
   const html = await response.text();
   assert.match(html, /<title>Vision School International — Component Review Gallery<\/title>/i);
+  assert.match(html, /href="\/favicon\.ico"/i);
+  assert.match(html, /href="\/favicon\.svg"/i);
+  assert.match(html, /property="og:image" content="\/vision-school-og\.png"/i);
+  assert.match(html, /name="twitter:image" content="\/vision-school-og\.png"/i);
   assert.match(html, /id="root"/);
   assert.match(html, /<script type="module"/);
 });
@@ -34,18 +38,22 @@ test("bundles the component gallery content into the client", async () => {
     javascript.map((name) => readFile(new URL(`../dist/assets/${name}`, import.meta.url), "utf8")),
   )).join("\n");
 
-  assert.match(bundle, /One shared system\./);
-  assert.match(bundle, /Many ways to shape it\./);
-  assert.match(bundle, /Nine section types/);
+  assert.match(bundle, /Design concepts/);
   assert.match(bundle, /Navigation/);
   assert.match(bundle, /Hero/);
   assert.match(bundle, /Class finder/);
   assert.match(bundle, /Calls to action/);
-  assert.match(bundle, /The Living Story/);
-  assert.match(bundle, /The Open Horizon/);
-  assert.match(bundle, /The Global Classroom/);
-  assert.match(bundle, /Sent Together/);
-  assert.match(bundle, /Every Nation/);
-  assert.match(bundle, /The Way Forward/);
-  assert.match(bundle, /Compare by section/);
+  assert.match(bundle, /Video library/);
+  assert.match(bundle, /Mission camp videos/);
+  assert.match(bundle, /2026.*Shalom Jerusalem/);
+  assert.match(bundle, /North America Young Generation Mission Camp/);
+  assert.match(bundle, /ASEAN Mission Camp Sketch Video/);
+  assert.match(bundle, /Editorial/);
+  assert.match(bundle, /Contemporary/);
+  assert.match(bundle, /International/);
+  assert.match(bundle, /Community/);
+  assert.match(bundle, /Bold/);
+  assert.match(bundle, /Cinematic/);
+  assert.match(bundle, /Concept treatments/);
+  assert.match(bundle, /aria-selected/);
 });

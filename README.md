@@ -1,17 +1,34 @@
 # Vision School International Website
 
-An interactive component review gallery for the new Vision School International website. The opening page presents nine shared section types, each with the six available visual directions for comparison.
+An internal design review gallery for the Vision School International website. It organizes design concepts by website section.
 
-## Design directions
+## Review model
 
-- **The Living Story** — editorial, trusted, story-led
-- **The Open Horizon** — lighter, contemporary, quietly energetic
-- **The Global Classroom** — editorial, trusted, international
-- **Sent Together** — warm, communal, story-led
-- **Every Nation** — bold, youthful, action-first
-- **The Way Forward** — quiet, cinematic, premium
+A design comparison gallery: choose a website section, then choose a design concept to view at full width. Only the selected section and concept are rendered at a time.
 
-The concepts are informed by the clarity and conversion path of [Perspectives](https://perspectives.org/) and current INTERCP International program context while establishing an original visual identity for Vision School International.
+## Concepts
+
+- **Editorial**
+- **Contemporary**
+- **International**
+- **Community**
+- **Bold**
+- **Cinematic**
+
+These are review labels, not final product names.
+
+## Section types
+
+- **Navigation** — Helps users move between key pages and reach class information.
+- **Hero / introduction** — Introduces the program and gives the user a clear first action.
+- **Proof / key facts** — Summarizes important facts at a glance.
+- **About / value proposition** — Explains what the program is, who it is for, and why it matters.
+- **Course / curriculum** — Shows what users will learn and what participation involves.
+- **Class finder** — Helps users find a relevant class and take the next step.
+- **Stories / testimonials** — Shows participant experience and outcomes.
+- **Video library** — Lets users browse and watch mission camp videos without leaving the page.
+- **Calls to action** — Prompts the next action at decision points.
+- **Footer / utility navigation** — Provides final navigation, contact, and credibility information.
 
 ## Run locally
 
@@ -30,17 +47,21 @@ npm start
 ```
 
 The frontend is a plain Vite React build in `dist/`. A small Hono server serves
-that directory, provides `/health`, and falls back to `index.html` for the
-concept routes. Use `npm test` for the production build and rendered-page checks.
+that directory, provides `/health`, and falls back to `index.html` for
+client-side gallery routes. Use `npm test` for the production build and
+rendered-page checks.
 
 ## Dokploy
 
-Create a Git application with:
+Create a Git application with the repository-verified settings:
 
-- Build type: Railpack (Nixpacks also works)
+- Build type: Railpack
 - Build command: `npm run build`
 - Start command: `npm start`
 - Port: `3000`
+
+Nixpacks has not been verified in this repository; do not treat it as an
+alternate deployment path without validating it separately.
 
 No Cloudflare, Wrangler, database, or runtime secrets are required.
 
