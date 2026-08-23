@@ -1,11 +1,15 @@
 # Vision School International Website
 
-An interactive design-selection suite for the new Vision School International website. The opening page presents two refined homepage directions shaped by design review feedback.
+An interactive design-selection suite for the new Vision School International website. The opening page presents six homepage directions: two refined Round 02 directions and the original four visual concepts.
 
 ## Design directions
 
 - **The Living Story** — editorial, trusted, story-led
 - **The Open Horizon** — lighter, contemporary, quietly energetic
+- **The Global Classroom** — editorial, trusted, international
+- **Sent Together** — warm, communal, story-led
+- **Every Nation** — bold, youthful, action-first
+- **The Way Forward** — quiet, cinematic, premium
 
 The concepts are informed by the clarity and conversion path of [Perspectives](https://perspectives.org/) and current INTERCP International program context while establishing an original visual identity for Vision School International.
 

@@ -35,7 +35,12 @@ test("bundles the refined design content into the client", async () => {
   )).join("\n");
 
   assert.match(bundle, /One clear story\./);
+  assert.match(bundle, /Six ways to tell it\./);
   assert.match(bundle, /The Living Story/);
   assert.match(bundle, /The Open Horizon/);
+  assert.match(bundle, /The Global Classroom/);
+  assert.match(bundle, /Sent Together/);
+  assert.match(bundle, /Every Nation/);
+  assert.match(bundle, /The Way Forward/);
   assert.match(bundle, /Long-scroll storytelling/);
 });
