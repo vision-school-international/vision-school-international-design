@@ -2,6 +2,8 @@
   --review-ink: #17354e;
   --review-paper: #f3f6f8;
   --review-line: #cad5de;
+  --font-geist-sans: Arial, sans-serif;
+  --font-geist-mono: "SFMono-Regular", Consolas, monospace;
 }
 
 * { box-sizing: border-box; }

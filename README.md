@@ -1,26 +1,44 @@
 # Vision School International Website
 
-An interactive design-selection suite for the new Vision School International website. The opening page presents four complete homepage directions that share the same content journey while exploring different visual personalities.
+An interactive design-selection suite for the new Vision School International website. The opening page presents two refined homepage directions shaped by design review feedback.
 
 ## Design directions
 
-- **The Global Classroom** — editorial, trusted, international
-- **Sent Together** — warm, communal, story-led
-- **Every Nation** — bold, youthful, action-first
-- **The Way Forward** — quiet, cinematic, premium
+- **The Living Story** — editorial, trusted, story-led
+- **The Open Horizon** — lighter, contemporary, quietly energetic
 
-The concepts are informed by the clarity and conversion path of [Perspectives](https://perspectives.org/) while establishing an original visual identity for Vision School International.
+The concepts are informed by the clarity and conversion path of [Perspectives](https://perspectives.org/) and current INTERCP International program context while establishing an original visual identity for Vision School International.
 
 ## Run locally
 
 Requires Node.js 22.13 or newer.
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
-Use `npm test` for the production build and rendered-page checks.
+Build and serve the production site with:
+
+```bash
+npm run build
+npm start
+```
+
+The frontend is a plain Vite React build in `dist/`. A small Hono server serves
+that directory, provides `/health`, and falls back to `index.html` for the
+concept routes. Use `npm test` for the production build and rendered-page checks.
+
+## Dokploy
+
+Create a Git application with:
+
+- Build type: Railpack (Nixpacks also works)
+- Build command: `npm run build`
+- Start command: `npm start`
+- Port: `3000`
+
+No Cloudflare, Wrangler, database, or runtime secrets are required.
 
 ## Review notes
 
