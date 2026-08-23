@@ -4,7 +4,7 @@ An internal design review gallery for the Vision School International website. I
 
 ## Review model
 
-A design comparison gallery: each website section is shown with its available design concepts at full width.
+A design comparison gallery: choose a website section, then choose a design concept to view at full width. Only the selected section and concept are rendered at a time.
 
 ## Concepts
 
@@ -26,6 +26,7 @@ These are review labels, not final product names.
 - **Course / curriculum** — Shows what users will learn and what participation involves.
 - **Class finder** — Helps users find a relevant class and take the next step.
 - **Stories / testimonials** — Shows participant experience and outcomes.
+- **Video library** — Lets users browse and watch mission camp videos without leaving the page.
 - **Calls to action** — Prompts the next action at decision points.
 - **Footer / utility navigation** — Provides final navigation, contact, and credibility information.
 

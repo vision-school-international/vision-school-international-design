@@ -34,16 +34,22 @@ test("bundles the component gallery content into the client", async () => {
     javascript.map((name) => readFile(new URL(`../dist/assets/${name}`, import.meta.url), "utf8")),
   )).join("\n");
 
-  assert.match(bundle, /Design concepts by website section/);
+  assert.match(bundle, /Design concepts/);
   assert.match(bundle, /Navigation/);
   assert.match(bundle, /Hero/);
   assert.match(bundle, /Class finder/);
   assert.match(bundle, /Calls to action/);
+  assert.match(bundle, /Video library/);
+  assert.match(bundle, /Mission camp videos/);
+  assert.match(bundle, /2026.*Shalom Jerusalem/);
+  assert.match(bundle, /North America Young Generation Mission Camp/);
+  assert.match(bundle, /ASEAN Mission Camp Sketch Video/);
   assert.match(bundle, /Editorial/);
   assert.match(bundle, /Contemporary/);
   assert.match(bundle, /International/);
   assert.match(bundle, /Community/);
   assert.match(bundle, /Bold/);
   assert.match(bundle, /Cinematic/);
-  assert.match(bundle, /Design review/);
+  assert.match(bundle, /Concept treatments/);
+  assert.match(bundle, /aria-selected/);
 });

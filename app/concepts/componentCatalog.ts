@@ -22,12 +22,24 @@ export const sectionTypes = [
   { key: "course", name: "Course / curriculum", description: "Shows what users will learn, how the program works, and what participation involves.", image: "/images/youth-gathering.jpg", color: "#29265c" },
   { key: "classes", name: "Class finder", description: "Helps users find a relevant class by location, format, or term and take the next step.", image: "/images/community-city.jpg", color: "#152c44" },
   { key: "stories", name: "Stories / testimonials", description: "Shows participant experience and outcomes through a testimonial or story.", image: "/images/intercp-mission-camp.webp", color: "#2f709e" },
+  { key: "videos", name: "Video library", description: "Helps users browse and watch mission camp videos without leaving the page.", image: "https://i.ytimg.com/vi/zelhy09kxp8/hqdefault.jpg", color: "#273478", conceptKeys: ["story", "horizon", "global"] },
   { key: "cta", name: "Calls to action", description: "Prompts the next action at decision points, such as finding a class or learning more.", image: "/images/community-table.jpg", color: "#b54f2a" },
   { key: "footer", name: "Footer / utility navigation", description: "Provides final navigation, contact and credibility information, and routes to important pages.", image: "/images/mountain-sunrise.jpg", color: "#173b59" },
 ] as const;
 
 export type ComponentSection = typeof sectionTypes[number]["key"];
 export const sectionId = (section: ComponentSection) => `section-${section}`;
+
+export const getConceptsForSection = (section: ComponentSection) => {
+  const sectionType = sectionTypes.find((entry) => entry.key === section);
+
+  if (!sectionType || !("conceptKeys" in sectionType)) {
+    return concepts;
+  }
+
+  const conceptKeys: readonly string[] = sectionType.conceptKeys;
+  return concepts.filter((concept) => conceptKeys.includes(concept.key));
+};
 
 export const getConceptName = (key: ConceptKey | RefinedConceptKey) =>
   concepts.find((concept) => concept.key === key)?.name ?? key;

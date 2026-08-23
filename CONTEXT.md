@@ -5,7 +5,7 @@
 This is an internal design-review gallery for Vision School International. It
 shows the shared section types—navigation, hero/introduction, proof/key facts,
 about/value proposition, course/curriculum, class finder, stories/testimonials,
-calls to action, and footer/utility navigation—against the available design concepts. It is not a production
+video library, calls to action, and footer/utility navigation—against the available design concepts. It is not a production
 launch; `README.md` marks copy, locations, registration links, branding, and
 testimonials as subject to ministry approval.
 
@@ -20,11 +20,15 @@ and falls back to `dist/index.html` for client-side routes. The server uses
 
 ## Component-gallery architecture
 
-- `app/page.tsx` owns the review shell, section-type cards, hash scrolling, and
-  the continuous gallery. Each section area maps the available design concepts to
-  isolated preview articles for the available design concepts.
+- `app/page.tsx` owns the review shell, section-type cards, hash navigation, and
+  the selected gallery. Clicking a section card mounts only that section area;
+  the concept selector then mounts one selected design treatment in its isolated
+  preview article.
 - `app/concepts/ConceptPage.tsx` owns the original/legacy visual treatments.
 - `app/RefinedConcept.tsx` owns the refined visual treatments.
+- `app/components/VideoGallery.tsx` owns the shared video data and single-player
+  interaction for the Editorial, Contemporary, and International video-library
+  treatments. `app/video-gallery.css` keeps those treatments scoped.
 - Both renderers receive a concept key and one `ComponentSection`, then render
   only that section. Their different markup and CSS are intentional comparison
   material, not accidental duplicate product components.
@@ -56,8 +60,9 @@ verified from those sources, say so rather than guessing.
 ## Maintenance rules
 
 Preserve existing visual treatments, responsive behavior, hash navigation,
-assets, and review disclaimers. Do not reintroduce whole-page concept cards,
-selection state, multi-column/squashed previews, or duplicate DOM IDs. Do not
+assets, and review disclaimers. Do not reintroduce whole-page concept cards or
+mount every section area or concept treatment at once. Keep the section and
+concept selection state, full-width previews, and unique outer anchor IDs. Do not
 invent new deployment targets or dependencies. Share metadata or contracts only
 when the change is explicitly approved and does not collapse intentionally
 different visual treatments into a generic abstraction.

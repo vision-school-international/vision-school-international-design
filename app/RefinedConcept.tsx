@@ -1,4 +1,5 @@
 import { getConceptName, sectionId, type ComponentSection, type RefinedConceptKey } from "./concepts/componentCatalog";
+import { VideoGallery } from "./components/VideoGallery";
 
 const conceptData = {
   story: {
@@ -187,6 +188,8 @@ export function RefinedConcept({
           <footer>Participant story adapted from INTERCP International · Final approval required</footer>
         </blockquote>
       </section>}
+
+      {section === "videos" && <VideoGallery variant={concept === "story" ? "editorial" : "contemporary"} />}
 
       {section === "cta" && <section className="refined-final-cta">
         <p className="refined-kicker">The invitation is open</p>

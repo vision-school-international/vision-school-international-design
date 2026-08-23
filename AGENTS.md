@@ -9,9 +9,11 @@ consistent when project guidance changes.
 This repository is an internal Vision School International component-review
 gallery, not the production ministry site. It is a Vite + React + TypeScript
 frontend with a small Hono server. Preserve the current component-gallery
-model: `app/page.tsx` owns the section-type index and one continuous,
-one-column gallery; `app/concepts/ConceptPage.tsx` and
+model: `app/page.tsx` owns the section-type index and renders one selected
+section and concept at a time; `app/concepts/ConceptPage.tsx` and
 `app/RefinedConcept.tsx` render one requested section treatment at a time.
+`app/components/VideoGallery.tsx` provides the isolated single-player video
+library used by its supported concepts.
 
 Make the smallest change that satisfies the request. Preserve existing visual
 concept treatments, renderer-specific markup, responsive CSS, illustrative-content
@@ -52,8 +54,13 @@ pass. Keep those files synchronized if an approved dependency change is made.
 
 ## Project-specific anti-patterns
 
-- Do not restore whole-page concept cards, concept selection state, or a
-  full-page preview flow; the review unit is a section type.
+- Do not restore whole-page concept cards or a full-page preview flow; the
+  review unit is a section type, and the section index selects which gallery
+  area is rendered.
+- Do not render every section gallery area at once. The selected section is
+  the only gallery area mounted so the review page stays focused and usable.
+- Do not render every concept treatment at once. The concept selector mounts
+  one full-width treatment so designers can review it at a normal page scale.
 - Do not change `.component-gallery-variants` back to a multi-column layout;
   variants intentionally stack one-by-one so designers can inspect a normal
   page-width treatment.
