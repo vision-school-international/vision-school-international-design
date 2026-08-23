@@ -10,13 +10,13 @@ async function render(path = "/") {
   });
 }
 
-test("serves the refined concept selector shell", async () => {
+test("serves the component gallery shell", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Vision School International — Refined Design Concepts<\/title>/i);
+  assert.match(html, /<title>Vision School International — Component Review Gallery<\/title>/i);
   assert.match(html, /id="root"/);
   assert.match(html, /<script type="module"/);
 });
@@ -27,20 +27,25 @@ test("responds to the health check", async () => {
   assert.equal(await response.text(), "ok");
 });
 
-test("bundles the refined design content into the client", async () => {
+test("bundles the component gallery content into the client", async () => {
   const assetNames = await readdir(new URL("../dist/assets/", import.meta.url));
   const javascript = assetNames.filter((name) => name.endsWith(".js"));
   const bundle = (await Promise.all(
     javascript.map((name) => readFile(new URL(`../dist/assets/${name}`, import.meta.url), "utf8")),
   )).join("\n");
 
-  assert.match(bundle, /One clear story\./);
-  assert.match(bundle, /Six ways to tell it\./);
+  assert.match(bundle, /One shared system\./);
+  assert.match(bundle, /Many ways to shape it\./);
+  assert.match(bundle, /Nine section types/);
+  assert.match(bundle, /Navigation/);
+  assert.match(bundle, /Hero/);
+  assert.match(bundle, /Class finder/);
+  assert.match(bundle, /Calls to action/);
   assert.match(bundle, /The Living Story/);
   assert.match(bundle, /The Open Horizon/);
   assert.match(bundle, /The Global Classroom/);
   assert.match(bundle, /Sent Together/);
   assert.match(bundle, /Every Nation/);
   assert.match(bundle, /The Way Forward/);
-  assert.match(bundle, /Long-scroll storytelling/);
+  assert.match(bundle, /Compare by section/);
 });
