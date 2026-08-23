@@ -1,5 +1,9 @@
 # Project context
 
+Read [RULES.md](./RULES.md) before making repository changes. For new or
+extended review components, follow
+[the repository component skill](./.agents/skills/create-review-component/SKILL.md).
+
 ## What this repository is
 
 This is an internal design-review gallery for Vision School International. It
@@ -12,8 +16,8 @@ testimonials as subject to ministry approval.
 ## Runtime path
 
 `index.html` mounts `src/main.tsx`. That entry point renders `app/page.tsx`
-with React Strict Mode and imports `app/legacy-concepts.css` plus
-`app/globals.css`. Vite builds the browser bundle to `dist/` according to
+with React Strict Mode and imports `app/legacy-concepts.css`,
+`app/video-gallery.css`, and `app/globals.css`. Vite builds the browser bundle to `dist/` according to
 `vite.config.ts`. `server/index.mjs` serves `dist/`, provides `GET /health`,
 and falls back to `dist/index.html` for client-side routes. The server uses
 `PORT` or 3000 and `HOST` or `0.0.0.0`.
@@ -72,4 +76,5 @@ type checks. Report exact files changed and distinguish verified facts from
 inferences. Follow the existing Git conventions, and apply the exact lowercase
 `design` PR label to any design-related contribution because preview deployment
 depends on it. See [AGENTS.md](./AGENTS.md) for git/PR conventions and
-[CLAUDE.md](./CLAUDE.md) for the execution checklist.
+[CLAUDE.md](./CLAUDE.md) for the execution checklist and [RULES.md](./RULES.md)
+for prohibited repository changes.

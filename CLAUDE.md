@@ -1,8 +1,11 @@
 # Claude project guidance
 
-Use [AGENTS.md](./AGENTS.md) as the governing repository instructions and
-[CONTEXT.md](./CONTEXT.md) as the architecture map. This file is intentionally
-short so Claude sessions do not diverge from the shared guidance.
+Read [RULES.md](./RULES.md) first. Use [AGENTS.md](./AGENTS.md) as the governing
+repository instructions and [CONTEXT.md](./CONTEXT.md) as the architecture map.
+For new or extended review components, follow
+[the repository component skill](./.agents/skills/create-review-component/SKILL.md).
+This file is intentionally short so Claude sessions do not diverge from the
+shared guidance.
 
 ## Working checklist
 

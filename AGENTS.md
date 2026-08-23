@@ -1,8 +1,10 @@
 # Agent instructions
 
-Read this file first, then [CONTEXT.md](./CONTEXT.md) for the architecture and
-[CLAUDE.md](./CLAUDE.md) for the short execution checklist. Keep all three files
-consistent when project guidance changes.
+Read [RULES.md](./RULES.md) first, then this file, [CONTEXT.md](./CONTEXT.md) for
+the architecture, and [CLAUDE.md](./CLAUDE.md) for the short execution
+checklist. Keep all four files consistent when project guidance changes. For
+new or extended review components, use
+[the repository component skill](./.agents/skills/create-review-component/SKILL.md).
 
 ## Project boundary
 
@@ -61,9 +63,8 @@ pass. Keep those files synchronized if an approved dependency change is made.
   the only gallery area mounted so the review page stays focused and usable.
 - Do not render every concept treatment at once. The concept selector mounts
   one full-width treatment so designers can review it at a normal page scale.
-- Do not change `.component-gallery-variants` back to a multi-column layout;
-  variants intentionally stack one-by-one so designers can inspect a normal
-  page-width treatment.
+- Do not use a multi-column layout for full treatment previews; the selected
+  concept renders alone so designers can inspect it at a normal page width.
 - Do not add document IDs inside isolated previews that can duplicate across
   the available concepts. Gallery anchor IDs belong to the outer section areas.
 - Do not merge the legacy and refined renderers into a generic visual

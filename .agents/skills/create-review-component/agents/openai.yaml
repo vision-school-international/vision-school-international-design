@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Review Components"
+  short_description: "Add isolated concepts without breaking the gallery"
+  default_prompt: "Use $create-review-component to add a section component that follows this repository’s catalog, renderer, styling, and verification patterns."
