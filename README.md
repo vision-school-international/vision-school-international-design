@@ -30,17 +30,21 @@ npm start
 ```
 
 The frontend is a plain Vite React build in `dist/`. A small Hono server serves
-that directory, provides `/health`, and falls back to `index.html` for the
-concept routes. Use `npm test` for the production build and rendered-page checks.
+that directory, provides `/health`, and falls back to `index.html` for
+client-side gallery routes. Use `npm test` for the production build and
+rendered-page checks.
 
 ## Dokploy
 
-Create a Git application with:
+Create a Git application with the repository-verified settings:
 
-- Build type: Railpack (Nixpacks also works)
+- Build type: Railpack
 - Build command: `npm run build`
 - Start command: `npm start`
 - Port: `3000`
+
+Nixpacks has not been verified in this repository; do not treat it as an
+alternate deployment path without validating it separately.
 
 No Cloudflare, Wrangler, database, or runtime secrets are required.
 
