@@ -1,6 +1,6 @@
 # Vision School International Website
 
-An interactive design-selection suite for the new Vision School International website. The opening page presents six homepage directions: two refined Round 02 directions and the original four visual concepts.
+An interactive component review gallery for the new Vision School International website. The opening page presents nine shared section types, each with the six available visual directions for comparison.
 
 ## Design directions
 

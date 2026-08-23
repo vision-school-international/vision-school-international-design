@@ -1,9 +1,7 @@
-export type RefinedConceptKey = "story" | "horizon";
+import { getConceptName, sectionId, type ComponentSection, type RefinedConceptKey } from "./concepts/componentCatalog";
 
 const conceptData = {
   story: {
-    number: "01",
-    name: "The Living Story",
     kicker: "God's heart · Every nation · Your next step",
     headline: <>Discover God&apos;s heart<br />for the world.<br /><em>Find your place.</em></>,
     subhead: "An 11-week training journey for believers who want to discover God’s heart for unreached peoples and align their lives with His purposes.",
@@ -13,11 +11,8 @@ const conceptData = {
     courseTitle: <>Eleven weeks.<br />One awakened vision.</>,
     storyTitle: <>God has a purpose for the world.<br /><em>He invites His people into it.</em></>,
     storyAlt: "A multiethnic congregation worshiping together at Mission Camp",
-    switchTo: "horizon" as RefinedConceptKey,
   },
   horizon: {
-    number: "02",
-    name: "The Open Horizon",
     kicker: "Learn deeply · Live faithfully · Go together",
     headline: <>See the world<br />differently.<br /><em>Live on purpose.</em></>,
     subhead: "A weekly rhythm of worship, lectures, prayer, small groups, and fellowship that opens our eyes to what God is doing around the world.",
@@ -27,7 +22,6 @@ const conceptData = {
     courseTitle: <>Worship. Learn. Pray.<br />See the world anew.</>,
     storyTitle: <>Align your thinking, plans, and dreams.<br /><em>Make room for God’s vision.</em></>,
     storyAlt: "A diverse group of young adults gathered for worship and prayer",
-    switchTo: "story" as RefinedConceptKey,
   },
 } as const;
 
@@ -52,45 +46,36 @@ const classes = [
 
 export function RefinedConcept({
   concept,
-  onBack,
-  onSwitch,
+  section,
 }: {
   concept: RefinedConceptKey;
-  onBack: () => void;
-  onSwitch: (concept: RefinedConceptKey) => void;
+  section: ComponentSection;
 }) {
   const data = conceptData[concept];
-  const id = (section: string) => `${concept}-${section}`;
 
   return (
-    <section className={`refined-site refined-${concept}`} id={`concept-${concept}`}>
-      <div className="concept-review-bar">
-        <button type="button" onClick={onBack}>← Both concepts</button>
-        <span>{data.number} / 02 · {data.name}</span>
-        <button type="button" onClick={() => onSwitch(data.switchTo)}>View the other option →</button>
-      </div>
-
-      <header className="refined-nav">
-        <button className="refined-brand" type="button" onClick={onBack} aria-label="Return to design choices">
+    <section className={`refined-site refined-${concept} component-preview`}>
+      {section === "navigation" && <header className="refined-nav">
+        <a className="refined-brand" href="#component-menu" aria-label="Show all Vision School component types">
           <span className="refined-brand-symbol"><i />V</span>
           <span>Vision School <small>International</small></span>
-        </button>
-        <nav aria-label={`${data.name} primary navigation`}>
-          <a href={`#${id("about")}`}>About</a>
-          <a href={`#${id("course")}`}>The Course</a>
-          <a href={`#${id("stories")}`}>Stories</a>
-          <a className="refined-nav-cta" href={`#${id("classes")}`}>Find a Class</a>
+        </a>
+        <nav aria-label={`${getConceptName(concept)} primary navigation`}>
+          <a href={`#${sectionId("about")}`}>About</a>
+          <a href={`#${sectionId("course")}`}>The Course</a>
+          <a href={`#${sectionId("stories")}`}>Stories</a>
+          <a className="refined-nav-cta" href={`#${sectionId("classes")}`}>Find a Class</a>
         </nav>
-      </header>
+      </header>}
 
-      <section className="refined-hero">
+      {section === "hero" && <section className="refined-hero">
         <div className="refined-hero-copy">
           <p className="refined-kicker">{data.kicker}</p>
           <h1>{data.headline}</h1>
           <p className="refined-lede">{data.subhead}</p>
           <div className="refined-actions">
-            <a className="refined-button" href={`#${id("classes")}`}>Find a Class <span aria-hidden="true">↗</span></a>
-            <a className="refined-text-link" href={`#${id("about")}`}>What is Vision School?</a>
+            <a className="refined-button" href={`#${sectionId("classes")}`}>Find a Class <span aria-hidden="true">↗</span></a>
+            <a className="refined-text-link" href={`#${sectionId("about")}`}>What is Vision School?</a>
           </div>
         </div>
         <div className="refined-hero-images" aria-label="Vision School community photographs">
@@ -106,15 +91,15 @@ export function RefinedConcept({
           ))}
           <p>{data.caption}</p>
         </div>
-      </section>
+      </section>}
 
-      <div className="refined-proof" aria-label="Vision School summary">
+      {section === "proof" && <div className="refined-proof" aria-label="Vision School summary">
         <span>Eleven weeks</span><i />
         <span>Worship + teaching</span><i />
         <span>Prayer + community</span>
-      </div>
+      </div>}
 
-      <section className="refined-about" id={id("about")}>
+      {section === "about" && <section className="refined-about">
         <div className="section-title-row">
           <p className="refined-kicker">What is Vision School?</p>
           <h2>More than information.<br /><em>An invitation.</em></h2>
@@ -132,9 +117,9 @@ export function RefinedConcept({
             </article>
           ))}
         </div>
-      </section>
+      </section>}
 
-      <section className="refined-story-split">
+      {section === "stories" && <section className="refined-story-split">
         <div className="story-photo" role="img" aria-label={data.storyAlt} />
         <div className="story-copy">
           <p className="refined-kicker">Why take the course?</p>
@@ -143,17 +128,17 @@ export function RefinedConcept({
             Learn what God is doing among the nations, encounter His heart for unreached peoples,
             and consider how your thinking, plans, and dreams can align with His purposes.
           </p>
-          <a className="refined-text-link" href={`#${id("course")}`}>Explore the course <span aria-hidden="true">→</span></a>
+          <a className="refined-text-link" href={`#${sectionId("course")}`}>Explore the course <span aria-hidden="true">→</span></a>
         </div>
-      </section>
+      </section>}
 
-      <section className="refined-mid-cta">
+      {section === "cta" && <section className="refined-mid-cta">
         <p className="refined-kicker">Ready to begin?</p>
         <h2>Find a Vision School class near you.</h2>
-        <a className="refined-button" href={`#${id("classes")}`}>Find a Class <span aria-hidden="true">↗</span></a>
-      </section>
+        <a className="refined-button" href={`#${sectionId("classes")}`}>Find a Class <span aria-hidden="true">↗</span></a>
+      </section>}
 
-      <section className="refined-course" id={id("course")}>
+      {section === "course" && <section className="refined-course">
         <div className="course-intro">
           <p className="refined-kicker">Inside Vision School</p>
           <h2>{data.courseTitle}</h2>
@@ -169,13 +154,13 @@ export function RefinedConcept({
               <span>{number}</span>
               <h3>{title}</h3>
               <p>{body}</p>
-              <a href={`#${id("classes")}`} aria-label={`Learn more about the ${title} perspective`}>Learn more <span aria-hidden="true">↗</span></a>
+              <a href={`#${sectionId("classes")}`} aria-label={`Learn more about the ${title} perspective`}>Learn more <span aria-hidden="true">↗</span></a>
             </article>
           ))}
         </div>
-      </section>
+      </section>}
 
-      <section className="refined-classes" id={id("classes")}>
+      {section === "classes" && <section className="refined-classes">
         <div className="classes-heading">
           <p className="refined-kicker">Your next step</p>
           <h2>Find your class.</h2>
@@ -187,37 +172,37 @@ export function RefinedConcept({
               <span>Sample 0{index + 1}</span>
               <h3>{place}</h3>
               <dl><div><dt>Format</dt><dd>{format}</dd></div><div><dt>Term</dt><dd>{term}</dd></div></dl>
-              <a href={`#${id("classes")}`}>View class <span aria-hidden="true">↗</span></a>
+              <a href={`#${sectionId("classes")}`}>View class <span aria-hidden="true">↗</span></a>
             </article>
           ))}
         </div>
-        <a className="all-classes-link" href={`#${id("classes")}`}>View all class locations <span aria-hidden="true">→</span></a>
-      </section>
+        <a className="all-classes-link" href={`#${sectionId("classes")}`}>View all class locations <span aria-hidden="true">→</span></a>
+      </section>}
 
-      <section className="refined-testimonial" id={id("stories")}>
+      {section === "stories" && <section className="refined-testimonial">
         <div className="testimonial-photo" role="img" aria-label="A Vision School participant in conversation" />
         <blockquote>
           <span>“</span>
           <p>Vision School changed how I saw myself, Christian life, and the times we are living in.</p>
           <footer>Participant story adapted from INTERCP International · Final approval required</footer>
         </blockquote>
-      </section>
+      </section>}
 
-      <section className="refined-final-cta">
+      {section === "cta" && <section className="refined-final-cta">
         <p className="refined-kicker">The invitation is open</p>
         <h2>Your place in the story<br />can start here.</h2>
-        <a className="refined-button" href={`#${id("classes")}`}>Find a Vision School Class <span aria-hidden="true">↗</span></a>
-      </section>
+        <a className="refined-button" href={`#${sectionId("classes")}`}>Find a Vision School Class <span aria-hidden="true">↗</span></a>
+      </section>}
 
-      <footer className="refined-footer">
+      {section === "footer" && <footer className="refined-footer">
         <div className="refined-brand">
           <span className="refined-brand-symbol"><i />V</span>
           <span>Vision School <small>International</small></span>
         </div>
         <p>An 11-week training journey helping believers discover God’s heart for unreached peoples and respond with faith.</p>
-        <nav aria-label="Footer navigation"><a href={`#${id("about")}`}>About</a><a href={`#${id("course")}`}>Course</a><a href={`#${id("classes")}`}>Classes</a><a href={`#${id("stories")}`}>Stories</a></nav>
+        <nav aria-label={`${getConceptName(concept)} footer navigation`}><a href={`#${sectionId("about")}`}>About</a><a href={`#${sectionId("course")}`}>Course</a><a href={`#${sectionId("classes")}`}>Classes</a><a href={`#${sectionId("stories")}`}>Stories</a></nav>
         <small>Concept mockup · All claims, data, and media subject to ministry approval</small>
-      </footer>
+      </footer>}
     </section>
   );
 }
