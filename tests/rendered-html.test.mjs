@@ -17,6 +17,10 @@ test("serves the component gallery shell", async () => {
 
   const html = await response.text();
   assert.match(html, /<title>Vision School International — Component Review Gallery<\/title>/i);
+  assert.match(html, /href="\/favicon\.ico"/i);
+  assert.match(html, /href="\/favicon\.svg"/i);
+  assert.match(html, /property="og:image" content="\/vision-school-og\.png"/i);
+  assert.match(html, /name="twitter:image" content="\/vision-school-og\.png"/i);
   assert.match(html, /id="root"/);
   assert.match(html, /<script type="module"/);
 });
