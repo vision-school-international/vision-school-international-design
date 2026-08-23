@@ -5,6 +5,8 @@ import { ConceptPage } from "./concepts/ConceptPage";
 import { concepts, sectionId, sectionTypes, type ComponentSection, type DesignConcept } from "./concepts/componentCatalog";
 import { RefinedConcept } from "./RefinedConcept";
 
+const formatOrdinal = (value: number) => String(value + 1).padStart(2, "0");
+
 function ConceptPreview({ concept, section }: { concept: DesignConcept; section: ComponentSection }) {
   if (concept.kind === "refined") {
     return <RefinedConcept concept={concept.key} section={section} />;
@@ -35,20 +37,20 @@ export default function Home() {
           <span className="review-mark">VS</span>
           <span>Vision School International</span>
         </a>
-        <span className="review-round">Design review · 9 sections · 6 concepts</span>
+        <span className="review-round">Design concepts for the website</span>
       </header>
 
       <section className="review-intro">
-        <p className="review-kicker">9 section types · 6 design concepts</p>
+        <p className="review-kicker">Design concepts by website section</p>
         <h1>Design concepts by section.</h1>
-        <p>Six design concepts are shown for each of the nine section types.</p>
+        <p>Available design concepts are shown for each website section.</p>
       </section>
 
       <nav className="component-index" aria-label="Section type index">
-        {sectionTypes.map((section) => (
+        {sectionTypes.map((section, sectionIndex) => (
           <a className="component-index-card" key={section.key} href={`#${sectionId(section.key)}`} style={{ "--component-color": section.color } as React.CSSProperties}>
             <div className="component-index-image" style={{ backgroundImage: `url(${section.image})` }}>
-              <span>{section.number}</span>
+              <span>{formatOrdinal(sectionIndex)}</span>
               <b>View concepts <span aria-hidden="true">↘</span></b>
             </div>
             <div className="component-index-copy">
@@ -61,17 +63,17 @@ export default function Home() {
       </nav>
 
       <div className="review-principles" aria-label="Review principles">
-        <span>9 section types</span>
-        <span>6 concepts each</span>
+        <span>{sectionTypes.length} section types</span>
+        <span>{concepts.length} concepts each</span>
         <span>Full-width previews</span>
         <span>Design review</span>
       </div>
 
       <div className="component-gallery">
-        {sectionTypes.map((section) => (
+        {sectionTypes.map((section, sectionIndex) => (
           <section className="component-gallery-section" id={sectionId(section.key)} key={section.key}>
             <header className="component-gallery-heading">
-              <p className="review-kicker">{section.number} / 09 · Component</p>
+              <p className="review-kicker">{formatOrdinal(sectionIndex)} / {formatOrdinal(sectionTypes.length - 1)} · Component</p>
               <h2>{section.name}</h2>
               <p>{section.description}</p>
             </header>

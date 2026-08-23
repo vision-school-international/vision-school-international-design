@@ -1,19 +1,19 @@
 # Vision School International Website
 
-An internal component review gallery for the Vision School International website. It presents nine page section types, each with six concepts for comparison.
+An internal design review gallery for the Vision School International website. It organizes design concepts by website section.
 
 ## Review model
 
-A design comparison gallery: each of the nine section types is shown with six design concepts at full width.
+A design comparison gallery: each website section is shown with its available design concepts at full width.
 
 ## Concepts
 
-- **Concept 1 — Editorial**
-- **Concept 2 — Contemporary**
-- **Concept 3 — International**
-- **Concept 4 — Community**
-- **Concept 5 — Bold**
-- **Concept 6 — Cinematic**
+- **Editorial**
+- **Contemporary**
+- **International**
+- **Community**
+- **Bold**
+- **Cinematic**
 
 These are review labels, not final product names.
 

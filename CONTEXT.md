@@ -3,9 +3,9 @@
 ## What this repository is
 
 This is an internal design-review gallery for Vision School International. It
-shows nine shared section types—navigation, hero/introduction, proof/key facts,
+shows the shared section types—navigation, hero/introduction, proof/key facts,
 about/value proposition, course/curriculum, class finder, stories/testimonials,
-calls to action, and footer/utility navigation—against six concepts. It is not a production
+calls to action, and footer/utility navigation—against the available design concepts. It is not a production
 launch; `README.md` marks copy, locations, registration links, branding, and
 testimonials as subject to ministry approval.
 
@@ -21,8 +21,8 @@ and falls back to `dist/index.html` for client-side routes. The server uses
 ## Component-gallery architecture
 
 - `app/page.tsx` owns the review shell, section-type cards, hash scrolling, and
-  the continuous gallery. Each section area maps the six design concepts to
-  isolated preview articles.
+  the continuous gallery. Each section area maps the available design concepts to
+  isolated preview articles for the available design concepts.
 - `app/concepts/ConceptPage.tsx` owns the original/legacy visual treatments.
 - `app/RefinedConcept.tsx` owns the refined visual treatments.
 - Both renderers receive a concept key and one `ComponentSection`, then render
@@ -39,8 +39,8 @@ and falls back to `dist/index.html` for client-side routes. The server uses
 
 When changing the gallery, follow data flow from `app/page.tsx` to both
 renderers and then to the CSS selectors and rendered-page test. A section-card
-or anchor change must be checked against all nine sections and all six
-variants. A renderer change must be checked in both legacy and refined paths.
+or anchor change must be checked against every section type and available
+concept. A renderer change must be checked in both legacy and refined paths.
 
 ## Source-of-truth commands and deployment
 

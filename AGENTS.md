@@ -9,7 +9,7 @@ consistent when project guidance changes.
 This repository is an internal Vision School International component-review
 gallery, not the production ministry site. It is a Vite + React + TypeScript
 frontend with a small Hono server. Preserve the current component-gallery
-model: `app/page.tsx` owns the nine section-type index and one continuous,
+model: `app/page.tsx` owns the section-type index and one continuous,
 one-column gallery; `app/concepts/ConceptPage.tsx` and
 `app/RefinedConcept.tsx` render one requested section treatment at a time.
 
@@ -58,7 +58,7 @@ pass. Keep those files synchronized if an approved dependency change is made.
   variants intentionally stack one-by-one so designers can inspect a normal
   page-width treatment.
 - Do not add document IDs inside isolated previews that can duplicate across
-  the six variants. Gallery anchor IDs belong to the outer section areas.
+  the available concepts. Gallery anchor IDs belong to the outer section areas.
 - Do not merge the legacy and refined renderers into a generic visual
   component. Their different markup and CSS are the design treatments under
   review; share only contracts or metadata when an approved change proves it
