@@ -4,7 +4,7 @@ An internal component review gallery for the Vision School International website
 
 ## Review model
 
-Use the section cards to jump to a component. Each component shows all six concepts at full width so designers and testers can compare treatments without switching between whole-page previews.
+A design comparison gallery: each of the nine section types is shown with six design concepts at full width.
 
 ## Concepts
 

@@ -34,8 +34,8 @@ test("bundles the component gallery content into the client", async () => {
     javascript.map((name) => readFile(new URL(`../dist/assets/${name}`, import.meta.url), "utf8")),
   )).join("\n");
 
-  assert.match(bundle, /Review each section separately\./);
-  assert.match(bundle, /9 section types/);
+  assert.match(bundle, /Design concepts by section\./);
+  assert.match(bundle, /Six design concepts are shown/);
   assert.match(bundle, /Navigation/);
   assert.match(bundle, /Hero/);
   assert.match(bundle, /Class finder/);
@@ -46,5 +46,5 @@ test("bundles the component gallery content into the client", async () => {
   assert.match(bundle, /Concept 4 — Community/);
   assert.match(bundle, /Concept 5 — Bold/);
   assert.match(bundle, /Concept 6 — Cinematic/);
-  assert.match(bundle, /Compare by section/);
+  assert.match(bundle, /Design review/);
 });

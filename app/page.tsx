@@ -35,17 +35,13 @@ export default function Home() {
           <span className="review-mark">VS</span>
           <span>Vision School International</span>
         </a>
-        <span className="review-round">Component review · 9 sections · 6 concepts</span>
+        <span className="review-round">Design review · 9 sections · 6 concepts</span>
       </header>
 
       <section className="review-intro">
-        <p className="review-kicker">9 section types · 6 concepts</p>
-        <h1>Review each section separately.</h1>
-        <p>
-          Compare six treatments for each part of the Vision School experience. Use the section
-          cards to jump to a component, then review each concept at full width. This gallery is
-          for design review and testing, not a final production page.
-        </p>
+        <p className="review-kicker">9 section types · 6 design concepts</p>
+        <h1>Design concepts by section.</h1>
+        <p>Six design concepts are shown for each of the nine section types.</p>
       </section>
 
       <nav className="component-index" aria-label="Section type index">
@@ -53,7 +49,7 @@ export default function Home() {
           <a className="component-index-card" key={section.key} href={`#${sectionId(section.key)}`} style={{ "--component-color": section.color } as React.CSSProperties}>
             <div className="component-index-image" style={{ backgroundImage: `url(${section.image})` }}>
               <span>{section.number}</span>
-              <b>Jump to section <span aria-hidden="true">↘</span></b>
+              <b>View concepts <span aria-hidden="true">↘</span></b>
             </div>
             <div className="component-index-copy">
               <p>Component</p>
@@ -65,10 +61,10 @@ export default function Home() {
       </nav>
 
       <div className="review-principles" aria-label="Review principles">
-        <span>Compare by section</span>
-        <span>6 concepts per section</span>
+        <span>9 section types</span>
+        <span>6 concepts each</span>
         <span>Full-width previews</span>
-        <span>Hash-linked navigation</span>
+        <span>Design review</span>
       </div>
 
       <div className="component-gallery">
