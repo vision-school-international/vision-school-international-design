@@ -71,6 +71,17 @@ invent new deployment targets or dependencies. Share metadata or contracts only
 when the change is explicitly approved and does not collapse intentionally
 different visual treatments into a generic abstraction.
 
+## Git and pull-request workflow
+
+Treat `main` as the protected integration branch. All changes, including
+documentation, configuration, tests, and code, must be developed on a feature
+branch and merged through a pull request; never commit, push, or merge directly
+to `main`. Create branches from the latest `origin/main` with the format
+`<type>/<short-kebab-description>`, using lowercase `feat`, `fix`, `docs`,
+`refactor`, `test`, `chore`, or `design` types. Open each PR against `main`,
+compare it with `origin/main`, and apply the exact lowercase `design` label to
+design-related PRs.
+
 Before handoff, inspect the diff and run the relevant build, test, lint, and
 type checks. Report exact files changed and distinguish verified facts from
 inferences. Follow the existing Git conventions, and apply the exact lowercase

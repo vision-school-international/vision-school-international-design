@@ -22,9 +22,13 @@ shared guidance.
    result. `npm test` already invokes the build.
 5. Before handoff, inspect `git diff --check` and `git status --short`, and list
    the exact files changed.
-6. Follow the repository’s existing commit and PR conventions. For design work,
-   apply the exact lowercase `design` PR label before handoff; preview deployment
-   depends on that label.
+6. Never commit, push, or merge directly to `main`. Make every change on a
+   feature branch created from the latest `origin/main`, using
+   `<type>/<short-kebab-description>` with a lowercase type of `feat`, `fix`,
+   `docs`, `refactor`, `test`, `chore`, or `design`.
+7. Merge only through a pull request targeting `main`; compare against
+   `origin/main`. For design work, apply the exact lowercase `design` PR label
+   before handoff; preview deployment depends on that label.
 
 ## Do not introduce these regressions
 

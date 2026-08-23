@@ -82,12 +82,30 @@ Inspect `git status`, the current branch, and the relevant diff before editing.
 Preserve unrelated user work. Never use destructive reset/checkout commands,
 rewrite history, or push/deploy without explicit authorization.
 
+`main` is the protected integration branch. Never commit directly to `main`,
+push directly to `main`, or merge changes into `main` without a pull request.
+Every repository change—including documentation, configuration, tests, and
+code—must be made on a feature branch and merged through a pull request.
+
+Create feature branches from the latest `origin/main` using the convention
+`<type>/<short-kebab-description>`. Use lowercase kebab-case and one of these
+types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, or `design`.
+Examples: `feat/video-gallery`, `fix/mobile-nav`, and
+`docs/pr-branch-rules`. Keep the description short and specific. In Conductor,
+keep the workspace's existing feature branch; do not rename it unless the user
+explicitly requests that.
+
+Open pull requests with `main` as the base branch and compare the work against
+`origin/main` (for example, `gh pr create --base main`). A pull request is
+required before any merge. Do not claim that a PR, review, check, preview, or
+deployment succeeded without evidence.
+
 The observed history uses concise action-oriented subjects, including
 `feat(review): ...`, `fix(...) ...`, `refactor(deploy): ...`, and `Add ...`.
 Follow the repository’s existing style for the area you touch; do not create a
-new commit convention. Commit only when asked. For a PR, use the feature branch
-and compare against `origin/main`; include scope, verification commands and
-results, visual/regression notes, and any known unverified deployment fact.
+new commit convention. Commit only when asked. For a PR, include scope,
+verification commands and results, visual/regression notes, and any known
+unverified deployment fact.
 There is no checked-in PR template or CI workflow, so do not claim checks or
 release automation that you cannot find in the repository. Any design-related
 PR must carry the exact lowercase `design` label; this label is required for

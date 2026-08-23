@@ -50,6 +50,9 @@ Read this file before changing the repository. These rules protect the internal 
 
 - Preserve unrelated worktree changes. Do not use destructive reset, checkout, clean, or history-rewrite commands.
 - Do not commit, push, deploy, or modify a pull request without explicit authorization.
+- Treat `main` as the protected integration branch. Never commit to, push to, or merge into `main` directly; every change must be merged through a pull request.
+- Create feature branches from the latest `origin/main` using `<type>/<short-kebab-description>`, with lowercase `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, or `design` types. Examples: `feat/video-gallery` and `docs/pr-branch-rules`.
+- Open PRs against `main` and compare them with `origin/main`. A PR is required before any merge, including documentation-only changes.
 - Follow the existing commit convention; do not introduce a new one.
 - Apply the exact lowercase `design` label to every design-related PR because preview deployment depends on it.
 - Never claim GitHub checks, preview deployment, or production deployment succeeded without evidence.
