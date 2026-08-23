@@ -4,9 +4,10 @@ import test from "node:test";
 
 const { app } = await import("../server/index.mjs");
 
-async function render(path = "/") {
+async function render(path = "/", init) {
   return app.request(`http://localhost${path}`, {
     headers: { accept: "text/html" },
+    ...init,
   });
 }
 
@@ -18,11 +19,29 @@ test("serves the component gallery shell", async () => {
   const html = await response.text();
   assert.match(html, /<title>Vision School International — Component Review Gallery<\/title>/i);
   assert.match(html, /href="\/favicon\.ico"/i);
-  assert.match(html, /href="\/favicon\.svg"/i);
-  assert.match(html, /property="og:image" content="\/vision-school-og\.png"/i);
-  assert.match(html, /name="twitter:image" content="\/vision-school-og\.png"/i);
+  assert.match(html, /rel="canonical" href="http:\/\/localhost\/"/i);
+  assert.match(html, /property="og:url" content="http:\/\/localhost\/"/i);
+  assert.match(html, /property="og:image" content="http:\/\/localhost\/vision-school-og\.png"/i);
+  assert.match(html, /property="og:image:secure_url" content="http:\/\/localhost\/vision-school-og\.png"/i);
+  assert.match(html, /name="twitter:image" content="http:\/\/localhost\/vision-school-og\.png"/i);
   assert.match(html, /id="root"/);
   assert.match(html, /<script type="module"/);
+});
+
+test("uses the forwarded public origin for social metadata", async () => {
+  const response = await render("/", {
+    headers: {
+      accept: "text/html",
+      host: "internal:3000",
+      "x-forwarded-host": "review.example.test",
+      "x-forwarded-proto": "https",
+    },
+  });
+
+  const html = await response.text();
+  assert.match(html, /rel="canonical" href="https:\/\/review\.example\.test\/"/i);
+  assert.match(html, /property="og:url" content="https:\/\/review\.example\.test\/"/i);
+  assert.match(html, /property="og:image" content="https:\/\/review\.example\.test\/vision-school-og\.png"/i);
 });
 
 test("responds to the health check", async () => {
