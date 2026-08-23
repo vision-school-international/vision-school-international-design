@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export type ConceptKey = "global" | "together" | "nations" | "forward";
 
 const conceptData = {
@@ -103,13 +101,13 @@ export function ConceptPage({
         {embedded && onSelect ? (
           <button type="button" onClick={() => onSelect(null)}>← All four concepts</button>
         ) : (
-          <Link href={allConceptsHref}>← All four concepts</Link>
+          <a href={allConceptsHref}>← All four concepts</a>
         )}
         <span>{data.number} / 04 · {data.label}</span>
         {embedded && onSelect ? (
           <button type="button" onClick={() => onSelect(data.nextKey)}>Next direction →</button>
         ) : (
-          <Link href={nextConceptHref}>Next direction →</Link>
+          <a href={nextConceptHref}>Next direction →</a>
         )}
       </div>
 
@@ -120,10 +118,10 @@ export function ConceptPage({
             <span>Vision School <small>International</small></span>
           </button>
         ) : (
-          <Link className="mock-logo" href={allConceptsHref} aria-label="Vision School International mockup home">
+          <a className="mock-logo" href={allConceptsHref} aria-label="Vision School International mockup home">
             <span className="mock-logo-mark">V</span>
             <span>Vision School <small>International</small></span>
-          </Link>
+          </a>
         )}
         <nav aria-label="Primary navigation">
           <a href={`#${sectionId("about")}`}>About</a>

@@ -1,58 +1,46 @@
 import assert from "node:assert/strict";
+import { readdir, readFile } from "node:fs/promises";
 import test from "node:test";
 
-const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
-const { default: worker } = await import(workerUrl.href);
+const { app } = await import("../server/index.mjs");
 
 async function render(path = "/") {
-  return worker.fetch(
-    new Request(`http://localhost${path}`, {
-      headers: { accept: "text/html" },
-    }),
-    {
-      ASSETS: {
-        fetch: async () => new Response("Not found", { status: 404 }),
-      },
-    },
-    {
-      waitUntil() {},
-      passThroughOnException() {},
-    },
-  );
+  return app.request(`http://localhost${path}`, {
+    headers: { accept: "text/html" },
+  });
 }
 
-test("renders the four-concept selector", async () => {
+test("serves the refined concept selector shell", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Vision School International — Design Concepts<\/title>/i);
-  assert.match(html, /Choose how the story begins\./);
-  assert.match(html, /The Global Classroom/);
-  assert.match(html, /Sent Together/);
-  assert.match(html, /Every Nation/);
-  assert.match(html, /The Way Forward/);
-  assert.equal((html.match(/<button/g) ?? []).length, 5);
-  assert.doesNotMatch(html, /href="\/concepts\//);
-  assert.doesNotMatch(html, /Your site is taking shape|Building your site/);
+  assert.match(html, /<title>Vision School International — Refined Design Concepts<\/title>/i);
+  assert.match(html, /id="root"/);
+  assert.match(html, /<script type="module"/);
 });
 
-const concepts = [
-  ["/concepts/global-classroom", "See the story. Find your place in it."],
-  ["/concepts/sent-together", "Formed in community. Sent to the nations."],
-  ["/concepts/every-nation", "Your generation. Every nation."],
-  ["/concepts/way-forward", "The world is waiting. Take the next step."],
-];
+test("responds to the health check", async () => {
+  const response = await app.request("http://localhost/health");
+  assert.equal(response.status, 200);
+  assert.equal(await response.text(), "ok");
+});
 
-for (const [path, headline] of concepts) {
-  test(`renders ${path}`, async () => {
-    const response = await render(path);
-    assert.equal(response.status, 200);
-    const html = await response.text();
-    assert.match(html, new RegExp(headline.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
-    assert.match(html, /Illustrative class data for design review/);
-    assert.match(html, /Content subject to ministry approval/);
-  });
-}
+test("bundles the refined design content into the client", async () => {
+  const assetNames = await readdir(new URL("../dist/assets/", import.meta.url));
+  const javascript = assetNames.filter((name) => name.endsWith(".js"));
+  const bundle = (await Promise.all(
+    javascript.map((name) => readFile(new URL(`../dist/assets/${name}`, import.meta.url), "utf8")),
+  )).join("\n");
+
+  assert.match(bundle, /One clear story\./);
+  assert.match(bundle, /Six ways to tell it\./);
+  assert.match(bundle, /The Living Story/);
+  assert.match(bundle, /The Open Horizon/);
+  assert.match(bundle, /The Global Classroom/);
+  assert.match(bundle, /Sent Together/);
+  assert.match(bundle, /Every Nation/);
+  assert.match(bundle, /The Way Forward/);
+  assert.match(bundle, /Long-scroll storytelling/);
+});
