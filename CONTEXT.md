@@ -54,11 +54,10 @@ and falls back to `dist/index.html` for client-side routes. The server uses
   interaction for the video-library section.
   `app/video-gallery.css` keeps those treatments scoped.
 - Concept definitions are component-scoped. Each public concept key/name
-  describes one UI/UX goal for one section, and its `sections` map contains that
-  section's renderer. If a visual system or data set is reused across sections,
-  the renderer can receive an internal `dataKey`, but each section still gets its
-  own concept identity such as `Purpose Hero`, `Course Pathway`, or `Utility
-  Footer`.
+  describes one UI/UX goal for one section, and its `sections` map contains only
+  that section's renderer. Reused behavior, data, or styling must stay private
+  to the implementation; each section still gets its own concept identity such
+  as `Purpose Hero`, `Course Pathway`, or `Utility Footer`.
 - Renderer data keys, layout keys, CSS suffixes, and sample datasets are private
   implementation details. They must not be used as gallery concept names,
   selector labels, or section availability rules.
@@ -74,6 +73,29 @@ and falls back to `dist/index.html` for client-side routes. The server uses
 When changing the gallery, follow data flow from `app/page.tsx` to the concept
 registry, the component-owned preview, and the scoped CSS. A section-card or
 anchor change must be checked against every section type and available concept.
+
+## Component creation contract
+
+New component work starts from a user problem, not a visual variant. A correct
+request names the section and the job the component should do, such as “Create a
+Search Navigation concept for Navigation that helps users find site content
+faster.”
+
+For one new component concept, update the system in this order:
+
+1. Add the section to `app/concepts/componentCatalog.ts` only if it does not
+   already exist.
+2. Create or update one portable React preview in `app/components/`.
+3. Register one `DesignConceptDefinition` with one `sections` map key in
+   `app/concepts/`.
+4. Add scoped component CSS and import that stylesheet once from `src/main.tsx`.
+5. Verify the section selector, concept selector, component interaction, build,
+   lint, typecheck, and diff whitespace.
+
+Incorrect requests ask for global concepts, style families, numbered concepts,
+or one concept reused across unrelated sections. The agent should translate a
+purposeful request into a component-scoped concept name, but should not invent
+extra concepts or shared datasets to fill space.
 
 ## Source-of-truth commands and deployment
 
@@ -94,6 +116,7 @@ global concepts, hardcoded variation families, `conceptKeys`,
 `supportedSections` arrays, legacy/refined buckets, or fallback concept names.
 Do not mount every section area or concept treatment at once. Keep the section
 and concept selection state, full-width previews, and unique outer anchor IDs.
+Do not recreate rendered HTML bundle-string tests.
 Do not invent new deployment targets or dependencies. Share metadata or
 contracts only when the change is explicitly approved and does not collapse
 intentionally different visual treatments into a generic abstraction.

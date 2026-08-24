@@ -15,6 +15,9 @@ Read this file before changing the repository. These rules protect the internal 
 ## Follow the component architecture
 
 - Define section metadata in `app/concepts/componentCatalog.ts`.
+- Add or extend components from a purpose statement: identify the target
+  section, the user question the component answers, and the action or decision
+  it should make easier. Use that purpose for the concept name.
 - Export concept metadata, availability, and render contracts from the renderer
   modules that own those concepts. Keep `app/concepts/conceptRegistry.tsx` as a
   composition layer that collects registered concepts and filters by section.
@@ -23,12 +26,12 @@ Read this file before changing the repository. These rules protect the internal 
   `Search Navigation`, not a renderer family, color, ordinal, data key, or
   implementation history.
 - Register one concept entry for one component section. If the same renderer
-  data or visual system is reused across components, create separate concept
-  entries that share an internal `dataKey`; do not add unrelated sections to a
+  behavior is reused across components, create separate concept entries and keep
+  the reuse private to the implementation; do not add unrelated sections to a
   single concept definition.
-- Keep internal renderer data names such as `dataKey`, layout keys, CSS suffixes,
-  and sample datasets private to the renderer. They must not become selector
-  labels, concept names, or gallery routing concepts.
+- Keep internal renderer constants, layout keys, CSS suffixes, and sample
+  datasets private to the renderer. They must not become selector labels,
+  concept names, or gallery routing concepts.
 - Derive section keys, ordinals, totals, and available concepts from catalog data. Do not hardcode inventory counts.
 - Put concept-specific visual treatments in portable component files under
   `app/components/` and register them through focused concept modules under
@@ -41,6 +44,9 @@ Read this file before changing the repository. These rules protect the internal 
   `conceptKeys`, `supportedSections` arrays, fallback concept names, or
   historical buckets such as legacy/refined. Concept availability must come from
   explicit `sections` maps on concept definitions.
+- Do not recreate `tests/rendered-html.test.mjs` or bundle-string assertions for
+  rendered copy. Verify the architecture through source review, TypeScript,
+  lint, build output, and focused behavior checks.
 - Scope substantial component styles behind a unique component class in a dedicated stylesheet. Do not add global selectors that can leak into other treatments.
 - Import a component stylesheet once through `src/main.tsx`. Do not inject style tags or duplicate imports in renderers.
 - Keep IDs unique in the mounted document. Outer gallery areas own section anchor IDs.
@@ -49,6 +55,9 @@ Read this file before changing the repository. These rules protect the internal 
 
 - Do not add explanatory filler, instructional paragraphs, slogans, review principles, repeated summaries, or count strips unless explicitly requested.
 - Use plain, informational section and concept names. Do not invent poetic naming.
+- Explain component purpose in practical terms: what content is usually shown,
+  what uncertainty it reduces, and what next step it supports. Keep top-level
+  copy concise and put scannable details inside the component card when needed.
 - Do not create an endless page to display alternatives. Use compact controls to switch the active section, concept, or collection item.
 - Do not autoplay media or trigger context changes on focus.
 - Do not hide required interaction behind hover. Preserve visible keyboard focus, selected states, meaningful labels, and practical target sizes.
@@ -87,7 +96,8 @@ npx tsc --noEmit
 git diff --check
 ```
 
-Report failures accurately. Do not weaken tests, lint, type checking, or rendered assertions to make a change pass.
+Report failures accurately. Do not weaken tests, lint, type checking, or
+architecture checks to make a change pass.
 
 ## Intentional exceptions
 

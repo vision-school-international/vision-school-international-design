@@ -11,6 +11,30 @@ A design comparison gallery: choose a website section, then choose a design conc
 Concepts are registered per component section. They are not global design
 families, style buckets, or final product names.
 
+Each concept should answer a specific UI/UX need for one section. For example,
+if the request is “a navigation bar that helps users search site content
+faster,” the concept should be named for that purpose, such as **Search
+Navigation**, and scoped only to the Navigation section.
+
+## Directing agents
+
+When asking an agent to add a component, describe the section and the user
+problem it should solve:
+
+```text
+Create one Events calendar concept that helps visitors compare upcoming Vision
+School sessions, camps, and mission dates.
+```
+
+The agent should add or update the section catalog, create an isolated portable
+React component under `app/components/`, register one component-scoped concept
+under `app/concepts/`, add scoped CSS imported from `src/main.tsx`, and run the
+project checks.
+
+Do not ask for global variants, style families, numbered placeholders, or
+concepts shared across unrelated sections. Avoid requests like “make three
+modern variants,” “add Concept 01,” or “reuse this concept everywhere.”
+
 ## Section types
 
 - **Navigation** — Helps users move between key pages and reach class information.
@@ -53,7 +77,7 @@ npm start
 
 The frontend is a plain Vite React build in `dist/`. A small Hono server serves
 that directory, provides `/health`, and falls back to `index.html` for
-client-side gallery routes. Use `npm test` for the production build.
+client-side gallery routes. Use `npm test` for the production build check.
 
 ## Dokploy
 

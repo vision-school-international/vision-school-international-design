@@ -19,13 +19,20 @@ carousel behavior used by concept-owned class finder designs.
 `app/components/VideoGallery.tsx` provides the isolated single-player video
 library used by its supported concepts.
 Concept identity is component-scoped: the public concept key/name belongs to one
-section's UI/UX goal, while renderer implementation reuse must stay behind
-private fields such as `dataKey`.
+section's UI/UX goal, while renderer implementation reuse must stay private and
+must not become reviewer-facing concept identity.
 
 Make the smallest change that satisfies the request. Preserve existing visual
 concept treatments, renderer-specific markup, responsive CSS, illustrative-content
 labels, and hash navigation unless the task explicitly changes them. Do not
 silently “clean up” unrelated worktree changes.
+
+When a user asks for a new component, derive the concept from the section's
+purpose and the user problem it solves. For example, “a navigation bar that
+helps users search site content faster” becomes a Navigation-scoped **Search
+Navigation** concept, not a generic style variant. Add one portable component,
+one component-scoped concept registration, and one scoped stylesheet unless the
+user explicitly asks for more.
 
 ## Verified commands
 
@@ -79,7 +86,9 @@ pass. Keep those files synchronized if an approved dependency change is made.
 - Do not create global concepts, fallback concept names, hardcoded variation
   families, `conceptKeys`, `supportedSections` arrays, or legacy/refined
   buckets. Register one concept entry per component section and keep renderer
-  data keys private.
+  reuse private.
+- Do not recreate `tests/rendered-html.test.mjs` or replace source-level
+  architecture checks with bundle-string copy assertions.
 - Do not remove “sample”, “illustrative”, or ministry-approval wording from
   review content. It is a deliberate boundary in the current gallery.
 - Do not replace existing image assets, copy, or CSS with invented content while

@@ -1,6 +1,6 @@
 ---
 name: create-review-component
-description: Add or extend component-scoped design-review concepts in this Vision School React gallery. Use when creating a new section card, registering a concept for a specific component section, building a portable interactive React component preview, changing per-section concept availability, or adding component-specific responsive styles and rendered tests.
+description: Add or extend component-scoped design-review concepts in this Vision School React gallery. Use when creating a new section card, registering a concept for a specific component section, building a portable interactive React component preview, changing per-section concept availability, or adding component-specific responsive styles and verification.
 ---
 
 # Create Review Component
@@ -30,6 +30,11 @@ Treat `RULES.md` as the repository's anti-pattern authority. A current explicit 
 - Add a section type, not a new page or route.
 - Keep the section card in the existing catalog-driven index.
 - Identify exactly which concepts the requested component section supports.
+- Parse the user's request as a component purpose. The concept name comes from
+  what the component helps the visitor do, not from a style family.
+- Example: if the user asks for "a navigation bar that helps users search for
+  site content faster/easier," create a Navigation-scoped concept named `Search
+  Navigation`.
 - Treat concepts as component-scoped. A concept must not automatically appear for
   unrelated sections.
 - Name concepts from the UI/UX goal of that component, such as `Search
@@ -41,6 +46,8 @@ Treat `RULES.md` as the repository's anti-pattern authority. A current explicit 
 
 - Add section metadata to `sectionTypes` in `app/concepts/componentCatalog.ts`.
 - Use a plain section name and a factual description of what the component does for users.
+- If the section already exists, do not add another section, synonym section, or
+  fake category to hold the concept.
 - Do not add `conceptKeys`, global concept lists, fallback concept names, or
   hardcoded variation families to the section catalog.
 - Derive ordinals from catalog order and derive concept availability from each
@@ -54,12 +61,12 @@ Treat `RULES.md` as the repository's anti-pattern authority. A current explicit 
   `selectedConcept.sections[selectedSection.key]`.
 - Keep concept identity separate from renderer implementation data. The
   registry `key` and `name` are the reviewer-facing concept. Internal renderer
-  selectors such as `dataKey`, layout keys, CSS suffixes, or sample data names
-  are private implementation details only.
+  constants, layout keys, CSS suffixes, or sample data names are private
+  implementation details only.
 - Register one concept entry for one component section. When the same renderer
-  data or visual system is useful for multiple sections, create separate
-  component-scoped concept entries that share `dataKey`; do not add multiple
-  unrelated sections to one concept.
+  behavior is useful for multiple sections, create separate component-scoped
+  concept entries and keep any reuse private; do not add multiple unrelated
+  sections to one concept.
 - Keep `app/concepts/conceptRegistry.tsx` as a composition layer only. It should
   collect exported concepts and filter by section; it must not invent concepts,
   format fallback names, or route by hardcoded variation families.
@@ -72,6 +79,14 @@ Treat `RULES.md` as the repository's anti-pattern authority. A current explicit 
   Share typed contracts, data plumbing, and interaction helpers only when it does
   not collapse distinct visual treatments into a generic renderer.
 - Render only the selected section and selected concept.
+
+For one new component concept, the normal file path is:
+
+1. `app/concepts/componentCatalog.ts` for section metadata, only if missing.
+2. `app/components/<ComponentName>.tsx` for the portable preview.
+3. `app/concepts/<ConceptModule>.tsx` for one `DesignConceptDefinition`.
+4. `app/<component-styles>.css` for scoped styles, imported once from
+   `src/main.tsx`.
 
 Correct concept registration shape:
 
@@ -137,6 +152,8 @@ Forbidden patterns:
 ### 5. Keep content direct
 
 - Use factual headings and labels.
+- Make component copy useful for design review: what content is shown, what
+  uncertainty it reduces, and what action or decision it supports.
 - Keep component content owned by that concept/component. Do not create shared
   class/session/nav datasets that every component inherits.
 - Do not add instructions, summaries, slogans, review principles, or inventory counts unless requested.

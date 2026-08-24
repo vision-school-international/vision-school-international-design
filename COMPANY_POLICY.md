@@ -27,12 +27,14 @@ authorization, scope, and verification instructions in `AGENTS.md`,
   component section and one UI/UX goal. A concept must not silently appear for
   unrelated sections.
 - Keep concept identity separate from implementation reuse. Internal renderer
-  details such as `dataKey`, layout keys, CSS suffixes, or sample data names are
-  private and must not become selector labels, concept names, or routing
-  concepts.
+  constants, layout keys, CSS suffixes, or sample data names are private and
+  must not become selector labels, concept names, or routing concepts.
 - When the same renderer data or visual system is useful in multiple component
   sections, create separate component-scoped concept entries that share the
   private implementation key. Do not widen one concept across those sections.
+- When users ask for new components, translate the request into a section and a
+  user-purpose concept. Explain the component creation contract when needed so
+  future agents are directed toward purposeful, component-scoped design work.
 - Do not reintroduce historical buckets or platform shortcuts, including
   legacy/refined terminology, global concepts, hardcoded variation families,
   `conceptKeys`, `supportedSections`, fallback names like `Concept 01`, or
