@@ -18,6 +18,17 @@ Read this file before changing the repository. These rules protect the internal 
 - Export concept metadata, availability, and render contracts from the renderer
   modules that own those concepts. Keep `app/concepts/conceptRegistry.tsx` as a
   composition layer that collects registered concepts and filters by section.
+- Treat concept identity as component-scoped. The registry `key` and `name` must
+  describe the UI/UX goal for one component section, such as `Purpose Hero` or
+  `Search Navigation`, not a renderer family, color, ordinal, data key, or
+  implementation history.
+- Register one concept entry for one component section. If the same renderer
+  data or visual system is reused across components, create separate concept
+  entries that share an internal `dataKey`; do not add unrelated sections to a
+  single concept definition.
+- Keep internal renderer data names such as `dataKey`, layout keys, CSS suffixes,
+  and sample datasets private to the renderer. They must not become selector
+  labels, concept names, or gallery routing concepts.
 - Derive section keys, ordinals, totals, and available concepts from catalog data. Do not hardcode inventory counts.
 - Put concept-specific visual treatments in renderer modules such as
   `app/concepts/ConceptPage.tsx` and
@@ -26,6 +37,10 @@ Read this file before changing the repository. These rules protect the internal 
 - Keep class finder carousel behavior in `app/components/ClassFinderCarousel.tsx`;
   concept modules should supply UX-goal-specific design configuration.
 - Do not merge renderer-specific visual markup into a generic renderer. Their differences are the review material.
+- Do not reintroduce global concepts, hardcoded variation families,
+  `conceptKeys`, `supportedSections` arrays, fallback concept names, or
+  historical buckets such as legacy/refined. Concept availability must come from
+  explicit `sections` maps on concept definitions.
 - Scope substantial component styles behind a unique component class in a dedicated stylesheet. Do not add global selectors that can leak into other treatments.
 - Import a component stylesheet once through `src/main.tsx`. Do not inject style tags or duplicate imports in renderers.
 - Keep IDs unique in the mounted document. Outer gallery areas own section anchor IDs.

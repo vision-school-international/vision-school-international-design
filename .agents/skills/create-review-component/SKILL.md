@@ -52,6 +52,14 @@ Treat `RULES.md` as the repository's anti-pattern authority. A current explicit 
 - Register each concept through `DesignConceptDefinition` with an explicit
   `sections` map. The shell must only render
   `selectedConcept.sections[selectedSection.key]`.
+- Keep concept identity separate from renderer implementation data. The
+  registry `key` and `name` are the reviewer-facing concept. Internal renderer
+  selectors such as `dataKey`, layout keys, CSS suffixes, or sample data names
+  are private implementation details only.
+- Register one concept entry for one component section. When the same renderer
+  data or visual system is useful for multiple sections, create separate
+  component-scoped concept entries that share `dataKey`; do not add multiple
+  unrelated sections to one concept.
 - Keep `app/concepts/conceptRegistry.tsx` as a composition layer only. It should
   collect exported concepts and filter by section; it must not invent concepts,
   format fallback names, or route by hardcoded variation families.
@@ -66,22 +74,58 @@ Treat `RULES.md` as the repository's anti-pattern authority. A current explicit 
   not collapse distinct visual treatments into a generic renderer.
 - Render only the selected section and selected concept.
 
-Example registration shape:
+Correct concept registration shape:
 
 ```tsx
-export const navigationConcepts: readonly DesignConceptDefinition[] = [
-  {
-    key: "search-navigation",
-    name: "Search Navigation",
-    image: "/images/community-city.jpg",
-    color: "#102c57",
+type ImmersiveDataKey = keyof typeof conceptData;
+type ImmersiveConceptConfig = Omit<DesignConceptDefinition, "key" | "sections"> & {
+  dataKey: ImmersiveDataKey;
+  section: ComponentSection;
+};
+
+function createImmersiveConcept(key: string, definition: ImmersiveConceptConfig): DesignConceptDefinition {
+  const { dataKey, section, ...conceptDefinition } = definition;
+
+  return {
+    ...conceptDefinition,
+    key,
     sections: {
-      navigation: function renderSearchNavigation() {
-        return createElement(SearchNavigation);
+      [section]: function renderImmersiveConcept() {
+        return createElement(ImmersiveConcept, { dataKey, section });
       },
     },
-  },
-];
+  };
+}
+
+createImmersiveConcept("purpose-hero", {
+  name: "Purpose Hero",
+  image: "/images/community-city.jpg",
+  color: "#1769c2",
+  dataKey: "nearby",
+  section: "hero",
+});
+```
+
+In that pattern:
+
+- `purpose-hero` is the actual concept key.
+- `Purpose Hero` is the reviewer-facing concept name.
+- `section: "hero"` scopes the concept to one component.
+- `dataKey: "nearby"` is internal renderer data/styling reuse, not the concept
+  identity.
+
+Forbidden patterns:
+
+```tsx
+// Wrong: renderer data key used as the public concept identity.
+createImmersiveConcept("nearby", { name: "Nearby", section: "hero" });
+
+// Wrong: one concept leaks across unrelated components.
+createImmersiveConcept("purpose", {
+  name: "Purpose",
+  dataKey: "nearby",
+  sections: ["hero", "about", "course"],
+});
 ```
 
 ### 4. Isolate styles and interaction

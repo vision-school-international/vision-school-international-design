@@ -30,7 +30,8 @@ and falls back to `dist/index.html` for client-side routes. The server uses
   preview article.
 - `app/concepts/conceptRegistry.tsx` composes concept definitions exported by
   renderer modules and exposes the neutral render contract consumed by the
-  shell.
+  shell. It is not allowed to invent concepts, route by variation families, or
+  provide fallback names.
 - `app/concepts/ConceptPage.tsx` owns one set of concept-specific visual
   treatments through a typed section renderer map and exports the concept
   definitions for that renderer.
@@ -43,10 +44,19 @@ and falls back to `dist/index.html` for client-side routes. The server uses
 - `app/components/VideoGallery.tsx` owns the shared video data and single-player
   interaction for the concepts that support video-library sections.
   `app/video-gallery.css` keeps those treatments scoped.
-- Concept renderers receive a concept key and one `ComponentSection`, then
-  render only that requested section treatment. Their different markup and CSS
-  are intentional comparison material, not accidental duplicate product
-  components.
+- Concept definitions are component-scoped. Each public concept key/name
+  describes one UI/UX goal for one section, and its `sections` map contains that
+  section's renderer. If a visual system or data set is reused across sections,
+  the renderer can receive an internal `dataKey`, but each section still gets its
+  own concept identity such as `Purpose Hero`, `Course Pathway`, or `Utility
+  Footer`.
+- Renderer data keys, layout keys, CSS suffixes, and sample datasets are private
+  implementation details. They must not be used as gallery concept names,
+  selector labels, or section availability rules.
+- Concept renderers receive an internal renderer data key when needed and one
+  `ComponentSection`, then render only that requested section treatment. Their
+  different markup and CSS are intentional comparison material, not accidental
+  duplicate product components.
 - `app/globals.css` owns the gallery shell/index/concept layout, feature
   `.feature-*` treatment styles, and related shared selectors.
   `app/class-finder-carousel.css` owns the `.class-finder-*` carousel styles.
@@ -76,12 +86,14 @@ verified from those sources, say so rather than guessing.
 ## Maintenance rules
 
 Preserve existing visual treatments, responsive behavior, hash navigation,
-assets, and review disclaimers. Do not reintroduce whole-page concept cards or
-mount every section area or concept treatment at once. Keep the section and
-concept selection state, full-width previews, and unique outer anchor IDs. Do not
-invent new deployment targets or dependencies. Share metadata or contracts only
-when the change is explicitly approved and does not collapse intentionally
-different visual treatments into a generic abstraction.
+assets, and review disclaimers. Do not reintroduce whole-page concept cards,
+global concepts, hardcoded variation families, `conceptKeys`,
+`supportedSections` arrays, legacy/refined buckets, or fallback concept names.
+Do not mount every section area or concept treatment at once. Keep the section
+and concept selection state, full-width previews, and unique outer anchor IDs.
+Do not invent new deployment targets or dependencies. Share metadata or
+contracts only when the change is explicitly approved and does not collapse
+intentionally different visual treatments into a generic abstraction.
 
 Before handoff, inspect the diff and run the relevant build, test, lint, and
 type checks. Report exact files changed and distinguish verified facts from

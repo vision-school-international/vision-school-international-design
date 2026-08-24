@@ -15,6 +15,9 @@ shared guidance.
    gallery with one selected section and concept at a time, isolated renderer-specific treatments,
    responsive behavior, hash anchors, illustrative labels, class finder carousel
    behavior, and image assets.
+   Concept entries must stay component-scoped: one public concept key/name for
+   one section, with renderer-only reuse hidden behind private `dataKey` or
+   layout fields.
 3. Use only existing project commands and deployment instructions. Do not add a
    dependency, script, deploy target, service, or config file without explicit
    approval.
@@ -33,6 +36,10 @@ shared guidance.
 - mounting every section gallery area at once instead of rendering the selected
   section from the section index;
 - mounting every concept treatment at once instead of using the concept selector;
+- global concepts, fallback concept names, hardcoded variation families,
+  `conceptKeys`, `supportedSections`, or legacy/refined buckets;
+- using renderer data keys, layout keys, CSS suffixes, or sample dataset names as
+  public concept identity;
 - a two-column or squashed concept gallery;
 - duplicate IDs across isolated previews;
 - a generic renderer abstraction that erases intentional visual differences;

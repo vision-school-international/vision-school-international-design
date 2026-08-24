@@ -1,9 +1,9 @@
 # Agent instructions
 
-Read [RULES.md](./RULES.md) first, then this file, [CONTEXT.md](./CONTEXT.md) for
-the architecture, and [CLAUDE.md](./CLAUDE.md) for the short execution
-checklist. Keep all four files consistent when project guidance changes. For
-new or extended review components, use
+Read [COMPANY_POLICY.md](./COMPANY_POLICY.md) and [RULES.md](./RULES.md) first,
+then this file, [CONTEXT.md](./CONTEXT.md) for the architecture, and
+[CLAUDE.md](./CLAUDE.md) for the short execution checklist. Keep all five files
+consistent when project guidance changes. For new or extended review components, use
 [the repository component skill](./.agents/skills/create-review-component/SKILL.md).
 
 ## Project boundary
@@ -19,6 +19,9 @@ concept-specific renderer maps.
 carousel behavior used by concept-owned class finder designs.
 `app/components/VideoGallery.tsx` provides the isolated single-player video
 library used by its supported concepts.
+Concept identity is component-scoped: the public concept key/name belongs to one
+section's UI/UX goal, while renderer implementation reuse must stay behind
+private fields such as `dataKey`.
 
 Make the smallest change that satisfies the request. Preserve existing visual
 concept treatments, renderer-specific markup, responsive CSS, illustrative-content
@@ -74,6 +77,10 @@ pass. Keep those files synchronized if an approved dependency change is made.
   Different markup and CSS are the design treatments under review; share only
   contracts or metadata when an approved change proves it removes duplication
   without changing output.
+- Do not create global concepts, fallback concept names, hardcoded variation
+  families, `conceptKeys`, `supportedSections` arrays, or legacy/refined
+  buckets. Register one concept entry per component section and keep renderer
+  data keys private.
 - Do not remove “sample”, “illustrative”, or ministry-approval wording from
   review content. It is a deliberate boundary in the current gallery.
 - Do not replace existing image assets, copy, or CSS with invented content while
