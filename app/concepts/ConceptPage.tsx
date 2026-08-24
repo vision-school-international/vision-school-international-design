@@ -57,30 +57,28 @@ const conceptData = {
   },
 } as const satisfies Record<string, MockupConceptData>;
 
-type MockupConceptKey = keyof typeof conceptData;
+type MockupDataKey = keyof typeof conceptData;
 type MockupConceptConfig = Omit<DesignConceptDefinition, "key" | "sections"> & {
-  supportedSections: readonly ComponentSection[];
+  dataKey: MockupDataKey;
+  section: ComponentSection;
 };
 
-function createMockupConcept(key: MockupConceptKey, definition: MockupConceptConfig): DesignConceptDefinition {
-  const { supportedSections, ...conceptDefinition } = definition;
+function createMockupConcept(key: string, definition: MockupConceptConfig): DesignConceptDefinition {
+  const { dataKey, section, ...conceptDefinition } = definition;
 
   return {
     ...conceptDefinition,
     key,
-    sections: Object.fromEntries(
-      supportedSections.map((section) => [
-        section,
-        function renderMockupConcept() {
-          return createElement(ConceptPage, { concept: key, section });
-        },
-      ]),
-    ) as ConceptSectionMap,
+    sections: {
+      [section]: function renderMockupConcept() {
+        return createElement(ConceptPage, { dataKey, section });
+      },
+    } as ConceptSectionMap,
   };
 }
 
 export const mockupConcepts: readonly DesignConceptDefinition[] = [
-  createMockupConcept("commit", { name: "Decision Class Finder", image: "/images/community-city.jpg", color: "#66afe6", supportedSections: ["classes"] }),
+  createMockupConcept("decision-class-finder", { name: "Decision Class Finder", image: "/images/community-city.jpg", color: "#66afe6", dataKey: "commit", section: "classes" }),
 ];
 
 const pillars = [
@@ -108,8 +106,8 @@ const courseSteps = [
 ];
 
 type MockupSectionRenderer = (props: {
-  concept: MockupConceptKey;
-  data: typeof conceptData[MockupConceptKey];
+  dataKey: MockupDataKey;
+  data: typeof conceptData[MockupDataKey];
 }) => ReactNode;
 
 const sectionRenderers = {
@@ -235,15 +233,15 @@ const sectionRenderers = {
 } satisfies Record<ComponentSection, MockupSectionRenderer>;
 
 export function ConceptPage({
-  concept,
+  dataKey,
   section,
 }: {
-  concept: MockupConceptKey;
+  dataKey: MockupDataKey;
   section: ComponentSection;
 }) {
-  const data = conceptData[concept];
+  const data = conceptData[dataKey];
   const renderSection = sectionRenderers[section];
 
-  const content = renderSection({ concept, data });
-  return <section className={`site-mock site-${concept} component-preview`}>{content}</section>;
+  const content = renderSection({ dataKey, data });
+  return <section className={`site-mock site-${dataKey} component-preview`}>{content}</section>;
 }

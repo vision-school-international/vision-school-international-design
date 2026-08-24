@@ -53,6 +53,14 @@ test("bundles the component gallery content into the client", async () => {
   assert.match(bundle, /North America Young Generation Mission Camp/);
   assert.match(bundle, /ASEAN Mission Camp Sketch Video/);
   assert.match(bundle, /Search Navigation/);
+  assert.match(bundle, /Purpose Hero/);
+  assert.match(bundle, /Program Proof/);
+  assert.match(bundle, /Mission Value Proposition/);
+  assert.match(bundle, /Course Pathway/);
+  assert.match(bundle, /Student Story/);
+  assert.match(bundle, /Mission Video Library/);
+  assert.match(bundle, /Decision CTA/);
+  assert.match(bundle, /Utility Footer/);
   assert.match(bundle, /Search site content/);
   assert.match(bundle, /Frederick, MD/);
   assert.match(bundle, /Gaithersburg, MD/);

@@ -111,31 +111,37 @@ const conceptData = {
   videoLayout: VideoGalleryLayout;
 }>;
 
-type ImmersiveConceptKey = keyof typeof conceptData;
+type ImmersiveDataKey = keyof typeof conceptData;
 type ImmersiveConceptConfig = Omit<DesignConceptDefinition, "key" | "sections"> & {
-  supportedSections: readonly ComponentSection[];
+  dataKey: ImmersiveDataKey;
+  section: ComponentSection;
 };
 
-function createImmersiveConcept(key: ImmersiveConceptKey, definition: ImmersiveConceptConfig): DesignConceptDefinition {
-  const { supportedSections, ...conceptDefinition } = definition;
+function createImmersiveConcept(key: string, definition: ImmersiveConceptConfig): DesignConceptDefinition {
+  const { dataKey, section, ...conceptDefinition } = definition;
 
   return {
     ...conceptDefinition,
     key,
-    sections: Object.fromEntries(
-      supportedSections.map((section) => [
-        section,
-        function renderImmersiveConcept() {
-          return createElement(ImmersiveConcept, { concept: key, section });
-        },
-      ]),
-    ) as ConceptSectionMap,
+    sections: {
+      [section]: function renderImmersiveConcept() {
+        return createElement(ImmersiveConcept, { dataKey, section });
+      },
+    } as ConceptSectionMap,
   };
 }
 
 export const immersiveConcepts: readonly DesignConceptDefinition[] = [
-  createImmersiveConcept("nearby", { name: "Focused Class Finder", image: "/images/community-city.jpg", color: "#102c57", supportedSections: ["classes"] }),
-  createImmersiveConcept("compare", { name: "Comparison Class Finder", image: "/images/mountain-sunrise.jpg", color: "#1769c2", supportedSections: ["classes"] }),
+  createImmersiveConcept("purpose-hero", { name: "Purpose Hero", image: "/images/community-city.jpg", color: "#1769c2", dataKey: "nearby", section: "hero" }),
+  createImmersiveConcept("program-proof", { name: "Program Proof", image: "/images/intercp-young-adults.webp", color: "#66afe6", dataKey: "compare", section: "proof" }),
+  createImmersiveConcept("mission-value-proposition", { name: "Mission Value Proposition", image: "/images/community-table.jpg", color: "#1f2c40", dataKey: "nearby", section: "about" }),
+  createImmersiveConcept("course-pathway", { name: "Course Pathway", image: "/images/youth-gathering.jpg", color: "#102c57", dataKey: "compare", section: "course" }),
+  createImmersiveConcept("focused-class-finder", { name: "Focused Class Finder", image: "/images/community-city.jpg", color: "#102c57", dataKey: "nearby", section: "classes" }),
+  createImmersiveConcept("comparison-class-finder", { name: "Comparison Class Finder", image: "/images/mountain-sunrise.jpg", color: "#1769c2", dataKey: "compare", section: "classes" }),
+  createImmersiveConcept("student-story", { name: "Student Story", image: "/images/intercp-mission-camp.webp", color: "#53657e", dataKey: "nearby", section: "stories" }),
+  createImmersiveConcept("mission-video-library", { name: "Mission Video Library", image: "https://i.ytimg.com/vi/zelhy09kxp8/hqdefault.jpg", color: "#102c57", dataKey: "compare", section: "videos" }),
+  createImmersiveConcept("decision-cta", { name: "Decision CTA", image: "/images/community-table.jpg", color: "#1769c2", dataKey: "nearby", section: "cta" }),
+  createImmersiveConcept("utility-footer", { name: "Utility Footer", image: "/images/mountain-sunrise.jpg", color: "#1f2c40", dataKey: "compare", section: "footer" }),
 ];
 
 const foundations = [
@@ -152,8 +158,8 @@ const courseSections = [
 ];
 
 type ImmersiveSectionRenderer = (props: {
-  concept: ImmersiveConceptKey;
-  data: typeof conceptData[ImmersiveConceptKey];
+  dataKey: ImmersiveDataKey;
+  data: typeof conceptData[ImmersiveDataKey];
 }) => ReactNode;
 
 const sectionRenderers = {
@@ -311,18 +317,18 @@ const sectionRenderers = {
 } satisfies Record<ComponentSection, ImmersiveSectionRenderer>;
 
 export function ImmersiveConcept({
-  concept,
+  dataKey,
   section,
 }: {
-  concept: ImmersiveConceptKey;
+  dataKey: ImmersiveDataKey;
   section: ComponentSection;
 }) {
-  const data = conceptData[concept];
+  const data = conceptData[dataKey];
   const renderSection = sectionRenderers[section];
 
   return (
-    <section className={`feature-site feature-${concept} component-preview`}>
-      {renderSection({ concept, data })}
+    <section className={`feature-site feature-${dataKey} component-preview`}>
+      {renderSection({ dataKey, data })}
     </section>
   );
 }
