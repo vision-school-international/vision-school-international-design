@@ -473,7 +473,7 @@ The actual Church Center and payment-processing fees must be verified from curre
 - Collect approved logos, photographs, footage, stories, course copy, branch data, events, registration links, forms, and operating templates.
 - Interview registration, travel, branch, and Team Leader Care representatives.
 - Document the Mexico/Monday.com pilot and reusable lessons.
-- Select one of the two refined visual directions.
+- Select one of the proposed visual directions.
 
 **Exit:** one design approved; public facts and class data have owners; launch scope and decision owners are recorded.
 
@@ -649,7 +649,7 @@ The authenticated portal may launch only when:
 6. What source is authoritative for class and schedule data?
 7. What is the approved public relationship language for Vision School and InterCP?
 8. Which claims, numbers, course structure, and terminology are approved?
-9. Which of the two refined design directions will proceed?
+9. Which proposed design direction will proceed?
 10. What logo, palette, type, photography, and video assets are approved?
 11. Which Church Center links and registration states must be supported?
 12. What donation system is approved?
@@ -669,7 +669,7 @@ The authenticated portal may launch only when:
 ### Within 72 hours
 
 - [ ] Confirm product, technical, ministry, security/privacy, content, and support owners.
-- [ ] Review and approve one refined design direction.
+- [ ] Review and approve one design direction.
 - [ ] Confirm global positioning and domain decision owner.
 - [ ] Add collaborators and branch protection to GitHub.
 - [ ] Collect approved program copy, brand files, media, testimonials, class data, events, registration destinations, policies, and contact owners.

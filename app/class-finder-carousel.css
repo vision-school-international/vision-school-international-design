@@ -1,0 +1,61 @@
+.class-finder { --finder-bg: var(--color-page, #f4f7fb); --finder-card: var(--color-surface, #ffffff); --finder-ink: var(--color-text-strong, #102c57); --finder-body: var(--color-text, #1f2c40); --finder-muted: var(--color-text-muted, #53657e); --finder-line: var(--color-border, #b9c9dc); --finder-accent: var(--color-link, #1769c2); --finder-gold: var(--color-accent, #66afe6); --finder-action-text: var(--color-action-text, #ffffff); --finder-font-serif: var(--font-serif, Georgia, "Times New Roman", serif); --finder-font-mono: var(--font-mono, monospace); display: grid; gap: 34px; width: 100%; padding: clamp(58px, 8vw, 118px) clamp(22px, 6vw, 88px); background: var(--finder-bg); color: var(--finder-ink); }
+.class-finder__intro { display: grid; grid-template-columns: minmax(120px, .4fr) minmax(0, 1fr) minmax(220px, .45fr); gap: clamp(24px, 4vw, 64px); align-items: end; }
+.class-finder__intro p { margin: 0; color: var(--finder-accent); font-family: var(--finder-font-mono); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; }
+.class-finder__intro h2 { margin: 0; font-family: var(--finder-font-serif); font-size: clamp(54px, 7vw, 116px); font-weight: 400; letter-spacing: -.055em; line-height: .9; }
+.class-finder__intro span { color: var(--finder-muted); font-size: 14px; line-height: 1.65; }
+.class-finder__viewport { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(280px, .7fr); gap: 22px; align-items: stretch; }
+.class-finder__active { display: grid; min-height: 440px; padding: clamp(26px, 4vw, 48px); background: var(--finder-card); border: 1px solid var(--finder-line); }
+.class-finder__active > span, .class-finder__rail button > span { color: var(--finder-accent); font-family: var(--finder-font-mono); font-size: 10px; letter-spacing: .13em; text-transform: uppercase; }
+.class-finder__active h3 { max-width: 720px; margin: auto 0 28px; font-family: var(--finder-font-serif); font-size: clamp(52px, 6vw, 96px); font-weight: 400; letter-spacing: -.055em; line-height: .9; }
+.class-finder__active dl { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin: 0; border-top: 1px solid var(--finder-line); border-bottom: 1px solid var(--finder-line); }
+.class-finder__active dl div { padding: 18px 18px 18px 0; }
+.class-finder__active dt { color: var(--finder-muted); font-size: 11px; }
+.class-finder__active dd { margin: 7px 0 0; font-size: 15px; }
+.class-finder__active p { max-width: 620px; margin: 24px 0 30px; color: var(--finder-muted); line-height: 1.65; }
+.class-finder__active a { display: flex; justify-content: space-between; align-self: end; padding-top: 18px; border-top: 1px solid var(--finder-line); font-family: var(--finder-font-mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+.class-finder__rail { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.class-finder__rail button { display: grid; width: 100%; min-height: 130px; gap: 10px; padding: 20px; border: 1px solid var(--finder-line); background: transparent; color: inherit; text-align: left; cursor: pointer; }
+.class-finder__rail button[aria-pressed="true"] { background: var(--finder-ink); color: var(--finder-card); }
+.class-finder__rail button[aria-pressed="true"] span, .class-finder__rail button[aria-pressed="true"] small { color: color-mix(in srgb, var(--finder-card) 72%, transparent); }
+.class-finder__rail strong { font-family: var(--finder-font-serif); font-size: 28px; font-weight: 400; letter-spacing: -.035em; }
+.class-finder__rail small { color: var(--finder-muted); font-size: 12px; }
+.class-finder__controls { display: grid; grid-template-columns: 1fr auto 1fr; gap: 16px; align-items: center; }
+.class-finder__controls > button { min-height: 48px; border: 1px solid var(--finder-line); background: transparent; color: inherit; font-family: var(--finder-font-mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; cursor: pointer; }
+.class-finder__controls > button:last-child { background: var(--finder-ink); color: var(--finder-card); }
+.class-finder__dots { display: flex; gap: 8px; justify-content: center; }
+.class-finder__dots button { width: 10px; height: 10px; padding: 0; border: 1px solid var(--finder-ink); border-radius: 999px; background: transparent; cursor: pointer; }
+.class-finder__dots button[aria-current="true"] { background: var(--finder-accent); border-color: var(--finder-accent); }
+
+.class-finder--focused .class-finder__active { border-left: 10px solid var(--finder-accent); box-shadow: 18px 18px 0 color-mix(in srgb, var(--finder-gold) 36%, transparent); }
+
+.class-finder--comparison .class-finder__viewport { grid-template-columns: 1fr; }
+.class-finder--comparison .class-finder__rail { grid-template-columns: repeat(3, 1fr); }
+.class-finder--comparison .class-finder__rail button { min-height: 190px; background: var(--finder-card); }
+.class-finder--comparison .class-finder__rail button[aria-pressed="true"] { box-shadow: inset 0 -8px 0 var(--finder-accent); }
+
+.class-finder--decision .class-finder__intro { grid-template-columns: minmax(120px, .38fr) minmax(0, 1.08fr) minmax(240px, .54fr); padding-bottom: 26px; border-bottom: 1px solid var(--finder-line); }
+.class-finder--decision .class-finder__viewport { grid-template-columns: minmax(0, .9fr) minmax(300px, .5fr); }
+.class-finder--decision .class-finder__active { position: relative; min-height: 460px; border-left: 9px solid var(--finder-accent); box-shadow: 18px 18px 0 color-mix(in srgb, var(--finder-gold) 38%, transparent); }
+.class-finder--decision .class-finder__active::before { position: absolute; top: 30px; right: 30px; width: 54px; height: 1px; background: var(--finder-accent); content: ""; }
+.class-finder--decision .class-finder__active h3 { max-width: 620px; }
+.class-finder--decision .class-finder__active a { background: var(--finder-accent); color: var(--finder-action-text); margin-top: 4px; padding: 18px 20px; border-top: 0; }
+.class-finder--decision .class-finder__rail { align-content: start; }
+.class-finder--decision .class-finder__rail button { min-height: 118px; background: color-mix(in srgb, var(--finder-card) 72%, transparent); }
+.class-finder--decision .class-finder__rail button[aria-pressed="true"] { background: var(--finder-ink); color: var(--finder-card); }
+
+@media (max-width: 920px) {
+  .class-finder, .class-finder--decision { grid-template-columns: 1fr; }
+  .class-finder__intro, .class-finder__viewport { grid-template-columns: 1fr; }
+  .class-finder--decision .class-finder__intro { min-height: auto; }
+  .class-finder--decision .class-finder__controls { grid-column: auto; }
+  .class-finder--comparison .class-finder__rail { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .class-finder { padding: 62px 20px; }
+  .class-finder__active { min-height: 390px; }
+  .class-finder__active dl { grid-template-columns: 1fr; }
+  .class-finder__active dl div + div { border-top: 1px solid var(--finder-line); }
+  .class-finder__controls { grid-template-columns: 1fr; }
+  .class-finder__dots { order: -1; }
+}

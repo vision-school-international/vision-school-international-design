@@ -14,11 +14,18 @@ Read this file before changing the repository. These rules protect the internal 
 
 ## Follow the component architecture
 
-- Define section metadata and concept availability in `app/concepts/componentCatalog.ts`.
+- Define section metadata in `app/concepts/componentCatalog.ts`.
+- Export concept metadata, availability, and render contracts from the renderer
+  modules that own those concepts. Keep `app/concepts/conceptRegistry.tsx` as a
+  composition layer that collects registered concepts and filters by section.
 - Derive section keys, ordinals, totals, and available concepts from catalog data. Do not hardcode inventory counts.
-- Put legacy visual treatments in `app/concepts/ConceptPage.tsx` and refined treatments in `app/RefinedConcept.tsx`.
+- Put concept-specific visual treatments in renderer modules such as
+  `app/concepts/ConceptPage.tsx` and
+  `app/concepts/ImmersiveConcept.tsx`.
 - Share focused data or interaction behavior under `app/components/` only when concepts genuinely use the same behavior.
-- Do not merge legacy and refined visual markup into a generic renderer. Their differences are the review material.
+- Keep class finder carousel behavior in `app/components/ClassFinderCarousel.tsx`;
+  concept modules should supply UX-goal-specific design configuration.
+- Do not merge renderer-specific visual markup into a generic renderer. Their differences are the review material.
 - Scope substantial component styles behind a unique component class in a dedicated stylesheet. Do not add global selectors that can leak into other treatments.
 - Import a component stylesheet once through `src/main.tsx`. Do not inject style tags or duplicate imports in renderers.
 - Keep IDs unique in the mounted document. Outer gallery areas own section anchor IDs.

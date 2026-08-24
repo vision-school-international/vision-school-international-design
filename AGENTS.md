@@ -13,7 +13,10 @@ gallery, not the production ministry site. It is a Vite + React + TypeScript
 frontend with a small Hono server. Preserve the current component-gallery
 model: `app/page.tsx` owns the section-type index and renders one selected
 section and concept at a time; `app/concepts/ConceptPage.tsx` and
-`app/RefinedConcept.tsx` render one requested section treatment at a time.
+`app/concepts/ImmersiveConcept.tsx` render requested section treatments through
+concept-specific renderer maps.
+`app/components/ClassFinderCarousel.tsx` provides the shared class finder
+carousel behavior used by concept-owned class finder designs.
 `app/components/VideoGallery.tsx` provides the isolated single-player video
 library used by its supported concepts.
 
@@ -67,10 +70,10 @@ pass. Keep those files synchronized if an approved dependency change is made.
   concept renders alone so designers can inspect it at a normal page width.
 - Do not add document IDs inside isolated previews that can duplicate across
   the available concepts. Gallery anchor IDs belong to the outer section areas.
-- Do not merge the legacy and refined renderers into a generic visual
-  component. Their different markup and CSS are the design treatments under
-  review; share only contracts or metadata when an approved change proves it
-  removes duplication without changing output.
+- Do not merge renderer-specific visual markup into a generic visual component.
+  Different markup and CSS are the design treatments under review; share only
+  contracts or metadata when an approved change proves it removes duplication
+  without changing output.
 - Do not remove “sample”, “illustrative”, or ministry-approval wording from
   review content. It is a deliberate boundary in the current gallery.
 - Do not replace existing image assets, copy, or CSS with invented content while

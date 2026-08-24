@@ -1,32 +1,87 @@
-import { getConceptName, sectionId, type ComponentSection, type ConceptKey } from "./componentCatalog";
-import { VideoGallery } from "../components/VideoGallery";
+import { createElement, type ReactNode } from "react";
+import type { ConceptSectionMap, DesignConceptDefinition } from "./conceptRegistry";
+import { type ComponentSection, sectionId } from "./componentCatalog";
+import { ClassFinderCarousel, type ClassFinderDesign } from "../components/ClassFinderCarousel";
+import { VideoGallery, type VideoGalleryLayout } from "../components/VideoGallery";
+
+type MockupConceptData = {
+  headline: string;
+  subhead: string;
+  image: string;
+  imageAlt: string;
+  classFinder: ClassFinderDesign;
+  videoLayout?: VideoGalleryLayout;
+};
 
 const conceptData = {
-  global: {
+  commit: {
     headline: "See the story. Find your place in it.",
-    subhead: "A clear, editorial home for a global discipleship movement.",
+    subhead: "A clear path that turns class interest into a confident next step.",
     image: "/images/community-city.jpg",
     imageAlt: "A diverse group of young adults in conversation outdoors",
+    classFinder: {
+      layout: "decision",
+      eyebrow: "Ready when you are",
+      title: "Find your class.",
+      summary: "Keeps the selected class, key details, and next action in one focused decision path.",
+      metricLabel: "Decision",
+      actionLabel: "Take next step",
+      items: [
+        {
+          audience: "YG & ANA",
+          place: "Frederick, MD",
+          format: "In person",
+          term: "Fall 2026",
+          rhythm: "Primary next step",
+          note: "Decision-path emphasis for students ready to move from interest to a class action.",
+        },
+        {
+          audience: "YG & ANA",
+          place: "Gaithersburg, MD",
+          format: "In person",
+          term: "Fall 2026",
+          rhythm: "Alternate branch",
+          note: "A secondary path when the primary option is not the right location fit.",
+        },
+        {
+          audience: "YG & ANA",
+          place: "Baltimore, MD",
+          format: "In person",
+          term: "Fall 2026",
+          rhythm: "Regional backup",
+          note: "A final visible option so the user does not hit a dead end before registration.",
+        },
+      ],
+    },
+    videoLayout: "region",
   },
-  together: {
-    headline: "Formed in community. Sent to the nations.",
-    subhead: "A warm, human-centered direction built around belonging and shared calling.",
-    image: "/images/community-table.jpg",
-    imageAlt: "Young adults sharing a conversation around a table",
-  },
-  nations: {
-    headline: "Your generation. Every nation.",
-    subhead: "A bold, energetic direction for students ready to move from conviction to action.",
-    image: "/images/youth-gathering.jpg",
-    imageAlt: "A lively gathering of young adults standing together",
-  },
-  forward: {
-    headline: "The world is waiting. Take the next step.",
-    subhead: "A cinematic, premium direction that makes the journey feel consequential.",
-    image: "/images/mountain-sunrise.jpg",
-    imageAlt: "A mountain peak emerging above clouds at sunrise",
-  },
-} as const;
+} as const satisfies Record<string, MockupConceptData>;
+
+type MockupConceptKey = keyof typeof conceptData;
+type MockupConceptConfig = Omit<DesignConceptDefinition, "key" | "sections"> & {
+  supportedSections: readonly ComponentSection[];
+};
+
+function createMockupConcept(key: MockupConceptKey, definition: MockupConceptConfig): DesignConceptDefinition {
+  const { supportedSections, ...conceptDefinition } = definition;
+
+  return {
+    ...conceptDefinition,
+    key,
+    sections: Object.fromEntries(
+      supportedSections.map((section) => [
+        section,
+        function renderMockupConcept() {
+          return createElement(ConceptPage, { concept: key, section });
+        },
+      ]),
+    ) as ConceptSectionMap,
+  };
+}
+
+export const mockupConcepts: readonly DesignConceptDefinition[] = [
+  createMockupConcept("commit", { name: "Decision Class Finder", image: "/images/community-city.jpg", color: "#66afe6", supportedSections: ["classes"] }),
+];
 
 const pillars = [
   {
@@ -52,36 +107,29 @@ const courseSteps = [
   ["03", "Find your role", "Turn learning into a faithful next step—locally or globally."],
 ];
 
-const sampleClasses = [
-  ["New York, NY", "In person", "Fall 2026"],
-  ["Toronto, ON", "In person", "Fall 2026"],
-  ["North America", "Online", "Fall 2026"],
-];
+type MockupSectionRenderer = (props: {
+  concept: MockupConceptKey;
+  data: typeof conceptData[MockupConceptKey];
+}) => ReactNode;
 
-export function ConceptPage({
-  concept,
-  section,
-}: {
-  concept: ConceptKey;
-  section: ComponentSection;
-}) {
-  const data = conceptData[concept];
-  const content = (
-    <>
-      {section === "navigation" && <header className="mock-nav">
+const sectionRenderers = {
+  navigation: () => (
+      <header className="mock-nav">
         <a className="mock-logo" href="#component-menu" aria-label="Show all Vision School component types">
           <span className="mock-logo-mark">V</span>
           <span>Vision School <small>International</small></span>
         </a>
-        <nav aria-label={`${getConceptName(concept)} primary navigation`}>
+        <nav aria-label="Primary navigation">
           <a href={`#${sectionId("about")}`}>About</a>
           <a href={`#${sectionId("course")}`}>The Course</a>
           <a href={`#${sectionId("classes")}`}>Locations</a>
           <a className="nav-cta" href={`#${sectionId("classes")}`}>Find a class</a>
         </nav>
-      </header>}
+      </header>
+  ),
 
-      {section === "hero" && <section className="mock-hero">
+  hero: ({ data }) => (
+      <section className="mock-hero">
         <div className="hero-copy">
           <p className="mock-kicker">One vision · Every people · Your next step</p>
           <h1>{data.headline}</h1>
@@ -99,15 +147,19 @@ export function ConceptPage({
           <span>Discern</span><i aria-hidden="true" />
           <span>Go</span>
         </div>
-      </section>}
+      </section>
+  ),
 
-      {section === "proof" && <section className="proof-strip" aria-label="Program summary">
+  proof: () => (
+      <section className="proof-strip" aria-label="Program summary">
         <p>One course</p><span aria-hidden="true">•</span>
         <p>Global branches</p><span aria-hidden="true">•</span>
         <p>A lifetime of mission</p>
-      </section>}
+      </section>
+  ),
 
-      {section === "about" && <section className="about-section">
+  about: () => (
+      <section className="about-section">
         <div className="section-heading">
           <p className="mock-kicker">What is Vision School?</p>
           <h2>More than information.<br />An invitation.</h2>
@@ -125,9 +177,11 @@ export function ConceptPage({
             </article>
           ))}
         </div>
-      </section>}
+      </section>
+  ),
 
-      {section === "course" && <section className="course-section">
+  course: () => (
+      <section className="course-section">
         <div className="course-photo" style={{ backgroundImage: "url(/images/youth-gathering.jpg)" }} role="img" aria-label="Young adults gathered together in a classroom community" />
         <div className="course-copy">
           <p className="mock-kicker">Inside the course</p>
@@ -142,46 +196,33 @@ export function ConceptPage({
           </div>
           <a className="text-link" href={`#${sectionId("classes")}`}>Explore the course <span aria-hidden="true">→</span></a>
         </div>
-      </section>}
+      </section>
+  ),
 
-      {section === "classes" && <section className="classes-section">
-        <div className="classes-header">
-          <div>
-            <p className="mock-kicker">Start near you</p>
-            <h2>Find your class.</h2>
-          </div>
-          <p>Illustrative class data for design review. Final locations and registration links will come from the Vision School team.</p>
-        </div>
-        <div className="class-grid">
-          {sampleClasses.map(([place, format, term], index) => (
-            <article className="class-card" key={place}>
-              <span className="sample-label">Sample 0{index + 1}</span>
-              <h3>{place}</h3>
-              <div><span>{format}</span><span>{term}</span></div>
-              <a href={`#${sectionId("classes")}`} aria-label={`View sample class in ${place}`}>View class <span aria-hidden="true">↗</span></a>
-            </article>
-          ))}
-        </div>
-        <a className="all-classes" href={`#${sectionId("classes")}`}>View all class locations <span aria-hidden="true">→</span></a>
-      </section>}
+  classes: ({ data }) => <ClassFinderCarousel design={data.classFinder} />,
 
-      {section === "stories" && <section className="story-section">
+  stories: () => (
+      <section className="story-section">
         <div className="story-index">“</div>
         <blockquote>
           Vision School didn’t simply give me more information. It gave me a clearer picture of God’s heart—and a faithful next step.
         </blockquote>
         <p>Sample student story · Replace with an approved testimonial</p>
-      </section>}
+      </section>
+  ),
 
-      {section === "videos" && concept === "global" && <VideoGallery variant="international" />}
+  videos: ({ data }) => data.videoLayout ? <VideoGallery layout={data.videoLayout} /> : null,
 
-      {section === "cta" && <section className="final-cta">
+  cta: () => (
+      <section className="final-cta">
         <p className="mock-kicker">Ready when you are</p>
         <h2>Your place in the story<br />starts here.</h2>
         <a className="primary-action" href={`#${sectionId("classes")}`}>Find a Vision School class <span aria-hidden="true">↗</span></a>
-      </section>}
+      </section>
+  ),
 
-      {section === "footer" && <footer className="mock-footer">
+  footer: () => (
+      <footer className="mock-footer">
         <div className="mock-logo footer-logo">
           <span className="mock-logo-mark">V</span>
           <span>Vision School <small>International</small></span>
@@ -189,9 +230,20 @@ export function ConceptPage({
         <p>A global discipleship movement equipping believers to understand and participate in God’s purpose among the nations.</p>
         <div className="footer-links"><a href={`#${sectionId("about")}`}>About</a><a href={`#${sectionId("course")}`}>Course</a><a href={`#${sectionId("classes")}`}>Classes</a><a href={`#${sectionId("classes")}`}>Contact</a></div>
         <p className="footer-note">Concept mockup · Content subject to ministry approval</p>
-      </footer>}
-    </>
-  );
+      </footer>
+  ),
+} satisfies Record<ComponentSection, MockupSectionRenderer>;
 
+export function ConceptPage({
+  concept,
+  section,
+}: {
+  concept: MockupConceptKey;
+  section: ComponentSection;
+}) {
+  const data = conceptData[concept];
+  const renderSection = sectionRenderers[section];
+
+  const content = renderSection({ concept, data });
   return <section className={`site-mock site-${concept} component-preview`}>{content}</section>;
 }

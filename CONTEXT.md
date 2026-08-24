@@ -16,7 +16,7 @@ testimonials as subject to ministry approval.
 ## Runtime path
 
 `index.html` mounts `src/main.tsx`. That entry point renders `app/page.tsx`
-with React Strict Mode and imports `app/legacy-concepts.css`,
+with React Strict Mode and imports `app/concept-mockups.css`,
 `app/video-gallery.css`, and `app/globals.css`. Vite builds the browser bundle to `dist/` according to
 `vite.config.ts`. `server/index.mjs` serves `dist/`, provides `GET /health`,
 and falls back to `dist/index.html` for client-side routes. The server uses
@@ -28,19 +28,31 @@ and falls back to `dist/index.html` for client-side routes. The server uses
   the selected gallery. Clicking a section card mounts only that section area;
   the concept selector then mounts one selected design treatment in its isolated
   preview article.
-- `app/concepts/ConceptPage.tsx` owns the original/legacy visual treatments.
-- `app/RefinedConcept.tsx` owns the refined visual treatments.
+- `app/concepts/conceptRegistry.tsx` composes concept definitions exported by
+  renderer modules and exposes the neutral render contract consumed by the
+  shell.
+- `app/concepts/ConceptPage.tsx` owns one set of concept-specific visual
+  treatments through a typed section renderer map and exports the concept
+  definitions for that renderer.
+- `app/concepts/ImmersiveConcept.tsx` owns another set of concept-specific
+  visual treatments through a typed section renderer map and exports the
+  concept definitions for that renderer.
+- `app/components/ClassFinderCarousel.tsx` owns the shared class finder carousel
+  state, controls, class-session sample data, and layout contract. Concept
+  modules supply the UX-goal-specific class finder design configuration.
 - `app/components/VideoGallery.tsx` owns the shared video data and single-player
-  interaction for the Editorial, Contemporary, and International video-library
-  treatments. `app/video-gallery.css` keeps those treatments scoped.
-- Both renderers receive a concept key and one `ComponentSection`, then render
-  only that section. Their different markup and CSS are intentional comparison
-  material, not accidental duplicate product components.
-- `app/globals.css` owns the gallery shell/index/variant layout, refined
-  `.refined-*` treatment styles, and related shared selectors. `app/legacy-concepts.css`
-  owns the legacy `.site-mock`/`.mock-*` treatment system. Keep selectors scoped
-  to their role and avoid changing one renderer by relying on another renderer’s
-  selectors.
+  interaction for the concepts that support video-library sections.
+  `app/video-gallery.css` keeps those treatments scoped.
+- Concept renderers receive a concept key and one `ComponentSection`, then
+  render only that requested section treatment. Their different markup and CSS
+  are intentional comparison material, not accidental duplicate product
+  components.
+- `app/globals.css` owns the gallery shell/index/concept layout, feature
+  `.feature-*` treatment styles, and related shared selectors.
+  `app/class-finder-carousel.css` owns the `.class-finder-*` carousel styles.
+  `app/concept-mockups.css` owns the `.site-mock`/`.mock-*` treatment system.
+  Keep selectors scoped to their role and avoid changing one renderer by
+  relying on another renderer’s selectors.
 - `tests/rendered-html.test.mjs` builds the site and checks rendered output;
   `eslint.config.mjs` defines lint coverage; `tsconfig.json` provides strict
   TypeScript settings but `package.json` has no dedicated typecheck script.
@@ -48,7 +60,7 @@ and falls back to `dist/index.html` for client-side routes. The server uses
 When changing the gallery, follow data flow from `app/page.tsx` to both
 renderers and then to the CSS selectors and rendered-page test. A section-card
 or anchor change must be checked against every section type and available
-concept. A renderer change must be checked in both legacy and refined paths.
+concept. A renderer change must be checked across every affected concept path.
 
 ## Source-of-truth commands and deployment
 
