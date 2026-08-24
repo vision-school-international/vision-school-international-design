@@ -30,9 +30,9 @@ Read this file before changing the repository. These rules protect the internal 
   and sample datasets private to the renderer. They must not become selector
   labels, concept names, or gallery routing concepts.
 - Derive section keys, ordinals, totals, and available concepts from catalog data. Do not hardcode inventory counts.
-- Put concept-specific visual treatments in renderer modules such as
-  `app/concepts/ConceptPage.tsx` and
-  `app/concepts/ImmersiveConcept.tsx`.
+- Put concept-specific visual treatments in portable component files under
+  `app/components/` and register them through focused concept modules under
+  `app/concepts/`.
 - Share focused data or interaction behavior under `app/components/` only when concepts genuinely use the same behavior.
 - Keep class finder carousel behavior in `app/components/ClassFinderCarousel.tsx`;
   concept modules should supply UX-goal-specific design configuration.

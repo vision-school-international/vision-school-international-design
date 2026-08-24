@@ -1,0 +1,158 @@
+.announcement-bar,
+.breadcrumb-trail,
+.events-calendar,
+.faq-accordion,
+.registration-contact-form,
+.newsletter-signup,
+.partner-logo-strip,
+.team-leadership,
+.resources-blog-listing,
+.gallery-image-grid,
+.donation-support-cta {
+  --new-bg: var(--color-page, #f4f7fb);
+  --new-surface: var(--color-surface, #ffffff);
+  --new-ink: var(--color-text-strong, #102c57);
+  --new-body: var(--color-text, #1f2c40);
+  --new-muted: var(--color-text-muted, #53657e);
+  --new-line: var(--color-border, #b9c9dc);
+  --new-link: var(--color-link, #1769c2);
+  --new-accent: var(--color-accent, #66afe6);
+  --new-action-text: var(--color-action-text, #ffffff);
+  --new-serif: var(--font-serif, Georgia, "Times New Roman", serif);
+  --new-mono: var(--font-mono, monospace);
+  width: 100%;
+  background: var(--new-bg);
+  color: var(--new-ink);
+}
+
+.announcement-bar { display: grid; grid-template-columns: auto minmax(0, .7fr) minmax(220px, 1fr) auto; gap: 20px; align-items: center; padding: 20px clamp(22px, 5vw, 72px); border-bottom: 1px solid var(--new-line); }
+.announcement-bar p,
+.events-calendar header p,
+.faq-accordion header p,
+.registration-contact-form p,
+.newsletter-signup p,
+.partner-logo-strip header p,
+.team-leadership header p,
+.resources-blog-listing header p,
+.gallery-image-grid header p,
+.donation-support-cta p { margin: 0; color: var(--new-link); font-family: var(--new-mono); font-size: 10px; font-weight: 650; letter-spacing: .13em; text-transform: uppercase; }
+.announcement-bar strong { font-family: var(--new-serif); font-size: clamp(20px, 2.2vw, 34px); font-weight: 400; letter-spacing: -.035em; }
+.announcement-bar span { color: var(--new-muted); font-size: 13px; line-height: 1.5; }
+.announcement-bar a,
+.resources-blog-listing a,
+.donation-support-cta a { display: inline-flex; justify-content: space-between; gap: 20px; min-height: 44px; align-items: center; padding: 0 16px; background: var(--new-link); color: var(--new-action-text); font-family: var(--new-mono); font-size: 9px; font-weight: 650; letter-spacing: .11em; text-transform: uppercase; }
+
+.breadcrumb-trail { padding: 26px clamp(22px, 5vw, 72px); border-bottom: 1px solid var(--new-line); }
+.breadcrumb-trail ol { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 0; padding: 0; list-style: none; }
+.breadcrumb-trail li { display: flex; gap: 10px; align-items: center; color: var(--new-muted); font-family: var(--new-mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+.breadcrumb-trail li + li::before { color: var(--new-link); content: "/"; }
+.breadcrumb-trail a { color: var(--new-body); }
+.breadcrumb-trail span { color: var(--new-link); }
+
+.events-calendar,
+.faq-accordion,
+.partner-logo-strip,
+.team-leadership,
+.resources-blog-listing,
+.gallery-image-grid { display: grid; gap: clamp(30px, 4vw, 58px); padding: clamp(54px, 7vw, 104px) clamp(22px, 6vw, 88px); }
+.events-calendar header,
+.faq-accordion header,
+.partner-logo-strip header,
+.team-leadership header,
+.resources-blog-listing header,
+.gallery-image-grid header { display: grid; grid-template-columns: minmax(150px, .42fr) minmax(0, 1fr); gap: 28px; align-items: end; }
+.events-calendar h2,
+.faq-accordion h2,
+.registration-contact-form h2,
+.newsletter-signup h2,
+.partner-logo-strip h2,
+.team-leadership h2,
+.resources-blog-listing h2,
+.gallery-image-grid h2,
+.donation-support-cta h2 { margin: 0; font-family: var(--new-serif); font-size: clamp(42px, 5.4vw, 82px); font-weight: 400; letter-spacing: -.055em; line-height: .94; }
+.events-calendar ol { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin: 0; padding: 0; list-style: none; border: 1px solid var(--new-line); background: var(--new-surface); }
+.events-calendar li { min-height: 240px; padding: 24px; border-right: 1px solid var(--new-line); }
+.events-calendar li:last-child { border-right: 0; }
+.events-calendar li span,
+.resources-blog-listing article span { color: var(--new-link); font-family: var(--new-mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+.events-calendar h3,
+.team-leadership h3,
+.resources-blog-listing h3 { margin: 80px 0 14px; font-family: var(--new-serif); font-size: 30px; font-weight: 400; }
+.events-calendar li p,
+.team-leadership article p { margin: 0; color: var(--new-muted); line-height: 1.6; }
+.events-calendar small,
+.partner-logo-strip small,
+.team-leadership small,
+.gallery-image-grid small { color: var(--new-muted); font-size: 12px; }
+
+.faq-accordion > div { display: grid; border-top: 1px solid var(--new-line); }
+.faq-accordion article { border-bottom: 1px solid var(--new-line); }
+.faq-accordion button { display: flex; justify-content: space-between; width: 100%; gap: 20px; padding: 24px 0; border: 0; background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.faq-accordion button span { font-family: var(--new-serif); font-size: clamp(24px, 2.4vw, 38px); }
+.faq-accordion button b { color: var(--new-link); font-family: var(--new-mono); font-size: 20px; }
+.faq-accordion article p { max-width: 740px; margin: 0 0 24px; color: var(--new-muted); line-height: 1.65; }
+
+.registration-contact-form { display: grid; grid-template-columns: minmax(0, .85fr) minmax(320px, 1fr); gap: clamp(30px, 5vw, 70px); padding: clamp(58px, 8vw, 112px) clamp(22px, 6vw, 88px); }
+.registration-contact-form div > span,
+.newsletter-signup > span,
+.donation-support-cta > span { display: block; max-width: 520px; margin-top: 24px; color: var(--new-muted); line-height: 1.65; }
+.registration-contact-form form { display: grid; gap: 16px; padding: 24px; background: var(--new-surface); border: 1px solid var(--new-line); }
+.registration-contact-form label,
+.newsletter-signup label { display: grid; gap: 8px; color: var(--new-muted); font-family: var(--new-mono); font-size: 10px; letter-spacing: .11em; text-transform: uppercase; }
+.registration-contact-form input,
+.registration-contact-form select,
+.newsletter-signup input { min-height: 48px; padding: 0 14px; border: 1px solid var(--new-line); background: var(--new-bg); color: var(--new-body); font: inherit; }
+.registration-contact-form button,
+.newsletter-signup button { min-height: 48px; border: 0; background: var(--new-link); color: var(--new-action-text); font-family: var(--new-mono); font-size: 10px; font-weight: 650; letter-spacing: .12em; text-transform: uppercase; cursor: pointer; }
+.registration-contact-form form p { margin: 0; color: var(--new-muted); font-size: 12px; }
+
+.newsletter-signup { display: grid; grid-template-columns: minmax(0, .9fr) minmax(320px, 1fr); gap: 30px; align-items: end; padding: clamp(48px, 6vw, 82px) clamp(22px, 6vw, 88px); background: var(--new-ink); color: var(--new-surface); }
+.newsletter-signup p { color: var(--new-accent); }
+.newsletter-signup h2 { color: var(--new-surface); }
+.newsletter-signup form { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: end; }
+.newsletter-signup label { color: color-mix(in srgb, var(--new-surface) 72%, transparent); }
+.newsletter-signup > span { grid-column: 2; margin: 0; color: color-mix(in srgb, var(--new-surface) 72%, transparent); font-size: 12px; }
+
+.partner-logo-strip ul { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.partner-logo-strip li { display: grid; min-height: 130px; place-items: center; padding: 20px; border: 1px solid var(--new-line); background: var(--new-surface); color: var(--new-body); font-family: var(--new-serif); font-size: 24px; text-align: center; }
+
+.team-leadership > div,
+.resources-blog-listing > div { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.team-leadership article,
+.resources-blog-listing article { display: grid; min-height: 310px; padding: 24px; border: 1px solid var(--new-line); background: var(--new-surface); }
+.team-leadership article > span { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(135deg, var(--new-link), var(--new-accent)); }
+.resources-blog-listing h3 { margin-top: auto; }
+.resources-blog-listing a { align-self: end; }
+
+.gallery-image-grid > div { display: grid; grid-template-columns: 1.2fr .8fr; gap: 14px; }
+.gallery-image-grid figure { min-height: 260px; margin: 0; overflow: hidden; background: #08131d; }
+.gallery-image-grid figure:first-child { grid-row: span 2; }
+.gallery-image-grid img { width: 100%; height: 100%; object-fit: cover; }
+
+.donation-support-cta { display: grid; justify-items: center; padding: clamp(82px, 11vw, 154px) clamp(22px, 6vw, 86px); text-align: center; }
+.donation-support-cta h2 { max-width: 940px; margin: 22px 0; font-size: clamp(54px, 7vw, 112px); }
+.donation-support-cta a { margin-top: 34px; }
+
+@media (max-width: 920px) {
+  .announcement-bar,
+  .events-calendar header,
+  .faq-accordion header,
+  .registration-contact-form,
+  .newsletter-signup,
+  .partner-logo-strip header,
+  .team-leadership header,
+  .resources-blog-listing header,
+  .gallery-image-grid header { grid-template-columns: 1fr; }
+  .events-calendar ol,
+  .partner-logo-strip ul,
+  .team-leadership > div,
+  .resources-blog-listing > div { grid-template-columns: 1fr; }
+  .events-calendar li { border-right: 0; border-bottom: 1px solid var(--new-line); }
+  .newsletter-signup > span { grid-column: auto; }
+  .gallery-image-grid > div { grid-template-columns: 1fr; }
+  .gallery-image-grid figure:first-child { grid-row: auto; }
+}
+
+@media (max-width: 640px) {
+  .newsletter-signup form { grid-template-columns: 1fr; }
+}

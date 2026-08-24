@@ -6,16 +6,10 @@ An internal design review gallery for the Vision School International website. I
 
 A design comparison gallery: choose a website section, then choose a design concept to view at full width. Only the selected section and concept are rendered at a time.
 
-## Concepts
+## Concept model
 
-- **Editorial**
-- **Contemporary**
-- **International**
-- **Community**
-- **Bold**
-- **Cinematic**
-
-These are review labels, not final product names.
+Concepts are registered per component section. They are not global design
+families, style buckets, or final product names.
 
 ## Section types
 
@@ -29,6 +23,17 @@ These are review labels, not final product names.
 - **Video library** — Lets users browse and watch mission camp videos without leaving the page.
 - **Calls to action** — Prompts the next action at decision points.
 - **Footer** — Provides final navigation, contact, and credibility information.
+- **Announcement bar** — Highlights deadlines, camps, or urgent updates.
+- **Breadcrumbs** — Helps users understand deeper-page location.
+- **Events calendar** — Shows sessions, camps, mission events, and dates.
+- **FAQ accordion** — Answers practical questions compactly.
+- **Registration form** — Converts interest into inquiry or enrollment.
+- **Newsletter signup** — Retains visitors not ready to register.
+- **Partner logo strip** — Shows local-church or partner credibility.
+- **Team leadership** — Identifies responsible people and roles.
+- **Resources listing** — Shows teaching, stories, and mission material.
+- **Gallery image grid** — Shows training and community visually.
+- **Donation CTA** — Gives supporters a financial participation path when applicable.
 
 ## Run locally
 
@@ -48,8 +53,7 @@ npm start
 
 The frontend is a plain Vite React build in `dist/`. A small Hono server serves
 that directory, provides `/health`, and falls back to `index.html` for
-client-side gallery routes. Use `npm test` for the production build and
-rendered-page checks.
+client-side gallery routes. Use `npm test` for the production build.
 
 ## Dokploy
 

@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 
-export type ClassFinderLayout = "focused" | "comparison" | "decision";
-
 export type ClassFinderItem = {
   audience: string;
   place: string;
@@ -14,7 +12,6 @@ export type ClassFinderItem = {
 };
 
 export type ClassFinderDesign = {
-  layout: ClassFinderLayout;
   eyebrow: string;
   title: string;
   summary: string;
@@ -43,7 +40,7 @@ export function ClassFinderCarousel({
   const nextClass = () => goToIndex(activeIndex + 1);
 
   return (
-    <section className={`class-finder class-finder--${design.layout}`} aria-label={design.title}>
+    <section className="class-finder component-preview" aria-label={design.title}>
       <div className="class-finder__intro">
         <p>{design.eyebrow}</p>
         <h2>{design.title}</h2>

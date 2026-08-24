@@ -1,0 +1,128 @@
+.purpose-hero,
+.trust-proof,
+.mission-about,
+.course-pathway,
+.student-story,
+.decision-cta,
+.utility-footer {
+  --section-bg: var(--color-page, #f4f7fb);
+  --section-surface: var(--color-surface, #ffffff);
+  --section-ink: var(--color-text-strong, #102c57);
+  --section-body: var(--color-text, #1f2c40);
+  --section-muted: var(--color-text-muted, #53657e);
+  --section-line: var(--color-border, #b9c9dc);
+  --section-link: var(--color-link, #1769c2);
+  --section-accent: var(--color-accent, #66afe6);
+  --section-action-text: var(--color-action-text, #ffffff);
+  --section-serif: var(--font-serif, Georgia, "Times New Roman", serif);
+  --section-mono: var(--font-mono, monospace);
+  width: 100%;
+  background: var(--section-bg);
+  color: var(--section-ink);
+}
+
+.purpose-hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(360px, .95fr); min-height: 680px; }
+.purpose-hero__copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(42px, 7vw, 104px); }
+.purpose-hero__copy > p,
+.trust-proof header p,
+.mission-about__heading p,
+.course-pathway__content > p,
+.student-story__copy > p,
+.decision-cta > p,
+.utility-footer small { margin: 0; color: var(--section-link); font-family: var(--section-mono); font-size: 10px; font-weight: 650; letter-spacing: .13em; text-transform: uppercase; }
+.purpose-hero h1 { max-width: 760px; margin: 26px 0 0; font-family: var(--section-serif); font-size: clamp(58px, 7vw, 112px); font-weight: 400; letter-spacing: -.06em; line-height: .88; }
+.purpose-hero__copy > span { max-width: 560px; margin-top: 30px; color: var(--section-muted); font-size: clamp(16px, 1.35vw, 20px); line-height: 1.65; }
+.purpose-hero__copy div { display: flex; flex-wrap: wrap; gap: 22px; align-items: center; margin-top: 38px; }
+.purpose-hero__copy a:first-child,
+.decision-cta a { display: inline-flex; align-items: center; justify-content: space-between; gap: 28px; min-height: 54px; padding: 0 22px; background: var(--section-link); color: var(--section-action-text); font-family: var(--section-mono); font-size: 10px; font-weight: 650; letter-spacing: .12em; text-transform: uppercase; }
+.purpose-hero__copy a:last-child { padding-bottom: 6px; border-bottom: 1px solid currentColor; color: var(--section-body); font-size: 13px; }
+.purpose-hero__image { position: relative; min-height: 100%; margin: 0; overflow: hidden; }
+.purpose-hero__image img { width: 100%; height: 100%; object-fit: cover; }
+.purpose-hero__image figcaption { position: absolute; right: 24px; bottom: 24px; left: 24px; padding: 14px 16px; background: var(--section-surface); color: var(--section-muted); font-size: 12px; line-height: 1.4; }
+
+.trust-proof { display: grid; grid-template-columns: minmax(220px, .55fr) minmax(0, 1.2fr); gap: clamp(28px, 5vw, 74px); padding: clamp(52px, 7vw, 104px); border-top: 1px solid var(--section-line); }
+.trust-proof h2,
+.mission-about h2,
+.course-pathway h2,
+.decision-cta h2 { margin: 18px 0 0; font-family: var(--section-serif); font-size: clamp(42px, 5.4vw, 82px); font-weight: 400; letter-spacing: -.055em; line-height: .94; }
+.trust-proof dl { display: grid; grid-template-columns: repeat(3, 1fr); margin: 0; border: 1px solid var(--section-line); background: var(--section-surface); }
+.trust-proof dl div { display: grid; min-height: 220px; padding: 26px; border-right: 1px solid var(--section-line); }
+.trust-proof dl div:last-child { border-right: 0; }
+.trust-proof dt { align-self: start; color: var(--section-muted); font-family: var(--section-mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+.trust-proof dd { align-self: end; margin: 0; color: var(--section-link); font-family: var(--section-serif); font-size: clamp(58px, 7vw, 104px); line-height: .8; }
+.trust-proof > p { grid-column: 2; margin: 0; color: var(--section-muted); font-size: 12px; }
+
+.mission-about { padding: clamp(58px, 8vw, 118px) clamp(24px, 7vw, 96px); }
+.mission-about__heading { display: grid; grid-template-columns: minmax(160px, .45fr) 1fr; gap: clamp(24px, 4vw, 60px); align-items: start; }
+.mission-about__lede { max-width: 760px; margin: 42px 0 70px auto; color: var(--section-muted); font-family: var(--section-serif); font-size: clamp(20px, 2vw, 30px); line-height: 1.5; }
+.mission-about__grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--section-line); }
+.mission-about__grid article { min-height: 300px; padding: 30px 32px 36px 0; border-right: 1px solid var(--section-line); }
+.mission-about__grid article + article { padding-left: 32px; }
+.mission-about__grid article:last-child { border-right: 0; }
+.mission-about__grid h3 { margin: 90px 0 16px; font-family: var(--section-serif); font-size: 32px; font-weight: 400; }
+.mission-about__grid p { margin: 0; color: var(--section-muted); line-height: 1.65; }
+
+.course-pathway { display: grid; grid-template-columns: minmax(280px, .82fr) minmax(0, 1.18fr); min-height: 720px; background: var(--section-ink); color: var(--section-bg); }
+.course-pathway__photo { min-height: 520px; background-image: linear-gradient(rgba(16,44,87,.04), rgba(16,44,87,.22)), url("/images/youth-gathering.jpg"); background-position: center; background-size: cover; }
+.course-pathway__content { display: flex; flex-direction: column; justify-content: center; padding: clamp(44px, 7vw, 96px); }
+.course-pathway__content > p { color: var(--section-accent); }
+.course-pathway h2 { color: var(--section-bg); }
+.course-pathway ol { display: grid; gap: 0; margin: 44px 0 0; padding: 0; list-style: none; border-top: 1px solid color-mix(in srgb, var(--section-bg) 28%, transparent); }
+.course-pathway li { display: grid; grid-template-columns: 48px 1fr; gap: 22px; padding: 22px 0; border-bottom: 1px solid color-mix(in srgb, var(--section-bg) 28%, transparent); }
+.course-pathway li > span { color: var(--section-accent); font-family: var(--section-mono); font-size: 10px; letter-spacing: .12em; }
+.course-pathway h3 { margin: 0 0 7px; font-size: 18px; }
+.course-pathway li p { margin: 0; color: color-mix(in srgb, var(--section-bg) 72%, transparent); line-height: 1.55; }
+
+.student-story { display: grid; grid-template-columns: .9fr 1.1fr; min-height: 650px; background: var(--section-link); color: var(--section-action-text); }
+.student-story__image { background-image: linear-gradient(rgba(16,44,87,.05), rgba(16,44,87,.2)), url("/images/intercp-mission-camp.webp"); background-position: center; background-size: cover; }
+.student-story__copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(52px, 8vw, 118px); }
+.student-story__copy > p { color: var(--section-action-text); opacity: .76; }
+.student-story blockquote { margin: 28px 0; font-family: var(--section-serif); font-size: clamp(34px, 4.5vw, 68px); font-style: italic; letter-spacing: -.04em; line-height: 1.08; }
+.student-story span { color: color-mix(in srgb, var(--section-action-text) 78%, transparent); font-family: var(--section-mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+
+.decision-cta { display: grid; justify-items: center; padding: clamp(82px, 11vw, 154px) clamp(22px, 6vw, 86px); text-align: center; }
+.decision-cta h2 { max-width: 960px; margin: 24px 0 44px; font-size: clamp(54px, 7vw, 112px); }
+
+.utility-footer { display: grid; grid-template-columns: .75fr 1.2fr .75fr; gap: clamp(24px, 4vw, 56px); padding: clamp(42px, 6vw, 76px) clamp(24px, 6vw, 86px) 32px; border-top: 1px solid var(--section-line); }
+.utility-footer__brand { display: flex; gap: 12px; align-items: center; color: var(--section-ink); }
+.utility-footer__brand > span { display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid currentColor; font-family: var(--section-serif); font-size: 22px; font-style: italic; }
+.utility-footer__brand strong { display: grid; gap: 4px; font-size: 13px; line-height: 1; }
+.utility-footer__brand small { color: var(--section-muted); font-family: var(--section-mono); font-size: 8px; letter-spacing: .16em; text-transform: uppercase; }
+.utility-footer > p { max-width: 540px; margin: 0; color: var(--section-muted); line-height: 1.65; }
+.utility-footer nav { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; font-size: 13px; }
+.utility-footer > small { grid-column: 1 / -1; padding-top: 28px; border-top: 1px solid var(--section-line); color: var(--section-muted); }
+
+@media (max-width: 920px) {
+  .purpose-hero,
+  .trust-proof,
+  .mission-about__heading,
+  .course-pathway,
+  .student-story,
+  .utility-footer { grid-template-columns: 1fr; }
+
+  .purpose-hero__image { min-height: 460px; }
+  .trust-proof > p { grid-column: auto; }
+  .mission-about__lede { margin-left: 0; }
+  .mission-about__grid,
+  .trust-proof dl { grid-template-columns: 1fr; }
+  .mission-about__grid article,
+  .mission-about__grid article + article,
+  .trust-proof dl div { min-height: 220px; padding: 26px 0; border-right: 0; border-bottom: 1px solid var(--section-line); }
+  .course-pathway__photo,
+  .student-story__image { min-height: 430px; }
+  .utility-footer > small { grid-column: auto; }
+}
+
+@media (max-width: 640px) {
+  .purpose-hero__copy,
+  .trust-proof,
+  .mission-about,
+  .course-pathway__content,
+  .student-story__copy,
+  .decision-cta,
+  .utility-footer { padding-inline: 22px; }
+
+  .purpose-hero h1,
+  .decision-cta h2 { font-size: clamp(48px, 15vw, 74px); }
+  .course-pathway li { grid-template-columns: 1fr; }
+}

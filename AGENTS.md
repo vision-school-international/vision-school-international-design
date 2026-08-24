@@ -12,9 +12,8 @@ This repository is an internal Vision School International component-review
 gallery, not the production ministry site. It is a Vite + React + TypeScript
 frontend with a small Hono server. Preserve the current component-gallery
 model: `app/page.tsx` owns the section-type index and renders one selected
-section and concept at a time; `app/concepts/ConceptPage.tsx` and
-`app/concepts/ImmersiveConcept.tsx` render requested section treatments through
-concept-specific renderer maps.
+section and concept at a time; focused concept modules register portable
+component previews for their specific section.
 `app/components/ClassFinderCarousel.tsx` provides the shared class finder
 carousel behavior used by concept-owned class finder designs.
 `app/components/VideoGallery.tsx` provides the isolated single-player video
@@ -37,7 +36,7 @@ npm ci                 # install exactly package-lock.json
 npm run dev            # Vite development server
 npm run build          # writes dist/
 npm start              # serves dist/ through server/index.mjs
-npm test               # build plus rendered HTML checks
+npm test               # production build check
 npm run lint           # ESLint
 npx tsc --noEmit       # typecheck; there is no package.json typecheck script
 ```

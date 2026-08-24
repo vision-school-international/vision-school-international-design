@@ -125,7 +125,7 @@ Create the trusted global home for Vision School: one public place where people 
 - Launch a useful public experience quickly and mature the broader platform toward Spring 2027.
 - Keep Church Center for the current registration cycle.
 - Treat registration replacement and payments as a later, gated workstream.
-- Include a clear Vision School explanation, course/curriculum, class discovery, testimonials, events, contact, donation, and registration calls to action.
+- Include a clear Vision School explanation, course content, class discovery, testimonials, events, contact, donation, and registration calls to action.
 - Plan for maps, branch schedules, speaker routes, travel, forms, reminders, dashboards, and reporting in later phases.
 - Treat security as a first-order requirement.
 - Collect current forms, waivers, schedules, registration sheets, travel sheets, and message templates before designing internal workflows.

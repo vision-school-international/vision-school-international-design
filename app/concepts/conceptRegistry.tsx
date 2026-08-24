@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
-import { immersiveConcepts } from "./ImmersiveConcept";
-import { mockupConcepts } from "./ConceptPage";
+import { componentConcepts } from "./ComponentConcepts";
 import { searchNavigationConcepts } from "./SearchNavigationConcept";
 import type { ComponentSection } from "./componentCatalog";
 
@@ -21,8 +20,7 @@ export type DesignConceptDefinition = DesignConcept;
 
 export const concepts: readonly DesignConcept[] = [
   ...searchNavigationConcepts,
-  ...immersiveConcepts,
-  ...mockupConcepts,
+  ...componentConcepts,
 ];
 
 export type ConceptKey = string;

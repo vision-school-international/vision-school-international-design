@@ -63,12 +63,11 @@ Treat `RULES.md` as the repository's anti-pattern authority. A current explicit 
 - Keep `app/concepts/conceptRegistry.tsx` as a composition layer only. It should
   collect exported concepts and filter by section; it must not invent concepts,
   format fallback names, or route by hardcoded variation families.
-- Put concept-owned renderer definitions in focused files under `app/concepts/`.
-  Existing renderer modules include `ConceptPage.tsx`, `ImmersiveConcept.tsx`,
-  and component-specific files such as `SearchNavigationConcept.tsx`.
-- Create a focused file under `app/components/` when a concept is a portable
-  React component, has its own interaction state, or is intended for drag-and-drop
-  handoff into the Astro project.
+- Put concept-owned registrations in focused files under `app/concepts/`, such
+  as `ComponentConcepts.tsx` or a component-specific concept module.
+- Put portable React preview implementation in focused files under
+  `app/components/`. A component preview must be usable without the gallery
+  shell, hash state, concept registry, or gallery-only CSS variables.
 - Keep visual markup different when the difference is the concept being reviewed.
   Share typed contracts, data plumbing, and interaction helpers only when it does
   not collapse distinct visual treatments into a generic renderer.
@@ -77,55 +76,44 @@ Treat `RULES.md` as the repository's anti-pattern authority. A current explicit 
 Correct concept registration shape:
 
 ```tsx
-type ImmersiveDataKey = keyof typeof conceptData;
-type ImmersiveConceptConfig = Omit<DesignConceptDefinition, "key" | "sections"> & {
-  dataKey: ImmersiveDataKey;
-  section: ComponentSection;
-};
-
-function createImmersiveConcept(key: string, definition: ImmersiveConceptConfig): DesignConceptDefinition {
-  const { dataKey, section, ...conceptDefinition } = definition;
-
-  return {
-    ...conceptDefinition,
-    key,
+export const componentConcepts: readonly DesignConceptDefinition[] = [
+  {
+    key: "purpose-hero",
+    name: "Purpose Hero",
+    image: "/images/community-city.jpg",
+    color: "#1769c2",
     sections: {
-      [section]: function renderImmersiveConcept() {
-        return createElement(ImmersiveConcept, { dataKey, section });
+      hero: function renderPurposeHero() {
+        return createElement(PurposeHero);
       },
     },
-  };
-}
-
-createImmersiveConcept("purpose-hero", {
-  name: "Purpose Hero",
-  image: "/images/community-city.jpg",
-  color: "#1769c2",
-  dataKey: "nearby",
-  section: "hero",
-});
+  },
+];
 ```
 
 In that pattern:
 
 - `purpose-hero` is the actual concept key.
 - `Purpose Hero` is the reviewer-facing concept name.
-- `section: "hero"` scopes the concept to one component.
-- `dataKey: "nearby"` is internal renderer data/styling reuse, not the concept
-  identity.
+- `sections.hero` scopes the concept to one component section.
+- `PurposeHero` is the isolated portable component preview.
 
 Forbidden patterns:
 
 ```tsx
-// Wrong: renderer data key used as the public concept identity.
-createImmersiveConcept("nearby", { name: "Nearby", section: "hero" });
+// Wrong: implementation style used as the public concept identity.
+{ key: "blue", name: "Blue", sections: { hero: renderHero } }
 
 // Wrong: one concept leaks across unrelated components.
-createImmersiveConcept("purpose", {
+{
+  key: "purpose",
   name: "Purpose",
-  dataKey: "nearby",
-  sections: ["hero", "about", "course"],
-});
+  sections: {
+    hero: renderHero,
+    about: renderAbout,
+    course: renderCourse,
+  },
+}
 ```
 
 ### 4. Isolate styles and interaction
@@ -162,10 +150,10 @@ createImmersiveConcept("purpose", {
   section.
 - Confirm unrelated sections do not inherit the new concept.
 - Confirm switching concepts and component-internal controls mounts only the selected content.
-- Update `tests/rendered-html.test.mjs` with stable, meaningful output assertions.
-- Add rendered-output assertions for concept names, component-specific UI, and
-  portability contracts when relevant. Keep negative assertions for historical
-  labels, global fallback names, and stale palette or gallery-only CSS bindings.
+- Do not recreate `tests/rendered-html.test.mjs` or add bundle-string rendered
+  HTML assertions. Verify component-scoped architecture through source review,
+  TypeScript, lint, build output, and focused checks that do not hardcode
+  rendered copy.
 - Update `README.md`, `CONTEXT.md`, `AGENTS.md`, `CLAUDE.md`, and `RULES.md` only when the maintained architecture or contributor rules changed.
 - Run:
 
