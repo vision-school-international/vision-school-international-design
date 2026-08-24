@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 
-export type VideoGalleryVariant = "editorial" | "contemporary" | "international";
-
 const videos = [
   {
     id: "zelhy09kxp8",
@@ -63,14 +61,14 @@ const videos = [
 
 const formatIndex = (index: number) => String(index + 1).padStart(2, "0");
 
-export function VideoGallery({ variant }: { variant: VideoGalleryVariant }) {
+export function VideoGallery() {
   const [activeVideoId, setActiveVideoId] = useState<(typeof videos)[number]["id"]>(videos[0].id);
   const activeVideo = videos.find((video) => video.id === activeVideoId) ?? videos[0];
-  const playerId = `video-player-${variant}`;
-  const titleId = `video-library-title-${variant}`;
+  const playerId = "video-player";
+  const titleId = "video-library-title";
 
   return (
-    <section className={`video-library video-library--${variant}`} aria-labelledby={titleId}>
+    <section className="video-library component-preview" aria-labelledby={titleId}>
       <header className="video-library__header">
         <p>Video library</p>
         <h2 id={titleId}>Mission camp videos</h2>

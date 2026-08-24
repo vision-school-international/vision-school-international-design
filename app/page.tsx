@@ -1,22 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ConceptPage } from "./concepts/ConceptPage";
-import { concepts, getConceptsForSection, sectionId, sectionTypes, type ComponentSection, type DesignConcept } from "./concepts/componentCatalog";
-import { RefinedConcept } from "./RefinedConcept";
+import { concepts, getConceptsForSection, type ConceptKey } from "./concepts/conceptRegistry";
+import { sectionId, sectionTypes, type ComponentSection } from "./concepts/componentCatalog";
 
 const formatOrdinal = (value: number) => String(value + 1).padStart(2, "0");
 
 const sectionFromHash = (hash: string): ComponentSection | undefined =>
   sectionTypes.find((section) => sectionId(section.key) === hash.slice(1))?.key;
-
-function ConceptPreview({ concept, section }: { concept: DesignConcept; section: ComponentSection }) {
-  if (concept.kind === "refined") {
-    return <RefinedConcept concept={concept.key} section={section} />;
-  }
-
-  return <ConceptPage concept={concept.key} section={section} />;
-}
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<ComponentSection>(() => {
@@ -26,7 +17,7 @@ export default function Home() {
 
     return sectionFromHash(window.location.hash) ?? sectionTypes[0].key;
   });
-  const [activeConcept, setActiveConcept] = useState<DesignConcept["key"]>(concepts[0].key);
+  const [activeConcept, setActiveConcept] = useState<ConceptKey>(concepts[0].key);
 
   useEffect(() => {
     const focusHash = () => {
@@ -66,9 +57,9 @@ export default function Home() {
   }, [activeSection]);
 
   const selectedSection = sectionTypes.find((section) => section.key === activeSection);
-  const selectedSectionIndex = sectionTypes.findIndex((section) => section.key === activeSection);
   const availableConcepts = getConceptsForSection(activeSection);
   const selectedConcept = availableConcepts.find((concept) => concept.key === activeConcept) ?? availableConcepts[0];
+  const selectedTreatment = selectedSection && selectedConcept ? selectedConcept.sections[selectedSection.key] : undefined;
 
   return (
     <main className="review-shell">
@@ -81,6 +72,9 @@ export default function Home() {
 
       <section className="review-intro">
         <h1>Design concepts</h1>
+        <p>
+          Design is the discipline of shaping how people understand, trust, feel, and act. Review these concepts by the user psychology they support: clarity, confidence, relevance, momentum, and the next faithful step.
+        </p>
       </section>
 
       <nav className="component-index" aria-label="Section type index">
@@ -101,6 +95,11 @@ export default function Home() {
               <p>Component</p>
               <h2>{section.name}</h2>
               <span>{section.description}</span>
+              <ul className="component-index-points" aria-label={`${section.name} review points`}>
+                {section.reviewPoints.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
             </div>
           </a>
         ))}
@@ -110,34 +109,40 @@ export default function Home() {
         {selectedSection && (
           <section className="component-gallery-section" id={sectionId(selectedSection.key)} key={selectedSection.key}>
             <header className="component-gallery-heading">
-              <p className="review-kicker">{formatOrdinal(selectedSectionIndex)} / {formatOrdinal(sectionTypes.length - 1)} · Component</p>
+              <p className="review-kicker">Component</p>
               <h2>{selectedSection.name}</h2>
               <p>{selectedSection.description}</p>
             </header>
-            <div className="concept-selector" role="tablist" aria-label="Concept treatments">
-              {availableConcepts.map((concept) => (
-                <button
-                  className="concept-selector-button"
-                  key={concept.key}
-                  type="button"
-                  role="tab"
-                  aria-selected={selectedConcept.key === concept.key}
-                  aria-controls={`concept-preview-${selectedSection.key}`}
-                  style={{ "--variant-color": concept.color } as React.CSSProperties}
-                  onClick={() => setActiveConcept(concept.key)}
-                >
-                  <span>{concept.name}</span>
-                  <small>{concept.kind === "refined" ? "Refined" : "Original"}</small>
-                </button>
-              ))}
-            </div>
-            <article className="component-variant" id={`concept-preview-${selectedSection.key}`} role="tabpanel" aria-label={`${selectedConcept.name} ${selectedSection.name} concept`}>
-              <div className="component-variant-label" style={{ "--variant-color": selectedConcept.color } as React.CSSProperties}>
-                <span>{selectedConcept.name}</span>
-                <span>{selectedConcept.kind === "refined" ? "Refined treatment" : "Original treatment"}</span>
-              </div>
-              <ConceptPreview concept={selectedConcept} section={selectedSection.key} />
-            </article>
+            {selectedConcept && selectedTreatment ? (
+              <>
+                <div className="concept-selector" role="tablist" aria-label="Concept options">
+                  {availableConcepts.map((concept) => (
+                    <button
+                      className="concept-selector-button"
+                      key={concept.key}
+                      type="button"
+                      role="tab"
+                      aria-selected={selectedConcept.key === concept.key}
+                      aria-controls={`concept-preview-${selectedSection.key}`}
+                      style={{ "--concept-color": concept.color } as React.CSSProperties}
+                      onClick={() => setActiveConcept(concept.key)}
+                    >
+                      <span>{concept.name}</span>
+                      {concept.selectorLabel && <small>{concept.selectorLabel}</small>}
+                    </button>
+                  ))}
+                </div>
+                <article className="component-concept" id={`concept-preview-${selectedSection.key}`} role="tabpanel" aria-label={`${selectedConcept.name} ${selectedSection.name} concept`}>
+                  <div className="component-concept-label" style={{ "--concept-color": selectedConcept.color } as React.CSSProperties}>
+                    <span>{selectedConcept.name}</span>
+                    {selectedConcept.previewLabel && <span>{selectedConcept.previewLabel}</span>}
+                  </div>
+                  {selectedTreatment({ section: selectedSection.key })}
+                </article>
+              </>
+            ) : (
+              <p className="component-empty">No concepts are registered for this component yet.</p>
+            )}
           </section>
         )}
       </div>

@@ -12,8 +12,15 @@ shared guidance.
 1. Inspect `git status`, the relevant source, `package.json`, and
    `package-lock.json` before changing anything.
 2. Keep changes inside the requested scope. Preserve the existing component
-   gallery with one selected section and concept at a time, isolated legacy/refined renderers,
-   responsive behavior, hash anchors, illustrative labels, and image assets.
+   gallery with one selected section and concept at a time, isolated renderer-specific treatments,
+   responsive behavior, hash anchors, illustrative labels, class finder carousel
+   behavior, and image assets.
+   For component creation, derive the concept name from the section's UI/UX
+   goal, then add one portable React preview, one component-scoped concept
+   registration, and one scoped stylesheet.
+   Concept entries must stay component-scoped: one public concept key/name for
+   one section, with renderer-only reuse hidden behind private implementation
+   details.
 3. Use only existing project commands and deployment instructions. Do not add a
    dependency, script, deploy target, service, or config file without explicit
    approval.
@@ -32,7 +39,12 @@ shared guidance.
 - mounting every section gallery area at once instead of rendering the selected
   section from the section index;
 - mounting every concept treatment at once instead of using the concept selector;
-- a two-column or squashed variant gallery;
+- global concepts, fallback concept names, hardcoded variation families,
+  `conceptKeys`, `supportedSections`, or legacy/refined buckets;
+- using renderer data keys, layout keys, CSS suffixes, or sample dataset names as
+  public concept identity;
+- rendered HTML bundle-string tests such as `tests/rendered-html.test.mjs`;
+- a two-column or squashed concept gallery;
 - duplicate IDs across isolated previews;
 - a generic renderer abstraction that erases intentional visual differences;
 - removal of sample/ministry-approval disclaimers;
