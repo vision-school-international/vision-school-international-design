@@ -43,6 +43,8 @@ test("bundles the component gallery content into the client", async () => {
   )).join("\n");
 
   assert.match(bundle, /Design concepts/);
+  assert.doesNotMatch(bundle, /What user question does this component answer/);
+  assert.doesNotMatch(bundle, /What action or decision should it make easier/);
   assert.match(bundle, /Navigation/);
   assert.match(bundle, /Hero/);
   assert.match(bundle, /Class finder/);
@@ -61,6 +63,11 @@ test("bundles the component gallery content into the client", async () => {
   assert.match(bundle, /Mission Video Library/);
   assert.match(bundle, /Decision CTA/);
   assert.match(bundle, /Utility Footer/);
+  assert.match(bundle, /Primary links/);
+  assert.match(bundle, /Hero visual/);
+  assert.match(bundle, /Program facts/);
+  assert.match(bundle, /Session structure/);
+  assert.match(bundle, /Registration action/);
   assert.match(bundle, /Search site content/);
   assert.match(bundle, /Frederick, MD/);
   assert.match(bundle, /Gaithersburg, MD/);

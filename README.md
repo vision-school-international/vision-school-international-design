@@ -20,15 +20,15 @@ These are review labels, not final product names.
 ## Section types
 
 - **Navigation** — Helps users move between key pages and reach class information.
-- **Hero / introduction** — Introduces the program and gives the user a clear first action.
-- **Proof / key facts** — Summarizes important facts at a glance.
-- **About / value proposition** — Explains what the program is, who it is for, and why it matters.
-- **Course / curriculum** — Shows what users will learn and what participation involves.
+- **Hero** — Introduces the program and gives the user a clear first action.
+- **Proof** — Summarizes important facts at a glance.
+- **About** — Explains what the program is, who it is for, and why it matters.
+- **Course** — Shows what users will learn and what participation involves.
 - **Class finder** — Helps users find a relevant class and take the next step.
-- **Stories / testimonials** — Shows participant experience and outcomes.
+- **Stories** — Shows participant experience and outcomes.
 - **Video library** — Lets users browse and watch mission camp videos without leaving the page.
 - **Calls to action** — Prompts the next action at decision points.
-- **Footer / utility navigation** — Provides final navigation, contact, and credibility information.
+- **Footer** — Provides final navigation, contact, and credibility information.
 
 ## Run locally
 

@@ -20,7 +20,7 @@ button { color: inherit; }
 .review-intro { display: grid; grid-template-columns: .55fr 1.55fr .8fr; gap: 3vw; align-items: end; padding: 82px 0 62px; }
 .review-intro h1 { grid-column: 1 / -1; }
 .review-intro h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(54px, 6.5vw, 104px); font-weight: 400; letter-spacing: -.058em; line-height: .88; }
-.review-intro > p:last-child { margin: 0; color: #53657e; font-size: 15px; line-height: 1.7; }
+.review-intro > p:last-child { grid-column: 2 / -1; max-width: 880px; margin: 0; color: #53657e; font-size: 15px; line-height: 1.7; }
 .component-index { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .component-index-card { display: grid; min-height: 390px; overflow: hidden; background: #fff; color: inherit; transition: transform 200ms ease, box-shadow 200ms ease; }
 .component-index-card:hover, .component-index-card:focus-visible { transform: translateY(-6px); box-shadow: 0 25px 55px rgba(16, 44, 87, .14); outline: 0; }
@@ -36,6 +36,8 @@ button { color: inherit; }
 .component-index-copy p { margin: 0 auto auto 0; color: var(--component-color); font-family: var(--font-geist-mono), monospace; font-size: 9px; font-weight: 650; letter-spacing: .11em; text-transform: uppercase; }
 .component-index-copy h2 { margin: 36px 0 14px; font-family: Georgia, serif; font-size: clamp(28px, 2.5vw, 42px); font-weight: 400; letter-spacing: -.045em; line-height: .95; }
 .component-index-copy > span { color: #53657e; font-size: 13px; line-height: 1.55; }
+.component-index-points { display: grid; gap: 7px; margin: 18px 0 0; padding: 16px 0 0 17px; border-top: 1px solid color-mix(in srgb, var(--component-color) 22%, transparent); color: #1f2c40; font-size: 12px; line-height: 1.45; }
+.component-index-points li::marker { color: var(--component-color); }
 
 .component-gallery { margin-top: 110px; }
 .component-gallery-section { scroll-margin-top: 28px; }

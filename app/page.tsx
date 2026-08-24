@@ -72,6 +72,9 @@ export default function Home() {
 
       <section className="review-intro">
         <h1>Design concepts</h1>
+        <p>
+          Design is the discipline of shaping how people understand, trust, feel, and act. Review these concepts by the user psychology they support: clarity, confidence, relevance, momentum, and the next faithful step.
+        </p>
       </section>
 
       <nav className="component-index" aria-label="Section type index">
@@ -92,6 +95,11 @@ export default function Home() {
               <p>Component</p>
               <h2>{section.name}</h2>
               <span>{section.description}</span>
+              <ul className="component-index-points" aria-label={`${section.name} review points`}>
+                {section.reviewPoints.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
             </div>
           </a>
         ))}
