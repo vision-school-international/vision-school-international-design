@@ -1,9 +1,9 @@
 # Agent instructions
 
-Read [RULES.md](./RULES.md) first, then this file, [CONTEXT.md](./CONTEXT.md) for
-the architecture, and [CLAUDE.md](./CLAUDE.md) for the short execution
-checklist. Keep all four files consistent when project guidance changes. For
-new or extended review components, use
+Read [COMPANY_POLICY.md](./COMPANY_POLICY.md) and [RULES.md](./RULES.md) first,
+then this file, [CONTEXT.md](./CONTEXT.md) for the architecture, and
+[CLAUDE.md](./CLAUDE.md) for the short execution checklist. Keep all five files
+consistent when project guidance changes. For new or extended review components, use
 [the repository component skill](./.agents/skills/create-review-component/SKILL.md).
 
 ## Project boundary
@@ -12,15 +12,27 @@ This repository is an internal Vision School International component-review
 gallery, not the production ministry site. It is a Vite + React + TypeScript
 frontend with a small Hono server. Preserve the current component-gallery
 model: `app/page.tsx` owns the section-type index and renders one selected
-section and concept at a time; `app/concepts/ConceptPage.tsx` and
-`app/RefinedConcept.tsx` render one requested section treatment at a time.
+section and concept at a time; focused concept modules register portable
+component previews for their specific section.
+`app/components/ClassFinderCarousel.tsx` provides the shared class finder
+carousel behavior used by concept-owned class finder designs.
 `app/components/VideoGallery.tsx` provides the isolated single-player video
 library used by its supported concepts.
+Concept identity is component-scoped: the public concept key/name belongs to one
+section's UI/UX goal, while renderer implementation reuse must stay private and
+must not become reviewer-facing concept identity.
 
 Make the smallest change that satisfies the request. Preserve existing visual
 concept treatments, renderer-specific markup, responsive CSS, illustrative-content
 labels, and hash navigation unless the task explicitly changes them. Do not
 silently “clean up” unrelated worktree changes.
+
+When a user asks for a new component, derive the concept from the section's
+purpose and the user problem it solves. For example, “a navigation bar that
+helps users search site content faster” becomes a Navigation-scoped **Search
+Navigation** concept, not a generic style variant. Add one portable component,
+one component-scoped concept registration, and one scoped stylesheet unless the
+user explicitly asks for more.
 
 ## Verified commands
 
@@ -31,7 +43,7 @@ npm ci                 # install exactly package-lock.json
 npm run dev            # Vite development server
 npm run build          # writes dist/
 npm start              # serves dist/ through server/index.mjs
-npm test               # build plus rendered HTML checks
+npm test               # production build check
 npm run lint           # ESLint
 npx tsc --noEmit       # typecheck; there is no package.json typecheck script
 ```
@@ -67,10 +79,16 @@ pass. Keep those files synchronized if an approved dependency change is made.
   concept renders alone so designers can inspect it at a normal page width.
 - Do not add document IDs inside isolated previews that can duplicate across
   the available concepts. Gallery anchor IDs belong to the outer section areas.
-- Do not merge the legacy and refined renderers into a generic visual
-  component. Their different markup and CSS are the design treatments under
-  review; share only contracts or metadata when an approved change proves it
-  removes duplication without changing output.
+- Do not merge renderer-specific visual markup into a generic visual component.
+  Different markup and CSS are the design treatments under review; share only
+  contracts or metadata when an approved change proves it removes duplication
+  without changing output.
+- Do not create global concepts, fallback concept names, hardcoded variation
+  families, `conceptKeys`, `supportedSections` arrays, or legacy/refined
+  buckets. Register one concept entry per component section and keep renderer
+  reuse private.
+- Do not recreate `tests/rendered-html.test.mjs` or replace source-level
+  architecture checks with bundle-string copy assertions.
 - Do not remove “sample”, “illustrative”, or ministry-approval wording from
   review content. It is a deliberate boundary in the current gallery.
 - Do not replace existing image assets, copy, or CSS with invented content while
@@ -82,30 +100,12 @@ Inspect `git status`, the current branch, and the relevant diff before editing.
 Preserve unrelated user work. Never use destructive reset/checkout commands,
 rewrite history, or push/deploy without explicit authorization.
 
-`main` is the protected integration branch. Never commit directly to `main`,
-push directly to `main`, or merge changes into `main` without a pull request.
-Every repository change—including documentation, configuration, tests, and
-code—must be made on a feature branch and merged through a pull request.
-
-Create feature branches from the latest `origin/main` using the convention
-`<type>/<short-kebab-description>`. Use lowercase kebab-case and one of these
-types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, or `design`.
-Examples: `feat/video-gallery`, `fix/mobile-nav`, and
-`docs/pr-branch-rules`. Keep the description short and specific. In Conductor,
-keep the workspace's existing feature branch; do not rename it unless the user
-explicitly requests that.
-
-Open pull requests with `main` as the base branch and compare the work against
-`origin/main` (for example, `gh pr create --base main`). A pull request is
-required before any merge. Do not claim that a PR, review, check, preview, or
-deployment succeeded without evidence.
-
 The observed history uses concise action-oriented subjects, including
 `feat(review): ...`, `fix(...) ...`, `refactor(deploy): ...`, and `Add ...`.
 Follow the repository’s existing style for the area you touch; do not create a
-new commit convention. Commit only when asked. For a PR, include scope,
-verification commands and results, visual/regression notes, and any known
-unverified deployment fact.
+new commit convention. Commit only when asked. For a PR, use the feature branch
+and compare against `origin/main`; include scope, verification commands and
+results, visual/regression notes, and any known unverified deployment fact.
 There is no checked-in PR template or CI workflow, so do not claim checks or
 release automation that you cannot find in the repository. Any design-related
 PR must carry the exact lowercase `design` label; this label is required for

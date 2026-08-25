@@ -14,11 +14,39 @@ Read this file before changing the repository. These rules protect the internal 
 
 ## Follow the component architecture
 
-- Define section metadata and concept availability in `app/concepts/componentCatalog.ts`.
+- Define section metadata in `app/concepts/componentCatalog.ts`.
+- Add or extend components from a purpose statement: identify the target
+  section, the user question the component answers, and the action or decision
+  it should make easier. Use that purpose for the concept name.
+- Export concept metadata, availability, and render contracts from the renderer
+  modules that own those concepts. Keep `app/concepts/conceptRegistry.tsx` as a
+  composition layer that collects registered concepts and filters by section.
+- Treat concept identity as component-scoped. The registry `key` and `name` must
+  describe the UI/UX goal for one component section, such as `Purpose Hero` or
+  `Search Navigation`, not a renderer family, color, ordinal, data key, or
+  implementation history.
+- Register one concept entry for one component section. If the same renderer
+  behavior is reused across components, create separate concept entries and keep
+  the reuse private to the implementation; do not add unrelated sections to a
+  single concept definition.
+- Keep internal renderer constants, layout keys, CSS suffixes, and sample
+  datasets private to the renderer. They must not become selector labels,
+  concept names, or gallery routing concepts.
 - Derive section keys, ordinals, totals, and available concepts from catalog data. Do not hardcode inventory counts.
-- Put legacy visual treatments in `app/concepts/ConceptPage.tsx` and refined treatments in `app/RefinedConcept.tsx`.
+- Put concept-specific visual treatments in portable component files under
+  `app/components/` and register them through focused concept modules under
+  `app/concepts/`.
 - Share focused data or interaction behavior under `app/components/` only when concepts genuinely use the same behavior.
-- Do not merge legacy and refined visual markup into a generic renderer. Their differences are the review material.
+- Keep class finder carousel behavior in `app/components/ClassFinderCarousel.tsx`;
+  concept modules should supply UX-goal-specific design configuration.
+- Do not merge renderer-specific visual markup into a generic renderer. Their differences are the review material.
+- Do not reintroduce global concepts, hardcoded variation families,
+  `conceptKeys`, `supportedSections` arrays, fallback concept names, or
+  historical buckets such as legacy/refined. Concept availability must come from
+  explicit `sections` maps on concept definitions.
+- Do not recreate `tests/rendered-html.test.mjs` or bundle-string assertions for
+  rendered copy. Verify the architecture through source review, TypeScript,
+  lint, build output, and focused behavior checks.
 - Scope substantial component styles behind a unique component class in a dedicated stylesheet. Do not add global selectors that can leak into other treatments.
 - Import a component stylesheet once through `src/main.tsx`. Do not inject style tags or duplicate imports in renderers.
 - Keep IDs unique in the mounted document. Outer gallery areas own section anchor IDs.
@@ -27,6 +55,9 @@ Read this file before changing the repository. These rules protect the internal 
 
 - Do not add explanatory filler, instructional paragraphs, slogans, review principles, repeated summaries, or count strips unless explicitly requested.
 - Use plain, informational section and concept names. Do not invent poetic naming.
+- Explain component purpose in practical terms: what content is usually shown,
+  what uncertainty it reduces, and what next step it supports. Keep top-level
+  copy concise and put scannable details inside the component card when needed.
 - Do not create an endless page to display alternatives. Use compact controls to switch the active section, concept, or collection item.
 - Do not autoplay media or trigger context changes on focus.
 - Do not hide required interaction behind hover. Preserve visible keyboard focus, selected states, meaningful labels, and practical target sizes.
@@ -50,9 +81,6 @@ Read this file before changing the repository. These rules protect the internal 
 
 - Preserve unrelated worktree changes. Do not use destructive reset, checkout, clean, or history-rewrite commands.
 - Do not commit, push, deploy, or modify a pull request without explicit authorization.
-- Treat `main` as the protected integration branch. Never commit to, push to, or merge into `main` directly; every change must be merged through a pull request.
-- Create feature branches from the latest `origin/main` using `<type>/<short-kebab-description>`, with lowercase `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, or `design` types. Examples: `feat/video-gallery` and `docs/pr-branch-rules`.
-- Open PRs against `main` and compare them with `origin/main`. A PR is required before any merge, including documentation-only changes.
 - Follow the existing commit convention; do not introduce a new one.
 - Apply the exact lowercase `design` label to every design-related PR because preview deployment depends on it.
 - Never claim GitHub checks, preview deployment, or production deployment succeeded without evidence.
@@ -68,7 +96,8 @@ npx tsc --noEmit
 git diff --check
 ```
 
-Report failures accurately. Do not weaken tests, lint, type checking, or rendered assertions to make a change pass.
+Report failures accurately. Do not weaken tests, lint, type checking, or
+architecture checks to make a change pass.
 
 ## Intentional exceptions
 
