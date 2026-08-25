@@ -6,29 +6,58 @@ An internal design review gallery for the Vision School International website. I
 
 A design comparison gallery: choose a website section, then choose a design concept to view at full width. Only the selected section and concept are rendered at a time.
 
-## Concepts
+## Concept model
 
-- **Editorial**
-- **Contemporary**
-- **International**
-- **Community**
-- **Bold**
-- **Cinematic**
+Concepts are registered per component section. They are not global design
+families, style buckets, or final product names.
 
-These are review labels, not final product names.
+Each concept should answer a specific UI/UX need for one section. For example,
+if the request is “a navigation bar that helps users search site content
+faster,” the concept should be named for that purpose, such as **Search
+Navigation**, and scoped only to the Navigation section.
+
+## Directing agents
+
+When asking an agent to add a component, describe the section and the user
+problem it should solve:
+
+```text
+Create one Events calendar concept that helps visitors compare upcoming Vision
+School sessions, camps, and mission dates.
+```
+
+The agent should add or update the section catalog, create an isolated portable
+React component under `app/components/`, register one component-scoped concept
+under `app/concepts/`, add scoped CSS imported from `src/main.tsx`, and run the
+project checks.
+
+Do not ask for global variants, style families, numbered placeholders, or
+concepts shared across unrelated sections. Avoid requests like “make three
+modern variants,” “add Concept 01,” or “reuse this concept everywhere.”
 
 ## Section types
 
 - **Navigation** — Helps users move between key pages and reach class information.
-- **Hero / introduction** — Introduces the program and gives the user a clear first action.
-- **Proof / key facts** — Summarizes important facts at a glance.
-- **About / value proposition** — Explains what the program is, who it is for, and why it matters.
-- **Course / curriculum** — Shows what users will learn and what participation involves.
+- **Hero** — Introduces the program and gives the user a clear first action.
+- **Proof** — Summarizes important facts at a glance.
+- **About** — Explains what the program is, who it is for, and why it matters.
+- **Course** — Shows what users will learn and what participation involves.
 - **Class finder** — Helps users find a relevant class and take the next step.
-- **Stories / testimonials** — Shows participant experience and outcomes.
+- **Stories** — Shows participant experience and outcomes.
 - **Video library** — Lets users browse and watch mission camp videos without leaving the page.
 - **Calls to action** — Prompts the next action at decision points.
-- **Footer / utility navigation** — Provides final navigation, contact, and credibility information.
+- **Footer** — Provides final navigation, contact, and credibility information.
+- **Announcement bar** — Highlights deadlines, camps, or urgent updates.
+- **Breadcrumbs** — Helps users understand deeper-page location.
+- **Events calendar** — Shows sessions, camps, mission events, and dates.
+- **FAQ accordion** — Answers practical questions compactly.
+- **Registration form** — Converts interest into inquiry or enrollment.
+- **Newsletter signup** — Retains visitors not ready to register.
+- **Partner logo strip** — Shows local-church or partner credibility.
+- **Team leadership** — Identifies responsible people and roles.
+- **Resources listing** — Shows teaching, stories, and mission material.
+- **Gallery image grid** — Shows training and community visually.
+- **Donation CTA** — Gives supporters a financial participation path when applicable.
 
 ## Run locally
 
@@ -48,8 +77,7 @@ npm start
 
 The frontend is a plain Vite React build in `dist/`. A small Hono server serves
 that directory, provides `/health`, and falls back to `index.html` for
-client-side gallery routes. Use `npm test` for the production build and
-rendered-page checks.
+client-side gallery routes. Use `npm test` for the production build check.
 
 ## Dokploy
 
