@@ -716,8 +716,8 @@ The authenticated portal may launch only when:
 
 | Responsibility | Proposed owner | Status |
 |---|---|---|
-| Product priorities and workflow requirements | Scarlet / designated product owner | Confirm exact ministry role |
-| Public site and prototypes | Scarlet and assigned implementer, with ministry review | Confirm |
+| Product priorities and workflow requirements | Chris / designated product owner | Confirm exact ministry role |
+| Public site and prototypes | Chris and assigned implementer, with ministry review | Confirm |
 | Architecture, infrastructure, security | Anthony / designated technical lead | Confirm |
 | Ministry approval | Vision School Department Team Leader and Ami | Confirm |
 | Registration workflow | Christina, transitioning with Will's handoff | Confirm after orientation |
