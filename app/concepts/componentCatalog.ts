@@ -44,7 +44,7 @@ export const sectionTypes = [
     name: "Class finder",
     description: "Helps users choose a class.",
     reviewPoints: ["Location", "Schedule", "Registration action"],
-    image: "/images/community-city.jpg",
+    image: "/images/vision-school-media/north-america-mission-camp-crowd.webp",
     color: "#1769c2",
   },
   {
