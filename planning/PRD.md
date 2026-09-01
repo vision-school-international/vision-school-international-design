@@ -43,7 +43,7 @@ Terms in this document use the following confidence labels:
 - **Proposed:** product or technical recommendation.
 - **Open:** unresolved decision that needs an owner and deadline.
 
-Recordings and transcripts contain private meeting material and must not be committed to the repository. This PRD captures decisions without publishing the raw source.
+Recordings remain private and must not be committed. Transcript copies may be stored only in the private planning area when the project owner explicitly approves them and they have been checked for restricted credentials, booking details, personal contact information, and other sensitive material. This PRD remains the maintained requirements source; transcript wording is not automatically approved product or ministry language.
 
 ## 3. Product vision
 
