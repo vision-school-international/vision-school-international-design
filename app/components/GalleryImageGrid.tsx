@@ -1,8 +1,8 @@
 const images = [
-  ["/images/intercp-young-adults.webp", "Young adults gathered for worship and prayer"],
-  ["/images/youth-gathering.jpg", "Students gathered in a learning setting"],
-  ["/images/community-table.jpg", "Students sharing a meal and conversation"],
-  ["/images/intercp-mission-camp.webp", "Mission camp community gathering"],
+  ["/images/vision-school-media/north-america-mission-camp-crowd.webp", "A large multigenerational Mission Camp gathering holding international flags"],
+  ["/images/vision-school-media/north-america-mission-camp-nations.webp", "Mission Camp participants standing together with country signs and flags"],
+  ["/images/vision-school-media/young-generation-mission-camp-community.webp", "Young adults gathered in community during North America Mission Camp"],
+  ["/images/vision-school-media/north-america-mission-camp-worship.webp", "Participants worshiping together during North America Mission Camp"],
 ] as const;
 
 export function GalleryImageGrid() {
@@ -19,7 +19,7 @@ export function GalleryImageGrid() {
           </figure>
         ))}
       </div>
-      <small>Sample image set · Confirm final photo approvals before publishing</small>
+      <small>Official InterCP video stills · Confirm publication and participant approvals before publishing</small>
     </section>
   );
 }

@@ -1,0 +1,403 @@
+.regional-branch-directory {
+  --branch-page: var(--color-page, #f4f7fb);
+  --branch-surface: var(--color-surface, #ffffff);
+  --branch-ink: var(--color-text-strong, #102c57);
+  --branch-body: var(--color-text, #1f2c40);
+  --branch-muted: var(--color-text-muted, #53657e);
+  --branch-line: var(--color-border, #b9c9dc);
+  --branch-action: var(--color-action, #1769c2);
+  --branch-accent: var(--color-accent, #66afe6);
+  --branch-action-text: var(--color-action-text, #ffffff);
+  --branch-serif: var(--font-serif, Georgia, "Times New Roman", serif);
+  --branch-mono: var(--font-mono, monospace);
+  width: 100%;
+  overflow: hidden;
+  background: var(--branch-page);
+  color: var(--branch-ink);
+}
+
+.regional-branch-directory__hero {
+  display: grid;
+  grid-template-columns: minmax(0, .92fr) minmax(420px, 1.08fr);
+  min-height: 590px;
+  background: var(--branch-ink);
+  color: var(--branch-action-text);
+}
+
+.regional-branch-directory__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(54px, 7vw, 108px);
+}
+
+.regional-branch-directory__intro > p,
+.regional-branch-directory__results-heading p,
+.regional-branch-directory__region > header span,
+.regional-branch-directory__toolbar label > span,
+.regional-branch-directory__toolbar legend {
+  margin: 0;
+  color: var(--branch-accent);
+  font-family: var(--branch-mono);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.regional-branch-directory__intro h2 {
+  max-width: 760px;
+  margin: 24px 0 0;
+  font-family: var(--branch-serif);
+  font-size: clamp(58px, 7vw, 108px);
+  font-weight: 400;
+  letter-spacing: -.06em;
+  line-height: .88;
+}
+
+.regional-branch-directory__intro > span {
+  max-width: 590px;
+  margin-top: 30px;
+  color: color-mix(in srgb, var(--branch-action-text) 78%, transparent);
+  font-size: clamp(16px, 1.25vw, 20px);
+  line-height: 1.65;
+}
+
+.regional-branch-directory__intro > small {
+  max-width: 590px;
+  margin-top: 30px;
+  padding-top: 18px;
+  border-top: 1px solid color-mix(in srgb, var(--branch-action-text) 22%, transparent);
+  color: color-mix(in srgb, var(--branch-action-text) 62%, transparent);
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.regional-branch-directory__media {
+  position: relative;
+  min-height: 590px;
+  margin: 0;
+  overflow: hidden;
+  background: #08131d;
+}
+
+.regional-branch-directory__media::after {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(100deg, rgba(16, 44, 87, .52), rgba(16, 44, 87, .08) 54%, rgba(7, 27, 56, .38)),
+    linear-gradient(180deg, transparent 52%, rgba(7, 27, 56, .82));
+  content: "";
+  pointer-events: none;
+}
+
+.regional-branch-directory__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(.76) contrast(1.04) brightness(.96);
+}
+
+.regional-branch-directory__media figcaption {
+  position: absolute;
+  z-index: 1;
+  right: clamp(20px, 4vw, 48px);
+  bottom: clamp(20px, 4vw, 42px);
+  left: clamp(20px, 4vw, 48px);
+  color: color-mix(in srgb, var(--branch-action-text) 76%, transparent);
+  font-family: var(--branch-mono);
+  font-size: 9px;
+  letter-spacing: .09em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.regional-branch-directory__browser {
+  padding: clamp(50px, 7vw, 96px) clamp(22px, 6vw, 88px) clamp(62px, 8vw, 112px);
+}
+
+.regional-branch-directory__toolbar {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) auto minmax(220px, auto);
+  gap: 18px;
+  align-items: end;
+  padding-bottom: 26px;
+  border-bottom: 1px solid var(--branch-line);
+}
+
+.regional-branch-directory__toolbar label,
+.regional-branch-directory__toolbar fieldset {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.regional-branch-directory__toolbar input {
+  width: 100%;
+  min-height: 50px;
+  padding: 0 15px;
+  border: 1px solid var(--branch-line);
+  background: var(--branch-surface);
+  color: var(--branch-body);
+  font: inherit;
+}
+
+.regional-branch-directory__toolbar fieldset > div {
+  display: flex;
+  gap: 8px;
+}
+
+.regional-branch-directory__toolbar fieldset button,
+.regional-branch-directory__expand {
+  min-height: 50px;
+  border: 1px solid var(--branch-line);
+  background: transparent;
+  color: var(--branch-ink);
+  font-family: var(--branch-mono);
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.regional-branch-directory__toolbar fieldset button {
+  padding: 0 14px;
+}
+
+.regional-branch-directory__toolbar fieldset button[aria-pressed="true"] {
+  border-color: var(--branch-ink);
+  background: var(--branch-ink);
+  color: var(--branch-action-text);
+}
+
+.regional-branch-directory__expand {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  border-color: var(--branch-action);
+  background: var(--branch-action);
+  color: var(--branch-action-text);
+}
+
+.regional-branch-directory__expand span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.regional-branch-directory__toolbar input:focus-visible,
+.regional-branch-directory__toolbar button:focus-visible {
+  outline: 3px solid var(--branch-accent);
+  outline-offset: 3px;
+}
+
+.regional-branch-directory__results {
+  display: grid;
+  gap: 34px;
+  padding-top: 34px;
+}
+
+.regional-branch-directory__results-heading {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.regional-branch-directory__results-heading p {
+  color: var(--branch-action);
+}
+
+.regional-branch-directory__results-heading > span {
+  color: var(--branch-muted);
+  font-size: 12px;
+}
+
+.regional-branch-directory__regions {
+  display: grid;
+  gap: 42px;
+}
+
+.regional-branch-directory__featured {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.regional-branch-directory__region {
+  display: grid;
+  grid-template-columns: minmax(170px, .28fr) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 52px);
+  padding-top: 22px;
+  border-top: 1px solid var(--branch-line);
+}
+
+.regional-branch-directory__region > header {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+
+.regional-branch-directory__region h3 {
+  margin: 0;
+  font-family: var(--branch-serif);
+  font-size: clamp(30px, 3vw, 48px);
+  font-weight: 400;
+  letter-spacing: -.04em;
+  line-height: 1;
+}
+
+.regional-branch-directory__region > header span {
+  color: var(--branch-action);
+}
+
+.regional-branch-directory__cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.regional-branch-directory__cards article,
+.regional-branch-directory__featured article {
+  display: grid;
+  min-height: 245px;
+  padding: 24px;
+  border: 1px solid var(--branch-line);
+  background: var(--branch-surface);
+}
+
+.regional-branch-directory__cards article > div,
+.regional-branch-directory__cards footer,
+.regional-branch-directory__featured article > div,
+.regional-branch-directory__featured footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.regional-branch-directory__cards article > div span,
+.regional-branch-directory__cards article > div small,
+.regional-branch-directory__cards footer,
+.regional-branch-directory__featured article > div span,
+.regional-branch-directory__featured article > div small,
+.regional-branch-directory__featured footer {
+  font-family: var(--branch-mono);
+  font-size: 9px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.regional-branch-directory__cards article > div span,
+.regional-branch-directory__featured article > div span {
+  color: var(--branch-action);
+}
+
+.regional-branch-directory__cards article > div small,
+.regional-branch-directory__cards article p,
+.regional-branch-directory__cards footer span,
+.regional-branch-directory__featured article > div small,
+.regional-branch-directory__featured article p,
+.regional-branch-directory__featured footer span,
+.regional-branch-directory__future {
+  color: var(--branch-muted);
+}
+
+.regional-branch-directory__cards h4,
+.regional-branch-directory__featured h4 {
+  align-self: end;
+  margin: 48px 0 10px;
+  font-family: var(--branch-serif);
+  font-size: clamp(26px, 2.3vw, 36px);
+  font-weight: 400;
+  letter-spacing: -.035em;
+  line-height: 1.05;
+}
+
+.regional-branch-directory__cards article p,
+.regional-branch-directory__featured article p {
+  margin: 0 0 24px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.regional-branch-directory__cards footer,
+.regional-branch-directory__featured footer {
+  align-self: end;
+  padding-top: 16px;
+  border-top: 1px solid var(--branch-line);
+}
+
+.regional-branch-directory__cards footer strong,
+.regional-branch-directory__featured footer strong {
+  color: var(--branch-action);
+  font-weight: 650;
+}
+
+.regional-branch-directory__empty {
+  margin: 0;
+  padding: 40px 24px;
+  border: 1px solid var(--branch-line);
+  background: var(--branch-surface);
+  color: var(--branch-muted);
+  text-align: center;
+}
+
+.regional-branch-directory__future {
+  padding-top: 18px;
+  border-top: 1px solid var(--branch-line);
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+@media (max-width: 1040px) {
+  .regional-branch-directory__hero,
+  .regional-branch-directory__toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .regional-branch-directory__media {
+    min-height: 460px;
+  }
+
+  .regional-branch-directory__toolbar fieldset > div {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 760px) {
+  .regional-branch-directory__intro {
+    padding-inline: 22px;
+  }
+
+  .regional-branch-directory__intro h2 {
+    font-size: clamp(52px, 15vw, 76px);
+  }
+
+  .regional-branch-directory__media {
+    min-height: 360px;
+  }
+
+  .regional-branch-directory__region,
+  .regional-branch-directory__cards,
+  .regional-branch-directory__featured {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .regional-branch-directory *,
+  .regional-branch-directory *::before,
+  .regional-branch-directory *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}

@@ -2,7 +2,7 @@
 
 **Status:** Working guidance for concept review
 **Primary market:** United States
-**Last updated:** August 21, 2026
+**Last updated:** August 26, 2026
 
 ## Goal
 
@@ -37,6 +37,46 @@ Representation should be visible across the full page, not forced into a single 
 - Preview use: Living Story section about encountering God’s purpose through worship and mission teaching.
 - Alt text: “A multiethnic congregation worshiping together at Mission Camp.”
 
+### North America Mission Camp crowd with international flags
+
+- Source video: <https://www.youtube.com/watch?v=BE_ZqgH2tKs>
+- Official metadata: “North America All Generation Mission Camp 2025 Sketch Video” by InterCP International Media
+- Source timestamp: approximately 3:53
+- Local preview file: `public/images/vision-school-media/north-america-mission-camp-crowd.webp`
+- Preview use: Regional Branch Directory header and authentic media gallery.
+- Alt text: “A large multigenerational Mission Camp gathering holding international flags.”
+- Approval status: Official public InterCP footage; production publication and participant permission still need confirmation.
+
+### North America Mission Camp nations group
+
+- Source video: <https://www.youtube.com/watch?v=BE_ZqgH2tKs>
+- Official metadata: “North America All Generation Mission Camp 2025 Sketch Video” by InterCP International Media
+- Source timestamp: approximately 2:38
+- Local preview file: `public/images/vision-school-media/north-america-mission-camp-nations.webp`
+- Preview use: Authentic media gallery.
+- Alt text: “Mission Camp participants standing together with country signs and flags.”
+- Approval status: Official public InterCP footage; production publication and participant permission still need confirmation.
+
+### Young Generation Mission Camp community
+
+- Source video: <https://www.youtube.com/watch?v=A_vxSIJ3zn8>
+- Official metadata: “2024 North America Young Generation Mission Camp” by InterCP International Media
+- Source timestamp: approximately 3:53
+- Local preview file: `public/images/vision-school-media/young-generation-mission-camp-community.webp`
+- Preview use: Authentic media gallery.
+- Alt text: “Young adults gathered in community during North America Mission Camp.”
+- Approval status: Official public InterCP footage; production publication and participant permission still need confirmation.
+
+### North America Mission Camp worship
+
+- Source video: <https://www.youtube.com/watch?v=BE_ZqgH2tKs>
+- Official metadata: “North America All Generation Mission Camp 2025 Sketch Video” by InterCP International Media
+- Source timestamp: approximately 0:23
+- Local preview file: `public/images/vision-school-media/north-america-mission-camp-worship.webp`
+- Preview use: Authentic media gallery.
+- Alt text: “Participants worshiping together during North America Mission Camp.”
+- Approval status: Official public InterCP footage; production publication and participant permission still need confirmation.
+
 ## Reviewed but not used in this preview
 
 - Vision School display-wall image: relevant to the program, but it shows participants mainly from behind and is not strong enough for a primary people-centered moment.
@@ -47,3 +87,5 @@ Representation should be visible across the full page, not forced into a single 
 ## Production follow-up
 
 Build a reviewed media library with source URL, photographer/owner, consent status, represented activity, approximate date and location, allowed regions/channels, crop restrictions, and approved alt text for every published asset.
+
+For video-derived stills, also retain the official video title, channel, source timestamp, and whether the visible event watermark must remain in frame. Keep the blue color veil in CSS so the source image remains intact and the treatment can be adjusted without regenerating the asset.
