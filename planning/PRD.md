@@ -2,8 +2,8 @@
 
 **Document type:** Product Requirements Document  
 **Status:** Draft for ministry, product, design, and engineering review  
-**Version:** 1.2
-**Date:** August 25, 2026
+**Version:** 1.3
+**Date:** August 31, 2026
 **Primary launch:** Public website and current registration handoff  
 **Long-term product:** Secure global operations platform  
 
@@ -30,6 +30,7 @@ This PRD combines:
 - The August 20, 2026 kickoff recording and planning notes.
 - The August 20, 2026 design-feedback recording.
 - The August 25, 2026 tools, process, CMS, deployment, and operations demonstration.
+- The August 31, 2026 website, initiative-planning, registration, media, and Flight Operations review.
 - Christina's August 25 overview of the current flight-team and registration-team handoffs. The detailed team orientations and source files are still needed before an internal operations build begins.
 - Direct visual review of Perspectives.org and CircuitRiders.com.
 - The Seattle Haystack / Vision School Instagram reference shown during the feedback recording.
@@ -103,6 +104,7 @@ Create the trusted global home for Vision School: one public place where people 
 6. **Least privilege.** Chat-group membership or Telegram identity never grants organizational permissions by itself.
 7. **Human approval.** Ministry claims, testimonials, photographs, translations, and AI-assisted content require an accountable approver.
 8. **Clarity over novelty.** The main site must feel contemporary and alive without becoming youth-only, fashion-like, noisy, or trend-dependent.
+9. **AI supports the work, not the relationships.** AI may help with engineering and repetitive setup, but it must not make sensitive ministry decisions, invent approved content, or replace personal care and communication.
 
 ## 6. Audiences
 
@@ -139,9 +141,11 @@ Create the trusted global home for Vision School: one public place where people 
 - Keep the public Astro site and Payload CMS on Vercel for now. Use Dokploy for the design gallery and for mature independent applications when that deployment route has been reviewed.
 - Use Windmill for fast, isolated internal prototypes. A successful prototype may later move into its own GitHub repository and Dokploy deployment.
 - Use Authentik as the internal application doorway and permission layer. Telegram can identify a person, but access still requires an approved account and role.
-- Keep one small product hierarchy for the three-person team. Product work is grouped by user outcome; tool names belong in requirements or tracking fields, not in epic names.
+- Keep a small product hierarchy for the three-person team. Use the current Platform, Website Content & Management, and Flight Operations initiatives; create a separate Registration & Engagement initiative only after registration orientation confirms its scope.
 - Treat the branch and class finder as the next high-value public feature.
 - Treat a Church Center or Planning Center replacement as a separate research workstream. Do not commit to a custom build until current usage, costs, compliance needs, and existing alternatives are understood.
+- Use `visionschool.international` for the public experience. Keep internal applications and sensitive operations separate from the public site, with `vision.school.dev` as the working internal application domain discussed by the team.
+- Centrally manage public branch information for the first release. Branch-leader self-service comes later, after roles, approval, publishing, and access-revocation rules are agreed.
 
 ### 7.1 Working tool and delivery model
 
@@ -154,7 +158,7 @@ Create the trusted global home for Vision School: one public place where people 
 | Give internal users one place to open approved tools | Authentik | Show only the applications each approved user is allowed to use. Branding is low risk; authentication flows and security configuration require Anthony's review. |
 | Host a mature independent application | GitHub repository plus Dokploy | Promote a proven prototype only when it needs independent engineering, broader use, or a stable release process. |
 | Host the main public website and CMS | Vercel | Keep the current production path until reliability, cost, and migration evidence support a change. |
-| Track planned and active work | Linear | Keep one initiative, a few broad outcome-based projects, and fewer than 100 plain-language issues. Update existing issues before creating new ones. |
+| Track planned and active work | Linear | Keep the three current initiatives, use a few broad outcome-based projects, and keep fewer than 100 plain-language issues. Update existing issues before creating new ones. |
 
 ### 7.2 Change flow
 
@@ -313,6 +317,8 @@ Limit:
 6. For the initial release, registration hands off clearly to the approved Church Center form.
 7. Broken, closed, or unpublished registrations show a helpful owner-approved state.
 
+For the first branch-directory release, the homepage should show approximately three approved featured branches. The full directory should support United States and Canada search by dependable city, state/province, or region fields. Mexico remains hidden until the team approves the expansion and supplies reliable data.
+
 ### Journey P3 — Explore without a current class
 
 1. Visitor searches a region with no published class.
@@ -344,6 +350,7 @@ Limit:
 - **CLS-009:** Every published branch/class must have an accountable owner and an authoritative destination. Use an approved branch website when it is maintained; otherwise use the standard Vision School detail page.
 - **CLS-010:** The homepage may show a small, owner-selected featured set, but View All Classes must lead to the complete approved directory.
 - **CLS-011:** A branch page must represent the local branch accurately without exposing private leader, host, traveler, or venue information.
+- **CLS-012:** The first release must use centrally managed branch records; branch-leader editing requires a later approved access and publishing model.
 
 ### Contact, events, and donation
 
@@ -360,6 +367,7 @@ Limit:
 - **CMS-004:** Production publishing must preserve version history and rollback.
 - **CMS-005:** Publishing approved public content must trigger or clearly request the production rebuild required by the static Astro site, and the resulting public page must be verified.
 - **CMS-006:** Editors and API clients must receive only the collections and actions required for their work.
+- **CMS-007:** Public media records must clearly identify source, permission or consent, approval state, intended use, and appropriate alternative text before publication.
 
 ## 12. Public non-functional requirements
 
@@ -476,8 +484,11 @@ The team currently refers to a central schedule document, branch Google Forms, a
 - **EVAL-003:** Headquarters can see missing submissions without seeing restricted answers unnecessarily.
 - **EVAL-004:** Approved users can view readable summaries and aggregate trends.
 - **EVAL-005:** Sensitive comments route to the correct restricted staff group.
+- **EVAL-006:** Repeated unanswered automated reminders must alert an appropriate person for human follow-up rather than continuing indefinitely or replacing personal care.
 - **TLC-001:** Team Leader Care cases have a restricted owner, status, due date, and visibility scope.
 - **TLC-002:** Retention, access review, export, and deletion rules must be approved before pastoral data collection begins.
+
+PowerPoint or teaching-file hosting is a later enhancement and is not required for the first Flight Operations release.
 
 ## 15. Proposed data model
 
@@ -537,7 +548,7 @@ Do not replace Church Center until the team has documented and tested:
 
 The actual Church Center, Planning Center, payment-processing, support, and migration costs must be verified from current account records before making a replacement decision. A public pricing calculator or meeting screenshot is not proof of the organization's current bill.
 
-This research stays inside the existing Classes, CMS & Registration project while the team is small. It becomes a separate Linear initiative only if it gains a separate owner, budget, or delivery program. This preserves the requested work without adding unnecessary tracking overhead.
+Before creating implementation issues, the team must complete registration orientation and review the actual Church Center or Planning Center, spreadsheet, notification, and Looker Studio workflow. After that review, the team may create a separate Registration & Engagement initiative with its own practical projects and issues. Until then, Church Center remains the registration system and the public website provides the discovery and handoff experience.
 
 ## 18. Release plan
 
@@ -567,6 +578,8 @@ This research stays inside the existing Classes, CMS & Registration project whil
 - Accessibility, performance, SEO, analytics, security headers, and broken-link checks.
 
 **Exit:** a new visitor understands Vision School and can reach the correct registration action from a phone; no placeholder or private content remains.
+
+The August 31 meeting set a working target of roughly one week for a useful public-facing draft and roughly two weeks for a clean, tested release. These are team planning targets rather than automatic issue due dates; real branch information, approved media, and approved testimonials remain the main schedule risks.
 
 ### Phase 1.1 — Current-semester support
 
@@ -677,8 +690,8 @@ The authenticated portal may launch only when:
 
 ## 23. Collaboration and repository requirements
 
-- Use one Linear initiative, **Vision School International Platform**, while the work is still owned by the same small team.
-- Treat the five current Linear projects as broad epics: Public Website, Content & Launch; Classes, CMS & Registration; Secure Portal & Operations; Travel, Evaluations & Team Leader Care; and Globalization & Future.
+- Use the three current Linear initiatives: **Vision School International Platform**, **Website Content & Management**, and **Flight Operations App**.
+- Keep projects and issues high-level enough for a three-person team. Create a separate **Registration & Engagement** initiative only after registration orientation establishes a real delivery boundary.
 - Keep detailed requirements in this PRD. Linear issues should describe deliverable work, not repeat every requirement as a separate story.
 - Keep fewer than 100 active issues. Update or combine an existing issue before creating another one.
 - Record the intended tool or platform in the issue description or a small shared label set; do not rename product epics after tools.
@@ -717,13 +730,13 @@ The authenticated portal may launch only when:
 | Responsibility | Proposed owner | Status |
 |---|---|---|
 | Product priorities and workflow requirements | Chris / designated product owner | Confirm exact ministry role |
-| Public site and prototypes | Chris and assigned implementer, with ministry review | Confirm |
+| Public site, product decisions, and prototypes | Chris and assigned implementer, with ministry review | Confirm |
 | Architecture, infrastructure, security | Anthony / designated technical lead | Confirm |
 | Ministry approval | Vision School Department Team Leader and Ami | Confirm |
-| Registration workflow | Christina, transitioning with Will's handoff | Confirm after orientation |
+| Branch information, registration orientation, and current workflow access | Christina, coordinating with Gilbert and current team owners | Confirm after orientation |
 | Travel workflow | Gilbert, named as flight-team leader in the meeting | Confirm after orientation |
 | Mexico pilot lessons | Dallas contact | Identify |
-| Content and media approval | Ministry content owner | Assign |
+| Content and media gathering | Christina with the ministry media team | Public use still requires an assigned ministry approver |
 | Domain ownership and renewals | Organization-controlled account | Assign |
 | Production support | Named primary and backup | Assign |
 
@@ -758,31 +771,31 @@ The authenticated portal may launch only when:
 27. Which branches have an approved, maintained website, and who owns every remaining generic branch page?
 28. Which current branch and class fields are reliable enough for city/region search and public filtering?
 29. Which YouTube videos, short clips, captions, people, and regional usage rights are approved for the public site?
-30. Which InterCP programs and active Church Center or Planning Center registrations belong in the registration-platform research inventory?
-31. What are the verified current subscription, processing, support, and staff-time costs for the existing registration workflow?
-32. Which preview, staging, and production environments are authoritative for each repository, and who owns rollback verification?
+30. Will the video library store uploaded files in Payload or manage links and metadata for externally hosted videos?
+31. What may each public visitor, registered participant, branch or VSTL leader, internal staff member, and administrator view, edit, approve, publish, and revoke?
+32. Which InterCP programs and active Church Center or Planning Center registrations belong in the registration-platform research inventory?
+33. What are the verified current subscription, processing, support, and staff-time costs for the existing registration workflow?
+34. Which preview, staging, and production environments are authoritative for each repository, and who owns rollback verification?
 
 ## 26. Immediate next actions
 
-### Within 72 hours
+### Current team actions
 
-- [ ] Confirm product, technical, ministry, security/privacy, content, and support owners.
-- [ ] Review and approve one design direction.
-- [ ] Confirm global positioning and domain decision owner.
-- [ ] Add collaborators and branch protection to GitHub.
-- [ ] Collect approved program copy, brand files, media, testimonials, class data, events, registration destinations, policies, and contact owners.
-- [ ] Collect the full flight-team and registration-team orientation recordings plus the central schedule document, Google Forms, flight tracker, expense tracker, and current registration tools.
-- [ ] Confirm the smallest useful access for Payload, Windmill, Authentik, Dokploy, GitHub, Linear, and Vercel; never place the credentials in a ticket or repository.
-- [ ] Group open decisions into the existing broad Linear issues with an owner and review date instead of creating one issue per question.
-- [ ] Interview registration, travel, branch, Team Leader Care, and Mexico-pilot stakeholders.
+- [ ] Christina obtains the first 5–10 complete, approved branch records from Gilbert or the responsible team, then continues adding the remaining locations gradually.
+- [ ] Christina gathers a representative set of approved images, video sources, testimonials, captions, and public-use permissions from the media team.
+- [ ] Christina schedules registration orientation and obtains access to the current registration, spreadsheet, notification, and Looker Studio workflow.
+- [ ] Anthony reviews the regional branch-directory design and decides how videos will be represented in the CMS.
+- [ ] Anthony experiences a real Flight Team route and compares the existing backlog with the actual workflow.
+- [ ] Chris approves the branch-directory issue scope, initial public media, and staging result.
+- [ ] The team records the smallest useful access for Payload, Windmill, Authentik, Dokploy, GitHub, Linear, and Vercel without placing credentials in issues or GitHub.
+- [ ] The team returns to registration, branch-leader access, and detailed role issues only after the responsible orientation or decision is complete.
 
 ### First implementation milestone
 
-- [ ] Build the approved responsive shell and navigation.
-- [ ] Replace concept copy with ministry-approved content.
-- [ ] Build Home, About, Course, Find a Class, Class Detail, Events, Stories, Contact, Donate, Privacy, and Terms.
-- [ ] Build the approved branch/class directory with city/region search, branch ownership, authoritative branch links, and a standard fallback page.
-- [ ] Add a controlled class source and Church Center handoff.
-- [ ] Add accessibility, performance, broken-link, placeholder, and privacy checks.
-- [ ] Review the preview on representative mobile and desktop devices.
-- [ ] Obtain documented ministry acceptance before production launch.
+- [ ] Approve the regional branch-directory design.
+- [ ] Replace illustrative branch information with the first approved branch set.
+- [ ] Build the homepage branch finder with approximately three featured locations.
+- [ ] Build the complete U.S./Canada directory with dependable city/region search and useful empty states.
+- [ ] Connect each published branch to its approved branch website or current Church Center destination.
+- [ ] Verify English and Korean routes, phone and desktop layouts, keyboard use, visible focus, link safety, placeholders, and privacy behavior.
+- [ ] Review the result in staging and obtain documented ministry acceptance before production launch.
