@@ -1,0 +1,2698 @@
+WEBVTT
+
+00:00.000 --> 00:15.560
+Okay, so we can access the CMS side. Yes, you can access the CMS side from the GitHub Rebo Vision
+
+00:15.560 --> 00:22.840
+School International CMS, which would be at CMS.Vision School International, and it would take
+
+00:22.840 --> 00:38.840
+you, actually, I'm going to go through the login again. So log out. So you just log in with Telegram.
+
+00:38.840 --> 00:58.840
+Okay, so Codex is going to need to log in with my Telegram. No, Codex, you will be able to, after you log in, you will be able to come to the API.
+
+00:59.840 --> 01:07.840
+See API keys right here. This is what you do. You'd come here. You just create API key.
+
+01:08.840 --> 01:17.840
+I could just say, you know, I guess you don't need it there. Chris is API key codex. Just say something.
+
+01:17.840 --> 01:25.840
+Give it access to everything. So find an update and then save and then it'll create a key. Give it to Codex.
+
+01:25.840 --> 01:33.840
+Ask it to authenticate with this payload management system. It will.
+
+01:33.840 --> 01:40.840
+And then you, yeah, you can just use Codex to update stuff on the web.
+
+01:40.840 --> 01:44.840
+Want to do it manually.
+
+01:44.840 --> 01:54.840
+Then you would just go to the homepage collection, which normally in the in the prod version, this would load the actual website right here.
+
+01:54.840 --> 02:08.840
+So you can just click and change.
+
+02:08.840 --> 02:18.840
+But for now, I mean, you can just change anything. And then once you publish, it goes to the website, the website reloads, and then the context there.
+
+02:18.840 --> 02:33.840
+You don't have to have AI go in and you know, change heart code and or change this or change that. It just makes less potential chance for a mistake to happen with styling at least.
+
+02:33.840 --> 02:35.840
+Okay.
+
+02:35.840 --> 02:38.840
+And that's that's the CMS one.
+
+02:38.840 --> 02:41.840
+Remember, this one is the.
+
+02:41.840 --> 02:49.840
+This is just the main, the literal main website. You can see it's free views and deploy.
+
+02:49.840 --> 02:52.840
+So, main website.
+
+02:52.840 --> 03:01.840
+So we'll just will be really making changes here primarily. And then the last one.
+
+03:01.840 --> 03:05.840
+Thank you, Stan.
+
+03:05.840 --> 03:08.840
+Hi, hi, sorry guys.
+
+03:08.840 --> 03:13.840
+We have BTJ tour team here this week.
+
+03:13.840 --> 03:18.840
+And Josh just told me last month.
+
+03:18.840 --> 03:21.840
+Okay. That was like, you're going to be busy with that.
+
+03:21.840 --> 03:23.840
+Yeah, no worries.
+
+03:23.840 --> 03:24.840
+Yeah.
+
+03:24.840 --> 03:26.840
+Yeah.
+
+03:26.840 --> 03:30.840
+It's a little static because there's a lot of stuff going on.
+
+03:30.840 --> 03:31.840
+Okay.
+
+03:31.840 --> 03:34.840
+Sorry.
+
+03:34.840 --> 03:37.840
+Yeah.
+
+03:37.840 --> 03:44.840
+I was just saying that, um, the.
+
+03:44.840 --> 03:48.840
+Oh, no, I'm taking the wrong exit.
+
+03:48.840 --> 03:50.840
+Christina, we can.
+
+03:50.840 --> 03:57.840
+You want to join like a when you have more time, we can reschedule for today. It's okay.
+
+03:57.840 --> 03:58.840
+Yeah.
+
+03:58.840 --> 04:01.840
+The thing is.
+
+04:01.840 --> 04:06.840
+Yeah, the thing is what happened was, um, BTJ team is here.
+
+04:06.840 --> 04:10.840
+And Josh was supposed to be in charge of them for Towson.
+
+04:10.840 --> 04:16.840
+But then somehow he anyway, yeah, he could not like, uh,
+
+04:16.840 --> 04:19.840
+bring them to Frederick for Frederick Haystack anymore.
+
+04:19.840 --> 04:22.840
+And I was like, what, we have to start on time.
+
+04:22.840 --> 04:25.840
+So then my obligations, I had to leave.
+
+04:25.840 --> 04:29.840
+And now I'm driving to Towson to pick up the BTJ team.
+
+04:29.840 --> 04:30.840
+So.
+
+04:30.840 --> 04:32.840
+I wish I could help.
+
+04:32.840 --> 04:34.840
+So that's what happened.
+
+04:34.840 --> 04:35.840
+Yeah.
+
+04:35.840 --> 04:36.840
+Yeah.
+
+04:36.840 --> 04:37.840
+I don't know.
+
+04:37.840 --> 04:39.840
+I probably would have asked me.
+
+04:39.840 --> 04:42.840
+I brought.
+
+04:42.840 --> 04:45.840
+Well, I think so much.
+
+04:45.840 --> 04:46.840
+Yeah.
+
+04:46.840 --> 04:48.840
+I figured you were working.
+
+04:48.840 --> 04:50.840
+I see like a father with a baby.
+
+04:50.840 --> 04:54.840
+I didn't not really take care of like, um, anything except myself.
+
+04:54.840 --> 04:59.840
+Yeah, it's just, yeah, it was Josh and my response, um,
+
+04:59.840 --> 05:03.840
+my responsibility and Josh's responsibility to do the BTJ team.
+
+05:03.840 --> 05:04.840
+So.
+
+05:04.840 --> 05:07.840
+Yeah, we should have planned it out better.
+
+05:07.840 --> 05:08.840
+Yeah.
+
+05:08.840 --> 05:10.840
+We learned, we learned.
+
+05:10.840 --> 05:11.840
+Yeah.
+
+05:11.840 --> 05:13.840
+Go free to ask me next time though.
+
+05:13.840 --> 05:14.840
+I really don't mind.
+
+05:14.840 --> 05:16.840
+I mean, all he does is sleep anyways.
+
+05:16.840 --> 05:17.840
+So.
+
+05:17.840 --> 05:20.840
+Dude.
+
+05:20.840 --> 05:22.840
+I can't do that.
+
+05:22.840 --> 05:23.840
+Trust me.
+
+05:23.840 --> 05:26.840
+He would be what I understand.
+
+05:26.840 --> 05:29.840
+Yeah.
+
+05:29.840 --> 05:32.840
+I don't know.
+
+05:32.840 --> 05:34.840
+I'm a girl.
+
+05:34.840 --> 05:36.840
+I get it.
+
+05:36.840 --> 05:38.840
+You know, what's more important?
+
+05:38.840 --> 05:40.840
+You know, baby sleeping.
+
+05:40.840 --> 05:42.840
+People.
+
+05:42.840 --> 05:43.840
+Getting to the haystack.
+
+05:43.840 --> 05:45.840
+You know, coming all this way.
+
+05:45.840 --> 05:46.840
+I'm.
+
+05:46.840 --> 05:49.840
+I'm saying I think he would understand.
+
+05:49.840 --> 05:51.840
+Yeah, but hi traffic hours.
+
+05:51.840 --> 05:56.840
+And you're coming from temple hills going to like logistically.
+
+05:56.840 --> 05:59.840
+It's better for me to do it, you know, I think.
+
+05:59.840 --> 06:02.840
+I would have had to know you hours of fear.
+
+06:02.840 --> 06:03.840
+Yeah.
+
+06:03.840 --> 06:06.840
+But yeah.
+
+06:06.840 --> 06:08.840
+I apologize.
+
+06:08.840 --> 06:12.840
+I should have updated you guys, but I was in the middle of driving too.
+
+06:12.840 --> 06:13.840
+In the world.
+
+06:13.840 --> 06:14.840
+Just found out.
+
+06:14.840 --> 06:16.840
+No problem at all.
+
+06:16.840 --> 06:18.840
+Yeah.
+
+06:18.840 --> 06:20.840
+Yeah.
+
+06:20.840 --> 06:21.840
+Well, you guys.
+
+06:21.840 --> 06:28.840
+So I'll just quick like I'll just share like quick updates and then I'll be at campus in 10 minutes.
+
+06:28.840 --> 06:30.840
+So.
+
+06:30.840 --> 06:31.840
+Yeah, yeah.
+
+06:31.840 --> 06:34.840
+So I'll just share quick updates with you guys.
+
+06:34.840 --> 06:35.840
+So.
+
+06:35.840 --> 06:40.840
+You guys haven't approved for both registration and flights.
+
+06:40.840 --> 06:41.840
+So.
+
+06:41.840 --> 06:44.840
+Gilbert hasn't reached out to either of you guys.
+
+06:44.840 --> 06:45.840
+No.
+
+06:45.840 --> 06:46.840
+So.
+
+06:46.840 --> 06:55.840
+Maybe sorry, maybe it was my responsibility to reach out to you guys, which I did and told you about the meeting, you know.
+
+06:55.840 --> 06:59.840
+But he's technically flight team TL.
+
+06:59.840 --> 07:05.840
+And I'm technically registration team TL, but I know nothing about registration.
+
+07:05.840 --> 07:11.840
+Will is the registration TL from last semester and we're transitioning.
+
+07:11.840 --> 07:12.840
+So.
+
+07:12.840 --> 07:13.840
+Okay.
+
+07:13.840 --> 07:15.840
+Transitioning rule.
+
+07:15.840 --> 07:16.840
+Yeah.
+
+07:16.840 --> 07:17.840
+So.
+
+07:17.840 --> 07:24.840
+All three of us will try to be on call because you guys are meeting kind of late today 930.
+
+07:24.840 --> 07:28.840
+So I think I should be done at that time.
+
+07:28.840 --> 07:31.840
+There's a meeting today.
+
+07:31.840 --> 07:34.840
+Yes, it's today.
+
+07:34.840 --> 07:36.840
+You said.
+
+07:36.840 --> 07:40.840
+Unless you can.
+
+07:40.840 --> 07:45.840
+I can try to work it out.
+
+07:45.840 --> 07:48.840
+I.
+
+07:48.840 --> 07:52.840
+I can try to join.
+
+07:52.840 --> 07:56.840
+Where's, where did you share the information for tonight?
+
+07:56.840 --> 07:59.840
+Is that.
+
+07:59.840 --> 08:02.840
+I didn't share a link yet.
+
+08:02.840 --> 08:06.840
+But I can send you the link that Gilbert will use.
+
+08:06.840 --> 08:09.840
+I can send you the same link.
+
+08:09.840 --> 08:12.840
+So for everything.
+
+08:12.840 --> 08:13.840
+Okay.
+
+08:13.840 --> 08:19.840
+Yeah, I might be able to dial in 930.
+
+08:19.840 --> 08:20.840
+Yeah, maybe.
+
+08:20.840 --> 08:21.840
+Okay.
+
+08:21.840 --> 08:23.840
+Yeah, hopefully not too late.
+
+08:23.840 --> 08:24.840
+I know.
+
+08:24.840 --> 08:26.840
+I know it is quietly.
+
+08:26.840 --> 08:33.840
+But tonight, it'll be like a brief overview of what flight team does.
+
+08:33.840 --> 08:44.840
+And like the three main tasks, which is data input, like from branches and also from speakers and from vision school departments.
+
+08:44.840 --> 08:46.840
+So you touch everybody.
+
+08:46.840 --> 08:58.840
+And then after you do the data, what from all these places, then you search flights that best fit the criteria with the best prices.
+
+08:58.840 --> 09:02.840
+And then you execute and you purchase the flight.
+
+09:02.840 --> 09:09.840
+But the main the hard part is like data entry after you purchase the flights.
+
+09:09.840 --> 09:17.840
+You have to entry enter the confirmation codes and the flight details and all the details onto the sheets.
+
+09:17.840 --> 09:21.840
+And you have to give it to the speaker and the branches.
+
+09:21.840 --> 09:25.840
+Anyway, it's a lot of work.
+
+09:25.840 --> 09:30.840
+I mean, for me, I don't know if I'm just lazy, but I personally think it's a lot of work.
+
+09:30.840 --> 09:31.840
+No, it is.
+
+09:31.840 --> 09:36.840
+That's a lot to to corner and just, yeah, a lot of manual processes.
+
+09:36.840 --> 09:41.840
+So that's something we can build into our site, right?
+
+09:41.840 --> 09:42.840
+Right.
+
+09:42.840 --> 09:43.840
+Right.
+
+09:43.840 --> 09:44.840
+Right.
+
+09:44.840 --> 09:45.840
+So you'll have it.
+
+09:45.840 --> 09:46.840
+Yeah.
+
+09:46.840 --> 09:47.840
+Okay.
+
+09:47.840 --> 09:49.840
+Well, go ahead.
+
+09:49.840 --> 09:52.840
+I'm just trying to think of how.
+
+09:52.840 --> 09:54.840
+What we will need.
+
+09:54.840 --> 10:00.840
+So we will need to see how you guys currently track it, like how you guys.
+
+10:00.840 --> 10:05.840
+Where did data entry happens now and what.
+
+10:05.840 --> 10:12.840
+Data needs to be entered that we can start tracking in our own website to make it all easier.
+
+10:12.840 --> 10:18.840
+For the registration team, flight team, whatever and all the different branches and.
+
+10:18.840 --> 10:21.840
+All of the.
+
+10:21.840 --> 10:24.840
+Missionary speakers.
+
+10:24.840 --> 10:32.840
+So those are the four main users of that, right?
+
+10:32.840 --> 10:34.840
+So it's.
+
+10:34.840 --> 10:36.840
+Who are the users again?
+
+10:36.840 --> 10:40.840
+It's going to be the missionary speakers that are traveling.
+
+10:40.840 --> 10:42.840
+The branch leaders.
+
+10:42.840 --> 10:43.840
+Yep.
+
+10:43.840 --> 10:46.840
+Okay.
+
+10:46.840 --> 10:47.840
+Okay.
+
+10:47.840 --> 10:51.840
+So just saying this out loud so that codecs can.
+
+10:51.840 --> 10:53.840
+Document this.
+
+10:53.840 --> 11:01.840
+So branch leaders, for example, like DC Virginia branch DC Maryland branch.
+
+11:01.840 --> 11:03.840
+Houston branch.
+
+11:03.840 --> 11:06.840
+Here's a branch, Sacramento branch, etc.
+
+11:06.840 --> 11:07.840
+They will all.
+
+11:07.840 --> 11:11.840
+All the leaders there will be it.
+
+11:11.840 --> 11:14.840
+So they will be.
+
+11:14.840 --> 11:17.840
+They will be required to do.
+
+11:17.840 --> 11:19.840
+Well, what are they supposed to do?
+
+11:19.840 --> 11:23.840
+Are they just getting the data or are they entering any data?
+
+11:23.840 --> 11:25.840
+I guess we can find that out later.
+
+11:25.840 --> 11:26.840
+So.
+
+11:26.840 --> 11:28.840
+Oh,
+
+11:28.840 --> 11:30.840
+Oh, dear Lord.
+
+11:30.840 --> 11:32.840
+Okay.
+
+11:32.840 --> 11:33.840
+All right.
+
+11:33.840 --> 11:40.840
+I am going to get off this call because I apparently can't take a call and drive at the same time.
+
+11:40.840 --> 11:42.840
+But.
+
+11:42.840 --> 11:45.840
+Yeah, but just very quickly.
+
+11:45.840 --> 11:47.840
+Yes, today you guys will go over all the.
+
+11:47.840 --> 11:49.840
+She's all the trackers.
+
+11:49.840 --> 11:54.840
+So there's the core dog where the education department updates where the schedule.
+
+11:54.840 --> 11:56.840
+In takes place.
+
+11:56.840 --> 12:00.840
+Where the branches, the data entry from Google forms get put in.
+
+12:00.840 --> 12:02.840
+So they'll be core docs that we refer to.
+
+12:02.840 --> 12:04.840
+And then there's like a flight tracker.
+
+12:04.840 --> 12:08.840
+And there's also an expense tracker.
+
+12:08.840 --> 12:09.840
+Yes.
+
+12:09.840 --> 12:11.840
+So all the.
+
+12:11.840 --> 12:16.840
+All the tools that we use for a flight team, you guys will learn it today.
+
+12:16.840 --> 12:23.840
+And then a much, much, much less intensive OT will be done with registration team.
+
+12:23.840 --> 12:25.840
+And then registration team.
+
+12:25.840 --> 12:29.840
+Again, it's Will and I and it's very, very simple.
+
+12:29.840 --> 12:34.840
+It'll be like, yeah, we only use like three different things.
+
+12:34.840 --> 12:38.840
+So we'll show you guys how that works.
+
+12:38.840 --> 12:40.840
+Orientation.
+
+12:40.840 --> 12:43.840
+Registration orientation.
+
+12:43.840 --> 12:46.840
+Okay.
+
+12:46.840 --> 12:47.840
+Okay.
+
+12:47.840 --> 12:48.840
+Okay.
+
+12:48.840 --> 12:49.840
+Okay.
+
+12:49.840 --> 12:50.840
+Just send us the links.
+
+12:50.840 --> 12:52.840
+I'll leave you in later.
+
+12:52.840 --> 12:54.840
+Cool. Thanks, Christina.
+
+12:54.840 --> 12:59.840
+I feel very now and confirm, but it's tonight at nine thirty.
+
+12:59.840 --> 13:01.840
+Okay. All right. Drive safely.
+
+13:01.840 --> 13:03.840
+Yeah, drive safe.
+
+13:03.840 --> 13:04.840
+Thank you.
+
+13:04.840 --> 13:06.840
+All right. Thanks. Bye.
+
+13:06.840 --> 13:07.840
+Bye.
+
+13:07.840 --> 13:09.840
+Did you report all that?
+
+13:09.840 --> 13:11.840
+Yeah.
+
+13:11.840 --> 13:12.840
+Okay.
+
+13:12.840 --> 13:13.840
+Yeah.
+
+13:13.840 --> 13:15.840
+It's recording right now.
+
+13:15.840 --> 13:18.840
+So that's kind of there.
+
+13:18.840 --> 13:20.840
+That's still good info.
+
+13:20.840 --> 13:21.840
+Yeah.
+
+13:21.840 --> 13:22.840
+Yeah.
+
+13:22.840 --> 13:24.840
+We at least got different forms.
+
+13:24.840 --> 13:30.840
+And you filled out that maybe some of the users and.
+
+13:30.840 --> 13:31.840
+Yeah.
+
+13:31.840 --> 13:34.840
+So we have to build all those things in so it would turn those into
+
+13:34.840 --> 13:35.840
+requirements.
+
+13:35.840 --> 13:37.840
+Oh my gosh, dude.
+
+13:37.840 --> 13:38.840
+Look at this.
+
+13:38.840 --> 13:40.840
+I'm a bot.
+
+13:40.840 --> 13:42.840
+I'm a bot.
+
+13:42.840 --> 13:45.840
+Like literally I like I was like, you know, why is, why is.
+
+13:45.840 --> 13:46.840
+See, mess down.
+
+13:46.840 --> 13:47.840
+It's like it's not.
+
+13:47.840 --> 13:48.840
+It's got a 200.
+
+13:48.840 --> 13:49.840
+I like.
+
+13:49.840 --> 13:51.840
+Because I've typed it in.
+
+13:51.840 --> 13:52.840
+Well.
+
+13:52.840 --> 13:55.840
+That's funny.
+
+13:55.840 --> 13:56.840
+Okay.
+
+13:56.840 --> 13:57.840
+Actually, let me show you on the,
+
+13:57.840 --> 13:58.840
+let me show you on the problem.
+
+13:58.840 --> 13:59.840
+It's really cool.
+
+13:59.840 --> 14:00.840
+All right.
+
+14:00.840 --> 14:08.840
+So you log in.
+
+14:08.840 --> 14:15.840
+Oh, once you're in homepage.
+
+14:15.840 --> 14:19.840
+And it actually loads the page, which is really nice.
+
+14:19.840 --> 14:20.840
+Cool.
+
+14:20.840 --> 14:23.840
+Well, then people can like if someone's like, I want to change this
+
+14:23.840 --> 14:25.840
+specifically, you know, you just clicked.
+
+14:25.840 --> 14:26.840
+You just change it.
+
+14:26.840 --> 14:28.840
+I did right in there.
+
+14:28.840 --> 14:29.840
+Yeah, that's easy.
+
+14:29.840 --> 14:30.840
+That's really good.
+
+14:30.840 --> 14:31.840
+Yeah.
+
+14:31.840 --> 14:33.840
+And we should teach that to Christina.
+
+14:33.840 --> 14:34.840
+Yeah.
+
+14:34.840 --> 14:35.840
+That's some things.
+
+14:35.840 --> 14:39.840
+So I guess next time we have a way to show how easy it can be.
+
+14:39.840 --> 14:45.840
+Also via mcp and codex just as easy to.
+
+14:45.840 --> 14:49.840
+And then the final one, which is the original one that we were.
+
+14:49.840 --> 14:54.840
+Working on, I turned it into more of like.
+
+14:54.840 --> 14:57.840
+And then we're going to do a little bit more of a design focused.
+
+14:57.840 --> 14:58.840
+Internal tool.
+
+14:58.840 --> 15:00.840
+It's not fully internal yet.
+
+15:00.840 --> 15:04.840
+But this one essentially allows to quickly prototype.
+
+15:04.840 --> 15:09.840
+Like designs, but even better like the design itself, the code.
+
+15:09.840 --> 15:10.840
+It's like.
+
+15:10.840 --> 15:14.840
+Like if we approve something, I can literally just move it over to prod.
+
+15:14.840 --> 15:16.840
+Like super clean.
+
+15:16.840 --> 15:18.840
+Book it up to the CMS and it's good to go.
+
+15:18.840 --> 15:21.840
+So it's going to like, it's going to save a lot of headache.
+
+15:21.840 --> 15:24.840
+And then we're going to do a little bit more of a design.
+
+15:24.840 --> 15:25.840
+So I'm going to just.
+
+15:25.840 --> 15:28.840
+Just trouble from AI, like trying to figure out where to plug this in.
+
+15:28.840 --> 15:29.840
+Correctly.
+
+15:29.840 --> 15:31.840
+It just it's all self managed.
+
+15:31.840 --> 15:32.840
+The components.
+
+15:32.840 --> 15:33.840
+Okay.
+
+15:33.840 --> 15:34.840
+And there's a skill.
+
+15:34.840 --> 15:35.840
+Okay.
+
+15:35.840 --> 15:36.840
+It's just a design page.
+
+15:36.840 --> 15:38.840
+And there's a skill that tells the agent.
+
+15:38.840 --> 15:39.840
+How to do the designs.
+
+15:39.840 --> 15:42.840
+You have essentially unlimited types of designs.
+
+15:42.840 --> 15:43.840
+So if you're like.
+
+15:43.840 --> 15:45.840
+I want to design that.
+
+15:45.840 --> 15:47.840
+Like tailors to this or that looks like this.
+
+15:47.840 --> 15:49.840
+It just.
+
+15:49.840 --> 15:52.840
+And I was just using the standard.
+
+15:52.840 --> 15:55.840
+Like what are the components that are usually found on like websites.
+
+15:55.840 --> 15:57.840
+And what are they used for?
+
+15:57.840 --> 16:00.840
+Like FAQs.
+
+16:00.840 --> 16:02.840
+FAQs.
+
+16:02.840 --> 16:05.840
+Like newsletter signups.
+
+16:05.840 --> 16:06.840
+Resource listings.
+
+16:06.840 --> 16:10.840
+Like all these things can be generated and quickly added to not just like the homepage.
+
+16:10.840 --> 16:16.840
+But all of the pages that will eventually build out like donation, called factions.
+
+16:16.840 --> 16:22.840
+And AI and codex can just quickly generate them without like creating too much complication.
+
+16:22.840 --> 16:24.840
+It's just.
+
+16:24.840 --> 16:26.840
+Where to go.
+
+16:26.840 --> 16:28.840
+And now the more.
+
+16:28.840 --> 16:33.840
+The more fun things I don't have on GitHub.
+
+16:33.840 --> 16:35.840
+So if we go to vision school.
+
+16:35.840 --> 16:37.840
+Dev.
+
+16:37.840 --> 16:42.840
+This is going to be kind of like the internal tooling.
+
+16:42.840 --> 16:45.840
+So this is going to be a little bit more like a little bit more.
+
+16:45.840 --> 16:48.840
+So I'm going to use that form.
+
+16:48.840 --> 16:50.840
+That we can use to quickly scaffold apps.
+
+16:50.840 --> 16:53.840
+Like just like you know how quickly scaffold it and shows you a link.
+
+16:53.840 --> 16:55.840
+This is the same exact thing.
+
+16:55.840 --> 16:56.840
+So.
+
+16:56.840 --> 16:59.840
+Like I just quickly scaffold one actually.
+
+16:59.840 --> 17:02.840
+So this one, for example.
+
+17:02.840 --> 17:06.840
+Like this internal tool was built with AI and react.
+
+17:06.840 --> 17:07.840
+And it's just.
+
+17:07.840 --> 17:10.840
+All I did was kind of talk to it like.
+
+17:10.840 --> 17:15.840
+It's got like pretty much everything you would kind of have like when you're vibe coding.
+
+17:15.840 --> 17:17.840
+It's all right there for you.
+
+17:17.840 --> 17:20.840
+And you can just like talk with AI and.
+
+17:20.840 --> 17:23.840
+And figure out like what the internal app needs to look like.
+
+17:23.840 --> 17:24.840
+And when you're done with it.
+
+17:24.840 --> 17:26.840
+You just click deploy.
+
+17:26.840 --> 17:28.840
+And then once it's deployed.
+
+17:28.840 --> 17:32.840
+Like you can just send the link to anyone who's going to use it or needs it.
+
+17:32.840 --> 17:36.840
+And if you want to update it, you just go back to it and then update it.
+
+17:36.840 --> 17:44.840
+So this way it's like fully isolated like many internal apps all governed by one platform.
+
+17:44.840 --> 17:45.840
+I see.
+
+17:45.840 --> 17:49.840
+So they're just going to be linked together, but they're separate apps.
+
+17:49.840 --> 17:51.840
+Exactly.
+
+17:51.840 --> 17:52.840
+Okay.
+
+17:52.840 --> 18:00.840
+So when you hit deploy does it go staging or was it doing so this particularly actually just goes straight.
+
+18:00.840 --> 18:03.840
+Like it goes to its own link.
+
+18:03.840 --> 18:05.840
+Essentially.
+
+18:05.840 --> 18:08.840
+So if I click here.
+
+18:08.840 --> 18:13.840
+It goes to like it's called app preview.
+
+18:13.840 --> 18:14.840
+That's what's called.
+
+18:14.840 --> 18:18.840
+So you just send people that link like I think if I send you this link, you can just start using it.
+
+18:18.840 --> 18:20.840
+Oh, okay.
+
+18:20.840 --> 18:21.840
+It might be gated actually.
+
+18:21.840 --> 18:27.840
+If it's gated, it's most likely gated, but whoever has the link and it's behind the gate can use the app.
+
+18:27.840 --> 18:30.840
+So we can just quickly make apps.
+
+18:30.840 --> 18:32.840
+And like test them see if they're good.
+
+18:32.840 --> 18:36.840
+If they're really good, we can eventually bring them into a GitHub repo and really start engineering them.
+
+18:36.840 --> 18:43.840
+Otherwise, just quick quick apps that can be made via mcp, which is actually.
+
+18:43.840 --> 18:47.840
+Fantastic because you never act you never really have to come here.
+
+18:47.840 --> 18:56.840
+You could just tell like codex, like after you connect it via mcp or CLI say codex make an app.
+
+18:57.840 --> 18:59.840
+So there's no, there's no.
+
+18:59.840 --> 19:00.840
+So it's not the same thing.
+
+19:00.840 --> 19:02.840
+On the.
+
+19:02.840 --> 19:03.840
+Win mill.
+
+19:03.840 --> 19:05.840
+Like on the dev server and then get the link for it.
+
+19:05.840 --> 19:07.840
+So that way everyone has access to it.
+
+19:07.840 --> 19:10.840
+It's gated behind the telegram authentication.
+
+19:10.840 --> 19:11.840
+So it's secure.
+
+19:11.840 --> 19:13.840
+And there's no fussy complication.
+
+19:13.840 --> 19:14.840
+Like where is it?
+
+19:14.840 --> 19:15.840
+Where is it?
+
+19:15.840 --> 19:16.840
+So.
+
+19:16.840 --> 19:20.840
+I only need to connect the mcp api thing once.
+
+19:20.840 --> 19:21.840
+Right.
+
+19:22.840 --> 19:25.840
+And that one site that you showed me.
+
+19:25.840 --> 19:26.840
+Yeah.
+
+19:26.840 --> 19:33.840
+And it can access all the apps and all the.
+
+19:33.840 --> 19:35.840
+Yeah, like for this.
+
+19:35.840 --> 19:37.840
+For the vision school.dev.
+
+19:37.840 --> 19:40.840
+Yeah, only once it.
+
+19:40.840 --> 19:44.840
+You might have to reauth it, indicate every now and then, which is fine.
+
+19:44.840 --> 19:48.840
+Yeah, but this gives you access to all of all of this.
+
+19:48.840 --> 19:50.840
+So you don't have to come into the dashboard.
+
+19:50.840 --> 19:53.840
+You can come into the dashboard, but you don't have to come into the dashboard.
+
+19:53.840 --> 19:55.840
+You can just tell codex to do it.
+
+19:55.840 --> 19:56.840
+Okay.
+
+19:56.840 --> 20:00.840
+Same thing with the command line interface.
+
+20:00.840 --> 20:03.840
+If you prefer CLI versus mcp.
+
+20:03.840 --> 20:05.840
+Yes.
+
+20:05.840 --> 20:07.840
+Once you're locked in, you just tell it.
+
+20:07.840 --> 20:09.840
+Use this and then.
+
+20:09.840 --> 20:10.840
+Get this stuff.
+
+20:10.840 --> 20:11.840
+So.
+
+20:11.840 --> 20:14.840
+Cool.
+
+20:15.840 --> 20:17.840
+Yes.
+
+20:17.840 --> 20:20.840
+The last thing this is also not on get.
+
+20:20.840 --> 20:28.840
+So each, like, each form that we have, like every data entry form is going to be as soon as separate app.
+
+20:28.840 --> 20:29.840
+Yep.
+
+20:29.840 --> 20:32.840
+Okay.
+
+20:32.840 --> 20:34.840
+And I think there's some other.
+
+20:34.840 --> 20:37.840
+Need things like if you want to do like scripts.
+
+20:37.840 --> 20:41.840
+Well, this is more for like people that I don't know like scripting, I guess.
+
+20:41.840 --> 20:44.840
+Um, but they were really only using this for apps.
+
+20:44.840 --> 20:49.840
+I think that's just a great use case like quickly scaffolding app, see if people like it.
+
+20:49.840 --> 20:53.840
+If they do scale it up.
+
+20:53.840 --> 20:57.840
+The last one is the.
+
+20:57.840 --> 21:03.840
+The actual gate.
+
+21:03.840 --> 21:05.840
+Go with authentic.
+
+21:05.840 --> 21:09.840
+So.
+
+21:09.840 --> 21:12.840
+This is technically a telegram login.
+
+21:12.840 --> 21:15.840
+It's just not.
+
+21:15.840 --> 21:16.840
+Okay.
+
+21:16.840 --> 21:17.840
+Yet.
+
+21:17.840 --> 21:20.840
+But eventually we will also be able to just go in through telegram.
+
+21:20.840 --> 21:30.840
+Um, for now, I just use the super admin.
+
+21:30.840 --> 21:33.840
+This good shepherd insights your.
+
+21:33.840 --> 21:34.840
+Yeah.
+
+21:34.840 --> 21:35.840
+Like insulting burn.
+
+21:35.840 --> 21:36.840
+Yeah.
+
+21:36.840 --> 21:43.840
+I'm like always because I just kind of build servers and host services for like businesses.
+
+21:43.840 --> 21:44.840
+Hmm.
+
+21:44.840 --> 21:45.840
+Like this.
+
+21:45.840 --> 21:47.840
+So what it would look like.
+
+21:47.840 --> 21:49.840
+So like when.
+
+21:49.840 --> 21:50.840
+Like.
+
+21:50.840 --> 21:54.840
+The internal team like the flight team is a great example.
+
+21:54.840 --> 21:56.840
+Like they would come to this.
+
+21:56.840 --> 21:58.840
+They would log in with telegram.
+
+21:58.840 --> 22:00.840
+And then we could give them access to applications.
+
+22:00.840 --> 22:03.840
+Like even like applications we build on windmill.
+
+22:03.840 --> 22:07.840
+So they would just see it like this is the application I need to use.
+
+22:07.840 --> 22:10.840
+This is the up and then they just immediately be able to sign in through telegram.
+
+22:10.840 --> 22:18.840
+So everything is like gated behind telegram authentication and everyone gets to see what they need.
+
+22:18.840 --> 22:19.840
+And.
+
+22:19.840 --> 22:21.840
+Okay.
+
+22:21.840 --> 22:24.840
+In the back and the interface.
+
+22:24.840 --> 22:28.840
+This is where you like can manage like okay, this is who signed in.
+
+22:28.840 --> 22:29.840
+This is what.
+
+22:29.840 --> 22:32.840
+Have access to this is you know you get to manage everyone.
+
+22:32.840 --> 22:33.840
+Essentially.
+
+22:33.840 --> 22:34.840
+To the logs.
+
+22:34.840 --> 22:35.840
+Yeah.
+
+22:35.840 --> 22:36.840
+Exactly.
+
+22:36.840 --> 22:37.840
+I have been dashboard.
+
+22:37.840 --> 22:38.840
+So devices.
+
+22:38.840 --> 22:39.840
+Yeah.
+
+22:39.840 --> 22:40.840
+Quick question.
+
+22:40.840 --> 22:45.840
+So if each form is going to be its own app.
+
+22:45.840 --> 22:46.840
+Isn't that.
+
+22:46.840 --> 22:53.840
+Are we going to link every single thing to like we're going to have like a.
+
+22:53.840 --> 22:55.840
+Flight's management.
+
+22:55.840 --> 22:58.840
+Or a logistics section in our.
+
+22:58.840 --> 23:00.840
+Vision school.
+
+23:00.840 --> 23:02.840
+The international.
+
+23:02.840 --> 23:03.840
+Product app.
+
+23:03.840 --> 23:08.840
+Right now link to all these things right so they don't have to remember all the links.
+
+23:08.840 --> 23:09.840
+Yeah, so.
+
+23:09.840 --> 23:11.840
+The links every time.
+
+23:11.840 --> 23:14.840
+We're not remembering the links they'll go to.
+
+23:14.840 --> 23:18.840
+Right now it's called off but they'll probably go to SSO.
+
+23:18.840 --> 23:22.840
+Vision school international and this will show all the links right here.
+
+23:22.840 --> 23:25.840
+This is like their this is like their dashboard.
+
+23:25.840 --> 23:28.840
+So they can just see all the links as soon as they sign in.
+
+23:28.840 --> 23:30.840
+So we're going to do some.
+
+23:30.840 --> 23:31.840
+We're going to do some.
+
+23:31.840 --> 23:34.840
+Can we do some branding on this authentic thing to make it.
+
+23:34.840 --> 23:36.840
+Oh yeah, we can do major branding.
+
+23:36.840 --> 23:39.840
+Like we can remove like all the authentic stuff.
+
+23:39.840 --> 23:40.840
+Um, but for like.
+
+23:40.840 --> 23:42.840
+For the vision school international.
+
+23:42.840 --> 23:46.840
+Just for security reasons, especially.
+
+23:46.840 --> 23:49.840
+I'm only going to use the domain.
+
+23:49.840 --> 23:51.840
+For like.
+
+23:51.840 --> 23:55.840
+You safe user facing related like.
+
+23:55.840 --> 23:59.840
+Like just materials and content like like the content management is relatively safe.
+
+23:59.840 --> 24:00.840
+Right.
+
+24:00.840 --> 24:06.840
+Um, but I wouldn't want to put like an app behind this domain just because.
+
+24:06.840 --> 24:09.840
+Once the domain starts to get a lot of attention.
+
+24:09.840 --> 24:11.840
+Then that means people are going to be like.
+
+24:11.840 --> 24:13.840
+You know, they're going to start snuffing around.
+
+24:13.840 --> 24:17.840
+They're going to start sniffing and they might start probing at some of these applications.
+
+24:17.840 --> 24:19.840
+You know, like, can I get it in?
+
+24:19.840 --> 24:20.840
+Can I get in?
+
+24:20.840 --> 24:22.840
+So what I did instead was the vision school.
+
+24:22.840 --> 24:25.840
+Which will have a much smaller footprint.
+
+24:25.840 --> 24:28.840
+And it's just for an internal tool.
+
+24:28.840 --> 24:29.840
+Got it.
+
+24:29.840 --> 24:30.840
+That makes sense.
+
+24:30.840 --> 24:32.840
+Makes sense.
+
+24:32.840 --> 24:38.840
+So this is where all the links would be saved for any of the apps that we make.
+
+24:38.840 --> 24:41.840
+Um, you just create an application.
+
+24:41.840 --> 24:45.840
+You essentially just set up the bindings so that like.
+
+24:45.840 --> 24:46.840
+It's telegram gated.
+
+24:46.840 --> 24:48.840
+You point where the application is.
+
+24:48.840 --> 24:50.840
+And then you submit it.
+
+24:50.840 --> 24:52.840
+And then you know, we would just approve it.
+
+24:52.840 --> 24:54.840
+And then it would just show up on their screen.
+
+24:54.840 --> 24:55.840
+So.
+
+24:55.840 --> 24:57.840
+Okay.
+
+24:57.840 --> 24:59.840
+Cool.
+
+24:59.840 --> 25:04.840
+Think of my need like a skill for.
+
+25:04.840 --> 25:06.840
+Operating authentic.
+
+25:06.840 --> 25:07.840
+Right.
+
+25:07.840 --> 25:10.840
+Yeah, authentic is a is a bit of a monster.
+
+25:10.840 --> 25:13.840
+Um, I would, I would be careful with authentic.
+
+25:13.840 --> 25:14.840
+Yeah.
+
+25:14.840 --> 25:17.840
+You love you can come figure and screw things up.
+
+25:17.840 --> 25:18.840
+Yeah.
+
+25:18.840 --> 25:19.840
+Yeah.
+
+25:19.840 --> 25:21.840
+Like branding, I think is fine.
+
+25:21.840 --> 25:23.840
+Like if you want to change how something looks.
+
+25:23.840 --> 25:26.840
+You feel you need to grab the API key.
+
+25:26.840 --> 25:30.840
+But then there's like flows and like other crazy stuff that it's like.
+
+25:30.840 --> 25:32.840
+I don't want to go slow.
+
+25:32.840 --> 25:36.840
+Yeah.
+
+25:36.840 --> 25:39.840
+Um, I think that's.
+
+25:39.840 --> 25:41.840
+Actually, everything though.
+
+25:41.840 --> 25:42.840
+Oh, there's one more.
+
+25:42.840 --> 25:47.840
+Um, the final one.
+
+25:47.840 --> 25:53.840
+The first one is, um, I guess we actually signed out.
+
+25:53.840 --> 25:56.840
+This is like, got deploy.
+
+25:56.840 --> 25:59.840
+It's like, um, essentially, it's a versatile.
+
+25:59.840 --> 26:01.840
+Open, it's open source for sell.
+
+26:01.840 --> 26:03.840
+So you manage your own deployments.
+
+26:03.840 --> 26:05.840
+You manage your own.
+
+26:05.840 --> 26:06.840
+DNS.
+
+26:06.840 --> 26:08.840
+Like you manage everything yourself.
+
+26:08.840 --> 26:11.840
+So this is actually where the.
+
+26:11.840 --> 26:16.840
+Designed is being deployed and hosted.
+
+26:16.840 --> 26:19.840
+Like whenever you see like changes.
+
+26:19.840 --> 26:21.840
+On the design one.
+
+26:21.840 --> 26:23.840
+It's not versatile.
+
+26:23.840 --> 26:24.840
+It's actually.
+
+26:24.840 --> 26:26.840
+Doc ploy.
+
+26:26.840 --> 26:28.840
+Doc ploy is a little bit slower.
+
+26:28.840 --> 26:29.840
+It's called doc ploy.
+
+26:29.840 --> 26:31.840
+And it's a little bit slower than versatile.
+
+26:31.840 --> 26:34.840
+But like, where sell is going to be really, really expensive.
+
+26:34.840 --> 26:37.840
+Like even just adding on your bot.
+
+26:37.840 --> 26:39.840
+They charge like $20 per user.
+
+26:39.840 --> 26:42.840
+Um, you know, one time or recurring.
+
+26:42.840 --> 26:44.840
+We're carrying every month.
+
+26:44.840 --> 26:47.840
+So like as nice as Bersel is.
+
+26:47.840 --> 26:49.840
+The moment you start to scale.
+
+26:49.840 --> 26:50.840
+Brazil gets really expensive.
+
+26:50.840 --> 26:54.840
+So like doc ploy would be really, really good for.
+
+26:54.840 --> 26:57.840
+Non like.
+
+26:57.840 --> 27:01.840
+I'm going to keep the production version on Bersel just for now.
+
+27:01.840 --> 27:04.840
+Just because they have like a huge infrastructure.
+
+27:04.840 --> 27:07.840
+They have probably next to no downtime.
+
+27:07.840 --> 27:10.840
+So it's probably safest on Bersel, but anything else.
+
+27:10.840 --> 27:12.840
+Like a dev tool internal tool.
+
+27:12.840 --> 27:15.840
+We don't really sell, you know, it's just.
+
+27:15.840 --> 27:16.840
+It's a bit overkill.
+
+27:16.840 --> 27:17.840
+So.
+
+27:17.840 --> 27:21.840
+Okay.
+
+27:21.840 --> 27:22.840
+Yeah.
+
+27:22.840 --> 27:23.840
+Okay.
+
+27:23.840 --> 27:24.840
+Cool.
+
+27:24.840 --> 27:25.840
+That's mostly it.
+
+27:25.840 --> 27:26.840
+Yeah.
+
+27:26.840 --> 27:28.840
+And you can.
+
+27:28.840 --> 27:33.840
+Essentially scaffold apps in the same way as the one I showed you.
+
+27:33.840 --> 27:36.840
+Windmill, but windmill is actually going to be better.
+
+27:36.840 --> 27:39.840
+Um, if there is like a legit.
+
+27:39.840 --> 27:42.840
+Like like we're ready to mature an app.
+
+27:42.840 --> 27:44.840
+Then we would do doc ploy.
+
+27:44.840 --> 27:49.840
+But if we're like beta testing, like kind of just like making a concept like codex wood.
+
+27:49.840 --> 27:52.840
+Windmill is the best way to go for sure.
+
+27:52.840 --> 27:53.840
+Okay.
+
+27:53.840 --> 27:58.840
+So once I finalize something and when actually when it get users to use it.
+
+27:58.840 --> 28:00.840
+Then we.
+
+28:00.840 --> 28:02.840
+Put it on doc ploy.
+
+28:02.840 --> 28:03.840
+Yeah.
+
+28:03.840 --> 28:05.840
+Like if we want external users using it.
+
+28:05.840 --> 28:07.840
+Like we want the public.
+
+28:07.840 --> 28:08.840
+That's when we doct ploy it.
+
+28:08.840 --> 28:11.840
+If we want internal that's when we win mill it.
+
+28:11.840 --> 28:14.840
+Okay.
+
+28:14.840 --> 28:16.840
+All right.
+
+28:16.840 --> 28:20.840
+I'm glad we're seeing all this out loud and being recorded.
+
+28:20.840 --> 28:21.840
+Right.
+
+28:21.840 --> 28:22.840
+Yeah.
+
+28:22.840 --> 28:28.840
+I'm sure I'm sure that I will neatly condense this into very understandable.
+
+28:28.840 --> 28:29.840
+Oh, yeah.
+
+28:29.840 --> 28:30.840
+Yeah.
+
+28:30.840 --> 28:33.840
+Like a little users guide or something.
+
+28:33.840 --> 28:35.840
+Yeah.
+
+28:35.840 --> 28:36.840
+Yeah.
+
+28:36.840 --> 28:40.840
+That's pretty much it for like architecture.
+
+28:40.840 --> 28:41.840
+Okay.
+
+28:41.840 --> 28:42.840
+Cool.
+
+28:42.840 --> 28:43.840
+That's a lot.
+
+28:43.840 --> 28:44.840
+You go a lot.
+
+28:44.840 --> 28:45.840
+Yeah.
+
+28:45.840 --> 28:51.840
+I mean, architecture is great when you because like the better your architecture, the faster you can run.
+
+28:51.840 --> 28:54.840
+So we can just start really pushing products and features now.
+
+28:54.840 --> 28:55.840
+Like very safely.
+
+28:55.840 --> 28:57.840
+So.
+
+28:57.840 --> 28:58.840
+Okay.
+
+28:58.840 --> 29:00.840
+So.
+
+29:00.840 --> 29:04.840
+Codex is going to have to look through all those requirements and figure out.
+
+29:04.840 --> 29:10.840
+Which of these tools to use.
+
+29:10.840 --> 29:14.840
+Like flight data data entry.
+
+29:14.840 --> 29:18.840
+I'm going to use windmill for now.
+
+29:18.840 --> 29:19.840
+Design.
+
+29:19.840 --> 29:22.840
+So let's go straight to the design.
+
+29:22.840 --> 29:23.840
+Page.
+
+29:23.840 --> 29:24.840
+CMS stuff.
+
+29:24.840 --> 29:26.840
+Go to the CMS page.
+
+29:26.840 --> 29:27.840
+Repo.
+
+29:27.840 --> 29:33.840
+Okay.
+
+29:33.840 --> 29:36.840
+So let's go straight to the design.
+
+29:36.840 --> 29:37.840
+This is a quick question.
+
+29:37.840 --> 29:39.840
+If I want to just like.
+
+29:39.840 --> 29:41.840
+If I.
+
+29:41.840 --> 29:43.840
+Just want to change like.
+
+29:43.840 --> 29:44.840
+Well, okay.
+
+29:44.840 --> 29:48.840
+So if I want to change a layout of like the homepage or the hero or something.
+
+29:48.840 --> 29:51.840
+If I want to change a text, I can go in directly into.
+
+29:51.840 --> 29:52.840
+CMS.
+
+29:52.840 --> 29:53.840
+UMass.
+
+29:53.840 --> 29:54.840
+And change that.
+
+29:54.840 --> 29:55.840
+Text.
+
+29:55.840 --> 29:57.840
+But if I want to change the layout.
+
+29:57.840 --> 30:00.840
+Like colors formatting.
+
+30:00.840 --> 30:01.840
+Say like I.
+
+30:01.840 --> 30:04.840
+And then you can see like.
+
+30:04.840 --> 30:05.840
+I'm going to show you.
+
+30:05.840 --> 30:09.840
+Like a section where all the branches are shown in one section.
+
+30:09.840 --> 30:10.840
+Yeah.
+
+30:10.840 --> 30:11.840
+Well, I'm going to show like.
+
+30:11.840 --> 30:13.840
+Well, I think the way we have right now is like.
+
+30:13.840 --> 30:15.840
+It's show like three of them.
+
+30:15.840 --> 30:17.840
+And then you can see like view more.
+
+30:17.840 --> 30:19.840
+And you can have a search for all of them.
+
+30:19.840 --> 30:21.840
+Search for it at the city.
+
+30:21.840 --> 30:24.840
+That will be done in this design.
+
+30:24.840 --> 30:25.840
+Sex design.
+
+30:25.840 --> 30:26.840
+Repo.
+
+30:26.840 --> 30:27.840
+Yes.
+
+30:27.840 --> 30:29.840
+Okay.
+
+30:29.840 --> 30:32.840
+So what we're going to do is we're going to have them.
+
+30:32.840 --> 30:33.840
+We're going to start with you.
+
+30:33.840 --> 30:34.840
+I'm going to make sure the code.
+
+30:34.840 --> 30:35.840
+I have a lot of things that we don't have in there.
+
+30:35.840 --> 30:38.840
+So you can just make sure you have a lot of things in there.
+
+30:38.840 --> 30:40.840
+I'm going to make sure you have a lot of things in there.
+
+30:40.840 --> 30:41.840
+And then what's it's in there?
+
+30:41.840 --> 30:43.840
+Like you can have codex.
+
+30:43.840 --> 30:46.840
+The thing is you can you can tell codex to go put the design in prod.
+
+30:46.840 --> 30:47.840
+It's just CMS in prod.
+
+30:47.840 --> 30:49.840
+They have to communicate with each other well.
+
+30:49.840 --> 30:52.840
+So I'll probably be anything that like changes prod design wise.
+
+30:52.840 --> 30:55.840
+I'll have my hands in it just to make sure the schema doesn't break.
+
+30:55.840 --> 31:04.040
+hard coded data just just to make sure that like the the experience for the CMS is as it should be so like any new changes fine
+
+31:04.040 --> 31:09.520
+I'll just have my hands in them any text. I don't even I don't even have to look at text changes, you know
+
+31:13.040 --> 31:15.040
+Gotcha
+
+31:15.800 --> 31:20.800
+Codex should know and probably even from this recording that like anything generated
+
+31:22.000 --> 31:24.000
+correctly in the design
+
+31:25.000 --> 31:33.240
+Page can easily be because it's just a react component so it can easily be moved over to the actual production website
+
+31:33.920 --> 31:40.280
+And then once that's integrated then the CMS will have to be integrated to content wise and once that's done
+
+31:40.280 --> 31:45.660
+They can all be merged together and then it'll just show up on profit. So okay
+
+31:48.680 --> 31:53.880
+Is there an easy way to see like what the difference is between what we have been staging versus what we have
+
+31:54.000 --> 31:56.000
+like
+
+31:56.000 --> 31:58.640
+Is there a way for you to track like if I make some changes
+
+32:01.760 --> 32:03.440
+You're
+
+32:03.440 --> 32:06.320
+Is there like a checklist of things like this isn't
+
+32:07.120 --> 32:10.560
+We have to make like a PR or something
+
+32:11.440 --> 32:14.000
+Yeah, PR is the absolute best way
+
+32:15.000 --> 32:22.240
+It's just the safest because everyone you have eyes on it all AI and all the people can what the changes and it's
+
+32:22.960 --> 32:26.800
+Audited like audit auditable and that's probably going to be the best way just PRs
+
+32:27.440 --> 32:29.440
+Okay, for sure. Okay
+
+32:30.880 --> 32:32.880
+We have
+
+32:34.480 --> 32:36.480
+We have a slight it's not an issue
+
+32:38.320 --> 32:43.680
+Actually, it's it could be really good because the the benefits of GitHub
+
+32:44.720 --> 32:49.840
+Organization don't really come unless you pay for them, but if you're a nonprofit
+
+32:50.720 --> 32:53.200
+You actually get it for like free
+
+32:54.640 --> 33:00.720
+So I think if like if it's iCD or if it's in your I think it's iCD
+
+33:01.200 --> 33:05.440
+If they were to genuinely apply and join is not nonprofit
+
+33:06.080 --> 33:08.880
+Then we would have good GitHub enterprise for free
+
+33:09.680 --> 33:13.920
+Hmm, so we could have all the perks of GitHub enterprise, which is like
+
+33:14.240 --> 33:23.520
+Just basic rbac type controls like putting blocks on certain things that come in or bad code or
+
+33:24.480 --> 33:26.480
+Okay, yeah
+
+33:27.120 --> 33:29.840
+But I don't know who to go to as far as like
+
+33:31.120 --> 33:33.120
+The application behind it, so
+
+33:34.400 --> 33:36.400
+Okay, cool
+
+33:39.200 --> 33:40.720
+Hmm
+
+33:41.440 --> 33:46.240
+I'm actually I was just thinking about yet researching yesterday and how to
+
+33:47.120 --> 33:49.120
+Great my own nonprofit
+
+33:49.680 --> 33:51.680
+Charity or organization
+
+33:52.320 --> 33:54.320
+Yeah
+
+33:54.320 --> 33:58.320
+Last steps, but I think it is a lot of stuff
+
+34:00.720 --> 34:04.720
+Um, but probably easier just to get inner CP to
+
+34:05.680 --> 34:10.480
+Uh, the existing one. Yeah, yeah, it would probably be really easy to verify
+
+34:10.800 --> 34:12.800
+That is the case so
+
+34:13.760 --> 34:15.520
+Okay
+
+34:15.520 --> 34:17.520
+Okay, cool
+
+34:20.400 --> 34:26.240
+Yeah, I mean, that's mostly it I guess like as far as the tickets go um
+
+34:28.000 --> 34:31.840
+See because I have I was able to look at some of them
+
+34:33.040 --> 34:35.040
+Yeah, the tickets they're going to be
+
+34:35.600 --> 34:37.600
+I
+
+34:37.600 --> 34:42.240
+Mean it's just what we captured in the last meeting so
+
+34:43.200 --> 34:49.040
+We're good. I'm gonna you we're gonna build on top of this build out of things to this, but it kind of touches everything
+
+34:50.080 --> 34:52.080
+Yeah, it's so
+
+34:52.240 --> 34:55.040
+Um, maybe we can have the ethics
+
+34:57.280 --> 34:59.280
+Uh
+
+34:59.280 --> 35:01.280
+Renamed as
+
+35:02.240 --> 35:04.240
+The tool that's gonna be used
+
+35:04.240 --> 35:08.240
+Uh, well, yeah, that that makes sense actually I think
+
+35:10.320 --> 35:12.320
+You said you're tracking
+
+35:12.720 --> 35:14.720
+Yeah
+
+35:14.880 --> 35:19.440
+Yeah, that would that would make a lot of sense then we could track all the changes across all the all the tools
+
+35:20.960 --> 35:24.400
+Yeah, it's also nice to see like oh, we still have like
+
+35:25.520 --> 35:27.520
+30 requirements
+
+35:27.520 --> 35:30.800
+Left 30 stories left for travel section
+
+35:32.560 --> 35:34.560
+Um
+
+35:36.640 --> 35:42.720
+Yeah, yeah, we'll see if we can uh, I mean, I guess we have to kind of really hammer down what
+
+35:43.760 --> 35:50.080
+Our epics would be then yeah, I guess we would wait for Christina for that
+
+35:50.720 --> 35:56.080
+Yeah, okay, yeah, we'll just continue going as is and
+
+35:57.520 --> 36:01.280
+I think I can close out a lot of these tickets. I'll go through and
+
+36:03.120 --> 36:07.040
+Yes, yeah, big route, but I'll close them out if they're closeable, so
+
+36:08.720 --> 36:12.560
+Yeah, you think you can we can get AI to do that too. Oh, yeah
+
+36:13.360 --> 36:17.360
+I'll just have I'll have it look at the GitHub repo and now have it look at linear and be like
+
+36:18.000 --> 36:23.280
+Whatever's closeable just close it. That's what usually do. Okay cool cool
+
+36:24.560 --> 36:26.560
+Yep, that'd be cool. We do
+
+36:27.520 --> 36:29.520
+Keep this
+
+36:32.160 --> 36:34.160
+Oh
+
+36:34.160 --> 36:36.320
+I don't want to keep like adding overhead
+
+36:36.320 --> 36:39.200
+I could we just want to develop something true. Yeah
+
+36:40.320 --> 36:47.040
+Yes, nothing like I mean, we you want to just like plan what next to develop because you already made the yeah
+
+36:47.680 --> 36:50.480
+You already localization like you added the Korean
+
+36:51.680 --> 36:53.680
+so
+
+36:55.200 --> 36:57.200
+Yeah
+
+36:58.480 --> 37:00.480
+um
+
+37:00.480 --> 37:02.720
+Yeah, what should be our next
+
+37:04.160 --> 37:07.920
+Thing that I can work on yeah, I think that's kind of where I'm
+
+37:09.760 --> 37:13.360
+I don't know I mean, I feel like you and Christina are probably better at like choosing the
+
+37:15.040 --> 37:16.640
+Direction
+
+37:16.640 --> 37:20.080
+Like because I mean, I think the website could probably
+
+37:21.280 --> 37:23.280
+Use a lot more components and pages
+
+37:24.000 --> 37:28.160
+You know, I just don't know what that would be but if you have an idea
+
+37:29.200 --> 37:31.920
+And I was yeah, I want to at least get our
+
+37:33.520 --> 37:35.520
+main page
+
+37:36.240 --> 37:41.360
+Nice looking and then if there are some features that we haven't built yet we can say like
+
+37:42.560 --> 37:44.080
+uh
+
+37:44.160 --> 37:46.880
+Like coming soon or something yeah
+
+37:50.080 --> 37:52.080
+but
+
+37:52.160 --> 37:54.480
+Like the branches page will look nice because then
+
+37:55.040 --> 37:57.840
+Every branch will feel like they have some ownership of this
+
+37:58.400 --> 38:02.560
+Yeah, and they'll start to like really care about what's being shown yeah
+
+38:03.600 --> 38:06.880
+Um, so that they're being represented well and uh
+
+38:08.960 --> 38:10.960
+It's uh
+
+38:11.200 --> 38:17.760
+Gives the whole vision school thing like a little bit more credence so that they can just like if they find so if you're mobilizing
+
+38:19.120 --> 38:21.920
+Uh, and they can just say uh, yeah, you know, check out our site
+
+38:22.400 --> 38:29.680
+And you know, yeah go to our branch and if you want to register click here and go just register directly and
+
+38:31.440 --> 38:34.240
+But then where you know where registration is going to be
+
+38:34.880 --> 38:42.160
+Just we're going to forward them to the church center.com. Yeah, which I mean, that's fine. I mean, I in the meantime, I could
+
+38:43.200 --> 38:46.400
+Start looking at other infrastructure outside of church center
+
+38:47.520 --> 38:49.040
+Hmm
+
+38:49.280 --> 38:52.720
+You want to like use somebody up like an existing thing
+
+38:53.440 --> 38:57.680
+Similar to church center like uh, or should we build a custom one?
+
+38:59.280 --> 39:01.440
+I guess that's kind of hard to choose because
+
+39:02.800 --> 39:06.320
+If there is a wheel that exists I'd rather use it, but if there's no wheel
+
+39:07.040 --> 39:09.600
+Then yeah, we have to build custom um
+
+39:10.640 --> 39:13.120
+But I don't know if there's an open source like
+
+39:14.000 --> 39:18.240
+I know there's an open source event management platforms. I don't there's an open source like
+
+39:19.360 --> 39:25.600
+Does like wood visions school be considered an event like is church center of an event type of platform or like what is it?
+
+39:26.240 --> 39:27.760
+Um
+
+39:31.360 --> 39:33.600
+Hmm
+
+39:33.760 --> 39:38.720
+So what's the the main the main reason we want to get away from church center is is
+
+39:40.000 --> 39:46.240
+There's the cost which I mean if they're okay with the cost then it's cool, but what are the other
+
+39:46.880 --> 39:48.880
+Benefits to having that
+
+39:49.120 --> 39:51.120
+Oh, okay
+
+39:55.840 --> 39:57.840
+Hmm
+
+39:57.920 --> 40:04.080
+Like it's it's not bad and I don't think they care about the cost either yeah, they've used it for so many years
+
+40:04.640 --> 40:05.840
+Yeah
+
+40:05.840 --> 40:09.200
+Me I would just say the user experience is
+
+40:10.640 --> 40:13.840
+It's not working should be for its price in my honest opinion
+
+40:14.400 --> 40:16.400
+Yeah, and if you can
+
+40:16.800 --> 40:18.640
+Create a replacement
+
+40:18.640 --> 40:24.480
+Yeah, you can also sell the service to other people and charge half the price or something
+
+40:24.960 --> 40:30.480
+Yeah, and recreate real competition because I don't think there's any real competition for planning center
+
+40:30.800 --> 40:36.080
+Yeah, so that's like a little side thing they can also do to yeah
+
+40:37.280 --> 40:42.080
+Generates and revenue see that be I'd be happy to create an epic for that
+
+40:42.800 --> 40:44.000
+Mm-hmm
+
+40:44.080 --> 40:46.960
+Because I think that's just a great idea in general, so yeah
+
+40:48.400 --> 40:53.680
+All right, so codex please create an epic that tracks
+
+40:54.800 --> 40:56.000
+This
+
+40:56.000 --> 41:00.640
+What should it be its own initiative? I think it should be its own initiative with five subjects. Yeah
+
+41:01.280 --> 41:04.000
+All right, so codex create initiative for
+
+41:04.880 --> 41:06.880
+Replacing church center.com
+
+41:07.280 --> 41:09.280
+for
+
+41:09.280 --> 41:11.280
+registration to the school
+
+41:11.840 --> 41:13.840
+Uh
+
+41:13.840 --> 41:15.840
+Codex is going to need to have to
+
+41:16.960 --> 41:27.120
+Research our current church center page for vision school for medical missions or M&M mission and medical
+
+41:28.080 --> 41:30.080
+for mission and business
+
+41:30.800 --> 41:32.560
+for
+
+41:32.560 --> 41:36.240
+vision camp for mission camp for all those
+
+41:37.120 --> 41:38.320
+events
+
+41:38.320 --> 41:39.680
+that will
+
+41:39.760 --> 41:41.760
+That intercp hosts
+
+41:42.480 --> 41:43.760
+um
+
+41:43.760 --> 41:52.240
+We want all of the features that they have there now and then maybe we'll add on to it later. So codex is going to need to analyze
+
+41:53.200 --> 41:55.520
+all the existing features
+
+41:58.640 --> 42:00.640
+and uh
+
+42:00.640 --> 42:05.120
+But instead of having codex create another 300 user stories
+
+42:05.760 --> 42:07.760
+We can start off simple
+
+42:08.560 --> 42:10.560
+Um
+
+42:11.360 --> 42:15.040
+Yeah, so don't go overboard codex likes
+
+42:18.080 --> 42:20.080
+Uh
+
+42:21.120 --> 42:23.120
+The team is just going to be
+
+42:24.240 --> 42:26.240
+Need to go back to your mommy
+
+42:26.720 --> 42:28.720
+Need to go back to your mommy
+
+42:28.960 --> 42:30.960
+Yeah
+
+42:32.960 --> 42:34.960
+Okay
+
+42:35.280 --> 42:37.120
+Second baby's going back home
+
+42:37.120 --> 42:39.120
+Yeah, my gosh, real
+
+42:40.960 --> 42:42.960
+A lot man you got
+
+42:42.960 --> 42:47.760
+Too much breath. It's too much. The thing is it wouldn't really be that bad if we didn't cry that much
+
+42:48.320 --> 42:50.320
+Yeah, did it just mom?
+
+42:50.640 --> 42:52.960
+Yeah, like you can't even put it down, yeah
+
+42:54.160 --> 42:56.160
+Um
+
+42:56.400 --> 42:58.400
+That's a lot man. You're
+
+43:00.080 --> 43:07.040
+Okay, cool. So let me get codex on this and get familiar with all the different new tools
+
+43:07.840 --> 43:09.840
+The new process
+
+43:11.440 --> 43:13.440
+Maybe
+
+43:14.240 --> 43:16.240
+Generate some new skills
+
+43:17.840 --> 43:19.840
+If necessary and
+
+43:21.840 --> 43:23.840
+Um, I
+
+43:25.760 --> 43:29.440
+Think I can start working on the design of the
+
+43:30.960 --> 43:32.960
+Branches
+
+43:33.360 --> 43:35.360
+Um
+
+43:37.680 --> 43:40.080
+So we want to have it so that every time
+
+43:41.120 --> 43:43.120
+Okay, so I'm just thinking
+
+43:44.080 --> 43:46.080
+when we
+
+43:46.080 --> 43:48.080
+When the user
+
+43:48.080 --> 43:50.720
+Like a potential new student goes in to
+
+43:52.240 --> 43:57.040
+Vision school that international scrolls down to or clicks classes views all the classes
+
+43:58.000 --> 44:00.000
+And there's all these different branches
+
+44:01.280 --> 44:04.080
+they can click on it and
+
+44:04.720 --> 44:09.040
+Some branches already have their own existing websites. It can link directly to theirs
+
+44:10.880 --> 44:14.240
+Or we'll share like a generic one with uh
+
+44:16.640 --> 44:23.280
+Like a registration link or something and I'll take them for now to church center originally
+
+44:24.880 --> 44:26.880
+Um
+
+44:27.520 --> 44:29.920
+But let me see let me work on
+
+44:30.880 --> 44:35.680
+This part first. I think this is high value. Oh, yeah, definitely
+
+44:37.680 --> 44:39.680
+Okay, I think
+
+44:43.360 --> 44:47.040
+Yeah, and probably I don't know if we have a good
+
+44:48.160 --> 44:51.600
+Copywriter, but we definitely we're on the thin content side right now
+
+44:52.560 --> 44:54.560
+So
+
+44:54.560 --> 44:56.720
+If we can add more
+
+44:56.720 --> 44:58.720
+Content just so like Google will like us
+
+44:59.600 --> 45:01.600
+Yeah, yeah, you're right
+
+45:04.000 --> 45:06.400
+So oh yeah, I also need to send
+
+45:07.200 --> 45:12.080
+Codex that list that all those links that Christina posted in our chat
+
+45:13.120 --> 45:15.120
+with all of the
+
+45:15.120 --> 45:21.120
+YouTube videos and stuff nice and maybe we can just put clicks like looping clips of them
+
+45:23.920 --> 45:25.920
+In different parts of this website
+
+45:26.800 --> 45:32.080
+Um, it built a pretty nice video live. I really like this one. Oh, yeah, Deliver
+
+45:33.840 --> 45:39.920
+Yeah, that would be really nice to add to yeah, but we can have some like yeah, maybe some looping clips in like just in a front page
+
+45:40.080 --> 45:45.360
+Things to like show like how big this and how different countries are involved
+
+45:48.240 --> 45:52.080
+Um, so maybe some even codex will be doing some video editing
+
+45:52.880 --> 45:54.880
+Okay
+
+45:56.720 --> 45:58.720
+Okay
+
+45:59.440 --> 46:04.160
+Cool cool. Where was that uh, where do we add that uh video like the
+
+46:05.040 --> 46:13.040
+Library video library the media library is on the design page section under video library. Yeah. Oh, okay
+
+46:13.600 --> 46:16.000
+So this is not like okay, this is just like uh
+
+46:17.360 --> 46:22.000
+Okay, so so codex is already added sort of working into design. Yeah
+
+46:22.240 --> 46:29.200
+Design section design page already nice. So it's already right the I mean they just added this so it's already
+
+46:30.080 --> 46:35.200
+They already know that process of use when to use design. Yeah, okay. It should
+
+46:37.520 --> 46:44.000
+Did it did I do that did I do this section? No, this was old. This one's old. Okay. Yeah. Okay, so okay
+
+46:45.840 --> 46:50.000
+Well, anything that you commit in a PR will have a um
+
+46:50.400 --> 46:55.840
+It'll get a preview link so you can immediately see what it did unless you want to see it locally
+
+46:56.560 --> 46:58.560
+It'll get preview link if you do the PR
+
+46:59.680 --> 47:01.680
+Um
+
+47:01.680 --> 47:04.960
+Hmm good example is my last PR
+
+47:07.200 --> 47:10.560
+Oh, and it knows it's in the skill, but it needs to add the design label
+
+47:11.040 --> 47:15.440
+So if the design labels there then Doc Play will generate the preview URL
+
+47:16.160 --> 47:21.600
+And it will it'll usually just be behind division school.do domain and it'll show you exactly what it looks like
+
+47:22.160 --> 47:24.160
+Before you merge it so
+
+47:24.640 --> 47:31.680
+Oh, okay, so codex needs to remember to add that design label if it's it's sure if it reads the skills
+
+47:31.760 --> 47:38.240
+But if it doesn't then yeah, I just need to see okay all the skills are in in GitHub. Yeah, refer to people
+
+47:39.200 --> 47:41.200
+Okay, so take note of that codex
+
+47:43.680 --> 47:45.360
+Okay, cool
+
+47:45.760 --> 47:51.040
+Nice. This is nicely organized very very nice better than yeah better than I imagined
+
+47:52.400 --> 47:54.720
+We'll be able to run really fast now actually so
+
+47:55.600 --> 47:59.840
+Cool. All right, we'll just tackle one thing at a time and all right awesome
+
+48:00.800 --> 48:01.840
+All right
+
+48:01.840 --> 48:04.160
+Cool thanks for demoing this
+
+48:05.360 --> 48:09.280
+Thanks for the progress. Yeah, thanks for all that hard work man. We appreciate it was fun
+
+48:09.680 --> 48:11.680
+As I love this
+
+48:11.840 --> 48:14.640
+This will be a big impact though, you know, it's just
+
+48:15.840 --> 48:17.840
+I think this is gonna really help mobilization
+
+48:18.400 --> 48:23.120
+Yeah, it's gonna yeah, I think this is gonna make everything so much easier. It's gonna be
+
+48:23.600 --> 48:29.520
+It's just gonna make inter seep and in just visions go see so much more legitimate. Yeah, and that's
+
+48:30.240 --> 48:32.240
+prices. This is good really
+
+48:33.920 --> 48:35.920
+Good work for yeah
