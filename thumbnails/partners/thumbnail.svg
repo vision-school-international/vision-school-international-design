@@ -1,0 +1,14 @@
+<svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Frame -->
+  <rect x="20" y="24" width="200" height="92" rx="2" stroke="rgba(255, 255, 255, 0.45)" stroke-width="1.5" fill="rgba(255, 255, 255, 0.12)" />
+  <rect x="80" y="36" width="80" height="5" rx="1" fill="rgba(255, 255, 255, 0.9)" />
+  <!-- 4 Partner Logo Badges -->
+  <rect x="34" y="54" width="36" height="36" rx="4" stroke="rgba(255, 255, 255, 0.45)" stroke-width="1" fill="rgba(255, 255, 255, 0.08)" />
+  <circle cx="52" cy="72" r="8" stroke="#53657e" stroke-width="1.5" />
+  <rect x="78" y="54" width="36" height="36" rx="4" stroke="rgba(255, 255, 255, 0.45)" stroke-width="1" fill="rgba(255, 255, 255, 0.08)" />
+  <rect x="88" y="64" width="16" height="16" stroke="#53657e" stroke-width="1.5" />
+  <rect x="122" y="54" width="36" height="36" rx="4" stroke="rgba(255, 255, 255, 0.45)" stroke-width="1" fill="rgba(255, 255, 255, 0.08)" />
+  <polygon points="140,62 148,78 132,78" stroke="#53657e" stroke-width="1.5" fill="none" />
+  <rect x="166" y="54" width="36" height="36" rx="4" stroke="rgba(255, 255, 255, 0.45)" stroke-width="1" fill="rgba(255, 255, 255, 0.08)" />
+  <circle cx="184" cy="72" r="9" stroke="#53657e" stroke-width="1" stroke-dasharray="3 2" />
+</svg>

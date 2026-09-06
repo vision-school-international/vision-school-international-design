@@ -16,6 +16,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "app/page.tsx", "app/concepts/**/*.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "app/page.tsx", "app/pages.tsx", "app/pageRegistry.ts", "app/pageView.tsx", "app/concepts/**/*.tsx"],
   "exclude": ["node_modules"]
 }

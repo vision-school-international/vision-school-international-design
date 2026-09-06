@@ -29,3 +29,15 @@ export type ConceptKey = string;
 
 export const getConceptsForSection = (section: ComponentSection) =>
   concepts.filter((concept) => Boolean(concept.sections[section]));
+
+export type PageSectionEntry = {
+  section: ComponentSection;
+  conceptKey: ConceptKey;
+};
+
+export const resolvePageSection = ({ section, conceptKey }: PageSectionEntry) => {
+  const concept = concepts.find((candidate) => candidate.key === conceptKey);
+  const render = concept?.sections[section];
+
+  return concept && render ? { concept, render } : undefined;
+};

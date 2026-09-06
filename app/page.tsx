@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { concepts, getConceptsForSection, type ConceptKey } from "./concepts/conceptRegistry";
 import { sectionId, sectionTypes, type ComponentSection } from "./concepts/componentCatalog";
+import { SectionThumbnail } from "./concepts/SectionThumbnail";
 
 const formatOrdinal = (value: number) => String(value + 1).padStart(2, "0");
 
@@ -66,14 +67,15 @@ export default function Home() {
       <header className="review-header" id="component-menu">
         <a className="review-brand" href="#component-menu" aria-label="Return to the section index">
           <img className="review-logo" src="/images/icp-logo.webp" alt="ICP International" />
-          <span>Designs</span>
+          <span>Design Review Gallery</span>
         </a>
+        <a className="review-pages-link" href="/pages">Pages Workspace <span aria-hidden="true">↗</span></a>
       </header>
 
       <section className="review-intro">
-        <h1>Design concepts</h1>
+        <h1>Component Catalog</h1>
         <p>
-          Design is the discipline of shaping how people understand, trust, feel, and act. Review these concepts by the user psychology they support: clarity, confidence, relevance, momentum, and the next faithful step.
+          Compare isolated UI and UX concepts for each website section. Review layouts for clarity, hierarchy, and user psychology before composing full pages.
         </p>
       </section>
 
@@ -84,15 +86,19 @@ export default function Home() {
             key={section.key}
             href={`#${sectionId(section.key)}`}
             aria-current={activeSection === section.key ? "true" : undefined}
-            aria-label={`View ${section.name} concepts`}
+            aria-label={`Inspect ${section.name} concepts`}
             style={{ "--component-color": section.color } as React.CSSProperties}
           >
-            <div className="component-index-image" style={{ backgroundImage: `url(${section.image})` }}>
+            <div
+              className="component-index-image"
+              style={{ backgroundColor: section.color }}
+            >
               <span>{formatOrdinal(sectionIndex)}</span>
-              <b>View concepts <span aria-hidden="true">↘</span></b>
+              <SectionThumbnail section={section.key} color={section.color} />
+              <b>Inspect section <span aria-hidden="true">↘</span></b>
             </div>
             <div className="component-index-copy">
-              <p>Component</p>
+              <p>Section</p>
               <h2>{section.name}</h2>
               <span>{section.description}</span>
               <ul className="component-index-points" aria-label={`${section.name} review points`}>
@@ -109,7 +115,7 @@ export default function Home() {
         {selectedSection && (
           <section className="component-gallery-section" id={sectionId(selectedSection.key)} key={selectedSection.key}>
             <header className="component-gallery-heading">
-              <p className="review-kicker">Component</p>
+              <p className="review-kicker">Section Concept</p>
               <h2>{selectedSection.name}</h2>
               <p>{selectedSection.description}</p>
             </header>
@@ -141,7 +147,7 @@ export default function Home() {
                 </article>
               </>
             ) : (
-              <p className="component-empty">No concepts are registered for this component yet.</p>
+              <p className="component-empty">No design concepts registered for this section yet.</p>
             )}
           </section>
         )}
