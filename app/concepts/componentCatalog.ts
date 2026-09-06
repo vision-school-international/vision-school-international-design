@@ -2,7 +2,7 @@ export const sectionTypes = [
   {
     key: "navigation",
     name: "Navigation",
-    description: "The global site header. Provides persistent orientation, search access, and a direct class action without obstructing page reading.",
+    description: "Reduces orientation anxiety. A persistent frame that tells visitors they can leave at any time—which is exactly what makes them willing to stay and read.",
     anatomy: "Brand logo · Search trigger · Menu links · Find a Class button",
     image: "/images/community-city.jpg",
     color: "#102c57",
@@ -10,7 +10,7 @@ export const sectionTypes = [
   {
     key: "hero",
     name: "Hero",
-    description: "The opening 5-second encounter. Delivers the core headline, a short mission overview, and an immediate button to find a class.",
+    description: "The 5-second contract. Answers what this is and what to do next before attention breaks, earning the scroll that follows.",
     anatomy: "Headline · Subtitle · Action button · Media window",
     image: "/images/mountain-sunrise.jpg",
     color: "#1769c2",
@@ -18,7 +18,7 @@ export const sectionTypes = [
   {
     key: "proof",
     name: "Proof",
-    description: "Establishes credibility early in the journey with verified figures on years of ministry, participating nations, and alumni reach.",
+    description: "Converts skepticism into trust. Specific numbers bypass marketing defenses because facts are processed as evidence, not persuasion.",
     anatomy: "Metric counters · National reach stats · Credibility markers",
     image: "/images/intercp-young-adults.webp",
     color: "#66afe6",
@@ -26,7 +26,7 @@ export const sectionTypes = [
   {
     key: "about",
     name: "About",
-    description: "Articulates the spiritual core and theology of Vision School—who the course is for and why understanding God's heart for the nations matters.",
+    description: "Creates belonging before commitment. People join identities, not programs—this section answers whether the course is for someone like them.",
     anatomy: "Mission narrative · Core value callout · Community photo",
     image: "/images/community-table.jpg",
     color: "#1f2c40",
@@ -34,7 +34,7 @@ export const sectionTypes = [
   {
     key: "course",
     name: "Course",
-    description: "Demystifies the 11-week commitment by laying out the weekly rhythm of worship, lectures, small groups, and prayer.",
+    description: "Dissolves ambiguity aversion. A multi-week commitment feels risky until it is chunked into a predictable weekly rhythm the visitor can mentally rehearse.",
     anatomy: "Weekly milestones · Lecture topics · Time commitment",
     image: "/images/youth-gathering.jpg",
     color: "#102c57",
@@ -42,7 +42,7 @@ export const sectionTypes = [
   {
     key: "classes",
     name: "Class finder",
-    description: "The primary conversion engine. Helps prospective students find nearby in-person or online classes with direct Church Center registration.",
+    description: "Closes the gap between intent and action. Local, concrete options—a city, a date, a schedule—turn abstract interest into a specific decision.",
     anatomy: "Filter bar · Location cards · Schedule details · Registration link",
     image: "/images/vision-school-media/north-america-mission-camp-crowd.webp",
     color: "#1769c2",
@@ -50,7 +50,7 @@ export const sectionTypes = [
   {
     key: "stories",
     name: "Stories",
-    description: "First-person student and missionary testimonies illustrating personal, spiritual, and vocational transformation.",
+    description: "Narrative transportation. Readers project themselves into a real person's outcome, replacing fear of the unknown with someone like me did this.",
     anatomy: "Student quote · Photo lockup · Ministry background",
     image: "/images/intercp-mission-camp.webp",
     color: "#53657e",
@@ -58,7 +58,7 @@ export const sectionTypes = [
   {
     key: "videos",
     name: "Video library",
-    description: "Embedded player for exploring worship sessions, keynote teachings, and Mission Camp footage without leaving the page.",
+    description: "Vicarious experience. Atmosphere and emotion transfer through footage faster and more credibly than any written claim.",
     anatomy: "16:9 video player · Playlist carousel · Live footage",
     image: "/images/vision-school-media/north-america-mission-camp-worship.webp",
     color: "#102c57",
@@ -66,7 +66,7 @@ export const sectionTypes = [
   {
     key: "cta",
     name: "Calls to action",
-    description: "The closing page anchor. Crystallizes momentum into one focused, high-contrast invitation to register or submit an inquiry.",
+    description: "Harvests peak intent. Momentum built across the page converges into one unambiguous action at the moment decision energy is highest.",
     anatomy: "Action banner · Primary pill button · Reassurance note",
     image: "/images/vision-school-media/young-generation-mission-camp-community.webp",
     color: "#1769c2",
@@ -74,7 +74,7 @@ export const sectionTypes = [
   {
     key: "footer",
     name: "Footer",
-    description: "The foundational directory for governance, organizational accountability, policies, and regional contact information.",
+    description: "Signals safety and closure. Complete, organized links indicate an accountable organization; missing legal or contact info raises suspicion.",
     anatomy: "Directory links · Governance notes · Newsletter signup · Copyright",
     image: "",
     color: "#1f2c40",
@@ -82,7 +82,7 @@ export const sectionTypes = [
   {
     key: "announcement",
     name: "Announcement bar",
-    description: "A slim top ribbon. Communicates urgent semester registration deadlines or camp dates across all pages.",
+    description: "Exploits primacy without interruption. One high-contrast line at the top of the viewport captures urgent attention and nothing else competes.",
     anatomy: "Alert badge · Deadline notice · Direct link arrow",
     image: "",
     color: "#1769c2",
@@ -90,7 +90,7 @@ export const sectionTypes = [
   {
     key: "breadcrumbs",
     name: "Breadcrumbs",
-    description: "Wayfinding for deep sub-pages. Shows exact hierarchical location within branch directories and course syllabus archives.",
+    description: "Reduces disorientation. Knowing exactly where you are in a hierarchy prevents the lost feeling that causes premature exits on deep pages.",
     anatomy: "Path trail · Chevron dividers · Active page name",
     image: "",
     color: "#53657e",
@@ -98,7 +98,7 @@ export const sectionTypes = [
   {
     key: "events",
     name: "Events calendar",
-    description: "Chronological schedule of seasonal Mission Camps, regional conferences, and semester orientation dates.",
+    description: "Anchors time. Fixed future dates turn someday interest into plannable commitment.",
     anatomy: "Date badge blocks · Venue details · Registration status",
     image: "/images/vision-school-media/north-america-mission-camp-nations.webp",
     color: "#102c57",
@@ -106,7 +106,7 @@ export const sectionTypes = [
   {
     key: "faq",
     name: "FAQ accordion",
-    description: "Resolves practical hesitations—answering common questions regarding tuition, attendance policies, and remote options.",
+    description: "Removes objections at the moment of doubt. Every unanswered question is an exit risk; inline answers keep the decision moving.",
     anatomy: "Question list · Accordion answers · Support contact",
     image: "",
     color: "#1f2c40",
@@ -114,7 +114,7 @@ export const sectionTypes = [
   {
     key: "registration",
     name: "Registration form",
-    description: "A low-friction inquiry form for capturing prospective student interest when online registration is not yet open.",
+    description: "Makes the first step feel small. A short, low-stakes form converts hesitation into a concrete action while intent is present.",
     anatomy: "Contact fields · Branch dropdown · Submit button",
     image: "",
     color: "#1769c2",
@@ -122,7 +122,7 @@ export const sectionTypes = [
   {
     key: "newsletter",
     name: "Newsletter signup",
-    description: "Long-term retention channel for visitors inspired by the vision but not ready for an 11-week commitment.",
+    description: "Preserves the relationship. For visitors not ready to commit, a smaller yes keeps the connection alive instead of losing them entirely.",
     anatomy: "Email input · One-click subscribe · Privacy note",
     image: "",
     color: "#102c57",
@@ -130,7 +130,7 @@ export const sectionTypes = [
   {
     key: "partners",
     name: "Partner logo strip",
-    description: "Displays cooperating local churches, campus fellowships, and sending agencies to demonstrate mutual standing.",
+    description: "Borrowed credibility. Third-party marks transfer trust—the visitor trusts what other institutions have already vetted.",
     anatomy: "Partner emblems · Cooperation statement · Verification marker",
     image: "",
     color: "#53657e",
@@ -138,7 +138,7 @@ export const sectionTypes = [
   {
     key: "team",
     name: "Team leadership",
-    description: "Introduces regional directors, instructors, and pastoral leaders responsible for Vision School oversight.",
+    description: "Humanizes accountability. Named people with faces and roles trigger trust responses that institutions alone cannot produce.",
     anatomy: "Leader portraits · Ministry roles · Background summaries",
     image: "",
     color: "#1f2c40",
@@ -146,7 +146,7 @@ export const sectionTypes = [
   {
     key: "resources",
     name: "Resources listing",
-    description: "Curates foundational lecture outlines, mission research papers, and prayer guides for continuous study.",
+    description: "Demonstrates substance before asking anything. Free, real materials prove depth and trigger reciprocity.",
     anatomy: "Format badges (PDF) · Resource titles · Direct download links",
     image: "",
     color: "#1769c2",
@@ -154,7 +154,7 @@ export const sectionTypes = [
   {
     key: "gallery",
     name: "Gallery image grid",
-    description: "A photo mosaic of authentic classroom lectures, prayer gatherings, and community fellowship across North America.",
+    description: "Visual belonging. Candid community photos let visitors see themselves in the group before they ever attend.",
     anatomy: "Asymmetric photo grid · Candid moments · Captions",
     image: "/images/vision-school-media/north-america-mission-camp-worship.webp",
     color: "#102c57",
@@ -162,7 +162,7 @@ export const sectionTypes = [
   {
     key: "donation",
     name: "Donation CTA",
-    description: "Transparent stewardship channel for funding student tuition scholarships and missionary deployment.",
+    description: "Gives agency in giving. Clear tiers and stated purpose frame support as partnership rather than transaction.",
     anatomy: "Giving tier pills · Custom amount input · Secure giving button",
     image: "",
     color: "#66afe6",
