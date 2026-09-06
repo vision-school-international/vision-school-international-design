@@ -42,7 +42,7 @@ export default function Home() {
           </span>
         </a>
         <nav className="studio-tabs" aria-label="Workspace switcher">
-          <a className="studio-tab is-active" href="/" aria-current="page">Catalog</a>
+          <a className="studio-tab is-active" href="/" aria-current="page">Sections</a>
           <a className="studio-tab" href="/pages">Pages</a>
         </nav>
       </header>

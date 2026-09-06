@@ -1,10 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { resolvePageSection } from "./concepts/conceptRegistry";
-import { sectionTypes } from "./concepts/componentCatalog";
-import { SectionThumbnail } from "./concepts/SectionThumbnail";
-import { createPage, getPage, getPages, type RegisteredPage } from "./pageRegistry";
+import { journeyStages, sectionTypes } from "./concepts/componentCatalog";
+import { createPage, getPage, getPages, removePage, type RegisteredPage } from "./pageRegistry";
 
 const slugify = (value: string) => value
   .trim()
@@ -34,8 +32,13 @@ export default function Pages() {
     setIsCreating(false);
   };
 
+  const destroy = (targetKey: string) => {
+    removePage(targetKey);
+    setPages(getPages());
+  };
+
   return (
-    <main className="pages-workspace">
+    <main className="studio-shell">
       <header className="studio-header">
         <a className="studio-brand" href="/" aria-label="Return to the component catalog">
           <img className="review-logo" src="/images/icp-logo.webp" alt="ICP International" />
@@ -45,124 +48,145 @@ export default function Pages() {
           </span>
         </a>
         <nav className="studio-tabs" aria-label="Workspace switcher">
-          <a className="studio-tab" href="/">Catalog</a>
+          <a className="studio-tab" href="/">Sections</a>
           <a className="studio-tab is-active" href="/pages" aria-current="page">Pages</a>
         </nav>
       </header>
 
-      <section className="pages-intro">
-        <p>Composition</p>
-        <h1>Composed Pages</h1>
-        <p className="pages-intro-summary">
-          Assemble complete page journeys from registered section concepts to review pacing, visual hierarchy, and story flow.
-        </p>
-      </section>
-
-      <section className={`pages-create-index${isCreating ? " is-flipped" : ""}`} aria-label="Assemble new page">
-        <div className="pages-create-card">
-          <button className="component-index-card pages-card-button pages-create-card__front" type="button" style={{ "--component-color": "#1769c2" } as React.CSSProperties} onClick={() => setIsCreating(true)}>
-            <div className="component-index-image">
-              <span>+</span>
-              <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
-                <rect x="25" y="20" width="190" height="100" rx="3" stroke="rgba(255,255,255,0.45)" strokeWidth="1.5" strokeDasharray="4 4" fill="rgba(255,255,255,0.06)" />
-                <circle cx="120" cy="65" r="18" fill="rgba(255,255,255,0.15)" stroke="#fff" strokeWidth="1.5" />
-                <line x1="120" y1="56" x2="120" y2="74" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
-                <line x1="111" y1="65" x2="129" y2="65" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
-                <rect x="90" y="94" width="60" height="5" rx="1" fill="rgba(255,255,255,0.6)" />
-              </svg>
-              <b>Assemble page <span aria-hidden="true">↘</span></b>
-            </div>
-            <div className="component-index-copy">
-              <p>Page Builder</p>
-              <h2>Assemble page</h2>
-              <span>Create a new composed page route.</span>
-            </div>
-          </button>
-
-          <form
-            className="pages-create-card__back"
-            onSubmit={(event) => {
-              event.preventDefault();
-              create();
-            }}
-          >
-            <label>
-              <span>Page Title</span>
-              <input
-                value={name}
-                required
-                placeholder="e.g. Fall 2026 Overview"
-                onChange={(event) => {
-                  const nextName = event.target.value;
-                  setName(nextName);
-                  if (!routeEdited) setKey(slugify(nextName));
-                }}
-              />
-            </label>
-            <label>
-              <span>URL Route Slug</span>
-              <input value={key} required onChange={(event) => { setRouteEdited(true); setKey(event.target.value); }} placeholder="e.g. fall-2026" />
-            </label>
-            <div>
-              <button type="button" onClick={() => setIsCreating(false)}>Cancel</button>
-              <button type="submit" disabled={!canCreate}>Create Page</button>
-            </div>
-          </form>
-        </div>
-      </section>
-
-      {pages.length === 0 ? (
-        <div className="pages-empty-state">
-          <p>No composed pages registered yet. Use <strong>Assemble page</strong> above to build a custom page sequence.</p>
-        </div>
-      ) : (
-        <nav className="component-index" aria-label="Registered pages">
-          {pages.map((page, index) => {
-            const firstEntry = page.entries[0];
-            const firstSection = firstEntry && resolvePageSection(firstEntry);
-
-            return (
-              <a
-                className="component-index-card"
-                key={page.key}
-                href={`/pages/${page.key}`}
-                aria-label={`View ${page.name}`}
-                style={{ "--component-color": firstSection?.concept.color ?? "var(--review-ink)" } as React.CSSProperties}
-              >
-                <div
-                  className="component-index-image"
-                  style={{ backgroundColor: firstSection?.concept.color ?? "var(--review-ink)" }}
+      <div className="composer-layout">
+        <aside className="composer-rail" aria-label="Composed pages">
+          <p className="studio-stage-label">Composed Pages</p>
+          <ul className="studio-stage-list">
+            {pages.map((page) => (
+              <li key={page.key}>
+                <a
+                  className="studio-rail-item"
+                  href={`/pages/${page.key}`}
+                  aria-label={`Open ${page.name}`}
                 >
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  {firstEntry ? (
-                    <SectionThumbnail section={firstEntry.section} color={firstSection?.concept.color} />
-                  ) : (
-                    <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
-                      <rect x="25" y="20" width="190" height="100" rx="3" stroke="rgba(255,255,255,0.4)" strokeWidth="1.5" strokeDasharray="3 3" fill="rgba(255,255,255,0.06)" />
-                      <rect x="80" y="55" width="80" height="8" rx="1" fill="rgba(255,255,255,0.7)" />
-                      <rect x="90" y="70" width="60" height="5" rx="1" fill="rgba(255,255,255,0.3)" />
-                    </svg>
-                  )}
-                  <b>View page <span aria-hidden="true">↘</span></b>
+                  <span className="studio-rail-dot" aria-hidden="true" style={{ background: "#66afe6" }} />
+                  <span className="studio-rail-name">{page.name}</span>
+                  <span className="studio-rail-count">{page.entries.length}</span>
+                </a>
+              </li>
+            ))}
+            {pages.length === 0 && (
+              <li className="composer-rail-empty">No pages yet. Assemble one to begin.</li>
+            )}
+          </ul>
+        </aside>
+
+        <section className="composer-stage">
+          <header className="composer-stage-header">
+            <p className="review-kicker">Page Composer · {pages.length} {pages.length === 1 ? "Page" : "Pages"}</p>
+            <h2 className="studio-stage-title">Assemble a page journey</h2>
+            <p className="studio-stage-description">
+              Chain registered section concepts into a full page sequence. Build the page in the order a visitor reads it, then review pacing and flow in the page view.
+            </p>
+          </header>
+
+          <div className="composer-create">
+            {isCreating ? (
+              <form
+                className="composer-create-form"
+                onSubmit={(event) => {
+                  event.preventDefault();
+                  create();
+                }}
+              >
+                <label>
+                  <span>Page Title</span>
+                  <input
+                    value={name}
+                    required
+                    placeholder="e.g. Fall 2026 Overview"
+                    onChange={(event) => {
+                      const nextName = event.target.value;
+                      setName(nextName);
+                      if (!routeEdited) setKey(slugify(nextName));
+                    }}
+                  />
+                </label>
+                <label>
+                  <span>URL Route Slug</span>
+                  <input value={key} required onChange={(event) => { setRouteEdited(true); setKey(event.target.value); }} placeholder="e.g. fall-2026" />
+                </label>
+                <div className="composer-create-actions">
+                  <button type="button" onClick={() => setIsCreating(false)}>Cancel</button>
+                  <button type="submit" disabled={!canCreate}>Create Page</button>
                 </div>
-                <div className="component-index-copy">
-                  <p>Composed Page</p>
-                  <h2>{page.name}</h2>
-                  <span>{page.entries.length} {page.entries.length === 1 ? "registered section" : "registered sections"}</span>
-                  {page.entries.length > 0 && (
-                    <ul className="component-index-points" aria-label={`${page.name} sections`}>
-                      {page.entries.map((entry, entryIdx) => {
-                        const section = sectionTypes.find((candidate) => candidate.key === entry.section);
-                        return section ? <li key={`${entry.section}-${entryIdx}`}>{section.name}</li> : null;
-                      })}
-                    </ul>
-                  )}
-                </div>
-              </a>
-            );
-          })}
-        </nav>
-      )}
+              </form>
+            ) : (
+              <button type="button" className="composer-create-trigger" onClick={() => setIsCreating(true)}>
+                + Assemble New Page
+              </button>
+            )}
+          </div>
+
+          {pages.length === 0 ? (
+            <div className="pages-empty-state">
+              <h2>Empty Workspace</h2>
+              <p>No composed pages registered yet. Use <strong>Assemble New Page</strong> above to build a custom page sequence.</p>
+            </div>
+          ) : (
+            <div className="composer-pages">
+              {pages.map((page) => {
+                const stageOfFirst = page.entries[0]
+                  ? journeyStages.find((stage) => stage.sections.includes(page.entries[0].section))
+                  : undefined;
+
+                return (
+                  <article className="composer-page-card" key={page.key}>
+                    <header className="composer-page-card-header">
+                      <div className="composer-page-card-meta">
+                        <h3>{page.name}</h3>
+                        <span className="composer-page-card-route">/{page.key}</span>
+                        {stageOfFirst && (
+                          <span className="composer-page-card-stage">Opens in Stage {stageOfFirst.number} · {stageOfFirst.name}</span>
+                        )}
+                      </div>
+                      <div className="composer-page-card-actions">
+                        <a className="composer-page-card-open" href={`/pages/${page.key}`} aria-label={`Open ${page.name} in page view`}>
+                          Open Page →
+                        </a>
+                        <button
+                          type="button"
+                          className="composer-page-card-delete"
+                          aria-label={`Delete ${page.name}`}
+                          onClick={() => destroy(page.key)}
+                        >
+                          ✕
+                        </button>
+                      </div>
+                    </header>
+
+                    {page.entries.length > 0 ? (
+                      <ol className="composer-page-card-sequence">
+                        {page.entries.map((entry, entryIdx) => {
+                          const section = sectionTypes.find((candidate) => candidate.key === entry.section);
+                          if (!section) return null;
+                          const stage = journeyStages.find((candidate) => candidate.sections.includes(section.key));
+
+                          return (
+                            <li key={`${entry.section}-${entryIdx}`} className="composer-sequence-item">
+                              <span className="composer-sequence-index">{String(entryIdx + 1).padStart(2, "0")}</span>
+                              <span className="composer-sequence-dot" aria-hidden="true" style={{ background: section.color }} />
+                              <span className="composer-sequence-name">{section.name}</span>
+                              {stage && <span className="composer-sequence-stage">{stage.number}</span>}
+                            </li>
+                          );
+                        })}
+                      </ol>
+                    ) : (
+                      <p className="composer-page-card-empty">No sections added yet. Open the page to insert its first section.</p>
+                    )}
+                  </article>
+                );
+              })}
+            </div>
+          )}
+        </section>
+      </div>
     </main>
   );
 }

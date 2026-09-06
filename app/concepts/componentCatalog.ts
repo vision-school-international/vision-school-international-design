@@ -180,9 +180,14 @@ export type JourneyStage = {
 
 export const journeyStages: readonly JourneyStage[] = [
   {
+    number: "00",
+    name: "Globals",
+    sections: ["navigation", "footer"],
+  },
+  {
     number: "01",
     name: "Orientation & Hook",
-    sections: ["navigation", "hero", "announcement", "breadcrumbs"],
+    sections: ["hero", "announcement", "breadcrumbs"],
   },
   {
     number: "02",
@@ -202,6 +207,6 @@ export const journeyStages: readonly JourneyStage[] = [
   {
     number: "05",
     name: "Governance & Support",
-    sections: ["partners", "team", "resources", "footer"],
+    sections: ["partners", "team", "resources"],
   },
 ];

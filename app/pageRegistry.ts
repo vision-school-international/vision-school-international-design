@@ -47,4 +47,9 @@ export const removeEntry = (pageKey: string, index: number) => {
   if (page) persistPage({ ...page, entries: page.entries.filter((_, entryIndex) => entryIndex !== index) });
 };
 
+export const removePage = (pageKey: string) => {
+  const existing = savedPages().filter((page) => page.key !== pageKey);
+  window.localStorage.setItem(storageKey, JSON.stringify(existing));
+};
+
 export const isEditablePage = (pageKey: string) => savedPages().some((page) => page.key === pageKey);

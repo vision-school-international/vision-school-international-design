@@ -44,7 +44,7 @@ export default function PageView({ pageKey }: PageViewProps) {
           </span>
         </a>
         <nav className="studio-tabs" aria-label="Workspace switcher">
-          <a className="studio-tab" href="/">Catalog</a>
+          <a className="studio-tab" href="/">Sections</a>
           <a className="studio-tab is-active" href="/pages" aria-current="page">Pages</a>
         </nav>
       </header>
@@ -57,8 +57,8 @@ export default function PageView({ pageKey }: PageViewProps) {
           <h1>{current.name}</h1>
           <span>/{current.key}</span>
         </div>
-        <a className="page-view-catalog-link" href="/" aria-label="View Component Catalog">
-          Component Catalog <span aria-hidden="true">↗</span>
+        <a className="page-view-catalog-link" href="/" aria-label="View Section Catalog">
+          Section Catalog <span aria-hidden="true">↗</span>
         </a>
       </header>
 
