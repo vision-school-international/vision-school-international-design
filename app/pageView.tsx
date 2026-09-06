@@ -43,20 +43,6 @@ export default function PageView({ pageKey }: PageViewProps) {
 
   return (
     <main id="component-menu" className="studio-shell">
-      <header className="studio-header">
-        <a className="studio-brand" href="/" aria-label="Return to the component catalog">
-          <img className="review-logo" src="/images/icp-logo.webp" alt="ICP International" />
-          <span className="studio-brand-text">
-            <strong>Vision School International</strong>
-            <em>Component Review &amp; Page Architecture</em>
-          </span>
-        </a>
-        <nav className="studio-tabs" aria-label="Workspace switcher">
-          <a className="studio-tab" href="/">Sections</a>
-          <a className="studio-tab is-active" href="/pages" aria-current="page">Pages</a>
-        </nav>
-      </header>
-
       <header className="page-view-header">
         <a className="page-view-back" href="/pages" aria-label="Return to Pages Workspace">
           ← Pages Workspace

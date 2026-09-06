@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { concepts, getConceptsForSection, type ConceptKey } from "./concepts/conceptRegistry";
 import { journeyStages, sectionTypes, type ComponentSection } from "./concepts/componentCatalog";
 import { SectionThumbnail } from "./concepts/SectionThumbnail";
+import StudioHeader from "./components/StudioHeader";
 
 const sectionFromKey = (key: string): ComponentSection | undefined =>
   sectionTypes.find((section) => section.key === key)?.key;
@@ -42,19 +43,7 @@ export default function Home() {
 
   return (
     <main className="studio-shell">
-      <header className="studio-header">
-        <a className="studio-brand" href="/" aria-label="Return to the component catalog">
-          <img className="review-logo" src="/images/icp-logo.webp" alt="ICP International" />
-          <span className="studio-brand-text">
-            <strong>Vision School International</strong>
-            <em>Component Review &amp; Page Architecture</em>
-          </span>
-        </a>
-        <nav className="studio-tabs" aria-label="Workspace switcher">
-          <a className="studio-tab is-active" href="/" aria-current="page">Sections</a>
-          <a className="studio-tab" href="/pages">Pages</a>
-        </nav>
-      </header>
+      <StudioHeader active="sections" />
 
       <div className="studio-layout">
         <aside className="studio-rail" aria-label="Component stages">

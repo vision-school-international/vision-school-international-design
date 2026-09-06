@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { getConceptsForSection, resolvePageSection } from "./concepts/conceptRegistry";
 import { journeyStages, sectionTypes, type ComponentSection } from "./concepts/componentCatalog";
 import { addEntry, createPage, getPages, removeEntry, removePage, type RegisteredPage } from "./pageRegistry";
+import StudioHeader from "./components/StudioHeader";
 
 const slugify = (value: string) => value
   .trim()
@@ -78,19 +79,7 @@ export default function Pages() {
 
   return (
     <main className="studio-shell">
-      <header className="studio-header">
-        <a className="studio-brand" href="/" aria-label="Return to the component catalog">
-          <img className="review-logo" src="/images/icp-logo.webp" alt="ICP International" />
-          <span className="studio-brand-text">
-            <strong>Vision School International</strong>
-            <em>Component Review &amp; Page Architecture</em>
-          </span>
-        </a>
-        <nav className="studio-tabs" aria-label="Workspace switcher">
-          <a className="studio-tab" href="/">Sections</a>
-          <a className="studio-tab is-active" href="/pages" aria-current="page">Pages</a>
-        </nav>
-      </header>
+      <StudioHeader active="pages" />
 
       <div className="composer-layout">
         <aside className="composer-rail" aria-label="Composed pages">
