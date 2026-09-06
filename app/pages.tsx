@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { journeyStages, sectionTypes } from "./concepts/componentCatalog";
-import { createPage, getPage, getPages, removePage, type RegisteredPage } from "./pageRegistry";
+import { getConceptsForSection, resolvePageSection } from "./concepts/conceptRegistry";
+import { journeyStages, sectionTypes, type ComponentSection } from "./concepts/componentCatalog";
+import { addEntry, createPage, getPage, getPages, removeEntry, removePage, type RegisteredPage } from "./pageRegistry";
 
 const slugify = (value: string) => value
   .trim()
@@ -16,6 +17,11 @@ export default function Pages() {
   const [name, setName] = useState("");
   const [key, setKey] = useState("");
   const [routeEdited, setRouteEdited] = useState(false);
+  const [addingToPageKey, setAddingToPageKey] = useState<string>();
+  const [section, setSection] = useState<ComponentSection>(sectionTypes[0].key);
+  const [conceptKey, setConceptKey] = useState("");
+  const sectionConcepts = getConceptsForSection(section);
+  const concept = sectionConcepts.find((candidate) => candidate.key === conceptKey) ?? sectionConcepts[0];
   const pageKey = key.trim();
   const canCreate = name.trim().length > 0
     && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(pageKey)
@@ -35,6 +41,24 @@ export default function Pages() {
   const destroy = (targetKey: string) => {
     removePage(targetKey);
     setPages(getPages());
+  };
+
+  const drop = (targetKey: string, index: number) => {
+    removeEntry(targetKey, index);
+    setPages(getPages());
+  };
+
+  const openAdd = (targetKey: string) => {
+    setAddingToPageKey(targetKey);
+    setSection(sectionTypes[0].key);
+    setConceptKey("");
+  };
+
+  const insert = (targetKey: string) => {
+    if (!concept) return;
+    addEntry(targetKey, { section, conceptKey: concept.key });
+    setPages(getPages());
+    setAddingToPageKey(undefined);
   };
 
   return (
@@ -142,7 +166,7 @@ export default function Pages() {
                         <h3>{page.name}</h3>
                         <span className="composer-page-card-route">/{page.key}</span>
                         {stageOfFirst && (
-                          <span className="composer-page-card-stage">Opens in Stage {stageOfFirst.number} · {stageOfFirst.name}</span>
+                          <span className="composer-page-card-stage">Opens in {stageOfFirst.name}</span>
                         )}
                       </div>
                       <div className="composer-page-card-actions">
@@ -165,20 +189,53 @@ export default function Pages() {
                         {page.entries.map((entry, entryIdx) => {
                           const section = sectionTypes.find((candidate) => candidate.key === entry.section);
                           if (!section) return null;
-                          const stage = journeyStages.find((candidate) => candidate.sections.includes(section.key));
+                          const resolved = resolvePageSection(entry);
 
                           return (
                             <li key={`${entry.section}-${entryIdx}`} className="composer-sequence-item">
                               <span className="composer-sequence-index">{String(entryIdx + 1).padStart(2, "0")}</span>
                               <span className="composer-sequence-dot" aria-hidden="true" style={{ background: section.color }} />
                               <span className="composer-sequence-name">{section.name}</span>
-                              {stage && <span className="composer-sequence-stage">{stage.number}</span>}
+                              {resolved && <span className="composer-sequence-concept">{resolved.concept.name}</span>}
+                              <button
+                                type="button"
+                                className="composer-sequence-remove"
+                                aria-label={`Remove ${section.name} from ${page.name}`}
+                                onClick={() => drop(page.key, entryIdx)}
+                              >
+                                ✕
+                              </button>
                             </li>
                           );
                         })}
                       </ol>
                     ) : (
-                      <p className="composer-page-card-empty">No sections added yet. Open the page to insert its first section.</p>
+                      <p className="composer-page-card-empty">No sections in sequence yet.</p>
+                    )}
+
+                    {addingToPageKey === page.key && concept ? (
+                      <div className="composer-add-form">
+                        <label>
+                          <span>Section</span>
+                          <select value={section} onChange={(event) => { setSection(event.target.value as ComponentSection); setConceptKey(""); }}>
+                            {sectionTypes.map((type) => <option key={type.key} value={type.key}>{type.name}</option>)}
+                          </select>
+                        </label>
+                        <label>
+                          <span>Concept</span>
+                          <select value={concept.key} onChange={(event) => setConceptKey(event.target.value)}>
+                            {sectionConcepts.map((candidate) => <option key={candidate.key} value={candidate.key}>{candidate.name}</option>)}
+                          </select>
+                        </label>
+                        <div className="composer-add-actions">
+                          <button type="button" onClick={() => setAddingToPageKey(undefined)}>Cancel</button>
+                          <button type="button" onClick={() => insert(page.key)}>Add Section</button>
+                        </div>
+                      </div>
+                    ) : (
+                      <button type="button" className="composer-add-trigger" onClick={() => openAdd(page.key)}>
+                        + Add Section
+                      </button>
                     )}
                   </article>
                 );
