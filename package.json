@@ -6,8 +6,8 @@
     "node": ">=22.13.0"
   },
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
+    "dev": "node scripts/build-registry.mjs && node scripts/build-concepts.mjs && vite --host 0.0.0.0",
+    "build": "node scripts/build-registry.mjs && node scripts/build-concepts.mjs && vite build",
     "start": "node server/index.mjs",
     "test": "npm run build",
     "lint": "eslint ."

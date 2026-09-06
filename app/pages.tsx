@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { getConceptsForSection, resolvePageSection } from "./concepts/conceptRegistry";
 import { journeyStages, sectionTypes, type ComponentSection } from "./concepts/componentCatalog";
-import { addEntry, createPage, getPage, getPages, removeEntry, removePage, type RegisteredPage } from "./pageRegistry";
+import { addEntry, createPage, getPages, removeEntry, removePage, type RegisteredPage } from "./pageRegistry";
 
 const slugify = (value: string) => value
   .trim()
@@ -12,7 +12,7 @@ const slugify = (value: string) => value
   .replace(/^-+|-+$/g, "");
 
 export default function Pages() {
-  const [pages, setPages] = useState<readonly RegisteredPage[]>(getPages);
+  const [pages, setPages] = useState<readonly RegisteredPage[]>([]);
   const [isCreating, setIsCreating] = useState(false);
   const [name, setName] = useState("");
   const [key, setKey] = useState("");
@@ -20,32 +20,47 @@ export default function Pages() {
   const [addingToPageKey, setAddingToPageKey] = useState<string>();
   const [section, setSection] = useState<ComponentSection>(sectionTypes[0].key);
   const [conceptKey, setConceptKey] = useState("");
+  const [existingKeys, setExistingKeys] = useState<ReadonlySet<string>>(new Set());
   const sectionConcepts = getConceptsForSection(section);
   const concept = sectionConcepts.find((candidate) => candidate.key === conceptKey) ?? sectionConcepts[0];
   const pageKey = key.trim();
   const canCreate = name.trim().length > 0
     && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(pageKey)
-    && !getPage(pageKey);
+    && !existingKeys.has(pageKey);
 
-  const create = () => {
+  const refresh = async () => {
+    const next = await getPages();
+    setPages(next);
+    setExistingKeys(new Set(next.map((page) => page.key)));
+  };
+
+  useEffect(() => {
+    void (async () => {
+      const next = await getPages();
+      setPages(next);
+      setExistingKeys(new Set(next.map((page) => page.key)));
+    })();
+  }, []);
+
+  const create = async () => {
     if (!canCreate) return;
 
-    createPage({ key: pageKey, name: name.trim(), entries: [] });
-    setPages(getPages());
+    await createPage({ key: pageKey, name: name.trim(), entries: [] });
+    await refresh();
     setName("");
     setKey("");
     setRouteEdited(false);
     setIsCreating(false);
   };
 
-  const destroy = (targetKey: string) => {
-    removePage(targetKey);
-    setPages(getPages());
+  const destroy = async (targetKey: string) => {
+    await removePage(targetKey);
+    await refresh();
   };
 
-  const drop = (targetKey: string, index: number) => {
-    removeEntry(targetKey, index);
-    setPages(getPages());
+  const drop = async (targetKey: string, index: number) => {
+    await removeEntry(targetKey, index);
+    await refresh();
   };
 
   const openAdd = (targetKey: string) => {
@@ -54,10 +69,10 @@ export default function Pages() {
     setConceptKey("");
   };
 
-  const insert = (targetKey: string) => {
+  const insert = async (targetKey: string) => {
     if (!concept) return;
-    addEntry(targetKey, { section, conceptKey: concept.key });
-    setPages(getPages());
+    await addEntry(targetKey, { section, conceptKey: concept.key });
+    await refresh();
     setAddingToPageKey(undefined);
   };
 
@@ -115,7 +130,7 @@ export default function Pages() {
                 className="composer-create-form"
                 onSubmit={(event) => {
                   event.preventDefault();
-                  create();
+                  void create();
                 }}
               >
                 <label>
@@ -177,7 +192,7 @@ export default function Pages() {
                           type="button"
                           className="composer-page-card-delete"
                           aria-label={`Delete ${page.name}`}
-                          onClick={() => destroy(page.key)}
+                          onClick={() => void destroy(page.key)}
                         >
                           ✕
                         </button>
@@ -201,7 +216,7 @@ export default function Pages() {
                                 type="button"
                                 className="composer-sequence-remove"
                                 aria-label={`Remove ${section.name} from ${page.name}`}
-                                onClick={() => drop(page.key, entryIdx)}
+                                onClick={() => void drop(page.key, entryIdx)}
                               >
                                 ✕
                               </button>
@@ -229,7 +244,7 @@ export default function Pages() {
                         </label>
                         <div className="composer-add-actions">
                           <button type="button" onClick={() => setAddingToPageKey(undefined)}>Cancel</button>
-                          <button type="button" onClick={() => insert(page.key)}>Add Section</button>
+                          <button type="button" onClick={() => void insert(page.key)}>Add Section</button>
                         </div>
                       </div>
                     ) : (
