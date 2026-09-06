@@ -2,7 +2,7 @@ export const sectionTypes = [
   {
     key: "navigation",
     name: "Navigation",
-    description: "Reduces orientation anxiety. A persistent frame that tells visitors they can leave at any time—which is exactly what makes them willing to stay and read.",
+    description: "Purpose: persistent site-wide orientation and access to search and the class action. Result: visitors always know where they are and how to move.",
     anatomy: "Brand logo · Search trigger · Menu links · Find a Class button",
     image: "/images/community-city.jpg",
     color: "#102c57",
@@ -10,7 +10,7 @@ export const sectionTypes = [
   {
     key: "hero",
     name: "Hero",
-    description: "The 5-second contract. Answers what this is and what to do next before attention breaks, earning the scroll that follows.",
+    description: "Purpose: state what the program is and offer the next step. Result: the visitor understands the page and has an action within the first viewport.",
     anatomy: "Headline · Subtitle · Action button · Media window",
     image: "/images/mountain-sunrise.jpg",
     color: "#1769c2",
@@ -18,7 +18,7 @@ export const sectionTypes = [
   {
     key: "proof",
     name: "Proof",
-    description: "Converts skepticism into trust. Specific numbers bypass marketing defenses because facts are processed as evidence, not persuasion.",
+    description: "Purpose: show verifiable facts about scale and history. Result: skeptical visitors trust the program enough to keep reading.",
     anatomy: "Metric counters · National reach stats · Credibility markers",
     image: "/images/intercp-young-adults.webp",
     color: "#66afe6",
@@ -26,7 +26,7 @@ export const sectionTypes = [
   {
     key: "about",
     name: "About",
-    description: "Creates belonging before commitment. People join identities, not programs—this section answers whether the course is for someone like them.",
+    description: "Purpose: explain who the course is for and what it values. Result: visitors determine whether it fits them before investing more time.",
     anatomy: "Mission narrative · Core value callout · Community photo",
     image: "/images/community-table.jpg",
     color: "#1f2c40",
@@ -34,7 +34,7 @@ export const sectionTypes = [
   {
     key: "course",
     name: "Course",
-    description: "Dissolves ambiguity aversion. A multi-week commitment feels risky until it is chunked into a predictable weekly rhythm the visitor can mentally rehearse.",
+    description: "Purpose: break the 11-week program into a weekly structure. Result: the commitment becomes concrete and predictable instead of vague.",
     anatomy: "Weekly milestones · Lecture topics · Time commitment",
     image: "/images/youth-gathering.jpg",
     color: "#102c57",
@@ -42,7 +42,7 @@ export const sectionTypes = [
   {
     key: "classes",
     name: "Class finder",
-    description: "Closes the gap between intent and action. Local, concrete options—a city, a date, a schedule—turn abstract interest into a specific decision.",
+    description: "Purpose: let visitors search nearby and online classes. Result: interested visitors find a specific class, date, and registration link.",
     anatomy: "Filter bar · Location cards · Schedule details · Registration link",
     image: "/images/vision-school-media/north-america-mission-camp-crowd.webp",
     color: "#1769c2",
@@ -50,7 +50,7 @@ export const sectionTypes = [
   {
     key: "stories",
     name: "Stories",
-    description: "Narrative transportation. Readers project themselves into a real person's outcome, replacing fear of the unknown with someone like me did this.",
+    description: "Purpose: show a real participant's experience and outcome. Result: prospective students see proof the course worked for someone like them.",
     anatomy: "Student quote · Photo lockup · Ministry background",
     image: "/images/intercp-mission-camp.webp",
     color: "#53657e",
@@ -58,7 +58,7 @@ export const sectionTypes = [
   {
     key: "videos",
     name: "Video library",
-    description: "Vicarious experience. Atmosphere and emotion transfer through footage faster and more credibly than any written claim.",
+    description: "Purpose: let visitors watch real worship and camp footage on the page. Result: they experience the atmosphere without leaving the site.",
     anatomy: "16:9 video player · Playlist carousel · Live footage",
     image: "/images/vision-school-media/north-america-mission-camp-worship.webp",
     color: "#102c57",
@@ -66,7 +66,7 @@ export const sectionTypes = [
   {
     key: "cta",
     name: "Calls to action",
-    description: "Harvests peak intent. Momentum built across the page converges into one unambiguous action at the moment decision energy is highest.",
+    description: "Purpose: present one final registration action at the end of the page. Result: ready visitors convert instead of leaving without a next step.",
     anatomy: "Action banner · Primary pill button · Reassurance note",
     image: "/images/vision-school-media/young-generation-mission-camp-community.webp",
     color: "#1769c2",
@@ -74,7 +74,7 @@ export const sectionTypes = [
   {
     key: "footer",
     name: "Footer",
-    description: "Signals safety and closure. Complete, organized links indicate an accountable organization; missing legal or contact info raises suspicion.",
+    description: "Purpose: provide complete navigation, contact, and legal links. Result: the organization is verifiable and every page has a way back.",
     anatomy: "Directory links · Governance notes · Newsletter signup · Copyright",
     image: "",
     color: "#1f2c40",
@@ -82,7 +82,7 @@ export const sectionTypes = [
   {
     key: "announcement",
     name: "Announcement bar",
-    description: "Exploits primacy without interruption. One high-contrast line at the top of the viewport captures urgent attention and nothing else competes.",
+    description: "Purpose: display urgent deadlines or dates site-wide. Result: visitors see the time-sensitive update before any other content.",
     anatomy: "Alert badge · Deadline notice · Direct link arrow",
     image: "",
     color: "#1769c2",
@@ -90,7 +90,7 @@ export const sectionTypes = [
   {
     key: "breadcrumbs",
     name: "Breadcrumbs",
-    description: "Reduces disorientation. Knowing exactly where you are in a hierarchy prevents the lost feeling that causes premature exits on deep pages.",
+    description: "Purpose: show the visitor's location in the site hierarchy. Result: users on deep pages can backtrack without using the browser back button.",
     anatomy: "Path trail · Chevron dividers · Active page name",
     image: "",
     color: "#53657e",
@@ -98,7 +98,7 @@ export const sectionTypes = [
   {
     key: "events",
     name: "Events calendar",
-    description: "Anchors time. Fixed future dates turn someday interest into plannable commitment.",
+    description: "Purpose: list upcoming camps, conferences, and semester dates. Result: visitors can plan participation around fixed dates.",
     anatomy: "Date badge blocks · Venue details · Registration status",
     image: "/images/vision-school-media/north-america-mission-camp-nations.webp",
     color: "#102c57",
@@ -106,7 +106,7 @@ export const sectionTypes = [
   {
     key: "faq",
     name: "FAQ accordion",
-    description: "Removes objections at the moment of doubt. Every unanswered question is an exit risk; inline answers keep the decision moving.",
+    description: "Purpose: answer common questions about cost, attendance, and format. Result: practical objections are resolved without leaving the page.",
     anatomy: "Question list · Accordion answers · Support contact",
     image: "",
     color: "#1f2c40",
@@ -114,7 +114,7 @@ export const sectionTypes = [
   {
     key: "registration",
     name: "Registration form",
-    description: "Makes the first step feel small. A short, low-stakes form converts hesitation into a concrete action while intent is present.",
+    description: "Purpose: collect prospect contact details when enrollment is not open. Result: interest is captured instead of lost until registration opens.",
     anatomy: "Contact fields · Branch dropdown · Submit button",
     image: "",
     color: "#1769c2",
@@ -122,7 +122,7 @@ export const sectionTypes = [
   {
     key: "newsletter",
     name: "Newsletter signup",
-    description: "Preserves the relationship. For visitors not ready to commit, a smaller yes keeps the connection alive instead of losing them entirely.",
+    description: "Purpose: offer updates by email to visitors not ready to enroll. Result: the contact is retained for future semesters.",
     anatomy: "Email input · One-click subscribe · Privacy note",
     image: "",
     color: "#102c57",
@@ -130,7 +130,7 @@ export const sectionTypes = [
   {
     key: "partners",
     name: "Partner logo strip",
-    description: "Borrowed credibility. Third-party marks transfer trust—the visitor trusts what other institutions have already vetted.",
+    description: "Purpose: show cooperating churches and agencies. Result: third-party involvement confirms the program's legitimacy.",
     anatomy: "Partner emblems · Cooperation statement · Verification marker",
     image: "",
     color: "#53657e",
@@ -138,7 +138,7 @@ export const sectionTypes = [
   {
     key: "team",
     name: "Team leadership",
-    description: "Humanizes accountability. Named people with faces and roles trigger trust responses that institutions alone cannot produce.",
+    description: "Purpose: name the directors and instructors responsible. Result: visitors know who runs the program and who is accountable.",
     anatomy: "Leader portraits · Ministry roles · Background summaries",
     image: "",
     color: "#1f2c40",
@@ -146,7 +146,7 @@ export const sectionTypes = [
   {
     key: "resources",
     name: "Resources listing",
-    description: "Demonstrates substance before asking anything. Free, real materials prove depth and trigger reciprocity.",
+    description: "Purpose: provide downloadable lecture and study materials. Result: visitors can verify course depth before enrolling.",
     anatomy: "Format badges (PDF) · Resource titles · Direct download links",
     image: "",
     color: "#1769c2",
@@ -154,7 +154,7 @@ export const sectionTypes = [
   {
     key: "gallery",
     name: "Gallery image grid",
-    description: "Visual belonging. Candid community photos let visitors see themselves in the group before they ever attend.",
+    description: "Purpose: show real photos of classes and gatherings. Result: visitors see what participation actually looks like.",
     anatomy: "Asymmetric photo grid · Candid moments · Captions",
     image: "/images/vision-school-media/north-america-mission-camp-worship.webp",
     color: "#102c57",
@@ -162,7 +162,7 @@ export const sectionTypes = [
   {
     key: "donation",
     name: "Donation CTA",
-    description: "Gives agency in giving. Clear tiers and stated purpose frame support as partnership rather than transaction.",
+    description: "Purpose: offer supporters preset amounts and a stated use of funds. Result: donors can give with one clear action.",
     anatomy: "Giving tier pills · Custom amount input · Secure giving button",
     image: "",
     color: "#66afe6",
