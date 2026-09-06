@@ -15,6 +15,7 @@ button { color: inherit; }
 .review-shell { min-height: 100vh; padding: 0 4vw 5vw; }
 .review-header { display: flex; align-items: center; justify-content: space-between; min-height: 78px; border-bottom: 1px solid var(--review-line); }
 .review-brand { display: flex; align-items: center; gap: 12px; padding: 0; border: 0; background: transparent; font: inherit; font-size: 13px; font-weight: 680; cursor: pointer; }
+.review-pages-link { color: #1769c2; font-size: 13px; font-weight: 680; }
 .review-logo { display: block; width: 156px; height: auto; }
 .review-round, .review-kicker { font-family: var(--font-geist-mono), monospace; font-size: 10px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; }
 .review-intro { display: grid; grid-template-columns: .55fr 1.55fr .8fr; gap: 3vw; align-items: end; padding: 82px 0 62px; }
@@ -26,9 +27,12 @@ button { color: inherit; }
 .component-index-card:hover, .component-index-card:focus-visible { transform: translateY(-6px); box-shadow: 0 25px 55px rgba(16, 44, 87, .14); outline: 0; }
 .component-index-card:focus-visible { box-shadow: 0 0 0 3px var(--component-color), 0 25px 55px rgba(16, 44, 87, .14); }
 .component-index-card[aria-current="true"] { box-shadow: 0 0 0 3px var(--component-color), 0 25px 55px rgba(16, 44, 87, .14); }
-.component-index-image { position: relative; min-height: 210px; background-position: center; background-size: cover; isolation: isolate; }
-.component-index-image::after { position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, color-mix(in srgb, var(--component-color) 18%, transparent), color-mix(in srgb, var(--component-color) 82%, transparent)); content: ""; }
-.component-index-image > span, .component-index-image b { position: absolute; top: 22px; color: white; font-family: var(--font-geist-mono), monospace; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
+.component-index-image { position: relative; min-height: 210px; display: flex; align-items: center; justify-content: center; background-color: var(--component-color); isolation: isolate; overflow: hidden; }
+.component-index-image::after { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, color-mix(in srgb, var(--component-color) 10%, transparent), color-mix(in srgb, var(--component-color) 60%, transparent)); content: ""; pointer-events: none; }
+.section-schematic-svg { width: 88%; height: auto; max-height: 160px; z-index: 0; transition: transform 240ms ease, opacity 240ms ease; }
+.component-index-card:hover .section-schematic-svg, .component-index-card:focus-visible .section-schematic-svg { transform: scale(1.03); }
+.component-index-glyph { font-family: Georgia, serif; font-size: 42px; font-weight: 400; color: rgba(255, 255, 255, 0.4); text-transform: uppercase; letter-spacing: -0.04em; user-select: none; }
+.component-index-image > span, .component-index-image b { position: absolute; top: 22px; z-index: 2; color: white; font-family: var(--font-geist-mono), monospace; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
 .component-index-image > span { left: 22px; }
 .component-index-image b { right: 22px; font-weight: 600; opacity: 0; transition: opacity 180ms ease; }
 .component-index-card:hover .component-index-image b, .component-index-card:focus-visible .component-index-image b { opacity: 1; }

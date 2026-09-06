@@ -60,7 +60,7 @@ export const sectionTypes = [
     name: "Video library",
     description: "Lets users browse video content.",
     reviewPoints: ["Thumbnail", "Video title", "Player controls"],
-    image: "https://i.ytimg.com/vi/zelhy09kxp8/hqdefault.jpg",
+    image: "/images/vision-school-media/north-america-mission-camp-worship.webp",
     color: "#102c57",
   },
   {
@@ -68,7 +68,7 @@ export const sectionTypes = [
     name: "Calls to action",
     description: "Moves users to the next step.",
     reviewPoints: ["Action label", "Support copy", "Destination"],
-    image: "/images/community-table.jpg",
+    image: "/images/vision-school-media/young-generation-mission-camp-community.webp",
     color: "#1769c2",
   },
   {
@@ -76,7 +76,7 @@ export const sectionTypes = [
     name: "Footer",
     description: "Provides final navigation and support.",
     reviewPoints: ["Utility links", "Contact details", "Legal or social links"],
-    image: "/images/mountain-sunrise.jpg",
+    image: "",
     color: "#1f2c40",
   },
   {
@@ -84,7 +84,7 @@ export const sectionTypes = [
     name: "Announcement bar",
     description: "Highlights timely updates.",
     reviewPoints: ["Deadline", "Urgent update", "Action link"],
-    image: "/images/community-city.jpg",
+    image: "",
     color: "#1769c2",
   },
   {
@@ -92,7 +92,7 @@ export const sectionTypes = [
     name: "Breadcrumbs",
     description: "Shows where users are.",
     reviewPoints: ["Page path", "Parent links", "Current page"],
-    image: "/images/mountain-sunrise.jpg",
+    image: "",
     color: "#53657e",
   },
   {
@@ -100,7 +100,7 @@ export const sectionTypes = [
     name: "Events calendar",
     description: "Shows upcoming dates.",
     reviewPoints: ["Event title", "Timing", "Event type"],
-    image: "/images/intercp-mission-camp.webp",
+    image: "/images/vision-school-media/north-america-mission-camp-nations.webp",
     color: "#102c57",
   },
   {
@@ -108,7 +108,7 @@ export const sectionTypes = [
     name: "FAQ accordion",
     description: "Answers practical questions.",
     reviewPoints: ["Question", "Answer", "Expanded state"],
-    image: "/images/community-table.jpg",
+    image: "",
     color: "#1f2c40",
   },
   {
@@ -116,7 +116,7 @@ export const sectionTypes = [
     name: "Registration form",
     description: "Turns interest into inquiry.",
     reviewPoints: ["Contact fields", "Interest type", "Submit state"],
-    image: "/images/community-city.jpg",
+    image: "",
     color: "#1769c2",
   },
   {
@@ -124,7 +124,7 @@ export const sectionTypes = [
     name: "Newsletter signup",
     description: "Keeps visitors connected.",
     reviewPoints: ["Email field", "Signup action", "Confirmation state"],
-    image: "/images/youth-gathering.jpg",
+    image: "",
     color: "#102c57",
   },
   {
@@ -132,7 +132,7 @@ export const sectionTypes = [
     name: "Partner logo strip",
     description: "Shows cooperation credibility.",
     reviewPoints: ["Partner marks", "Approval note", "Credibility context"],
-    image: "/images/community-table.jpg",
+    image: "",
     color: "#53657e",
   },
   {
@@ -140,7 +140,7 @@ export const sectionTypes = [
     name: "Team leadership",
     description: "Identifies responsible people.",
     reviewPoints: ["Role", "Responsibility", "Approved profile"],
-    image: "/images/intercp-young-adults.webp",
+    image: "",
     color: "#1f2c40",
   },
   {
@@ -148,7 +148,7 @@ export const sectionTypes = [
     name: "Resources listing",
     description: "Shows ongoing material.",
     reviewPoints: ["Resource type", "Title", "Read action"],
-    image: "/images/mountain-sunrise.jpg",
+    image: "",
     color: "#1769c2",
   },
   {
@@ -156,7 +156,7 @@ export const sectionTypes = [
     name: "Gallery image grid",
     description: "Shows training visually.",
     reviewPoints: ["Approved image", "Alt text", "Experience signal"],
-    image: "/images/intercp-mission-camp.webp",
+    image: "/images/vision-school-media/north-america-mission-camp-worship.webp",
     color: "#102c57",
   },
   {
@@ -164,7 +164,7 @@ export const sectionTypes = [
     name: "Donation CTA",
     description: "Shows support path.",
     reviewPoints: ["Support message", "Eligibility note", "Giving action"],
-    image: "/images/community-table.jpg",
+    image: "",
     color: "#66afe6",
   },
 ] as const;

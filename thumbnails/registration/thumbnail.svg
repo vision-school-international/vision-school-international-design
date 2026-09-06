@@ -1,0 +1,16 @@
+<svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Frame -->
+  <rect x="20" y="16" width="200" height="108" rx="2" stroke="rgba(255, 255, 255, 0.45)" stroke-width="1.5" fill="rgba(255, 255, 255, 0.12)" />
+  <rect x="32" y="26" width="50" height="6" rx="1" fill="rgba(255, 255, 255, 0.9)" />
+  <!-- 2 Form Input Columns -->
+  <rect x="32" y="38" width="82" height="18" rx="3" stroke="rgba(255, 255, 255, 0.45)" stroke-width="1" fill="rgba(255, 255, 255, 0.06)" />
+  <rect x="38" y="45" width="30" height="4" rx="1" fill="rgba(255, 255, 255, 0.25)" />
+  <rect x="122" y="38" width="86" height="18" rx="3" stroke="rgba(255, 255, 255, 0.45)" stroke-width="1" fill="rgba(255, 255, 255, 0.06)" />
+  <rect x="128" y="45" width="30" height="4" rx="1" fill="rgba(255, 255, 255, 0.25)" />
+  <!-- Full Width Input -->
+  <rect x="32" y="62" width="176" height="18" rx="3" stroke="rgba(255, 255, 255, 0.45)" stroke-width="1" fill="rgba(255, 255, 255, 0.06)" />
+  <rect x="38" y="69" width="45" height="4" rx="1" fill="rgba(255, 255, 255, 0.25)" />
+  <!-- Submit Action -->
+  <rect x="32" y="88" width="64" height="22" rx="4" fill="#1769c2" />
+  <rect x="44" y="97" width="40" height="4" rx="1" fill="#ffffff" />
+</svg>

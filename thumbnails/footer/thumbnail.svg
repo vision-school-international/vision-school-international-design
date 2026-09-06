@@ -1,0 +1,25 @@
+<svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Frame -->
+  <rect x="20" y="20" width="200" height="100" rx="2" stroke="rgba(255, 255, 255, 0.45)" stroke-width="1.5" fill="rgba(255, 255, 255, 0.12)" />
+  <!-- 4 Link Columns -->
+  <!-- Brand Col -->
+  <rect x="32" y="32" width="12" height="12" rx="2" fill="#1f2c40" />
+  <rect x="32" y="48" width="40" height="4" rx="1" fill="rgba(255, 255, 255, 0.9)" />
+  <rect x="32" y="56" width="34" height="3" rx="1" fill="rgba(255, 255, 255, 0.25)" />
+  <!-- Nav Col -->
+  <rect x="88" y="34" width="24" height="5" rx="1" fill="rgba(255, 255, 255, 0.9)" />
+  <rect x="88" y="44" width="28" height="3" rx="1" fill="rgba(255, 255, 255, 0.25)" />
+  <rect x="88" y="52" width="22" height="3" rx="1" fill="rgba(255, 255, 255, 0.25)" />
+  <rect x="88" y="60" width="26" height="3" rx="1" fill="rgba(255, 255, 255, 0.25)" />
+  <!-- Resources Col -->
+  <rect x="130" y="34" width="24" height="5" rx="1" fill="rgba(255, 255, 255, 0.9)" />
+  <rect x="130" y="44" width="26" height="3" rx="1" fill="rgba(255, 255, 255, 0.25)" />
+  <rect x="130" y="52" width="20" height="3" rx="1" fill="rgba(255, 255, 255, 0.25)" />
+  <rect x="130" y="60" width="28" height="3" rx="1" fill="rgba(255, 255, 255, 0.25)" />
+  <!-- Action Col -->
+  <rect x="172" y="34" width="34" height="16" rx="2" stroke="rgba(255, 255, 255, 0.45)" stroke-width="1" fill="rgba(255, 255, 255, 0.06)" />
+  <!-- Copyright Divider & Bar -->
+  <line x1="20" y1="84" x2="220" y2="84" stroke="rgba(255, 255, 255, 0.45)" stroke-width="1" />
+  <rect x="32" y="96" width="60" height="4" rx="1" fill="rgba(255, 255, 255, 0.25)" />
+  <rect x="168" y="96" width="40" height="4" rx="1" fill="rgba(255, 255, 255, 0.25)" />
+</svg>
