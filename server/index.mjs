@@ -5,8 +5,8 @@ import { fileURLToPath } from "node:url";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { sectionTypes, journeyStages } from "./registry-data.mjs";
 import { concepts } from "./registry-concepts.mjs";
-import { endpoints, workflow } from "./api-manifest.mjs";
-import { renderApiDoc, renderManifest } from "./api-doc.mjs";
+import { buildOpenApi } from "./openapi.mjs";
+import { renderReference } from "./api-doc.mjs";
 
 const dist = fileURLToPath(new URL("../dist", import.meta.url));
 const index = fileURLToPath(new URL("../dist/index.html", import.meta.url));
@@ -32,32 +32,67 @@ const writePages = async (pages) => {
 
 export const app = new Hono();
 
-const registrySnapshot = () => ({
-  sectionCount: sectionTypes.length,
-  stageCount: journeyStages.length,
-  conceptCount: concepts.length,
-  sectionKeys: sectionTypes.map((s) => s.key),
-  conceptMapSample: Object.fromEntries(
-    concepts.slice(0, 6).map((concept) => [concept.key, concept.sections]),
-  ),
-});
+const openapi = () => buildOpenApi({ version: apiVersion });
 
 const apiVersion = "1.0";
-const endpointCount = endpoints.length;
 
 app.get("/health", (c) => c.text("ok"));
 
-app.get("/api/manifest", (c) =>
-  c.json(renderManifest({ version: apiVersion, endpointCount, registry: registrySnapshot(), workflow, endpoints })),
-);
+app.get("/api/openapi.json", (c) => c.json(openapi()));
 
-app.get("/api/doc", (c) => {
-  const html = renderApiDoc({
+app.get("/api/manifest", (c) => {
+  const doc = openapi();
+  const operations = Object.values(doc.paths).reduce(
+    (count, pathItem) => count + Object.keys(pathItem).length,
+    0,
+  );
+  return c.json({
     version: apiVersion,
-    endpointCount,
-    registry: registrySnapshot(),
-    workflow,
-    endpoints,
+    generatedAt: new Date().toISOString(),
+    openapi: "/api/openapi.json",
+    counts: {
+      paths: Object.keys(doc.paths).length,
+      operations,
+      sections: sectionTypes.length,
+      stages: journeyStages.length,
+      concepts: concepts.length,
+    },
+    workflow: [
+      "GET /api/manifest — learn what endpoints exist (you are here)",
+      "GET /api/openapi.json — full OpenAPI 3.0 contract",
+      "GET /api/registry — learn what sections and concepts exist",
+      "POST /api/pages — compose the sequence (validated server-side)",
+      "Open /pages/<key> — the composed page renders for humans",
+    ],
+  });
+});
+
+app.get("/api/doc", async (c) => {
+  const fetchLive = async (path, note) => {
+    const response = await app.request(path);
+    const text = await response.text();
+    let body = text;
+    try {
+      body = JSON.stringify(JSON.parse(text), null, 2);
+    } catch {
+      body = text;
+    }
+    return { method: "GET", path, status: response.status, note, body: body.length > 1800 ? `${body.slice(0, 1800)}\n… (truncated for display)` : body };
+  };
+
+  const liveExamples = [
+    await fetchLive("/api/openapi.json", "The OpenAPI 3.0.4 contract itself."),
+    await fetchLive("/api/manifest", "Compact agent index with live counts."),
+    await fetchLive("/api/registry", "All sections, stages, and concepts (truncated)."),
+    await fetchLive("/api/pages", "Current composed pages."),
+    await fetchLive("/api/pages/validate", "Dry-run validation endpoint — shown with its own GET response; use POST with an entries array to validate a sequence without saving."),
+  ];
+
+  const html = renderReference({
+    version: apiVersion,
+    openapi: openapi(),
+    liveExamples,
+    generatedAt: new Date().toISOString().slice(0, 10),
   });
   return c.html(html);
 });
