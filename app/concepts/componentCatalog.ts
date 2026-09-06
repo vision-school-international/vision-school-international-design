@@ -2,7 +2,7 @@ export const sectionTypes = [
   {
     key: "navigation",
     name: "Navigation",
-    description: "Purpose: persistent site-wide orientation and access to search and the class action. Result: visitors always know where they are and how to move.",
+    description: "**Purpose:** Persistent site-wide orientation and access to search and the class action.\n**Result:** Visitors always know where they are and how to move.",
     anatomy: "Brand logo · Search trigger · Menu links · Find a Class button",
     image: "/images/community-city.jpg",
     color: "#102c57",
@@ -10,7 +10,7 @@ export const sectionTypes = [
   {
     key: "hero",
     name: "Hero",
-    description: "Purpose: state what the program is and offer the next step. Result: the visitor understands the page and has an action within the first viewport.",
+    description: "**Purpose:** State what the program is and offer the next step.\n**Result:** The visitor understands the page and has an action within the first viewport.",
     anatomy: "Headline · Subtitle · Action button · Media window",
     image: "/images/mountain-sunrise.jpg",
     color: "#1769c2",
@@ -18,7 +18,7 @@ export const sectionTypes = [
   {
     key: "proof",
     name: "Proof",
-    description: "Purpose: show verifiable facts about scale and history. Result: skeptical visitors trust the program enough to keep reading.",
+    description: "**Purpose:** Show verifiable facts about scale and history.\n**Result:** Skeptical visitors trust the program enough to keep reading.",
     anatomy: "Metric counters · National reach stats · Credibility markers",
     image: "/images/intercp-young-adults.webp",
     color: "#66afe6",
@@ -26,7 +26,7 @@ export const sectionTypes = [
   {
     key: "about",
     name: "About",
-    description: "Purpose: explain who the course is for and what it values. Result: visitors determine whether it fits them before investing more time.",
+    description: "**Purpose:** Explain who the course is for and what it values.\n**Result:** Visitors determine whether it fits them before investing more time.",
     anatomy: "Mission narrative · Core value callout · Community photo",
     image: "/images/community-table.jpg",
     color: "#1f2c40",
@@ -34,7 +34,7 @@ export const sectionTypes = [
   {
     key: "course",
     name: "Course",
-    description: "Purpose: break the 11-week program into a weekly structure. Result: the commitment becomes concrete and predictable instead of vague.",
+    description: "**Purpose:** Break the 11-week program into a weekly structure.\n**Result:** The commitment becomes concrete and predictable instead of vague.",
     anatomy: "Weekly milestones · Lecture topics · Time commitment",
     image: "/images/youth-gathering.jpg",
     color: "#102c57",
@@ -42,7 +42,7 @@ export const sectionTypes = [
   {
     key: "classes",
     name: "Class finder",
-    description: "Purpose: let visitors search nearby and online classes. Result: interested visitors find a specific class, date, and registration link.",
+    description: "**Purpose:** Let visitors search nearby and online classes.\n**Result:** Interested visitors find a specific class, date, and registration link.",
     anatomy: "Filter bar · Location cards · Schedule details · Registration link",
     image: "/images/vision-school-media/north-america-mission-camp-crowd.webp",
     color: "#1769c2",
@@ -50,7 +50,7 @@ export const sectionTypes = [
   {
     key: "stories",
     name: "Stories",
-    description: "Purpose: show a real participant's experience and outcome. Result: prospective students see proof the course worked for someone like them.",
+    description: "**Purpose:** Show a real participant's experience and outcome.\n**Result:** Prospective students see proof the course worked for someone like them.",
     anatomy: "Student quote · Photo lockup · Ministry background",
     image: "/images/intercp-mission-camp.webp",
     color: "#53657e",
@@ -58,7 +58,7 @@ export const sectionTypes = [
   {
     key: "videos",
     name: "Video library",
-    description: "Purpose: let visitors watch real worship and camp footage on the page. Result: they experience the atmosphere without leaving the site.",
+    description: "**Purpose:** Let visitors watch real worship and camp footage on the page.\n**Result:** They experience the atmosphere without leaving the site.",
     anatomy: "16:9 video player · Playlist carousel · Live footage",
     image: "/images/vision-school-media/north-america-mission-camp-worship.webp",
     color: "#102c57",
@@ -66,7 +66,7 @@ export const sectionTypes = [
   {
     key: "cta",
     name: "Calls to action",
-    description: "Purpose: present one final registration action at the end of the page. Result: ready visitors convert instead of leaving without a next step.",
+    description: "**Purpose:** Present one final registration action at the end of the page.\n**Result:** Ready visitors convert instead of leaving without a next step.",
     anatomy: "Action banner · Primary pill button · Reassurance note",
     image: "/images/vision-school-media/young-generation-mission-camp-community.webp",
     color: "#1769c2",
@@ -74,7 +74,7 @@ export const sectionTypes = [
   {
     key: "footer",
     name: "Footer",
-    description: "Purpose: provide complete navigation, contact, and legal links. Result: the organization is verifiable and every page has a way back.",
+    description: "**Purpose:** Provide complete navigation, contact, and legal links.\n**Result:** The organization is verifiable and every page has a way back.",
     anatomy: "Directory links · Governance notes · Newsletter signup · Copyright",
     image: "",
     color: "#1f2c40",
@@ -82,7 +82,7 @@ export const sectionTypes = [
   {
     key: "announcement",
     name: "Announcement bar",
-    description: "Purpose: display urgent deadlines or dates site-wide. Result: visitors see the time-sensitive update before any other content.",
+    description: "**Purpose:** Display urgent deadlines or dates site-wide.\n**Result:** Visitors see the time-sensitive update before any other content.",
     anatomy: "Alert badge · Deadline notice · Direct link arrow",
     image: "",
     color: "#1769c2",
@@ -90,7 +90,7 @@ export const sectionTypes = [
   {
     key: "breadcrumbs",
     name: "Breadcrumbs",
-    description: "Purpose: show the visitor's location in the site hierarchy. Result: users on deep pages can backtrack without using the browser back button.",
+    description: "**Purpose:** Show the visitor's location in the site hierarchy.\n**Result:** Users on deep pages can backtrack without using the browser back button.",
     anatomy: "Path trail · Chevron dividers · Active page name",
     image: "",
     color: "#53657e",
@@ -98,7 +98,7 @@ export const sectionTypes = [
   {
     key: "events",
     name: "Events calendar",
-    description: "Purpose: list upcoming camps, conferences, and semester dates. Result: visitors can plan participation around fixed dates.",
+    description: "**Purpose:** List upcoming camps, conferences, and semester dates.\n**Result:** Visitors can plan participation around fixed dates.",
     anatomy: "Date badge blocks · Venue details · Registration status",
     image: "/images/vision-school-media/north-america-mission-camp-nations.webp",
     color: "#102c57",
@@ -106,7 +106,7 @@ export const sectionTypes = [
   {
     key: "faq",
     name: "FAQ accordion",
-    description: "Purpose: answer common questions about cost, attendance, and format. Result: practical objections are resolved without leaving the page.",
+    description: "**Purpose:** Answer common questions about cost, attendance, and format.\n**Result:** Practical objections are resolved without leaving the page.",
     anatomy: "Question list · Accordion answers · Support contact",
     image: "",
     color: "#1f2c40",
@@ -114,7 +114,7 @@ export const sectionTypes = [
   {
     key: "registration",
     name: "Registration form",
-    description: "Purpose: collect prospect contact details when enrollment is not open. Result: interest is captured instead of lost until registration opens.",
+    description: "**Purpose:** Collect prospect contact details when enrollment is not open.\n**Result:** Interest is captured instead of lost until registration opens.",
     anatomy: "Contact fields · Branch dropdown · Submit button",
     image: "",
     color: "#1769c2",
@@ -122,7 +122,7 @@ export const sectionTypes = [
   {
     key: "newsletter",
     name: "Newsletter signup",
-    description: "Purpose: offer updates by email to visitors not ready to enroll. Result: the contact is retained for future semesters.",
+    description: "**Purpose:** Offer updates by email to visitors not ready to enroll.\n**Result:** The contact is retained for future semesters.",
     anatomy: "Email input · One-click subscribe · Privacy note",
     image: "",
     color: "#102c57",
@@ -130,7 +130,7 @@ export const sectionTypes = [
   {
     key: "partners",
     name: "Partner logo strip",
-    description: "Purpose: show cooperating churches and agencies. Result: third-party involvement confirms the program's legitimacy.",
+    description: "**Purpose:** Show cooperating churches and agencies.\n**Result:** Third-party involvement confirms the program's legitimacy.",
     anatomy: "Partner emblems · Cooperation statement · Verification marker",
     image: "",
     color: "#53657e",
@@ -138,7 +138,7 @@ export const sectionTypes = [
   {
     key: "team",
     name: "Team leadership",
-    description: "Purpose: name the directors and instructors responsible. Result: visitors know who runs the program and who is accountable.",
+    description: "**Purpose:** Name the directors and instructors responsible.\n**Result:** Visitors know who runs the program and who is accountable.",
     anatomy: "Leader portraits · Ministry roles · Background summaries",
     image: "",
     color: "#1f2c40",
@@ -146,7 +146,7 @@ export const sectionTypes = [
   {
     key: "resources",
     name: "Resources listing",
-    description: "Purpose: provide downloadable lecture and study materials. Result: visitors can verify course depth before enrolling.",
+    description: "**Purpose:** Provide downloadable lecture and study materials.\n**Result:** Visitors can verify course depth before enrolling.",
     anatomy: "Format badges (PDF) · Resource titles · Direct download links",
     image: "",
     color: "#1769c2",
@@ -154,7 +154,7 @@ export const sectionTypes = [
   {
     key: "gallery",
     name: "Gallery image grid",
-    description: "Purpose: show real photos of classes and gatherings. Result: visitors see what participation actually looks like.",
+    description: "**Purpose:** Show real photos of classes and gatherings.\n**Result:** Visitors see what participation actually looks like.",
     anatomy: "Asymmetric photo grid · Candid moments · Captions",
     image: "/images/vision-school-media/north-america-mission-camp-worship.webp",
     color: "#102c57",
@@ -162,7 +162,7 @@ export const sectionTypes = [
   {
     key: "donation",
     name: "Donation CTA",
-    description: "Purpose: offer supporters preset amounts and a stated use of funds. Result: donors can give with one clear action.",
+    description: "**Purpose:** Offer supporters preset amounts and a stated use of funds.\n**Result:** Donors can give with one clear action.",
     anatomy: "Giving tier pills · Custom amount input · Secure giving button",
     image: "",
     color: "#66afe6",

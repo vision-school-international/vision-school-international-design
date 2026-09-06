@@ -8,6 +8,15 @@ import { SectionThumbnail } from "./concepts/SectionThumbnail";
 const sectionFromKey = (key: string): ComponentSection | undefined =>
   sectionTypes.find((section) => section.key === key)?.key;
 
+const renderDescription = (value: string) =>
+  value.split("\n").map((line, lineIndex) => (
+    <p key={lineIndex}>
+      {line.split(/\*\*(.+?)\*\*/g).map((part, partIndex) =>
+        partIndex % 2 === 1 ? <strong key={partIndex}>{part}</strong> : <span key={partIndex}>{part}</span>,
+      )}
+    </p>
+  ));
+
 export default function Home() {
   const [activeSection, setActiveSection] = useState<ComponentSection>(() => {
     if (typeof window === "undefined") {
@@ -91,7 +100,7 @@ export default function Home() {
                   Stage {activeStage?.number} · {activeStage?.name}
                 </p>
                 <h2 className="studio-stage-title">{selectedSection.name}</h2>
-                <p className="studio-stage-description">{selectedSection.description}</p>
+                <p className="studio-stage-description">{renderDescription(selectedSection.description)}</p>
               </header>
 
               {selectedConcept && selectedTreatment ? (
