@@ -143,7 +143,7 @@ button { color: inherit; }
   padding: 11px 16px;
   border: 1px solid var(--review-line);
   border-top: 4px solid var(--concept-color);
-  border-radius: 0;
+  border-radius: 6px 6px 0 0;
   background: #fff;
   font: inherit;
   text-align: left;
@@ -163,7 +163,7 @@ button { color: inherit; }
 }
 
 /* ===== Preview Panel ===== */
-.studio-preview { margin-top: 16px; background: #fff; border: 1px solid var(--review-line); border-radius: 0; overflow: hidden; }
+.studio-preview { margin-top: 16px; background: #fff; border: 1px solid var(--review-line); border-radius: 6px; overflow: hidden; }
 .studio-preview-bar {
   display: flex;
   align-items: baseline;
@@ -172,6 +172,7 @@ button { color: inherit; }
   padding: 13px 18px;
   border-bottom: 1px solid var(--review-line);
   border-left: 7px solid var(--concept-color);
+  border-radius: 6px 6px 0 0;
 }
 .studio-preview-bar span { font-family: Georgia, serif; font-size: 19px; color: var(--review-ink); }
 .studio-preview-bar small {
@@ -192,6 +193,7 @@ button { color: inherit; }
   margin-top: 18px;
   padding: 14px 18px;
   border: 1px solid var(--review-line);
+  border-radius: 6px;
   background: #fff;
 }
 .studio-anatomy-label {
@@ -207,11 +209,11 @@ button { color: inherit; }
 .studio-anatomy-thumb { width: 132px; flex: 0 0 132px; display: flex; justify-content: center; background: var(--review-paper); border-left: 1px solid var(--review-line); padding: 8px 0; }
 .studio-anatomy-thumb .section-schematic-svg { width: 112px; max-height: 64px; }
 
-.studio-empty { margin: 26px 0 0; padding: 28px; background: #fff; border: 1px solid var(--review-line); color: #53657e; }
+.studio-empty { margin: 26px 0 0; padding: 28px; background: #fff; border: 1px solid var(--review-line); border-radius: 6px; color: #53657e; }
 
 /* ===== Legacy gallery styles (component index cards used by /pages) ===== */
 .component-index { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-.component-index-card { display: grid; min-height: 390px; overflow: hidden; background: #fff; color: inherit; transition: transform 200ms ease, box-shadow 200ms ease; }
+.component-index-card { display: grid; min-height: 390px; overflow: hidden; background: #fff; border-radius: 6px; color: inherit; transition: transform 200ms ease, box-shadow 200ms ease; }
 .component-index-card:hover, .component-index-card:focus-visible { transform: translateY(-6px); box-shadow: 0 25px 55px rgba(16, 44, 87, .14); outline: 0; }
 .component-index-card:focus-visible { box-shadow: 0 0 0 3px var(--component-color), 0 25px 55px rgba(16, 44, 87, .14); }
 .component-index-card[aria-current="true"] { box-shadow: 0 0 0 3px var(--component-color), 0 25px 55px rgba(16, 44, 87, .14); }
@@ -243,12 +245,12 @@ button { color: inherit; }
 .concept-selector-button[aria-selected="true"] { border-color: var(--concept-color); box-shadow: 0 0 0 2px var(--concept-color), 0 12px 26px rgba(16, 44, 87, .1); }
 .concept-selector-button span { font-family: Georgia, serif; font-size: 17px; }
 .concept-selector-button small { color: #53657e; font-family: var(--font-geist-mono), monospace; font-size: 8px; letter-spacing: .1em; text-transform: uppercase; }
-.component-concept { min-width: 0; overflow: visible; background: #fff; border: 1px solid var(--review-line); }
+.component-concept { min-width: 0; overflow: hidden; background: #fff; border: 1px solid var(--review-line); border-radius: 6px; }
 .component-concept-label { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding: 15px 18px; border-bottom: 1px solid var(--review-line); border-left: 7px solid var(--concept-color); background: #fff; }
 .component-concept-label span:first-child { font-family: Georgia, serif; font-size: 22px; }
 .component-concept-label span:last-child { color: #53657e; font-family: var(--font-geist-mono), monospace; font-size: 8px; letter-spacing: .1em; text-transform: uppercase; }
 .component-gallery-section .component-preview { width: 100%; min-height: 0; margin: 0; scroll-margin-top: 28px; }
-.component-empty { margin: 18px 0 0; padding: 28px; background: #fff; border: 1px solid var(--review-line); color: #53657e; }
+.component-empty { margin: 18px 0 0; padding: 28px; background: #fff; border: 1px solid var(--review-line); border-radius: 6px; color: #53657e; }
 
 @media (max-width: 1050px) {
   .studio-layout { flex-direction: column; }

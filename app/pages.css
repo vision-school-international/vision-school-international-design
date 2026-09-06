@@ -24,7 +24,7 @@
   width: 100%;
   padding: 16px;
   border: 1px dashed color-mix(in srgb, var(--review-line) 80%, transparent);
-  border-radius: 0;
+  border-radius: 6px;
   background: transparent;
   color: #53657e;
   font-family: var(--font-geist-mono), monospace;
@@ -72,7 +72,7 @@
 .composer-create-actions button:focus-visible { box-shadow: 0 0 0 2px color-mix(in srgb, #1769c2 35%, transparent); outline: 0; }
 
 .composer-pages { display: grid; gap: 18px; margin-top: 26px; }
-.composer-page-card { background: #fff; border: 1px solid var(--review-line); border-radius: 0; }
+.composer-page-card { background: #fff; border: 1px solid var(--review-line); border-radius: 6px; overflow: hidden; }
 .composer-page-card-header {
   display: flex;
   align-items: center;
@@ -81,6 +81,7 @@
   padding: 16px 20px;
   border-bottom: 1px solid var(--review-line);
   border-left: 7px solid #102c57;
+  border-radius: 6px 6px 0 0;
 }
 .composer-page-card-meta { display: grid; gap: 4px; }
 .composer-page-card-meta h3 { margin: 0; font-family: Georgia, serif; font-size: 20px; font-weight: 400; letter-spacing: -.02em; color: var(--review-ink); }
@@ -151,7 +152,7 @@
   width: 100%;
   padding: 12px;
   border: 1px dashed color-mix(in srgb, var(--review-line) 80%, transparent);
-  border-radius: 0;
+  border-radius: 0 0 6px 6px;
   border-top: 0;
   background: transparent;
   color: #53657e;
@@ -172,6 +173,7 @@
   gap: 12px;
   padding: 14px 20px;
   border-top: 1px solid var(--review-line);
+  border-radius: 0 0 6px 6px;
   background: var(--review-paper);
 }
 .composer-add-form label { display: grid; gap: 6px; color: #53657e; font-family: var(--font-geist-mono), monospace; font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
@@ -215,11 +217,10 @@
 .page-view-meta h1 { margin: 0; font-family: Georgia, serif; font-size: 22px; font-weight: 400; letter-spacing: -.02em; }
 .page-view-meta span { color: #53657e; font-family: var(--font-geist-mono), monospace; font-size: 11px; }
 
-.page-view-empty { margin: 48px 4vw; padding: 48px 32px; border: 1px dashed var(--review-line); background: #fff; text-align: center; }
+.page-view-empty { margin: 48px 4vw; padding: 48px 32px; border: 1px dashed var(--review-line); border-radius: 6px; background: #fff; text-align: center; }
 .page-view-empty h2 { margin: 0 0 8px; font-family: Georgia, serif; font-size: 20px; font-weight: 400; }
 .page-view-empty p { margin: 0; color: #53657e; font-size: 14px; line-height: 1.5; }
 
-.page-entry { position: relative; }
 .page-entry-bar {
   position: absolute;
   top: 0;
@@ -263,7 +264,7 @@
   margin: 18px 4vw;
   padding: 15px;
   border: 1px dashed color-mix(in srgb, var(--review-line) 80%, transparent);
-  border-radius: 999px;
+  border-radius: 6px;
   background: transparent;
   color: #53657e;
   font-family: var(--font-geist-mono), monospace;
@@ -284,6 +285,7 @@
   background: #fff;
   border: 1px solid var(--review-line);
   border-top: 4px solid #102c57;
+  border-radius: 0 0 6px 6px;
 }
 .page-entry-picker h2 { margin: 0; font-family: Georgia, serif; font-size: 20px; font-weight: 400; letter-spacing: -.02em; }
 .page-entry-picker-form { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; }
@@ -370,7 +372,7 @@
   margin: 18px 4vw;
   padding: 15px;
   border: 1px dashed color-mix(in srgb, var(--review-line) 80%, transparent);
-  border-radius: 999px;
+  border-radius: 6px;
   background: transparent;
   color: #53657e;
   font-family: var(--font-geist-mono), monospace;
@@ -391,6 +393,7 @@
   background: #fff;
   border: 1px solid var(--review-line);
   border-top: 4px solid #102c57;
+  border-radius: 0 0 6px 6px;
 }
 .page-entry-picker h2 { margin: 0; font-family: Georgia, serif; font-size: 20px; font-weight: 400; letter-spacing: -.02em; }
 .page-entry-picker-form { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; }
@@ -421,7 +424,7 @@
 .page-entry-picker-actions button:hover { filter: brightness(1.08); }
 .page-entry-picker-actions button:focus-visible { box-shadow: 0 0 0 2px color-mix(in srgb, #1769c2 35%, transparent); outline: 0; }
 .pages-intro-summary { margin: 0; max-width: 680px; color: #53657e; font-size: 15px; line-height: 1.6; }
-.pages-empty-state { padding: 48px 32px; border: 1px dashed var(--review-line); background: #fff; color: #53657e; font-size: 14px; line-height: 1.6; text-align: center; }
+.pages-empty-state { padding: 48px 32px; border: 1px dashed var(--review-line); border-radius: 6px; background: #fff; color: #53657e; font-size: 14px; line-height: 1.6; text-align: center; }
 
 .page-view-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 78px; padding: 0 4vw; border-bottom: 1px solid var(--review-line); background: var(--review-paper); }
 .page-view-back, .page-view-catalog-link { color: inherit; font: inherit; font-size: 13px; font-weight: 680; text-decoration: none; }
@@ -430,7 +433,7 @@
 .page-view-meta h1 { margin: 0; font-family: Georgia, serif; font-size: 22px; font-weight: 400; letter-spacing: -.02em; }
 .page-view-meta span { color: #53657e; font-family: var(--font-geist-mono), monospace; font-size: 11px; }
 
-.page-view-empty { margin: 48px 4vw; padding: 48px 32px; border: 1px dashed var(--review-line); background: #fff; text-align: center; }
+.page-view-empty { margin: 48px 4vw; padding: 48px 32px; border: 1px dashed var(--review-line); border-radius: 6px; background: #fff; text-align: center; }
 .page-view-empty h2 { margin: 0 0 8px; font-family: Georgia, serif; font-size: 20px; font-weight: 400; }
 .page-view-empty p { margin: 0; color: #53657e; font-size: 14px; line-height: 1.5; }
 
