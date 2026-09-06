@@ -1,13 +1,5 @@
 export const sectionTypes = [
     {
-        key: "navigation",
-        name: "Navigation",
-        description: "**Purpose:** Give users a persistent map of the site and constant access to its main destinations.\n**Result:** Users can orient and move anywhere from any page without losing their place.",
-        anatomy: "Brand logo · Search trigger · Menu links · Primary action button",
-        image: "/images/community-city.jpg",
-        color: "#102c57",
-    },
-    {
         key: "hero",
         name: "Hero",
         description: "**Purpose:** State what the page offers and present the first action.\n**Result:** Users understand the page and can act within the first viewport, before scrolling.",
@@ -72,14 +64,6 @@ export const sectionTypes = [
         color: "#1769c2",
     },
     {
-        key: "footer",
-        name: "Footer",
-        description: "**Purpose:** Provide complete navigation, contact, and legal links.\n**Result:** The organization is verifiable and every page ends with a way forward or back.",
-        anatomy: "Directory links · Policy links · Signup input · Copyright",
-        image: "",
-        color: "#1f2c40",
-    },
-    {
         key: "announcement",
         name: "Announcement bar",
         description: "**Purpose:** Display one time-sensitive message above everything.\n**Result:** Urgent information is seen first, without popups or interruption.",
@@ -136,14 +120,6 @@ export const sectionTypes = [
         color: "#53657e",
     },
     {
-        key: "team",
-        name: "Team leadership",
-        description: "**Purpose:** Put named, accountable people behind the work.\n**Result:** Users know who is responsible and trust increases.",
-        anatomy: "Portraits · Roles · Background summaries",
-        image: "",
-        color: "#1f2c40",
-    },
-    {
         key: "resources",
         name: "Resources listing",
         description: "**Purpose:** Offer real downloadable material up front.\n**Result:** Users can verify substance before committing to anything.",
@@ -173,7 +149,7 @@ export const journeyStages = [
     {
         number: "00",
         name: "Globals",
-        sections: ["navigation", "footer"],
+        sections: [],
     },
     {
         number: "01",
@@ -198,6 +174,6 @@ export const journeyStages = [
     {
         number: "05",
         name: "Governance & Support",
-        sections: ["partners", "team", "resources"],
+        sections: ["partners", "resources"],
     },
 ];

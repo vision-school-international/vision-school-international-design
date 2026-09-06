@@ -4,6 +4,21 @@
   --review-line: #b9c9dc;
   --font-geist-sans: Arial, sans-serif;
   --font-geist-mono: "SFMono-Regular", Consolas, monospace;
+
+  /* Bridge to @vision-school-international/website-components' token names
+     so shared renderers pick up this gallery's real palette explicitly,
+     instead of relying on the coincidence that their fallback values match. */
+  --color-text: var(--review-ink);
+  --color-text-strong: #102c57;
+  --color-text-muted: #53657e;
+  --color-border: var(--review-line);
+  --color-page: var(--review-paper);
+  --color-surface: #fff;
+  --color-link: #1769c2;
+  --color-accent: #66afe6;
+  --color-action-text: #ffffff;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-geist-mono), monospace;
 }
 
 * { box-sizing: border-box; }

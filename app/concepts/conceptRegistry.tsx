@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 import { componentConcepts } from "./ComponentConcepts";
 import { regionalBranchDirectoryConcepts } from "./RegionalBranchDirectoryConcept";
-import { searchNavigationConcepts } from "./SearchNavigationConcept";
 import type { ComponentSection } from "./componentCatalog";
 
 export type ConceptRender = (props: { section: ComponentSection }) => ReactNode;
@@ -20,7 +19,6 @@ export type DesignConcept = {
 export type DesignConceptDefinition = DesignConcept;
 
 export const concepts: readonly DesignConcept[] = [
-  ...searchNavigationConcepts,
   ...regionalBranchDirectoryConcepts,
   ...componentConcepts,
 ];

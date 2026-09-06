@@ -64,14 +64,6 @@ export const concepts = [
     "source": "componentConcepts"
   },
   {
-    "key": "utility-footer",
-    "name": "Utility Footer",
-    "sections": [
-      "footer"
-    ],
-    "source": "componentConcepts"
-  },
-  {
     "key": "urgent-announcement",
     "name": "Urgent Announcement",
     "sections": [
@@ -128,14 +120,6 @@ export const concepts = [
     "source": "componentConcepts"
   },
   {
-    "key": "leadership-trust",
-    "name": "Leadership Trust",
-    "sections": [
-      "team"
-    ],
-    "source": "componentConcepts"
-  },
-  {
     "key": "ongoing-resources",
     "name": "Ongoing Resources",
     "sections": [
@@ -160,16 +144,8 @@ export const concepts = [
     "source": "componentConcepts"
   },
   {
-    "key": "search-navigation",
-    "name": "Search Navigation",
-    "sections": [
-      "navigation"
-    ],
-    "source": "searchNavigationConcepts"
-  },
-  {
-    "key": "regional-branch-directory",
-    "name": "Regional Branch Directory",
+    "key": "branch-finder",
+    "name": "Branch Finder",
     "sections": [
       "classes"
     ],

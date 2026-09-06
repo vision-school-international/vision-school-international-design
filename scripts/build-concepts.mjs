@@ -7,7 +7,6 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 const conceptFiles = [
   "app/concepts/ComponentConcepts.tsx",
-  "app/concepts/SearchNavigationConcept.tsx",
   "app/concepts/RegionalBranchDirectoryConcept.tsx",
 ];
 

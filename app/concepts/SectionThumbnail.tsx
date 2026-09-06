@@ -13,32 +13,6 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
   const mutedFill = "rgba(255, 255, 255, 0.25)";
 
   switch (section) {
-    case "navigation":
-      return (
-        <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
-          {/* Top Browser Bar */}
-          <rect x="20" y="24" width="200" height="92" rx="2" stroke={strokeColor} strokeWidth="1.5" fill={fillColor} />
-          {/* Header Bar */}
-          <rect x="20" y="24" width="200" height="32" fill="rgba(255,255,255,0.08)" />
-          <line x1="20" y1="56" x2="220" y2="56" stroke={strokeColor} strokeWidth="1" />
-          {/* Brand Logo & Text */}
-          <rect x="32" y="34" width="12" height="12" rx="2" fill={accent} />
-          <rect x="48" y="37" width="36" height="6" rx="1" fill={solidFill} />
-          {/* Nav Links */}
-          <rect x="106" y="38" width="18" height="4" rx="1" fill={mutedFill} />
-          <rect x="130" y="38" width="18" height="4" rx="1" fill={mutedFill} />
-          <rect x="154" y="38" width="18" height="4" rx="1" fill={mutedFill} />
-          {/* CTA Button */}
-          <rect x="180" y="32" width="30" height="16" rx="3" fill={accent} />
-          <rect x="186" y="38" width="18" height="4" rx="1" fill="#fff" />
-          {/* Hero Wireframe Body */}
-          <rect x="32" y="70" width="80" height="10" rx="1" fill={solidFill} />
-          <rect x="32" y="86" width="60" height="4" rx="1" fill={mutedFill} />
-          <rect x="32" y="94" width="24" height="10" rx="2" fill={accent} />
-          <rect x="140" y="68" width="68" height="38" rx="2" stroke={strokeColor} strokeWidth="1" fill="rgba(255,255,255,0.05)" />
-        </svg>
-      );
-
     case "hero":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
@@ -217,35 +191,6 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "footer":
-      return (
-        <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
-          {/* Frame */}
-          <rect x="20" y="20" width="200" height="100" rx="2" stroke={strokeColor} strokeWidth="1.5" fill={fillColor} />
-          {/* 4 Link Columns */}
-          {/* Brand Col */}
-          <rect x="32" y="32" width="12" height="12" rx="2" fill={accent} />
-          <rect x="32" y="48" width="40" height="4" rx="1" fill={solidFill} />
-          <rect x="32" y="56" width="34" height="3" rx="1" fill={mutedFill} />
-          {/* Nav Col */}
-          <rect x="88" y="34" width="24" height="5" rx="1" fill={solidFill} />
-          <rect x="88" y="44" width="28" height="3" rx="1" fill={mutedFill} />
-          <rect x="88" y="52" width="22" height="3" rx="1" fill={mutedFill} />
-          <rect x="88" y="60" width="26" height="3" rx="1" fill={mutedFill} />
-          {/* Resources Col */}
-          <rect x="130" y="34" width="24" height="5" rx="1" fill={solidFill} />
-          <rect x="130" y="44" width="26" height="3" rx="1" fill={mutedFill} />
-          <rect x="130" y="52" width="20" height="3" rx="1" fill={mutedFill} />
-          <rect x="130" y="60" width="28" height="3" rx="1" fill={mutedFill} />
-          {/* Action Col */}
-          <rect x="172" y="34" width="34" height="16" rx="2" stroke={strokeColor} strokeWidth="1" fill="rgba(255,255,255,0.06)" />
-          {/* Copyright Divider & Bar */}
-          <line x1="20" y1="84" x2="220" y2="84" stroke={strokeColor} strokeWidth="1" />
-          <rect x="32" y="96" width="60" height="4" rx="1" fill={mutedFill} />
-          <rect x="168" y="96" width="40" height="4" rx="1" fill={mutedFill} />
-        </svg>
-      );
-
     case "announcement":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
@@ -380,30 +325,6 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
           <polygon points="140,62 148,78 132,78" stroke={accent} strokeWidth="1.5" fill="none" />
           <rect x="166" y="54" width="36" height="36" rx="4" stroke={strokeColor} strokeWidth="1" fill="rgba(255,255,255,0.08)" />
           <circle cx="184" cy="72" r="9" stroke={accent} strokeWidth="1" strokeDasharray="3 2" />
-        </svg>
-      );
-
-    case "team":
-      return (
-        <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
-          {/* Frame */}
-          <rect x="20" y="20" width="200" height="100" rx="2" stroke={strokeColor} strokeWidth="1.5" fill={fillColor} />
-          {/* 3 Leader Columns */}
-          {/* Member 1 */}
-          <circle cx="56" cy="48" r="14" fill="rgba(255,255,255,0.15)" stroke={accent} strokeWidth="1.5" />
-          <rect x="38" y="70" width="36" height="6" rx="1" fill={solidFill} />
-          <rect x="42" y="79" width="28" height="4" rx="1" fill={accent} />
-          <rect x="40" y="87" width="32" height="3" rx="1" fill={mutedFill} />
-          {/* Member 2 */}
-          <circle cx="120" cy="48" r="14" fill="rgba(255,255,255,0.15)" stroke={accent} strokeWidth="1.5" />
-          <rect x="102" y="70" width="36" height="6" rx="1" fill={solidFill} />
-          <rect x="106" y="79" width="28" height="4" rx="1" fill={accent} />
-          <rect x="104" y="87" width="32" height="3" rx="1" fill={mutedFill} />
-          {/* Member 3 */}
-          <circle cx="184" cy="48" r="14" fill="rgba(255,255,255,0.15)" stroke={accent} strokeWidth="1.5" />
-          <rect x="166" y="70" width="36" height="6" rx="1" fill={solidFill} />
-          <rect x="170" y="79" width="28" height="4" rx="1" fill={accent} />
-          <rect x="168" y="87" width="32" height="3" rx="1" fill={mutedFill} />
         </svg>
       );
 
