@@ -1,5 +1,5 @@
 import ts from "typescript";
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const root = "/Users/dev/Projects/vision-school-international-design";
