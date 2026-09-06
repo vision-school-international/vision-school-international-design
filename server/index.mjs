@@ -5,6 +5,8 @@ import { fileURLToPath } from "node:url";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { sectionTypes, journeyStages } from "./registry-data.mjs";
 import { concepts } from "./registry-concepts.mjs";
+import { endpoints, workflow } from "./api-manifest.mjs";
+import { renderApiDoc, renderManifest } from "./api-doc.mjs";
 
 const dist = fileURLToPath(new URL("../dist", import.meta.url));
 const index = fileURLToPath(new URL("../dist/index.html", import.meta.url));
@@ -30,10 +32,41 @@ const writePages = async (pages) => {
 
 export const app = new Hono();
 
+const registrySnapshot = () => ({
+  sectionCount: sectionTypes.length,
+  stageCount: journeyStages.length,
+  conceptCount: concepts.length,
+  sectionKeys: sectionTypes.map((s) => s.key),
+  conceptMapSample: Object.fromEntries(
+    concepts.slice(0, 6).map((concept) => [concept.key, concept.sections]),
+  ),
+});
+
+const apiVersion = "1.0";
+const endpointCount = endpoints.length;
+
 app.get("/health", (c) => c.text("ok"));
+
+app.get("/api/manifest", (c) =>
+  c.json(renderManifest({ version: apiVersion, endpointCount, registry: registrySnapshot(), workflow, endpoints })),
+);
+
+app.get("/api/doc", (c) => {
+  const html = renderApiDoc({
+    version: apiVersion,
+    endpointCount,
+    registry: registrySnapshot(),
+    workflow,
+    endpoints,
+  });
+  return c.html(html);
+});
+
+app.get("/api", (c) => c.redirect("/api/doc"));
 
 app.get("/api/registry", (c) =>
   c.json({
+    version: apiVersion,
     sections: sectionTypes,
     stages: journeyStages,
     concepts: concepts.map(({ key, name, sections }) => ({ key, name, sections })),
