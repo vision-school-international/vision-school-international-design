@@ -1,7 +1,9 @@
 # Branch directory forward-port handoff
 
-**Prepared:** September 7, 2026  
-**Scope:** VIS-343 full directory and VIS-344 homepage branch finder  
+**Prepared:** September 7, 2026
+
+**Scope:** VIS-343 full directory and VIS-344 homepage branch finder
+
 **Status:** Ready for Anthony's architecture review. No production database, CMS content, package release, or deployment was changed while preparing this proposal.
 
 ## Outcome
