@@ -9,6 +9,7 @@ This folder is the shared GitHub home for Vision School meeting summaries, produ
 | [Product Requirements Document](./PRD.md) | Main source for approved direction, requirements, boundaries, risks, and open decisions | Draft for team and ministry review |
 | [August 31 website and operations meeting](./meeting-notes/2026-08-31-website-and-operations-review.md) | Plain-language decisions, requirements, next work, and owner action items | Reviewed by Chris |
 | [August 31 Linear issue changes](./linear-drafts/2026-08-31-website-meeting.md) | Exact proposed updates for VIS-343 and VIS-344 plus the held media-library issue | Approved by Chris for submission |
+| [Branch directory forward-port handoff](./technical-handoffs/2026-09-07-branch-directory-forward-port.md) | Current architecture proposal, repository state, release sequence, and approval gates for VIS-343 and VIS-344 | Ready for Anthony's architecture review |
 | [Meeting transcript index](./transcripts/README.md) | Internal source transcripts approved by Chris for team planning use | Internal reference only |
 | [Image sourcing and approval notes](../IMAGE-SOURCING.md) | Sources, candidate assets, and publication-approval status | Updated by the regional-directory design work |
 
@@ -17,6 +18,7 @@ This folder is the shared GitHub home for Vision School meeting summaries, produ
 - `meeting-notes/` contains concise meeting decisions and action items.
 - `transcripts/` contains the specific internal transcript copies Chris approved for this private planning repository. They are source records, not approved requirements or public copy.
 - `linear-drafts/` contains issue wording prepared under the team issue-writing standard. Linear remains the live source for issue status after submission.
+- `technical-handoffs/` contains cross-repository implementation proposals and approval gates prepared for the responsible technical reviewer.
 - `media/` is reserved for planning notes about sourcing, rights, approval, captions, and intended use. Actual approved design assets remain in their appropriate repository asset folders.
 - `PRD.md` is the durable product-requirements source. Meeting notes should update the PRD when a decision changes the maintained product direction.
 
