@@ -29,7 +29,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-city.jpg",
     color: "#1769c2",
     sections: {
-      hero: function renderPurposeHero() {
+      purposeHero: function renderPurposeHero() {
         return createElement(SectionRenderer, {
           section: purposeHeroSection,
           pathPrefix: "purpose-hero",
@@ -43,7 +43,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/intercp-young-adults.webp",
     color: "#66afe6",
     sections: {
-      proof: function renderTrustProof() {
+      trustProof: function renderTrustProof() {
         return createElement(SectionRenderer, {
           section: trustProofSection,
           pathPrefix: "trust-proof",
@@ -57,7 +57,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-table.jpg",
     color: "#1f2c40",
     sections: {
-      about: function renderMissionAbout() {
+      missionAbout: function renderMissionAbout() {
         return createElement(SectionRenderer, {
           section: missionAboutSection,
           pathPrefix: "mission-about",
@@ -71,7 +71,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/youth-gathering.jpg",
     color: "#102c57",
     sections: {
-      course: function renderCoursePathway() {
+      coursePathway: function renderCoursePathway() {
         return createElement(SectionRenderer, {
           section: coursePathwaySection,
           pathPrefix: "course-pathway",
@@ -85,7 +85,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-city.jpg",
     color: "#1769c2",
     sections: {
-      classes: function renderClassDecisionPath() {
+      classFinder: function renderClassDecisionPath() {
         return createElement(SectionRenderer, {
           section: classDecisionPathSection,
           pathPrefix: "class-decision-path",
@@ -99,7 +99,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/intercp-mission-camp.webp",
     color: "#53657e",
     sections: {
-      stories: function renderStudentStory() {
+      studentStory: function renderStudentStory() {
         return createElement(SectionRenderer, {
           section: studentStorySection,
           pathPrefix: "student-story",
@@ -113,7 +113,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "https://i.ytimg.com/vi/zelhy09kxp8/hqdefault.jpg",
     color: "#102c57",
     sections: {
-      videos: function renderMissionVideoLibrary() {
+      videoLibrary: function renderMissionVideoLibrary() {
         return createElement(SectionRenderer, {
           section: missionVideoLibrarySection,
           pathPrefix: "mission-video-library",
@@ -127,7 +127,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-table.jpg",
     color: "#1769c2",
     sections: {
-      cta: function renderDecisionCta() {
+      decisionCta: function renderDecisionCta() {
         return createElement(SectionRenderer, {
           section: decisionCtaSection,
           pathPrefix: "decision-cta",
@@ -141,7 +141,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-city.jpg",
     color: "#1769c2",
     sections: {
-      announcement: function renderUrgentAnnouncement() {
+      announcementBar: function renderUrgentAnnouncement() {
         return createElement(SectionRenderer, {
           section: urgentAnnouncementSection,
           pathPrefix: "urgent-announcement",
@@ -155,7 +155,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/mountain-sunrise.jpg",
     color: "#53657e",
     sections: {
-      breadcrumbs: function renderOrientationBreadcrumbs() {
+      breadcrumbTrail: function renderOrientationBreadcrumbs() {
         return createElement(SectionRenderer, {
           section: orientationBreadcrumbsSection,
           pathPrefix: "orientation-breadcrumbs",
@@ -169,7 +169,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/intercp-mission-camp.webp",
     color: "#102c57",
     sections: {
-      events: function renderScheduleCalendar() {
+      eventsCalendar: function renderScheduleCalendar() {
         return createElement(SectionRenderer, {
           section: scheduleCalendarSection,
           pathPrefix: "schedule-calendar",
@@ -183,7 +183,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-table.jpg",
     color: "#1f2c40",
     sections: {
-      faq: function renderPracticalFaq() {
+      faqAccordion: function renderPracticalFaq() {
         return createElement(SectionRenderer, {
           section: practicalFaqSection,
           pathPrefix: "practical-faq",
@@ -197,7 +197,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-city.jpg",
     color: "#1769c2",
     sections: {
-      registration: function renderRegistrationInquiry() {
+      registrationContactForm: function renderRegistrationInquiry() {
         return createElement(SectionRenderer, {
           section: registrationInquirySection,
           pathPrefix: "registration-inquiry",
@@ -211,7 +211,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/youth-gathering.jpg",
     color: "#102c57",
     sections: {
-      newsletter: function renderVisitorRetentionSignup() {
+      newsletterSignup: function renderVisitorRetentionSignup() {
         return createElement(SectionRenderer, {
           section: visitorRetentionSignupSection,
           pathPrefix: "visitor-retention-signup",
@@ -225,7 +225,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-table.jpg",
     color: "#53657e",
     sections: {
-      partners: function renderPartnerCredibility() {
+      partnerLogoStrip: function renderPartnerCredibility() {
         return createElement(SectionRenderer, {
           section: partnerCredibilitySection,
           pathPrefix: "partner-credibility",
@@ -239,7 +239,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/mountain-sunrise.jpg",
     color: "#1769c2",
     sections: {
-      resources: function renderOngoingResources() {
+      resourcesBlogListing: function renderOngoingResources() {
         return createElement(SectionRenderer, {
           section: ongoingResourcesSection,
           pathPrefix: "ongoing-resources",
@@ -253,7 +253,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/intercp-mission-camp.webp",
     color: "#102c57",
     sections: {
-      gallery: function renderExperienceGallery() {
+      galleryImageGrid: function renderExperienceGallery() {
         return createElement(SectionRenderer, {
           section: experienceGallerySection,
           pathPrefix: "experience-gallery",
@@ -267,7 +267,7 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-table.jpg",
     color: "#66afe6",
     sections: {
-      donation: function renderSupportParticipation() {
+      donationSupportCta: function renderSupportParticipation() {
         return createElement(SectionRenderer, {
           section: supportParticipationSection,
           pathPrefix: "support-participation",

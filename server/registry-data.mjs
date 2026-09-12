@@ -1,179 +1,60 @@
-export const sectionTypes = [
-    {
-        key: "hero",
-        name: "Hero",
-        description: "**Purpose:** State what the page offers and present the first action.\n**Result:** Users understand the page and can act within the first viewport, before scrolling.",
-        anatomy: "Headline · Subtitle · Action button · Media window",
-        image: "/images/mountain-sunrise.jpg",
-        color: "#1769c2",
-    },
-    {
-        key: "proof",
-        name: "Proof",
-        description: "**Purpose:** Show verifiable facts — numbers, dates, reach.\n**Result:** Skeptical users gain objective evidence and keep reading instead of leaving.",
-        anatomy: "Metric counters · Reach statistics · Credibility markers",
-        image: "/images/intercp-young-adults.webp",
-        color: "#66afe6",
-    },
-    {
-        key: "about",
-        name: "About",
-        description: "**Purpose:** Explain who the offer is for and what it stands on.\n**Result:** Users decide whether it applies to them before investing more attention.",
-        anatomy: "Narrative text · Value callout · Supporting photo",
-        image: "/images/community-table.jpg",
-        color: "#1f2c40",
-    },
-    {
-        key: "course",
-        name: "Course",
-        description: "**Purpose:** Break a multi-week program into a visible weekly structure.\n**Result:** A long commitment becomes concrete and schedulable instead of vague.",
-        anatomy: "Weekly milestones · Topic list · Time commitment",
-        image: "/images/youth-gathering.jpg",
-        color: "#102c57",
-    },
-    {
-        key: "classes",
-        name: "Class finder",
-        description: "**Purpose:** Let users search options by location, date, or format.\n**Result:** Interested users narrow many possibilities down to one specific choice.",
-        anatomy: "Filter bar · Result cards · Schedule details · Registration link",
-        image: "/images/vision-school-media/north-america-mission-camp-crowd.webp",
-        color: "#1769c2",
-    },
-    {
-        key: "stories",
-        name: "Stories",
-        description: "**Purpose:** Show one real person's experience and outcome.\n**Result:** Users judge the offer through someone like themselves rather than through claims.",
-        anatomy: "Quote · Portrait · Participant background",
-        image: "/images/intercp-mission-camp.webp",
-        color: "#53657e",
-    },
-    {
-        key: "videos",
-        name: "Video library",
-        description: "**Purpose:** Play real footage on the page.\n**Result:** Users experience the subject directly — motion and sound communicate what text cannot.",
-        anatomy: "Featured player · Playlist · Captions",
-        image: "/images/vision-school-media/north-america-mission-camp-worship.webp",
-        color: "#102c57",
-    },
-    {
-        key: "cta",
-        name: "Calls to action",
-        description: "**Purpose:** Present one focused action at the point of highest intent.\n**Result:** Convinced users convert immediately instead of leaving without a next step.",
-        anatomy: "Banner · Primary button · Reassurance note",
-        image: "/images/vision-school-media/young-generation-mission-camp-community.webp",
-        color: "#1769c2",
-    },
-    {
-        key: "announcement",
-        name: "Announcement bar",
-        description: "**Purpose:** Display one time-sensitive message above everything.\n**Result:** Urgent information is seen first, without popups or interruption.",
-        anatomy: "Badge · Short message · Direct link",
-        image: "",
-        color: "#1769c2",
-    },
-    {
-        key: "breadcrumbs",
-        name: "Breadcrumbs",
-        description: "**Purpose:** Show the user's position in the site hierarchy.\n**Result:** Users on deep pages can backtrack in one click instead of hunting.",
-        anatomy: "Path trail · Chevron dividers · Current page",
-        image: "",
-        color: "#53657e",
-    },
-    {
-        key: "events",
-        name: "Events calendar",
-        description: "**Purpose:** List upcoming dated items in chronological order.\n**Result:** Users can plan around fixed dates instead of guessing availability.",
-        anatomy: "Date blocks · Details · Status indicators",
-        image: "/images/vision-school-media/north-america-mission-camp-nations.webp",
-        color: "#102c57",
-    },
-    {
-        key: "faq",
-        name: "FAQ accordion",
-        description: "**Purpose:** Answer predictable questions inline.\n**Result:** Objections are resolved on the spot instead of becoming exit points.",
-        anatomy: "Question rows · Expandable answers · Contact fallback",
-        image: "",
-        color: "#1f2c40",
-    },
-    {
-        key: "registration",
-        name: "Registration form",
-        description: "**Purpose:** Capture contact details with the fewest fields possible.\n**Result:** Interest becomes a record instead of a lost visit.",
-        anatomy: "Input fields · Select dropdown · Submit button",
-        image: "",
-        color: "#1769c2",
-    },
-    {
-        key: "newsletter",
-        name: "Newsletter signup",
-        description: "**Purpose:** Offer a low-commitment way to stay connected.\n**Result:** Users not ready to act still become reachable contacts.",
-        anatomy: "Email input · Subscribe button · Privacy note",
-        image: "",
-        color: "#102c57",
-    },
-    {
-        key: "partners",
-        name: "Partner logo strip",
-        description: "**Purpose:** Show which other institutions are involved.\n**Result:** Third-party participation signals legitimacy without a single word of claims.",
-        anatomy: "Logos · Context statement · Verification marker",
-        image: "",
-        color: "#53657e",
-    },
-    {
-        key: "resources",
-        name: "Resources listing",
-        description: "**Purpose:** Offer real downloadable material up front.\n**Result:** Users can verify substance before committing to anything.",
-        anatomy: "Format badges · Titles · Download links",
-        image: "",
-        color: "#1769c2",
-    },
-    {
-        key: "gallery",
-        name: "Gallery image grid",
-        description: "**Purpose:** Show real, candid images of the activity.\n**Result:** Users see what participation actually looks like instead of imagining it.",
-        anatomy: "Photo grid · Captions · Aspect-ratio tiles",
-        image: "/images/vision-school-media/north-america-mission-camp-worship.webp",
-        color: "#102c57",
-    },
-    {
-        key: "donation",
-        name: "Donation CTA",
-        description: "**Purpose:** Offer fixed amounts plus a custom option with a stated use of funds.\n**Result:** Willing supporters complete a gift in one clear action.",
-        anatomy: "Amount tiers · Custom input · Secure payment button",
-        image: "",
-        color: "#66afe6",
-    },
-];
+import { reviewCatalog } from "@vision-school-international/website-components/review";
+// Only sections listed here get their own review card. `branchFinder` is a
+// real package component but renders as an alternate concept inside
+// classFinder's card, not as its own section (see RegionalBranchDirectoryConcept.tsx).
+const localSectionMeta = {
+    purposeHero: { image: "/images/mountain-sunrise.jpg", stage: "01" },
+    announcementBar: { image: "", stage: "01" },
+    breadcrumbTrail: { image: "", stage: "01" },
+    missionAbout: { image: "/images/community-table.jpg", stage: "02" },
+    trustProof: { image: "/images/intercp-young-adults.webp", stage: "02" },
+    studentStory: { image: "/images/intercp-mission-camp.webp", stage: "02" },
+    videoLibrary: { image: "/images/vision-school-media/north-america-mission-camp-worship.webp", stage: "02" },
+    galleryImageGrid: { image: "/images/vision-school-media/north-america-mission-camp-worship.webp", stage: "02" },
+    coursePathway: { image: "/images/youth-gathering.jpg", stage: "03" },
+    classFinder: { image: "/images/vision-school-media/north-america-mission-camp-crowd.webp", stage: "03" },
+    eventsCalendar: { image: "/images/vision-school-media/north-america-mission-camp-nations.webp", stage: "03" },
+    faqAccordion: { image: "", stage: "03" },
+    decisionCta: { image: "/images/vision-school-media/young-generation-mission-camp-community.webp", stage: "04" },
+    registrationContactForm: { image: "", stage: "04" },
+    newsletterSignup: { image: "", stage: "04" },
+    donationSupportCta: { image: "", stage: "04" },
+    partnerLogoStrip: { image: "", stage: "05" },
+    resourcesBlogListing: { image: "", stage: "05" },
+};
+export const sectionTypes = reviewCatalog
+    .map((entry) => {
+    const meta = localSectionMeta[entry.blockType];
+    if (!meta)
+        return undefined;
+    return {
+        key: entry.blockType,
+        name: entry.name,
+        description: entry.description,
+        anatomy: entry.anatomy,
+        color: entry.color,
+        image: meta.image,
+        stage: meta.stage,
+    };
+})
+    .filter((entry) => entry !== undefined);
 export const sectionId = (section) => `section-${section}`;
-export const journeyStages = [
-    {
-        number: "00",
-        name: "Globals",
-        sections: [],
-    },
-    {
-        number: "01",
-        name: "Orientation & Hook",
-        sections: ["hero", "announcement", "breadcrumbs"],
-    },
-    {
-        number: "02",
-        name: "Narrative & Trust",
-        sections: ["about", "proof", "stories", "videos", "gallery"],
-    },
-    {
-        number: "03",
-        name: "Curriculum & Discovery",
-        sections: ["course", "classes", "events", "faq"],
-    },
-    {
-        number: "04",
-        name: "Conversion & Retention",
-        sections: ["cta", "registration", "newsletter", "donation"],
-    },
-    {
-        number: "05",
-        name: "Governance & Support",
-        sections: ["partners", "resources"],
-    },
-];
+const stageNames = {
+    "00": "Globals",
+    "01": "Orientation & Hook",
+    "02": "Narrative & Trust",
+    "03": "Curriculum & Discovery",
+    "04": "Conversion & Retention",
+    "05": "Governance & Support",
+};
+const sectionsByStage = sectionTypes.reduce((acc, section) => {
+    (acc[section.stage] ??= []).push(section.key);
+    return acc;
+}, { "00": [] });
+export const journeyStages = Object.keys(stageNames)
+    .sort()
+    .map((number) => ({
+    number,
+    name: stageNames[number],
+    sections: sectionsByStage[number] ?? [],
+}));

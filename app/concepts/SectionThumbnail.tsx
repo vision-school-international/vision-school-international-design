@@ -13,7 +13,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
   const mutedFill = "rgba(255, 255, 255, 0.25)";
 
   switch (section) {
-    case "hero":
+    case "purposeHero":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}
@@ -33,7 +33,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "proof":
+    case "trustProof":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}
@@ -61,7 +61,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "about":
+    case "missionAbout":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}
@@ -82,7 +82,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "course":
+    case "coursePathway":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}
@@ -113,7 +113,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "classes":
+    case "classFinder":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}
@@ -139,7 +139,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "stories":
+    case "studentStory":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}
@@ -157,7 +157,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "videos":
+    case "videoLibrary":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}
@@ -174,7 +174,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "cta":
+    case "decisionCta":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}
@@ -191,7 +191,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "announcement":
+    case "announcementBar":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Background Ghost Page */}
@@ -207,7 +207,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "breadcrumbs":
+    case "breadcrumbTrail":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}
@@ -229,7 +229,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "events":
+    case "eventsCalendar":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}
@@ -253,7 +253,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "faq":
+    case "faqAccordion":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}
@@ -275,7 +275,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "registration":
+    case "registrationContactForm":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}
@@ -295,7 +295,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "newsletter":
+    case "newsletterSignup":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}
@@ -310,7 +310,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "partners":
+    case "partnerLogoStrip":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}
@@ -328,7 +328,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "resources":
+    case "resourcesBlogListing":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}
@@ -355,7 +355,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "gallery":
+    case "galleryImageGrid":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}
@@ -369,7 +369,7 @@ export function SectionThumbnail({ section, color = "currentColor" }: SectionThu
         </svg>
       );
 
-    case "donation":
+    case "donationSupportCta":
       return (
         <svg viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="section-schematic-svg" aria-hidden="true">
           {/* Frame */}

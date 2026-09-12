@@ -12,7 +12,7 @@ export const regionalBranchDirectoryConcepts: readonly DesignConceptDefinition[]
     selectorLabel: "Featured branches, up to three",
     previewLabel: "Illustrative teaser · No search or filter, capped at 3 branches",
     sections: {
-      classes: function renderBranchFinder() {
+      classFinder: function renderBranchFinder() {
         return createElement(SectionRenderer, {
           section: branchFinderSection,
           pathPrefix: "branch-finder",

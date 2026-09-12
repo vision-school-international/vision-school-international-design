@@ -84,7 +84,7 @@ export const registrationInquirySection: RegistrationContactFormSection = {
   emailLabel: "Email",
   emailPlaceholder: "student@example.com",
   interestLabel: "Interest",
-  interestOptions: [
+  interests: [
     { label: "Find a class", value: "class" },
     { label: "Mission camp", value: "camp" },
     { label: "Talk to a coordinator", value: "contact" },

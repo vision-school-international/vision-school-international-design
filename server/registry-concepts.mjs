@@ -2,153 +2,115 @@ export const concepts = [
   {
     "key": "purpose-hero",
     "name": "Purpose Hero",
-    "sections": [
-      "hero"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "trust-proof",
     "name": "Trust Proof",
-    "sections": [
-      "proof"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "mission-about",
     "name": "Mission About",
-    "sections": [
-      "about"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "course-pathway",
     "name": "Course Pathway",
-    "sections": [
-      "course"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "class-decision-path",
     "name": "Class Decision Path",
-    "sections": [
-      "classes"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "student-story",
     "name": "Student Story",
-    "sections": [
-      "stories"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "mission-video-library",
     "name": "Mission Video Library",
-    "sections": [
-      "videos"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "decision-cta",
     "name": "Decision CTA",
-    "sections": [
-      "cta"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "urgent-announcement",
     "name": "Urgent Announcement",
-    "sections": [
-      "announcement"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "orientation-breadcrumbs",
     "name": "Orientation Breadcrumbs",
-    "sections": [
-      "breadcrumbs"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "schedule-calendar",
     "name": "Schedule Calendar",
-    "sections": [
-      "events"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "practical-faq",
     "name": "Practical FAQ",
-    "sections": [
-      "faq"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "registration-inquiry",
     "name": "Registration Inquiry",
-    "sections": [
-      "registration"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "visitor-retention-signup",
     "name": "Visitor Retention Signup",
-    "sections": [
-      "newsletter"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "partner-credibility",
     "name": "Partner Credibility",
-    "sections": [
-      "partners"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "ongoing-resources",
     "name": "Ongoing Resources",
-    "sections": [
-      "resources"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "experience-gallery",
     "name": "Experience Gallery",
-    "sections": [
-      "gallery"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "support-participation",
     "name": "Support Participation",
-    "sections": [
-      "donation"
-    ],
+    "sections": [],
     "source": "componentConcepts"
   },
   {
     "key": "branch-finder",
     "name": "Branch Finder",
-    "sections": [
-      "classes"
-    ],
+    "sections": [],
     "source": "regionalBranchDirectoryConcepts"
   }
 ];
