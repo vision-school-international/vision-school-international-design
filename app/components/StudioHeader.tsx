@@ -1,11 +1,12 @@
 type StudioHeaderProps = {
-  active: "sections" | "pages" | "api";
+  active: "sections" | "pages" | "api" | "design";
 };
 
 const tabs = [
   { key: "sections", label: "Sections", href: "/" },
   { key: "pages", label: "Pages", href: "/pages" },
   { key: "api", label: "API", href: "/api" },
+  { key: "design", label: "Design", href: "/design" },
 ] as const;
 
 export default function StudioHeader({ active }: StudioHeaderProps) {

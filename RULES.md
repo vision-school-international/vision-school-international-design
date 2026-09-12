@@ -102,3 +102,8 @@ architecture checks to make a change pass.
 ## Intentional exceptions
 
 A current explicit user instruction can override a rule for that task. Keep the exception narrow. If it intentionally changes the maintained architecture, update this file and the linked context files in the same contribution.
+
+- `/design` (`app/design.tsx`) is an approved exception to "do not add pages,
+  routes... or application flows": a static design-token reference page
+  (colors, typography, radius), explicitly requested. Routed like `/pages`
+  in `src/main.tsx`; added as a fourth `StudioHeader` tab.
