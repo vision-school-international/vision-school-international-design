@@ -28,3 +28,6 @@ yarn-error.log*
 
 # build output
 /dist/
+
+# runtime page data (created by the API at runtime)
+/data/

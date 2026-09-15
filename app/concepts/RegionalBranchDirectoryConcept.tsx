@@ -1,18 +1,22 @@
 import { createElement } from "react";
-import { RegionalBranchDirectory } from "../components/RegionalBranchDirectory";
+import { SectionRenderer } from "@vision-school-international/website-components/react";
 import type { DesignConceptDefinition } from "./conceptRegistry";
+import { branchFinderSection } from "./sampleSections";
 
 export const regionalBranchDirectoryConcepts: readonly DesignConceptDefinition[] = [
   {
-    key: "regional-branch-directory",
-    name: "Regional Branch Directory",
+    key: "branch-finder",
+    name: "Branch Finder",
     image: "/images/vision-school-media/north-america-mission-camp-crowd.webp",
-    color: "#1769c2",
-    selectorLabel: "Search and expandable regional list",
-    previewLabel: "Illustrative directory · Mexico remains future scope",
+    color: "#66afe6",
+    selectorLabel: "Featured branches, up to three",
+    previewLabel: "Illustrative teaser · No search or filter, capped at 3 branches",
     sections: {
-      classes: function renderRegionalBranchDirectory() {
-        return createElement(RegionalBranchDirectory);
+      classFinder: function renderBranchFinder() {
+        return createElement(SectionRenderer, {
+          section: branchFinderSection,
+          pathPrefix: "branch-finder",
+        });
       },
     },
   },

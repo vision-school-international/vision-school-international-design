@@ -1,173 +1,74 @@
-export const sectionTypes = [
-  {
-    key: "navigation",
-    name: "Navigation",
-    description: "Helps users find the right path quickly.",
-    reviewPoints: ["Primary links", "Registration path", "Utility actions"],
-    image: "/images/community-city.jpg",
-    color: "#102c57",
-  },
-  {
-    key: "hero",
-    name: "Hero",
-    description: "Explains the page and main action.",
-    reviewPoints: ["Headline", "Primary CTA", "Hero visual"],
-    image: "/images/mountain-sunrise.jpg",
-    color: "#1769c2",
-  },
-  {
-    key: "proof",
-    name: "Proof",
-    description: "Shows facts that build trust.",
-    reviewPoints: ["Program facts", "Key numbers", "Credibility markers"],
-    image: "/images/intercp-young-adults.webp",
-    color: "#66afe6",
-  },
-  {
-    key: "about",
-    name: "About",
-    description: "Explains the purpose and value.",
-    reviewPoints: ["Program purpose", "Audience fit", "Core value"],
-    image: "/images/community-table.jpg",
-    color: "#1f2c40",
-  },
-  {
-    key: "course",
-    name: "Course",
-    description: "Shows what the course includes.",
-    reviewPoints: ["Session structure", "Topics", "Time commitment"],
-    image: "/images/youth-gathering.jpg",
-    color: "#102c57",
-  },
-  {
-    key: "classes",
-    name: "Class finder",
-    description: "Helps users choose a class.",
-    reviewPoints: ["Location", "Schedule", "Registration action"],
-    image: "/images/vision-school-media/north-america-mission-camp-crowd.webp",
-    color: "#1769c2",
-  },
-  {
-    key: "stories",
-    name: "Stories",
-    description: "Shows the program through experience.",
-    reviewPoints: ["Quote or story", "Person context", "Outcome"],
-    image: "/images/intercp-mission-camp.webp",
-    color: "#53657e",
-  },
-  {
-    key: "videos",
-    name: "Video library",
-    description: "Lets users browse video content.",
-    reviewPoints: ["Thumbnail", "Video title", "Player controls"],
-    image: "https://i.ytimg.com/vi/zelhy09kxp8/hqdefault.jpg",
-    color: "#102c57",
-  },
-  {
-    key: "cta",
-    name: "Calls to action",
-    description: "Moves users to the next step.",
-    reviewPoints: ["Action label", "Support copy", "Destination"],
-    image: "/images/community-table.jpg",
-    color: "#1769c2",
-  },
-  {
-    key: "footer",
-    name: "Footer",
-    description: "Provides final navigation and support.",
-    reviewPoints: ["Utility links", "Contact details", "Legal or social links"],
-    image: "/images/mountain-sunrise.jpg",
-    color: "#1f2c40",
-  },
-  {
-    key: "announcement",
-    name: "Announcement bar",
-    description: "Highlights timely updates.",
-    reviewPoints: ["Deadline", "Urgent update", "Action link"],
-    image: "/images/community-city.jpg",
-    color: "#1769c2",
-  },
-  {
-    key: "breadcrumbs",
-    name: "Breadcrumbs",
-    description: "Shows where users are.",
-    reviewPoints: ["Page path", "Parent links", "Current page"],
-    image: "/images/mountain-sunrise.jpg",
-    color: "#53657e",
-  },
-  {
-    key: "events",
-    name: "Events calendar",
-    description: "Shows upcoming dates.",
-    reviewPoints: ["Event title", "Timing", "Event type"],
-    image: "/images/intercp-mission-camp.webp",
-    color: "#102c57",
-  },
-  {
-    key: "faq",
-    name: "FAQ accordion",
-    description: "Answers practical questions.",
-    reviewPoints: ["Question", "Answer", "Expanded state"],
-    image: "/images/community-table.jpg",
-    color: "#1f2c40",
-  },
-  {
-    key: "registration",
-    name: "Registration form",
-    description: "Turns interest into inquiry.",
-    reviewPoints: ["Contact fields", "Interest type", "Submit state"],
-    image: "/images/community-city.jpg",
-    color: "#1769c2",
-  },
-  {
-    key: "newsletter",
-    name: "Newsletter signup",
-    description: "Keeps visitors connected.",
-    reviewPoints: ["Email field", "Signup action", "Confirmation state"],
-    image: "/images/youth-gathering.jpg",
-    color: "#102c57",
-  },
-  {
-    key: "partners",
-    name: "Partner logo strip",
-    description: "Shows cooperation credibility.",
-    reviewPoints: ["Partner marks", "Approval note", "Credibility context"],
-    image: "/images/community-table.jpg",
-    color: "#53657e",
-  },
-  {
-    key: "team",
-    name: "Team leadership",
-    description: "Identifies responsible people.",
-    reviewPoints: ["Role", "Responsibility", "Approved profile"],
-    image: "/images/intercp-young-adults.webp",
-    color: "#1f2c40",
-  },
-  {
-    key: "resources",
-    name: "Resources listing",
-    description: "Shows ongoing material.",
-    reviewPoints: ["Resource type", "Title", "Read action"],
-    image: "/images/mountain-sunrise.jpg",
-    color: "#1769c2",
-  },
-  {
-    key: "gallery",
-    name: "Gallery image grid",
-    description: "Shows training visually.",
-    reviewPoints: ["Approved image", "Alt text", "Experience signal"],
-    image: "/images/intercp-mission-camp.webp",
-    color: "#102c57",
-  },
-  {
-    key: "donation",
-    name: "Donation CTA",
-    description: "Shows support path.",
-    reviewPoints: ["Support message", "Eligibility note", "Giving action"],
-    image: "/images/community-table.jpg",
-    color: "#66afe6",
-  },
-] as const;
+import { reviewCatalog, type ComponentSection as PackageSection } from "@vision-school-international/website-components/review";
 
-export type ComponentSection = typeof sectionTypes[number]["key"];
+type LocalSectionMeta = { image: string; stage: string };
+
+// Only sections listed here get their own review card. `branchFinder` is a
+// real package component but renders as an alternate concept inside
+// classFinder's card, not as its own section (see RegionalBranchDirectoryConcept.tsx).
+const localSectionMeta: Partial<Record<PackageSection, LocalSectionMeta>> = {
+  purposeHero: { image: "/images/mountain-sunrise.jpg", stage: "01" },
+  announcementBar: { image: "", stage: "01" },
+  breadcrumbTrail: { image: "", stage: "01" },
+  missionAbout: { image: "/images/community-table.jpg", stage: "02" },
+  trustProof: { image: "/images/intercp-young-adults.webp", stage: "02" },
+  studentStory: { image: "/images/intercp-mission-camp.webp", stage: "02" },
+  videoLibrary: { image: "/images/vision-school-media/north-america-mission-camp-worship.webp", stage: "02" },
+  galleryImageGrid: { image: "/images/vision-school-media/north-america-mission-camp-worship.webp", stage: "02" },
+  coursePathway: { image: "/images/youth-gathering.jpg", stage: "03" },
+  classFinder: { image: "/images/vision-school-media/north-america-mission-camp-crowd.webp", stage: "03" },
+  eventsCalendar: { image: "/images/vision-school-media/north-america-mission-camp-nations.webp", stage: "03" },
+  faqAccordion: { image: "", stage: "03" },
+  decisionCta: { image: "/images/vision-school-media/young-generation-mission-camp-community.webp", stage: "04" },
+  registrationContactForm: { image: "", stage: "04" },
+  newsletterSignup: { image: "", stage: "04" },
+  donationSupportCta: { image: "", stage: "04" },
+  partnerLogoStrip: { image: "", stage: "05" },
+  resourcesBlogListing: { image: "", stage: "05" },
+};
+
+export const sectionTypes = reviewCatalog
+  .map((entry) => {
+    const meta = localSectionMeta[entry.blockType];
+    if (!meta) return undefined;
+    return {
+      key: entry.blockType,
+      name: entry.name,
+      description: entry.description,
+      anatomy: entry.anatomy,
+      color: entry.color,
+      image: meta.image,
+      stage: meta.stage,
+    };
+  })
+  .filter((entry): entry is NonNullable<typeof entry> => entry !== undefined);
+
+export type ComponentSection = (typeof sectionTypes)[number]["key"];
 export const sectionId = (section: ComponentSection) => `section-${section}`;
+
+export type JourneyStage = {
+  number: string;
+  name: string;
+  sections: readonly ComponentSection[];
+};
+
+const stageNames: Record<string, string> = {
+  "00": "Globals",
+  "01": "Orientation & Hook",
+  "02": "Narrative & Trust",
+  "03": "Curriculum & Discovery",
+  "04": "Conversion & Retention",
+  "05": "Governance & Support",
+};
+
+const sectionsByStage = sectionTypes.reduce<Record<string, ComponentSection[]>>((acc, section) => {
+  (acc[section.stage] ??= []).push(section.key);
+  return acc;
+}, { "00": [] });
+
+export const journeyStages: readonly JourneyStage[] = Object.keys(stageNames)
+  .sort()
+  .map((number) => ({
+    number,
+    name: stageNames[number],
+    sections: sectionsByStage[number] ?? [],
+  }));

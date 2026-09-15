@@ -2,149 +2,147 @@
 
 import { useEffect, useState } from "react";
 import { concepts, getConceptsForSection, type ConceptKey } from "./concepts/conceptRegistry";
-import { sectionId, sectionTypes, type ComponentSection } from "./concepts/componentCatalog";
+import { journeyStages, sectionTypes, type ComponentSection } from "./concepts/componentCatalog";
+import { SectionThumbnail } from "./concepts/SectionThumbnail";
+import StudioHeader from "./components/StudioHeader";
 
-const formatOrdinal = (value: number) => String(value + 1).padStart(2, "0");
+const sectionFromKey = (key: string): ComponentSection | undefined =>
+  sectionTypes.find((section) => section.key === key)?.key;
 
-const sectionFromHash = (hash: string): ComponentSection | undefined =>
-  sectionTypes.find((section) => sectionId(section.key) === hash.slice(1))?.key;
+const renderDescription = (value: string) =>
+  value.split("\n").map((line, lineIndex) => (
+    <p key={lineIndex}>
+      {line.split(/\*\*(.+?)\*\*/g).map((part, partIndex) =>
+        partIndex % 2 === 1 ? <strong key={partIndex}>{part}</strong> : <span key={partIndex}>{part}</span>,
+      )}
+    </p>
+  ));
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<ComponentSection>(() => {
     if (typeof window === "undefined") {
       return sectionTypes[0].key;
     }
-
-    return sectionFromHash(window.location.hash) ?? sectionTypes[0].key;
+    const hash = window.location.hash.replace("#section-", "");
+    return sectionFromKey(hash) ?? sectionTypes[0].key;
   });
   const [activeConcept, setActiveConcept] = useState<ConceptKey>(concepts[0].key);
 
   useEffect(() => {
-    const focusHash = () => {
-      const section = sectionFromHash(window.location.hash);
-
-      if (section) {
-        setActiveSection(section);
-        return;
-      }
-
-      const target = document.getElementById(window.location.hash.slice(1));
-      if (!target) {
-        return;
-      }
-
-      const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
-      requestAnimationFrame(() => target.scrollIntoView({ behavior }));
-    };
-
-    focusHash();
-    window.addEventListener("hashchange", focusHash);
-    return () => window.removeEventListener("hashchange", focusHash);
+    if (window.location.hash) {
+      window.history.replaceState(null, "", window.location.pathname);
+    }
   }, []);
-
-  useEffect(() => {
-    if (window.location.hash !== `#${sectionId(activeSection)}`) {
-      return;
-    }
-
-    const target = document.getElementById(sectionId(activeSection));
-    if (!target) {
-      return;
-    }
-
-    const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
-    requestAnimationFrame(() => target.scrollIntoView({ behavior }));
-  }, [activeSection]);
 
   const selectedSection = sectionTypes.find((section) => section.key === activeSection);
   const availableConcepts = getConceptsForSection(activeSection);
   const selectedConcept = availableConcepts.find((concept) => concept.key === activeConcept) ?? availableConcepts[0];
   const selectedTreatment = selectedSection && selectedConcept ? selectedConcept.sections[selectedSection.key] : undefined;
 
+  const activeStage = journeyStages.find((stage) => stage.sections.includes(activeSection));
+
   return (
-    <main className="review-shell">
-      <header className="review-header" id="component-menu">
-        <a className="review-brand" href="#component-menu" aria-label="Return to the section index">
-          <img className="review-logo" src="/images/icp-logo.webp" alt="ICP International" />
-          <span>Designs</span>
-        </a>
-      </header>
+    <main className="studio-shell">
+      <StudioHeader active="sections" />
 
-      <section className="review-intro">
-        <h1>Design concepts</h1>
-        <p>
-          Design is the discipline of shaping how people understand, trust, feel, and act. Review these concepts by the user psychology they support: clarity, confidence, relevance, momentum, and the next faithful step.
-        </p>
-      </section>
+      <div className="studio-layout">
+        <aside className="studio-rail" aria-label="Component stages">
+          {journeyStages.map((stage) => (
+            <div className="studio-stage-group" key={stage.number}>
+              <p className="studio-stage-label">{stage.number}. {stage.name}</p>
+              <ul className="studio-stage-list">
+                {stage.sections.map((sectionKey) => {
+                  const section = sectionTypes.find((entry) => entry.key === sectionKey);
+                  if (!section) return null;
+                  const count = getConceptsForSection(section.key).length;
+                  const isActive = section.key === activeSection;
 
-      <nav className="component-index" aria-label="Section type index">
-        {sectionTypes.map((section, sectionIndex) => (
-          <a
-            className="component-index-card"
-            key={section.key}
-            href={`#${sectionId(section.key)}`}
-            aria-current={activeSection === section.key ? "true" : undefined}
-            aria-label={`View ${section.name} concepts`}
-            style={{ "--component-color": section.color } as React.CSSProperties}
-          >
-            <div className="component-index-image" style={{ backgroundImage: `url(${section.image})` }}>
-              <span>{formatOrdinal(sectionIndex)}</span>
-              <b>View concepts <span aria-hidden="true">↘</span></b>
-            </div>
-            <div className="component-index-copy">
-              <p>Component</p>
-              <h2>{section.name}</h2>
-              <span>{section.description}</span>
-              <ul className="component-index-points" aria-label={`${section.name} review points`}>
-                {section.reviewPoints.map((point) => (
-                  <li key={point}>{point}</li>
-                ))}
+                  return (
+                    <li key={section.key}>
+                      <button
+                        type="button"
+                        className={`studio-rail-item${isActive ? " is-active" : ""}`}
+                        style={{ "--component-color": section.color } as React.CSSProperties}
+                        aria-current={isActive ? "true" : undefined}
+                        onClick={() => {
+                          setActiveSection(section.key);
+                          setActiveConcept(concepts[0].key);
+                        }}
+                      >
+                        <span className="studio-rail-dot" aria-hidden="true" />
+                        <span className="studio-rail-name">{section.name}</span>
+                        {count > 0 && <span className="studio-rail-count">{count}</span>}
+                      </button>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
-          </a>
-        ))}
-      </nav>
+          ))}
+        </aside>
 
-      <div className="component-gallery">
-        {selectedSection && (
-          <section className="component-gallery-section" id={sectionId(selectedSection.key)} key={selectedSection.key}>
-            <header className="component-gallery-heading">
-              <p className="review-kicker">Component</p>
-              <h2>{selectedSection.name}</h2>
-              <p>{selectedSection.description}</p>
-            </header>
-            {selectedConcept && selectedTreatment ? (
-              <>
-                <div className="concept-selector" role="tablist" aria-label="Concept options">
-                  {availableConcepts.map((concept) => (
-                    <button
-                      className="concept-selector-button"
-                      key={concept.key}
-                      type="button"
-                      role="tab"
-                      aria-selected={selectedConcept.key === concept.key}
-                      aria-controls={`concept-preview-${selectedSection.key}`}
-                      style={{ "--concept-color": concept.color } as React.CSSProperties}
-                      onClick={() => setActiveConcept(concept.key)}
-                    >
-                      <span>{concept.name}</span>
-                      {concept.selectorLabel && <small>{concept.selectorLabel}</small>}
-                    </button>
-                  ))}
-                </div>
-                <article className="component-concept" id={`concept-preview-${selectedSection.key}`} role="tabpanel" aria-label={`${selectedConcept.name} ${selectedSection.name} concept`}>
-                  <div className="component-concept-label" style={{ "--concept-color": selectedConcept.color } as React.CSSProperties}>
-                    <span>{selectedConcept.name}</span>
-                    {selectedConcept.previewLabel && <span>{selectedConcept.previewLabel}</span>}
+        <section className="studio-stage" aria-label="Selected section review">
+          {selectedSection && (
+            <>
+              <header className="studio-stage-header">
+                <p className="review-kicker">
+                  Stage {activeStage?.number} · {activeStage?.name}
+                </p>
+                <h2 className="studio-stage-title">{selectedSection.name}</h2>
+                <p className="studio-stage-description">{renderDescription(selectedSection.description)}</p>
+              </header>
+
+              {selectedConcept && selectedTreatment ? (
+                <>
+                  <div className="studio-concept-tabs" role="tablist" aria-label="Concept options">
+                    {availableConcepts.map((concept, index) => (
+                      <button
+                        className={`studio-concept-tab${selectedConcept.key === concept.key ? " is-active" : ""}`}
+                        key={concept.key}
+                        type="button"
+                        role="tab"
+                        aria-selected={selectedConcept.key === concept.key}
+                        style={{ "--concept-color": concept.color } as React.CSSProperties}
+                        onClick={() => setActiveConcept(concept.key)}
+                      >
+                        <span>Concept {String(index + 1).padStart(2, "0")} · {concept.name}</span>
+                        {concept.selectorLabel && <small>{concept.selectorLabel}</small>}
+                      </button>
+                    ))}
                   </div>
-                  {selectedTreatment({ section: selectedSection.key })}
-                </article>
-              </>
-            ) : (
-              <p className="component-empty">No concepts are registered for this component yet.</p>
-            )}
-          </section>
-        )}
+
+                  <article
+                    className="studio-preview"
+                    id={`concept-preview-${selectedSection.key}`}
+                    role="tabpanel"
+                    aria-label={`${selectedConcept.name} ${selectedSection.name} concept`}
+                  >
+                    <div
+                      className="studio-preview-bar"
+                      style={{ "--concept-color": selectedConcept.color } as React.CSSProperties}
+                    >
+                      <span>{selectedConcept.name}</span>
+                      {selectedConcept.previewLabel && <small>{selectedConcept.previewLabel}</small>}
+                    </div>
+                    <div className="studio-preview-body">
+                      {selectedTreatment({ section: selectedSection.key })}
+                    </div>
+                  </article>
+                </>
+              ) : (
+                <p className="studio-empty">No design concepts registered for this section yet.</p>
+              )}
+
+              <footer className="studio-anatomy">
+                <span className="studio-anatomy-label">Anatomy</span>
+                <span className="studio-anatomy-items">{selectedSection.anatomy}</span>
+                <span className="studio-anatomy-thumb" aria-hidden="true">
+                  <SectionThumbnail section={selectedSection.key} color={selectedSection.color} />
+                </span>
+              </footer>
+            </>
+          )}
+        </section>
       </div>
     </main>
   );

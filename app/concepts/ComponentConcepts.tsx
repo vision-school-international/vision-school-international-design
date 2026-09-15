@@ -1,59 +1,26 @@
 import { createElement } from "react";
+import { SectionRenderer } from "@vision-school-international/website-components/react";
 import type { DesignConceptDefinition } from "./conceptRegistry";
-import { AnnouncementBar } from "../components/AnnouncementBar";
-import { BreadcrumbTrail } from "../components/BreadcrumbTrail";
-import { ClassFinderCarousel, type ClassFinderDesign } from "../components/ClassFinderCarousel";
-import { CoursePathway } from "../components/CoursePathway";
-import { DecisionCta } from "../components/DecisionCta";
-import { DonationSupportCta } from "../components/DonationSupportCta";
-import { EventsCalendar } from "../components/EventsCalendar";
-import { FaqAccordion } from "../components/FaqAccordion";
-import { GalleryImageGrid } from "../components/GalleryImageGrid";
-import { MissionAbout } from "../components/MissionAbout";
-import { NewsletterSignup } from "../components/NewsletterSignup";
-import { PartnerLogoStrip } from "../components/PartnerLogoStrip";
-import { PurposeHero } from "../components/PurposeHero";
-import { RegistrationContactForm } from "../components/RegistrationContactForm";
-import { ResourcesBlogListing } from "../components/ResourcesBlogListing";
-import { StudentStory } from "../components/StudentStory";
-import { TeamLeadership } from "../components/TeamLeadership";
-import { TrustProof } from "../components/TrustProof";
-import { UtilityFooter } from "../components/UtilityFooter";
-import { VideoGallery } from "../components/VideoGallery";
-
-const classFinderDesign = {
-  eyebrow: "Choose a class",
-  title: "Find your class.",
-  summary: "Keeps location, schedule, and registration action in one focused path.",
-  metricLabel: "Fit",
-  actionLabel: "View class",
-  items: [
-    {
-      audience: "YG & ANA",
-      place: "Frederick, MD",
-      format: "In person",
-      term: "Fall 2026",
-      rhythm: "Local cohort",
-      note: "Closest visible option for users looking for a direct local path.",
-    },
-    {
-      audience: "YG & ANA",
-      place: "Gaithersburg, MD",
-      format: "In person",
-      term: "Fall 2026",
-      rhythm: "Metro area",
-      note: "Secondary option for users comparing nearby branch context.",
-    },
-    {
-      audience: "YG & ANA",
-      place: "Baltimore, MD",
-      format: "In person",
-      term: "Fall 2026",
-      rhythm: "Regional class",
-      note: "Regional option for users searching beyond the nearest branch.",
-    },
-  ],
-} as const satisfies ClassFinderDesign;
+import {
+  classDecisionPathSection,
+  coursePathwaySection,
+  decisionCtaSection,
+  experienceGallerySection,
+  missionAboutSection,
+  missionVideoLibrarySection,
+  ongoingResourcesSection,
+  orientationBreadcrumbsSection,
+  partnerCredibilitySection,
+  practicalFaqSection,
+  purposeHeroSection,
+  registrationInquirySection,
+  scheduleCalendarSection,
+  studentStorySection,
+  supportParticipationSection,
+  trustProofSection,
+  urgentAnnouncementSection,
+  visitorRetentionSignupSection,
+} from "./sampleSections";
 
 export const componentConcepts: readonly DesignConceptDefinition[] = [
   {
@@ -62,8 +29,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-city.jpg",
     color: "#1769c2",
     sections: {
-      hero: function renderPurposeHero() {
-        return createElement(PurposeHero);
+      purposeHero: function renderPurposeHero() {
+        return createElement(SectionRenderer, {
+          section: purposeHeroSection,
+          pathPrefix: "purpose-hero",
+        });
       },
     },
   },
@@ -73,8 +43,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/intercp-young-adults.webp",
     color: "#66afe6",
     sections: {
-      proof: function renderTrustProof() {
-        return createElement(TrustProof);
+      trustProof: function renderTrustProof() {
+        return createElement(SectionRenderer, {
+          section: trustProofSection,
+          pathPrefix: "trust-proof",
+        });
       },
     },
   },
@@ -84,8 +57,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-table.jpg",
     color: "#1f2c40",
     sections: {
-      about: function renderMissionAbout() {
-        return createElement(MissionAbout);
+      missionAbout: function renderMissionAbout() {
+        return createElement(SectionRenderer, {
+          section: missionAboutSection,
+          pathPrefix: "mission-about",
+        });
       },
     },
   },
@@ -95,8 +71,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/youth-gathering.jpg",
     color: "#102c57",
     sections: {
-      course: function renderCoursePathway() {
-        return createElement(CoursePathway);
+      coursePathway: function renderCoursePathway() {
+        return createElement(SectionRenderer, {
+          section: coursePathwaySection,
+          pathPrefix: "course-pathway",
+        });
       },
     },
   },
@@ -106,8 +85,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-city.jpg",
     color: "#1769c2",
     sections: {
-      classes: function renderClassDecisionPath() {
-        return createElement(ClassFinderCarousel, { design: classFinderDesign });
+      classFinder: function renderClassDecisionPath() {
+        return createElement(SectionRenderer, {
+          section: classDecisionPathSection,
+          pathPrefix: "class-decision-path",
+        });
       },
     },
   },
@@ -117,8 +99,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/intercp-mission-camp.webp",
     color: "#53657e",
     sections: {
-      stories: function renderStudentStory() {
-        return createElement(StudentStory);
+      studentStory: function renderStudentStory() {
+        return createElement(SectionRenderer, {
+          section: studentStorySection,
+          pathPrefix: "student-story",
+        });
       },
     },
   },
@@ -128,8 +113,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "https://i.ytimg.com/vi/zelhy09kxp8/hqdefault.jpg",
     color: "#102c57",
     sections: {
-      videos: function renderMissionVideoLibrary() {
-        return createElement(VideoGallery);
+      videoLibrary: function renderMissionVideoLibrary() {
+        return createElement(SectionRenderer, {
+          section: missionVideoLibrarySection,
+          pathPrefix: "mission-video-library",
+        });
       },
     },
   },
@@ -139,19 +127,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-table.jpg",
     color: "#1769c2",
     sections: {
-      cta: function renderDecisionCta() {
-        return createElement(DecisionCta);
-      },
-    },
-  },
-  {
-    key: "utility-footer",
-    name: "Utility Footer",
-    image: "/images/mountain-sunrise.jpg",
-    color: "#1f2c40",
-    sections: {
-      footer: function renderUtilityFooter() {
-        return createElement(UtilityFooter);
+      decisionCta: function renderDecisionCta() {
+        return createElement(SectionRenderer, {
+          section: decisionCtaSection,
+          pathPrefix: "decision-cta",
+        });
       },
     },
   },
@@ -161,8 +141,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-city.jpg",
     color: "#1769c2",
     sections: {
-      announcement: function renderUrgentAnnouncement() {
-        return createElement(AnnouncementBar);
+      announcementBar: function renderUrgentAnnouncement() {
+        return createElement(SectionRenderer, {
+          section: urgentAnnouncementSection,
+          pathPrefix: "urgent-announcement",
+        });
       },
     },
   },
@@ -172,8 +155,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/mountain-sunrise.jpg",
     color: "#53657e",
     sections: {
-      breadcrumbs: function renderOrientationBreadcrumbs() {
-        return createElement(BreadcrumbTrail);
+      breadcrumbTrail: function renderOrientationBreadcrumbs() {
+        return createElement(SectionRenderer, {
+          section: orientationBreadcrumbsSection,
+          pathPrefix: "orientation-breadcrumbs",
+        });
       },
     },
   },
@@ -183,8 +169,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/intercp-mission-camp.webp",
     color: "#102c57",
     sections: {
-      events: function renderScheduleCalendar() {
-        return createElement(EventsCalendar);
+      eventsCalendar: function renderScheduleCalendar() {
+        return createElement(SectionRenderer, {
+          section: scheduleCalendarSection,
+          pathPrefix: "schedule-calendar",
+        });
       },
     },
   },
@@ -194,8 +183,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-table.jpg",
     color: "#1f2c40",
     sections: {
-      faq: function renderPracticalFaq() {
-        return createElement(FaqAccordion);
+      faqAccordion: function renderPracticalFaq() {
+        return createElement(SectionRenderer, {
+          section: practicalFaqSection,
+          pathPrefix: "practical-faq",
+        });
       },
     },
   },
@@ -205,8 +197,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-city.jpg",
     color: "#1769c2",
     sections: {
-      registration: function renderRegistrationInquiry() {
-        return createElement(RegistrationContactForm);
+      registrationContactForm: function renderRegistrationInquiry() {
+        return createElement(SectionRenderer, {
+          section: registrationInquirySection,
+          pathPrefix: "registration-inquiry",
+        });
       },
     },
   },
@@ -216,8 +211,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/youth-gathering.jpg",
     color: "#102c57",
     sections: {
-      newsletter: function renderVisitorRetentionSignup() {
-        return createElement(NewsletterSignup);
+      newsletterSignup: function renderVisitorRetentionSignup() {
+        return createElement(SectionRenderer, {
+          section: visitorRetentionSignupSection,
+          pathPrefix: "visitor-retention-signup",
+        });
       },
     },
   },
@@ -227,19 +225,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-table.jpg",
     color: "#53657e",
     sections: {
-      partners: function renderPartnerCredibility() {
-        return createElement(PartnerLogoStrip);
-      },
-    },
-  },
-  {
-    key: "leadership-trust",
-    name: "Leadership Trust",
-    image: "/images/intercp-young-adults.webp",
-    color: "#1f2c40",
-    sections: {
-      team: function renderLeadershipTrust() {
-        return createElement(TeamLeadership);
+      partnerLogoStrip: function renderPartnerCredibility() {
+        return createElement(SectionRenderer, {
+          section: partnerCredibilitySection,
+          pathPrefix: "partner-credibility",
+        });
       },
     },
   },
@@ -249,8 +239,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/mountain-sunrise.jpg",
     color: "#1769c2",
     sections: {
-      resources: function renderOngoingResources() {
-        return createElement(ResourcesBlogListing);
+      resourcesBlogListing: function renderOngoingResources() {
+        return createElement(SectionRenderer, {
+          section: ongoingResourcesSection,
+          pathPrefix: "ongoing-resources",
+        });
       },
     },
   },
@@ -260,8 +253,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/intercp-mission-camp.webp",
     color: "#102c57",
     sections: {
-      gallery: function renderExperienceGallery() {
-        return createElement(GalleryImageGrid);
+      galleryImageGrid: function renderExperienceGallery() {
+        return createElement(SectionRenderer, {
+          section: experienceGallerySection,
+          pathPrefix: "experience-gallery",
+        });
       },
     },
   },
@@ -271,8 +267,11 @@ export const componentConcepts: readonly DesignConceptDefinition[] = [
     image: "/images/community-table.jpg",
     color: "#66afe6",
     sections: {
-      donation: function renderSupportParticipation() {
-        return createElement(DonationSupportCta);
+      donationSupportCta: function renderSupportParticipation() {
+        return createElement(SectionRenderer, {
+          section: supportParticipationSection,
+          pathPrefix: "support-participation",
+        });
       },
     },
   },

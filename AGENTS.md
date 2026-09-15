@@ -22,6 +22,23 @@ Concept identity is component-scoped: the public concept key/name belongs to one
 section's UI/UX goal, while renderer implementation reuse must stay private and
 must not become reviewer-facing concept identity.
 
+**Approved exception:** several component-scoped concepts consume renderers
+from `@vision-school-international/website-components` (linked locally via
+`file:../vision-school-international-website-components`; the sibling repo
+must be cloned and built with `pnpm install && pnpm build` before this
+repo's `npm install` can resolve it). That package is the real cross-repo
+shared component library used by the CMS and production website, not an
+internal shortcut invented by this gallery. Consuming it is not the
+"renderer implementation reuse" this doc otherwise forbids — no new generic
+internal component was created here. Each shared renderer is still
+registered as one component-scoped concept via `SectionRenderer` from
+`@vision-school-international/website-components/react`, with a
+`section` object built from that package's own type (see
+`app/concepts/sampleSections.ts`) and a stable `pathPrefix`. `app/globals.css`
+defines `--color-*`/`--font-*` aliases to this gallery's real
+`--review-*`/`--font-geist-*` tokens so shared renderers pick up the same
+palette explicitly rather than by fallback-value coincidence.
+
 Make the smallest change that satisfies the request. Preserve existing visual
 concept treatments, renderer-specific markup, responsive CSS, illustrative-content
 labels, and hash navigation unless the task explicitly changes them. Do not

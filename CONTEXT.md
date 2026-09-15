@@ -22,7 +22,9 @@ with React Strict Mode and imports the component stylesheets plus
 `app/globals.css`. Vite builds the browser bundle to `dist/` according to
 `vite.config.ts`. `server/index.mjs` serves `dist/`, provides `GET /health`,
 and falls back to `dist/index.html` for client-side routes. The server uses
-`PORT` or 3000 and `HOST` or `0.0.0.0`.
+`PORT` or 3000 and `HOST` or `0.0.0.0`. `src/main.tsx` also routes `/pages`
+(`app/pages.tsx`) and `/design` (`app/design.tsx`, a static design-token
+reference page — see `RULES.md` → Intentional exceptions) by pathname match.
 
 ## Component-gallery architecture
 
