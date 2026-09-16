@@ -14,6 +14,7 @@ export default function PageView({ pageKey }: PageViewProps) {
   const [isAdding, setIsAdding] = useState(false);
   const [section, setSection] = useState<ComponentSection>(sectionTypes[0].key);
   const [conceptKey, setConceptKey] = useState("");
+  const [error, setError] = useState<string>();
   const sectionConcepts = getConceptsForSection(section);
   const concept = sectionConcepts.find((candidate) => candidate.key === conceptKey) ?? sectionConcepts[0];
 
@@ -31,14 +32,23 @@ export default function PageView({ pageKey }: PageViewProps) {
 
   const add = async () => {
     if (!concept) return;
-    await addEntry(pageKey, { section, conceptKey: concept.key });
-    setPage(await getPage(pageKey));
-    setIsAdding(false);
+    try {
+      await addEntry(pageKey, { section, conceptKey: concept.key });
+      setPage(await getPage(pageKey));
+      setIsAdding(false);
+      setError(undefined);
+    } catch (caught) {
+      setError(caught instanceof Error ? caught.message : "Could not add section");
+    }
   };
 
   const remove = async (index: number) => {
-    await removeEntry(pageKey, index);
-    setPage(await getPage(pageKey));
+    try {
+      await removeEntry(pageKey, index);
+      setPage(await getPage(pageKey));
+    } catch (caught) {
+      setError(caught instanceof Error ? caught.message : "Could not remove section");
+    }
   };
 
   return (
@@ -62,6 +72,8 @@ export default function PageView({ pageKey }: PageViewProps) {
           <p>No website sections added to this page yet. Use the action below to insert your first section.</p>
         </section>
       )}
+
+      {error && <p className="composer-error page-view-error" role="alert">{error}</p>}
 
       {page.entries.map((entry, index) => {
         const resolved = resolvePageSection(entry);
@@ -113,7 +125,7 @@ export default function PageView({ pageKey }: PageViewProps) {
           </div>
         </div>
       ) : (
-        <button type="button" className="page-entry-add" onClick={() => setIsAdding(true)}>+ Add Section to Sequence</button>
+        <button type="button" className="page-entry-add" onClick={() => { setError(undefined); setIsAdding(true); }}>+ Add Section to Sequence</button>
       )}
     </main>
   );

@@ -225,6 +225,8 @@ button { color: inherit; }
 .studio-anatomy-thumb .section-schematic-svg { width: 112px; max-height: 64px; }
 
 .studio-empty { margin: 26px 0 0; padding: 28px; background: #fff; border: 1px solid var(--review-line); border-radius: 6px; color: #53657e; }
+.composer-error { margin: 18px 0 0; padding: 12px 16px; border-left: 4px solid #b42318; background: #fff1f0; color: #7a271a; font-size: 13px; line-height: 1.5; }
+.page-view-error { margin: 18px 4vw 0; }
 
 /* ===== Legacy gallery styles (component index cards used by /pages) ===== */
 .component-index { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
