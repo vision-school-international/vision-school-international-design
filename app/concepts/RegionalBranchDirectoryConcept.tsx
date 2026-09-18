@@ -1,7 +1,7 @@
 import { createElement } from "react";
 import { SectionRenderer } from "@vision-school-international/website-components/react";
 import type { DesignConceptDefinition } from "./conceptRegistry";
-import { branchFinderSection } from "./sampleSections";
+import { branchDirectorySection, branchFinderSection } from "./sampleSections";
 
 export const regionalBranchDirectoryConcepts: readonly DesignConceptDefinition[] = [
   {
@@ -16,6 +16,22 @@ export const regionalBranchDirectoryConcepts: readonly DesignConceptDefinition[]
         return createElement(SectionRenderer, {
           section: branchFinderSection,
           pathPrefix: "branch-finder",
+        });
+      },
+    },
+  },
+  {
+    key: "branch-directory",
+    name: "Branch Directory",
+    image: "/images/vision-school-media/north-america-mission-camp-crowd.webp",
+    color: "#1769c2",
+    selectorLabel: "All branch and program entries",
+    previewLabel: "Illustrative roster · Search and country filters",
+    sections: {
+      branchDirectory: function renderBranchDirectory() {
+        return createElement(SectionRenderer, {
+          section: branchDirectorySection,
+          pathPrefix: "branch-directory",
         });
       },
     },

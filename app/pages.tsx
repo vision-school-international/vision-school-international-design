@@ -22,6 +22,7 @@ export default function Pages() {
   const [section, setSection] = useState<ComponentSection>(sectionTypes[0].key);
   const [conceptKey, setConceptKey] = useState("");
   const [existingKeys, setExistingKeys] = useState<ReadonlySet<string>>(new Set());
+  const [error, setError] = useState<string>();
   const sectionConcepts = getConceptsForSection(section);
   const concept = sectionConcepts.find((candidate) => candidate.key === conceptKey) ?? sectionConcepts[0];
   const pageKey = key.trim();
@@ -46,35 +47,54 @@ export default function Pages() {
   const create = async () => {
     if (!canCreate) return;
 
-    await createPage({ key: pageKey, name: name.trim(), entries: [] });
-    await refresh();
-    setName("");
-    setKey("");
-    setRouteEdited(false);
-    setIsCreating(false);
+    try {
+      await createPage({ key: pageKey, name: name.trim(), entries: [] });
+      await refresh();
+      setName("");
+      setKey("");
+      setRouteEdited(false);
+      setIsCreating(false);
+      setError(undefined);
+    } catch (caught) {
+      setError(caught instanceof Error ? caught.message : "Could not create page");
+    }
   };
 
   const destroy = async (targetKey: string) => {
-    await removePage(targetKey);
-    await refresh();
+    try {
+      await removePage(targetKey);
+      await refresh();
+    } catch (caught) {
+      setError(caught instanceof Error ? caught.message : "Could not delete page");
+    }
   };
 
   const drop = async (targetKey: string, index: number) => {
-    await removeEntry(targetKey, index);
-    await refresh();
+    try {
+      await removeEntry(targetKey, index);
+      await refresh();
+    } catch (caught) {
+      setError(caught instanceof Error ? caught.message : "Could not remove section");
+    }
   };
 
   const openAdd = (targetKey: string) => {
     setAddingToPageKey(targetKey);
     setSection(sectionTypes[0].key);
     setConceptKey("");
+    setError(undefined);
   };
 
   const insert = async (targetKey: string) => {
     if (!concept) return;
-    await addEntry(targetKey, { section, conceptKey: concept.key });
-    await refresh();
-    setAddingToPageKey(undefined);
+    try {
+      await addEntry(targetKey, { section, conceptKey: concept.key });
+      await refresh();
+      setAddingToPageKey(undefined);
+      setError(undefined);
+    } catch (caught) {
+      setError(caught instanceof Error ? caught.message : "Could not add section");
+    }
   };
 
   return (
@@ -112,6 +132,8 @@ export default function Pages() {
               Chain registered section concepts into a full page sequence. Build the page in the order a visitor reads it, then review pacing and flow in the page view.
             </p>
           </header>
+
+          {error && <p className="composer-error" role="alert">{error}</p>}
 
           <div className="composer-create">
             {isCreating ? (

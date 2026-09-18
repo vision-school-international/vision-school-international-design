@@ -33,7 +33,16 @@ export const savePage = async (page: RegisteredPage) => {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(page),
   });
-  return response.ok;
+  if (response.ok) return true;
+
+  const data: unknown = await response.json().catch(() => null);
+  if (data && typeof data === "object" && "errors" in data && Array.isArray(data.errors)) {
+    throw new Error(data.errors.filter((error): error is string => typeof error === "string").join(" "));
+  }
+  if (data && typeof data === "object" && "error" in data && typeof data.error === "string") {
+    throw new Error(data.error);
+  }
+  throw new Error(`Could not save page (${response.status})`);
 };
 
 export const createPage = savePage;

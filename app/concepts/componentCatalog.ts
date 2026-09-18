@@ -2,9 +2,9 @@ import { reviewCatalog, type ComponentSection as PackageSection } from "@vision-
 
 type LocalSectionMeta = { image: string; stage: string };
 
-// Only sections listed here get their own review card. `branchFinder` is a
-// real package component but renders as an alternate concept inside
-// classFinder's card, not as its own section (see RegionalBranchDirectoryConcept.tsx).
+// Only sections listed here get their own review card. `branchFinder` remains
+// an alternate concept inside classFinder; the full branch directory has its
+// own section because it solves a different discovery problem.
 const localSectionMeta: Partial<Record<PackageSection, LocalSectionMeta>> = {
   purposeHero: { image: "/images/mountain-sunrise.jpg", stage: "01" },
   announcementBar: { image: "", stage: "01" },
@@ -16,6 +16,7 @@ const localSectionMeta: Partial<Record<PackageSection, LocalSectionMeta>> = {
   galleryImageGrid: { image: "/images/vision-school-media/north-america-mission-camp-worship.webp", stage: "02" },
   coursePathway: { image: "/images/youth-gathering.jpg", stage: "03" },
   classFinder: { image: "/images/vision-school-media/north-america-mission-camp-crowd.webp", stage: "03" },
+  branchDirectory: { image: "/images/vision-school-media/north-america-mission-camp-crowd.webp", stage: "03" },
   eventsCalendar: { image: "/images/vision-school-media/north-america-mission-camp-nations.webp", stage: "03" },
   faqAccordion: { image: "", stage: "03" },
   decisionCta: { image: "/images/vision-school-media/young-generation-mission-camp-community.webp", stage: "04" },

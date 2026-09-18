@@ -12,7 +12,7 @@ const conceptFiles = [
 
 // section keys of the catalog, used to recognize object-literal keys as sections
 const catalogSource = readFileSync(join(root, "app/concepts/componentCatalog.ts"), "utf8");
-const sectionKeys = [...catalogSource.matchAll(/key: "([a-z]+)",/g)].map((m) => m[1]);
+const sectionKeys = [...catalogSource.matchAll(/^\s+([A-Za-z][A-Za-z0-9]*): \{ image:/gm)].map((m) => m[1]);
 const sectionKeySet = new Set(sectionKeys);
 
 const results = [];
