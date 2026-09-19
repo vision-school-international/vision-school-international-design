@@ -35,6 +35,20 @@ The existing private Flight Operations repository holds a dependency-free, local
 
 ## Anthony's release checklist
 
+### Review pull requests
+
+All three are open drafts as of September 19; none is merged or deployed.
+
+| Contribution | Review link | Verification |
+|---|---|---|
+| Shared branch component | [Components #18](https://github.com/vision-school-international/vision-school-international-website-components/pull/18) | GitHub package verification passed; local checks below |
+| Directory gallery and planning | [Design #17](https://github.com/vision-school-international/vision-school-international-design/pull/17) | Depends on Components #18; local checks below; clean-install baseline still needs repair |
+| Fictional speaker/staff prototype | [Flight Operations #1](https://github.com/vision-school-international/vision-school-international-flight-operations/pull/1) | Eight local model tests pass; no GitHub checks configured/reported |
+
+Review the component changes before accepting the gallery dependency. The prototype can be reviewed independently. These are implementation/review links, not automatic issue-closing instructions.
+
+### Before production integration
+
 1. Agree the authoritative branch record shape and data owner. Do not enter guessed age/class availability or expose private staff/travel data.
 2. Review the added localized component fields and create/test the required migration against the chosen CMS release branch. No database was migrated by this work.
 3. Publish an appropriate shared-package version and update the CMS/website consumers together. The existing website uses 0.2.2; CMS uses 0.2.3; a source merge alone does not update either consumer.
