@@ -73,12 +73,12 @@ Review the component changes before accepting the gallery dependency. The protot
 - Browser review used Chris's Scarlet Chrome profile, not the IFP profile. Directory checks included Frederick/DCMD and DCVA search, clear/combined filters, keyboard-operated details, English/Korean review, and phone/tablet/desktop layouts. The review found and fixed a narrow program dropdown at tablet width and cramped header/cards inside the gallery; component-container breakpoints now account for the actual available space.
 - Staff browser checks covered visit details, speaker versus branch views, the sample form, separate reciprocal tasks, and tasks remaining open later in the week. No real information was entered or sent.
 - An independent code review found the same tablet-toolbar issue; it has been fixed and rechecked. No other substantive defect was reported in that bounded review.
+- Chris replaced the Claude review requirement with an independent **Astra adversarial review** on September 19. Astra completed the review and re-tested both findings after correction: an inherited custom-group-name rendering bug and planning-document trailing spaces. Final results: 44 independent React/model cases, 58 directory assertions, and eight staff tests passed. See [the Astra review record](./2026-09-19-astra-review.md). Claude access is no longer a review blocker.
 
 ### Checks that are not complete
 
 - A clean `npm ci` is blocked by the existing design lockfile, which lacks `@emnapi/core@1.10.0` and `@emnapi/runtime@1.10.0`. Local checks used the declared dependencies without rewriting the lockfile. Anthony should repair and verify the clean-install baseline separately; these local passes are not a claim that clean CI installation passes.
 - The existing gallery shell emits a React warning about paragraphs nested inside a paragraph in `app/page.tsx`. It is present in the unchanged baseline and outside this component-only contribution. The preview renders and its controls work, but the browser console is not entirely warning-free.
-- The requested Claude Opus 5 High review could not run: the CLI sign-in expired, and the available app account shows Opus 5 behind an upgrade. No upgrade was purchased and no alternative review is being represented as an Opus review.
 - No production CMS migration, package publication, consumer integration, deployment, real access-control test, or ministry/content approval has taken place.
 
 The pull requests are review artifacts, not a release recommendation. Do not infer deployment success from this document.

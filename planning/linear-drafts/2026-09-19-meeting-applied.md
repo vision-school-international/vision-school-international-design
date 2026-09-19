@@ -1,7 +1,9 @@
 # September 19 Linear updates — applied
 
-**Status:** Saved in Linear and checked after saving on September 19, 2026.  
-**Scope:** September 17 meeting requirements and Chris's September 19 clarification.  
+**Status:** Saved in Linear and checked after saving on September 19, 2026.
+
+**Scope:** September 17 meeting requirements and Chris's September 19 clarification.
+
 **Result:** Seven existing issues updated; **no new issues** created.
 
 The public website remains the first priority. The internal speaker and branch views can begin as a clearly labeled, non-production prototype while real information and access rules are prepared.
