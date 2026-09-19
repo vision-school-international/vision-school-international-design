@@ -2,8 +2,8 @@
 
 **Document type:** Product Requirements Document  
 **Status:** Draft for ministry, product, design, and engineering review  
-**Version:** 1.3
-**Date:** August 31, 2026
+**Version:** 1.4
+**Date:** September 19, 2026
 **Primary launch:** Public website and current registration handoff  
 **Long-term product:** Secure global operations platform  
 
@@ -31,6 +31,7 @@ This PRD combines:
 - The August 20, 2026 design-feedback recording.
 - The August 25, 2026 tools, process, CMS, deployment, and operations demonstration.
 - The August 31, 2026 website, initiative-planning, registration, media, and Flight Operations review.
+- The September 17, 2026 VS Website Team Meeting (complete timestamped transcript reviewed; shared-screen design demonstration spot-checked), and Chris's September 19 authorization and branch-identity clarification. See [meeting decisions](./meeting-notes/2026-09-17-website-and-staff-review.md).
 - Christina's August 25 overview of the current flight-team and registration-team handoffs. The detailed team orientations and source files are still needed before an internal operations build begins.
 - Direct visual review of Perspectives.org and CircuitRiders.com.
 - The Seattle Haystack / Vision School Instagram reference shown during the feedback recording.
@@ -176,6 +177,21 @@ Create the trusted global home for Vision School: one public place where people 
 - Authentik branding may be delegated, but login flows, providers, role mappings, and other security-sensitive configuration must be reviewed by Anthony.
 - Internal application domains should remain separate from the high-visibility public domain where practical.
 - Every internal app needs a named owner, intended users, data sensitivity, support path, and retirement or promotion decision.
+
+### 7.4 September 17–19 implementation decisions
+
+These decisions take precedence over older prototype assumptions in this document.
+
+- **Public website first.** Finish useful public class discovery before expanding registration or operations scope. Church Center remains the registration destination; embedded registration/API feasibility is still Anthony's investigation, not an approved replacement build.
+- **One directory implementation.** Extend `branchDirectory` in the current shared website-components package and consume it in the design gallery. Do not merge the old Astro prototype simply because it contains similar cards. The compact homepage invitation leads to the separate full directory.
+- **Explicit class types.** Adults, Youth, and Kids are confirmed separately for each branch. They are not derived from ANA, YA, YG, All Gen, or Campus labels. In particular, YG may serve adults. Unknown availability stays unknown, and remains visible under All.
+- **Branch identity, confirmed by Chris September 19.** Frederick and DC/MD are the same branch: display DC/Maryland with Frederick, MD. DC/VA is a separate branch. Its city, venue, program availability, and class details have not been supplied. Preserve separate same-city program entries in the original roster.
+- **Review data is not published data.** The supplied roster plus the separately confirmed DC/VA gives 37 draft branch/program entries. This is not a verified count of all active branches or classes. Sign-up counts are excluded. Fictional feature examples must be visibly separate from this roster.
+- **Media selection needs an owner.** Use HQ-managed Google Drive for the current resource handoff. Leadership/content owners select and approve the exact assets and wording for each slot; do not treat a large folder or a public video as publication permission.
+- **Small internal prototype only.** A calendar/visit-details and reciprocal-evaluation demonstration may use fictional data while public-site work continues. It does not approve a new production stack, replace Windmill, connect a real account, or implement access control. Anthony owns IDM/Telegram and server-enforced permission integration.
+- **Evaluation timing.** Proposed private evaluation tasks become due three hours after the scheduled class start and remain pending until submitted. Approved VS department staff need the appropriate review view; the precise roles permitted to read answers must be agreed before real submissions are collected. No AI scoring is requested.
+- **Review process.** Use the existing design gallery for component review and Telegram topics for comments. Gallery commenting/versioning is not part of this build. Code goes through focused PRs; design PRs carry `design`. No automatic merge, package publication, database migration, or production deployment is authorized by this implementation step.
+- **No new paid service or hosting change.** Current hosting and older Vercel references must be verified with Anthony; this work does not require Chris to buy a Vercel account.
 
 ## 8. Design direction from the feedback review
 
@@ -351,6 +367,9 @@ For the first branch-directory release, the homepage should show approximately t
 - **CLS-010:** The homepage may show a small, owner-selected featured set, but View All Classes must lead to the complete approved directory.
 - **CLS-011:** A branch page must represent the local branch accurately without exposing private leader, host, traveler, or venue information.
 - **CLS-012:** The first release must use centrally managed branch records; branch-leader editing requires a later approved access and publishing model.
+- **CLS-013:** The directory supports an explicit Adults / Youth / Kids selection together with search and country filters. Only confirmed offerings match a selected class type. YA/YG and other audience labels remain separately displayed.
+- **CLS-014:** DCMD, DC/MD, and Frederick search terms find the same DC/Maryland record. DCVA and DC/VA find the distinct DC/Virginia record. Do not invent a DC/VA city or treat Frederick as a third branch.
+- **CLS-015:** Compact cards can reveal additional approved branch/class information. Missing information is described as pending rather than fabricated; approved photographs require useful alternative text. Draft/demo records must not produce working registration actions.
 
 ### Contact, events, and donation
 
@@ -451,6 +470,8 @@ The portal is not part of the public MVP, but the public architecture must not b
 - **RTE-003:** The system identifies overlapping assignments and obvious schedule conflicts.
 - **RTE-004:** Speakers and branches can acknowledge assignments.
 - **RTE-005:** Route changes have an owner, status, notification, and audit record.
+- **RTE-006:** The small speaker/staff prototype begins with a calendar or weekly agenda. Selecting a visit reveals the class time/time zone, location/map slot, class makeup, transportation, lodging, and a teaching-material link slot. Use fictional records until Christina supplies the current calendar/CoreDocs and Anthony approves the permission boundaries.
+- **RTE-007:** One person may have both speaker and branch-staff roles. A prototype view switch is a design control, not proof of authorization. Production must enforce visibility on the server.
 
 ### Travel coordination
 
@@ -479,7 +500,7 @@ The team currently refers to a central schedule document, branch Google Forms, a
 
 ### Evaluations and Team Leader Care
 
-- **EVAL-001:** Session completion can trigger speaker-to-branch and branch-to-speaker evaluation requests.
+- **EVAL-001:** Private speaker-to-branch and branch-to-speaker evaluation tasks become due three hours after the scheduled class start and remain pending until submitted. Final questions come from Christina's current forms. Real scheduling must account for the class time zone and canceled/rescheduled visits; a demo clock is not a live reminder service.
 - **EVAL-002:** Reminder and escalation rules must be deterministic and configurable.
 - **EVAL-003:** Headquarters can see missing submissions without seeing restricted answers unnecessarily.
 - **EVAL-004:** Approved users can view readable summaries and aggregate trends.
@@ -488,7 +509,7 @@ The team currently refers to a central schedule document, branch Google Forms, a
 - **TLC-001:** Team Leader Care cases have a restricted owner, status, due date, and visibility scope.
 - **TLC-002:** Retention, access review, export, and deletion rules must be approved before pastoral data collection begins.
 
-PowerPoint or teaching-file hosting is a later enhancement and is not required for the first Flight Operations release.
+A teaching-material link slot can be shown in the prototype. Uploading, storing, or granting access to actual PowerPoint files remains outside this build and is not required for the first Flight Operations release.
 
 ## 15. Proposed data model
 

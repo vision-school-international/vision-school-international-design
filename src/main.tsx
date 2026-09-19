@@ -7,6 +7,7 @@ import Design from "../app/design";
 import "../app/design.css";
 import "../app/pages.css";
 import "../app/globals.css";
+import "../app/branch-directory-review.css";
 
 const pathname = window.location.pathname.replace(/\/+$/, "") || "/";
 const pageKey = pathname.slice("/pages/".length);

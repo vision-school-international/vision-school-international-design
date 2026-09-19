@@ -29,7 +29,6 @@ type PartnerLogoStripSection = SectionOf<"partnerLogoStrip">;
 type PurposeHeroSection = SectionOf<"purposeHero">;
 type StudentStorySection = SectionOf<"studentStory">;
 type TrustProofSection = SectionOf<"trustProof">;
-type BranchFinderSection = SectionOf<"branchFinder">;
 type BranchDirectorySection = SectionOf<"branchDirectory">;
 
 export const supportParticipationSection: DonationSupportCtaSection = {
@@ -326,57 +325,6 @@ export const trustProofSection: TrustProofSection = {
   note: "Sample facts for review · Confirm final program details before publishing",
 };
 
-// branch-finder is capped at 3 branches (Payload maxRows: 3) and has no
-// search/filter/expand -- it's a small featured-branches teaser, not a
-// replacement for RegionalBranchDirectory.tsx's full searchable directory.
-// Both are registered as separate concepts for the "classes" section.
-export const branchFinderSection: BranchFinderSection = {
-  blockType: "branchFinder",
-  kicker: "Class finder",
-  heading: "Find Vision School near you.",
-  intro: "Start with featured locations, then search or browse the full directory by country and region.",
-  featuredLabel: "Featured samples",
-  viewAllLabel: "Browse all sample locations",
-  emptyMessage: "No sample locations match this search. Clear the search or choose another country.",
-  unavailableLinkLabel: "Registration link pending",
-  destinationAriaLabelTemplate: "View {branch} details",
-  branches: [
-    {
-      name: "Sample Northeast branch",
-      city: "City to be confirmed",
-      administrativeArea: "State to be confirmed",
-      region: "Northeast",
-      country: "us",
-      schedule: "Class schedule pending",
-      destinationType: "website",
-      destinationLabel: "Registration link pending",
-      destinationUrl: "https://example.com/pending",
-    },
-    {
-      name: "Sample Mid-Atlantic branch",
-      city: "City to be confirmed",
-      administrativeArea: "State to be confirmed",
-      region: "Mid-Atlantic",
-      country: "us",
-      schedule: "Class schedule pending",
-      destinationType: "website",
-      destinationLabel: "Registration link pending",
-      destinationUrl: "https://example.com/pending",
-    },
-    {
-      name: "Sample Western Canada branch",
-      city: "City to be confirmed",
-      administrativeArea: "Province to be confirmed",
-      region: "Western Canada",
-      country: "ca",
-      schedule: "Class schedule pending",
-      destinationType: "website",
-      destinationLabel: "Registration link pending",
-      destinationUrl: "https://example.com/pending",
-    },
-  ],
-};
-
 export const branchDirectorySection: BranchDirectorySection = {
   blockType: "branchDirectory",
   kicker: "Locations",
@@ -387,7 +335,7 @@ export const branchDirectorySection: BranchDirectorySection = {
   allCountriesLabel: "All locations",
   unitedStatesLabel: "United States",
   canadaLabel: "Canada",
-  clearLabel: "Clear search",
+  clearLabel: "Clear filters",
   resultCountSingular: "branch/program entry",
   resultCountPlural: "branch/program entries",
   emptyMessage: "Approved branch information is being prepared.",
@@ -440,6 +388,9 @@ export const branchDirectorySection: BranchDirectorySection = {
     ["Tacoma", "Tacoma", "WA", "us", ["YA", "ANA"]],
     ["OC/LB", "", "CA", "us", ["ANA"]],
     ["Vancouver", "Vancouver", "BC", "ca", ["Campus"]],
+    // Chris confirmed on September 19: DC/VA is separate from DC/MD–Frederick.
+    // No city, venue, age programs, status, or enrollment link was provided.
+    ["DC/Virginia", "", "VA", "us", []],
   ] as Array<[string, string, string, "us" | "ca", string[], string?]>).map(([name, city, administrativeArea, country, audiences, summary], index) => ({
     id: `draft-${index + 1}`,
     name,
@@ -447,6 +398,9 @@ export const branchDirectorySection: BranchDirectorySection = {
     administrativeArea,
     country,
     audiences,
+    aliases: name === "DC/Maryland"
+      ? ["DCMD", "DC/MD", "Frederick"]
+      : name === "DC/Virginia" ? ["DCVA", "DC/VA"] : undefined,
     summary,
     previewOnly: true,
     classStatus: null,

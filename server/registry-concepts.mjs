@@ -144,14 +144,6 @@ export const concepts = [
     "source": "componentConcepts"
   },
   {
-    "key": "branch-finder",
-    "name": "Branch Finder",
-    "sections": [
-      "classFinder"
-    ],
-    "source": "regionalBranchDirectoryConcepts"
-  },
-  {
     "key": "branch-directory",
     "name": "Branch Directory",
     "sections": [
