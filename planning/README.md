@@ -7,6 +7,10 @@ This folder is the shared GitHub home for Vision School meeting summaries, produ
 | Document | Purpose | Current status |
 |---|---|---|
 | [Product Requirements Document](./PRD.md) | Main source for approved direction, requirements, boundaries, risks, and open decisions | Draft for team and ministry review |
+| [September 17 meeting and September 19 decisions](./meeting-notes/2026-09-17-website-and-staff-review.md) | Current build priorities, branch terminology, internal prototype, and responsibilities | Chris authorized scoped implementation on September 19; launch approvals remain |
+| [September 19 Linear updates](./linear-drafts/2026-09-19-meeting-applied.md) | Seven existing issues updated from the meeting; remaining tagging and evaluation-ownership decisions | Applied and read back in Linear; no new issues |
+| [Current implementation and review handoff](./technical-handoffs/2026-09-19-directory-and-staff-prototype.md) | What is being built, what is not live, and Anthony's integration gates | Review work, not a production release |
+| [Media placement and approval checklist](./media/2026-09-19-placement-checklist.md) | The exact content and permission decisions needed for each website section | Waiting for ministry-approved selections |
 | [August 31 website and operations meeting](./meeting-notes/2026-08-31-website-and-operations-review.md) | Plain-language decisions, requirements, next work, and owner action items | Reviewed by Chris |
 | [August 31 Linear issue changes](./linear-drafts/2026-08-31-website-meeting.md) | Exact proposed updates for VIS-343 and VIS-344 plus the held media-library issue | Approved by Chris for submission |
 | [Branch directory forward-port handoff](./technical-handoffs/2026-09-07-branch-directory-forward-port.md) | Current architecture proposal, repository state, release sequence, and approval gates for VIS-343 and VIS-344 | Ready for Anthony's architecture review |
