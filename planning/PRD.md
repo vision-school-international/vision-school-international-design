@@ -2,8 +2,8 @@
 
 **Document type:** Product Requirements Document  
 **Status:** Draft for ministry, product, design, and engineering review  
-**Version:** 1.4
-**Date:** September 19, 2026
+**Version:** 1.5
+**Date:** October 24, 2026 (October 23 meeting review and applied board updates)
 **Primary launch:** Public website and current registration handoff  
 **Long-term product:** Secure global operations platform  
 
@@ -26,6 +26,8 @@ The operating platform is a separate, later product layer. It should gradually r
 ## 2. Source material and decision confidence
 
 This PRD combines:
+
+- Both October 23, 2026 team/SME recordings (01:24:55 and 00:13:05), reviewed through complete local transcripts and screen spot-checks. See [the October 23 review](./meeting-notes/2026-10-23-website-registration-and-staff-review.md).
 
 - The August 20, 2026 kickoff recording and planning notes.
 - The August 20, 2026 design-feedback recording.
@@ -159,7 +161,7 @@ Create the trusted global home for Vision School: one public place where people 
 | Give internal users one place to open approved tools | Authentik | Show only the applications each approved user is allowed to use. Branding is low risk; authentication flows and security configuration require Anthony's review. |
 | Host a mature independent application | GitHub repository plus Dokploy | Promote a proven prototype only when it needs independent engineering, broader use, or a stable release process. |
 | Host the main public website and CMS | Vercel | Keep the current production path until reliability, cost, and migration evidence support a change. |
-| Track planned and active work | Linear | Keep the three current initiatives, use a few broad outcome-based projects, and keep fewer than 100 plain-language issues. Update existing issues before creating new ones. |
+| Track planned and active work | Linear | Use the four verified initiatives and a few broad outcome-based projects. Keep fewer than 100 open, plain-language issues; update existing issues before creating new ones. Completed history is not part of the open-work limit. |
 
 ### 7.2 Change flow
 
@@ -192,6 +194,24 @@ These decisions take precedence over older prototype assumptions in this documen
 - **Evaluation timing.** Proposed private evaluation tasks become due three hours after the scheduled class start and remain pending until submitted. Approved VS department staff need the appropriate review view; the precise roles permitted to read answers must be agreed before real submissions are collected. No AI scoring is requested.
 - **Review process.** Use the existing design gallery for component review and Telegram topics for comments. Gallery commenting/versioning is not part of this build. Code goes through focused PRs; design PRs carry `design`. No automatic merge, package publication, database migration, or production deployment is authorized by this implementation step.
 - **No new paid service or hosting change.** Current hosting and older Vercel references must be verified with Anthony; this work does not require Chris to buy a Vercel account.
+
+### 7.5 October 23 direction and delivery targets
+
+These updates take precedence over older planning targets and assumptions about immediate portal replacement. They do not mark a prototype as deployed or a suggested design as approved.
+
+- **Public credibility and class discovery remain first.** Noa and the content owners choose actual wording, media, and placements; Chris implements the reviewed choices and keeps the requirements visible to the team.
+- **Meeting targets:** homepage content choices by October 28; useful homepage design/content by October 31; a November 7 soft launch with a Host/Pioneer branch-request action. End-of-December branch-information/site readiness, January route planning, and February staff-conference preparation provide the later operational context. These targets are not automatic Linear status, assignee, or due-date changes.
+- **Branch requests are separate from student enrollment.** Reuse the actual branch Google Form's questions for the soft launch. The team considered a simple form/link/embedded handoff. Exact form, fields, destination, and treatment remain to be supplied. Full branch accounts are not required for that first request flow.
+- **Class details before registration.** Show approved meeting day/time, venue or useful location, generation/class type, and registration action. Public contacts require explicit selection; private leaders, hospitality, translation, and transport details remain internal. Maintain Frederick/DCMD as one branch and DCVA separately.
+- **Vision School banner and concise copy.** Review a recognizable, modern SVG identity alongside the existing InterCP header branding. No final logo or tagline was selected. Chris's subsequent direct request places the banner concept in the Classes page; this is an additional placement instruction, not a meeting approval of one concept.
+- **Registration replacement now has a design brief.** Design People/Registrations workflows, term and country grouping, USD/CAD handling, program/payment-status filters, appropriate payment reminders, and readable registration charts. A later connected replacement is the intended direction. The brief does not authorize shutting down Planning Center or skip verification of payments, forms, financial ownership, permissions, and migration.
+- **Student portal is later scope with specific needs.** Capture schedule, assignments/reading, attendance/progress, evaluations, staff communication, future camps, applications/documents, and desired payment plans. Resource-unlock weeks and example prices were illustrative, not approved fixed rules.
+- **CORE transition is unresolved.** Preserve the team's productive use of existing sheets while comparing sheet-led reflection with portal-led editing. Import/export is not live two-way synchronization, and no cutover was agreed.
+- **Travel entry should work from a phone.** Preserve manual entry; consider reviewed draft extraction from a receipt/screenshot/confirmation. Flight/train/bus service lookup is a feasibility question with no paid provider selected.
+- **Reuse demonstrated resources.** Anthony showed existing deck tools, media, chord sheets, roles, team leads, and nation networks. Verify their owning repository and fit before rebuilding them. Keep the media team's preparation step; previous-evaluation visibility needs an access decision.
+- **Possible later public features:** Youth and Kids explanatory pages, pre-enrollment interest/reminder signup, and an Alpha-inspired video treatment need further content/design decisions. Automated Canva-style graphics are an idea, not part of the first dashboard commitment.
+- **Board maintenance, applied October 24:** 12 existing issues were updated and four focused issues added after their current project and initiative scopes were checked. The team now has 40 open issues. Existing statuses, assignees, priorities, estimates, labels, and relationships were preserved. See the [applied-change record](./linear-drafts/2026-10-23-board-change-queue.md).
+- **Approved tracking hierarchy:** Chris approved the planned [Registration & Engagement initiative](https://linear.app/vision-school-global/initiative/registration-and-engagement-5871d8ad3bea) and its [Registration Design project](https://linear.app/vision-school-global/project/registration-design-a42dd211d57a). The first two outcomes are a fictional-data student registration prototype (VIS-348) and a staff People/Registrations prototype (VIS-349). Homepage hero wording (VIS-346) and Host/Pioneer intake (VIS-347) stay in the public content projects. The [initiative decision log](https://linear.app/vision-school-global/document/october-23-decisions-and-later-student-portal-requirements-d4da20718d9b) retains later portal needs and unresolved policies without creating a story for each idea.
 
 ## 8. Design direction from the feedback review
 
@@ -440,6 +460,16 @@ The portal is not part of the public MVP, but the public architecture must not b
 - Reports
 - Administration
 
+### Student portal needs recorded October 23
+
+These are follow-on requirements, not November soft-launch acceptance criteria:
+
+- **STU-001:** Students can see their class schedule, assigned reading/homework, attendance, and progress.
+- **STU-002:** Students can submit the appropriate evaluations and communicate questions or required information to staff.
+- **STU-003:** Approved resources, nation-network information, and applications can become available at the appropriate stage. Ministry owners define eligibility and timing; example weeks must not be hardcoded as approved rules.
+- **STU-004:** Students can see upcoming approved camps/events and, in a later financial workflow, applicable balances or payment plans.
+- **STU-005:** Any document upload/application workflow must have a defined owner, intended audience, and access scope before implementation with real information.
+
 ### Identity and access
 
 - **AUTH-001:** Telegram sign-in may prove control of a Telegram identity; it must not grant a role by itself.
@@ -547,6 +577,8 @@ A teaching-material link slot can be shown in the prototype. Uploading, storing,
 
 ## 17. Registration and payments migration gate
 
+**October 23 update:** The team demonstrated the current People/Registrations administration and requested registration mockups. Design can proceed from that verified brief while the complete field list, financial rules, owners, and migration process are collected. This is a step beyond the earlier research-only posture; the replacement itself is not yet ready for live cutover. The full orientation and operational checks below still apply before a production replacement.
+
 The August 25 meeting requested a focused research workstream covering Vision School, Medical Missions / M&M, Mission & Business, Vision Camp, Mission Camp, and other InterCP programs that currently use Church Center or Planning Center. The names, owners, and active registration pages for every program still need to be verified.
 
 The workstream should compare four paths in plain language:
@@ -569,7 +601,7 @@ Do not replace Church Center until the team has documented and tested:
 
 The actual Church Center, Planning Center, payment-processing, support, and migration costs must be verified from current account records before making a replacement decision. A public pricing calculator or meeting screenshot is not proof of the organization's current bill.
 
-Before creating implementation issues, the team must complete registration orientation and review the actual Church Center or Planning Center, spreadsheet, notification, and Looker Studio workflow. After that review, the team may create a separate Registration & Engagement initiative with its own practical projects and issues. Until then, Church Center remains the registration system and the public website provides the discovery and handoff experience.
+The October 23 recordings provide an initial registration orientation and a concrete UX brief, not the complete operational inventory. Before creating production implementation issues, finish reviewing the actual fields, spreadsheet, notification, financial, and reporting workflows and verify the owning project/initiative. Keep Church Center available during the design and pilot. The simple branch Host/Pioneer intake is a separate public-flow deliverable and does not depend on replacing student registration.
 
 ## 18. Release plan
 
@@ -711,7 +743,7 @@ The authenticated portal may launch only when:
 
 ## 23. Collaboration and repository requirements
 
-- Use the three current Linear initiatives: **Vision School International Platform**, **Website Content & Management**, and **Flight Operations App**.
+- Use the four verified Linear initiatives: **Vision School International Platform**, **Website Content & Management**, **Flight Operations App**, and the planned **Registration & Engagement** initiative approved October 24. Its first project is **Registration Design**, not a live registration or student-portal release.
 - Keep projects and issues high-level enough for a three-person team. Create a separate **Registration & Engagement** initiative only after registration orientation establishes a real delivery boundary.
 - Keep detailed requirements in this PRD. Linear issues should describe deliverable work, not repeat every requirement as a separate story.
 - Keep fewer than 100 active issues. Update or combine an existing issue before creating another one.
@@ -800,7 +832,17 @@ The authenticated portal may launch only when:
 
 ## 26. Immediate next actions
 
-### Current team actions
+### October 23 immediate actions
+
+- [ ] Noa/content owners provide homepage wording and selected media/placements for the October 28 meeting target.
+- [ ] Chris implements the reviewed homepage and class-discovery changes for the October 31 target; Anthony verifies the deployment path and reported production-pipeline failure.
+- [ ] Christina/Noa provide the actual branch-request Google Form, current questions, destination, and owner so the smallest Host/Pioneer flow can be tested for the November 7 target.
+- [ ] Prepare registration UX options from the demonstrated People/Registrations workflow; keep the payment/migration decision separate from the branch intake.
+- [ ] Agree how CORE sheets and portal data will stay current before piloting shared editing.
+- [ ] Review Anthony's existing resource tools for reuse instead of creating duplicate implementation work.
+- [x] Reconnect Linear, inspect the live parent scopes, apply supported updates, and read them back: 12 existing issues updated and four new issues created October 24. See the applied-change record; application code and deployments were not changed by these planning updates.
+
+### Earlier team actions still to reconcile
 
 - [ ] Christina obtains the first 5–10 complete, approved branch records from Gilbert or the responsible team, then continues adding the remaining locations gradually.
 - [ ] Christina gathers a representative set of approved images, video sources, testimonials, captions, and public-use permissions from the media team.

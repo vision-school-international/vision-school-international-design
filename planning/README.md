@@ -6,6 +6,8 @@ This folder is the shared GitHub home for Vision School meeting summaries, produ
 
 | Document | Purpose | Current status |
 |---|---|---|
+| [October 23 team/SME review](./meeting-notes/2026-10-23-website-registration-and-staff-review.md) | New and changed requirements, targets, decisions, and next actions from both recordings | Reviewed against full local transcripts and screen spot-checks |
+| [October 23 applied board changes](./linear-drafts/2026-10-23-board-change-queue.md) | Twelve existing issues updated, four new issues, and the approved registration hierarchy | Applied and read back October 24; 40 open issues across the team |
 | [Product Requirements Document](./PRD.md) | Main source for approved direction, requirements, boundaries, risks, and open decisions | Draft for team and ministry review |
 | [September 17 meeting and September 19 decisions](./meeting-notes/2026-09-17-website-and-staff-review.md) | Current build priorities, branch terminology, internal prototype, and responsibilities | Chris authorized scoped implementation on September 19; launch approvals remain |
 | [September 19 Linear updates](./linear-drafts/2026-09-19-meeting-applied.md) | Seven existing issues updated from the meeting; remaining tagging and evaluation-ownership decisions | Applied and read back in Linear; no new issues |
