@@ -2,7 +2,7 @@
 
 **Review status:** Both recordings reviewed through complete local automatic transcripts and targeted screen checks. These are interpreted meeting notes, not a verbatim transcript or approval of every idea discussed.
 
-**Board status:** Linear changes have not been applied. The current connection is unavailable. The proposed mapping below must be checked against the live issues and project boundaries before editing.
+**Board status, verified October 24:** Applied and read back in Linear: 12 existing issues updated and four new issues created. Chris approved the planned Registration & Engagement initiative and its Registration Design project. Existing progress, assignments, priorities, estimates, labels, and relationships were preserved. See the [applied-change record](../linear-drafts/2026-10-23-board-change-queue.md).
 
 ## What the team agreed to work on next
 
@@ -160,4 +160,7 @@ The group did not agree that a ready-to-open resource should replace the media t
 
 - [Maintained PRD](../PRD.md)
 - [October 23 board-change queue](../linear-drafts/2026-10-23-board-change-queue.md)
-- [Last verified applied Linear changes](../linear-drafts/2026-09-19-meeting-applied.md)
+- [Registration & Engagement initiative](https://linear.app/vision-school-global/initiative/registration-and-engagement-5871d8ad3bea)
+- [Registration Design project](https://linear.app/vision-school-global/project/registration-design-a42dd211d57a)
+- [Decisions and later student-portal requirements](https://linear.app/vision-school-global/document/october-23-decisions-and-later-student-portal-requirements-d4da20718d9b)
+- [Earlier September applied changes](../linear-drafts/2026-09-19-meeting-applied.md)

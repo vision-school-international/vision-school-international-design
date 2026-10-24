@@ -1,18 +1,20 @@
-# October 23 requirements board change queue
+# October 23 requirements board changes — applied October 24
 
-**Status: not applied.** Linear is not connected in this session. This is a requirement-to-existing-work mapping, not a live-board export, a set of fully verified issue drafts, or confirmation that any issue was changed.
+**Status: applied and read back in Linear on October 24.** Both recordings were reviewed, all affected live issues and their project/initiative scopes were checked, 12 existing issue descriptions were updated, and four concrete issues were created. No application code was changed or deployed as part of this planning update.
 
-Chris authorized applying appropriate new and changed requirements. The remaining blocker is access to the current board and its project/initiative descriptions. Do not ask Chris to approve the same requested edits again once that access is restored.
+Chris authorized applying new and changed requirements and explicitly approved creating a planned Registration & Engagement initiative with a Registration Design project. The initiative was created at workspace level, consistent with the existing initiatives; assigning a lead team to an initiative required a paid capability, so no subscription or upgrade was made. The project belongs to Vision School Team.
+
+**Board size:** 40 open issues after this update, up from 36; 108 non-archived issues including completed/canceled history. The fewer-than-100 target applies to open work, not deleting completed history.
 
 ## Updating rule
 
-Read the live issue and its project/initiative before changing it. Keep existing acceptance criteria that still apply. Preserve status, assignee, priority, estimate, labels, and relationships unless an explicit, verified change is needed. Do not mark review prototypes Done or deployed from this meeting. Keep issue count low; add details to the appropriate existing outcome rather than creating a story for each field.
+Existing status, assignee, priority, estimate, labels, parent, project, and team fields were compared with the pre-edit records and were unchanged for all 12 issues. New issues are Backlog, unassigned, without inferred priority or labels, and have estimates matching their bounded deliverables. No label taxonomy has been defined, so new labels were not guessed. No review prototype was marked Done or deployed.
 
-Use [the team's issue-writing skill](https://github.com/vision-school-international/skillshub/tree/main/linear-issue-create). The October 23 copy was verified against the installed skill. New implementation issues require its exact template, verified code scope, and verified parent project; missing ownership belongs in the decision log until resolved.
+Used [the team's issue-writing skill](https://github.com/vision-school-international/skillshub/tree/main/linear-issue-create) and its initiative/project skills. All 16 affected issues have the exact six description headings. Current remote-main code locations were checked before drafting code-related scope. Unresolved later work remains in the decision log rather than becoming speculative implementation stories.
 
-## Existing issues to inspect first
+## Existing issues updated
 
-These identifiers are verified in the September 19 applied-change record. Their current wording, progress, and scope must be read from Linear before applying a patch.
+Each issue below was read from the live board before editing and read back afterward. The table describes the new information, not a claim that the implementation is complete.
 
 | Existing work | Meeting delta to reconcile | Source |
 |---|---|---|
@@ -23,16 +25,26 @@ These identifiers are verified in the September 19 applied-change record. Their 
 | [VIS-318 — Speaker calendar and itinerary](https://linear.app/vision-school-global/issue/VIS-318) | Record the sheet-to-portal transition as unresolved; scope mobile booking entry and receipt/screenshot import against the proper travel work. Preserve manual verification and do not claim live synchronization is implemented. | Part 1, 00:46:08–01:01:09 |
 | [VIS-319 — Branch visit and pickup view](https://linear.app/vision-school-global/issue/VIS-319) | Preserve a simple, readable branch view with current times, venue, and travel information. Reconcile updates with whichever source-of-truth pilot is chosen. Do not make all branches create new accounts for the November branch-request form. | Part 1, 00:59:11–01:06:07; 01:20:34–01:21:20 |
 | [VIS-313 — Sign-in and permissions](https://linear.app/vision-school-global/issue/VIS-313) | Continue using existing identity/Telegram integration; flag student versus branch/staff scopes and previous-evaluation visibility for the appropriate owner. A simple Host/Pioneer request need not wait for complete branch account self-service. | Part 1, 00:03:18–00:04:34; 01:20:34–01:21:20 |
+| [VIS-333 — Youth/Kids page](https://linear.app/vision-school-global/issue/VIS-333) | Keep the combined page until the Next Generation team decides whether to split it. Correct the code scope to the actual catch-all route and PageView rendering. | Part 1, public page discussion; Next Generation confirmation remains open |
+| [VIS-334 — Youth/Kids homepage section](https://linear.app/vision-school-global/issue/VIS-334) | Keep this separate from the dedicated page; use approved program wording, not inferred ages, and the verified page assembly. | Part 1, public page discussion; Next Generation confirmation remains open |
+| [VIS-310 — Flight pilot decisions](https://linear.app/vision-school-global/issue/VIS-310) | Keep the one-route pilot and explicitly decide sheet-led versus portal-led updates, ownership, conflicts, and stale information before live integration. | Part 1, 00:48:42–01:01:09 |
+| [VIS-314 — Pilot import and conflicts](https://linear.app/vision-school-global/issue/VIS-314) | Preserve source/provenance and human conflict review. Do not equate import/export with live two-way synchronization or immediate sheet replacement. | Part 1, 00:48:42–01:01:09 |
+| [VIS-316 — Travel booking editing](https://linear.app/vision-school-global/issue/VIS-316) | Add mobile manual entry and human-reviewed receipt/screenshot extraction drafts. A service number alone is not enough to identify a journey; no paid lookup or purchase is approved. | Part 1, 00:46:08–00:55:48 |
 
-## Find the matching existing work before creating anything
+## New initiative, project, and focused issues
 
-1. **Homepage wording and Vision School banner.** Attach the October 28 content and October 31 homepage targets to the relevant existing homepage/hero work. Record Noa's content role in the description. The four generated SVG concepts are unapproved options; Chris's subsequent Classes-page placement request is a separate direct clarification.
-2. **Host/Pioneer branch request.** This is a distinct public action and form, with a November 7 soft-launch target. Read the current branch-readiness and public-page project scopes before deciding ownership. Reuse the actual branch Google Form questions. Keep student enrollment and full branch account editing outside this first outcome.
-3. **Registration UX.** Reconcile the earlier registration-platform research with the new request for mockups covering People, Registrations, term/country/program grouping, payment-status filtering, and reminder actions. This is not a wholesale migration ticket or permission to close Planning Center. Do not invent a repository or repurpose a travel project.
-4. **Internal registration dashboard.** Reuse any matching reporting work. Track readable counts/charts and appropriate branch/program visibility; do not copy participant data or example prices into issues.
-5. **Student portal.** Keep the long-term learning/progress, resources, event, application, and payment-plan needs in the PRD. Break out implementation only after the owning project and a first deliverable are established.
-6. **CORE transition.** Locate any existing import/synchronization work. Record the choice between sheet-led reflection and portal-led editing as an unresolved decision. Do not make two-way sync a settled acceptance criterion.
-7. **Teaching/media resources.** Check Anthony's demonstrated resource tools before proposing new work. Link or extend the existing implementation after its repository and owner are verified; retain the media team's preparation step. Previous speaker evaluations require a visibility decision.
+- [I-4 — Registration & Engagement](https://linear.app/vision-school-global/initiative/registration-and-engagement-5871d8ad3bea): Planned, with no inferred owner, priority, or target date.
+- [P-VIS-27 — Registration Design](https://linear.app/vision-school-global/project/registration-design-a42dd211d57a): Backlog, under I-4 and Vision School Team; fictional-data prototypes only.
+- [Decision log and later student-portal requirements](https://linear.app/vision-school-global/document/october-23-decisions-and-later-student-portal-requirements-d4da20718d9b): attached to I-4. Includes team handoffs, later portal needs, unresolved policies, and cross-project dependencies.
+
+| New issue | Verified project / initiative | Concrete boundary |
+|---|---|---|
+| [VIS-346 — Homepage hero message and ministry identity](https://linear.app/vision-school-global/issue/VIS-346) | Home Page / Website Content & Management | Existing purpose-hero, approved wording and imagery; October 28/31 targets. The Classes banner stays in VIS-343. Estimate 2. |
+| [VIS-347 — Host Vision School request entry](https://linear.app/vision-school-global/issue/VIS-347) | Branches & Locations Page / Website Content & Management | Distinct Host/Pioneer action to the approved existing Google Form. Actual URL, owner, questions, and destination still needed. No branch accounts or new form backend. Estimate 3. |
+| [VIS-348 — Student registration prototype](https://linear.app/vision-school-global/issue/VIS-348) | Registration Design / Registration & Engagement | Fictional registration flow with program, term, country, review step, and clearly illustrative payment choices. No live payment or enrollment. Estimate 3. |
+| [VIS-349 — People and payment-status prototype](https://linear.app/vision-school-global/issue/VIS-349) | Registration Design / Registration & Engagement | Fictional People/Registrations, combined filters, distinct USD/CAD totals, counts, and unsent reminder previews. No real records or messages. Estimate 3. |
+
+Current registration operations remain in place. Broader learning/progress, applications, resources, and events are retained in the PRD and initiative document, not silently added to these two prototype tickets. Anthony's demonstrated resource tools must be reviewed for reuse before proposing a duplicate build.
 
 ## Keep these in the decision log for now
 
@@ -56,12 +68,13 @@ These identifiers are verified in the September 19 applied-change record. Their 
 | `vision-school-international-core` | `837e5c787f0f481b896179645a86e1c38fa761f9` | `src/domain.ts`, `src/App.tsx`, `planning/REQUIREMENTS.md`; current review app does not implement live sheet sync. |
 | `vision-school-international-flight-operations` | `49772ad6309e3a1d907ae1857bfd4170490a6190` | `prototype/README.md` and the fictional staff workflow; not a production travel or registration service. |
 
-## Completion check after connection is restored
+## Verification and safety
 
-- Read each affected issue and its verified parent scope.
-- Apply the supported changes while preserving unrelated work and fields.
-- Add only missing, concrete deliverables in the correct project.
-- Read every changed issue back and record its identifier, URL, and exact changes here.
-- Update this document's status only when the live-board responses confirm the changes.
+- Read all 12 existing and four new issues back; checked headings, supported scope, and parent placement.
+- Compared unchanged metadata against pre-edit records: no differences for the 12 existing issues.
+- Read the new initiative, its project relationship, and its decision document back from Linear.
+- Confirmed the live open-issue count across all pages: 40.
+- Automatic approval review rejected adding private GitHub references to one issue. Requirements-only patches succeeded; equivalent newly added private links/code hashes were removed from the first four updates as well. Earlier references already present on those issues were preserved. Detailed code baselines remain in this private Planning record.
+- Local raw recordings, transcripts, participant screenshots, private contacts, payments, and booking data were not uploaded. No application build, merge, or deployment is implied by these requirements updates.
 
 See [the meeting review](../meeting-notes/2026-10-23-website-registration-and-staff-review.md) for the full requirements, decisions, and source timestamps.

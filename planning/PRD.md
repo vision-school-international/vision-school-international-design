@@ -3,7 +3,7 @@
 **Document type:** Product Requirements Document  
 **Status:** Draft for ministry, product, design, and engineering review  
 **Version:** 1.5
-**Date:** October 23, 2026
+**Date:** October 24, 2026 (October 23 meeting review and applied board updates)
 **Primary launch:** Public website and current registration handoff  
 **Long-term product:** Secure global operations platform  
 
@@ -161,7 +161,7 @@ Create the trusted global home for Vision School: one public place where people 
 | Give internal users one place to open approved tools | Authentik | Show only the applications each approved user is allowed to use. Branding is low risk; authentication flows and security configuration require Anthony's review. |
 | Host a mature independent application | GitHub repository plus Dokploy | Promote a proven prototype only when it needs independent engineering, broader use, or a stable release process. |
 | Host the main public website and CMS | Vercel | Keep the current production path until reliability, cost, and migration evidence support a change. |
-| Track planned and active work | Linear | Keep the three current initiatives, use a few broad outcome-based projects, and keep fewer than 100 plain-language issues. Update existing issues before creating new ones. |
+| Track planned and active work | Linear | Use the four verified initiatives and a few broad outcome-based projects. Keep fewer than 100 open, plain-language issues; update existing issues before creating new ones. Completed history is not part of the open-work limit. |
 
 ### 7.2 Change flow
 
@@ -210,7 +210,8 @@ These updates take precedence over older planning targets and assumptions about 
 - **Travel entry should work from a phone.** Preserve manual entry; consider reviewed draft extraction from a receipt/screenshot/confirmation. Flight/train/bus service lookup is a feasibility question with no paid provider selected.
 - **Reuse demonstrated resources.** Anthony showed existing deck tools, media, chord sheets, roles, team leads, and nation networks. Verify their owning repository and fit before rebuilding them. Keep the media team's preparation step; previous-evaluation visibility needs an access decision.
 - **Possible later public features:** Youth and Kids explanatory pages, pre-enrollment interest/reminder signup, and an Alpha-inspired video treatment need further content/design decisions. Automated Canva-style graphics are an idea, not part of the first dashboard commitment.
-- **Board maintenance:** prefer existing issue updates and preserve the compact hierarchy. The [October 23 change queue](./linear-drafts/2026-10-23-board-change-queue.md) is not applied: Linear must be connected and the live issue/project scopes verified before submission.
+- **Board maintenance, applied October 24:** 12 existing issues were updated and four focused issues added after their current project and initiative scopes were checked. The team now has 40 open issues. Existing statuses, assignees, priorities, estimates, labels, and relationships were preserved. See the [applied-change record](./linear-drafts/2026-10-23-board-change-queue.md).
+- **Approved tracking hierarchy:** Chris approved the planned [Registration & Engagement initiative](https://linear.app/vision-school-global/initiative/registration-and-engagement-5871d8ad3bea) and its [Registration Design project](https://linear.app/vision-school-global/project/registration-design-a42dd211d57a). The first two outcomes are a fictional-data student registration prototype (VIS-348) and a staff People/Registrations prototype (VIS-349). Homepage hero wording (VIS-346) and Host/Pioneer intake (VIS-347) stay in the public content projects. The [initiative decision log](https://linear.app/vision-school-global/document/october-23-decisions-and-later-student-portal-requirements-d4da20718d9b) retains later portal needs and unresolved policies without creating a story for each idea.
 
 ## 8. Design direction from the feedback review
 
@@ -742,7 +743,7 @@ The authenticated portal may launch only when:
 
 ## 23. Collaboration and repository requirements
 
-- Use the three current Linear initiatives: **Vision School International Platform**, **Website Content & Management**, and **Flight Operations App**.
+- Use the four verified Linear initiatives: **Vision School International Platform**, **Website Content & Management**, **Flight Operations App**, and the planned **Registration & Engagement** initiative approved October 24. Its first project is **Registration Design**, not a live registration or student-portal release.
 - Keep projects and issues high-level enough for a three-person team. Create a separate **Registration & Engagement** initiative only after registration orientation establishes a real delivery boundary.
 - Keep detailed requirements in this PRD. Linear issues should describe deliverable work, not repeat every requirement as a separate story.
 - Keep fewer than 100 active issues. Update or combine an existing issue before creating another one.
@@ -839,7 +840,7 @@ The authenticated portal may launch only when:
 - [ ] Prepare registration UX options from the demonstrated People/Registrations workflow; keep the payment/migration decision separate from the branch intake.
 - [ ] Agree how CORE sheets and portal data will stay current before piloting shared editing.
 - [ ] Review Anthony's existing resource tools for reuse instead of creating duplicate implementation work.
-- [ ] Reconnect Linear, inspect the live parent scopes, apply supported updates, and read them back. The prepared change queue is not a completion record.
+- [x] Reconnect Linear, inspect the live parent scopes, apply supported updates, and read them back: 12 existing issues updated and four new issues created October 24. See the applied-change record; application code and deployments were not changed by these planning updates.
 
 ### Earlier team actions still to reconcile
 
