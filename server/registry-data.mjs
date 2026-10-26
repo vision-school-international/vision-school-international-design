@@ -23,7 +23,12 @@ const localSectionMeta = {
     partnerLogoStrip: { image: "", stage: "05" },
     resourcesBlogListing: { image: "", stage: "05" },
 };
-export const sectionTypes = reviewCatalog
+// App prototypes remain review-only: they are not new public CMS block types.
+const prototypeSections = {
+    studentRegistration: { image: "", stage: "04", name: "Student registration", description: "Choose a sample class, review proposed registration fields, and preview payment options. No live enrollment or payment.", anatomy: "Class selection · Sample details · Payment options · Review", color: "#1769c2" },
+    staffRegistration: { image: "", stage: "04", name: "Staff registration", description: "Review fictional people and registrations, filter payment status, and preview follow-up without sending messages.", anatomy: "People · Registrations · Filters · Payment status · Reminder preview", color: "#102c57" },
+};
+const sharedSectionTypes = reviewCatalog
     .map((entry) => {
     const meta = localSectionMeta[entry.blockType];
     if (!meta)
@@ -39,6 +44,10 @@ export const sectionTypes = reviewCatalog
     };
 })
     .filter((entry) => entry !== undefined);
+export const sectionTypes = [
+    ...sharedSectionTypes,
+    ...Object.entries(prototypeSections).map(([key, meta]) => ({ key: key, ...meta })),
+];
 export const sectionId = (section) => `section-${section}`;
 const stageNames = {
     "00": "Globals",

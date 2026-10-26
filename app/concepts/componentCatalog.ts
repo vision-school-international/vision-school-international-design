@@ -27,7 +27,13 @@ const localSectionMeta: Partial<Record<PackageSection, LocalSectionMeta>> = {
   resourcesBlogListing: { image: "", stage: "05" },
 };
 
-export const sectionTypes = reviewCatalog
+// App prototypes remain review-only: they are not new public CMS block types.
+const prototypeSections = {
+  studentRegistration: { image: "", stage: "04", name: "Student registration", description: "Choose a sample class, review proposed registration fields, and preview payment options. No live enrollment or payment.", anatomy: "Class selection · Sample details · Payment options · Review", color: "#1769c2" },
+  staffRegistration: { image: "", stage: "04", name: "Staff registration", description: "Review fictional people and registrations, filter payment status, and preview follow-up without sending messages.", anatomy: "People · Registrations · Filters · Payment status · Reminder preview", color: "#102c57" },
+} as const;
+
+const sharedSectionTypes = reviewCatalog
   .map((entry) => {
     const meta = localSectionMeta[entry.blockType];
     if (!meta) return undefined;
@@ -42,6 +48,11 @@ export const sectionTypes = reviewCatalog
     };
   })
   .filter((entry): entry is NonNullable<typeof entry> => entry !== undefined);
+
+export const sectionTypes = [
+  ...sharedSectionTypes,
+  ...Object.entries(prototypeSections).map(([key, meta]) => ({ key: key as keyof typeof prototypeSections, ...meta })),
+];
 
 export type ComponentSection = (typeof sectionTypes)[number]["key"];
 export const sectionId = (section: ComponentSection) => `section-${section}`;

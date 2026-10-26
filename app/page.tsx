@@ -29,9 +29,15 @@ export default function Home() {
   const [activeConcept, setActiveConcept] = useState<ConceptKey>(concepts[0].key);
 
   useEffect(() => {
-    if (window.location.hash) {
-      window.history.replaceState(null, "", window.location.pathname);
-    }
+    const onHashChange = () => {
+      const section = sectionFromKey(window.location.hash.replace("#section-", ""));
+      if (section) {
+        setActiveSection(section);
+        setActiveConcept(concepts[0].key);
+      }
+    };
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
   }, []);
 
   const selectedSection = sectionTypes.find((section) => section.key === activeSection);
@@ -67,6 +73,7 @@ export default function Home() {
                         onClick={() => {
                           setActiveSection(section.key);
                           setActiveConcept(concepts[0].key);
+                          window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}#section-${section.key}`);
                         }}
                       >
                         <span className="studio-rail-dot" aria-hidden="true" />

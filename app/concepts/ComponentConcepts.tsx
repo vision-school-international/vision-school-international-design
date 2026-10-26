@@ -1,6 +1,8 @@
 import { createElement } from "react";
 import { SectionRenderer } from "@vision-school-international/website-components/react";
 import type { DesignConceptDefinition } from "./conceptRegistry";
+import { StudentRegistration } from "../components/StudentRegistration";
+import { StaffRegistration } from "../components/StaffRegistration";
 import {
   classDecisionPathSection,
   coursePathwaySection,
@@ -23,6 +25,30 @@ import {
 } from "./sampleSections";
 
 export const componentConcepts: readonly DesignConceptDefinition[] = [
+  {
+    key: "student-registration-flow",
+    name: "Student Registration Flow",
+    image: "",
+    color: "#1769c2",
+    previewLabel: "Design prototype · Fictional data only",
+    sections: {
+      studentRegistration: function renderStudentRegistration() {
+        return createElement(StudentRegistration);
+      },
+    },
+  },
+  {
+    key: "staff-registration-workspace",
+    name: "Staff Registration Workspace",
+    image: "",
+    color: "#102c57",
+    previewLabel: "Design prototype · No live messages or payments",
+    sections: {
+      staffRegistration: function renderStaffRegistration() {
+        return createElement(StaffRegistration);
+      },
+    },
+  },
   {
     key: "purpose-hero",
     name: "Purpose Hero",

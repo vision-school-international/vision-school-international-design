@@ -1,0 +1,130 @@
+.staff-registration {
+  --rr-ink: var(--color-text-strong, #102c57);
+  --rr-muted: var(--color-text-muted, #53657e);
+  --rr-border: var(--color-border, #b9c9dc);
+  --rr-action: var(--color-link, #1769c2);
+  background: var(--color-surface, #fff); color: var(--rr-ink); font: 14px/1.5 Arial, sans-serif; text-align: left;
+}
+.staff-registration * { box-sizing: border-box; }
+.staff-registration :is(h2, h3, h4, p) { margin-top: 0; }
+.staff-registration :is(button, input, select) { font: inherit; }
+.staff-registration button { cursor: pointer; }
+.staff-registration button:disabled { cursor: not-allowed; opacity: .5; }
+.staff-registration :is(button, input, select, [tabindex]):focus-visible { outline: 3px solid var(--rr-action); outline-offset: 3px; }
+.staff-registration .rr-demo-note { display: flex; gap: 9px; padding: 12px 28px; font-size: 12px; background: #edf4fc; color: #22456f; border-bottom: 1px solid #d6e4f4; }
+.staff-registration .rr-demo-note > span { color: var(--rr-action); font-size: 9px; margin-top: 2px; }
+.staff-registration .rr-header { display: flex; align-items: start; justify-content: space-between; flex-wrap: wrap; gap: 18px; padding: 32px 28px 28px; }
+.staff-registration .rr-eyebrow { margin-bottom: 10px; color: var(--rr-muted); font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.staff-registration h2 { font: 400 clamp(28px, 2.6vw, 37px)/1.15 var(--font-serif, Georgia, serif); letter-spacing: -.03em; margin-bottom: 10px; }
+.staff-registration .rr-header p:last-child { color: var(--rr-muted); font-size: 13px; margin-bottom: 0; }
+.staff-registration .rr-access-note { color: var(--rr-muted); font-size: 10px; border: 1px solid #dce4ee; border-radius: 4px; padding: 7px 10px; }
+.staff-registration .rr-view-nav { display: flex; gap: 25px; padding: 0 28px; border-bottom: 1px solid var(--rr-border); }
+.staff-registration .rr-view-nav button { display: flex; gap: 10px; align-items: center; min-height: 46px; padding: 10px 0 14px; border: 0; border-bottom: 3px solid transparent; color: var(--rr-muted); background: transparent; font-weight: 600; font-size: 13px; }
+.staff-registration .rr-view-nav button[aria-pressed=true] { color: var(--rr-ink); border-bottom-color: var(--rr-ink); }
+.staff-registration .rr-view-nav button > span { font-size: 11px; padding: 1px 7px; background: #edf2f8; border-radius: 4px; }
+.staff-registration .rr-body { padding: 24px 28px 28px; }
+.staff-registration .rr-filters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; align-items: end; }
+.staff-registration .rr-filters label { display: grid; gap: 6px; font-size: 11px; font-weight: 600; min-width: 0; }
+.staff-registration .rr-filters :is(input, select) { width: 100%; min-height: 42px; padding: 9px 10px; border: 1px solid var(--rr-border); border-radius: 4px; background: #fff; color: var(--rr-ink); font-size: 12px; }
+.staff-registration .rr-search { grid-column: span 2; }
+.staff-registration .rr-clear { justify-self: start; border: 0; color: #155ca9; background: transparent; min-height: 42px; padding: 8px 0; font-size: 12px; text-decoration: underline; text-underline-offset: 3px; }
+.staff-registration .rr-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding: 26px 0; margin-top: 22px; border-top: 1px solid #dfe6ef; border-bottom: 1px solid #dfe6ef; }
+.staff-registration .rr-metrics > div { display: grid; gap: 3px; padding-right: 10px; }
+.staff-registration .rr-metrics > div + div { border-left: 1px solid #dfe6ef; padding-left: 22px; }
+.staff-registration .rr-metrics span { font-size: 12px; color: var(--rr-muted); }
+.staff-registration .rr-metrics strong { font-size: 33px; font-weight: 500; letter-spacing: -.04em; }
+.staff-registration .rr-metrics small { font-size: 10px; color: var(--rr-muted); }
+.staff-registration .rr-reporting { display: grid; grid-template-columns: 1.2fr 1fr; gap: 30px; margin: 26px 0 32px; }
+.staff-registration :is(.rr-payment-chart, .rr-balances) h3 { font-size: 12px; margin-bottom: 5px; }
+.staff-registration :is(.rr-payment-chart, .rr-balances) p { font-size: 10px; color: var(--rr-muted); margin-bottom: 12px; }
+.staff-registration .rr-chart-track { display: flex; height: 7px; border-radius: 2px; overflow: hidden; gap: 2px; background: #e5eaf0; margin: 16px 0 14px; }
+.staff-registration .rr-chart-paid { background: #42795c; }
+.staff-registration .rr-chart-partial { background: #5186bc; }
+.staff-registration .rr-chart-unpaid { background: #bb843d; }
+.staff-registration .rr-chart-unknown { background: #8d97a5; }
+.staff-registration .rr-payment-chart ul { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; list-style: none; padding: 0; margin: 0; }
+.staff-registration .rr-payment-chart li { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--rr-muted); }
+.staff-registration .rr-payment-chart li strong { margin-left: auto; color: var(--rr-ink); }
+.staff-registration .rr-status-dot { display: block; width: 6px; height: 6px; border-radius: 50%; }
+.staff-registration .rr-balances { padding-left: 26px; border-left: 1px solid #dfe6ef; }
+.staff-registration .rr-balances > div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-top: 10px; font-size: 11px; }
+.staff-registration .rr-balances > div span { color: var(--rr-muted); }
+.staff-registration .rr-balances > p { margin-top: 12px; margin-bottom: 0; }
+.staff-registration .rr-list-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+.staff-registration .rr-list-heading h3 { margin-bottom: 3px; font-size: 18px; font-weight: 500; }
+.staff-registration .rr-list-heading p { color: var(--rr-muted); font-size: 11px; margin-bottom: 0; }
+.staff-registration .rr-bulk-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.staff-registration :is(.rr-primary, .rr-secondary) { min-height: 39px; padding: 9px 12px; border-radius: 4px; border: 1px solid var(--rr-action); font-size: 11px; font-weight: 600; }
+.staff-registration .rr-primary { background: var(--rr-action); color: #fff; }
+.staff-registration .rr-primary:hover:not(:disabled) { background: #114e93; }
+.staff-registration .rr-secondary { background: #fff; color: var(--rr-ink); border-color: var(--rr-border); }
+.staff-registration .rr-secondary:hover:not(:disabled) { background: #f0f4fa; }
+.staff-registration .rr-selection-note { color: #22456f; background: #edf4fc; padding: 10px 12px; border-radius: 4px; font-size: 11px; }
+.staff-registration .rr-selection-note button { color: #155ca9; background: transparent; border: 0; text-decoration: underline; padding: 4px; font-size: inherit; }
+.staff-registration .rr-table-wrap { position: relative; width: 100%; overflow-x: auto; border: 1px solid #d6dfe9; border-radius: 5px; }
+.staff-registration .rr-table { width: 100%; min-width: 745px; border-collapse: collapse; font-size: 11px; }
+.staff-registration .rr-table caption { caption-side: bottom; text-align: left; padding: 10px 14px; font-size: 10px; color: var(--rr-muted); background: #fafbfd; }
+.staff-registration .rr-table :is(th, td) { padding: 14px 12px; text-align: left; border-bottom: 1px solid #e1e7ef; vertical-align: middle; }
+.staff-registration .rr-table th { color: var(--rr-muted); font-weight: 600; background: #f4f7fb; white-space: nowrap; }
+.staff-registration .rr-table td { color: #263e60; }
+.staff-registration .rr-table td > strong { font-size: 11px; }
+.staff-registration .rr-table td small { display: block; color: var(--rr-muted); font-size: 10px; margin-top: 3px; }
+.staff-registration .rr-table tbody tr:hover { background: #f8fafd; }
+.staff-registration .rr-table input[type=checkbox] { accent-color: var(--rr-action); width: 17px; height: 17px; cursor: pointer; }
+.staff-registration .rr-person-link { color: var(--rr-ink); font-weight: 600; border: 0; background: transparent; padding: 3px 0; text-align: left; font-size: 12px; }
+.staff-registration .rr-person-link:hover { color: var(--rr-action); text-decoration: underline; }
+.staff-registration .rr-detail-button { color: #155ca9; border: 0; background: transparent; padding: 9px 3px; font-size: 11px; white-space: nowrap; }
+.staff-registration .rr-status { display: inline-block; font-size: 10px; padding: 4px 7px; border-radius: 4px; white-space: nowrap; }
+.staff-registration .rr-status-paid { color: #285a3e; background: #e8f3ec; }
+.staff-registration .rr-status-partial { color: #265c91; background: #eaf2fc; }
+.staff-registration .rr-status-unpaid { color: #81521c; background: #fbf0df; }
+.staff-registration .rr-status-unknown { color: #515f70; background: #edf0f4; }
+.staff-registration .rr-money { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.staff-registration .rr-no-selection { color: #8d97a5; }
+.staff-registration .rr-footer { margin-top: 25px; color: var(--rr-muted); font-size: 11px; }
+.staff-registration .rr-footer strong { color: var(--rr-ink); }
+.staff-registration .rr-footer p { margin-top: 5px; max-width: 90ch; margin-bottom: 0; }
+.staff-registration .rr-empty { text-align: center; border: 1px dashed var(--rr-border); border-radius: 5px; padding: 40px 22px; }
+.staff-registration .rr-empty h3 { font-size: 18px; font-weight: 500; }
+.staff-registration .rr-empty p { color: var(--rr-muted); font-size: 12px; }
+.staff-registration .rr-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.staff-registration .rr-dialog { width: min(580px, calc(100vw - 30px)); max-height: calc(100dvh - 40px); padding: 26px; border: 1px solid var(--rr-border); border-radius: 8px; color: var(--rr-ink); background: #fff; overflow-y: auto; box-shadow: 0 24px 90px #102c5740; font: 13px/1.6 Arial, sans-serif; }
+.staff-registration .rr-dialog::backdrop { background: #10203b8c; }
+.staff-registration .rr-dialog-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.staff-registration .rr-dialog-header p { margin-bottom: 0; }
+.staff-registration .rr-dialog-header button { display: grid; place-items: center; width: 36px; height: 36px; background: #f1f5fa; border: 0; border-radius: 4px; font-size: 23px; }
+.staff-registration .rr-dialog h3 { font: 400 30px/1.2 var(--font-serif, Georgia, serif); margin: 0 0 10px; }
+.staff-registration .rr-dialog h4 { margin-bottom: 10px; margin-top: 22px; }
+.staff-registration .rr-dialog-lead { color: var(--rr-muted); overflow-wrap: anywhere; }
+.staff-registration .rr-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 20px 0; border-top: 1px solid #dfe6ef; }
+.staff-registration .rr-detail-grid dt { font-size: 11px; color: var(--rr-muted); margin-bottom: 3px; }
+.staff-registration .rr-detail-grid dd { margin: 0; font-size: 13px; }
+.staff-registration .rr-dialog-note { padding: 12px 14px; border-left: 3px solid #88aed6; color: var(--rr-muted); background: #f2f6fb; font-size: 12px; }
+.staff-registration .rr-dialog-footer { display: flex; justify-content: flex-end; border-top: 1px solid #dfe6ef; padding-top: 20px; margin-top: 22px; }
+.staff-registration :is(.rr-person-registrations, .rr-recipient-list) { margin: 16px 0 22px; padding: 0; list-style: none; }
+.staff-registration .rr-person-registrations li { display: flex; align-items: start; justify-content: space-between; gap: 12px; border-bottom: 1px solid #dfe6ef; padding: 15px 0; }
+.staff-registration .rr-person-registrations li > div { display: grid; gap: 5px; }
+.staff-registration .rr-person-registrations li > div > span { color: var(--rr-muted); font-size: 11px; }
+.staff-registration .rr-recipient-list li { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 12px; border-bottom: 1px solid #dfe6ef; padding: 10px 0; font-size: 11px; overflow-wrap: anywhere; }
+.staff-registration .rr-recipient-list small { grid-column: 1 / -1; color: var(--rr-muted); }
+.staff-registration .rr-message { background: #f7f9fc; border: 1px solid #dfe6ef; padding: 20px; border-radius: 5px; }
+.staff-registration .rr-message p { margin: 12px 0; }
+@media (max-width: 700px) {
+  .staff-registration .rr-body { padding: 20px 18px; }
+  .staff-registration .rr-header { padding: 26px 18px 20px; }
+  .staff-registration .rr-demo-note { padding: 10px 18px; font-size: 11px; }
+  .staff-registration .rr-view-nav { padding: 0 18px; }
+  .staff-registration .rr-filters { grid-template-columns: 1fr 1fr; }
+  .staff-registration .rr-search { grid-column: 1 / -1; }
+  .staff-registration .rr-metrics { gap: 10px; }
+  .staff-registration .rr-metrics > div + div { padding-left: 10px; }
+  .staff-registration .rr-reporting { grid-template-columns: 1fr; gap: 22px; }
+  .staff-registration .rr-balances { padding: 18px 0 0; border-left: 0; border-top: 1px solid #dfe6ef; }
+  .staff-registration .rr-bulk-actions { width: 100%; }
+  .staff-registration .rr-bulk-actions > button { flex: 1; }
+  .staff-registration .rr-dialog { padding: 20px; }
+}
+@media (max-width: 400px) {
+  .staff-registration .rr-metrics small { font-size: 9px; }
+  .staff-registration .rr-recipient-list li { grid-template-columns: 1fr; }
+}
