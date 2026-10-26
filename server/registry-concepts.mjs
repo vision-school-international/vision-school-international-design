@@ -1,5 +1,21 @@
 export const concepts = [
   {
+    "key": "student-registration-flow",
+    "name": "Student Registration Flow",
+    "sections": [
+      "studentRegistration"
+    ],
+    "source": "componentConcepts"
+  },
+  {
+    "key": "staff-registration-workspace",
+    "name": "Staff Registration Workspace",
+    "sections": [
+      "staffRegistration"
+    ],
+    "source": "componentConcepts"
+  },
+  {
     "key": "purpose-hero",
     "name": "Purpose Hero",
     "sections": [

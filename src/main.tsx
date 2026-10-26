@@ -8,6 +8,8 @@ import "../app/design.css";
 import "../app/pages.css";
 import "../app/globals.css";
 import "../app/branch-directory-review.css";
+import "../app/student-registration.css";
+import "../app/staff-registration.css";
 
 const pathname = window.location.pathname.replace(/\/+$/, "") || "/";
 const pageKey = pathname.slice("/pages/".length);
