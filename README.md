@@ -11,7 +11,7 @@ Each board is a standalone HTML file. Open it in a browser; images and fonts loa
 - `pages/<page>/notes.md`: the notes from that canvas page (sources, decisions, open questions).
 - `pages/home/`: the homepage, plus the nav dropdowns and the mobile menu.
 - `pages/brand/`: the brand palette.
-- `components/`: the component library (S00–S68); `components/notes.md` lists them by group.
+- `components/<component>/`: one folder per site component in vision-school-international-website-components. Each holds copies of the page boards it renders (`<page>-NN-<section>.html` + `.mobile.html`), the original S00–S68 board it was designed from (`source-Sxx-….html`) where one exists, and a README listing the pages that use it. `components/README.md` is the index; `components/notes.md` keeps the canvas notes for the S-boards.
 - `assets/images/`, `assets/fonts/`: the files the boards use, named by their canvas asset id.
 - `canvas.json`: the canvas layout as exported (board positions, page list, notes). Its `/_blob/<id>` links are the canvas asset ids, the same ids as the file names in `assets/`.
 
