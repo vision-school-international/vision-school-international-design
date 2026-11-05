@@ -1,0 +1,4232 @@
+{
+ "v": 3,
+ "attachments": {},
+ "boards": {
+  "Brand-Palette.dc.html": {
+   "h": 2760,
+   "page": "brand",
+   "title": "Brand palette (proposal) · from the InterCP logo, deepened",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "Footer.dc.html": {
+   "h": 1211,
+   "title": "Home · 13 · Footer",
+   "w": 1440,
+   "x": 0,
+   "y": 9885
+  },
+  "GetInvolved.dc.html": {
+   "h": 358,
+   "title": "Home · 03 · Get Involved",
+   "w": 1440,
+   "x": 0,
+   "y": 1122
+  },
+  "Hero.dc.html": {
+   "h": 626,
+   "title": "Home · 02 · Hero",
+   "w": 1113,
+   "x": 0,
+   "y": 192
+  },
+  "M-Footer.dc.html": {
+   "h": 1560,
+   "title": "Home · 13 · Footer · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 13225
+  },
+  "M-GetInvolved.dc.html": {
+   "h": 472,
+   "title": "Home · 03 · Get Involved · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 2165
+  },
+  "M-Hero.dc.html": {
+   "h": 844,
+   "title": "Home · 02 · Hero · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 1201
+  },
+  "M-Main.dc.html": {
+   "h": 72,
+   "title": "Home · 01 · Header / Nav · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "M-MenuMobile.dc.html": {
+   "h": 889,
+   "title": "Home · 01e · Mobile menu (Programs open) · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 192
+  },
+  "M-NewsGrid.dc.html": {
+   "h": 2465,
+   "title": "Home · NewsGrid · In the News · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 10640
+  },
+  "M-NewsHeader.dc.html": {
+   "h": 436,
+   "title": "Home · NewsHeader · In the News · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 10084
+  },
+  "M-ProductBibleApp.dc.html": {
+   "h": 680,
+   "title": "Home · 07 · Program: Vision Camp · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 6943
+  },
+  "M-ProductConnect.dc.html": {
+   "h": 1216,
+   "title": "Home · 06 · Program: Vision School · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 5607
+  },
+  "M-ProductKids.dc.html": {
+   "h": 1166,
+   "title": "Home · 09 · Program: Vision School Youth · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 7743
+  },
+  "M-ProductsIntro.dc.html": {
+   "h": 736,
+   "title": "Home · 05 · Programs Intro · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 4751
+  },
+  "M-Stats.dc.html": {
+   "h": 1874,
+   "title": "Home · 04 · Stats · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 2757
+  },
+  "M-Stories.dc.html": {
+   "h": 935,
+   "title": "Home · 10 · Stories · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 9029
+  },
+  "Main.dc.html": {
+   "h": 72,
+   "title": "Home · 01 · Header / Nav",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "MenuAbout.dc.html": {
+   "h": 536,
+   "title": "Home · 01a · Nav dropdown: About",
+   "w": 1440,
+   "x": 2100,
+   "y": 0
+  },
+  "MenuInvolved.dc.html": {
+   "h": 536,
+   "title": "Home · 01d · Nav dropdown: Get Involved",
+   "w": 1440,
+   "x": 2100,
+   "y": 1968
+  },
+  "MenuPartner.dc.html": {
+   "h": 536,
+   "title": "Home · 01c · Nav dropdown: Partner Together",
+   "w": 1440,
+   "x": 2100,
+   "y": 1312
+  },
+  "MenuProducts.dc.html": {
+   "h": 536,
+   "title": "Home · 01b · Nav dropdown: Programs",
+   "w": 1440,
+   "x": 2100,
+   "y": 656
+  },
+  "NewsGrid.dc.html": {
+   "h": 662,
+   "title": "Home · NewsGrid · In the News",
+   "w": 1440,
+   "x": 0,
+   "y": 9103
+  },
+  "NewsHeader.dc.html": {
+   "h": 261,
+   "title": "Home · NewsHeader · In the News",
+   "w": 1440,
+   "x": 0,
+   "y": 8722
+  },
+  "P-branches-01-S05-hero-withimg-mobile.dc.html": {
+   "h": 630,
+   "page": "branches",
+   "title": "Branches · 01 · Hero · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "P-branches-01-S05-hero-withimg.dc.html": {
+   "h": 819,
+   "page": "branches",
+   "title": "Branches · 01 · Hero",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-branches-02-S59-globalhubs-howitworks-mobile.dc.html": {
+   "h": 962,
+   "page": "branches",
+   "title": "Branches · 02 · Where We Serve · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 939
+  },
+  "P-branches-02-S59-globalhubs-howitworks.dc.html": {
+   "h": 952,
+   "page": "branches",
+   "title": "Branches · 02 · Where We Serve",
+   "w": 1440,
+   "x": 0,
+   "y": 939
+  },
+  "P-branches-03-S17-findhub-section-mobile.dc.html": {
+   "h": 2454,
+   "page": "branches",
+   "title": "Branches · 03 · Many Branches, One Mission · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 2021
+  },
+  "P-branches-03-S17-findhub-section.dc.html": {
+   "h": 1357,
+   "page": "branches",
+   "title": "Branches · 03 · Many Branches, One Mission",
+   "w": 1440,
+   "x": 0,
+   "y": 2011
+  },
+  "P-branches-04-Stories-mobile.dc.html": {
+   "h": 935,
+   "page": "branches",
+   "title": "Branches · 04 · Stories · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 4595
+  },
+  "P-branches-04-Stories.dc.html": {
+   "h": 1103,
+   "page": "branches",
+   "title": "Branches · 04 · Stories",
+   "w": 1440,
+   "x": 0,
+   "y": 3488
+  },
+  "P-branches-05-S48-globalhubs-bibleapp-mobile.dc.html": {
+   "h": 600,
+   "page": "branches",
+   "title": "Branches · 05 · Around the World · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 5650
+  },
+  "P-branches-05-S48-globalhubs-bibleapp.dc.html": {
+   "h": 705,
+   "page": "branches",
+   "title": "Branches · 05 · Around the World",
+   "w": 1440,
+   "x": 0,
+   "y": 4711
+  },
+  "P-branches-06-S61-contact-mobile.dc.html": {
+   "h": 1291,
+   "page": "branches",
+   "title": "Branches · 06 · Contact · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 6370
+  },
+  "P-branches-06-S61-contact.dc.html": {
+   "h": 1136,
+   "page": "branches",
+   "title": "Branches · 06 · Contact",
+   "w": 1440,
+   "x": 0,
+   "y": 5536
+  },
+  "P-branches-07-S09-cta-volunteers-mobile.dc.html": {
+   "h": 654,
+   "page": "branches",
+   "title": "Branches · 07 · Get Involved · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 7781
+  },
+  "P-branches-07-S09-cta-volunteers.dc.html": {
+   "h": 675,
+   "page": "branches",
+   "title": "Branches · 07 · Get Involved",
+   "w": 1440,
+   "x": 0,
+   "y": 6792
+  },
+  "P-churches-01-S05-hero-withimg-mobile.dc.html": {
+   "h": 630,
+   "page": "churches",
+   "title": "Churches · 01 · Hero: For Churches · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "P-churches-01-S05-hero-withimg.dc.html": {
+   "h": 819,
+   "page": "churches",
+   "title": "Churches · 01 · Hero: For Churches",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-churches-02-S19-app-support-mobile.dc.html": {
+   "h": 1194,
+   "page": "churches",
+   "title": "Churches · 02 · Mobilize and Send · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 939
+  },
+  "P-churches-02-S19-app-support.dc.html": {
+   "h": 799,
+   "page": "churches",
+   "title": "Churches · 02 · Mobilize and Send",
+   "w": 1440,
+   "x": 0,
+   "y": 939
+  },
+  "P-churches-03-S65-totalpopulation-connect-mobile.dc.html": {
+   "h": 572,
+   "page": "churches",
+   "title": "Churches · 03 · One Mission, Three Partners · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 2253
+  },
+  "P-churches-03-S65-totalpopulation-connect.dc.html": {
+   "h": 777,
+   "page": "churches",
+   "title": "Churches · 03 · One Mission, Three Partners",
+   "w": 1440,
+   "x": 0,
+   "y": 1858
+  },
+  "P-churches-05-S40-churches-cards-mobile.dc.html": {
+   "h": 1454,
+   "page": "churches",
+   "title": "Churches · 05 · Sent Out by the Local Church · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 2945
+  },
+  "P-churches-05-S40-churches-cards.dc.html": {
+   "h": 1344,
+   "page": "churches",
+   "title": "Churches · 05 · Sent Out by the Local Church",
+   "w": 1440,
+   "x": 0,
+   "y": 2755
+  },
+  "P-churches-06-S41-churches-real-impact-mobile.dc.html": {
+   "h": 690,
+   "page": "churches",
+   "title": "Churches · 06 · Recommendation · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 4519
+  },
+  "P-churches-06-S41-churches-real-impact.dc.html": {
+   "h": 807,
+   "page": "churches",
+   "title": "Churches · 06 · Recommendation",
+   "w": 1440,
+   "x": 0,
+   "y": 4219
+  },
+  "P-churches-07-S66-V1-80-20-mobile.dc.html": {
+   "h": 544,
+   "page": "churches",
+   "title": "Churches · 07 · Mission Camp invitation · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 5329
+  },
+  "P-churches-07-S66-V1-80-20.dc.html": {
+   "h": 369,
+   "page": "churches",
+   "title": "Churches · 07 · Mission Camp invitation",
+   "w": 1440,
+   "x": 0,
+   "y": 5146
+  },
+  "P-churches-08-S67-V2-20-80-mobile.dc.html": {
+   "h": 1426,
+   "page": "churches",
+   "title": "Churches · 08 · Church relations cards · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 5993
+  },
+  "P-churches-08-S67-V2-20-80.dc.html": {
+   "h": 593,
+   "page": "churches",
+   "title": "Churches · 08 · Church relations cards",
+   "w": 1440,
+   "x": 0,
+   "y": 5635
+  },
+  "P-churches-09-S42-churches-faq-mobile.dc.html": {
+   "h": 1278,
+   "page": "churches",
+   "title": "Churches · 09 · FAQ · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 7539
+  },
+  "P-churches-09-S42-churches-faq.dc.html": {
+   "h": 878,
+   "page": "churches",
+   "title": "Churches · 09 · FAQ",
+   "w": 1440,
+   "x": 0,
+   "y": 6348
+  },
+  "P-churches-10-S37-cob-section-mobile.dc.html": {
+   "h": 1488,
+   "page": "churches",
+   "title": "Churches · 10 · Church Relations Guide · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 8937
+  },
+  "P-churches-10-S37-cob-section.dc.html": {
+   "h": 1210,
+   "page": "churches",
+   "title": "Churches · 10 · Church Relations Guide",
+   "w": 1440,
+   "x": 0,
+   "y": 7346
+  },
+  "P-churches-11-S38-cob-more-section-mobile.dc.html": {
+   "h": 5585,
+   "page": "churches",
+   "title": "Churches · 11 · Church relations and mission policy list · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 10545
+  },
+  "P-churches-11-S38-cob-more-section.dc.html": {
+   "h": 1866,
+   "page": "churches",
+   "title": "Churches · 11 · Church relations and mission policy list",
+   "w": 1440,
+   "x": 0,
+   "y": 8676
+  },
+  "P-churches-12-S39-realstories-1-mobile.dc.html": {
+   "h": 10626,
+   "page": "churches",
+   "title": "Churches · 12 · How We Work With Your Local Church · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 16250
+  },
+  "P-churches-12-S39-realstories-1.dc.html": {
+   "h": 5255,
+   "page": "churches",
+   "title": "Churches · 12 · How We Work With Your Local Church",
+   "w": 1440,
+   "x": 0,
+   "y": 10662
+  },
+  "P-field-operation-01-S05-hero-withimg-mobile.dc.html": {
+   "h": 630,
+   "page": "field-operation",
+   "title": "Field Operation · 01 · Hero · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "P-field-operation-01-S05-hero-withimg.dc.html": {
+   "h": 819,
+   "page": "field-operation",
+   "title": "Field Operation · 01 · Hero",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-field-operation-03-S27-platfrom-what-mobile.dc.html": {
+   "h": 2020,
+   "page": "field-operation",
+   "title": "Field Operation · 03 · What Is FO · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 939
+  },
+  "P-field-operation-03-S27-platfrom-what.dc.html": {
+   "h": 874,
+   "page": "field-operation",
+   "title": "Field Operation · 03 · What Is FO",
+   "w": 1440,
+   "x": 0,
+   "y": 939
+  },
+  "P-field-operation-04-S28-platform-ceo-mobile.dc.html": {
+   "h": 508,
+   "page": "field-operation",
+   "title": "Field Operation · 04 · Feature Photo · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 3079
+  },
+  "P-field-operation-04-S28-platform-ceo.dc.html": {
+   "h": 921,
+   "page": "field-operation",
+   "title": "Field Operation · 04 · Feature Photo",
+   "w": 1440,
+   "x": 0,
+   "y": 1933
+  },
+  "P-field-operation-05-S29-platform-help-mobile.dc.html": {
+   "h": 1753,
+   "page": "field-operation",
+   "title": "Field Operation · 05 · Who Can Go · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 3707
+  },
+  "P-field-operation-05-S29-platform-help.dc.html": {
+   "h": 682,
+   "page": "field-operation",
+   "title": "Field Operation · 05 · Who Can Go",
+   "w": 1440,
+   "x": 0,
+   "y": 2974
+  },
+  "P-field-operation-06-S30-platform-features-mobile.dc.html": {
+   "h": 1067,
+   "page": "field-operation",
+   "title": "Field Operation · 06 · Highlights · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 5580
+  },
+  "P-field-operation-06-S30-platform-features.dc.html": {
+   "h": 680,
+   "page": "field-operation",
+   "title": "Field Operation · 06 · Highlights",
+   "w": 1440,
+   "x": 0,
+   "y": 3776
+  },
+  "P-field-operation-07-S31-summit-slider-mobile.dc.html": {
+   "h": 1050,
+   "page": "field-operation",
+   "title": "Field Operation · 07 · Quotes · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 6767
+  },
+  "P-field-operation-07-S31-summit-slider.dc.html": {
+   "h": 869,
+   "page": "field-operation",
+   "title": "Field Operation · 07 · Quotes",
+   "w": 1440,
+   "x": 0,
+   "y": 4576
+  },
+  "P-field-operation-08-S32-platform-video-mobile.dc.html": {
+   "h": 925,
+   "page": "field-operation",
+   "title": "Field Operation · 08 · Verse and Contact · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 7937
+  },
+  "P-field-operation-08-S32-platform-video.dc.html": {
+   "h": 720,
+   "page": "field-operation",
+   "title": "Field Operation · 08 · Verse and Contact",
+   "w": 1440,
+   "x": 0,
+   "y": 5565
+  },
+  "P-field-operation-09-S33-summit-faq-mobile.dc.html": {
+   "h": 1318,
+   "page": "field-operation",
+   "title": "Field Operation · 09 · FAQ · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 8982
+  },
+  "P-field-operation-09-S33-summit-faq.dc.html": {
+   "h": 1104,
+   "page": "field-operation",
+   "title": "Field Operation · 09 · FAQ",
+   "w": 1440,
+   "x": 0,
+   "y": 6405
+  },
+  "P-give-01-S05-hero-withimg-mobile.dc.html": {
+   "h": 630,
+   "page": "give",
+   "title": "Give · 01 · Hero · Ways to Give · Mobile 390",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "P-give-01-S05-hero-withimg.dc.html": {
+   "h": 819,
+   "page": "give",
+   "title": "Give · 01 · Hero · Ways to Give",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-give-02-S50-sharing-mobile.dc.html": {
+   "h": 581,
+   "page": "give",
+   "title": "Give · 02 · Join us in sending the Gospel · Mobile 390",
+   "w": 390,
+   "x": 1520,
+   "y": 939
+  },
+  "P-give-02-S50-sharing.dc.html": {
+   "h": 384,
+   "page": "give",
+   "title": "Give · 02 · Join us in sending the Gospel",
+   "w": 1440,
+   "x": 0,
+   "y": 939
+  },
+  "P-give-04-S19-app-support-mobile.dc.html": {
+   "h": 1194,
+   "page": "give",
+   "title": "Give · 04 · Prayer, Financial Support, and Volunteering · Mobile 390",
+   "w": 390,
+   "x": 1520,
+   "y": 3518
+  },
+  "P-give-04-S19-app-support.dc.html": {
+   "h": 799,
+   "page": "give",
+   "title": "Give · 04 · Prayer, Financial Support, and Volunteering",
+   "w": 1440,
+   "x": 0,
+   "y": 2571
+  },
+  "P-give-05-S12-bible-partners-cta-mobile.dc.html": {
+   "h": 650,
+   "page": "give",
+   "title": "Give · 05 · Over 4,500 Staff Serving · Mobile 390",
+   "w": 390,
+   "x": 1520,
+   "y": 4832
+  },
+  "P-give-05-S12-bible-partners-cta.dc.html": {
+   "h": 541,
+   "page": "give",
+   "title": "Give · 05 · Over 4,500 Staff Serving",
+   "w": 1440,
+   "x": 0,
+   "y": 3490
+  },
+  "P-give-06-S03-40padding-mobile.dc.html": {
+   "h": 785,
+   "page": "give",
+   "title": "Give · 06 · Become a Giving Partner · Mobile 390",
+   "w": 390,
+   "x": 1520,
+   "y": 5602
+  },
+  "P-give-06-S03-40padding.dc.html": {
+   "h": 746,
+   "page": "give",
+   "title": "Give · 06 · Become a Giving Partner",
+   "w": 1440,
+   "x": 0,
+   "y": 4151
+  },
+  "P-give-07-S42-churches-faq-mobile.dc.html": {
+   "h": 1278,
+   "page": "give",
+   "title": "Give · 07 · FAQ · Mobile 390",
+   "w": 390,
+   "x": 1520,
+   "y": 6507
+  },
+  "P-give-07-S42-churches-faq.dc.html": {
+   "h": 878,
+   "page": "give",
+   "title": "Give · 07 · FAQ",
+   "w": 1440,
+   "x": 0,
+   "y": 5017
+  },
+  "P-give-09-S57-section-impact-mobile.dc.html": {
+   "h": 886,
+   "page": "give",
+   "title": "Give · 09 · Giving Office · Mobile 390",
+   "w": 390,
+   "x": 1520,
+   "y": 8963
+  },
+  "P-give-09-S57-section-impact.dc.html": {
+   "h": 631,
+   "page": "give",
+   "title": "Give · 09 · Giving Office",
+   "w": 1440,
+   "x": 0,
+   "y": 7078
+  },
+  "P-give-11-S58-impact-seed-mobile.dc.html": {
+   "h": 701,
+   "page": "give",
+   "title": "Give · 11 · Sow seeds of the Gospel · Mobile 390",
+   "w": 390,
+   "x": 1520,
+   "y": 12243
+  },
+  "P-give-11-S58-impact-seed.dc.html": {
+   "h": 779,
+   "page": "give",
+   "title": "Give · 11 · Sow seeds of the Gospel",
+   "w": 1440,
+   "x": 0,
+   "y": 9021
+  },
+  "P-give-12-S09-cta-volunteers-mobile.dc.html": {
+   "h": 654,
+   "page": "give",
+   "title": "Give · 12 · Support a Missionary · Mobile 390",
+   "w": 390,
+   "x": 1520,
+   "y": 13064
+  },
+  "P-give-12-S09-cta-volunteers.dc.html": {
+   "h": 675,
+   "page": "give",
+   "title": "Give · 12 · Support a Missionary",
+   "w": 1440,
+   "x": 0,
+   "y": 9920
+  },
+  "P-history-01-S05-hero-withimg-mobile.dc.html": {
+   "h": 600,
+   "page": "history",
+   "title": "History · 01 · Hero · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "P-history-01-S05-hero-withimg.dc.html": {
+   "h": 819,
+   "page": "history",
+   "title": "History · 01 · Hero",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-history-02-S10-history-started-mobile.dc.html": {
+   "h": 2142,
+   "page": "history",
+   "title": "History · 02 · How It Started · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 939
+  },
+  "P-history-02-S10-history-started.dc.html": {
+   "h": 1150,
+   "page": "history",
+   "title": "History · 02 · How It Started",
+   "w": 1440,
+   "x": 0,
+   "y": 939
+  },
+  "P-history-03-S11-history-timeline-mobile.dc.html": {
+   "h": 1678,
+   "page": "history",
+   "title": "History · 03 · Milestones · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 3201
+  },
+  "P-history-03-S11-history-timeline.dc.html": {
+   "h": 1561,
+   "page": "history",
+   "title": "History · 03 · Milestones",
+   "w": 1440,
+   "x": 0,
+   "y": 2209
+  },
+  "P-history-04-S12-bible-partners-cta-mobile.dc.html": {
+   "h": 650,
+   "page": "history",
+   "title": "History · 04 · 55 People Groups · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 4999
+  },
+  "P-history-04-S12-bible-partners-cta.dc.html": {
+   "h": 541,
+   "page": "history",
+   "title": "History · 04 · 55 People Groups",
+   "w": 1440,
+   "x": 0,
+   "y": 3890
+  },
+  "P-history-05-S13-120padding-mobile.dc.html": {
+   "h": 1098,
+   "page": "history",
+   "title": "History · 05 · Our Branches · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 5769
+  },
+  "P-history-05-S13-120padding.dc.html": {
+   "h": 888,
+   "page": "history",
+   "title": "History · 05 · Our Branches",
+   "w": 1440,
+   "x": 0,
+   "y": 4551
+  },
+  "P-history-06-Stories-mobile.dc.html": {
+   "h": 935,
+   "page": "history",
+   "title": "History · 06 · Stories · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 6987
+  },
+  "P-history-06-Stories.dc.html": {
+   "h": 1103,
+   "page": "history",
+   "title": "History · 06 · Stories",
+   "w": 1440,
+   "x": 0,
+   "y": 5559
+  },
+  "P-history-07-S14-80padding-mobile.dc.html": {
+   "h": 886,
+   "page": "history",
+   "title": "History · 07 · In the News · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 8042
+  },
+  "P-history-07-S14-80padding.dc.html": {
+   "h": 870,
+   "page": "history",
+   "title": "History · 07 · In the News",
+   "w": 1440,
+   "x": 0,
+   "y": 6782
+  },
+  "P-mission-01-S05-hero-withimg-mobile.dc.html": {
+   "h": 600,
+   "page": "mission",
+   "title": "Mission · 01 · Hero · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "P-mission-01-S05-hero-withimg.dc.html": {
+   "h": 819,
+   "page": "mission",
+   "title": "Mission · 01 · Hero",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-mission-02-S06-mission-why-weexist-mobile.dc.html": {
+   "h": 1529,
+   "page": "mission",
+   "title": "Mission · 02 · Why We Exist · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 939
+  },
+  "P-mission-02-S06-mission-why-weexist.dc.html": {
+   "h": 1222,
+   "page": "mission",
+   "title": "Mission · 02 · Why We Exist",
+   "w": 1440,
+   "x": 0,
+   "y": 939
+  },
+  "P-mission-03-S07-mission-quote-mobile.dc.html": {
+   "h": 474,
+   "page": "mission",
+   "title": "Mission · 03 · Mission Statement · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 2588
+  },
+  "P-mission-03-S07-mission-quote.dc.html": {
+   "h": 473,
+   "page": "mission",
+   "title": "Mission · 03 · Mission Statement",
+   "w": 1440,
+   "x": 0,
+   "y": 2281
+  },
+  "P-mission-04-S02-sticky-mobile.dc.html": {
+   "h": 1328,
+   "page": "mission",
+   "title": "Mission · 04 · Core Values · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 3182
+  },
+  "P-mission-04-S02-sticky.dc.html": {
+   "h": 900,
+   "page": "mission",
+   "title": "Mission · 04 · Core Values",
+   "w": 1440,
+   "x": 0,
+   "y": 2874
+  },
+  "P-mission-05-S08-mission-impact-mobile.dc.html": {
+   "h": 2364,
+   "page": "mission",
+   "title": "Mission · 05 · Our Impact · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 4630
+  },
+  "P-mission-05-S08-mission-impact.dc.html": {
+   "h": 1202,
+   "page": "mission",
+   "title": "Mission · 05 · Our Impact",
+   "w": 1440,
+   "x": 0,
+   "y": 3894
+  },
+  "P-mission-06-Stories-mobile.dc.html": {
+   "h": 935,
+   "page": "mission",
+   "title": "Mission · 06 · Stories · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 7114
+  },
+  "P-mission-06-Stories.dc.html": {
+   "h": 1103,
+   "page": "mission",
+   "title": "Mission · 06 · Stories",
+   "w": 1440,
+   "x": 0,
+   "y": 5216
+  },
+  "P-mission-07-ProductsIntro-mobile.dc.html": {
+   "h": 736,
+   "page": "mission",
+   "title": "Mission · 07 · Programs Intro · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 8169
+  },
+  "P-mission-07-ProductsIntro.dc.html": {
+   "h": 722,
+   "page": "mission",
+   "title": "Mission · 07 · Programs Intro",
+   "w": 1440,
+   "x": 0,
+   "y": 6439
+  },
+  "P-mission-08-S09-cta-volunteers-mobile.dc.html": {
+   "h": 624,
+   "page": "mission",
+   "title": "Mission · 08 · Get Involved · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 9025
+  },
+  "P-mission-08-S09-cta-volunteers.dc.html": {
+   "h": 675,
+   "page": "mission",
+   "title": "Mission · 08 · Get Involved",
+   "w": 1440,
+   "x": 0,
+   "y": 7281
+  },
+  "P-mission-impact-team-01-S05-hero-withimg-mobile.dc.html": {
+   "h": 630,
+   "page": "mission-impact-team",
+   "title": "Mission Impact Team · 01 · Hero · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "P-mission-impact-team-01-S05-hero-withimg.dc.html": {
+   "h": 819,
+   "page": "mission-impact-team",
+   "title": "Mission Impact Team · 01 · Hero",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-mission-impact-team-03-S27-platfrom-what-mobile.dc.html": {
+   "h": 2020,
+   "page": "mission-impact-team",
+   "title": "Mission Impact Team · 03 · What Is MIT · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 939
+  },
+  "P-mission-impact-team-03-S27-platfrom-what.dc.html": {
+   "h": 874,
+   "page": "mission-impact-team",
+   "title": "Mission Impact Team · 03 · What Is MIT",
+   "w": 1440,
+   "x": 0,
+   "y": 939
+  },
+  "P-mission-impact-team-04-S28-platform-ceo-mobile.dc.html": {
+   "h": 478,
+   "page": "mission-impact-team",
+   "title": "Mission Impact Team · 04 · Feature Photo · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 3079
+  },
+  "P-mission-impact-team-04-S28-platform-ceo.dc.html": {
+   "h": 921,
+   "page": "mission-impact-team",
+   "title": "Mission Impact Team · 04 · Feature Photo",
+   "w": 1440,
+   "x": 0,
+   "y": 1933
+  },
+  "P-mission-impact-team-05-S29-platform-help-mobile.dc.html": {
+   "h": 1753,
+   "page": "mission-impact-team",
+   "title": "Mission Impact Team · 05 · Who Can Go · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 3677
+  },
+  "P-mission-impact-team-05-S29-platform-help.dc.html": {
+   "h": 682,
+   "page": "mission-impact-team",
+   "title": "Mission Impact Team · 05 · Who Can Go",
+   "w": 1440,
+   "x": 0,
+   "y": 2974
+  },
+  "P-mission-impact-team-06-S30-platform-features-mobile.dc.html": {
+   "h": 1067,
+   "page": "mission-impact-team",
+   "title": "Mission Impact Team · 06 · Highlights · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 5550
+  },
+  "P-mission-impact-team-06-S30-platform-features.dc.html": {
+   "h": 680,
+   "page": "mission-impact-team",
+   "title": "Mission Impact Team · 06 · Highlights",
+   "w": 1440,
+   "x": 0,
+   "y": 3776
+  },
+  "P-mission-impact-team-07-S31-summit-slider-mobile.dc.html": {
+   "h": 1020,
+   "page": "mission-impact-team",
+   "title": "Mission Impact Team · 07 · Quotes · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 6737
+  },
+  "P-mission-impact-team-07-S31-summit-slider.dc.html": {
+   "h": 869,
+   "page": "mission-impact-team",
+   "title": "Mission Impact Team · 07 · Quotes",
+   "w": 1440,
+   "x": 0,
+   "y": 4576
+  },
+  "P-mission-impact-team-08-S32-platform-video-mobile.dc.html": {
+   "h": 925,
+   "page": "mission-impact-team",
+   "title": "Mission Impact Team · 08 · Verse and Contact · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 7877
+  },
+  "P-mission-impact-team-08-S32-platform-video.dc.html": {
+   "h": 720,
+   "page": "mission-impact-team",
+   "title": "Mission Impact Team · 08 · Verse and Contact",
+   "w": 1440,
+   "x": 0,
+   "y": 5565
+  },
+  "P-mission-impact-team-09-S33-summit-faq-mobile.dc.html": {
+   "h": 1317,
+   "page": "mission-impact-team",
+   "title": "Mission Impact Team · 09 · FAQ · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 8922
+  },
+  "P-mission-impact-team-09-S33-summit-faq.dc.html": {
+   "h": 1023,
+   "page": "mission-impact-team",
+   "title": "Mission Impact Team · 09 · FAQ",
+   "w": 1440,
+   "x": 0,
+   "y": 6405
+  },
+  "P-newsroom-01-S00-bible-translation-hero-mobile.dc.html": {
+   "h": 562,
+   "page": "newsroom",
+   "title": "Newsroom · 01 · Hero: Latest news · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "P-newsroom-01-S00-bible-translation-hero.dc.html": {
+   "h": 1144,
+   "page": "newsroom",
+   "title": "Newsroom · 01 · Hero: Latest news",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-newsroom-02-S68-V3-home-getinvolved-mobile.dc.html": {
+   "h": 3448,
+   "page": "newsroom",
+   "title": "Newsroom · 02 · Latest News · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 1264
+  },
+  "P-newsroom-02-S68-V3-home-getinvolved.dc.html": {
+   "h": 1585,
+   "page": "newsroom",
+   "title": "Newsroom · 02 · Latest News",
+   "w": 1440,
+   "x": 0,
+   "y": 1264
+  },
+  "P-newsroom-05-S13-120padding-mobile.dc.html": {
+   "h": 1098,
+   "page": "newsroom",
+   "title": "Newsroom · 05 · Our Branches · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 4832
+  },
+  "P-newsroom-05-S13-120padding.dc.html": {
+   "h": 888,
+   "page": "newsroom",
+   "title": "Newsroom · 05 · Our Branches",
+   "w": 1440,
+   "x": 0,
+   "y": 2969
+  },
+  "P-newsroom-06-Stories-mobile.dc.html": {
+   "h": 935,
+   "page": "newsroom",
+   "title": "Newsroom · 06 · Stories from the Field · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 6050
+  },
+  "P-newsroom-06-Stories.dc.html": {
+   "h": 1103,
+   "page": "newsroom",
+   "title": "Newsroom · 06 · Stories from the Field",
+   "w": 1440,
+   "x": 0,
+   "y": 3977
+  },
+  "P-newsroom-07-NewsHeader-mobile.dc.html": {
+   "h": 436,
+   "page": "newsroom",
+   "title": "Newsroom · 07 · In the News header · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 7105
+  },
+  "P-newsroom-07-NewsHeader.dc.html": {
+   "h": 261,
+   "page": "newsroom",
+   "title": "Newsroom · 07 · In the News header",
+   "w": 1440,
+   "x": 0,
+   "y": 5200
+  },
+  "P-newsroom-08-NewsGrid-mobile.dc.html": {
+   "h": 2465,
+   "page": "newsroom",
+   "title": "Newsroom · 08 · In the News · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 7661
+  },
+  "P-newsroom-08-NewsGrid.dc.html": {
+   "h": 712,
+   "page": "newsroom",
+   "title": "Newsroom · 08 · In the News",
+   "w": 1440,
+   "x": 0,
+   "y": 5581
+  },
+  "P-newsroom-10-S63-ps26-recap-recordings-mobile.dc.html": {
+   "h": 2754,
+   "page": "newsroom",
+   "title": "Newsroom · 10 · Watch Interviews · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 11018
+  },
+  "P-newsroom-10-S63-ps26-recap-recordings.dc.html": {
+   "h": 2150,
+   "page": "newsroom",
+   "title": "Newsroom · 10 · Watch Interviews",
+   "w": 1440,
+   "x": 0,
+   "y": 7306
+  },
+  "P-newsroom-11-S64-ps26-recap-thankyou-mobile.dc.html": {
+   "h": 384,
+   "page": "newsroom",
+   "title": "Newsroom · 11 · YGMC 2026 · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 13892
+  },
+  "P-newsroom-11-S64-ps26-recap-thankyou.dc.html": {
+   "h": 513,
+   "page": "newsroom",
+   "title": "Newsroom · 11 · YGMC 2026",
+   "w": 1440,
+   "x": 0,
+   "y": 9576
+  },
+  "P-newsroom-12-S09-cta-volunteers-mobile.dc.html": {
+   "h": 624,
+   "page": "newsroom",
+   "title": "Newsroom · 12 · Get Involved · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 14396
+  },
+  "P-newsroom-12-S09-cta-volunteers.dc.html": {
+   "h": 675,
+   "page": "newsroom",
+   "title": "Newsroom · 12 · Get Involved",
+   "w": 1440,
+   "x": 0,
+   "y": 10209
+  },
+  "P-partner-overview-01-S05-hero-withimg-mobile.dc.html": {
+   "h": 630,
+   "page": "partner-overview",
+   "title": "Partner Overview · 01 · Hero: Global Alliance · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "P-partner-overview-01-S05-hero-withimg.dc.html": {
+   "h": 819,
+   "page": "partner-overview",
+   "title": "Partner Overview · 01 · Hero: Global Alliance",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-partner-overview-02-S47-partnerwithus-partner-mobile.dc.html": {
+   "h": 2531,
+   "page": "partner-overview",
+   "title": "Partner Overview · 02 · Partner With Us · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 939
+  },
+  "P-partner-overview-02-S47-partnerwithus-partner.dc.html": {
+   "h": 2348,
+   "page": "partner-overview",
+   "title": "Partner Overview · 02 · Partner With Us",
+   "w": 1440,
+   "x": 0,
+   "y": 939
+  },
+  "P-partner-overview-03-S17-findhub-section-mobile.dc.html": {
+   "h": 2454,
+   "page": "partner-overview",
+   "title": "Partner Overview · 03 · Mission in Action · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 3590
+  },
+  "P-partner-overview-03-S17-findhub-section.dc.html": {
+   "h": 1357,
+   "page": "partner-overview",
+   "title": "Partner Overview · 03 · Mission in Action",
+   "w": 1440,
+   "x": 0,
+   "y": 3407
+  },
+  "P-partner-overview-04-S48-globalhubs-bibleapp-mobile.dc.html": {
+   "h": 630,
+   "page": "partner-overview",
+   "title": "Partner Overview · 04 · Our Branches · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 6164
+  },
+  "P-partner-overview-04-S48-globalhubs-bibleapp.dc.html": {
+   "h": 705,
+   "page": "partner-overview",
+   "title": "Partner Overview · 04 · Our Branches",
+   "w": 1440,
+   "x": 0,
+   "y": 4884
+  },
+  "P-partner-overview-06-S49-visionpartner-hero-mobile.dc.html": {
+   "h": 839,
+   "page": "partner-overview",
+   "title": "Partner Overview · 06 · Global Alliance · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 6914
+  },
+  "P-partner-overview-06-S49-visionpartner-hero.dc.html": {
+   "h": 1543,
+   "page": "partner-overview",
+   "title": "Partner Overview · 06 · Global Alliance",
+   "w": 1440,
+   "x": 0,
+   "y": 5709
+  },
+  "P-partner-overview-07-S51-partners-app-mobile.dc.html": {
+   "h": 400,
+   "page": "partner-overview",
+   "title": "Partner Overview · 07 · Global Alliance Conference · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 7873
+  },
+  "P-partner-overview-07-S51-partners-app.dc.html": {
+   "h": 330,
+   "page": "partner-overview",
+   "title": "Partner Overview · 07 · Global Alliance Conference",
+   "w": 1440,
+   "x": 0,
+   "y": 7372
+  },
+  "P-partner-overview-08-S52-parners-imgs-mobile.dc.html": {
+   "h": 384,
+   "page": "partner-overview",
+   "title": "Partner Overview · 08 · Photo gallery · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 8393
+  },
+  "P-partner-overview-08-S52-parners-imgs.dc.html": {
+   "h": 900,
+   "page": "partner-overview",
+   "title": "Partner Overview · 08 · Photo gallery",
+   "w": 1440,
+   "x": 0,
+   "y": 7822
+  },
+  "P-partner-overview-09-S53-get-connected-mobile.dc.html": {
+   "h": 1339,
+   "page": "partner-overview",
+   "title": "Partner Overview · 09 · Get Involved · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 8897
+  },
+  "P-partner-overview-09-S53-get-connected.dc.html": {
+   "h": 818,
+   "page": "partner-overview",
+   "title": "Partner Overview · 09 · Get Involved",
+   "w": 1440,
+   "x": 0,
+   "y": 8842
+  },
+  "P-partner-overview-10-S44-imgs-sticky-mobile.dc.html": {
+   "h": 815,
+   "page": "partner-overview",
+   "title": "Partner Overview · 10 · Revelation 7:9 · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 10356
+  },
+  "P-partner-overview-10-S44-imgs-sticky.dc.html": {
+   "h": 900,
+   "page": "partner-overview",
+   "title": "Partner Overview · 10 · Revelation 7:9",
+   "w": 1440,
+   "x": 0,
+   "y": 9780
+  },
+  "P-partner-overview-11-S45-partofit-mobile.dc.html": {
+   "h": 480,
+   "page": "partner-overview",
+   "title": "Partner Overview · 11 · Partnership · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 11291
+  },
+  "P-partner-overview-11-S45-partofit.dc.html": {
+   "h": 470,
+   "page": "partner-overview",
+   "title": "Partner Overview · 11 · Partnership",
+   "w": 1440,
+   "x": 0,
+   "y": 10800
+  },
+  "P-partner-overview-12-S09-cta-volunteers-mobile.dc.html": {
+   "h": 624,
+   "page": "partner-overview",
+   "title": "Partner Overview · 12 · Call to action · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 11891
+  },
+  "P-partner-overview-12-S09-cta-volunteers.dc.html": {
+   "h": 675,
+   "page": "partner-overview",
+   "title": "Partner Overview · 12 · Call to action",
+   "w": 1440,
+   "x": 0,
+   "y": 11390
+  },
+  "P-serve-with-us-01-S00-bible-translation-hero-mobile.dc.html": {
+   "h": 532,
+   "page": "serve-with-us",
+   "title": "Serve With Us · 01 · Hero: Serve with us · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "P-serve-with-us-01-S00-bible-translation-hero.dc.html": {
+   "h": 1144,
+   "page": "serve-with-us",
+   "title": "Serve With Us · 01 · Hero: Serve with us",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-serve-with-us-02-GetInvolved-mobile.dc.html": {
+   "h": 472,
+   "page": "serve-with-us",
+   "title": "Serve With Us · 02 · Get Involved · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 1264
+  },
+  "P-serve-with-us-02-GetInvolved.dc.html": {
+   "h": 433,
+   "page": "serve-with-us",
+   "title": "Serve With Us · 02 · Get Involved",
+   "w": 1440,
+   "x": 0,
+   "y": 1264
+  },
+  "P-serve-with-us-03-S01-volunteers-next-mobile.dc.html": {
+   "h": 603,
+   "page": "serve-with-us",
+   "title": "Serve With Us · 03 · Partner in ministry · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 1856
+  },
+  "P-serve-with-us-03-S01-volunteers-next.dc.html": {
+   "h": 659,
+   "page": "serve-with-us",
+   "title": "Serve With Us · 03 · Partner in ministry",
+   "w": 1440,
+   "x": 0,
+   "y": 1817
+  },
+  "P-spiritual-support-team-01-S00-bible-translation-hero-mobile.dc.html": {
+   "h": 532,
+   "page": "spiritual-support-team",
+   "title": "Spiritual Support Team · 01 · Hero: Pray with us · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "P-spiritual-support-team-01-S00-bible-translation-hero.dc.html": {
+   "h": 1144,
+   "page": "spiritual-support-team",
+   "title": "Spiritual Support Team · 01 · Hero: Pray with us",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-spiritual-support-team-02-S60-claimchurch-mobile.dc.html": {
+   "h": 679,
+   "page": "spiritual-support-team",
+   "title": "Spiritual Support Team · 02 · Why pray with us · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 1264
+  },
+  "P-spiritual-support-team-02-S60-claimchurch.dc.html": {
+   "h": 505,
+   "page": "spiritual-support-team",
+   "title": "Spiritual Support Team · 02 · Why pray with us",
+   "w": 1440,
+   "x": 0,
+   "y": 1264
+  },
+  "P-spiritual-support-team-03-S09-cta-volunteers-mobile.dc.html": {
+   "h": 624,
+   "page": "spiritual-support-team",
+   "title": "Spiritual Support Team · 03 · Partner in prayer · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 2063
+  },
+  "P-spiritual-support-team-03-S09-cta-volunteers.dc.html": {
+   "h": 675,
+   "page": "spiritual-support-team",
+   "title": "Spiritual Support Team · 03 · Partner in prayer",
+   "w": 1440,
+   "x": 0,
+   "y": 1889
+  },
+  "P-stories-01-S05-hero-withimg-mobile.dc.html": {
+   "h": 600,
+   "page": "stories",
+   "title": "Stories · 01 · Hero · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "P-stories-01-S05-hero-withimg.dc.html": {
+   "h": 819,
+   "page": "stories",
+   "title": "Stories · 01 · Hero",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-stories-02-S36-black-stories-mobile.dc.html": {
+   "h": 2648,
+   "page": "stories",
+   "title": "Stories · 02 · Testimonies · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 939
+  },
+  "P-stories-02-S36-black-stories.dc.html": {
+   "h": 1240,
+   "page": "stories",
+   "title": "Stories · 02 · Testimonies",
+   "w": 1440,
+   "x": 0,
+   "y": 939
+  },
+  "P-stories-03-S09-cta-volunteers-mobile.dc.html": {
+   "h": 654,
+   "page": "stories",
+   "title": "Stories · 03 · Join Vision School · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 3707
+  },
+  "P-stories-03-S09-cta-volunteers.dc.html": {
+   "h": 675,
+   "page": "stories",
+   "title": "Stories · 03 · Join Vision School",
+   "w": 1440,
+   "x": 0,
+   "y": 2299
+  },
+  "P-student-missionary-01-S05-hero-withimg-mobile.dc.html": {
+   "h": 630,
+   "page": "student-missionary",
+   "title": "Student Missionary · 01 · Hero · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "P-student-missionary-01-S05-hero-withimg.dc.html": {
+   "h": 819,
+   "page": "student-missionary",
+   "title": "Student Missionary · 01 · Hero",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-student-missionary-03-S27-platfrom-what-mobile.dc.html": {
+   "h": 2020,
+   "page": "student-missionary",
+   "title": "Student Missionary · 03 · What Is SM · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 939
+  },
+  "P-student-missionary-03-S27-platfrom-what.dc.html": {
+   "h": 874,
+   "page": "student-missionary",
+   "title": "Student Missionary · 03 · What Is SM",
+   "w": 1440,
+   "x": 0,
+   "y": 939
+  },
+  "P-student-missionary-04-S28-platform-ceo-mobile.dc.html": {
+   "h": 478,
+   "page": "student-missionary",
+   "title": "Student Missionary · 04 · Feature Photo · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 3079
+  },
+  "P-student-missionary-04-S28-platform-ceo.dc.html": {
+   "h": 921,
+   "page": "student-missionary",
+   "title": "Student Missionary · 04 · Feature Photo",
+   "w": 1440,
+   "x": 0,
+   "y": 1933
+  },
+  "P-student-missionary-05-S29-platform-help-mobile.dc.html": {
+   "h": 1753,
+   "page": "student-missionary",
+   "title": "Student Missionary · 05 · Who Can Go · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 3677
+  },
+  "P-student-missionary-05-S29-platform-help.dc.html": {
+   "h": 682,
+   "page": "student-missionary",
+   "title": "Student Missionary · 05 · Who Can Go",
+   "w": 1440,
+   "x": 0,
+   "y": 2974
+  },
+  "P-student-missionary-06-S30-platform-features-mobile.dc.html": {
+   "h": 1067,
+   "page": "student-missionary",
+   "title": "Student Missionary · 06 · Highlights · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 5550
+  },
+  "P-student-missionary-06-S30-platform-features.dc.html": {
+   "h": 680,
+   "page": "student-missionary",
+   "title": "Student Missionary · 06 · Highlights",
+   "w": 1440,
+   "x": 0,
+   "y": 3776
+  },
+  "P-student-missionary-07-S31-summit-slider-mobile.dc.html": {
+   "h": 1050,
+   "page": "student-missionary",
+   "title": "Student Missionary · 07 · Quotes · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 6737
+  },
+  "P-student-missionary-07-S31-summit-slider.dc.html": {
+   "h": 869,
+   "page": "student-missionary",
+   "title": "Student Missionary · 07 · Quotes",
+   "w": 1440,
+   "x": 0,
+   "y": 4576
+  },
+  "P-student-missionary-08-S32-platform-video-mobile.dc.html": {
+   "h": 895,
+   "page": "student-missionary",
+   "title": "Student Missionary · 08 · Verse and Contact · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 7907
+  },
+  "P-student-missionary-08-S32-platform-video.dc.html": {
+   "h": 720,
+   "page": "student-missionary",
+   "title": "Student Missionary · 08 · Verse and Contact",
+   "w": 1440,
+   "x": 0,
+   "y": 5565
+  },
+  "P-student-missionary-09-S33-summit-faq-mobile.dc.html": {
+   "h": 1149,
+   "page": "student-missionary",
+   "title": "Student Missionary · 09 · FAQ · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 8922
+  },
+  "P-student-missionary-09-S33-summit-faq.dc.html": {
+   "h": 942,
+   "page": "student-missionary",
+   "title": "Student Missionary · 09 · FAQ",
+   "w": 1440,
+   "x": 0,
+   "y": 6405
+  },
+  "P-vision-camp-01-S15-app-hero-mobile.dc.html": {
+   "h": 1180,
+   "page": "vision-camp",
+   "title": "Vision Camp · 02 · Hero · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 939
+  },
+  "P-vision-camp-01-S15-app-hero.dc.html": {
+   "h": 810,
+   "page": "vision-camp",
+   "title": "Vision Camp · 02 · Hero",
+   "w": 1440,
+   "x": 0,
+   "y": 939
+  },
+  "P-vision-camp-02-ProductBibleApp-mobile.dc.html": {
+   "h": 1144,
+   "page": "vision-camp",
+   "title": "Vision Camp · 03 · Program Intro · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 2239
+  },
+  "P-vision-camp-02-ProductBibleApp.dc.html": {
+   "h": 900,
+   "page": "vision-camp",
+   "title": "Vision Camp · 03 · Program Intro",
+   "w": 1440,
+   "x": 0,
+   "y": 1869
+  },
+  "P-vision-camp-03-S16-app-why-mobile.dc.html": {
+   "h": 750,
+   "page": "vision-camp",
+   "title": "Vision Camp · 04 · Why We Hold Vision Camp · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 3503
+  },
+  "P-vision-camp-03-S16-app-why.dc.html": {
+   "h": 1033,
+   "page": "vision-camp",
+   "title": "Vision Camp · 04 · Why We Hold Vision Camp",
+   "w": 1440,
+   "x": 0,
+   "y": 2889
+  },
+  "P-vision-camp-04-S17-findhub-section-mobile.dc.html": {
+   "h": 2454,
+   "page": "vision-camp",
+   "title": "Vision Camp · 05 · Camp Facts · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 4373
+  },
+  "P-vision-camp-04-S17-findhub-section.dc.html": {
+   "h": 1357,
+   "page": "vision-camp",
+   "title": "Vision Camp · 05 · Camp Facts",
+   "w": 1440,
+   "x": 0,
+   "y": 4042
+  },
+  "P-vision-camp-05-S18-app-features-mobile.dc.html": {
+   "h": 1222,
+   "page": "vision-camp",
+   "title": "Vision Camp · 06 · At Camp · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 6947
+  },
+  "P-vision-camp-05-S18-app-features.dc.html": {
+   "h": 872,
+   "page": "vision-camp",
+   "title": "Vision Camp · 06 · At Camp",
+   "w": 1440,
+   "x": 0,
+   "y": 5519
+  },
+  "P-vision-camp-06-S19-app-support-mobile.dc.html": {
+   "h": 1194,
+   "page": "vision-camp",
+   "title": "Vision Camp · 07 · Pastors and Leaderships Vision Camp · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 8289
+  },
+  "P-vision-camp-06-S19-app-support.dc.html": {
+   "h": 799,
+   "page": "vision-camp",
+   "title": "Vision Camp · 07 · Pastors and Leaderships Vision Camp",
+   "w": 1440,
+   "x": 0,
+   "y": 6511
+  },
+  "P-vision-camp-08-S09-cta-volunteers-mobile.dc.html": {
+   "h": 624,
+   "page": "vision-camp",
+   "title": "Vision Camp · 09 · Call to Action · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 10227
+  },
+  "P-vision-camp-08-S09-cta-volunteers.dc.html": {
+   "h": 675,
+   "page": "vision-camp",
+   "title": "Vision Camp · 09 · Call to Action",
+   "w": 1440,
+   "x": 0,
+   "y": 8181
+  },
+  "P-vision-school-01-S05-hero-withimg-mobile.dc.html": {
+   "h": 630,
+   "page": "vision-school",
+   "title": "Vision School · 01 · Hero · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "P-vision-school-01-S05-hero-withimg.dc.html": {
+   "h": 819,
+   "page": "vision-school",
+   "title": "Vision School · 01 · Hero",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-vision-school-02-ProductConnect-mobile.dc.html": {
+   "h": 1216,
+   "page": "vision-school",
+   "title": "Vision School · 02 · Program Intro · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 939
+  },
+  "P-vision-school-02-ProductConnect.dc.html": {
+   "h": 900,
+   "page": "vision-school",
+   "title": "Vision School · 02 · Program Intro",
+   "w": 1440,
+   "x": 0,
+   "y": 939
+  },
+  "P-vision-school-03-GetInvolved-mobile.dc.html": {
+   "h": 472,
+   "page": "vision-school",
+   "title": "Vision School · 03 · Get Involved · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 2275
+  },
+  "P-vision-school-03-GetInvolved.dc.html": {
+   "h": 358,
+   "page": "vision-school",
+   "title": "Vision School · 03 · Get Involved",
+   "w": 1440,
+   "x": 0,
+   "y": 1959
+  },
+  "P-vision-school-04-S16-app-why-mobile.dc.html": {
+   "h": 720,
+   "page": "vision-school",
+   "title": "Vision School · 04 · What Is Vision School · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 2867
+  },
+  "P-vision-school-04-S16-app-why.dc.html": {
+   "h": 1033,
+   "page": "vision-school",
+   "title": "Vision School · 04 · What Is Vision School",
+   "w": 1440,
+   "x": 0,
+   "y": 2437
+  },
+  "P-vision-school-05-S06-mission-why-weexist-mobile.dc.html": {
+   "h": 1529,
+   "page": "vision-school",
+   "title": "Vision School · 05 · Who It’s For · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 3707
+  },
+  "P-vision-school-05-S06-mission-why-weexist.dc.html": {
+   "h": 1222,
+   "page": "vision-school",
+   "title": "Vision School · 05 · Who It’s For",
+   "w": 1440,
+   "x": 0,
+   "y": 3590
+  },
+  "P-vision-school-06-Stats-mobile.dc.html": {
+   "h": 1874,
+   "page": "vision-school",
+   "title": "Vision School · 06 · Stats · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 5356
+  },
+  "P-vision-school-06-Stats.dc.html": {
+   "h": 857,
+   "page": "vision-school",
+   "title": "Vision School · 06 · Stats",
+   "w": 1440,
+   "x": 0,
+   "y": 4932
+  },
+  "P-vision-school-07-S02-sticky-mobile.dc.html": {
+   "h": 1328,
+   "page": "vision-school",
+   "title": "Vision School · 07 · Lectures from the Field · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 7350
+  },
+  "P-vision-school-07-S02-sticky.dc.html": {
+   "h": 900,
+   "page": "vision-school",
+   "title": "Vision School · 07 · Lectures from the Field",
+   "w": 1440,
+   "x": 0,
+   "y": 5909
+  },
+  "P-vision-school-08-S47-lectures-mobile.dc.html": {
+   "h": 4750,
+   "page": "vision-school",
+   "title": "Vision School · 08 · What Will Be Taught · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 8798
+  },
+  "P-vision-school-08-S47-lectures.dc.html": {
+   "h": 6428,
+   "page": "vision-school",
+   "title": "Vision School · 08 · What Will Be Taught",
+   "w": 1440,
+   "x": 0,
+   "y": 6929
+  },
+  "P-vision-school-09-S18-app-features-mobile.dc.html": {
+   "h": 1222,
+   "page": "vision-school",
+   "title": "Vision School · 09 · Each Week · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 13668
+  },
+  "P-vision-school-09-S18-app-features.dc.html": {
+   "h": 872,
+   "page": "vision-school",
+   "title": "Vision School · 09 · Each Week",
+   "w": 1440,
+   "x": 0,
+   "y": 13477
+  },
+  "P-vision-school-10-S24-40-112-mobile.dc.html": {
+   "h": 2032,
+   "page": "vision-school",
+   "title": "Vision School · 10 · Who Is Vision School For · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 15010
+  },
+  "P-vision-school-10-S24-40-112.dc.html": {
+   "h": 919,
+   "page": "vision-school",
+   "title": "Vision School · 10 · Who Is Vision School For",
+   "w": 1440,
+   "x": 0,
+   "y": 14469
+  },
+  "P-vision-school-11-S28-platform-ceo-mobile.dc.html": {
+   "h": 508,
+   "page": "vision-school",
+   "title": "Vision School · 11 · A Vision for All Nations · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 17162
+  },
+  "P-vision-school-11-S28-platform-ceo.dc.html": {
+   "h": 921,
+   "page": "vision-school",
+   "title": "Vision School · 11 · A Vision for All Nations",
+   "w": 1440,
+   "x": 0,
+   "y": 15508
+  },
+  "P-vision-school-12-S07-mission-quote-mobile.dc.html": {
+   "h": 504,
+   "page": "vision-school",
+   "title": "Vision School · 12 · Testimony · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 17790
+  },
+  "P-vision-school-12-S07-mission-quote.dc.html": {
+   "h": 473,
+   "page": "vision-school",
+   "title": "Vision School · 12 · Testimony",
+   "w": 1440,
+   "x": 0,
+   "y": 16549
+  },
+  "P-vision-school-13-S59-globalhubs-howitworks-mobile.dc.html": {
+   "h": 962,
+   "page": "vision-school",
+   "title": "Vision School · 13 · Where It Meets · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 18414
+  },
+  "P-vision-school-13-S59-globalhubs-howitworks.dc.html": {
+   "h": 952,
+   "page": "vision-school",
+   "title": "Vision School · 13 · Where It Meets",
+   "w": 1440,
+   "x": 0,
+   "y": 17142
+  },
+  "P-vision-school-14-S25-vision-partner-slider-mobile.dc.html": {
+   "h": 938,
+   "page": "vision-school",
+   "title": "Vision School · 14 · Testimonies · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 19496
+  },
+  "P-vision-school-14-S25-vision-partner-slider.dc.html": {
+   "h": 761,
+   "page": "vision-school",
+   "title": "Vision School · 14 · Testimonies",
+   "w": 1440,
+   "x": 0,
+   "y": 18214
+  },
+  "P-vision-school-17-S42-churches-faq-mobile.dc.html": {
+   "h": 1278,
+   "page": "vision-school",
+   "title": "Vision School · 17 · FAQ · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 21609
+  },
+  "P-vision-school-17-S42-churches-faq.dc.html": {
+   "h": 878,
+   "page": "vision-school",
+   "title": "Vision School · 17 · FAQ",
+   "w": 1440,
+   "x": 0,
+   "y": 20318
+  },
+  "P-vision-school-18-ProductsIntro-mobile.dc.html": {
+   "h": 860,
+   "page": "vision-school",
+   "title": "Vision School · 18 · Programs · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 23007
+  },
+  "P-vision-school-18-ProductsIntro.dc.html": {
+   "h": 787,
+   "page": "vision-school",
+   "title": "Vision School · 18 · Programs",
+   "w": 1440,
+   "x": 0,
+   "y": 21316
+  },
+  "P-vision-school-19-S09-cta-volunteers-mobile.dc.html": {
+   "h": 696,
+   "page": "vision-school",
+   "title": "Vision School · 19 · Call to Action · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 23987
+  },
+  "P-vision-school-19-S09-cta-volunteers.dc.html": {
+   "h": 675,
+   "page": "vision-school",
+   "title": "Vision School · 19 · Call to Action",
+   "w": 1440,
+   "x": 0,
+   "y": 22223
+  },
+  "P-vision-school-youth-01-S20-bl-hero-mobile.dc.html": {
+   "h": 680,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 01 · Hero · Mobile 390",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "P-vision-school-youth-01-S20-bl-hero.dc.html": {
+   "h": 810,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 01 · Hero",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-vision-school-youth-02-ProductKids-mobile.dc.html": {
+   "h": 1240,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 02 · Intro · Mobile 390",
+   "w": 390,
+   "x": 1520,
+   "y": 930
+  },
+  "P-vision-school-youth-02-ProductKids.dc.html": {
+   "h": 900,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 02 · Intro",
+   "w": 1440,
+   "x": 0,
+   "y": 930
+  },
+  "P-vision-school-youth-03-S21-bl-discover-mobile.dc.html": {
+   "h": 2248,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 03 · Stats · Mobile 390",
+   "w": 390,
+   "x": 1520,
+   "y": 2216
+  },
+  "P-vision-school-youth-03-S21-bl-discover.dc.html": {
+   "h": 1172,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 03 · Stats",
+   "w": 1440,
+   "x": 0,
+   "y": 1950
+  },
+  "P-vision-school-youth-04-S22-bl-features-mobile.dc.html": {
+   "h": 1352,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 04 · Highlights · Mobile 390",
+   "w": 390,
+   "x": 1520,
+   "y": 4584
+  },
+  "P-vision-school-youth-04-S22-bl-features.dc.html": {
+   "h": 876,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 04 · Highlights",
+   "w": 1440,
+   "x": 0,
+   "y": 3242
+  },
+  "P-vision-school-youth-05-S23-bl-testimonial-mobile.dc.html": {
+   "h": 988,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 05 · Verse · Mobile 390",
+   "w": 390,
+   "x": 1520,
+   "y": 6056
+  },
+  "P-vision-school-youth-05-S23-bl-testimonial.dc.html": {
+   "h": 822,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 05 · Verse",
+   "w": 1440,
+   "x": 0,
+   "y": 4238
+  },
+  "P-young-tent-maker-01-S05-hero-withimg-mobile.dc.html": {
+   "h": 630,
+   "page": "young-tent-maker",
+   "title": "Young Tent Maker · 01 · Hero · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  },
+  "P-young-tent-maker-01-S05-hero-withimg.dc.html": {
+   "h": 819,
+   "page": "young-tent-maker",
+   "title": "Young Tent Maker · 01 · Hero",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-young-tent-maker-03-S27-platfrom-what-mobile.dc.html": {
+   "h": 2020,
+   "page": "young-tent-maker",
+   "title": "Young Tent Maker · 03 · What Is YTM · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 939
+  },
+  "P-young-tent-maker-03-S27-platfrom-what.dc.html": {
+   "h": 874,
+   "page": "young-tent-maker",
+   "title": "Young Tent Maker · 03 · What Is YTM",
+   "w": 1440,
+   "x": 0,
+   "y": 939
+  },
+  "P-young-tent-maker-04-S28-platform-ceo-mobile.dc.html": {
+   "h": 508,
+   "page": "young-tent-maker",
+   "title": "Young Tent Maker · 04 · Feature Photo · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 3079
+  },
+  "P-young-tent-maker-04-S28-platform-ceo.dc.html": {
+   "h": 921,
+   "page": "young-tent-maker",
+   "title": "Young Tent Maker · 04 · Feature Photo",
+   "w": 1440,
+   "x": 0,
+   "y": 1933
+  },
+  "P-young-tent-maker-05-S29-platform-help-mobile.dc.html": {
+   "h": 1753,
+   "page": "young-tent-maker",
+   "title": "Young Tent Maker · 05 · Who Can Go · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 3707
+  },
+  "P-young-tent-maker-05-S29-platform-help.dc.html": {
+   "h": 682,
+   "page": "young-tent-maker",
+   "title": "Young Tent Maker · 05 · Who Can Go",
+   "w": 1440,
+   "x": 0,
+   "y": 2974
+  },
+  "P-young-tent-maker-06-S30-platform-features-mobile.dc.html": {
+   "h": 1067,
+   "page": "young-tent-maker",
+   "title": "Young Tent Maker · 06 · Highlights · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 5580
+  },
+  "P-young-tent-maker-06-S30-platform-features.dc.html": {
+   "h": 680,
+   "page": "young-tent-maker",
+   "title": "Young Tent Maker · 06 · Highlights",
+   "w": 1440,
+   "x": 0,
+   "y": 3776
+  },
+  "P-young-tent-maker-07-S31-summit-slider-mobile.dc.html": {
+   "h": 1050,
+   "page": "young-tent-maker",
+   "title": "Young Tent Maker · 07 · Quotes · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 6767
+  },
+  "P-young-tent-maker-07-S31-summit-slider.dc.html": {
+   "h": 869,
+   "page": "young-tent-maker",
+   "title": "Young Tent Maker · 07 · Quotes",
+   "w": 1440,
+   "x": 0,
+   "y": 4576
+  },
+  "P-young-tent-maker-08-S32-platform-video-mobile.dc.html": {
+   "h": 895,
+   "page": "young-tent-maker",
+   "title": "Young Tent Maker · 08 · Verse and Contact · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 7937
+  },
+  "P-young-tent-maker-08-S32-platform-video.dc.html": {
+   "h": 720,
+   "page": "young-tent-maker",
+   "title": "Young Tent Maker · 08 · Verse and Contact",
+   "w": 1440,
+   "x": 0,
+   "y": 5565
+  },
+  "P-young-tent-maker-09-S33-summit-faq-mobile.dc.html": {
+   "h": 1497,
+   "page": "young-tent-maker",
+   "title": "Young Tent Maker · 09 · FAQ · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 8952
+  },
+  "P-young-tent-maker-09-S33-summit-faq.dc.html": {
+   "h": 1104,
+   "page": "young-tent-maker",
+   "title": "Young Tent Maker · 09 · FAQ",
+   "w": 1440,
+   "x": 0,
+   "y": 6405
+  },
+  "ProductBibleApp.dc.html": {
+   "h": 900,
+   "title": "Home · 07 · Program: Vision Camp",
+   "w": 1440,
+   "x": 0,
+   "y": 4439
+  },
+  "ProductConnect.dc.html": {
+   "h": 900,
+   "title": "Home · 06 · Program: Vision School",
+   "w": 1440,
+   "x": 0,
+   "y": 3419
+  },
+  "ProductKids.dc.html": {
+   "h": 900,
+   "title": "Home · 09 · Program: Vision School Youth",
+   "w": 1440,
+   "x": 0,
+   "y": 6479
+  },
+  "ProductLite.dc.html": {
+   "h": 900,
+   "title": "Home · 08 · Program: Field Operation",
+   "w": 1440,
+   "x": 0,
+   "y": 5459
+  },
+  "ProductsIntro.dc.html": {
+   "h": 722,
+   "title": "Home · 05 · Programs Intro",
+   "w": 1440,
+   "x": 0,
+   "y": 2577
+  },
+  "S00-bible-translation-hero.dc.html": {
+   "h": 1144,
+   "page": "components",
+   "title": "Get Involved & Volunteers: Serve with us (volunteers)",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "S01-volunteers-next.dc.html": {
+   "h": 759,
+   "page": "components",
+   "title": "Get Involved & Volunteers: is--volunteers-next (volunteers)",
+   "w": 1440,
+   "x": 0,
+   "y": 1264
+  },
+  "S02-sticky.dc.html": {
+   "h": 900,
+   "page": "components",
+   "title": "Get Involved & Volunteers: is--sticky (volunteers)",
+   "w": 1440,
+   "x": 0,
+   "y": 2143
+  },
+  "S03-40padding.dc.html": {
+   "h": 746,
+   "page": "components",
+   "title": "Partners & Giving: Become a Vision Partner (giving)",
+   "w": 1440,
+   "x": 6560,
+   "y": 14677
+  },
+  "S04-totalpopulation.dc.html": {
+   "h": 950,
+   "page": "components",
+   "title": "Partners & Giving: is--totalpopulation (bible-for-everyone)",
+   "w": 1440,
+   "x": 6560,
+   "y": 5678
+  },
+  "S05-hero-withimg.dc.html": {
+   "h": 819,
+   "page": "components",
+   "title": "About, Mission & History: Our Mission (our-mission)",
+   "w": 1440,
+   "x": 1640,
+   "y": 0
+  },
+  "S06-mission-why-weexist.dc.html": {
+   "h": 1222,
+   "page": "components",
+   "title": "About, Mission & History: It All Started With a Question: “How could new technologies  (our-mission)",
+   "w": 1440,
+   "x": 1640,
+   "y": 939
+  },
+  "S07-mission-quote.dc.html": {
+   "h": 473,
+   "page": "components",
+   "title": "About, Mission & History: is--mission-quote (our-mission)",
+   "w": 1440,
+   "x": 1640,
+   "y": 2281
+  },
+  "S08-mission-impact.dc.html": {
+   "h": 1202,
+   "page": "components",
+   "title": "About, Mission & History: From One IdeaTo a Global Movement (our-mission)",
+   "w": 1440,
+   "x": 1640,
+   "y": 2874
+  },
+  "S09-cta-volunteers.dc.html": {
+   "h": 675,
+   "page": "components",
+   "title": "Get Involved & Volunteers: Be Part of What God Is Doing Through YouVersion (our-mission)",
+   "w": 1440,
+   "x": 0,
+   "y": 3163
+  },
+  "S10-history-started.dc.html": {
+   "h": 1150,
+   "page": "components",
+   "title": "About, Mission & History: From a Security Line to a Global Mission (history)",
+   "w": 1440,
+   "x": 1640,
+   "y": 4196
+  },
+  "S11-history-timeline.dc.html": {
+   "h": 1561,
+   "page": "components",
+   "title": "About, Mission & History: Milestones in Mission (history)",
+   "w": 1440,
+   "x": 1640,
+   "y": 5466
+  },
+  "S12-bible-partners-cta.dc.html": {
+   "h": 541,
+   "page": "components",
+   "title": "About, Mission & History: Over 1 Billion Installs (history)",
+   "w": 1440,
+   "x": 1640,
+   "y": 7147
+  },
+  "S13-120padding.dc.html": {
+   "h": 888,
+   "page": "components",
+   "title": "About, Mission & History: Going Local to Reach More People (history)",
+   "w": 1440,
+   "x": 1640,
+   "y": 7808
+  },
+  "S14-80padding.dc.html": {
+   "h": 870,
+   "page": "components",
+   "title": "About, Mission & History: Anxiety, Hope and Healing: YouVersion Reveals What the World (history)",
+   "w": 1440,
+   "x": 1640,
+   "y": 8816
+  },
+  "S15-app-hero.dc.html": {
+   "h": 810,
+   "page": "components",
+   "title": "Bible Apps: The Most Downloaded and (bible-app)",
+   "w": 1440,
+   "x": 3280,
+   "y": 0
+  },
+  "S16-app-why.dc.html": {
+   "h": 1033,
+   "page": "components",
+   "title": "Bible Apps: Drawing Everyone Closer to God (bible-app)",
+   "w": 1440,
+   "x": 3280,
+   "y": 930
+  },
+  "S17-findhub-section.dc.html": {
+   "h": 1357,
+   "page": "components",
+   "title": "Bible Apps: One App. Millions of Lives Changed. (bible-app)",
+   "w": 1440,
+   "x": 3280,
+   "y": 2083
+  },
+  "S18-app-features.dc.html": {
+   "h": 872,
+   "page": "components",
+   "title": "Bible Apps: Free Scripture for Every Day, Everywhere (bible-app)",
+   "w": 1440,
+   "x": 3280,
+   "y": 3560
+  },
+  "S19-app-support.dc.html": {
+   "h": 799,
+   "page": "components",
+   "title": "Bible Apps: Support and Engage With Your Communities (bible-app)",
+   "w": 1440,
+   "x": 3280,
+   "y": 4552
+  },
+  "S20-bl-hero.dc.html": {
+   "h": 810,
+   "page": "components",
+   "title": "Bible Apps: LEARN IT. LIVE IT. LOOP IT. (bible-loop)",
+   "w": 1440,
+   "x": 3280,
+   "y": 5471
+  },
+  "S21-bl-discover.dc.html": {
+   "h": 1172,
+   "page": "components",
+   "title": "Bible Apps: DISCOVER BIBLE LOOP (bible-loop)",
+   "w": 1440,
+   "x": 3280,
+   "y": 6401
+  },
+  "S22-bl-features.dc.html": {
+   "h": 876,
+   "page": "components",
+   "title": "Bible Apps: FEATURED HIGHLIGHTS (bible-loop)",
+   "w": 1440,
+   "x": 3280,
+   "y": 7693
+  },
+  "S23-bl-testimonial.dc.html": {
+   "h": 822,
+   "page": "components",
+   "title": "Bible Apps: “THIS APP IS SUPER FUN!” (bible-loop)",
+   "w": 1440,
+   "x": 3280,
+   "y": 8689
+  },
+  "S24-40-112.dc.html": {
+   "h": 919,
+   "page": "components",
+   "title": "Connect & Platform: Who Does YouVersion Connect Help? (connect)",
+   "w": 1440,
+   "x": 4920,
+   "y": 897
+  },
+  "S25-vision-partner-slider.dc.html": {
+   "h": 761,
+   "page": "components",
+   "title": "Connect & Platform: is--vision-partner-slider (connect)",
+   "w": 1440,
+   "x": 4920,
+   "y": 1936
+  },
+  "S26-80-dding.dc.html": {
+   "h": 130,
+   "page": "components",
+   "title": "Connect & Platform: is--80-dding (platform)",
+   "w": 1440,
+   "x": 4920,
+   "y": 2817
+  },
+  "S27-platfrom-what.dc.html": {
+   "h": 874,
+   "page": "components",
+   "title": "Connect & Platform: What is YouVersion Platform? (platform)",
+   "w": 1440,
+   "x": 4920,
+   "y": 3067
+  },
+  "S28-platform-ceo.dc.html": {
+   "h": 921,
+   "page": "components",
+   "title": "Connect & Platform: A Vision Bigger Than One App (platform)",
+   "w": 1440,
+   "x": 4920,
+   "y": 4061
+  },
+  "S29-platform-help.dc.html": {
+   "h": 682,
+   "page": "components",
+   "title": "Connect & Platform: Who does YouVersion Platform serve? (platform)",
+   "w": 1440,
+   "x": 4920,
+   "y": 5102
+  },
+  "S30-platform-features.dc.html": {
+   "h": 680,
+   "page": "components",
+   "title": "Connect & Platform: Core Services, Ready to Integrate (platform)",
+   "w": 1440,
+   "x": 4920,
+   "y": 5904
+  },
+  "S31-summit-slider.dc.html": {
+   "h": 869,
+   "page": "components",
+   "title": "Connect & Platform: is--summit-slider (platform)",
+   "w": 1440,
+   "x": 4920,
+   "y": 6704
+  },
+  "S32-platform-video.dc.html": {
+   "h": 720,
+   "page": "components",
+   "title": "Connect & Platform: “We won’t stop until everyone, everywhere, has access to God (platform)",
+   "w": 1440,
+   "x": 4920,
+   "y": 7693
+  },
+  "S33-summit-faq.dc.html": {
+   "h": 1104,
+   "page": "components",
+   "title": "Connect & Platform: Questions About Our Platform? (platform)",
+   "w": 1440,
+   "x": 4920,
+   "y": 8533
+  },
+  "S34-press-resources.dc.html": {
+   "h": 674,
+   "page": "components",
+   "title": "News, Stories & Events: Press Resources (newsroom)",
+   "w": 1440,
+   "x": 9840,
+   "y": 0
+  },
+  "S35-newsroom-marquee.dc.html": {
+   "h": 550,
+   "page": "components",
+   "title": "News, Stories & Events: YouVersion: As Featured In (newsroom)",
+   "w": 1440,
+   "x": 9840,
+   "y": 794
+  },
+  "S36-black-stories.dc.html": {
+   "h": 1718,
+   "page": "components",
+   "title": "News, Stories & Events: is--black--stories (stories)",
+   "w": 1440,
+   "x": 9840,
+   "y": 1464
+  },
+  "S37-cob-section.dc.html": {
+   "h": 1264,
+   "page": "components",
+   "title": "Churches: Church Onboarding Series (church-blog)",
+   "w": 1440,
+   "x": 8200,
+   "y": 3389
+  },
+  "S38-cob-more-section.dc.html": {
+   "h": 1866,
+   "page": "components",
+   "title": "Churches: Read the full series (church-blog)",
+   "w": 1440,
+   "x": 8200,
+   "y": 4773
+  },
+  "S39-realstories-1.dc.html": {
+   "h": 5255,
+   "page": "components",
+   "title": "Churches: What’s New in the Church Community (church-blog)",
+   "w": 1440,
+   "x": 8200,
+   "y": 6759
+  },
+  "S40-churches-cards.dc.html": {
+   "h": 1344,
+   "page": "components",
+   "title": "Churches: Built for Ministry. Beloved by Millions. (churches)",
+   "w": 1440,
+   "x": 8200,
+   "y": 0
+  },
+  "S41-churches-real-impact.dc.html": {
+   "h": 807,
+   "page": "components",
+   "title": "Churches: is--churches-real-impact (churches)",
+   "w": 1440,
+   "x": 8200,
+   "y": 1464
+  },
+  "S42-churches-faq.dc.html": {
+   "h": 878,
+   "page": "components",
+   "title": "Churches: Got Questions? We’ve Got Answers. (churches)",
+   "w": 1440,
+   "x": 8200,
+   "y": 1947
+  },
+  "S43-black-showcase.dc.html": {
+   "h": 655,
+   "page": "components",
+   "title": "Partners & Giving: is--black-showcase (bible-partners)",
+   "w": 1440,
+   "x": 6560,
+   "y": 0
+  },
+  "S44-imgs-sticky.dc.html": {
+   "h": 900,
+   "page": "components",
+   "title": "Partners & Giving: Imagine a world where every person can instantly engage with (bible-partners)",
+   "w": 1440,
+   "x": 6560,
+   "y": 775
+  },
+  "S45-partofit.dc.html": {
+   "h": 1562,
+   "page": "components",
+   "title": "Partners & Giving: And you can be a part of it. (bible-partners)",
+   "w": 1440,
+   "x": 6560,
+   "y": 1795
+  },
+  "S46-partners-list.dc.html": {
+   "h": 2081,
+   "page": "components",
+   "title": "Partners & Giving: Plus 39 more projects, including 23 that are deemed “Highly  (bible-for-everyone)",
+   "w": 1440,
+   "x": 6560,
+   "y": 3477
+  },
+  "S47-partnerwithus-partner.dc.html": {
+   "h": 2348,
+   "page": "components",
+   "title": "Partners & Giving: Partner With Us (partners-overview)",
+   "w": 1440,
+   "x": 6560,
+   "y": 6748
+  },
+  "S48-globalhubs-bibleapp.dc.html": {
+   "h": 705,
+   "page": "components",
+   "title": "Partners & Giving: Regional Ministry --- (partners-overview)",
+   "w": 1440,
+   "x": 6560,
+   "y": 9216
+  },
+  "S49-visionpartner-hero.dc.html": {
+   "h": 1543,
+   "page": "components",
+   "title": "Partners & Giving: Discover What it means to be a YouVersion Vision Partner. (vision-partner)",
+   "w": 1440,
+   "x": 6560,
+   "y": 10041
+  },
+  "S50-sharing.dc.html": {
+   "h": 384,
+   "page": "components",
+   "title": "Partners & Giving: Join us in sharing (vision-partner)",
+   "w": 1440,
+   "x": 6560,
+   "y": 11704
+  },
+  "S51-partners-app.dc.html": {
+   "h": 391,
+   "page": "components",
+   "title": "Partners & Giving: is--partners-app (vision-partner)",
+   "w": 1440,
+   "x": 6560,
+   "y": 12208
+  },
+  "S52-parners-imgs.dc.html": {
+   "h": 900,
+   "page": "components",
+   "title": "Partners & Giving: is--parners--imgs (vision-partner)",
+   "w": 1440,
+   "x": 6560,
+   "y": 12719
+  },
+  "S53-get-connected.dc.html": {
+   "h": 818,
+   "page": "components",
+   "title": "Partners & Giving: Get Connected (vision-partner)",
+   "w": 1440,
+   "x": 6560,
+   "y": 13739
+  },
+  "S54-giving-stats.dc.html": {
+   "h": 1008,
+   "page": "components",
+   "title": "Partners & Giving: is--giving-stats (giving)",
+   "w": 1440,
+   "x": 6560,
+   "y": 15543
+  },
+  "S55-section-header38.dc.html": {
+   "h": 943,
+   "page": "components",
+   "title": "Partners & Giving: Truth changes everything. But it hasn’t reached everyone. (sowers)",
+   "w": 1440,
+   "x": 6560,
+   "y": 16671
+  },
+  "S56-sowers-community.dc.html": {
+   "h": 2582,
+   "page": "components",
+   "title": "Partners & Giving: Meet the Sowers Community (sowers)",
+   "w": 1440,
+   "x": 6560,
+   "y": 17734
+  },
+  "S57-section-impact.dc.html": {
+   "h": 595,
+   "page": "components",
+   "title": "Partners & Giving: Sowers Receive (sowers)",
+   "w": 1440,
+   "x": 6560,
+   "y": 20436
+  },
+  "S58-impact-seed.dc.html": {
+   "h": 779,
+   "page": "components",
+   "title": "Partners & Giving: Join the Community that has helped distribute over 1 billion (sowers)",
+   "w": 1440,
+   "x": 6560,
+   "y": 21151
+  },
+  "S59-globalhubs-howitworks.dc.html": {
+   "h": 952,
+   "page": "components",
+   "title": "About, Mission & History: Local Teams Supporting a Global Mission (global-hubs)",
+   "w": 1440,
+   "x": 1640,
+   "y": 9806
+  },
+  "S60-claimchurch.dc.html": {
+   "h": 505,
+   "page": "components",
+   "title": "Get Involved & Volunteers: Why participate? (research-team)",
+   "w": 1440,
+   "x": 0,
+   "y": 3958
+  },
+  "S61-contact.dc.html": {
+   "h": 1136,
+   "page": "components",
+   "title": "About, Mission & History: is--contact (helpful-links)",
+   "w": 1440,
+   "x": 1640,
+   "y": 10878
+  },
+  "S62-ps26-recap-hero.dc.html": {
+   "h": 773,
+   "page": "components",
+   "title": "News, Stories & Events: ps26-recap-hero (partner-summit-2026)",
+   "w": 1440,
+   "x": 9840,
+   "y": 5007
+  },
+  "S63-ps26-recap-recordings.dc.html": {
+   "h": 2150,
+   "page": "components",
+   "title": "News, Stories & Events: Rewatch Sessions (partner-summit-2026)",
+   "w": 1440,
+   "x": 9840,
+   "y": 5900
+  },
+  "S64-ps26-recap-thankyou.dc.html": {
+   "h": 513,
+   "page": "components",
+   "title": "News, Stories & Events: Thank you for attending! (partner-summit-2026)",
+   "w": 1440,
+   "x": 9840,
+   "y": 8170
+  },
+  "S65-totalpopulation-connect.dc.html": {
+   "h": 777,
+   "page": "components",
+   "title": "Connect & Platform: One Ecosystem, Infinite Impact (connect)",
+   "w": 1440,
+   "x": 4920,
+   "y": 0
+  },
+  "S66-V1-80-20.dc.html": {
+   "h": 369,
+   "page": "components",
+   "title": "Churches: Blog header, alternate style (churches)",
+   "w": 1440,
+   "x": 8200,
+   "y": 11690
+  },
+  "S67-V2-20-80.dc.html": {
+   "h": 593,
+   "page": "components",
+   "title": "Churches: Card grid, 3 columns (churches)",
+   "w": 1440,
+   "x": 8200,
+   "y": 12179
+  },
+  "S68-V3-home-getinvolved.dc.html": {
+   "h": 1585,
+   "page": "components",
+   "title": "News, Stories & Events: News grid 3x2 with See More (newsroom)",
+   "w": 1440,
+   "x": 9840,
+   "y": 3302
+  },
+  "Stats.dc.html": {
+   "h": 857,
+   "title": "Home · 04 · Stats",
+   "w": 1440,
+   "x": 0,
+   "y": 1600
+  },
+  "Stories.dc.html": {
+   "h": 1103,
+   "title": "Home · 10 · Stories",
+   "w": 1440,
+   "x": 0,
+   "y": 7499
+  },
+  "P-article-01-new-hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 630,
+   "title": "Article · 01 · Post header",
+   "page": "article"
+  },
+  "P-article-01-new-hero-mobile.dc.html": {
+   "x": 1520,
+   "y": 0,
+   "w": 390,
+   "h": 558,
+   "title": "Article · 01 · Post header · Mobile",
+   "page": "article"
+  },
+  "P-article-02-new-img.dc.html": {
+   "x": 0,
+   "y": 750,
+   "w": 1440,
+   "h": 845,
+   "title": "Article · 02 · Lead photo",
+   "page": "article"
+  },
+  "P-article-02-new-img-mobile.dc.html": {
+   "x": 1520,
+   "y": 750,
+   "w": 390,
+   "h": 297,
+   "title": "Article · 02 · Lead photo · Mobile",
+   "page": "article"
+  },
+  "P-article-03-new-content.dc.html": {
+   "x": 0,
+   "y": 1715,
+   "w": 1440,
+   "h": 7896,
+   "title": "Article · 03 · Post body",
+   "page": "article"
+  },
+  "P-article-03-new-content-mobile.dc.html": {
+   "x": 1520,
+   "y": 1715,
+   "w": 390,
+   "h": 7982,
+   "title": "Article · 03 · Post body · Mobile",
+   "page": "article"
+  },
+  "P-article-06-40-80.dc.html": {
+   "x": 0,
+   "y": 11062,
+   "w": 1440,
+   "h": 773,
+   "title": "Article · 06 · Latest News",
+   "page": "article"
+  },
+  "P-article-06-40-80-mobile.dc.html": {
+   "x": 1520,
+   "y": 11062,
+   "w": 390,
+   "h": 1268,
+   "title": "Article · 06 · Latest News · Mobile",
+   "page": "article"
+  },
+  "P-vision-school-youth-06-S27-what.dc.html": {
+   "x": 0,
+   "y": 5180,
+   "w": 1440,
+   "h": 1000,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 06 · What is YVS"
+  },
+  "P-vision-school-youth-06-S27-what-mobile.dc.html": {
+   "x": 1520,
+   "y": 7164,
+   "w": 390,
+   "h": 1990,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 06 · What is YVS · Mobile 390"
+  },
+  "P-vision-school-youth-07-S29-join.dc.html": {
+   "x": 0,
+   "y": 6300,
+   "w": 1440,
+   "h": 780,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 07 · Who can join"
+  },
+  "P-vision-school-youth-07-S29-join-mobile.dc.html": {
+   "x": 1520,
+   "y": 9274,
+   "w": 390,
+   "h": 1000,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 07 · Who can join · Mobile 390"
+  },
+  "P-vision-school-youth-08-S30-programs.dc.html": {
+   "x": 0,
+   "y": 7200,
+   "w": 1440,
+   "h": 1110,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 08 · Programs"
+  },
+  "P-vision-school-youth-08-S30-programs-mobile.dc.html": {
+   "x": 1520,
+   "y": 10394,
+   "w": 390,
+   "h": 2400,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 08 · Programs · Mobile 390"
+  },
+  "P-vision-school-youth-09-S33-faq.dc.html": {
+   "x": 0,
+   "y": 8430,
+   "w": 1440,
+   "h": 1040,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 09 · FAQ"
+  },
+  "P-vision-school-youth-09-S33-faq-mobile.dc.html": {
+   "x": 1520,
+   "y": 12914,
+   "w": 390,
+   "h": 1260,
+   "page": "vision-school-youth",
+   "title": "Vision School Youth · 09 · FAQ · Mobile 390"
+  },
+  "P-serve-with-us-04-ProductsIntro.dc.html": {
+   "h": 722,
+   "page": "serve-with-us",
+   "title": "Serve With Us · 04 · Mission Programs",
+   "w": 1440,
+   "x": 0,
+   "y": 2596
+  },
+  "P-serve-with-us-04-ProductsIntro-mobile.dc.html": {
+   "h": 736,
+   "page": "serve-with-us",
+   "title": "Serve With Us · 04 · Mission Programs · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 2596
+  },
+  "P-give-03-S54-giving-stats.dc.html": {
+   "h": 1008,
+   "page": "give",
+   "title": "Give · 03 · Impact",
+   "w": 1440,
+   "x": 0,
+   "y": 1443
+  },
+  "P-give-03-S54-giving-stats-mobile.dc.html": {
+   "h": 1758,
+   "page": "give",
+   "title": "Give · 03 · Impact · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 1640
+  },
+  "P-give-08-S55-section-header38.dc.html": {
+   "h": 943,
+   "page": "give",
+   "title": "Give · 08 · Monthly gift",
+   "w": 1440,
+   "x": 0,
+   "y": 6015
+  },
+  "P-give-08-S55-section-header38-mobile.dc.html": {
+   "h": 938,
+   "page": "give",
+   "title": "Give · 08 · Monthly gift · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 7905
+  },
+  "P-give-10-S56-sowers-community.dc.html": {
+   "h": 1072,
+   "page": "give",
+   "title": "Give · 10 · Testimonies",
+   "w": 1440,
+   "x": 0,
+   "y": 7829
+  },
+  "P-give-10-S56-sowers-community-mobile.dc.html": {
+   "h": 2154,
+   "page": "give",
+   "title": "Give · 10 · Testimonies · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 9969
+  },
+  "P-article-04-new-about.dc.html": {
+   "x": 0,
+   "y": 9731,
+   "w": 1440,
+   "h": 453,
+   "title": "Article · 04 · About InterCP International",
+   "page": "article"
+  },
+  "P-vision-school-15-Stories.dc.html": {
+   "h": 1103,
+   "page": "vision-school",
+   "title": "Vision School · 15 · Stories from the Field",
+   "w": 1440,
+   "x": 0,
+   "y": 19095
+  },
+  "P-vision-school-15-Stories-mobile.dc.html": {
+   "h": 935,
+   "page": "vision-school",
+   "title": "Vision School · 15 · Stories from the Field · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 20554
+  },
+  "P-article-04-new-about-mobile.dc.html": {
+   "x": 1520,
+   "y": 9731,
+   "w": 390,
+   "h": 609,
+   "title": "Article · 04 · About InterCP International · Mobile",
+   "page": "article"
+  },
+  "P-vision-camp-07-S07-mission-quote-mobile.dc.html": {
+   "h": 504,
+   "page": "vision-camp",
+   "title": "Vision Camp · 08 · Recommendation · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 9603
+  },
+  "P-article-05-cta-volunteers.dc.html": {
+   "x": 0,
+   "y": 10304,
+   "w": 1440,
+   "h": 638,
+   "title": "Article · 05 · Contact CTA",
+   "page": "article"
+  },
+  "P-vision-camp-07-S07-mission-quote.dc.html": {
+   "h": 631,
+   "page": "vision-camp",
+   "title": "Vision Camp · 08 · Recommendation",
+   "w": 1440,
+   "x": 0,
+   "y": 7430
+  },
+  "P-newsroom-09-S62-ps26-recap-hero.dc.html": {
+   "h": 773,
+   "page": "newsroom",
+   "title": "Newsroom · 09 · Global Alliance Conference",
+   "w": 1440,
+   "x": 0,
+   "y": 6413
+  },
+  "P-newsroom-09-S62-ps26-recap-hero-mobile.dc.html": {
+   "h": 652,
+   "page": "newsroom",
+   "title": "Newsroom · 09 · Global Alliance Conference · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 10246
+  },
+  "P-article-05-cta-volunteers-mobile.dc.html": {
+   "x": 1520,
+   "y": 10304,
+   "w": 390,
+   "h": 412,
+   "title": "Article · 05 · Contact CTA · Mobile",
+   "page": "article"
+  },
+  "P-vision-camp-00-S05-hero-withimg.dc.html": {
+   "h": 819,
+   "page": "vision-camp",
+   "title": "Vision Camp · 01 · Hero",
+   "w": 1440,
+   "x": 0,
+   "y": 0
+  },
+  "P-vision-camp-00-S05-hero-withimg-mobile.dc.html": {
+   "h": 630,
+   "page": "vision-camp",
+   "title": "Vision Camp · 01 · Hero · Mobile",
+   "w": 390,
+   "x": 1520,
+   "y": 0
+  }
+ },
+ "createdOnFiles": {
+  "at": "2026-11-01T19:30:00Z",
+  "v": 1
+ },
+ "designSystems": [],
+ "launch": {
+  "page": "library",
+  "view": "canvas"
+ },
+ "noteOrder": [
+  "title",
+  "specs",
+  "menus",
+  "scroll",
+  "grp1",
+  "grp2",
+  "grp3",
+  "grp4",
+  "grp5",
+  "grp6",
+  "grp7",
+  "pg-mission",
+  "pg-history",
+  "pg-branches",
+  "pg-stories",
+  "pg-newsroom",
+  "pg-vision-school",
+  "pg-vision-camp",
+  "pg-field-operation",
+  "pg-vision-school-youth",
+  "pg-student-missionary",
+  "pg-young-tent-maker",
+  "pg-mission-impact-team",
+  "pg-partner-overview",
+  "pg-churches",
+  "pg-give",
+  "pg-serve-with-us",
+  "pg-spiritual-support-team",
+  "src-youth-06",
+  "src-youth-07",
+  "src-youth-08",
+  "src-youth-09",
+  "src-give",
+  "src-vision-school",
+  "src-vision-camp",
+  "src-field-operation",
+  "src-student-missionary",
+  "src-young-tent-maker",
+  "src-mission-impact-team",
+  "src-library",
+  "src-mission",
+  "src-history",
+  "src-branches",
+  "src-stories",
+  "src-partner-overview",
+  "src-churches",
+  "src-serve-with-us",
+  "src-spiritual-support-team",
+  "src-newsroom",
+  "src-article"
+ ],
+ "notes": {
+  "grp1": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "components",
+   "text": "Get Involved & Volunteers",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "grp2": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "components",
+   "text": "About, Mission & History",
+   "w": 240,
+   "x": 1640,
+   "y": -300
+  },
+  "grp3": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "components",
+   "text": "Bible Apps",
+   "w": 240,
+   "x": 3280,
+   "y": -300
+  },
+  "grp4": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "components",
+   "text": "Connect & Platform",
+   "w": 240,
+   "x": 4920,
+   "y": -300
+  },
+  "grp5": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "components",
+   "text": "Partners & Giving",
+   "w": 240,
+   "x": 6560,
+   "y": -300
+  },
+  "grp6": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "components",
+   "text": "Churches",
+   "w": 240,
+   "x": 8200,
+   "y": -300
+  },
+  "grp7": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "components",
+   "text": "News, Stories & Events",
+   "w": 240,
+   "x": 9840,
+   "y": -300
+  },
+  "menus": {
+   "fill": "gray",
+   "text": "NAV DROPDOWNS (mega menu: 3-col link grid + 297×416 image)\n\nAbout: Mission · History · Branches · Stories\nPrograms: Vision School · Vision Camp · Field Operation · Vision School Youth · Student Missionary · Young Tent Maker · Mission Impact Team\nNewsroom (direct link)\nPartner Together: Partner Overview · Churches\nGet Involved: Give · Serve With Us · Volunteers: Spiritual Support Team",
+   "w": 420,
+   "x": 1729,
+   "y": 1081
+  },
+  "pg-branches": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "branches",
+   "text": "Branches",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-churches": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "churches",
+   "text": "Churches",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-field-operation": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "field-operation",
+   "text": "Field Operation",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-give": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "give",
+   "text": "Give",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-history": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "history",
+   "text": "History",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-mission": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "mission",
+   "text": "Mission",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-mission-impact-team": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "mission-impact-team",
+   "text": "Mission Impact Team",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-newsroom": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "newsroom",
+   "text": "Newsroom",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-partner-overview": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "partner-overview",
+   "text": "Partner Overview",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-serve-with-us": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "serve-with-us",
+   "text": "Serve With Us",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-spiritual-support-team": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "spiritual-support-team",
+   "text": "Spiritual Support Team",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-stories": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "stories",
+   "text": "Stories",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-student-missionary": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "student-missionary",
+   "text": "Student Missionary",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-vision-camp": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "vision-camp",
+   "text": "Vision Camp",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-vision-school": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "vision-school",
+   "text": "Vision School",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-vision-school-youth": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "vision-school-youth",
+   "text": "Vision School Youth",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-young-tent-maker": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "young-tent-maker",
+   "text": "Young Tent Maker",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "scroll": {
+   "fill": "orange",
+   "text": "Sections 06–09 are one 3600px scroll block on the live site: four 900px full-bleed product panels, each with a hazy background built from its photo's colours and a client photo. Text column alternates right, left, right, left. Each photo has its own width and treatment so the scroll doesn't repeat: Vision School wide 860 + fade toward the text; Vision Camp 783 + fade; Field Operation narrow 640 + fade; Vision School Youth 783 vignette (feathered on every edge). Vision School and Field Operation also zoom slowly (24s, 1→1.08) on the live site.",
+   "w": 420,
+   "x": 2016,
+   "y": 3512
+  },
+  "specs": {
+   "fill": "blue",
+   "text": "Measured from the live page (Kernel browser, 1440×900, 2026-11-01).\n\nFONTS (the site's own files)\n• Aktiv Grotesk App 400/500\n• Denton Light 300 + Light Italic\n• Denton Condensed (footer tagline)\n\nCOLORS\n• Ink #0B1926 · Cream text #F6EFEE · Black #121212\n• Coral CTA #F04C59 · Eyebrow grey #828080 · Body grey #636161\n\nTYPE SCALE\nH 80/88 · 64/70.4 (−0.16) · 48/52.8 · 32/37.12 · 24/32.64 · body 18/24.3 · 16/22.4\n\nLAYOUT\nContainer 1360 max, 40px side padding. Buttons: pill (r 4800), 18px/500, pad 16×24, h 61.\n\nIMAGES: hero = a still frame (0:10) of the Vision School hero video under a 40% black overlay; nav logo = the Vision School logo, white on the photo, black when a menu is open; product panels = client photos. Menu icons are simple line icons; menu feature images are client photos. Fonts are the site's own Aktiv Grotesk App, Denton and Denton Condensed files (client-approved).",
+   "w": 420,
+   "x": 1756,
+   "y": -244
+  },
+  "title": {
+   "kind": "title1",
+   "maxW": 1440,
+   "text": "Vision School homepage: 13 sections, header to footer (1440px desktop)",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "pg-article": {
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "article",
+   "text": "News Article",
+   "w": 240,
+   "x": 0,
+   "y": -300
+  },
+  "src-youth-01": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "text": "Copy sources: Hero (live, read 2026-11-05)\n• \"Youth Vision School\" — EN page heading \"YOUTH VISION SCHOOL (YVS)\" (intercpinternational.org/youth-generation)\n• \"Middle School - High School\" — EN subheading \"MIDDLE SCHOOL - HIGH SCHOOL\" (intercpinternational.org/youth-generation)\n• \"Register Now\" — EN \"REGISTER NOW FOR SPRING 2026 VISION SCHOOL!\" (intercpinternational.org/youth-generation); links to the page's US registration link\n• Photo: InterCP youth photo from the same page (MJ3B3470), matched through the CMS copy of this board\n\nv112 additions (intercpinternational.org/youth-generation):\n• Sticker “9-Week Missions Training” — from “YVS is an 9-week missions training program…”\n• “Middle School / High School” (lower right) — from “MIDDLE SCHOOL - HIGH SCHOOL”\n• Buttons: US → …/events/3304948, Canada → …/events/3304952 (flags as on source)\n• Photo now the Youth page’s own top photo MJ3B3470 (was an unrecorded-source photo).",
+   "page": "vision-school-youth",
+   "fill": "orange",
+   "size": "s"
+  },
+  "src-youth-02": {
+   "x": 2000,
+   "y": 930,
+   "w": 620,
+   "text": "Copy sources: Intro\n• \"Youth Vision School (YVS)\" — EN heading (intercpinternational.org/youth-generation)\n• \"Understand the Father's Heart for All Nations\" — EN: \"Through YVS, the students will understand the Father's heart for all nations\" (intercpinternational.org/youth-generation)\n• 3 bullets — EN: \"YVS aims to educate students about the current global mission condition, plant God's vision of global evangelization, and equip them to be missionaries in the unreached areas of the world.\" (intercpinternational.org/youth-generation)\n• \"Register Now\" — as hero\n• Photo: InterCP (intercp.net 정기집회 page). Background texture: YouVersion file, also on the live homepage\n\nv113: navy background; YouVersion texture removed. No copy changes.",
+   "page": "vision-school-youth",
+   "fill": "orange",
+   "size": "s"
+  },
+  "src-youth-03": {
+   "x": 2000,
+   "y": 1950,
+   "w": 620,
+   "text": "Copy sources: Stats\n• Heading \"Youth Vision School\" — EN heading (intercpinternational.org/youth-generation)\n• Body — EN, first two sentences of the YVS paragraph; \"an 9-week\" written \"a 9-week\" (intercpinternational.org/youth-generation)\n• 9 / \"Week missions training program\" — EN \"9-week missions training program\"\n• 2–3 / \"Week Field Operation mission trip\" — EN \"Field Operation 2 to 3-week mission trip\"\n• 2 / \"Month High School Student Missions\" — EN \"High School Student Missions (2-month mission trip)\"\n• 3–5 / \"Day MA:RCH outreach, every winter\" — EN \"Every winter, there is a 3 to 5-day outreach program called MA:RCH\"\n• Photos: InterCP (intercp.net 정기집회, intercpinternational.org get-involved, campus-and-young-adult)",
+   "page": "vision-school-youth",
+   "fill": "orange",
+   "size": "s"
+  },
+  "src-youth-04": {
+   "x": 2000,
+   "y": 3242,
+   "w": 620,
+   "text": "Copy sources: Highlights\n• \"Youth Generation Ministry\" — EN page title heading (intercpinternational.org/youth-generation)\n• \"Youth Vision School (YVS)\", \"Youth Back to Jesus (UBTJ)\", \"High School Student Missions (HSM)\" — EN section headings (intercpinternational.org/youth-generation)\n• Bullet 1 — EN \"YVS is an 9-week missions training program consisting of worship, lectures, prayer, and small groups.\" (\"an\" written \"a\")\n• Bullet 2 — EN \"YVS is a requirement to participate in Field Operation … and High School Student Missions …\" (the two parentheses left out)\n• Photo: InterCP youth photo, same page (Generation_Youth_bottom)",
+   "page": "vision-school-youth",
+   "fill": "orange",
+   "size": "s"
+  },
+  "src-youth-05": {
+   "x": 2000,
+   "y": 4238,
+   "w": 620,
+   "text": "Copy sources: Verse\n• \"Youth Back to Jesus\" — EN section heading \"YOUTH BACK TO JESUS (UBTJ)\" (intercpinternational.org/youth-generation)\n• Quote and \"Daniel 12:3\" — verbatim from the UBTJ section (intercpinternational.org/youth-generation)\n• Photo: InterCP (intercp.net 정기집회 page)",
+   "page": "vision-school-youth",
+   "fill": "orange",
+   "size": "s"
+  },
+  "src-youth-ko": {
+   "x": 2000,
+   "y": 5180,
+   "w": 620,
+   "text": "Korean sources found (not used on these English boards; for the Korean page)\n• intercp.net/청소년비전스쿨: 대상 \"하나님의 마음과 비전을 알기 원하는 10대 청소년 (만 13세 이상)\"; 기간 \"매년 2회 봄, 가을 운영 / 주 1회, 총 8주간 진행\"; 내용: 시대, 복음, 한국교회사, UBTJ MOVEMENT, 전도실습, 적그리스도 세계체제, 이슬람, 청년 선교운동, Global Alliance, 한민족 품기, UBTJ 실습, 글로벌 영적 전쟁, Global Vision, 선교지 현장 사역의 실제, 지상명령과 소명; 문의처 \"본부 청소년 비전스쿨팀\"\n• intercp.net/비전스쿨: \"13세 이상 청소년을 위한 스쿨\", \"기간 : 매년 상반기 4월초 하반기 9월 중\"\n• Searched all 78 pages linked from both homepages (20 EN, 58 KO); no other Youth Vision School copy on either site",
+   "page": "vision-school-youth",
+   "fill": "orange",
+   "size": "s"
+  },
+  "src-youth-06": {
+   "x": 2700,
+   "y": 5180,
+   "w": 620,
+   "page": "vision-school-youth",
+   "fill": "orange",
+   "size": "s",
+   "text": "06 · What is YVS — sources (intercpinternational.org/youth-generation)\n• Heading “What is Youth Vision School?” = section label (same pattern as other programs’ “What is…”); program name from source.\n• Intro: verbatim “Through YVS, the students will understand the Father’s heart for all nations and adopt God’s vision as their own to live for the kingdom of God.”\n• Cards split the source YVS paragraph, one clause each; card titles are words from that clause:\n 01 9 Weeks — “YVS is an 9-week missions training program consisting of worship, lectures, prayer, and small groups.” (source typo “an” → “a”)\n 02–04 — “YVS aims to educate students about the current global mission condition, plant God’s vision of global evangelization, and equip them to be missionaries in the unreached areas of the world.” (“them” → “students” in 04)\n 05–06 — “…understand the Father’s heart for all nations and adopt God’s vision as their own to live for the kingdom of God.”\nProposed page order: 01 Hero · 02 Intro · 06 What is · 03 Stats · 07 Who can join · 04 Highlights · 08 Programs · 05 Verse · 09 FAQ"
+  },
+  "src-youth-07": {
+   "x": 2700,
+   "y": 6300,
+   "w": 620,
+   "page": "vision-school-youth",
+   "fill": "orange",
+   "size": "s",
+   "text": "07 · Who can join — sources (intercpinternational.org/youth-generation)\n• “Who can join?” = section label (other programs’ “Who can…” pattern).\n• “Middle School – High School” — page subheading “MIDDLE SCHOOL - HIGH SCHOOL”.\n• “Register now for Spring 2026 Vision School!” — verbatim heading.\n• Cards: “🇺🇸 Youth Vision School (US) registration link” → intercpyouth.churchcenter.com/registrations/events/3304948; “🇨🇦 Youth Vision School (Canada) registration link” → …/3304952. Flags are from the source.\n• KO page (intercp.net/청소년비전스쿨) says 대상 “하나님의 마음과 비전을 알기 원하는 10대 청소년 (만 13세 이상)” — for the ko locale."
+  },
+  "src-youth-08": {
+   "x": 2700,
+   "y": 7200,
+   "w": 620,
+   "page": "vision-school-youth",
+   "fill": "orange",
+   "size": "s",
+   "text": "08 · Programs — sources\n• “Youth Programs” = section label.\n• Intro verbatim (intercpinternational.org/youth-generation): “YVS is a requirement to participate in Field Operation 2 to 3-week mission trip) and High School Student Missions (2-month mission trip).” (missing “(” added)\n• UBTJ, MA:RCH, HSM names + paragraphs verbatim from intercpinternational.org/youth-generation (UBTJ: first 3 sentences). HSM: source says “county in the 10/40 Window” — written “country”; confirm.\n• Photos: UBTJ = Generation_YG top photo (intercpinternational.org/campus-and-young-adult); MA:RCH = Get Involved volunteer photo (intercpinternational.org/get-involved); HSM = GO header (intercpinternational.org/field-operation)."
+  },
+  "src-youth-09": {
+   "x": 2700,
+   "y": 8430,
+   "w": 620,
+   "page": "vision-school-youth",
+   "fill": "orange",
+   "size": "s",
+   "text": "09 · FAQ — sources (intercpinternational.org/youth-generation)\nQuestions are section labels; answers:\n1 YVS — verbatim first sentence (a 9-week).\n2 Who — from “MIDDLE SCHOOL - HIGH SCHOOL”.\n3 Learn — verbatim “YVS aims to educate…unreached areas of the world.”\n4 Mission trip — verbatim requirement sentence.\n5 UBTJ — verbatim first sentence.\n6 MA:RCH — verbatim first sentence.\n7 HSM — verbatim first sentence (“country”, see 08).\n8 Register — “Register now for Spring 2026 Vision School!” + the US/Canada link names.\n9 Contact — verbatim “For more information, email us at northamerica@intercp.org.”\nNote: EN says 9 weeks; KO intercp.net/청소년비전스쿨 says “매년 2회 봄, 가을 운영 / 주 1회, 총 8주간 진행” (8 weeks) — ko locale should use 8주."
+  },
+  "src-give": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "give",
+   "fill": "orange",
+   "size": "s",
+   "text": "Give — cleanup 2026-11-05 · sources\n• 03 Impact (9 numbers, was Bible-app giving stats): 1983, ~5,900 missionaries, 55+ people groups in the 10/40 Window, 4,500+ staff, 70 branches in Korea, 400 overseas, 14,000 trained a year — intercpinternational.org/what-we-do; 4,665 pastors from 64 countries at the 6th Global Alliance Conference — intercp.net post “64개국 121개 민족 28개 언어권 목회자 4,665명…”.\n• 08 Monthly gift: $25 / $50 / $75 / $100 / Other Amount / Give Now kept; all link the giving page intercp.net/후원문의. Removed: Sowers logo and the “$25 a month = 600 Bibles” line (YouVersion figure). Photo: InterCP medical relief, Pakistan floods (intercp.net post).\n• 10 Testimonies (was Sowers donor testimonies): 6 verbatim quotes — 4 from intercpinternational.org/vision-school, 2 from /field-operation. Thumbnails are InterCP photos from intercp.net posts (winter camp, conference worship, Pakistan relief, 17th Pastors’ Mission Conference, Syrian refugee workplace, 6th Global Alliance); they show ministry scenes, not the speakers (testimonies are anonymous on the source). Heading “Hear the Testimonies” is mine.\n• 11: Sowers mark removed; background replaced with an InterCP field photo (intercpinternational.org home page, IMG_3896); button arrow removed.\n• Every CTA now links the giving office page: intercp.net/후원문의 (prayer / support / volunteer; 후원관리부 070-8787-8863~4; separate account per missionary; letters, receipts, 개척정보, prayer cards, address change).\n• 07 FAQ: tithes to local church (§4), designated gifts only (§6), country/year support and ~1/3 from sending church (§7) — intercp.net/교회관계.\n• 11: “We desire to mobilize the global church…”, “Sow seeds of the Gospel”, ~5,900 missionaries — intercpinternational.org/what-we-do.\n• Not sourced: 12 heading “Be Part of What God Is Doing Through Vision School”."
+  },
+  "src-vision-school": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "vision-school",
+   "fill": "orange",
+   "size": "s",
+   "text": "Vision School — cleanup 2026-11-05 · sources\n- Hero, 04 and 19: verbatim from EN /vision-school (\"God has a dream; He has a vision…\", \"11 week training program…\", \"an opportunity to align our thinking…\").\n- 02: body is verbatim from EN /what-we-do. The two bullets are translated from KO /비전스쿨 (하나님의 나라…영적 권세…영적 리더십). The worldview and \"first step\" bullets were removed. The CTA is now \"Register Now\", linking to churchcenter 3714412.\n- 03:\n  - The heading \"Everyone Can Do Something\" comes from EN /get-involved.\n  - The body (\"we invite you to Vision School\") is translated from KO /비전스쿨.\n  - The CTA \"Register Now\" links to churchcenter 3714412.\n- 05: quote, aims, \"It consists of…\", lectures and schedule are verbatim from EN /vision-school. The generation list and the camp requirement come from KO /비전스쿨 (청소년, 어린이 and 키즈 rows: \"비전캠프 필참\").\n- 06: \"1 billion+\" was replaced with \"55+ people groups served in the 10/40 Window\" (EN /what-we-do). 5,900 is from EN /what-we-do; 7,500+ is from KO /개요.\n- 07 and 17: topic list, \"Weekly lectures are given by different missionaries and staff.\" and the email line are verbatim from EN /vision-school. The camp answer is from KO /정기집회. The FAQ heading is now \"Questions About Vision School?\". The contact CTA is mailto:visionschool@intercp.org.\n- 08: now titled \"What Will Be Taught?\" (EN heading). Lectures 1–7 are the EN topics; 8–9 are translated from KO /비전스쿨 (미전도종족과 전문인선교, 교회개척과 전략). The placeholder descriptions and the # buttons were removed.\n- 09: bullets were rebuilt from EN /vision-school facts and 3 unsourced bullets were removed.\n- 10:\n  - Everyone card: verbatim from EN /vision-school.\n  - Youth: EN /youth-generation.\n  - Kids: EN /kids-ministry, 8-week, grades 1–6.\n  - Pastors/Seniors: KO /비전스쿨.\n  - Links point to EN /vision-school, EN /youth-generation and KO /비전스쿨.\n- 11: play button removed; subtitle verbatim from EN /vision-school.\n- 12 and 14:\n  - Quotes are verbatim, contiguous excerpts from EN /vision-school.\n  - Schmutz is credited in full as \"Rev. Mark Schmutz, Northlake Church, Longview, WA\" (EN /mission-camp).\n  - The invented \"Alum / North America\" credits are now \"Vision School testimony / InterCP International\".\n- 13: staff, branches and 14,000 are verbatim from EN /what-we-do; US/Canada registration from EN /vision-school. Mobile heading fixed to \"400 Overseas\".\n- 18: subtitle is verbatim from EN /what-we-do (\"In-depth training…\"); links go to /student-missionary, /young-tent-maker, /field-operation and /mission-impact-team.\n\nAbbreviations: EN = intercpinternational.org, KO = intercp.net.\n\n15 rebuilt (was deleted): “Stories from the Field” cards now link 3 real InterCP posts (Pakistan flood relief, Serving the nations in 2023, 17th Pastors’ Mission Conference) with their intercp.net photos; invented people (Rich/Priya/Kia) and art overlays removed; “Read More Stories” → /newsroom."
+  },
+  "src-vision-camp": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "vision-camp",
+   "fill": "orange",
+   "size": "s",
+   "text": "Vision Camp — cleanup 2026-11-05 · sources\n- Hero, 03, 04, 05 and 08: translated from KO /정기집회 (비전캠프).\n- 02: heading changed to \"for All Nations\" and the bullets replaced from the same source. The \"Explore\" link goes to KO /정기집회.\n- 04: mobile \"Millions of Lives Changed\" and \"languages\" fixed. The tile now reads \"Included in VS regular course\" (비전스쿨에 포함된 정규 과정).\n- CTAs link to churchcenter 3714412. \"Invite Your Church to Camp\" was removed.\n- 06: EN /pastors-and-leaderships-vision-camp. Links go to that page and to mailto:allnations@intercp.org.\n\nAbbreviations: EN = intercpinternational.org, KO = intercp.net.\n\n07 rebuilt (was deleted): Rev. Mark Schmutz quote now verbatim and complete from intercpinternational.org/mission-camp (Recommendation), credited as a Mission Camp recommendation."
+  },
+  "src-field-operation": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "field-operation",
+   "fill": "orange",
+   "size": "s",
+   "text": "Field Operation — cleanup 2026-11-05 · sources\n(EN /field-operation)\n- Hero: verbatim FAQ line \"For 2-3 weeks, go and share the good news!\".\n- 04: heading is now \"How Beautiful Are the Feet\"; play button removed; subtitle is a verbatim fragment.\n- 05: verbatim \"ANYONE! Only requirement…\". Youth line from EN /youth-generation. Pastor and ANA FO from EN /adult-generation.\n- 07: both testimonies restored to full verbatim, credited \"Field Operation testimony\".\n- 08: mobile CTA is mailto:northamerica@intercp.org. Mobile heading on 06 fixed.\n\nAbbreviations: EN = intercpinternational.org, KO = intercp.net."
+  },
+  "src-student-missionary": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "student-missionary",
+   "fill": "orange",
+   "size": "s",
+   "text": "Student Missionary — cleanup 2026-11-05 · sources\n(EN /student-missions-and-young-tent-makers and KO /인터콥캠퍼스)\nRemoved: \"same sex\", \"Teams attend Mission Camp\", the 2-stage application process, the recent-graduate rule and \"one semester\".\n- 04: heading is now \"We Can Do This, If We Will\", credited \"Samuel Mills (Haystack Prayer Movement)\"; play button removed.\n- 05: the last card is now Commissioning Schedule (June–July, December–January).\n- 07: Biblica avatar removed; the verse is credited \"Matthew 28:19-20\"; SVM credited \"Student Volunteer Movement, Declaration\".\n- 8 months to 1 year and 6,000 campuses come from KO /인터콥캠퍼스. CTA and FAQ link to mailto:campus@intercp.org (EN /campus-and-young-adult).\n\nAbbreviations: EN = intercpinternational.org, KO = intercp.net."
+  },
+  "src-young-tent-maker": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "young-tent-maker",
+   "fill": "orange",
+   "size": "s",
+   "text": "Young Tent Maker — cleanup 2026-11-05 · sources\n(same EN page, plus EN /campus-and-young-adult and KO /선교정책)\n- 07: the \"COME And SEE\" and Biblica avatars were removed and the quote restored verbatim, \"(one-year)… Short and Long-Term Missionaries (2-5 year)\".\n- 05: \"Longer Commitments\" now uses source wording.\n- 08: CTA is mailto:northamerica@intercp.org; play button removed; quote is from EN /ygmc.\n- 09: links fixed to the mailto and EN /contact.\n- Marketplace churches and team ministry come from KO /선교정책.\n\nAbbreviations: EN = intercpinternational.org, KO = intercp.net."
+  },
+  "src-mission-impact-team": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "mission-impact-team",
+   "fill": "orange",
+   "size": "s",
+   "text": "Mission Impact Team — cleanup 2026-11-05 · sources\n(EN /adult-generation, EN /kids-ministry, KO /인터콥캠퍼스, KO /전문사역 \"찬양예배사역(MIT)\")\n- 07: Biblica avatar removed; ANA quote restored verbatim.\n- 04 and 08: play buttons removed. The 08 CTA is the mailto.\n- 06: mobile heading fixed.\n\nAbbreviations: EN = intercpinternational.org, KO = intercp.net."
+  },
+  "src-library": {
+   "x": 3700,
+   "y": 0,
+   "w": 620,
+   "page": "library",
+   "fill": "orange",
+   "size": "s",
+   "text": "Home — cleanup 2026-11-05 · sources\nWhat changed:\n- Removed: the YouVersion/Bible App copy, the worldview paragraph, the invented testimonies and photos, the Instagram, Facebook, LinkedIn and TikTok links, \"Vulnerability\", the \"Discover\" label, and the unsourced Vision Camp heading and bullets.\n- Every # link now has a real target.\n\nSources:\n- Hero: \"Living the Great Commission\" (ICPI home); subtitle from VS.\n- Stats: \"55+ people groups in the 10/40 Window\" (WWD).\n- ProductsIntro: \"Train. Go. Plant Seeds.\" (WWD, \"Experience Luke 10\"); links go to /student-missionary, /young-tent-maker, /field-operation and /mission-impact-team.\n- ProductConnect (Vision School): 11-week program, worship/lectures/prayer/small groups/fellowship, Spring and Fall terms (VS).\n- ProductLite: \"Go and Share the Good News!\", 2-3 weeks, 10/40 Window, Vision School prerequisite (FO).\n- ProductKids: \"The Father's Heart for All Nations\", the 9-week program and its 3 bullets (YG); links to /vision-school-youth.\n- GetInvolved:\n  - \"God has a dream; He has a vision.\" (VS)\n  - \"In the name of our Lord, we invite you to Vision School.\" (my translation of KR-VS \"주님의 이름으로 여러분을 비전스쿨에 초청합니다\")\n  - \"Register Now\" goes to REG.\n- Stories: 3 verbatim quotes, 2 from VS and 1 from FO.\n- Footer:\n  - \"To The Last Frontiers\" (the intercp.net page title).\n  - YouTube goes to https://www.youtube.com/@intercpmedia (linked from intercp.net).\n  - \"Support\" goes to /give.\n\nKey: ICPI = https://www.intercpinternational.org; WWD = ICPI/what-we-do; VS = ICPI/vision-school; FO = ICPI/field-operation; GI = ICPI/get-involved; YG = ICPI/youth-generation; KR-VS = intercp.net/비전스쿨; KR-MS = intercp.net 사명선언문 (mission statement page); REG = https://visionschool.churchcenter.com/registrations/events/3714412\n\nNews (NewsHeader/NewsGrid): the 4 newest InterCP posts from the CMS, linking to /news/<slug>."
+  },
+  "src-mission": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "mission",
+   "fill": "orange",
+   "size": "s",
+   "text": "Mission — cleanup 2026-11-05 · sources\nWhat changed: removed \"It All Starts With a Question:\"; replaced the Bible-app quote, the values and the impact copy.\n\nSources:\n- 01 and 02 vision line: \"frontier pioneering mission among the unreached people groups of the 10/40 Window\" (ICPI home).\n- 02:\n  - Romans 10:14 quote (FO).\n  - Non-denominational, founded in 1983, creative approach (WWD).\n  - p3 and p4 are translations from KR-MS.\n- 03: the Rev. 14:5 quote from KR-MS (9 June 2011), translated.\n- 04: the five core values and the Frontier Spirit text, quoted word for word; the link goes to ICPI/what-we-believe.\n- 05: \"Rapid World Evangelization\", 5,900 missionaries, 55 people groups, the church planting sentence (WWD).\n- 06: Stories quotes (VS, FO).\n- 07: same as Home ProductsIntro (WWD).\n- 08: \"We Are the Body. Everyone Can Do Something.\" and \"The need is great. The workers are few.\" (GI); the co-ministers sentence (WWD); the CTA goes to GI.\n\nKey: ICPI = https://www.intercpinternational.org; WWD = ICPI/what-we-do; VS = ICPI/vision-school; FO = ICPI/field-operation; GI = ICPI/get-involved; YG = ICPI/youth-generation; KR-VS = intercp.net/비전스쿨; KR-MS = intercp.net 사명선언문 (mission statement page); REG = https://visionschool.churchcenter.com/registrations/events/3714412"
+  },
+  "src-history": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "history",
+   "fill": "orange",
+   "size": "s",
+   "text": "History — cleanup 2026-11-05 · sources\nWhat changed: removed \"And the mission goes on to every nation.\"; replaced the Hubs text on mobile; card 1 now has a real event and every link is real.\n\nSources:\n- 01: founded August 1983 by university students (KR-MS).\n- 02: the Mission Spirit list, completed with \"Women Ministry, and Partnership\" (KR-MS / ICPI what-we-believe).\n- 04: WWD paragraph plus the GI lines; the CTA goes to GI.\n- 05: 4,500 staff, 70 Korean and 400 overseas branches, 14,000 trained a year (KR-MS); the CTA goes to /branches.\n- 06: Stories quotes (VS, FO).\n- 07:\n  - Card 1: the 17th Pastors' Mission Conference, KPMA, October 23, Center for All Nations in Sangju.\n  - Cards 2-4: the 4,665 pastors / Global Alliance post and the CCK 23-3 post.\n  - Each card links to its intercp.net post.\n\nKey: ICPI = https://www.intercpinternational.org; WWD = ICPI/what-we-do; VS = ICPI/vision-school; FO = ICPI/field-operation; GI = ICPI/get-involved; YG = ICPI/youth-generation; KR-VS = intercp.net/비전스쿨; KR-MS = intercp.net 사명선언문 (mission statement page); REG = https://visionschool.churchcenter.com/registrations/events/3714412"
+  },
+  "src-branches": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "branches",
+   "fill": "orange",
+   "size": "s",
+   "text": "Branches — cleanup 2026-11-05 · sources\nWhat changed: removed the Bible-app and Hubs copy and \"Every part matters.\"; fixed the counts to 70 in Korea and 400 overseas.\n\nSources:\n- 02 and 03: about 70 branches in Korea and 400 overseas (KR-MS).\n- 04: Stories quotes (VS, FO).\n- 05: the CTA goes to ICPI/contact.\n- 06: the mailtos visionschool@, northamerica@, missioncamp@ and mnm@intercp.org (all on ICPI), plus the giving URL https://www.intercp.net/%ED%9B%84%EC%9B%90%EB%AC%B8%EC%9D%98\n- 07: \"We Are the Body…\" (GI); the p is translated from the intercp.net home text; the CTA goes to ICPI/contact.\n\nKey: ICPI = https://www.intercpinternational.org; WWD = ICPI/what-we-do; VS = ICPI/vision-school; FO = ICPI/field-operation; GI = ICPI/get-involved; YG = ICPI/youth-generation; KR-VS = intercp.net/비전스쿨; KR-MS = intercp.net 사명선언문 (mission statement page); REG = https://visionschool.churchcenter.com/registrations/events/3714412"
+  },
+  "src-stories": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "stories",
+   "fill": "orange",
+   "size": "s",
+   "text": "Stories — cleanup 2026-11-05 · sources\nWhat changed: removed the \"Hearts changed…\" line; replaced the 6 invented story cards with 6 verbatim quote cards that have no photos and no links.\n\nSources:\n- 02: 4 quotes from VS (heart of God; \"My life is a lot different…\"; \"I always tell people…\"; paradigm) and 2 from FO (\"You go in faith…\"; \"The people of the unreached nations are so ready…\").\n- 03: \"God has a dream; He has a vision.\" and \"Vision School is for anyone who is interested in and/or has desire to discover God's heart and vision for this world.\" (VS); \"Register Now\" goes to REG.\n\nKey: ICPI = https://www.intercpinternational.org; WWD = ICPI/what-we-do; VS = ICPI/vision-school; FO = ICPI/field-operation; GI = ICPI/get-involved; YG = ICPI/youth-generation; KR-VS = intercp.net/비전스쿨; KR-MS = intercp.net 사명선언문 (mission statement page); REG = https://visionschool.churchcenter.com/registrations/events/3714412"
+  },
+  "src-partner-overview": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "partner-overview",
+   "fill": "orange",
+   "size": "s",
+   "text": "Partner Overview — cleanup 2026-11-05 · sources\n- Removed:\n  - the YouVersion wordmark and 3 Bible-app icons (07)\n  - the 26-logo wall (11)\n  - the \"Join the Gathering\" YouVersion video thumbnail (06 mobile), and the empty src=\"\" image (06 desktop), both replaced with the canvas's existing Global Alliance hall photo\n  - \"Global Hubs\" (04)\n  - \"Millions of Lives Changed\" (03 mobile)\n  - \"Asia, Africa, Europe, and the Americas\" (02)\n  - \"Whether you pray, give, or go, your part matters.\" (12)\n- Fixed: \"55 people groups\" (03, was \"peoples\"/\"languages\") and \"5.9k\" (03, was \"5.9k+\").\n- Rewrote to source:\n  - 10: verbatim Rev 7:9 and the heading \"Every nation, tribe, people and language\"\n  - 06: GA sentence verbatim\n  - 07: two GA sentences\n  - 11: heading \"Partnership\" (선교정책 §9); the \"Learn more about the Global Alliance Conference.\" line now links to /global-alliance\n  - 12: heading \"We Are the Body. Everyone Can Do Something.\"\n  - 09: heading \"Get Involved\"\n- Sources:\n  - Global Alliance (01, 06, 07): https://www.intercpinternational.org/global-alliance\n  - stats, CCK/KAT/KIMNET, 1983, 10/40, branches (03, 04): https://www.intercpinternational.org/what-we-do\n  - KFMN/KAT/KWMC/KIMNET and partnership (02, 11): https://www.intercp.net/선교정책 §9\n  - church relations (02): https://www.intercp.net/교회관계\n  - prayer, Pioneer Info (개척정보) and volunteering (02, 09): https://www.intercp.net/후원문의\n  - Rev 7:9 (10): https://www.intercpinternational.org/adult-generation\n  - \"We are the Body\" (12): https://www.intercpinternational.org/get-involved\n  - \"must unconditionally cooperate…\" (12): https://www.intercpinternational.org/what-we-believe\n- Links:\n  - /churches\n  - /global-alliance\n  - /contact\n  - /mission-camp\n  - 후원문의 (giving and volunteering)\n  - /vision-school"
+  },
+  "src-churches": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "churches",
+   "fill": "orange",
+   "size": "s",
+   "text": "Churches — cleanup 2026-11-05 · sources\n- Removed:\n  - the Bible-app icon image in the 03 heading\n  - \"so the fruit of the field belongs to churches like yours\"\n  - the corrupted mobile stats on 05 (now matching desktop)\n  - \"Start from the beginning… serve you!\"\n  - \"18 points\" intro, replaced by \"Our church relations resolution and our mission policy explain how InterCP International serves with your local church.\"\n  - the \"Pastor Spotlight: Northlake Church\" card (12)\n  - \"Real Impact, Right Where It Matters\" and \"What Pastors Are Saying\", replaced by \"Recommendation / Mission Camp\"\n- Rewrote: 01 → \"We believe the local church is the subject of mission.\"; card 1 → \"The Local Church Is the Subject of Mission\"; cards 17 and 18 are now labelled \"Mission Policy\".\n- Quote: now verbatim, \"I attended Mission Camp for the first time in 2016. It changed my life.\" — Rev. Mark Schmutz, Northlake Church, Longview, WA.\n- Sources:\n  - church relations points 1–8 and FAQ: https://www.intercp.net/교회관계\n  - mission policy points 9–18: https://www.intercp.net/선교정책\n  - Mission Camp, booth/presentation, quote: https://www.intercpinternational.org/mission-camp\n  - stats: https://www.intercpinternational.org/what-we-do\n  - card targets: /global-alliance, /world-missions, /pastors-and-leaderships-vision-camp, /adult-generation (Pastor FO, CMM, ECEM)\n- Links: mailto:northamerica@intercp.org, /contact, https://www.missioncamp.org"
+  },
+  "src-serve-with-us": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "serve-with-us",
+   "fill": "orange",
+   "size": "s",
+   "text": "Serve With Us — cleanup 2026-11-05 · sources\n- Removed: the 03 mobile paragraph \"You were made by God, on purpose…\"; desktop's misplaced \"Without prayer, mission cannot happen.\"; the \"Take the First Step Toward the Nations\" heading; the #giving link.\n- Rewrote: 02 heading → \"Discover where the Lord may be calling you\"; 03 heading → \"Want to partner in ministry?\" (from \"사역에 동역하려면?\").\n- Sources:\n  - 01 and 02: https://www.intercpinternational.org/get-involved\n  - Vision School invitation (02): https://www.intercp.net/비전스쿨\n  - 03: https://www.intercp.net/후원문의\n  \n- Links: /vision-school\n\n04 changed (owner, 2026-11-05): the Long-Term Mission (LTM/MLS) board is replaced by the four mission programs (Student Missionary, Young Tent Maker, Field Operation, Mission Impact Team; same board as Home ProductsIntro, “Train. Go. Plant Seeds.”, https://www.intercpinternational.org/what-we-do). LTM stays off the page until its copy is written and approved.\n03: removed the leftover YouVersion “next step” stair icon (tilted); heading reset to two lines."
+  },
+  "src-spiritual-support-team": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "spiritual-support-team",
+   "fill": "orange",
+   "size": "s",
+   "text": "Spiritual Support Team — cleanup 2026-11-05 · sources\n- Rewrote: the \"Through Vision School\" heading → \"Partner with Us in Prayer\" (from 후원문의 \"기도의 동역\"); the mobile aria-label \"Help Share the Bible\" → \"Join the GAP Prayer\".\n- Sources:\n  - GAP: https://www.intercpinternational.org/adult-generation\n  - World Mission: https://www.intercpinternational.org/world-missions\n  - prayer, Pioneer Info and \"prepare the way\" (03): https://www.intercp.net/후원문의\n- Link: mailto:northamerica@intercp.org (the GAP contact on adult-generation)"
+  },
+  "src-newsroom": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "newsroom",
+   "fill": "orange",
+   "size": "s",
+   "text": "Newsroom — cleanup 2026-11-05 · sources\nRemoved: Press Resources (03), “As Featured In” logo wall (04), \n02 latest news, 07/08 news grid: the InterCP news posts, now in the CMS Posts collection (23 posts from intercp.net/post/…, en + ko; source link at the end of each post). Cards link to /news/<slug>; See More → /newsroom.\n10 videos: the 6 InterCP YouTube Shorts linked from intercp.net (youtube.com/shorts/…), name and role as shown there.\n11: retitled YGMC 2026.\n09 rebuilt: Global Alliance Conference hero — text verbatim from intercpinternational.org/global-alliance; side lines Worship / Pray / Testify / Share strategies from the same page; Partner Summit logos removed; photo: 6th Global Alliance conference (intercp.net post).\n05: mobile text matched to desktop (branch counts from intercpinternational.org/what-we-do); “Contact Your Branch” → /branches. 06: invented stories replaced by 3 real InterCP posts. 12: “Get Involved Today” → intercpinternational.org/get-involved."
+  },
+  "src-article": {
+   "x": 2000,
+   "y": 0,
+   "w": 620,
+   "page": "article",
+   "fill": "orange",
+   "size": "s",
+   "text": "News Article — redesign 2026-11-05 (needs owner OK before it is built)\n01 Header: breadcrumb, title, standfirst (the post excerpt), date · location · read time.\n02 Lead photo with caption.\n03 Body: 768px reading column with a sticky rail (published, location, reporting, Copy link). Each speaker gets a section heading with a small label; key lines become pull quotes; every photo has a real caption and descriptive alt; the source credit is one closing line with links, replacing the loose \"Reporter… / Source: Mission Today (\" paragraphs.\nEnglish re-translated from the Korean original: https://www.intercp.net/post/제17차-목회자선교컨퍼런스-상주-열방센터에서-개최\nNames to confirm (no official English found): Paul Choi (최바울), Kim Sang-bok, Lee Gyu, Kim Yong-ui, Lee Yeong-yeop, Oh Se-hoon; \"BTJ Nations Center\" (BTJ 열방센터) vs \"Center for All Nations\" used on the History cards.\n04–06 unchanged: About InterCP, Contact CTA, Latest News."
+  }
+ },
+ "order": [
+  "S00-bible-translation-hero.dc.html",
+  "S01-volunteers-next.dc.html",
+  "S02-sticky.dc.html",
+  "S09-cta-volunteers.dc.html",
+  "S60-claimchurch.dc.html",
+  "S05-hero-withimg.dc.html",
+  "S06-mission-why-weexist.dc.html",
+  "S07-mission-quote.dc.html",
+  "S08-mission-impact.dc.html",
+  "S10-history-started.dc.html",
+  "S11-history-timeline.dc.html",
+  "S12-bible-partners-cta.dc.html",
+  "S13-120padding.dc.html",
+  "S14-80padding.dc.html",
+  "S59-globalhubs-howitworks.dc.html",
+  "S61-contact.dc.html",
+  "S15-app-hero.dc.html",
+  "S16-app-why.dc.html",
+  "S17-findhub-section.dc.html",
+  "S18-app-features.dc.html",
+  "S19-app-support.dc.html",
+  "S20-bl-hero.dc.html",
+  "S21-bl-discover.dc.html",
+  "S22-bl-features.dc.html",
+  "S23-bl-testimonial.dc.html",
+  "S65-totalpopulation-connect.dc.html",
+  "S24-40-112.dc.html",
+  "S25-vision-partner-slider.dc.html",
+  "S26-80-dding.dc.html",
+  "S27-platfrom-what.dc.html",
+  "S28-platform-ceo.dc.html",
+  "S29-platform-help.dc.html",
+  "S30-platform-features.dc.html",
+  "S31-summit-slider.dc.html",
+  "S32-platform-video.dc.html",
+  "S33-summit-faq.dc.html",
+  "S43-black-showcase.dc.html",
+  "S44-imgs-sticky.dc.html",
+  "S45-partofit.dc.html",
+  "S46-partners-list.dc.html",
+  "S04-totalpopulation.dc.html",
+  "S47-partnerwithus-partner.dc.html",
+  "S48-globalhubs-bibleapp.dc.html",
+  "S49-visionpartner-hero.dc.html",
+  "S50-sharing.dc.html",
+  "S51-partners-app.dc.html",
+  "S52-parners-imgs.dc.html",
+  "S53-get-connected.dc.html",
+  "S03-40padding.dc.html",
+  "S54-giving-stats.dc.html",
+  "S55-section-header38.dc.html",
+  "S56-sowers-community.dc.html",
+  "S57-section-impact.dc.html",
+  "S58-impact-seed.dc.html",
+  "S40-churches-cards.dc.html",
+  "S41-churches-real-impact.dc.html",
+  "S42-churches-faq.dc.html",
+  "S37-cob-section.dc.html",
+  "S38-cob-more-section.dc.html",
+  "S39-realstories-1.dc.html",
+  "S66-V1-80-20.dc.html",
+  "S67-V2-20-80.dc.html",
+  "S34-press-resources.dc.html",
+  "S35-newsroom-marquee.dc.html",
+  "S36-black-stories.dc.html",
+  "S68-V3-home-getinvolved.dc.html",
+  "S62-ps26-recap-hero.dc.html",
+  "S63-ps26-recap-recordings.dc.html",
+  "S64-ps26-recap-thankyou.dc.html",
+  "P-history-01-S05-hero-withimg.dc.html",
+  "P-history-02-S10-history-started.dc.html",
+  "P-history-03-S11-history-timeline.dc.html",
+  "P-history-04-S12-bible-partners-cta.dc.html",
+  "P-history-05-S13-120padding.dc.html",
+  "P-history-06-Stories.dc.html",
+  "P-history-07-S14-80padding.dc.html",
+  "P-stories-01-S05-hero-withimg.dc.html",
+  "P-stories-02-S36-black-stories.dc.html",
+  "P-stories-03-S09-cta-volunteers.dc.html",
+  "P-young-tent-maker-01-S05-hero-withimg.dc.html",
+  "P-young-tent-maker-03-S27-platfrom-what.dc.html",
+  "P-young-tent-maker-04-S28-platform-ceo.dc.html",
+  "P-young-tent-maker-05-S29-platform-help.dc.html",
+  "P-young-tent-maker-06-S30-platform-features.dc.html",
+  "P-young-tent-maker-07-S31-summit-slider.dc.html",
+  "P-young-tent-maker-08-S32-platform-video.dc.html",
+  "P-young-tent-maker-09-S33-summit-faq.dc.html",
+  "P-field-operation-01-S05-hero-withimg.dc.html",
+  "P-field-operation-03-S27-platfrom-what.dc.html",
+  "P-field-operation-04-S28-platform-ceo.dc.html",
+  "P-field-operation-05-S29-platform-help.dc.html",
+  "P-field-operation-06-S30-platform-features.dc.html",
+  "P-field-operation-07-S31-summit-slider.dc.html",
+  "P-field-operation-08-S32-platform-video.dc.html",
+  "P-field-operation-09-S33-summit-faq.dc.html",
+  "P-student-missionary-01-S05-hero-withimg.dc.html",
+  "P-student-missionary-03-S27-platfrom-what.dc.html",
+  "P-student-missionary-04-S28-platform-ceo.dc.html",
+  "P-student-missionary-05-S29-platform-help.dc.html",
+  "P-student-missionary-06-S30-platform-features.dc.html",
+  "P-student-missionary-07-S31-summit-slider.dc.html",
+  "P-student-missionary-08-S32-platform-video.dc.html",
+  "P-student-missionary-09-S33-summit-faq.dc.html",
+  "P-mission-impact-team-01-S05-hero-withimg.dc.html",
+  "P-mission-impact-team-03-S27-platfrom-what.dc.html",
+  "P-mission-impact-team-04-S28-platform-ceo.dc.html",
+  "P-mission-impact-team-05-S29-platform-help.dc.html",
+  "P-mission-impact-team-06-S30-platform-features.dc.html",
+  "P-mission-impact-team-07-S31-summit-slider.dc.html",
+  "P-mission-impact-team-08-S32-platform-video.dc.html",
+  "P-mission-impact-team-09-S33-summit-faq.dc.html",
+  "P-spiritual-support-team-01-S00-bible-translation-hero.dc.html",
+  "P-spiritual-support-team-02-S60-claimchurch.dc.html",
+  "P-spiritual-support-team-03-S09-cta-volunteers.dc.html",
+  "P-give-01-S05-hero-withimg-mobile.dc.html",
+  "P-give-01-S05-hero-withimg.dc.html",
+  "P-give-02-S50-sharing-mobile.dc.html",
+  "P-give-02-S50-sharing.dc.html",
+  "P-give-03-S54-giving-stats-mobile.dc.html",
+  "P-give-03-S54-giving-stats.dc.html",
+  "P-give-04-S19-app-support-mobile.dc.html",
+  "P-give-04-S19-app-support.dc.html",
+  "P-give-05-S12-bible-partners-cta-mobile.dc.html",
+  "P-give-05-S12-bible-partners-cta.dc.html",
+  "P-give-06-S03-40padding-mobile.dc.html",
+  "P-give-06-S03-40padding.dc.html",
+  "P-give-07-S42-churches-faq-mobile.dc.html",
+  "P-give-07-S42-churches-faq.dc.html",
+  "P-give-08-S55-section-header38-mobile.dc.html",
+  "P-give-08-S55-section-header38.dc.html",
+  "P-give-09-S57-section-impact-mobile.dc.html",
+  "P-give-09-S57-section-impact.dc.html",
+  "P-give-10-S56-sowers-community-mobile.dc.html",
+  "P-give-10-S56-sowers-community.dc.html",
+  "P-give-11-S58-impact-seed-mobile.dc.html",
+  "P-give-11-S58-impact-seed.dc.html",
+  "P-give-12-S09-cta-volunteers-mobile.dc.html",
+  "P-give-12-S09-cta-volunteers.dc.html",
+  "P-partner-overview-01-S05-hero-withimg.dc.html",
+  "P-partner-overview-02-S47-partnerwithus-partner.dc.html",
+  "P-partner-overview-03-S17-findhub-section.dc.html",
+  "P-partner-overview-04-S48-globalhubs-bibleapp.dc.html",
+  "P-partner-overview-06-S49-visionpartner-hero.dc.html",
+  "P-partner-overview-07-S51-partners-app.dc.html",
+  "P-partner-overview-08-S52-parners-imgs.dc.html",
+  "P-partner-overview-09-S53-get-connected.dc.html",
+  "P-partner-overview-10-S44-imgs-sticky.dc.html",
+  "P-partner-overview-11-S45-partofit.dc.html",
+  "P-partner-overview-12-S09-cta-volunteers.dc.html",
+  "P-newsroom-01-S00-bible-translation-hero.dc.html",
+  "P-newsroom-02-S68-V3-home-getinvolved.dc.html",
+  "P-newsroom-05-S13-120padding.dc.html",
+  "P-newsroom-06-Stories.dc.html",
+  "P-newsroom-07-NewsHeader.dc.html",
+  "P-newsroom-08-NewsGrid.dc.html",
+  "P-newsroom-09-S62-ps26-recap-hero.dc.html",
+  "P-newsroom-10-S63-ps26-recap-recordings.dc.html",
+  "P-newsroom-11-S64-ps26-recap-thankyou.dc.html",
+  "P-newsroom-12-S09-cta-volunteers.dc.html",
+  "P-branches-01-S05-hero-withimg.dc.html",
+  "P-branches-02-S59-globalhubs-howitworks.dc.html",
+  "P-branches-03-S17-findhub-section.dc.html",
+  "P-branches-04-Stories.dc.html",
+  "P-branches-05-S48-globalhubs-bibleapp.dc.html",
+  "P-branches-06-S61-contact.dc.html",
+  "P-branches-07-S09-cta-volunteers.dc.html",
+  "P-vision-camp-01-S15-app-hero.dc.html",
+  "P-vision-camp-02-ProductBibleApp.dc.html",
+  "P-vision-camp-03-S16-app-why.dc.html",
+  "P-vision-camp-04-S17-findhub-section.dc.html",
+  "P-vision-camp-05-S18-app-features.dc.html",
+  "P-vision-camp-06-S19-app-support.dc.html",
+  "P-vision-camp-07-S07-mission-quote.dc.html",
+  "P-vision-camp-08-S09-cta-volunteers.dc.html",
+  "P-vision-school-youth-01-S20-bl-hero.dc.html",
+  "P-vision-school-youth-02-ProductKids.dc.html",
+  "P-vision-school-youth-03-S21-bl-discover.dc.html",
+  "P-vision-school-youth-04-S22-bl-features.dc.html",
+  "P-vision-school-youth-05-S23-bl-testimonial.dc.html",
+  "P-mission-01-S05-hero-withimg.dc.html",
+  "P-mission-02-S06-mission-why-weexist.dc.html",
+  "P-mission-03-S07-mission-quote.dc.html",
+  "P-mission-04-S02-sticky.dc.html",
+  "P-mission-05-S08-mission-impact.dc.html",
+  "P-mission-06-Stories.dc.html",
+  "P-mission-07-ProductsIntro.dc.html",
+  "P-mission-08-S09-cta-volunteers.dc.html",
+  "P-serve-with-us-01-S00-bible-translation-hero.dc.html",
+  "P-serve-with-us-02-GetInvolved.dc.html",
+  "P-serve-with-us-03-S01-volunteers-next.dc.html",
+  "P-serve-with-us-04-ProductsIntro.dc.html",
+  "P-churches-01-S05-hero-withimg.dc.html",
+  "P-churches-02-S19-app-support.dc.html",
+  "P-churches-03-S65-totalpopulation-connect.dc.html",
+  "P-churches-05-S40-churches-cards.dc.html",
+  "P-churches-06-S41-churches-real-impact.dc.html",
+  "P-churches-07-S66-V1-80-20.dc.html",
+  "P-churches-08-S67-V2-20-80.dc.html",
+  "P-churches-09-S42-churches-faq.dc.html",
+  "P-churches-10-S37-cob-section.dc.html",
+  "P-churches-11-S38-cob-more-section.dc.html",
+  "P-churches-12-S39-realstories-1.dc.html",
+  "P-vision-school-01-S05-hero-withimg.dc.html",
+  "P-vision-school-02-ProductConnect.dc.html",
+  "P-vision-school-03-GetInvolved.dc.html",
+  "P-vision-school-04-S16-app-why.dc.html",
+  "P-vision-school-05-S06-mission-why-weexist.dc.html",
+  "P-vision-school-06-Stats.dc.html",
+  "P-vision-school-07-S02-sticky.dc.html",
+  "P-vision-school-08-S47-lectures.dc.html",
+  "P-vision-school-09-S18-app-features.dc.html",
+  "P-vision-school-10-S24-40-112.dc.html",
+  "P-vision-school-11-S28-platform-ceo.dc.html",
+  "P-vision-school-12-S07-mission-quote.dc.html",
+  "P-vision-school-13-S59-globalhubs-howitworks.dc.html",
+  "P-vision-school-14-S25-vision-partner-slider.dc.html",
+  "P-vision-school-15-Stories.dc.html",
+  "P-vision-school-17-S42-churches-faq.dc.html",
+  "P-vision-school-18-ProductsIntro.dc.html",
+  "P-vision-school-19-S09-cta-volunteers.dc.html",
+  "P-branches-01-S05-hero-withimg-mobile.dc.html",
+  "P-branches-02-S59-globalhubs-howitworks-mobile.dc.html",
+  "P-branches-03-S17-findhub-section-mobile.dc.html",
+  "P-branches-04-Stories-mobile.dc.html",
+  "P-branches-05-S48-globalhubs-bibleapp-mobile.dc.html",
+  "P-branches-06-S61-contact-mobile.dc.html",
+  "P-branches-07-S09-cta-volunteers-mobile.dc.html",
+  "P-churches-01-S05-hero-withimg-mobile.dc.html",
+  "P-churches-02-S19-app-support-mobile.dc.html",
+  "P-churches-03-S65-totalpopulation-connect-mobile.dc.html",
+  "P-churches-05-S40-churches-cards-mobile.dc.html",
+  "P-churches-06-S41-churches-real-impact-mobile.dc.html",
+  "P-churches-07-S66-V1-80-20-mobile.dc.html",
+  "P-churches-08-S67-V2-20-80-mobile.dc.html",
+  "P-churches-09-S42-churches-faq-mobile.dc.html",
+  "P-churches-10-S37-cob-section-mobile.dc.html",
+  "P-churches-11-S38-cob-more-section-mobile.dc.html",
+  "P-churches-12-S39-realstories-1-mobile.dc.html",
+  "P-field-operation-01-S05-hero-withimg-mobile.dc.html",
+  "P-field-operation-03-S27-platfrom-what-mobile.dc.html",
+  "P-field-operation-04-S28-platform-ceo-mobile.dc.html",
+  "P-field-operation-05-S29-platform-help-mobile.dc.html",
+  "P-field-operation-06-S30-platform-features-mobile.dc.html",
+  "P-field-operation-07-S31-summit-slider-mobile.dc.html",
+  "P-field-operation-08-S32-platform-video-mobile.dc.html",
+  "P-field-operation-09-S33-summit-faq-mobile.dc.html",
+  "P-history-01-S05-hero-withimg-mobile.dc.html",
+  "P-history-02-S10-history-started-mobile.dc.html",
+  "P-history-03-S11-history-timeline-mobile.dc.html",
+  "P-history-04-S12-bible-partners-cta-mobile.dc.html",
+  "P-history-05-S13-120padding-mobile.dc.html",
+  "P-history-06-Stories-mobile.dc.html",
+  "P-history-07-S14-80padding-mobile.dc.html",
+  "P-mission-01-S05-hero-withimg-mobile.dc.html",
+  "P-mission-02-S06-mission-why-weexist-mobile.dc.html",
+  "P-mission-03-S07-mission-quote-mobile.dc.html",
+  "P-mission-04-S02-sticky-mobile.dc.html",
+  "P-mission-05-S08-mission-impact-mobile.dc.html",
+  "P-mission-06-Stories-mobile.dc.html",
+  "P-mission-07-ProductsIntro-mobile.dc.html",
+  "P-mission-08-S09-cta-volunteers-mobile.dc.html",
+  "P-mission-impact-team-01-S05-hero-withimg-mobile.dc.html",
+  "P-mission-impact-team-03-S27-platfrom-what-mobile.dc.html",
+  "P-mission-impact-team-04-S28-platform-ceo-mobile.dc.html",
+  "P-mission-impact-team-05-S29-platform-help-mobile.dc.html",
+  "P-mission-impact-team-06-S30-platform-features-mobile.dc.html",
+  "P-mission-impact-team-07-S31-summit-slider-mobile.dc.html",
+  "P-mission-impact-team-08-S32-platform-video-mobile.dc.html",
+  "P-mission-impact-team-09-S33-summit-faq-mobile.dc.html",
+  "P-newsroom-01-S00-bible-translation-hero-mobile.dc.html",
+  "P-newsroom-02-S68-V3-home-getinvolved-mobile.dc.html",
+  "P-newsroom-05-S13-120padding-mobile.dc.html",
+  "P-newsroom-06-Stories-mobile.dc.html",
+  "P-newsroom-07-NewsHeader-mobile.dc.html",
+  "P-newsroom-08-NewsGrid-mobile.dc.html",
+  "P-newsroom-09-S62-ps26-recap-hero-mobile.dc.html",
+  "P-newsroom-10-S63-ps26-recap-recordings-mobile.dc.html",
+  "P-newsroom-11-S64-ps26-recap-thankyou-mobile.dc.html",
+  "P-newsroom-12-S09-cta-volunteers-mobile.dc.html",
+  "P-partner-overview-01-S05-hero-withimg-mobile.dc.html",
+  "P-partner-overview-02-S47-partnerwithus-partner-mobile.dc.html",
+  "P-partner-overview-03-S17-findhub-section-mobile.dc.html",
+  "P-partner-overview-04-S48-globalhubs-bibleapp-mobile.dc.html",
+  "P-partner-overview-06-S49-visionpartner-hero-mobile.dc.html",
+  "P-partner-overview-07-S51-partners-app-mobile.dc.html",
+  "P-partner-overview-08-S52-parners-imgs-mobile.dc.html",
+  "P-partner-overview-09-S53-get-connected-mobile.dc.html",
+  "P-partner-overview-10-S44-imgs-sticky-mobile.dc.html",
+  "P-partner-overview-11-S45-partofit-mobile.dc.html",
+  "P-partner-overview-12-S09-cta-volunteers-mobile.dc.html",
+  "P-serve-with-us-01-S00-bible-translation-hero-mobile.dc.html",
+  "P-serve-with-us-02-GetInvolved-mobile.dc.html",
+  "P-serve-with-us-03-S01-volunteers-next-mobile.dc.html",
+  "P-serve-with-us-04-ProductsIntro-mobile.dc.html",
+  "P-spiritual-support-team-01-S00-bible-translation-hero-mobile.dc.html",
+  "P-spiritual-support-team-02-S60-claimchurch-mobile.dc.html",
+  "P-spiritual-support-team-03-S09-cta-volunteers-mobile.dc.html",
+  "P-stories-01-S05-hero-withimg-mobile.dc.html",
+  "P-stories-02-S36-black-stories-mobile.dc.html",
+  "P-stories-03-S09-cta-volunteers-mobile.dc.html",
+  "P-student-missionary-01-S05-hero-withimg-mobile.dc.html",
+  "P-student-missionary-03-S27-platfrom-what-mobile.dc.html",
+  "P-student-missionary-04-S28-platform-ceo-mobile.dc.html",
+  "P-student-missionary-05-S29-platform-help-mobile.dc.html",
+  "P-student-missionary-06-S30-platform-features-mobile.dc.html",
+  "P-student-missionary-07-S31-summit-slider-mobile.dc.html",
+  "P-student-missionary-08-S32-platform-video-mobile.dc.html",
+  "P-student-missionary-09-S33-summit-faq-mobile.dc.html",
+  "P-vision-camp-01-S15-app-hero-mobile.dc.html",
+  "P-vision-camp-02-ProductBibleApp-mobile.dc.html",
+  "P-vision-camp-03-S16-app-why-mobile.dc.html",
+  "P-vision-camp-04-S17-findhub-section-mobile.dc.html",
+  "P-vision-camp-05-S18-app-features-mobile.dc.html",
+  "P-vision-camp-06-S19-app-support-mobile.dc.html",
+  "P-vision-camp-07-S07-mission-quote-mobile.dc.html",
+  "P-vision-camp-08-S09-cta-volunteers-mobile.dc.html",
+  "P-vision-school-01-S05-hero-withimg-mobile.dc.html",
+  "P-vision-school-02-ProductConnect-mobile.dc.html",
+  "P-vision-school-03-GetInvolved-mobile.dc.html",
+  "P-vision-school-04-S16-app-why-mobile.dc.html",
+  "P-vision-school-05-S06-mission-why-weexist-mobile.dc.html",
+  "P-vision-school-06-Stats-mobile.dc.html",
+  "P-vision-school-07-S02-sticky-mobile.dc.html",
+  "P-vision-school-08-S47-lectures-mobile.dc.html",
+  "P-vision-school-09-S18-app-features-mobile.dc.html",
+  "P-vision-school-10-S24-40-112-mobile.dc.html",
+  "P-vision-school-11-S28-platform-ceo-mobile.dc.html",
+  "P-vision-school-12-S07-mission-quote-mobile.dc.html",
+  "P-vision-school-13-S59-globalhubs-howitworks-mobile.dc.html",
+  "P-vision-school-14-S25-vision-partner-slider-mobile.dc.html",
+  "P-vision-school-15-Stories-mobile.dc.html",
+  "P-vision-school-17-S42-churches-faq-mobile.dc.html",
+  "P-vision-school-18-ProductsIntro-mobile.dc.html",
+  "P-vision-school-19-S09-cta-volunteers-mobile.dc.html",
+  "P-vision-school-youth-01-S20-bl-hero-mobile.dc.html",
+  "P-vision-school-youth-02-ProductKids-mobile.dc.html",
+  "P-vision-school-youth-03-S21-bl-discover-mobile.dc.html",
+  "P-vision-school-youth-04-S22-bl-features-mobile.dc.html",
+  "P-vision-school-youth-05-S23-bl-testimonial-mobile.dc.html",
+  "P-young-tent-maker-01-S05-hero-withimg-mobile.dc.html",
+  "P-young-tent-maker-03-S27-platfrom-what-mobile.dc.html",
+  "P-young-tent-maker-04-S28-platform-ceo-mobile.dc.html",
+  "P-young-tent-maker-05-S29-platform-help-mobile.dc.html",
+  "P-young-tent-maker-06-S30-platform-features-mobile.dc.html",
+  "P-young-tent-maker-07-S31-summit-slider-mobile.dc.html",
+  "P-young-tent-maker-08-S32-platform-video-mobile.dc.html",
+  "P-young-tent-maker-09-S33-summit-faq-mobile.dc.html",
+  "Brand-Palette.dc.html",
+  "Main.dc.html",
+  "Hero.dc.html",
+  "GetInvolved.dc.html",
+  "Stats.dc.html",
+  "ProductsIntro.dc.html",
+  "ProductConnect.dc.html",
+  "ProductBibleApp.dc.html",
+  "ProductLite.dc.html",
+  "ProductKids.dc.html",
+  "Stories.dc.html",
+  "NewsHeader.dc.html",
+  "NewsGrid.dc.html",
+  "Footer.dc.html",
+  "MenuAbout.dc.html",
+  "MenuProducts.dc.html",
+  "MenuPartner.dc.html",
+  "MenuInvolved.dc.html",
+  "M-Main.dc.html",
+  "M-MenuMobile.dc.html",
+  "M-Hero.dc.html",
+  "M-GetInvolved.dc.html",
+  "M-Stats.dc.html",
+  "M-ProductsIntro.dc.html",
+  "M-ProductConnect.dc.html",
+  "M-ProductBibleApp.dc.html",
+  "M-ProductKids.dc.html",
+  "M-Stories.dc.html",
+  "M-NewsHeader.dc.html",
+  "M-NewsGrid.dc.html",
+  "M-Footer.dc.html",
+  "P-article-01-new-hero.dc.html",
+  "P-article-01-new-hero-mobile.dc.html",
+  "P-article-02-new-img.dc.html",
+  "P-article-02-new-img-mobile.dc.html",
+  "P-article-03-new-content.dc.html",
+  "P-article-03-new-content-mobile.dc.html",
+  "P-article-04-new-about.dc.html",
+  "P-article-04-new-about-mobile.dc.html",
+  "P-article-05-cta-volunteers.dc.html",
+  "P-article-05-cta-volunteers-mobile.dc.html",
+  "P-article-06-40-80.dc.html",
+  "P-article-06-40-80-mobile.dc.html",
+  "P-vision-school-youth-06-S27-what.dc.html",
+  "P-vision-school-youth-06-S27-what-mobile.dc.html",
+  "P-vision-school-youth-07-S29-join.dc.html",
+  "P-vision-school-youth-07-S29-join-mobile.dc.html",
+  "P-vision-school-youth-08-S30-programs.dc.html",
+  "P-vision-school-youth-08-S30-programs-mobile.dc.html",
+  "P-vision-school-youth-09-S33-faq.dc.html",
+  "P-vision-school-youth-09-S33-faq-mobile.dc.html"
+ ],
+ "pages": [
+  {
+   "id": "library",
+   "name": "Home"
+  },
+  {
+   "id": "brand",
+   "name": "Brand Colors"
+  },
+  {
+   "id": "components",
+   "name": "Component Library"
+  },
+  {
+   "id": "mission",
+   "name": "Mission"
+  },
+  {
+   "id": "history",
+   "name": "History"
+  },
+  {
+   "id": "branches",
+   "name": "Branches"
+  },
+  {
+   "id": "stories",
+   "name": "Stories"
+  },
+  {
+   "id": "newsroom",
+   "name": "Newsroom"
+  },
+  {
+   "id": "article",
+   "name": "News Article"
+  },
+  {
+   "id": "vision-school",
+   "name": "Vision School"
+  },
+  {
+   "id": "vision-camp",
+   "name": "Vision Camp"
+  },
+  {
+   "id": "field-operation",
+   "name": "Field Operation"
+  },
+  {
+   "id": "vision-school-youth",
+   "name": "Vision School Youth"
+  },
+  {
+   "id": "student-missionary",
+   "name": "Student Missionary"
+  },
+  {
+   "id": "young-tent-maker",
+   "name": "Young Tent Maker"
+  },
+  {
+   "id": "mission-impact-team",
+   "name": "Mission Impact Team"
+  },
+  {
+   "id": "partner-overview",
+   "name": "Partner Overview"
+  },
+  {
+   "id": "churches",
+   "name": "Churches"
+  },
+  {
+   "id": "give",
+   "name": "Give"
+  },
+  {
+   "id": "serve-with-us",
+   "name": "Serve With Us"
+  },
+  {
+   "id": "spiritual-support-team",
+   "name": "Spiritual Support Team"
+  }
+ ],
+ "title": "Vision School Homepage Sections"
+}
