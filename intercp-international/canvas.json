@@ -1,0 +1,741 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-04T14:24:58Z"
+ },
+ "title": "InterCP International Website Design",
+ "launch": {
+  "view": "canvas",
+  "page": "global"
+ },
+ "pages": [
+  {
+   "id": "global",
+   "name": "Global"
+  },
+  {
+   "id": "home",
+   "name": "Home"
+  },
+  {
+   "id": "what-we-do",
+   "name": "What We Do"
+  },
+  {
+   "id": "what-we-believe",
+   "name": "What We Believe"
+  },
+  {
+   "id": "international-advisors",
+   "name": "International Advisors"
+  },
+  {
+   "id": "campus-and-young-adult",
+   "name": "Campus and Young Adult"
+  },
+  {
+   "id": "adult-generation",
+   "name": "Adult Generation"
+  },
+  {
+   "id": "youth-generation",
+   "name": "Youth Generation"
+  },
+  {
+   "id": "kids-ministry",
+   "name": "Kids Generation"
+  },
+  {
+   "id": "vision-school",
+   "name": "Vision School"
+  },
+  {
+   "id": "mission-and-medical",
+   "name": "MnM Mission and Medical"
+  },
+  {
+   "id": "field-operation",
+   "name": "Field Operation"
+  },
+  {
+   "id": "student-missions-and-young-tent-makers",
+   "name": "Student Missions and YTM"
+  },
+  {
+   "id": "long-term",
+   "name": "Long Term Mission"
+  },
+  {
+   "id": "pastors-and-leaderships-vision-camp",
+   "name": "Pastors and Leaderships Vision Camp"
+  },
+  {
+   "id": "mission-camp",
+   "name": "Mission Camp"
+  },
+  {
+   "id": "ygmc",
+   "name": "Young Generation Mission Camp"
+  },
+  {
+   "id": "world-missions",
+   "name": "World Mission"
+  },
+  {
+   "id": "global-alliance",
+   "name": "Global Alliance"
+  },
+  {
+   "id": "contact",
+   "name": "Contact Us"
+  },
+  {
+   "id": "get-involved",
+   "name": "Get Involved"
+  }
+ ],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 122,
+   "title": "Global / Header",
+   "page": "global"
+  },
+  "Global-Footer.dc.html": {
+   "x": 0,
+   "y": 242,
+   "w": 1440,
+   "h": 376,
+   "title": "Global / Footer",
+   "page": "global"
+  },
+  "Home-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 641,
+   "title": "Home / 1 Hero",
+   "page": "home"
+  },
+  "Home-2-Intro.dc.html": {
+   "x": 0,
+   "y": 761,
+   "w": 1440,
+   "h": 452,
+   "title": "Home / 2 Intro",
+   "page": "home"
+  },
+  "Home-3-About.dc.html": {
+   "x": 0,
+   "y": 1333,
+   "w": 1440,
+   "h": 895,
+   "title": "Home / 3 About",
+   "page": "home"
+  },
+  "Home-4-UPCOMING-EVENTS.dc.html": {
+   "x": 0,
+   "y": 2348,
+   "w": 1440,
+   "h": 549,
+   "title": "Home / 4 UPCOMING EVENTS",
+   "page": "home"
+  },
+  "Home-5-PASTOR-TESTIMONIALS.dc.html": {
+   "x": 0,
+   "y": 3017,
+   "w": 1440,
+   "h": 716,
+   "title": "Home / 5 PASTOR TESTIMONIALS",
+   "page": "home"
+  },
+  "WhatWeDo-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 432,
+   "title": "What We Do / 1 Hero",
+   "page": "what-we-do"
+  },
+  "WhatWeDo-2-About-InterCP-International.dc.html": {
+   "x": 0,
+   "y": 552,
+   "w": 1440,
+   "h": 1290,
+   "title": "What We Do / 2 About InterCP International",
+   "page": "what-we-do"
+  },
+  "WhatWeDo-3-Experience-Luke-10.dc.html": {
+   "x": 0,
+   "y": 1962,
+   "w": 1440,
+   "h": 1052,
+   "title": "What We Do / 3 Experience Luke 10",
+   "page": "what-we-do"
+  },
+  "WhatWeBelieve-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 432,
+   "title": "What We Believe / 1 Hero",
+   "page": "what-we-believe"
+  },
+  "WhatWeBelieve-2-CORE-VALUES.dc.html": {
+   "x": 0,
+   "y": 552,
+   "w": 1440,
+   "h": 1818,
+   "title": "What We Believe / 2 CORE VALUES",
+   "page": "what-we-believe"
+  },
+  "WhatWeBelieve-3-STATEMENT-OF-FAITH.dc.html": {
+   "x": 0,
+   "y": 2490,
+   "w": 1440,
+   "h": 5060,
+   "title": "What We Believe / 3 STATEMENT OF FAITH",
+   "page": "what-we-believe"
+  },
+  "InternationalAdvisors-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 500,
+   "title": "International Advisors / 1 Hero",
+   "page": "international-advisors"
+  },
+  "InternationalAdvisors-2-International-Advisors.dc.html": {
+   "x": 0,
+   "y": 620,
+   "w": 1440,
+   "h": 2032,
+   "title": "International Advisors / 2 International Advisors",
+   "page": "international-advisors"
+  },
+  "CampusAndYoungAdult-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 556,
+   "title": "Campus and Young Adult / 1 Hero",
+   "page": "campus-and-young-adult"
+  },
+  "CampusAndYoungAdult-2-Young-Generation-Ministry.dc.html": {
+   "x": 0,
+   "y": 676,
+   "w": 1440,
+   "h": 2309,
+   "title": "Campus and Young Adult / 2 Young Generation Ministry",
+   "page": "campus-and-young-adult"
+  },
+  "AdultGeneration-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 432,
+   "title": "Adult Generation / 1 Hero",
+   "page": "adult-generation"
+  },
+  "AdultGeneration-2-Adult-Generation-Ministry.dc.html": {
+   "x": 0,
+   "y": 552,
+   "w": 1440,
+   "h": 2410,
+   "title": "Adult Generation / 2 Adult Generation Ministry",
+   "page": "adult-generation"
+  },
+  "YouthGeneration-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 488,
+   "title": "Youth Generation / 1 Hero",
+   "page": "youth-generation"
+  },
+  "YouthGeneration-2-Youth-Generation-Ministry.dc.html": {
+   "x": 0,
+   "y": 608,
+   "w": 1440,
+   "h": 2780,
+   "title": "Youth Generation / 2 Youth Generation Ministry",
+   "page": "youth-generation"
+  },
+  "KidsMinistry-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 432,
+   "title": "Kids Generation / 1 Hero",
+   "page": "kids-ministry"
+  },
+  "KidsMinistry-2-Kids-Generation.dc.html": {
+   "x": 0,
+   "y": 552,
+   "w": 1440,
+   "h": 2482,
+   "title": "Kids Generation / 2 Kids Generation",
+   "page": "kids-ministry"
+  },
+  "VisionSchool-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 432,
+   "title": "Vision School / 1 Hero",
+   "page": "vision-school"
+  },
+  "VisionSchool-2-Vision-School.dc.html": {
+   "x": 0,
+   "y": 552,
+   "w": 1440,
+   "h": 2450,
+   "title": "Vision School / 2 Vision School",
+   "page": "vision-school"
+  },
+  "MissionAndMedical-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 500,
+   "title": "MnM Mission and Medical / 1 Hero",
+   "page": "mission-and-medical"
+  },
+  "MissionAndMedical-2-MnM-Mission-and-Medical.dc.html": {
+   "x": 0,
+   "y": 620,
+   "w": 1440,
+   "h": 2138,
+   "title": "MnM Mission and Medical / 2 MnM Mission and Medical",
+   "page": "mission-and-medical"
+  },
+  "FieldOperation-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 544,
+   "title": "Field Operation / 1 Hero",
+   "page": "field-operation"
+  },
+  "FieldOperation-2-Field-Operation-FO.dc.html": {
+   "x": 0,
+   "y": 664,
+   "w": 1440,
+   "h": 633,
+   "title": "Field Operation / 2 Field Operation (FO)",
+   "page": "field-operation"
+  },
+  "FieldOperation-3-Testimonials.dc.html": {
+   "x": 0,
+   "y": 1417,
+   "w": 1440,
+   "h": 468,
+   "title": "Field Operation / 3 Testimonials",
+   "page": "field-operation"
+  },
+  "FieldOperation-4-Details-and-FAQ.dc.html": {
+   "x": 0,
+   "y": 2005,
+   "w": 1440,
+   "h": 1049,
+   "title": "Field Operation / 4 Details and FAQ",
+   "page": "field-operation"
+  },
+  "StudentMissionsAndYoungT-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 680,
+   "title": "Student Missions and YTM / 1 Hero",
+   "page": "student-missions-and-young-tent-makers"
+  },
+  "StudentMissionsAndYoungT-2-Student-Missions-SM-and-Youn.dc.html": {
+   "x": 0,
+   "y": 800,
+   "w": 1440,
+   "h": 2579,
+   "title": "Student Missions and YTM / 2 Student Missions (SM) and Young Tent Maker Missions (YTM)",
+   "page": "student-missions-and-young-tent-makers"
+  },
+  "LongTerm-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 556,
+   "title": "Long Term Mission / 1 Hero",
+   "page": "long-term"
+  },
+  "LongTerm-2-PREPARATION.dc.html": {
+   "x": 0,
+   "y": 676,
+   "w": 1440,
+   "h": 611,
+   "title": "Long Term Mission / 2 PREPARATION",
+   "page": "long-term"
+  },
+  "PastorsAndLeadershipsVis-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 568,
+   "title": "Pastors and Leaderships Vision Camp / 1 Hero",
+   "page": "pastors-and-leaderships-vision-camp"
+  },
+  "PastorsAndLeadershipsVis-2-Pastors-and-Leaderships-Visi.dc.html": {
+   "x": 0,
+   "y": 688,
+   "w": 1440,
+   "h": 1632,
+   "title": "Pastors and Leaderships Vision Camp / 2 Pastors and Leaderships Vision Camp",
+   "page": "pastors-and-leaderships-vision-camp"
+  },
+  "MissionCamp-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 432,
+   "title": "Mission Camp / 1 Hero",
+   "page": "mission-camp"
+  },
+  "MissionCamp-2-Mission-Camp.dc.html": {
+   "x": 0,
+   "y": 552,
+   "w": 1440,
+   "h": 3354,
+   "title": "Mission Camp / 2 Mission Camp",
+   "page": "mission-camp"
+  },
+  "Ygmc-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 556,
+   "title": "Young Generation Mission Camp / 1 Hero",
+   "page": "ygmc"
+  },
+  "Ygmc-2-Young-Generation-Mission-Cam.dc.html": {
+   "x": 0,
+   "y": 676,
+   "w": 1440,
+   "h": 3182,
+   "title": "Young Generation Mission Camp / 2 Young Generation Mission Camp (YGMC)",
+   "page": "ygmc"
+  },
+  "WorldMissions-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 488,
+   "title": "World Mission / 1 Hero",
+   "page": "world-missions"
+  },
+  "WorldMissions-2-The-Engine-for-Mission-Reviv.dc.html": {
+   "x": 0,
+   "y": 608,
+   "w": 1440,
+   "h": 1825,
+   "title": "World Mission / 2 The Engine for Mission Revival",
+   "page": "world-missions"
+  },
+  "GlobalAlliance-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 488,
+   "title": "Global Alliance / 1 Hero",
+   "page": "global-alliance"
+  },
+  "GlobalAlliance-2-Global-Alliance.dc.html": {
+   "x": 0,
+   "y": 608,
+   "w": 1440,
+   "h": 1849,
+   "title": "Global Alliance / 2 Global Alliance",
+   "page": "global-alliance"
+  },
+  "Contact-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 432,
+   "title": "Contact Us / 1 Hero",
+   "page": "contact"
+  },
+  "Contact-2-Contact-InterCP-Internationa.dc.html": {
+   "x": 0,
+   "y": 552,
+   "w": 1440,
+   "h": 317,
+   "title": "Contact Us / 2 Contact InterCP International",
+   "page": "contact"
+  },
+  "Contact-3-Contact-Form.dc.html": {
+   "x": 0,
+   "y": 989,
+   "w": 1440,
+   "h": 1655,
+   "title": "Contact Us / 3 Contact Form",
+   "page": "contact"
+  },
+  "GetInvolved-1-Hero.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 432,
+   "title": "Get Involved / 1 Hero",
+   "page": "get-involved"
+  },
+  "GetInvolved-2-Intro.dc.html": {
+   "x": 0,
+   "y": 552,
+   "w": 1440,
+   "h": 356,
+   "title": "Get Involved / 2 Intro",
+   "page": "get-involved"
+  },
+  "GetInvolved-3-Find-out-more.dc.html": {
+   "x": 0,
+   "y": 1028,
+   "w": 1440,
+   "h": 810,
+   "title": "Get Involved / 3 Find out more",
+   "page": "get-involved"
+  },
+  "GetInvolved-4-GO.dc.html": {
+   "x": 0,
+   "y": 1958,
+   "w": 1440,
+   "h": 909,
+   "title": "Get Involved / 4 GO",
+   "page": "get-involved"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "Global-Footer.dc.html",
+  "Home-1-Hero.dc.html",
+  "Home-2-Intro.dc.html",
+  "Home-3-About.dc.html",
+  "Home-4-UPCOMING-EVENTS.dc.html",
+  "Home-5-PASTOR-TESTIMONIALS.dc.html",
+  "WhatWeDo-1-Hero.dc.html",
+  "WhatWeDo-2-About-InterCP-International.dc.html",
+  "WhatWeDo-3-Experience-Luke-10.dc.html",
+  "WhatWeBelieve-1-Hero.dc.html",
+  "WhatWeBelieve-2-CORE-VALUES.dc.html",
+  "WhatWeBelieve-3-STATEMENT-OF-FAITH.dc.html",
+  "InternationalAdvisors-1-Hero.dc.html",
+  "InternationalAdvisors-2-International-Advisors.dc.html",
+  "CampusAndYoungAdult-1-Hero.dc.html",
+  "CampusAndYoungAdult-2-Young-Generation-Ministry.dc.html",
+  "AdultGeneration-1-Hero.dc.html",
+  "AdultGeneration-2-Adult-Generation-Ministry.dc.html",
+  "YouthGeneration-1-Hero.dc.html",
+  "YouthGeneration-2-Youth-Generation-Ministry.dc.html",
+  "KidsMinistry-1-Hero.dc.html",
+  "KidsMinistry-2-Kids-Generation.dc.html",
+  "VisionSchool-1-Hero.dc.html",
+  "VisionSchool-2-Vision-School.dc.html",
+  "MissionAndMedical-1-Hero.dc.html",
+  "MissionAndMedical-2-MnM-Mission-and-Medical.dc.html",
+  "FieldOperation-1-Hero.dc.html",
+  "FieldOperation-2-Field-Operation-FO.dc.html",
+  "FieldOperation-3-Testimonials.dc.html",
+  "FieldOperation-4-Details-and-FAQ.dc.html",
+  "StudentMissionsAndYoungT-1-Hero.dc.html",
+  "StudentMissionsAndYoungT-2-Student-Missions-SM-and-Youn.dc.html",
+  "LongTerm-1-Hero.dc.html",
+  "LongTerm-2-PREPARATION.dc.html",
+  "PastorsAndLeadershipsVis-1-Hero.dc.html",
+  "PastorsAndLeadershipsVis-2-Pastors-and-Leaderships-Visi.dc.html",
+  "MissionCamp-1-Hero.dc.html",
+  "MissionCamp-2-Mission-Camp.dc.html",
+  "Ygmc-1-Hero.dc.html",
+  "Ygmc-2-Young-Generation-Mission-Cam.dc.html",
+  "WorldMissions-1-Hero.dc.html",
+  "WorldMissions-2-The-Engine-for-Mission-Reviv.dc.html",
+  "GlobalAlliance-1-Hero.dc.html",
+  "GlobalAlliance-2-Global-Alliance.dc.html",
+  "Contact-1-Hero.dc.html",
+  "Contact-2-Contact-InterCP-Internationa.dc.html",
+  "Contact-3-Contact-Form.dc.html",
+  "GetInvolved-1-Hero.dc.html",
+  "GetInvolved-2-Intro.dc.html",
+  "GetInvolved-3-Find-out-more.dc.html",
+  "GetInvolved-4-GO.dc.html"
+ ],
+ "notes": {
+  "global": {
+   "x": 0,
+   "y": -300,
+   "text": "Global components",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "global"
+  },
+  "home": {
+   "x": 0,
+   "y": -300,
+   "text": "Home sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "home"
+  },
+  "what-we-do": {
+   "x": 0,
+   "y": -300,
+   "text": "What We Do sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "what-we-do"
+  },
+  "what-we-believe": {
+   "x": 0,
+   "y": -300,
+   "text": "What We Believe sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "what-we-believe"
+  },
+  "international-advisors": {
+   "x": 0,
+   "y": -300,
+   "text": "International Advisors sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "international-advisors"
+  },
+  "campus-and-young-adult": {
+   "x": 0,
+   "y": -300,
+   "text": "Campus and Young Adult sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "campus-and-young-adult"
+  },
+  "adult-generation": {
+   "x": 0,
+   "y": -300,
+   "text": "Adult Generation sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "adult-generation"
+  },
+  "youth-generation": {
+   "x": 0,
+   "y": -300,
+   "text": "Youth Generation sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "youth-generation"
+  },
+  "kids-ministry": {
+   "x": 0,
+   "y": -300,
+   "text": "Kids Generation sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "kids-ministry"
+  },
+  "vision-school": {
+   "x": 0,
+   "y": -300,
+   "text": "Vision School sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "vision-school"
+  },
+  "mission-and-medical": {
+   "x": 0,
+   "y": -300,
+   "text": "MnM Mission and Medical sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "mission-and-medical"
+  },
+  "field-operation": {
+   "x": 0,
+   "y": -300,
+   "text": "Field Operation sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "field-operation"
+  },
+  "student-missions-and-young-tent-makers": {
+   "x": 0,
+   "y": -300,
+   "text": "Student Missions and YTM sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "student-missions-and-young-tent-makers"
+  },
+  "long-term": {
+   "x": 0,
+   "y": -300,
+   "text": "Long Term Mission sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "long-term"
+  },
+  "pastors-and-leaderships-vision-camp": {
+   "x": 0,
+   "y": -300,
+   "text": "Pastors and Leaderships Vision Camp sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "pastors-and-leaderships-vision-camp"
+  },
+  "mission-camp": {
+   "x": 0,
+   "y": -300,
+   "text": "Mission Camp sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "mission-camp"
+  },
+  "ygmc": {
+   "x": 0,
+   "y": -300,
+   "text": "Young Generation Mission Camp sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "ygmc"
+  },
+  "world-missions": {
+   "x": 0,
+   "y": -300,
+   "text": "World Mission sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "world-missions"
+  },
+  "global-alliance": {
+   "x": 0,
+   "y": -300,
+   "text": "Global Alliance sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "global-alliance"
+  },
+  "contact": {
+   "x": 0,
+   "y": -300,
+   "text": "Contact Us sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "contact"
+  },
+  "get-involved": {
+   "x": 0,
+   "y": -300,
+   "text": "Get Involved sections",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "get-involved"
+  }
+ },
+ "designSystems": []
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>FAQ</title>
+<script src="../../support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
+<style>
+body{margin:0;background:#000}
+a{color:#fff}a:hover{color:#adadad}
+</style>
+</helmet>
+<section style="width: 100%; min-height: 831px; box-sizing: border-box; padding: 95px 98px 100px 58px; background: #000; color: #fcfcfc; font-family: Roboto, sans-serif; display: grid; grid-template-columns: 556px minmax(0, 1fr); align-items: start">
+<h1 style="margin: 0; font-size: 67.8px; font-weight: 400; letter-spacing: -1.36px; line-height: 1">Frequently Asked Questions</h1>
+<div style="border-top: 1px solid #3a3a3a">
+<sc-for list="{{items}}" as="item" hint-placeholder-count="10">
+<div style="border-bottom: 1px solid #3a3a3a">
+<button type="button" onClick="{{item.toggle}}" aria-expanded="{{item.expanded}}" style="width: 100%; min-height: 63px; padding: 14px 0; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: none; border: 0; color: #fcfcfc; font-family: Roboto, sans-serif; font-size: 26px; letter-spacing: -0.5px; text-align: left; cursor: pointer">
+<span>{{item.q}}</span>
+<svg aria-hidden="true" viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="#fcfcfc" stroke-width="1"><path d="M0 8h16"></path><sc-if value="{{item.closed}}" hint-placeholder-val="{{ true }}"><path d="M8 0v16"></path></sc-if></svg>
+</button>
+<sc-if value="{{item.open}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; padding: 0 40px 22px 0; font-size: 17.7px; line-height: 1.5; letter-spacing: -0.35px; white-space: pre-line">{{item.a}}<sc-if value="{{item.link}}" hint-placeholder-val="{{ false }}"><a href="https://www.intercpinternational.org/what-we-believe">you can read it here.</a></sc-if></p>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":933}}'>
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { open: -1 }; }
+  renderVals() {
+    const qa = [
+      ['Who can attend YGMC?', 'We are geared towards High School students (11-12th grade) up til 35 year olds and their leaders. Please let us know if you would like to request an exception.'],
+      ['Are meal and lodging costs included in my registration?', 'Yes, the Registration Fee includes accommodations and all meals from Thursday dinner to Sunday lunch.'],
+      ['What airport do I fly into and is there a shuttle?', 'Fly into Cincinnati/Northern Kentucky International Airport (CVG). We encourage you to book your flights as soon as possible to get the best rates.'],
+      ['What do I need to bring?', 'Toiletries (shampoo, body wash, etc; no toiletries will be provided)\nWater Bottle\nJacket/Sweater\nUmbrella (optional for inclement weather)'],
+      ['What is the program start and end time?', 'Young Generation Mission Camp (YGMC) will start on 11/19/26 (Thu) at 5:00pm with dinner and conclude on 11/22/26 (Sun) with lunch at 12:00pm.'],
+      ['Will there be a livestream?', 'Due to security sensitive nature of missions in unreached nations, we will not be able to livestream.'],
+      ['Is there a price for partial registration?', 'No. There will only be full registration prices available for YGMC.'],
+      ['What is the cancellation policy?', 'You may request a refund until 11/01/26 by emailing ygmissioncamp@intercp.org. Requests will not be accepted after this date.'],
+      ['What is the Early Bird Discount Policy?', 'Early Bird Deadline is 10/17/26 (Sat). In order to receive the discount, you must pay a $100 non-refundable deposit by the deadline. Discounts will no longer be applied after 10/17 and the price will increase by $20.'],
+      ['Does YGMC have a statement of faith?', 'Yes, ', true]
+    ];
+    return {
+      items: qa.map(([q, a, link], i) => {
+        const open = this.state.open === i;
+        return { q, a, link: !!link, open, closed: !open, expanded: open ? 'true' : 'false',
+          toggle: () => this.setState({ open: open ? -1 : i }) };
+      })
+    };
+  }
+}
+</script>
+</body>
+</html>
