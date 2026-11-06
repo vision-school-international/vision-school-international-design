@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `vision-school-youth-04-highlights.html`: copy of [`pages/vision-school-youth/04-highlights.html`](../../pages/vision-school-youth/04-highlights.html) and `vision-school-youth-04-highlights.mobile.html` (copy of [`pages/vision-school-youth/04-highlights.mobile.html`](../../pages/vision-school-youth/04-highlights.mobile.html)).
-- `source-S22-youth-highlights.html`: the original component board `S22-bl-features`, moved from `components/S22-bl-features.html` (canvas title "Bible Apps: FEATURED HIGHLIGHTS (bible-loop)"). The page boards above that name it were built from it.
+- `source-S22-youth-highlights.html`: the original component board `S22-bl-features`, moved from `components/S22-bl-features.html` (canvas title "Bible Apps: FEATURED HIGHLIGHTS (bible-loop)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

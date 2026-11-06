@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `history-02-how-it-started.html`: copy of [`pages/history/02-how-it-started.html`](../../pages/history/02-how-it-started.html) and `history-02-how-it-started.mobile.html` (copy of [`pages/history/02-how-it-started.mobile.html`](../../pages/history/02-how-it-started.mobile.html)).
-- `source-S10-how-it-started.html`: the original component board `S10-history-started`, moved from `components/S10-history-started.html` (canvas title "About, Mission & History: From a Security Line to a Global Mission (history)"). The page boards above that name it were built from it.
+- `source-S10-how-it-started.html`: the original component board `S10-history-started`, moved from `components/S10-history-started.html` (canvas title "About, Mission & History: From a Security Line to a Global Mission (history)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

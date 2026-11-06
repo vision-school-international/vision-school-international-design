@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `churches-04-sent-out-by-the-local-church.html`: copy of [`pages/churches/04-sent-out-by-the-local-church.html`](../../pages/churches/04-sent-out-by-the-local-church.html) and `churches-04-sent-out-by-the-local-church.mobile.html` (copy of [`pages/churches/04-sent-out-by-the-local-church.mobile.html`](../../pages/churches/04-sent-out-by-the-local-church.mobile.html)).
-- `source-S40-sent-out-stat-cards.html`: the original component board `S40-churches-cards`, moved from `components/S40-churches-cards.html` (canvas title "Churches: Built for Ministry. Beloved by Millions. (churches)"). The page boards above that name it were built from it.
+- `source-S40-sent-out-stat-cards.html`: the original component board `S40-churches-cards`, moved from `components/S40-churches-cards.html` (canvas title "Churches: Built for Ministry. Beloved by Millions. (churches)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

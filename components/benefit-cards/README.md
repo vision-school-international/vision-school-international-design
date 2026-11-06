@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `give-09-giving-office.html`: copy of [`pages/give/09-giving-office.html`](../../pages/give/09-giving-office.html) and `give-09-giving-office.mobile.html` (copy of [`pages/give/09-giving-office.mobile.html`](../../pages/give/09-giving-office.mobile.html)).
-- `source-S57-giving-office-cards.html`: the original component board `S57-section-impact`, moved from `components/S57-section-impact.html` (canvas title "Partners & Giving: Sowers Receive (sowers)"). The page boards above that name it were built from it.
+- `source-S57-giving-office-cards.html`: the original component board `S57-section-impact`, moved from `components/S57-section-impact.html` (canvas title "Partners & Giving: Sowers Receive (sowers)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

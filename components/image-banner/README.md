@@ -8,9 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `branches-05-around-the-world.html`: copy of [`pages/branches/05-around-the-world.html`](../../pages/branches/05-around-the-world.html) and `branches-05-around-the-world.mobile.html` (copy of [`pages/branches/05-around-the-world.mobile.html`](../../pages/branches/05-around-the-world.mobile.html)).
-- `partner-overview-04-our-branches.html`: copy of [`pages/partner-overview/04-our-branches.html`](../../pages/partner-overview/04-our-branches.html) and `partner-overview-04-our-branches.mobile.html` (copy of [`pages/partner-overview/04-our-branches.mobile.html`](../../pages/partner-overview/04-our-branches.mobile.html)).
-- `source-S48-our-branches-image-banner.html`: the original component board `S48-globalhubs-bibleapp`, moved from `components/S48-globalhubs-bibleapp.html` (canvas title "Partners & Giving: Regional Ministry --- (partners-overview)"). The page boards above that name it were built from it.
+- `source-S48-our-branches-image-banner.html`: the original component board `S48-globalhubs-bibleapp`, moved from `components/S48-globalhubs-bibleapp.html` (canvas title "Partners & Giving: Regional Ministry --- (partners-overview)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

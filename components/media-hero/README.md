@@ -8,10 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `newsroom-01-hero-latest-news.html`: copy of [`pages/newsroom/01-hero-latest-news.html`](../../pages/newsroom/01-hero-latest-news.html) and `newsroom-01-hero-latest-news.mobile.html` (copy of [`pages/newsroom/01-hero-latest-news.mobile.html`](../../pages/newsroom/01-hero-latest-news.mobile.html)).
-- `serve-with-us-01-hero-serve-with-us.html`: copy of [`pages/serve-with-us/01-hero-serve-with-us.html`](../../pages/serve-with-us/01-hero-serve-with-us.html) and `serve-with-us-01-hero-serve-with-us.mobile.html` (copy of [`pages/serve-with-us/01-hero-serve-with-us.mobile.html`](../../pages/serve-with-us/01-hero-serve-with-us.mobile.html)).
-- `spiritual-support-team-01-hero-pray-with-us.html`: copy of [`pages/spiritual-support-team/01-hero-pray-with-us.html`](../../pages/spiritual-support-team/01-hero-pray-with-us.html) and `spiritual-support-team-01-hero-pray-with-us.mobile.html` (copy of [`pages/spiritual-support-team/01-hero-pray-with-us.mobile.html`](../../pages/spiritual-support-team/01-hero-pray-with-us.mobile.html)).
-- `source-S00-hero-with-media.html`: the original component board `S00-bible-translation-hero`, moved from `components/S00-bible-translation-hero.html` (canvas title "Get Involved & Volunteers: Serve with us (volunteers)"). The page boards above that name it were built from it.
+- `source-S00-hero-with-media.html`: the original component board `S00-bible-translation-hero`, moved from `components/S00-bible-translation-hero.html` (canvas title "Get Involved & Volunteers: Serve with us (volunteers)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

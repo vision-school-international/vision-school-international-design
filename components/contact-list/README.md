@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `branches-06-contact.html`: copy of [`pages/branches/06-contact.html`](../../pages/branches/06-contact.html) and `branches-06-contact.mobile.html` (copy of [`pages/branches/06-contact.mobile.html`](../../pages/branches/06-contact.mobile.html)).
-- `source-S61-branch-contacts.html`: the original component board `S61-contact`, moved from `components/S61-contact.html` (canvas title "About, Mission & History: is--contact (helpful-links)"). The page boards above that name it were built from it.
+- `source-S61-branch-contacts.html`: the original component board `S61-contact`, moved from `components/S61-contact.html` (canvas title "About, Mission & History: is--contact (helpful-links)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

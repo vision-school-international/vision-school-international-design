@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `churches-09-church-relations-guide.html`: copy of [`pages/churches/09-church-relations-guide.html`](../../pages/churches/09-church-relations-guide.html) and `churches-09-church-relations-guide.mobile.html` (copy of [`pages/churches/09-church-relations-guide.mobile.html`](../../pages/churches/09-church-relations-guide.mobile.html)).
-- `source-S37-church-relations-guide-cards.html`: the original component board `S37-cob-section`, moved from `components/S37-cob-section.html` (canvas title "Churches: Church Onboarding Series (church-blog)"). The page boards above that name it were built from it.
+- `source-S37-church-relations-guide-cards.html`: the original component board `S37-cob-section`, moved from `components/S37-cob-section.html` (canvas title "Churches: Church Onboarding Series (church-blog)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

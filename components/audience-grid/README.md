@@ -8,11 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `field-operation-04-who-can-go.html`: copy of [`pages/field-operation/04-who-can-go.html`](../../pages/field-operation/04-who-can-go.html) and `field-operation-04-who-can-go.mobile.html` (copy of [`pages/field-operation/04-who-can-go.mobile.html`](../../pages/field-operation/04-who-can-go.mobile.html)).
-- `mission-impact-team-04-who-can-go.html`: copy of [`pages/mission-impact-team/04-who-can-go.html`](../../pages/mission-impact-team/04-who-can-go.html) and `mission-impact-team-04-who-can-go.mobile.html` (copy of [`pages/mission-impact-team/04-who-can-go.mobile.html`](../../pages/mission-impact-team/04-who-can-go.mobile.html)).
-- `student-missionary-04-who-can-go.html`: copy of [`pages/student-missionary/04-who-can-go.html`](../../pages/student-missionary/04-who-can-go.html) and `student-missionary-04-who-can-go.mobile.html` (copy of [`pages/student-missionary/04-who-can-go.mobile.html`](../../pages/student-missionary/04-who-can-go.mobile.html)).
-- `young-tent-maker-04-who-can-go.html`: copy of [`pages/young-tent-maker/04-who-can-go.html`](../../pages/young-tent-maker/04-who-can-go.html) and `young-tent-maker-04-who-can-go.mobile.html` (copy of [`pages/young-tent-maker/04-who-can-go.mobile.html`](../../pages/young-tent-maker/04-who-can-go.mobile.html)).
-- `source-S29-who-can-go-grid.html`: the original component board `S29-platform-help`, moved from `components/S29-platform-help.html` (canvas title "Connect & Platform: Who does YouVersion Platform serve? (platform)"). The page boards above that name it were built from it.
+- `source-S29-who-can-go-grid.html`: the original component board `S29-platform-help`, moved from `components/S29-platform-help.html` (canvas title "Connect & Platform: Who does YouVersion Platform serve? (platform)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

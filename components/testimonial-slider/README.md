@@ -8,13 +8,8 @@ From its stylesheet:
 
 ## Files
 
-- `field-operation-06-quotes.html`: copy of [`pages/field-operation/06-quotes.html`](../../pages/field-operation/06-quotes.html) and `field-operation-06-quotes.mobile.html` (copy of [`pages/field-operation/06-quotes.mobile.html`](../../pages/field-operation/06-quotes.mobile.html)).
-- `mission-impact-team-06-quotes.html`: copy of [`pages/mission-impact-team/06-quotes.html`](../../pages/mission-impact-team/06-quotes.html) and `mission-impact-team-06-quotes.mobile.html` (copy of [`pages/mission-impact-team/06-quotes.mobile.html`](../../pages/mission-impact-team/06-quotes.mobile.html)).
-- `student-missionary-06-quotes.html`: copy of [`pages/student-missionary/06-quotes.html`](../../pages/student-missionary/06-quotes.html) and `student-missionary-06-quotes.mobile.html` (copy of [`pages/student-missionary/06-quotes.mobile.html`](../../pages/student-missionary/06-quotes.mobile.html)).
-- `vision-school-14-testimonies.html`: copy of [`pages/vision-school/14-testimonies.html`](../../pages/vision-school/14-testimonies.html) and `vision-school-14-testimonies.mobile.html` (copy of [`pages/vision-school/14-testimonies.mobile.html`](../../pages/vision-school/14-testimonies.mobile.html)).
-- `young-tent-maker-06-quotes.html`: copy of [`pages/young-tent-maker/06-quotes.html`](../../pages/young-tent-maker/06-quotes.html) and `young-tent-maker-06-quotes.mobile.html` (copy of [`pages/young-tent-maker/06-quotes.mobile.html`](../../pages/young-tent-maker/06-quotes.mobile.html)).
-- `source-S25-testimonies-slider.html`: the original component board `S25-vision-partner-slider`, moved from `components/S25-vision-partner-slider.html` (canvas title "Connect & Platform: is--vision-partner-slider (connect)"). The page boards above that name it were built from it.
-- `source-S31-quotes-slider.html`: the original component board `S31-summit-slider`, moved from `components/S31-summit-slider.html` (canvas title "Connect & Platform: is--summit-slider (platform)"). The page boards above that name it were built from it.
+- `source-S25-testimonies-slider.html`: the original component board `S25-vision-partner-slider`, moved from `components/S25-vision-partner-slider.html` (canvas title "Connect & Platform: is--vision-partner-slider (connect)"). The page boards under "Used on" that name it were built from it.
+- `source-S31-quotes-slider.html`: the original component board `S31-summit-slider`, moved from `components/S31-summit-slider.html` (canvas title "Connect & Platform: is--summit-slider (platform)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

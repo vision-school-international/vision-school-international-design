@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `partner-overview-07-photo-gallery.html`: copy of [`pages/partner-overview/07-photo-gallery.html`](../../pages/partner-overview/07-photo-gallery.html) and `partner-overview-07-photo-gallery.mobile.html` (copy of [`pages/partner-overview/07-photo-gallery.mobile.html`](../../pages/partner-overview/07-photo-gallery.mobile.html)).
-- `source-S52-photo-gallery.html`: the original component board `S52-parners-imgs`, moved from `components/S52-parners-imgs.html` (canvas title "Partners & Giving: is--parners--imgs (vision-partner)"). The page boards above that name it were built from it.
+- `source-S52-photo-gallery.html`: the original component board `S52-parners-imgs`, moved from `components/S52-parners-imgs.html` (canvas title "Partners & Giving: is--parners--imgs (vision-partner)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

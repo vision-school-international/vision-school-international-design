@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `partner-overview-08-get-involved.html`: copy of [`pages/partner-overview/08-get-involved.html`](../../pages/partner-overview/08-get-involved.html) and `partner-overview-08-get-involved.mobile.html` (copy of [`pages/partner-overview/08-get-involved.mobile.html`](../../pages/partner-overview/08-get-involved.mobile.html)).
-- `source-S53-get-involved-link-cards.html`: the original component board `S53-get-connected`, moved from `components/S53-get-connected.html` (canvas title "Partners & Giving: Get Connected (vision-partner)"). The page boards above that name it were built from it.
+- `source-S53-get-involved-link-cards.html`: the original component board `S53-get-connected`, moved from `components/S53-get-connected.html` (canvas title "Partners & Giving: Get Connected (vision-partner)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

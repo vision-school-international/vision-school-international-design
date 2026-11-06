@@ -8,10 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `branches-03-many-branches-one-mission.html`: copy of [`pages/branches/03-many-branches-one-mission.html`](../../pages/branches/03-many-branches-one-mission.html) and `branches-03-many-branches-one-mission.mobile.html` (copy of [`pages/branches/03-many-branches-one-mission.mobile.html`](../../pages/branches/03-many-branches-one-mission.mobile.html)).
-- `partner-overview-03-mission-in-action.html`: copy of [`pages/partner-overview/03-mission-in-action.html`](../../pages/partner-overview/03-mission-in-action.html) and `partner-overview-03-mission-in-action.mobile.html` (copy of [`pages/partner-overview/03-mission-in-action.mobile.html`](../../pages/partner-overview/03-mission-in-action.mobile.html)).
-- `vision-camp-05-camp-facts.html`: copy of [`pages/vision-camp/05-camp-facts.html`](../../pages/vision-camp/05-camp-facts.html) and `vision-camp-05-camp-facts.mobile.html` (copy of [`pages/vision-camp/05-camp-facts.mobile.html`](../../pages/vision-camp/05-camp-facts.mobile.html)).
-- `source-S17-facts-stats-bento.html`: the original component board `S17-findhub-section`, moved from `components/S17-findhub-section.html` (canvas title "Bible Apps: One App. Millions of Lives Changed. (bible-app)"). The page boards above that name it were built from it.
+- `source-S17-facts-stats-bento.html`: the original component board `S17-findhub-section`, moved from `components/S17-findhub-section.html` (canvas title "Bible Apps: One App. Millions of Lives Changed. (bible-app)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

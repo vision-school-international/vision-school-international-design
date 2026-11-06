@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `vision-school-youth-03-stats.html`: copy of [`pages/vision-school-youth/03-stats.html`](../../pages/vision-school-youth/03-stats.html) and `vision-school-youth-03-stats.mobile.html` (copy of [`pages/vision-school-youth/03-stats.mobile.html`](../../pages/vision-school-youth/03-stats.mobile.html)).
-- `source-S21-youth-stats.html`: the original component board `S21-bl-discover`, moved from `components/S21-bl-discover.html` (canvas title "Bible Apps: DISCOVER BIBLE LOOP (bible-loop)"). The page boards above that name it were built from it.
+- `source-S21-youth-stats.html`: the original component board `S21-bl-discover`, moved from `components/S21-bl-discover.html` (canvas title "Bible Apps: DISCOVER BIBLE LOOP (bible-loop)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

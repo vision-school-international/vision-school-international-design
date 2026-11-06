@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `churches-06-mission-camp-invitation.html`: copy of [`pages/churches/06-mission-camp-invitation.html`](../../pages/churches/06-mission-camp-invitation.html) and `churches-06-mission-camp-invitation.mobile.html` (copy of [`pages/churches/06-mission-camp-invitation.mobile.html`](../../pages/churches/06-mission-camp-invitation.mobile.html)).
-- `source-S66-mission-camp-invitation-header.html`: the original component board `S66-V1-80-20`, moved from `components/S66-V1-80-20.html` (canvas title "Churches: Blog header, alternate style (churches)"). The page boards above that name it were built from it.
+- `source-S66-mission-camp-invitation-header.html`: the original component board `S66-V1-80-20`, moved from `components/S66-V1-80-20.html` (canvas title "Churches: Blog header, alternate style (churches)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

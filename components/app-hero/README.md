@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `vision-camp-02-hero.html`: copy of [`pages/vision-camp/02-hero.html`](../../pages/vision-camp/02-hero.html) and `vision-camp-02-hero.mobile.html` (copy of [`pages/vision-camp/02-hero.mobile.html`](../../pages/vision-camp/02-hero.mobile.html)).
-- `source-S15-program-hero.html`: the original component board `S15-app-hero`, moved from `components/S15-app-hero.html` (canvas title "Bible Apps: The Most Downloaded and (bible-app)"). The page boards above that name it were built from it.
+- `source-S15-program-hero.html`: the original component board `S15-app-hero`, moved from `components/S15-app-hero.html` (canvas title "Bible Apps: The Most Downloaded and (bible-app)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `partner-overview-09-revelation-7-9.html`: copy of [`pages/partner-overview/09-revelation-7-9.html`](../../pages/partner-overview/09-revelation-7-9.html) and `partner-overview-09-revelation-7-9.mobile.html` (copy of [`pages/partner-overview/09-revelation-7-9.mobile.html`](../../pages/partner-overview/09-revelation-7-9.mobile.html)).
-- `source-S44-verse-image-scatter.html`: the original component board `S44-imgs-sticky`, moved from `components/S44-imgs-sticky.html` (canvas title "Partners & Giving: Imagine a world where every person can instantly engage with (bible-partners)"). The page boards above that name it were built from it.
+- `source-S44-verse-image-scatter.html`: the original component board `S44-imgs-sticky`, moved from `components/S44-imgs-sticky.html` (canvas title "Partners & Giving: Imagine a world where every person can instantly engage with (bible-partners)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

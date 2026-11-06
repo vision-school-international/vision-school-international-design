@@ -8,11 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `field-operation-02-what-is-fo.html`: copy of [`pages/field-operation/02-what-is-fo.html`](../../pages/field-operation/02-what-is-fo.html) and `field-operation-02-what-is-fo.mobile.html` (copy of [`pages/field-operation/02-what-is-fo.mobile.html`](../../pages/field-operation/02-what-is-fo.mobile.html)).
-- `mission-impact-team-02-what-is-mit.html`: copy of [`pages/mission-impact-team/02-what-is-mit.html`](../../pages/mission-impact-team/02-what-is-mit.html) and `mission-impact-team-02-what-is-mit.mobile.html` (copy of [`pages/mission-impact-team/02-what-is-mit.mobile.html`](../../pages/mission-impact-team/02-what-is-mit.mobile.html)).
-- `student-missionary-02-what-is-sm.html`: copy of [`pages/student-missionary/02-what-is-sm.html`](../../pages/student-missionary/02-what-is-sm.html) and `student-missionary-02-what-is-sm.mobile.html` (copy of [`pages/student-missionary/02-what-is-sm.mobile.html`](../../pages/student-missionary/02-what-is-sm.mobile.html)).
-- `young-tent-maker-02-what-is-ytm.html`: copy of [`pages/young-tent-maker/02-what-is-ytm.html`](../../pages/young-tent-maker/02-what-is-ytm.html) and `young-tent-maker-02-what-is-ytm.mobile.html` (copy of [`pages/young-tent-maker/02-what-is-ytm.mobile.html`](../../pages/young-tent-maker/02-what-is-ytm.mobile.html)).
-- `source-S27-what-is-program-cards.html`: the original component board `S27-platfrom-what`, moved from `components/S27-platfrom-what.html` (canvas title "Connect & Platform: What is YouVersion Platform? (platform)"). The page boards above that name it were built from it.
+- `source-S27-what-is-program-cards.html`: the original component board `S27-platfrom-what`, moved from `components/S27-platfrom-what.html` (canvas title "Connect & Platform: What is YouVersion Platform? (platform)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

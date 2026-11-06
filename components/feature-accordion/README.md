@@ -8,9 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `vision-camp-06-at-camp.html`: copy of [`pages/vision-camp/06-at-camp.html`](../../pages/vision-camp/06-at-camp.html) and `vision-camp-06-at-camp.mobile.html` (copy of [`pages/vision-camp/06-at-camp.mobile.html`](../../pages/vision-camp/06-at-camp.mobile.html)).
-- `vision-school-09-each-week.html`: copy of [`pages/vision-school/09-each-week.html`](../../pages/vision-school/09-each-week.html) and `vision-school-09-each-week.mobile.html` (copy of [`pages/vision-school/09-each-week.mobile.html`](../../pages/vision-school/09-each-week.mobile.html)).
-- `source-S18-program-activities-accordion.html`: the original component board `S18-app-features`, moved from `components/S18-app-features.html` (canvas title "Bible Apps: Free Scripture for Every Day, Everywhere (bible-app)"). The page boards above that name it were built from it.
+- `source-S18-program-activities-accordion.html`: the original component board `S18-app-features`, moved from `components/S18-app-features.html` (canvas title "Bible Apps: Free Scripture for Every Day, Everywhere (bible-app)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

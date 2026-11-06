@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `give-08-monthly-gift.html`: copy of [`pages/give/08-monthly-gift.html`](../../pages/give/08-monthly-gift.html) and `give-08-monthly-gift.mobile.html` (copy of [`pages/give/08-monthly-gift.mobile.html`](../../pages/give/08-monthly-gift.mobile.html)).
-- `source-S55-monthly-gift-form.html`: the original component board `S55-section-header38`, moved from `components/S55-section-header38.html` (canvas title "Partners & Giving: Truth changes everything. But it hasn’t reached everyone. (sowers)"). The page boards above that name it were built from it.
+- `source-S55-monthly-gift-form.html`: the original component board `S55-section-header38`, moved from `components/S55-section-header38.html` (canvas title "Partners & Giving: Truth changes everything. But it hasn’t reached everyone. (sowers)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

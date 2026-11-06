@@ -8,9 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `vision-camp-04-why-we-hold-vision-camp.html`: copy of [`pages/vision-camp/04-why-we-hold-vision-camp.html`](../../pages/vision-camp/04-why-we-hold-vision-camp.html) and `vision-camp-04-why-we-hold-vision-camp.mobile.html` (copy of [`pages/vision-camp/04-why-we-hold-vision-camp.mobile.html`](../../pages/vision-camp/04-why-we-hold-vision-camp.mobile.html)).
-- `vision-school-04-what-is-vision-school.html`: copy of [`pages/vision-school/04-what-is-vision-school.html`](../../pages/vision-school/04-what-is-vision-school.html) and `vision-school-04-what-is-vision-school.mobile.html` (copy of [`pages/vision-school/04-what-is-vision-school.mobile.html`](../../pages/vision-school/04-what-is-vision-school.mobile.html)).
-- `source-S16-program-intro-image-row.html`: the original component board `S16-app-why`, moved from `components/S16-app-why.html` (canvas title "Bible Apps: Drawing Everyone Closer to God (bible-app)"). The page boards above that name it were built from it.
+- `source-S16-program-intro-image-row.html`: the original component board `S16-app-why`, moved from `components/S16-app-why.html` (canvas title "Bible Apps: Drawing Everyone Closer to God (bible-app)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

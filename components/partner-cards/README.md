@@ -8,9 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `partner-overview-02-partner-with-us.html`: copy of [`pages/partner-overview/02-partner-with-us.html`](../../pages/partner-overview/02-partner-with-us.html) and `partner-overview-02-partner-with-us.mobile.html` (copy of [`pages/partner-overview/02-partner-with-us.mobile.html`](../../pages/partner-overview/02-partner-with-us.mobile.html)).
-- `vision-school-08-what-will-be-taught.html`: copy of [`pages/vision-school/08-what-will-be-taught.html`](../../pages/vision-school/08-what-will-be-taught.html) and `vision-school-08-what-will-be-taught.mobile.html` (copy of [`pages/vision-school/08-what-will-be-taught.mobile.html`](../../pages/vision-school/08-what-will-be-taught.mobile.html)).
-- `source-S47-partner-with-us-cards.html`: the original component board `S47-partnerwithus-partner`, moved from `components/S47-partnerwithus-partner.html` (canvas title "Partners & Giving: Partner With Us (partners-overview)"). The page boards above that name it were built from it.
+- `source-S47-partner-with-us-cards.html`: the original component board `S47-partnerwithus-partner`, moved from `components/S47-partnerwithus-partner.html` (canvas title "Partners & Giving: Partner With Us (partners-overview)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

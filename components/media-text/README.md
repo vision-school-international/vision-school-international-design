@@ -8,11 +8,8 @@ From its stylesheet:
 
 ## Files
 
-- `give-06-become-a-giving-partner.html`: copy of [`pages/give/06-become-a-giving-partner.html`](../../pages/give/06-become-a-giving-partner.html) and `give-06-become-a-giving-partner.mobile.html` (copy of [`pages/give/06-become-a-giving-partner.mobile.html`](../../pages/give/06-become-a-giving-partner.mobile.html)).
-- `history-05-our-branches.html`: copy of [`pages/history/05-our-branches.html`](../../pages/history/05-our-branches.html) and `history-05-our-branches.mobile.html` (copy of [`pages/history/05-our-branches.mobile.html`](../../pages/history/05-our-branches.mobile.html)).
-- `newsroom-03-our-branches.html`: copy of [`pages/newsroom/03-our-branches.html`](../../pages/newsroom/03-our-branches.html) and `newsroom-03-our-branches.mobile.html` (copy of [`pages/newsroom/03-our-branches.mobile.html`](../../pages/newsroom/03-our-branches.mobile.html)).
-- `source-S03-become-a-giving-partner.html`: the original component board `S03-40padding`, moved from `components/S03-40padding.html` (canvas title "Partners & Giving: Become a Vision Partner (giving)"). The page boards above that name it were built from it.
-- `source-S13-our-branches.html`: the original component board `S13-120padding`, moved from `components/S13-120padding.html` (canvas title "About, Mission & History: Going Local to Reach More People (history)"). The page boards above that name it were built from it.
+- `source-S03-become-a-giving-partner.html`: the original component board `S03-40padding`, moved from `components/S03-40padding.html` (canvas title "Partners & Giving: Become a Vision Partner (giving)"). The page boards under "Used on" that name it were built from it.
+- `source-S13-our-branches.html`: the original component board `S13-120padding`, moved from `components/S13-120padding.html` (canvas title "About, Mission & History: Going Local to Reach More People (history)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

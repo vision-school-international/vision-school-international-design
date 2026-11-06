@@ -8,9 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `branches-02-where-we-serve.html`: copy of [`pages/branches/02-where-we-serve.html`](../../pages/branches/02-where-we-serve.html) and `branches-02-where-we-serve.mobile.html` (copy of [`pages/branches/02-where-we-serve.mobile.html`](../../pages/branches/02-where-we-serve.mobile.html)).
-- `vision-school-13-where-it-meets.html`: copy of [`pages/vision-school/13-where-it-meets.html`](../../pages/vision-school/13-where-it-meets.html) and `vision-school-13-where-it-meets.mobile.html` (copy of [`pages/vision-school/13-where-it-meets.mobile.html`](../../pages/vision-school/13-where-it-meets.mobile.html)).
-- `source-S59-where-we-serve-map.html`: the original component board `S59-globalhubs-howitworks`, moved from `components/S59-globalhubs-howitworks.html` (canvas title "About, Mission & History: Local Teams Supporting a Global Mission (global-hubs)"). The page boards above that name it were built from it.
+- `source-S59-where-we-serve-map.html`: the original component board `S59-globalhubs-howitworks`, moved from `components/S59-globalhubs-howitworks.html` (canvas title "About, Mission & History: Local Teams Supporting a Global Mission (global-hubs)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

@@ -8,10 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `churches-02-mobilize-and-send.html`: copy of [`pages/churches/02-mobilize-and-send.html`](../../pages/churches/02-mobilize-and-send.html) and `churches-02-mobilize-and-send.mobile.html` (copy of [`pages/churches/02-mobilize-and-send.mobile.html`](../../pages/churches/02-mobilize-and-send.mobile.html)).
-- `give-04-prayer-financial-support-and-volunteering.html`: copy of [`pages/give/04-prayer-financial-support-and-volunteering.html`](../../pages/give/04-prayer-financial-support-and-volunteering.html) and `give-04-prayer-financial-support-and-volunteering.mobile.html` (copy of [`pages/give/04-prayer-financial-support-and-volunteering.mobile.html`](../../pages/give/04-prayer-financial-support-and-volunteering.mobile.html)).
-- `vision-camp-07-pastors-and-leaderships-vision-camp.html`: copy of [`pages/vision-camp/07-pastors-and-leaderships-vision-camp.html`](../../pages/vision-camp/07-pastors-and-leaderships-vision-camp.html) and `vision-camp-07-pastors-and-leaderships-vision-camp.mobile.html` (copy of [`pages/vision-camp/07-pastors-and-leaderships-vision-camp.mobile.html`](../../pages/vision-camp/07-pastors-and-leaderships-vision-camp.mobile.html)).
-- `source-S19-ways-to-support-icon-list.html`: the original component board `S19-app-support`, moved from `components/S19-app-support.html` (canvas title "Bible Apps: Support and Engage With Your Communities (bible-app)"). The page boards above that name it were built from it.
+- `source-S19-ways-to-support-icon-list.html`: the original component board `S19-app-support`, moved from `components/S19-app-support.html` (canvas title "Bible Apps: Support and Engage With Your Communities (bible-app)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `spiritual-support-team-02-why-pray-with-us.html`: copy of [`pages/spiritual-support-team/02-why-pray-with-us.html`](../../pages/spiritual-support-team/02-why-pray-with-us.html) and `spiritual-support-team-02-why-pray-with-us.mobile.html` (copy of [`pages/spiritual-support-team/02-why-pray-with-us.mobile.html`](../../pages/spiritual-support-team/02-why-pray-with-us.mobile.html)).
-- `source-S60-why-pray-reasons.html`: the original component board `S60-claimchurch`, moved from `components/S60-claimchurch.html` (canvas title "Get Involved & Volunteers: Why participate? (research-team)"). The page boards above that name it were built from it.
+- `source-S60-why-pray-reasons.html`: the original component board `S60-claimchurch`, moved from `components/S60-claimchurch.html` (canvas title "Get Involved & Volunteers: Why participate? (research-team)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

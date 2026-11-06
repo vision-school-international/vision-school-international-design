@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `mission-05-our-impact.html`: copy of [`pages/mission/05-our-impact.html`](../../pages/mission/05-our-impact.html) and `mission-05-our-impact.mobile.html` (copy of [`pages/mission/05-our-impact.mobile.html`](../../pages/mission/05-our-impact.mobile.html)).
-- `source-S08-our-impact-bento.html`: the original component board `S08-mission-impact`, moved from `components/S08-mission-impact.html` (canvas title "About, Mission & History: From One IdeaTo a Global Movement (our-mission)"). The page boards above that name it were built from it.
+- `source-S08-our-impact-bento.html`: the original component board `S08-mission-impact`, moved from `components/S08-mission-impact.html` (canvas title "About, Mission & History: From One IdeaTo a Global Movement (our-mission)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

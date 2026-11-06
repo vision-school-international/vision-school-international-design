@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `churches-07-church-relations-cards.html`: copy of [`pages/churches/07-church-relations-cards.html`](../../pages/churches/07-church-relations-cards.html) and `churches-07-church-relations-cards.mobile.html` (copy of [`pages/churches/07-church-relations-cards.mobile.html`](../../pages/churches/07-church-relations-cards.mobile.html)).
-- `source-S67-church-relations-post-cards.html`: the original component board `S67-V2-20-80`, moved from `components/S67-V2-20-80.html` (canvas title "Churches: Card grid, 3 columns (churches)"). The page boards above that name it were built from it.
+- `source-S67-church-relations-post-cards.html`: the original component board `S67-V2-20-80`, moved from `components/S67-V2-20-80.html` (canvas title "Churches: Card grid, 3 columns (churches)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

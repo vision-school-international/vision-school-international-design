@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `serve-with-us-03-partner-in-ministry.html`: copy of [`pages/serve-with-us/03-partner-in-ministry.html`](../../pages/serve-with-us/03-partner-in-ministry.html) and `serve-with-us-03-partner-in-ministry.mobile.html` (copy of [`pages/serve-with-us/03-partner-in-ministry.mobile.html`](../../pages/serve-with-us/03-partner-in-ministry.mobile.html)).
-- `source-S01-partner-in-ministry.html`: the original component board `S01-volunteers-next`, moved from `components/S01-volunteers-next.html` (canvas title "Get Involved & Volunteers: is--volunteers-next (volunteers)"). The page boards above that name it were built from it.
+- `source-S01-partner-in-ministry.html`: the original component board `S01-volunteers-next`, moved from `components/S01-volunteers-next.html` (canvas title "Get Involved & Volunteers: is--volunteers-next (volunteers)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

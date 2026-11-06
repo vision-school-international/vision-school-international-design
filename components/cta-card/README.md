@@ -8,9 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `give-05-over-4-500-staff-serving.html`: copy of [`pages/give/05-over-4-500-staff-serving.html`](../../pages/give/05-over-4-500-staff-serving.html) and `give-05-over-4-500-staff-serving.mobile.html` (copy of [`pages/give/05-over-4-500-staff-serving.mobile.html`](../../pages/give/05-over-4-500-staff-serving.mobile.html)).
-- `history-04-55-people-groups.html`: copy of [`pages/history/04-55-people-groups.html`](../../pages/history/04-55-people-groups.html) and `history-04-55-people-groups.mobile.html` (copy of [`pages/history/04-55-people-groups.mobile.html`](../../pages/history/04-55-people-groups.mobile.html)).
-- `source-S12-number-headline-cta.html`: the original component board `S12-bible-partners-cta`, moved from `components/S12-bible-partners-cta.html` (canvas title "About, Mission & History: Over 1 Billion Installs (history)"). The page boards above that name it were built from it.
+- `source-S12-number-headline-cta.html`: the original component board `S12-bible-partners-cta`, moved from `components/S12-bible-partners-cta.html` (canvas title "About, Mission & History: Over 1 Billion Installs (history)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

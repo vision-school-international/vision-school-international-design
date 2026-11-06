@@ -8,11 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `field-operation-07-verse-and-contact.html`: copy of [`pages/field-operation/07-verse-and-contact.html`](../../pages/field-operation/07-verse-and-contact.html) and `field-operation-07-verse-and-contact.mobile.html` (copy of [`pages/field-operation/07-verse-and-contact.mobile.html`](../../pages/field-operation/07-verse-and-contact.mobile.html)).
-- `mission-impact-team-07-verse-and-contact.html`: copy of [`pages/mission-impact-team/07-verse-and-contact.html`](../../pages/mission-impact-team/07-verse-and-contact.html) and `mission-impact-team-07-verse-and-contact.mobile.html` (copy of [`pages/mission-impact-team/07-verse-and-contact.mobile.html`](../../pages/mission-impact-team/07-verse-and-contact.mobile.html)).
-- `student-missionary-07-verse-and-contact.html`: copy of [`pages/student-missionary/07-verse-and-contact.html`](../../pages/student-missionary/07-verse-and-contact.html) and `student-missionary-07-verse-and-contact.mobile.html` (copy of [`pages/student-missionary/07-verse-and-contact.mobile.html`](../../pages/student-missionary/07-verse-and-contact.mobile.html)).
-- `young-tent-maker-07-verse-and-contact.html`: copy of [`pages/young-tent-maker/07-verse-and-contact.html`](../../pages/young-tent-maker/07-verse-and-contact.html) and `young-tent-maker-07-verse-and-contact.mobile.html` (copy of [`pages/young-tent-maker/07-verse-and-contact.mobile.html`](../../pages/young-tent-maker/07-verse-and-contact.mobile.html)).
-- `source-S32-verse-and-contact.html`: the original component board `S32-platform-video`, moved from `components/S32-platform-video.html` (canvas title "Connect & Platform: “We won’t stop until everyone, everywhere, has access to God (platform)"). The page boards above that name it were built from it.
+- `source-S32-verse-and-contact.html`: the original component board `S32-platform-video`, moved from `components/S32-platform-video.html` (canvas title "Connect & Platform: “We won’t stop until everyone, everywhere, has access to God (platform)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

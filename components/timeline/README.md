@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `history-03-milestones.html`: copy of [`pages/history/03-milestones.html`](../../pages/history/03-milestones.html) and `history-03-milestones.mobile.html` (copy of [`pages/history/03-milestones.mobile.html`](../../pages/history/03-milestones.mobile.html)).
-- `source-S11-milestones-timeline.html`: the original component board `S11-history-timeline`, moved from `components/S11-history-timeline.html` (canvas title "About, Mission & History: Milestones in Mission (history)"). The page boards above that name it were built from it.
+- `source-S11-milestones-timeline.html`: the original component board `S11-history-timeline`, moved from `components/S11-history-timeline.html` (canvas title "About, Mission & History: Milestones in Mission (history)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

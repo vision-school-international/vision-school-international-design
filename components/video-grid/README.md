@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `newsroom-08-watch-interviews.html`: copy of [`pages/newsroom/08-watch-interviews.html`](../../pages/newsroom/08-watch-interviews.html) and `newsroom-08-watch-interviews.mobile.html` (copy of [`pages/newsroom/08-watch-interviews.mobile.html`](../../pages/newsroom/08-watch-interviews.mobile.html)).
-- `source-S63-interviews-video-grid.html`: the original component board `S63-ps26-recap-recordings`, moved from `components/S63-ps26-recap-recordings.html` (canvas title "News, Stories & Events: Rewatch Sessions (partner-summit-2026)"). The page boards above that name it were built from it.
+- `source-S63-interviews-video-grid.html`: the original component board `S63-ps26-recap-recordings`, moved from `components/S63-ps26-recap-recordings.html` (canvas title "News, Stories & Events: Rewatch Sessions (partner-summit-2026)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

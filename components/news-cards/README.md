@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `history-07-in-the-news.html`: copy of [`pages/history/07-in-the-news.html`](../../pages/history/07-in-the-news.html) and `history-07-in-the-news.mobile.html` (copy of [`pages/history/07-in-the-news.mobile.html`](../../pages/history/07-in-the-news.mobile.html)).
-- `source-S14-in-the-news-cards.html`: the original component board `S14-80padding`, moved from `components/S14-80padding.html` (canvas title "About, Mission & History: Anxiety, Hope and Healing: YouVersion Reveals What the World (history)"). The page boards above that name it were built from it.
+- `source-S14-in-the-news-cards.html`: the original component board `S14-80padding`, moved from `components/S14-80padding.html` (canvas title "About, Mission & History: Anxiety, Hope and Healing: YouVersion Reveals What the World (history)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `give-03-impact.html`: copy of [`pages/give/03-impact.html`](../../pages/give/03-impact.html) and `give-03-impact.mobile.html` (copy of [`pages/give/03-impact.mobile.html`](../../pages/give/03-impact.mobile.html)).
-- `source-S54-giving-impact-stats.html`: the original component board `S54-giving-stats`, moved from `components/S54-giving-stats.html` (canvas title "Partners & Giving: is--giving-stats (giving)"). The page boards above that name it were built from it.
+- `source-S54-giving-impact-stats.html`: the original component board `S54-giving-stats`, moved from `components/S54-giving-stats.html` (canvas title "Partners & Giving: is--giving-stats (giving)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

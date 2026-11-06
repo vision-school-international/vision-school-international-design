@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `newsroom-07-global-alliance-conference.html`: copy of [`pages/newsroom/07-global-alliance-conference.html`](../../pages/newsroom/07-global-alliance-conference.html) and `newsroom-07-global-alliance-conference.mobile.html` (copy of [`pages/newsroom/07-global-alliance-conference.mobile.html`](../../pages/newsroom/07-global-alliance-conference.mobile.html)).
-- `source-S62-conference-event-hero.html`: the original component board `S62-ps26-recap-hero`, moved from `components/S62-ps26-recap-hero.html` (canvas title "News, Stories & Events: ps26-recap-hero (partner-summit-2026)"). The page boards above that name it were built from it.
+- `source-S62-conference-event-hero.html`: the original component board `S62-ps26-recap-hero`, moved from `components/S62-ps26-recap-hero.html` (canvas title "News, Stories & Events: ps26-recap-hero (partner-summit-2026)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `give-02-join-us-in-sending-the-gospel.html`: copy of [`pages/give/02-join-us-in-sending-the-gospel.html`](../../pages/give/02-join-us-in-sending-the-gospel.html) and `give-02-join-us-in-sending-the-gospel.mobile.html` (copy of [`pages/give/02-join-us-in-sending-the-gospel.mobile.html`](../../pages/give/02-join-us-in-sending-the-gospel.mobile.html)).
-- `source-S50-giving-intro.html`: the original component board `S50-sharing`, moved from `components/S50-sharing.html` (canvas title "Partners & Giving: Join us in sharing (vision-partner)"). The page boards above that name it were built from it.
+- `source-S50-giving-intro.html`: the original component board `S50-sharing`, moved from `components/S50-sharing.html` (canvas title "Partners & Giving: Join us in sharing (vision-partner)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

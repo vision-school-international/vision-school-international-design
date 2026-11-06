@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `give-11-sow-seeds-of-the-gospel.html`: copy of [`pages/give/11-sow-seeds-of-the-gospel.html`](../../pages/give/11-sow-seeds-of-the-gospel.html) and `give-11-sow-seeds-of-the-gospel.mobile.html` (copy of [`pages/give/11-sow-seeds-of-the-gospel.mobile.html`](../../pages/give/11-sow-seeds-of-the-gospel.mobile.html)).
-- `source-S58-sow-seeds-banner.html`: the original component board `S58-impact-seed`, moved from `components/S58-impact-seed.html` (canvas title "Partners & Giving: Join the Community that has helped distribute over 1 billion (sowers)"). The page boards above that name it were built from it.
+- `source-S58-sow-seeds-banner.html`: the original component board `S58-impact-seed`, moved from `components/S58-impact-seed.html` (canvas title "Partners & Giving: Join the Community that has helped distribute over 1 billion (sowers)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

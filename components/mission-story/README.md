@@ -8,9 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `mission-02-why-we-exist.html`: copy of [`pages/mission/02-why-we-exist.html`](../../pages/mission/02-why-we-exist.html) and `mission-02-why-we-exist.mobile.html` (copy of [`pages/mission/02-why-we-exist.mobile.html`](../../pages/mission/02-why-we-exist.mobile.html)).
-- `vision-school-05-who-its-for.html`: copy of [`pages/vision-school/05-who-its-for.html`](../../pages/vision-school/05-who-its-for.html) and `vision-school-05-who-its-for.mobile.html` (copy of [`pages/vision-school/05-who-its-for.mobile.html`](../../pages/vision-school/05-who-its-for.mobile.html)).
-- `source-S06-why-we-exist-story.html`: the original component board `S06-mission-why-weexist`, moved from `components/S06-mission-why-weexist.html` (canvas title "About, Mission & History: It All Started With a Question: “How could new technologies  (our-mission)"). The page boards above that name it were built from it.
+- `source-S06-why-we-exist-story.html`: the original component board `S06-mission-why-weexist`, moved from `components/S06-mission-why-weexist.html` (canvas title "About, Mission & History: It All Started With a Question: “How could new technologies  (our-mission)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

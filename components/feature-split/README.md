@@ -8,9 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `mission-04-core-values.html`: copy of [`pages/mission/04-core-values.html`](../../pages/mission/04-core-values.html) and `mission-04-core-values.mobile.html` (copy of [`pages/mission/04-core-values.mobile.html`](../../pages/mission/04-core-values.mobile.html)).
-- `vision-school-07-lectures-from-the-field.html`: copy of [`pages/vision-school/07-lectures-from-the-field.html`](../../pages/vision-school/07-lectures-from-the-field.html) and `vision-school-07-lectures-from-the-field.mobile.html` (copy of [`pages/vision-school/07-lectures-from-the-field.mobile.html`](../../pages/vision-school/07-lectures-from-the-field.mobile.html)).
-- `source-S02-numbered-feature-with-image.html`: the original component board `S02-sticky`, moved from `components/S02-sticky.html` (canvas title "Get Involved & Volunteers: is--sticky (volunteers)"). The page boards above that name it were built from it.
+- `source-S02-numbered-feature-with-image.html`: the original component board `S02-sticky`, moved from `components/S02-sticky.html` (canvas title "Get Involved & Volunteers: is--sticky (volunteers)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

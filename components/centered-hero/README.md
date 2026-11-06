@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `partner-overview-05-global-alliance.html`: copy of [`pages/partner-overview/05-global-alliance.html`](../../pages/partner-overview/05-global-alliance.html) and `partner-overview-05-global-alliance.mobile.html` (copy of [`pages/partner-overview/05-global-alliance.mobile.html`](../../pages/partner-overview/05-global-alliance.mobile.html)).
-- `source-S49-global-alliance-centered-hero.html`: the original component board `S49-visionpartner-hero`, moved from `components/S49-visionpartner-hero.html` (canvas title "Partners & Giving: Discover What it means to be a YouVersion Vision Partner. (vision-partner)"). The page boards above that name it were built from it.
+- `source-S49-global-alliance-centered-hero.html`: the original component board `S49-visionpartner-hero`, moved from `components/S49-visionpartner-hero.html` (canvas title "Partners & Giving: Discover What it means to be a YouVersion Vision Partner. (vision-partner)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

@@ -8,15 +8,8 @@ From its stylesheet:
 
 ## Files
 
-- `churches-08-faq.html`: copy of [`pages/churches/08-faq.html`](../../pages/churches/08-faq.html) and `churches-08-faq.mobile.html` (copy of [`pages/churches/08-faq.mobile.html`](../../pages/churches/08-faq.mobile.html)).
-- `field-operation-08-faq.html`: copy of [`pages/field-operation/08-faq.html`](../../pages/field-operation/08-faq.html) and `field-operation-08-faq.mobile.html` (copy of [`pages/field-operation/08-faq.mobile.html`](../../pages/field-operation/08-faq.mobile.html)).
-- `give-07-faq.html`: copy of [`pages/give/07-faq.html`](../../pages/give/07-faq.html) and `give-07-faq.mobile.html` (copy of [`pages/give/07-faq.mobile.html`](../../pages/give/07-faq.mobile.html)).
-- `mission-impact-team-08-faq.html`: copy of [`pages/mission-impact-team/08-faq.html`](../../pages/mission-impact-team/08-faq.html) and `mission-impact-team-08-faq.mobile.html` (copy of [`pages/mission-impact-team/08-faq.mobile.html`](../../pages/mission-impact-team/08-faq.mobile.html)).
-- `student-missionary-08-faq.html`: copy of [`pages/student-missionary/08-faq.html`](../../pages/student-missionary/08-faq.html) and `student-missionary-08-faq.mobile.html` (copy of [`pages/student-missionary/08-faq.mobile.html`](../../pages/student-missionary/08-faq.mobile.html)).
-- `vision-school-16-faq.html`: copy of [`pages/vision-school/16-faq.html`](../../pages/vision-school/16-faq.html) and `vision-school-16-faq.mobile.html` (copy of [`pages/vision-school/16-faq.mobile.html`](../../pages/vision-school/16-faq.mobile.html)).
-- `young-tent-maker-08-faq.html`: copy of [`pages/young-tent-maker/08-faq.html`](../../pages/young-tent-maker/08-faq.html) and `young-tent-maker-08-faq.mobile.html` (copy of [`pages/young-tent-maker/08-faq.mobile.html`](../../pages/young-tent-maker/08-faq.mobile.html)).
-- `source-S33-faq-short-term-programs.html`: the original component board `S33-summit-faq`, moved from `components/S33-summit-faq.html` (canvas title "Connect & Platform: Questions About Our Platform? (platform)"). The page boards above that name it were built from it.
-- `source-S42-faq-churches-give-vision-school.html`: the original component board `S42-churches-faq`, moved from `components/S42-churches-faq.html` (canvas title "Churches: Got Questions? We’ve Got Answers. (churches)"). The page boards above that name it were built from it.
+- `source-S33-faq-short-term-programs.html`: the original component board `S33-summit-faq`, moved from `components/S33-summit-faq.html` (canvas title "Connect & Platform: Questions About Our Platform? (platform)"). The page boards under "Used on" that name it were built from it.
+- `source-S42-faq-churches-give-vision-school.html`: the original component board `S42-churches-faq`, moved from `components/S42-churches-faq.html` (canvas title "Churches: Got Questions? We’ve Got Answers. (churches)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `vision-school-10-who-is-vision-school-for.html`: copy of [`pages/vision-school/10-who-is-vision-school-for.html`](../../pages/vision-school/10-who-is-vision-school-for.html) and `vision-school-10-who-is-vision-school-for.mobile.html` (copy of [`pages/vision-school/10-who-is-vision-school-for.mobile.html`](../../pages/vision-school/10-who-is-vision-school-for.mobile.html)).
-- `source-S24-who-its-for-cards.html`: the original component board `S24-40-112`, moved from `components/S24-40-112.html` (canvas title "Connect & Platform: Who Does YouVersion Connect Help? (connect)"). The page boards above that name it were built from it.
+- `source-S24-who-its-for-cards.html`: the original component board `S24-40-112`, moved from `components/S24-40-112.html` (canvas title "Connect & Platform: Who Does YouVersion Connect Help? (connect)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

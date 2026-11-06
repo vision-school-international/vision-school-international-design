@@ -8,11 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `field-operation-05-highlights.html`: copy of [`pages/field-operation/05-highlights.html`](../../pages/field-operation/05-highlights.html) and `field-operation-05-highlights.mobile.html` (copy of [`pages/field-operation/05-highlights.mobile.html`](../../pages/field-operation/05-highlights.mobile.html)).
-- `mission-impact-team-05-highlights.html`: copy of [`pages/mission-impact-team/05-highlights.html`](../../pages/mission-impact-team/05-highlights.html) and `mission-impact-team-05-highlights.mobile.html` (copy of [`pages/mission-impact-team/05-highlights.mobile.html`](../../pages/mission-impact-team/05-highlights.mobile.html)).
-- `student-missionary-05-highlights.html`: copy of [`pages/student-missionary/05-highlights.html`](../../pages/student-missionary/05-highlights.html) and `student-missionary-05-highlights.mobile.html` (copy of [`pages/student-missionary/05-highlights.mobile.html`](../../pages/student-missionary/05-highlights.mobile.html)).
-- `young-tent-maker-05-highlights.html`: copy of [`pages/young-tent-maker/05-highlights.html`](../../pages/young-tent-maker/05-highlights.html) and `young-tent-maker-05-highlights.mobile.html` (copy of [`pages/young-tent-maker/05-highlights.mobile.html`](../../pages/young-tent-maker/05-highlights.mobile.html)).
-- `source-S30-program-highlights.html`: the original component board `S30-platform-features`, moved from `components/S30-platform-features.html` (canvas title "Connect & Platform: Core Services, Ready to Integrate (platform)"). The page boards above that name it were built from it.
+- `source-S30-program-highlights.html`: the original component board `S30-platform-features`, moved from `components/S30-platform-features.html` (canvas title "Connect & Platform: Core Services, Ready to Integrate (platform)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

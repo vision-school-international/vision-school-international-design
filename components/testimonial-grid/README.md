@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `give-10-testimonies.html`: copy of [`pages/give/10-testimonies.html`](../../pages/give/10-testimonies.html) and `give-10-testimonies.mobile.html` (copy of [`pages/give/10-testimonies.mobile.html`](../../pages/give/10-testimonies.mobile.html)).
-- `source-S56-giver-testimonies-grid.html`: the original component board `S56-sowers-community`, moved from `components/S56-sowers-community.html` (canvas title "Partners & Giving: Meet the Sowers Community (sowers)"). The page boards above that name it were built from it.
+- `source-S56-giver-testimonies-grid.html`: the original component board `S56-sowers-community`, moved from `components/S56-sowers-community.html` (canvas title "Partners & Giving: Meet the Sowers Community (sowers)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

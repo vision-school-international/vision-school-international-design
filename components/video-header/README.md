@@ -8,12 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `field-operation-03-feature-photo.html`: copy of [`pages/field-operation/03-feature-photo.html`](../../pages/field-operation/03-feature-photo.html) and `field-operation-03-feature-photo.mobile.html` (copy of [`pages/field-operation/03-feature-photo.mobile.html`](../../pages/field-operation/03-feature-photo.mobile.html)).
-- `mission-impact-team-03-feature-photo.html`: copy of [`pages/mission-impact-team/03-feature-photo.html`](../../pages/mission-impact-team/03-feature-photo.html) and `mission-impact-team-03-feature-photo.mobile.html` (copy of [`pages/mission-impact-team/03-feature-photo.mobile.html`](../../pages/mission-impact-team/03-feature-photo.mobile.html)).
-- `student-missionary-03-feature-photo.html`: copy of [`pages/student-missionary/03-feature-photo.html`](../../pages/student-missionary/03-feature-photo.html) and `student-missionary-03-feature-photo.mobile.html` (copy of [`pages/student-missionary/03-feature-photo.mobile.html`](../../pages/student-missionary/03-feature-photo.mobile.html)).
-- `vision-school-11-a-vision-for-all-nations.html`: copy of [`pages/vision-school/11-a-vision-for-all-nations.html`](../../pages/vision-school/11-a-vision-for-all-nations.html) and `vision-school-11-a-vision-for-all-nations.mobile.html` (copy of [`pages/vision-school/11-a-vision-for-all-nations.mobile.html`](../../pages/vision-school/11-a-vision-for-all-nations.mobile.html)).
-- `young-tent-maker-03-feature-photo.html`: copy of [`pages/young-tent-maker/03-feature-photo.html`](../../pages/young-tent-maker/03-feature-photo.html) and `young-tent-maker-03-feature-photo.mobile.html` (copy of [`pages/young-tent-maker/03-feature-photo.mobile.html`](../../pages/young-tent-maker/03-feature-photo.mobile.html)).
-- `source-S28-feature-photo-header.html`: the original component board `S28-platform-ceo`, moved from `components/S28-platform-ceo.html` (canvas title "Connect & Platform: A Vision Bigger Than One App (platform)"). The page boards above that name it were built from it.
+- `source-S28-feature-photo-header.html`: the original component board `S28-platform-ceo`, moved from `components/S28-platform-ceo.html` (canvas title "Connect & Platform: A Vision Bigger Than One App (platform)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

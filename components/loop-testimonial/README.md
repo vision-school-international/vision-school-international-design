@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `vision-school-youth-05-verse.html`: copy of [`pages/vision-school-youth/05-verse.html`](../../pages/vision-school-youth/05-verse.html) and `vision-school-youth-05-verse.mobile.html` (copy of [`pages/vision-school-youth/05-verse.mobile.html`](../../pages/vision-school-youth/05-verse.mobile.html)).
-- `source-S23-youth-verse.html`: the original component board `S23-bl-testimonial`, moved from `components/S23-bl-testimonial.html` (canvas title "Bible Apps: “THIS APP IS SUPER FUN!” (bible-loop)"). The page boards above that name it were built from it.
+- `source-S23-youth-verse.html`: the original component board `S23-bl-testimonial`, moved from `components/S23-bl-testimonial.html` (canvas title "Bible Apps: “THIS APP IS SUPER FUN!” (bible-loop)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

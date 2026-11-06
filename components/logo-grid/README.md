@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `partner-overview-10-partnership.html`: copy of [`pages/partner-overview/10-partnership.html`](../../pages/partner-overview/10-partnership.html) and `partner-overview-10-partnership.mobile.html` (copy of [`pages/partner-overview/10-partnership.mobile.html`](../../pages/partner-overview/10-partnership.mobile.html)).
-- `source-S45-partnership-logo-grid.html`: the original component board `S45-partofit`, moved from `components/S45-partofit.html` (canvas title "Partners & Giving: And you can be a part of it. (bible-partners)"). The page boards above that name it were built from it.
+- `source-S45-partnership-logo-grid.html`: the original component board `S45-partofit`, moved from `components/S45-partofit.html` (canvas title "Partners & Giving: And you can be a part of it. (bible-partners)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

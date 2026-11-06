@@ -8,10 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `mission-03-mission-statement.html`: copy of [`pages/mission/03-mission-statement.html`](../../pages/mission/03-mission-statement.html) and `mission-03-mission-statement.mobile.html` (copy of [`pages/mission/03-mission-statement.mobile.html`](../../pages/mission/03-mission-statement.mobile.html)).
-- `vision-camp-08-recommendation.html`: copy of [`pages/vision-camp/08-recommendation.html`](../../pages/vision-camp/08-recommendation.html) and `vision-camp-08-recommendation.mobile.html` (copy of [`pages/vision-camp/08-recommendation.mobile.html`](../../pages/vision-camp/08-recommendation.mobile.html)).
-- `vision-school-12-testimony.html`: copy of [`pages/vision-school/12-testimony.html`](../../pages/vision-school/12-testimony.html) and `vision-school-12-testimony.mobile.html` (copy of [`pages/vision-school/12-testimony.mobile.html`](../../pages/vision-school/12-testimony.mobile.html)).
-- `source-S07-pull-quote.html`: the original component board `S07-mission-quote`, moved from `components/S07-mission-quote.html` (canvas title "About, Mission & History: is--mission-quote (our-mission)"). The page boards above that name it were built from it.
+- `source-S07-pull-quote.html`: the original component board `S07-mission-quote`, moved from `components/S07-mission-quote.html` (canvas title "About, Mission & History: is--mission-quote (our-mission)"). The page boards under "Used on" that name it were built from it.
 - `source-S43-statement-quote.html`: the original component board `S43-black-showcase`, moved from `components/S43-black-showcase.html` (canvas title "Partners & Giving: is--black-showcase (bible-partners)"). No page uses it yet; the component's source names it as its design.
 
 ## Used on

@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `newsroom-02-latest-news.html`: copy of [`pages/newsroom/02-latest-news.html`](../../pages/newsroom/02-latest-news.html) and `newsroom-02-latest-news.mobile.html` (copy of [`pages/newsroom/02-latest-news.mobile.html`](../../pages/newsroom/02-latest-news.mobile.html)).
-- `source-S68-latest-news-grid.html`: the original component board `S68-V3-home-getinvolved`, moved from `components/S68-V3-home-getinvolved.html` (canvas title "News, Stories & Events: News grid 3x2 with See More (newsroom)"). The page boards above that name it were built from it.
+- `source-S68-latest-news-grid.html`: the original component board `S68-V3-home-getinvolved`, moved from `components/S68-V3-home-getinvolved.html` (canvas title "News, Stories & Events: News grid 3x2 with See More (newsroom)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `partner-overview-06-global-alliance-conference.html`: copy of [`pages/partner-overview/06-global-alliance-conference.html`](../../pages/partner-overview/06-global-alliance-conference.html) and `partner-overview-06-global-alliance-conference.mobile.html` (copy of [`pages/partner-overview/06-global-alliance-conference.mobile.html`](../../pages/partner-overview/06-global-alliance-conference.mobile.html)).
-- `source-S51-alliance-conference-panel.html`: the original component board `S51-partners-app`, moved from `components/S51-partners-app.html` (canvas title "Partners & Giving: is--partners-app (vision-partner)"). The page boards above that name it were built from it.
+- `source-S51-alliance-conference-panel.html`: the original component board `S51-partners-app`, moved from `components/S51-partners-app.html` (canvas title "Partners & Giving: is--partners-app (vision-partner)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

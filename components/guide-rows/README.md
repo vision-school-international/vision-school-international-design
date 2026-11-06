@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `churches-10-church-relations-and-mission-policy-list.html`: copy of [`pages/churches/10-church-relations-and-mission-policy-list.html`](../../pages/churches/10-church-relations-and-mission-policy-list.html) and `churches-10-church-relations-and-mission-policy-list.mobile.html` (copy of [`pages/churches/10-church-relations-and-mission-policy-list.mobile.html`](../../pages/churches/10-church-relations-and-mission-policy-list.mobile.html)).
-- `source-S38-policy-list-rows.html`: the original component board `S38-cob-more-section`, moved from `components/S38-cob-more-section.html` (canvas title "Churches: Read the full series (church-blog)"). The page boards above that name it were built from it.
+- `source-S38-policy-list-rows.html`: the original component board `S38-cob-more-section`, moved from `components/S38-cob-more-section.html` (canvas title "Churches: Read the full series (church-blog)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

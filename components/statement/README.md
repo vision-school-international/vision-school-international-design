@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `churches-03-one-mission-three-partners.html`: copy of [`pages/churches/03-one-mission-three-partners.html`](../../pages/churches/03-one-mission-three-partners.html) and `churches-03-one-mission-three-partners.mobile.html` (copy of [`pages/churches/03-one-mission-three-partners.mobile.html`](../../pages/churches/03-one-mission-three-partners.mobile.html)).
-- `source-S65-three-partners-statement.html`: the original component board `S65-totalpopulation-connect`, moved from `components/S65-totalpopulation-connect.html` (canvas title "Connect & Platform: One Ecosystem, Infinite Impact (connect)"). The page boards above that name it were built from it.
+- `source-S65-three-partners-statement.html`: the original component board `S65-totalpopulation-connect`, moved from `components/S65-totalpopulation-connect.html` (canvas title "Connect & Platform: One Ecosystem, Infinite Impact (connect)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

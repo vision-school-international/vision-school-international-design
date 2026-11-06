@@ -8,20 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `branches-01-hero.html`: copy of [`pages/branches/01-hero.html`](../../pages/branches/01-hero.html) and `branches-01-hero.mobile.html` (copy of [`pages/branches/01-hero.mobile.html`](../../pages/branches/01-hero.mobile.html)).
-- `churches-01-hero-for-churches.html`: copy of [`pages/churches/01-hero-for-churches.html`](../../pages/churches/01-hero-for-churches.html) and `churches-01-hero-for-churches.mobile.html` (copy of [`pages/churches/01-hero-for-churches.mobile.html`](../../pages/churches/01-hero-for-churches.mobile.html)).
-- `field-operation-01-hero.html`: copy of [`pages/field-operation/01-hero.html`](../../pages/field-operation/01-hero.html) and `field-operation-01-hero.mobile.html` (copy of [`pages/field-operation/01-hero.mobile.html`](../../pages/field-operation/01-hero.mobile.html)).
-- `give-01-hero-ways-to-give.html`: copy of [`pages/give/01-hero-ways-to-give.html`](../../pages/give/01-hero-ways-to-give.html) and `give-01-hero-ways-to-give.mobile.html` (copy of [`pages/give/01-hero-ways-to-give.mobile.html`](../../pages/give/01-hero-ways-to-give.mobile.html)).
-- `history-01-hero.html`: copy of [`pages/history/01-hero.html`](../../pages/history/01-hero.html) and `history-01-hero.mobile.html` (copy of [`pages/history/01-hero.mobile.html`](../../pages/history/01-hero.mobile.html)).
-- `mission-01-hero.html`: copy of [`pages/mission/01-hero.html`](../../pages/mission/01-hero.html) and `mission-01-hero.mobile.html` (copy of [`pages/mission/01-hero.mobile.html`](../../pages/mission/01-hero.mobile.html)).
-- `mission-impact-team-01-hero.html`: copy of [`pages/mission-impact-team/01-hero.html`](../../pages/mission-impact-team/01-hero.html) and `mission-impact-team-01-hero.mobile.html` (copy of [`pages/mission-impact-team/01-hero.mobile.html`](../../pages/mission-impact-team/01-hero.mobile.html)).
-- `partner-overview-01-hero-global-alliance.html`: copy of [`pages/partner-overview/01-hero-global-alliance.html`](../../pages/partner-overview/01-hero-global-alliance.html) and `partner-overview-01-hero-global-alliance.mobile.html` (copy of [`pages/partner-overview/01-hero-global-alliance.mobile.html`](../../pages/partner-overview/01-hero-global-alliance.mobile.html)).
-- `stories-01-hero.html`: copy of [`pages/stories/01-hero.html`](../../pages/stories/01-hero.html) and `stories-01-hero.mobile.html` (copy of [`pages/stories/01-hero.mobile.html`](../../pages/stories/01-hero.mobile.html)).
-- `student-missionary-01-hero.html`: copy of [`pages/student-missionary/01-hero.html`](../../pages/student-missionary/01-hero.html) and `student-missionary-01-hero.mobile.html` (copy of [`pages/student-missionary/01-hero.mobile.html`](../../pages/student-missionary/01-hero.mobile.html)).
-- `vision-camp-01-hero.html`: copy of [`pages/vision-camp/01-hero.html`](../../pages/vision-camp/01-hero.html) and `vision-camp-01-hero.mobile.html` (copy of [`pages/vision-camp/01-hero.mobile.html`](../../pages/vision-camp/01-hero.mobile.html)).
-- `vision-school-01-hero.html`: copy of [`pages/vision-school/01-hero.html`](../../pages/vision-school/01-hero.html) and `vision-school-01-hero.mobile.html` (copy of [`pages/vision-school/01-hero.mobile.html`](../../pages/vision-school/01-hero.mobile.html)).
-- `young-tent-maker-01-hero.html`: copy of [`pages/young-tent-maker/01-hero.html`](../../pages/young-tent-maker/01-hero.html) and `young-tent-maker-01-hero.mobile.html` (copy of [`pages/young-tent-maker/01-hero.mobile.html`](../../pages/young-tent-maker/01-hero.mobile.html)).
-- `source-S05-page-hero-with-image.html`: the original component board `S05-hero-withimg`, moved from `components/S05-hero-withimg.html` (canvas title "About, Mission & History: Our Mission (our-mission)"). The page boards above that name it were built from it.
+- `source-S05-page-hero-with-image.html`: the original component board `S05-hero-withimg`, moved from `components/S05-hero-withimg.html` (canvas title "About, Mission & History: Our Mission (our-mission)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

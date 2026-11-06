@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `vision-school-youth-01-hero.html`: copy of [`pages/vision-school-youth/01-hero.html`](../../pages/vision-school-youth/01-hero.html) and `vision-school-youth-01-hero.mobile.html` (copy of [`pages/vision-school-youth/01-hero.mobile.html`](../../pages/vision-school-youth/01-hero.mobile.html)).
-- `source-S20-youth-hero.html`: the original component board `S20-bl-hero`, moved from `components/S20-bl-hero.html` (canvas title "Bible Apps: LEARN IT. LIVE IT. LOOP IT. (bible-loop)"). The page boards above that name it were built from it.
+- `source-S20-youth-hero.html`: the original component board `S20-bl-hero`, moved from `components/S20-bl-hero.html` (canvas title "Bible Apps: LEARN IT. LIVE IT. LOOP IT. (bible-loop)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

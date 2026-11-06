@@ -8,8 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `churches-11-how-we-work-with-your-local-church.html`: copy of [`pages/churches/11-how-we-work-with-your-local-church.html`](../../pages/churches/11-how-we-work-with-your-local-church.html) and `churches-11-how-we-work-with-your-local-church.mobile.html` (copy of [`pages/churches/11-how-we-work-with-your-local-church.mobile.html`](../../pages/churches/11-how-we-work-with-your-local-church.mobile.html)).
-- `source-S39-how-we-work-posts-feature.html`: the original component board `S39-realstories-1`, moved from `components/S39-realstories-1.html` (canvas title "Churches: What’s New in the Church Community (church-blog)"). The page boards above that name it were built from it.
+- `source-S39-how-we-work-posts-feature.html`: the original component board `S39-realstories-1`, moved from `components/S39-realstories-1.html` (canvas title "Churches: What’s New in the Church Community (church-blog)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 

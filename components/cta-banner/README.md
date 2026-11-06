@@ -8,17 +8,7 @@ From its stylesheet:
 
 ## Files
 
-- `branches-07-get-involved.html`: copy of [`pages/branches/07-get-involved.html`](../../pages/branches/07-get-involved.html) and `branches-07-get-involved.mobile.html` (copy of [`pages/branches/07-get-involved.mobile.html`](../../pages/branches/07-get-involved.mobile.html)).
-- `give-12-support-a-missionary.html`: copy of [`pages/give/12-support-a-missionary.html`](../../pages/give/12-support-a-missionary.html) and `give-12-support-a-missionary.mobile.html` (copy of [`pages/give/12-support-a-missionary.mobile.html`](../../pages/give/12-support-a-missionary.mobile.html)).
-- `mission-08-get-involved.html`: copy of [`pages/mission/08-get-involved.html`](../../pages/mission/08-get-involved.html) and `mission-08-get-involved.mobile.html` (copy of [`pages/mission/08-get-involved.mobile.html`](../../pages/mission/08-get-involved.mobile.html)).
-- `newsroom-10-get-involved.html`: copy of [`pages/newsroom/10-get-involved.html`](../../pages/newsroom/10-get-involved.html) and `newsroom-10-get-involved.mobile.html` (copy of [`pages/newsroom/10-get-involved.mobile.html`](../../pages/newsroom/10-get-involved.mobile.html)).
-- `partner-overview-11-call-to-action.html`: copy of [`pages/partner-overview/11-call-to-action.html`](../../pages/partner-overview/11-call-to-action.html) and `partner-overview-11-call-to-action.mobile.html` (copy of [`pages/partner-overview/11-call-to-action.mobile.html`](../../pages/partner-overview/11-call-to-action.mobile.html)).
-- `spiritual-support-team-03-partner-in-prayer.html`: copy of [`pages/spiritual-support-team/03-partner-in-prayer.html`](../../pages/spiritual-support-team/03-partner-in-prayer.html) and `spiritual-support-team-03-partner-in-prayer.mobile.html` (copy of [`pages/spiritual-support-team/03-partner-in-prayer.mobile.html`](../../pages/spiritual-support-team/03-partner-in-prayer.mobile.html)).
-- `stories-03-join-vision-school.html`: copy of [`pages/stories/03-join-vision-school.html`](../../pages/stories/03-join-vision-school.html) and `stories-03-join-vision-school.mobile.html` (copy of [`pages/stories/03-join-vision-school.mobile.html`](../../pages/stories/03-join-vision-school.mobile.html)).
-- `vision-camp-09-call-to-action.html`: copy of [`pages/vision-camp/09-call-to-action.html`](../../pages/vision-camp/09-call-to-action.html) and `vision-camp-09-call-to-action.mobile.html` (copy of [`pages/vision-camp/09-call-to-action.mobile.html`](../../pages/vision-camp/09-call-to-action.mobile.html)).
-- `vision-school-18-call-to-action.html`: copy of [`pages/vision-school/18-call-to-action.html`](../../pages/vision-school/18-call-to-action.html) and `vision-school-18-call-to-action.mobile.html` (copy of [`pages/vision-school/18-call-to-action.mobile.html`](../../pages/vision-school/18-call-to-action.mobile.html)).
-- `article-05-contact-cta.html`: copy of [`pages/article/05-contact-cta.html`](../../pages/article/05-contact-cta.html) and `article-05-contact-cta.mobile.html` (copy of [`pages/article/05-contact-cta.mobile.html`](../../pages/article/05-contact-cta.mobile.html)).
-- `source-S09-get-involved-cta.html`: the original component board `S09-cta-volunteers`, moved from `components/S09-cta-volunteers.html` (canvas title "Get Involved & Volunteers: Be Part of What God Is Doing Through YouVersion (our-mission)"). The page boards above that name it were built from it.
+- `source-S09-get-involved-cta.html`: the original component board `S09-cta-volunteers`, moved from `components/S09-cta-volunteers.html` (canvas title "Get Involved & Volunteers: Be Part of What God Is Doing Through YouVersion (our-mission)"). The page boards under "Used on" that name it were built from it.
 
 ## Used on
 
