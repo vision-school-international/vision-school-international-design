@@ -4,6 +4,13 @@ Static export of the design canvas: https://claude.ai/artifact/LK4GJQrpnydthwKQx
 
 Each board is a standalone HTML file. Open it in a browser; images and fonts load from `assets/` by relative path.
 
+## Other sites in this repo
+
+- [`ygmc/`](ygmc/): YGMC website designs.
+- [`intercp-international/`](intercp-international/): InterCP International website designs.
+
+Each has the same layout as below (`pages/`, `assets/`, `canvas.json`) and its own README.
+
 ## Layout
 
 - `pages/<page>/NN-<section>.html`: desktop board (1440px), in page order, top to bottom.

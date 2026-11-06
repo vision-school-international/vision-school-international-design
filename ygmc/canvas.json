@@ -1,0 +1,32 @@
+{"v":3,"createdOnFiles":{"v":1,"at":"2026-11-03T22:30:00Z"},"title":"YGMC Website Design","launch":{"view":"canvas"},"pages":[],"boards":{
+"Main.dc.html":{"x":0,"y":0,"w":1440,"h":102,"title":"Global / Header"},
+"Footer.dc.html":{"x":0,"y":222,"w":1440,"h":701,"title":"Global / Footer"},
+"Home-Hero.dc.html":{"x":1560,"y":0,"w":1440,"h":723,"title":"Home / 1 Hero"},
+"Home-Historymakers.dc.html":{"x":1560,"y":843,"w":1440,"h":1962,"title":"Home / 2 We Are The Historymakers"},
+"Home-Theme.dc.html":{"x":1560,"y":2925,"w":1440,"h":1087,"title":"Home / 3 Theme: Kernel of Wheat"},
+"Home-Venue.dc.html":{"x":1560,"y":4132,"w":1440,"h":795,"title":"Home / 4 Dates & Venue"},
+"Home-Testimonials.dc.html":{"x":1560,"y":5047,"w":1440,"h":968,"title":"Home / 5 Testimonials"},
+"Home-Fees.dc.html":{"x":1560,"y":6135,"w":1440,"h":736,"title":"Home / 6 Participation Fee"},
+"Home-Gallery.dc.html":{"x":1560,"y":6991,"w":1440,"h":772,"title":"Home / 7 Photo Gallery"},
+"Home-InterCP.dc.html":{"x":1560,"y":7883,"w":1440,"h":518,"title":"Home / 8 InterCP International"},
+"About-Hero.dc.html":{"x":3120,"y":0,"w":1440,"h":615,"title":"About / 1 Hero"},
+"About-Mission.dc.html":{"x":3120,"y":735,"w":1440,"h":968,"title":"About / 2 InterCP Mission"},
+"About-CoreValues.dc.html":{"x":3120,"y":1823,"w":1440,"h":1219,"title":"About / 3 Core Values"},
+"Testimonials-Hero.dc.html":{"x":4680,"y":0,"w":1440,"h":441,"title":"Testimonials / 1 Hero"},
+"Testimonials-List.dc.html":{"x":4680,"y":561,"w":1440,"h":4194,"title":"Testimonials / 2 List"},
+"FAQ-List.dc.html":{"x":6240,"y":0,"w":1440,"h":933,"title":"FAQ / 1 Questions","is_interactive":true},
+"Contact-Form.dc.html":{"x":7800,"y":0,"w":1440,"h":769,"title":"Contact / 1 Form"},
+"Page-Home.dc.html":{"x":1560,"y":8900,"w":1440,"h":8364,"title":"Page / Home","expand":"fill"},
+"Page-About.dc.html":{"x":3120,"y":8900,"w":1440,"h":3605,"title":"Page / About","expand":"fill"},
+"Page-Testimonials.dc.html":{"x":4680,"y":8900,"w":1440,"h":5438,"title":"Page / Testimonials","expand":"fill"},
+"Page-FAQ.dc.html":{"x":6240,"y":8900,"w":1440,"h":1736,"title":"Page / FAQ","expand":"fill","is_interactive":true},
+"Page-Contact.dc.html":{"x":7800,"y":8900,"w":1440,"h":1572,"title":"Page / Contact","expand":"fill"}
+},"order":["Main.dc.html","Footer.dc.html","Home-Hero.dc.html","Home-Historymakers.dc.html","Home-Theme.dc.html","Home-Venue.dc.html","Home-Testimonials.dc.html","Home-Fees.dc.html","Home-Gallery.dc.html","Home-InterCP.dc.html","About-Hero.dc.html","About-Mission.dc.html","About-CoreValues.dc.html","Testimonials-Hero.dc.html","Testimonials-List.dc.html","FAQ-List.dc.html","Contact-Form.dc.html","Page-Home.dc.html","Page-About.dc.html","Page-Testimonials.dc.html","Page-FAQ.dc.html","Page-Contact.dc.html"],"notes":{
+"globals":{"x":0,"y":-260,"text":"Global components","kind":"title1","maxW":1440},
+"home":{"x":1560,"y":-260,"text":"Home sections","kind":"title1","maxW":1440},
+"about":{"x":3120,"y":-260,"text":"About sections","kind":"title1","maxW":1440},
+"testimonials":{"x":4680,"y":-260,"text":"Testimonials sections","kind":"title1","maxW":1440},
+"faq":{"x":6240,"y":-260,"text":"FAQ sections","kind":"title1","maxW":1440},
+"contact":{"x":7800,"y":-260,"text":"Contact sections","kind":"title1","maxW":1440},
+"pages":{"x":1560,"y":8640,"text":"Full pages (assembled from the section boards)","kind":"title1","maxW":7680}
+},"designSystems":[]}
