@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home · 10 · Stories</title>
+<script src="../../support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>@font-face{font-family:"Aktiv Grotesk App";src:url(../../assets/fonts/dc604e740d1dd178de68ffeb4025d740.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:"Aktiv Grotesk App";src:url(../../assets/fonts/e628c41ee880e523ade04a5db8d10ffb.ttf) format("truetype");font-weight:500;font-style:normal}@font-face{font-family:"Aktiv Grotesk App";src:url(../../assets/fonts/5c120c4c2f63014aa9b38f049b71c5dc.ttf) format("truetype");font-weight:600 800;font-style:normal}@font-face{font-family:"Denton";src:url(../../assets/fonts/64312cdd8944a2a968dd52dfacec8575.otf) format("opentype");font-weight:300 400;font-style:normal}@font-face{font-family:"Denton";src:url(../../assets/fonts/8470c3a49cd2aa558fa952bf1218fa41.otf) format("opentype");font-weight:300 400;font-style:italic}@font-face{font-family:"Denton Condensed";src:url(../../assets/fonts/2c077599f8a818f52f85adcd5022b44f.otf) format("opentype");font-weight:300 400;font-style:normal}@font-face{font-family:"Denton Condensed";src:url(../../assets/fonts/bdc9cc09a3c9a1e4e0167610b3ebbf0a.otf) format("opentype");font-weight:300 400;font-style:italic}</style>
+<style>
+body{margin:0}
+a{color:#eceef4;text-decoration:none}a:hover{color:#ffffff}
+</style>
+</helmet>
+<section style="width:1440px; height:1103px; box-sizing:border-box; padding:112px 40px 40px; background:#141d3b; color:#ffffff; font-family:'Aktiv Grotesk App', Arial, sans-serif">
+<div style="max-width:1360px; display:flex; flex-direction:column; gap:40px">
+<div style="display:grid; grid-template-columns:1107.7px 197.3px; gap:40px; align-items:end">
+<div style="display:flex; flex-direction:column; gap:4px">
+<div style="font-family:'Denton', Georgia, serif; font-style:italic; font-weight:300; font-size:32px; line-height:37.12px">Our Stories —</div>
+<h2 style="margin:0; font-size:64px; line-height:70.4px; font-weight:500; letter-spacing:-0.16px"><span style="font-family:'Denton', Georgia, serif; font-weight:300; font-style:italic">Testimonies</span></h2>
+</div>
+<a href="/about/stories" style="justify-self:end; display:inline-flex; align-items:center; height:61px; box-sizing:border-box; padding:16px 24px; border-radius:4800px; border:1px solid rgba(236, 238, 244, 0.35); color:#eceef4; font-size:18px; font-weight:500; white-space:nowrap">Read More Stories</a>
+</div>
+<div style="display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:24px">
+<sc-for list="{{stories}}" as="s" hint-placeholder-count="3">
+<div style="height:750px; border-radius:4px; background:#233163; box-sizing:border-box; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; padding:32px; gap:16px; position:relative; overflow:hidden; color:#ffffff">
+<blockquote style="margin:0; font-size:24px; line-height:32.64px; font-weight:500; letter-spacing:-0.48px; position:relative">{{s.quote}}</blockquote>
+<span style="padding:4px 16px; border-radius:4px; background:rgba(20, 29, 59, 0.9); font-size:18px; font-weight:600; text-transform:uppercase; position:relative">{{s.tag}}</span>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1103}}'>
+class Component extends DCLogic {
+renderVals() {
+return { stories: [
+{ quote: "“I don’t think I really understood the heart of God, and when I took Vision School, it really changed my heart, and my heart broke for unreached people groups.”", tag: "Vision School" },
+{ quote: "“Vision School really changed my entire paradigm of how I saw myself, what it means to live as a Christian, and what it means to live in the times we live in today.”", tag: "Vision School" },
+{ quote: "“You go in faith, and you really see how God works, the things that He brings in your path and the things that He ordains for you to see or the people He ordains for you to meet. It really grew my trust in Him.”", tag: "Field Operation" }
+] };
+}
+}
+</script>
+</body>
+</html>
